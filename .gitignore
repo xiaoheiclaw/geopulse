@@ -1,0 +1,10 @@
+.venv/
+data/dag.json
+data/events.jsonl
+data/history/*.json
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+*.egg-info/

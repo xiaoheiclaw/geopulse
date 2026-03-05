@@ -1,0 +1,31 @@
+readwise:
+  proxy: "http://127.0.0.1:7890"
+  timeout: 30
+  tag: "geopulse"
+
+llm:
+  model: "claude-sonnet-4-6"
+  max_tokens: 4096
+  temperature: 0.3
+
+dag:
+  data_dir: "data"
+  history_retention_days: 30
+  max_nodes: 100
+
+report:
+  min_probability_change: 0.05
+
+scenario:
+  id: "us_iran_conflict"
+  label: "美伊冲突"
+  description: "美国-伊朗军事冲突及其全球传导影响"
+
+domains:
+  - 军事
+  - 能源
+  - 经济
+  - 科技
+  - 金融
+  - 政治
+  - 社会
