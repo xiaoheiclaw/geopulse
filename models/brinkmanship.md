@@ -1,5 +1,8 @@
 # 边缘策略 (Brinkmanship)
 
+## 领域
+军事, 政治
+
 ## 来源
 Thomas Schelling, *The Strategy of Conflict* (1960); *Arms and Influence* (1966)
 

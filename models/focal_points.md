@@ -1,5 +1,8 @@
 # 焦点理论 (Focal Points / Schelling Points)
 
+## 领域
+政治, 经济
+
 ## 来源
 Thomas Schelling, *The Strategy of Conflict* (1960)
 

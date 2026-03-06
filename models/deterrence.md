@@ -1,5 +1,8 @@
 # 威慑理论 (Deterrence Theory)
 
+## 领域
+军事, 政治
+
 ## 来源
 Thomas Schelling, *The Strategy of Conflict* (1960)
 

@@ -1,5 +1,8 @@
 # 雾中决策 (Fog of War)
 
+## 领域
+军事
+
 ## 来源
 Carl von Clausewitz, *On War* (1832); 认知心理学 (Cognitive Psychology)
 

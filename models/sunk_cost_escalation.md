@@ -1,5 +1,8 @@
 # 沉没成本与承诺升级 (Sunk Cost Escalation)
 
+## 领域
+军事, 政治
+
 ## 来源
 行为经济学 (Behavioral Economics)，Daniel Kahneman & Amos Tversky; Barry Staw, "Knee-Deep in the Big Muddy" (1976)
 

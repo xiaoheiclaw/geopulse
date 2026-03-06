@@ -1,5 +1,8 @@
 # 不对称冲突 (Asymmetric Conflict)
 
+## 领域
+军事
+
 ## 来源
 Ivan Arreguin-Toft, *How the Weak Win Wars* (2005); Andrew Mack, "Why Big Nations Lose Small Wars" (1975)
 

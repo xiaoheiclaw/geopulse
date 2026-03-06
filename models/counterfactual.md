@@ -1,5 +1,8 @@
 # 反事实推理 (Counterfactual Thinking)
 
+## 领域
+通用
+
 ## 来源
 因果推断理论 (Causal Inference)，Judea Pearl, *The Book of Why*
 

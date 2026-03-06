@@ -1,5 +1,8 @@
 # 二阶效应 (Second-Order Effects)
 
+## 领域
+通用
+
 ## 来源
 系统思维 (Systems Thinking)，Donella Meadows, *Thinking in Systems*
 

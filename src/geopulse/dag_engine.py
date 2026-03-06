@@ -100,7 +100,15 @@ class DAGEngine:
 
     def _call_llm(self, dag: DAG, events: list[Event], retries: int = 2) -> dict[str, Any]:
         """Call the LLM with current DAG state and new events."""
-        mental_models = build_prompt_injection()
+        # Collect domains from events + existing DAG nodes for model selection
+        event_domains: set[str] = set()
+        for ev in events:
+            event_domains.update(ev.domains)
+        for node in dag.nodes.values():
+            event_domains.update(node.domains)
+        # If we have domain info, filter models; otherwise inject all
+        domains_list = sorted(event_domains) if event_domains else None
+        mental_models = build_prompt_injection(domains=domains_list)
         system = DAG_ENGINE_SYSTEM_PROMPT.replace("{mental_models}", mental_models)
         events_json = [e.model_dump(mode="json") for e in events]
         user_prompt = (
