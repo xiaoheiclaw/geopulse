@@ -37,14 +37,17 @@ class EventAnalyzer:
         api_key: str,
         model: str = "claude-sonnet-4-6",
         proxy: str | None = "http://127.0.0.1:7890",
+        base_url: str | None = None,
     ):
         self.model = model
-        http_client = None
+        kwargs: dict[str, Any] = {"api_key": api_key}
+        if base_url:
+            kwargs["base_url"] = base_url
         if proxy:
             import httpx
 
-            http_client = httpx.Client(proxy=proxy)
-        self.client = anthropic.Anthropic(api_key=api_key, http_client=http_client)
+            kwargs["http_client"] = httpx.Client(proxy=proxy)
+        self.client = anthropic.Anthropic(**kwargs)
 
     def analyze(self, article: dict[str, Any]) -> list[Event]:
         """Extract geopolitical events from an article via LLM.

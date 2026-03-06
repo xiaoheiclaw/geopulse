@@ -29,15 +29,16 @@ class Pipeline:
         proxy: str | None = "http://127.0.0.1:7890",
         readwise_tag: str = "geopulse",
         llm_model: str = "claude-sonnet-4-6",
+        base_url: str | None = None,
     ):
         self.ingester = ReadwiseIngester(
             token=readwise_token, tag=readwise_tag, proxy=proxy
         )
         self.analyzer = EventAnalyzer(
-            api_key=anthropic_api_key, model=llm_model, proxy=proxy
+            api_key=anthropic_api_key, model=llm_model, proxy=proxy, base_url=base_url
         )
         self.dag_engine = DAGEngine(
-            api_key=anthropic_api_key, model=llm_model, proxy=proxy
+            api_key=anthropic_api_key, model=llm_model, proxy=proxy, base_url=base_url
         )
         self.storage = DAGStorage(data_dir=data_dir)
         self.reporter = Reporter()
@@ -90,3 +91,40 @@ class Pipeline:
                 entry = event.model_dump(mode="json")
                 entry["logged_at"] = datetime.now(timezone.utc).isoformat()
                 f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+    def apply_external_analysis(self, analysis_data: dict[str, Any]) -> str | None:
+        """Apply pre-computed analysis (from Agent) to the DAG and generate report."""
+        old_dag = self.storage.load()
+        if old_dag is None:
+            old_dag = DAG(
+                scenario=DEFAULT_SCENARIO, scenario_label=DEFAULT_SCENARIO_LABEL
+            )
+
+        # analysis_data should follow the same structure as DAGEngine._call_llm output
+        updated_dag = self.dag_engine._apply_updates(old_dag, analysis_data)
+        propagated_dag = propagate(updated_dag)
+        self.storage.save(propagated_dag)
+
+        # Generate report
+        analysis = analysis_data.get("analysis", "")
+        insights = analysis_data.get("model_insights", [])
+        
+        # Reconstruct events for the report if provided
+        events_raw = analysis_data.get("events", [])
+        all_events = []
+        for ev in events_raw:
+            all_events.append(Event(**ev))
+        
+        if all_events:
+            self._log_events(all_events)
+
+        events_summary = [e.headline for e in all_events[:10]]
+
+        report = self.reporter.daily_report(
+            propagated_dag,
+            events_summary=events_summary,
+            old_dag=old_dag if old_dag.nodes else None,
+            analysis=analysis,
+            model_insights=insights,
+        )
+        return report
