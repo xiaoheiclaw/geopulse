@@ -42,7 +42,7 @@ class TestDAGEngine:
                 "removed_nodes": [], "removed_edges": [],
             },
         }
-        with patch.object(engine, "_call_llm", return_value=llm_response):
+        with patch.object(engine, "_call_llm_for_domain", return_value=llm_response):
             updated = engine.update(dag, [_sample_event()])
         assert "carrier_deployment" in updated.nodes
         assert updated.nodes["us_iran_conflict"].probability == 0.45
@@ -68,7 +68,7 @@ class TestDAGEngine:
                 "probability_changes": [], "removed_nodes": [], "removed_edges": [],
             },
         }
-        with patch.object(engine, "_call_llm", return_value=llm_response):
+        with patch.object(engine, "_call_llm_for_domain", return_value=llm_response):
             updated = engine.update(dag, [_sample_event()])
         assert not updated.has_cycle()
         assert len(updated.edges) == 1
@@ -81,7 +81,7 @@ class TestDAGEngine:
             "updates": {"new_nodes": [], "new_edges": [],
                         "probability_changes": [], "removed_nodes": [], "removed_edges": []},
         }
-        with patch.object(engine, "_call_llm", return_value=llm_response):
+        with patch.object(engine, "_call_llm_for_domain", return_value=llm_response):
             updated = engine.update(dag, [_sample_event()])
         assert len(updated.nodes) == 1
         assert updated.nodes["us_iran_conflict"].probability == 0.35
