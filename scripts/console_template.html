@@ -174,7 +174,7 @@ function overviewTab(){
   // Regime
   html+=`<div class="card" style="border-color:${r.switched?'#e0a83044':'var(--border)'}">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-      <span style="font-size:12px;font-weight:800">体制</span>
+      <span style="font-size:12px;font-weight:800">Regime</span>
       <span class="regime-badge ${r.current==='B'?'regime-B':'regime-A'}">${r.current} ${r.current==='B'?'策略型':'结构型'}</span>
       ${r.switched?tag('切换自 '+r.previous,'tag-red'):''}
     </div>
@@ -468,7 +468,7 @@ function executionTab(){
   if(RUN.invalidation.regime_level){
     const ri=RUN.invalidation.regime_level;
     html+=`<div class="inv-card" style="border-left-color:var(--red);background:var(--redD)">
-      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('c · 体制','tag-red')}${ri.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('c · Regime','tag-red')}${ri.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
       <div style="font-size:8.5px;color:var(--tM)">${ri.contradiction}</div>
     </div>`;
   }
