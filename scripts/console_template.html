@@ -525,6 +525,39 @@ function auditTab(){
     });
     html+=`</div>`;
   }
+
+  // Graph Proposals (Phase 4)
+  const gp=RUN.graph_proposals||[];
+  if(gp.length){
+    html+=`<div style="margin-top:16px"><div style="font-size:11px;font-weight:700;color:var(--cyan);margin-bottom:8px;display:flex;align-items:center;gap:6px">${tag('P4','tag-dim')} Graph Proposals (${gp.length})</div>`;
+    const levelC={1:'var(--green)',2:'var(--gold)',3:'var(--red)'};
+    const levelL={1:'L1 Auto',2:'L2 Deferred',3:'L3 Human'};
+    const typeI={add_node:'+node',remove_node:'-node',add_edge:'+edge',remove_edge:'-edge',retype_node:'retype',restructure_path:'restruct'};
+    gp.forEach(p=>{
+      const lv=p.approval_level||2;
+      const lc=levelC[lv]||'var(--gold)';
+      html+=`<div style="background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:5px;border-left:3px solid ${lc}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+          <div style="display:flex;align-items:center;gap:6px">
+            ${tag(levelL[lv]||'L?',lv===1?'tag-green':lv===3?'tag-red':'tag-gold')}
+            ${tag(typeI[p.type]||p.type,lv===1?'tag-green':lv===3?'tag-red':'tag-gold')}
+            <span style="font-size:10px;font-weight:700">${p.payload&&p.payload.label?p.payload.label:p.target}</span>
+          </div>
+          <div style="display:flex;gap:4px">
+            ${tag(p.status||'pending',p.status==='applied'?'tag-green':p.status==='rejected'?'tag-red':'tag-gold')}
+            ${tag(p.urgency||'next_run','tag-dim')}
+          </div>
+        </div>
+        ${p.justification?`<div style="font-size:8.5px;color:var(--tM);line-height:1.5;margin-bottom:4px">${p.justification}</div>`:''}
+        <div style="display:flex;gap:8px;font-size:8px;color:var(--tD)">
+          ${p.source_model?`<span>模型: ${p.source_model}</span>`:''}
+          ${p.impact_assessment?`<span>影响: ${(p.impact_assessment.affected_nodes||[]).length} nodes${p.impact_assessment.regime_impact?' <span style="color:var(--red)">⚠ Regime</span>':''}</span>`:''}
+        </div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+
   return html;
 }
 

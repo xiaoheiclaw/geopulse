@@ -318,6 +318,19 @@ class Orchestrator:
                 run_id=run_output.meta.run_id,
             )
 
+        # Phase 4: Graph Evolution — process structural proposals
+        if run_output.graph_proposals:
+            from .graph_evolution import GraphEvolution
+            graph_evo = GraphEvolution(data_dir=self.data_dir)
+            evo_result = graph_evo.process_proposals(
+                run_output, auto_apply_l1=True
+            )
+            logger.info(
+                f"Phase 4: {evo_result['applied']} applied, "
+                f"{evo_result['pending']} pending, "
+                f"{evo_result['rejected']} rejected"
+            )
+
         # Archive RunOutput
         self.run_storage.save(run_output)
 

@@ -83,6 +83,57 @@ class SHSAction(str, Enum):
     deprecate = "deprecate"
 
 
+class ProposalType(str, Enum):
+    add_node = "add_node"
+    remove_node = "remove_node"
+    add_edge = "add_edge"
+    remove_edge = "remove_edge"
+    retype_node = "retype_node"
+    restructure_path = "restructure_path"
+
+
+class ProposalUrgency(str, Enum):
+    immediate = "immediate"
+    next_run = "next_run"
+    review = "review"
+
+
+class ApprovalLevel(int, Enum):
+    L1_AUTO = 1       # Low risk: leaf additions, new downstream edges
+    L2_DEFERRED = 2   # Medium risk: retype, insert on main path, new S-node
+    L3_HUMAN = 3      # High risk: delete, restructure, regime-affecting
+
+
+# ── 0. GraphProposal (Phase 4: Graph Evolution) ─────────────────────
+
+class ImpactAssessment(BaseModel):
+    """GraphProposal 的影响评估"""
+    affected_nodes: list[str] = Field(default_factory=list)
+    affected_edges: list[str] = Field(default_factory=list)
+    regime_impact: bool = Field(False, description="是否可能影响 Regime 判定")
+    scenario_impact: list[str] = Field(default_factory=list)
+
+
+class GraphProposal(BaseModel):
+    """Phase 4: DAG 结构修改提案
+
+    Agent 提案，代码验证，人类审批（可选）。
+    概率回写是连续/可逆/局部的；结构修改是离散/难逆/全局的。
+    """
+    proposal_id: str
+    type: ProposalType
+    target: str = Field(..., description="目标节点或边 ID")
+    payload: dict = Field(default_factory=dict, description="修改内容")
+    justification: str = Field("", description="修改理由")
+    source_evidence: list[str] = Field(default_factory=list)
+    source_model: str = Field("", description="提出修改的模型 ID")
+    impact_assessment: ImpactAssessment = Field(default_factory=ImpactAssessment)
+    urgency: ProposalUrgency = Field(ProposalUrgency.next_run)
+    auto_approvable: bool = Field(False, description="是否可自动批准")
+    approval_level: ApprovalLevel = Field(ApprovalLevel.L2_DEFERRED)
+    status: str = Field("pending", description="pending | approved | rejected | applied")
+
+
 # ── 1. RunMeta ───────────────────────────────────────────────────────
 
 class RunMeta(BaseModel):
@@ -358,6 +409,7 @@ class RunOutput(BaseModel):
     invalidation: InvalidationSet = Field(default_factory=InvalidationSet)
     model_trace: ModelTrace = Field(default_factory=ModelTrace)
     shs_writeback: list[SHSWriteback] = Field(default_factory=list)
+    graph_proposals: list[GraphProposal] = Field(default_factory=list, description="Phase 4: DAG 结构修改提案")
 
     # ── Dispatch 约束验证 ──
 
