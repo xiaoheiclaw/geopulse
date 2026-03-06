@@ -443,16 +443,19 @@ function renderDAGTree() {
     (parentMap[e.target] = parentMap[e.target] || []).push(e.source);
   });
 
-  // Compute order (longest-path from roots)
+  // Compute order: longest path from roots (Bellman-Ford relaxation)
   const order = {};
-  const visited = new Set();
-  function computeOrder(nid, d) {
-    if (visited.has(nid)) { order[nid] = Math.max(order[nid]||0, d); return; }
-    visited.add(nid);
-    order[nid] = Math.max(order[nid]||0, d);
-    (childMap[nid]||[]).forEach(c => computeOrder(c.target, d+1));
+  Object.keys(N).forEach(id => order[id] = 0);
+  for (let iter = 0; iter < 20; iter++) {
+    let changed = false;
+    E.forEach(e => {
+      if (order[e.source] !== undefined && order[e.target] !== undefined) {
+        const nd = order[e.source] + 1;
+        if (nd > order[e.target]) { order[e.target] = nd; changed = true; }
+      }
+    });
+    if (!changed) break;
   }
-  Object.keys(N).filter(id => !parentMap[id]).forEach(id => computeOrder(id, 0));
 
   // Domain colors
   const DC = {'军事':'#ef4444','能源':'#f59e0b','经济':'#a78bfa','金融':'#6366f1','政治':'#10b981','科技':'#06b6d4','社会':'#f97316'};
