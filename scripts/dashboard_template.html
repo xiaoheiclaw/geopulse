@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>战忽局 GeoPulse v7.4 — 决策面板</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f1117;--card:#161923;--card2:#1c1f2e;--border:#1f2937;--border2:#374151;--text:#e5e7eb;--dim:#6b7280;--dim2:#9ca3af;--accent:#a78bfa;--red:#ef4444;--green:#10b981;--yellow:#f59e0b;--blue:#6366f1;--orange:#f97316;--cyan:#22d3ee}
+body{font-family:'IBM Plex Sans','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.container{max-width:1200px;margin:0 auto;padding:16px 20px}
+h1{font-size:18px;font-weight:700;color:#f9fafb}
+.subtitle{font-size:11px;color:var(--dim);font-family:'IBM Plex Mono';margin-top:4px}
+.tabs{display:flex;gap:1px;border-bottom:1px solid var(--border);margin:14px 0;overflow-x:auto}
+.tab{padding:7px 14px;border:none;border-bottom:2px solid transparent;background:transparent;color:var(--dim);cursor:pointer;font-size:12px;font-weight:500;white-space:nowrap;font-family:inherit;transition:color .2s}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:hover{color:var(--dim2)}
+.panel{display:none}.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:12px 14px;margin-bottom:10px}
+.card-title{font-size:12px;font-weight:600;margin-bottom:8px;color:#f3f4f6}
+.card-title .badge{margin-left:6px}
+.mono{font-family:'IBM Plex Mono'}
+.badge{font-size:9px;padding:1px 6px;border-radius:3px;font-weight:600;display:inline-block}
+.badge-red{background:rgba(239,68,68,.2);color:#fca5a5}
+.badge-green{background:rgba(16,185,129,.2);color:#6ee7b7}
+.badge-yellow{background:rgba(245,158,11,.2);color:#fcd34d}
+.badge-blue{background:rgba(99,102,241,.2);color:#a5b4fc}
+.badge-purple{background:rgba(167,139,250,.2);color:#c4b5fd}
+.badge-cyan{background:rgba(34,211,238,.2);color:#67e8f9}
+.flex{display:flex;gap:12px;flex-wrap:wrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+/* Stat box */
+.stat{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:10px 14px}
+.stat-label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.stat-value{font-size:22px;font-weight:700;font-family:'IBM Plex Mono';margin-top:2px}
+.stat-sub{font-size:10px;color:var(--dim2);margin-top:2px}
+/* Scenario card */
+.scenario{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:14px 16px;margin-bottom:10px;border-left:3px solid var(--border2);transition:border-color .2s}
+.scenario:hover{border-left-color:var(--accent)}
+.scenario-header{display:flex;justify-content:space-between;align-items:center}
+.scenario-label{font-size:13px;font-weight:600}
+.scenario-weight{font-size:20px;font-weight:700;font-family:'IBM Plex Mono';color:var(--accent)}
+.scenario-delta{font-size:10px;font-family:'IBM Plex Mono';margin-left:4px}
+.section-label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:10px;margin-bottom:4px}
+.premise-list{padding-left:16px;font-size:11px;color:var(--dim2);line-height:1.7}
+.antithesis{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.2);border-radius:4px;padding:8px 12px;font-size:11px;color:#fca5a5;margin-top:6px;line-height:1.7}
+.open-q{font-size:11px;color:var(--dim2);padding-left:12px;border-left:2px solid var(--border2);margin-top:4px;line-height:1.7}
+/* Stacked bar */
+.stacked{height:28px;background:var(--border);border-radius:4px;display:flex;overflow:hidden;margin-bottom:8px}
+.stacked-seg{display:flex;align-items:center;justify-content:center;border-right:1px solid var(--bg);transition:width .4s}
+.stacked-seg span{font-size:9px;font-weight:700;color:#fff}
+/* Engine table */
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{padding:7px 8px;text-align:left;color:var(--dim2);font-weight:500;border-bottom:2px solid var(--border2);font-size:10px}
+td{padding:7px 8px;border-bottom:1px solid var(--border)}
+tr:hover{background:rgba(167,139,250,.04)}
+.prob-bar{display:inline-block;height:12px;border-radius:2px;min-width:4px;vertical-align:middle}
+/* Position cards */
+.pos-card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:12px 14px;margin-bottom:8px;border-left:3px solid var(--green)}
+.pos-card.short{border-left-color:var(--red)}
+.pos-card.hedge{border-left-color:var(--yellow)}
+.pos-header{display:flex;justify-content:space-between;align-items:center}
+.pos-asset{font-size:13px;font-weight:600}
+.pos-dir{font-size:11px;font-weight:600;font-family:'IBM Plex Mono'}
+.pos-body{font-size:11px;color:var(--dim2);margin-top:6px;line-height:1.6}
+.pos-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.pos-meta-item{background:var(--bg);padding:6px 8px;border-radius:3px;border:1px solid var(--border)}
+.pos-meta-item .label{font-size:9px;color:var(--dim)}
+.pos-meta-item .val{font-size:10px;color:var(--dim2);margin-top:2px}
+/* Trigger card */
+.trigger-card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:10px 14px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start}
+.trigger-urgency{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.trigger-urgency.act{background:var(--red);box-shadow:0 0 6px rgba(239,68,68,.5)}
+.trigger-urgency.alert{background:var(--yellow);box-shadow:0 0 6px rgba(245,158,11,.4)}
+.trigger-urgency.watch{background:var(--dim)}
+.trigger-body{flex:1}
+.trigger-signal{font-size:12px;font-weight:500}
+.trigger-condition{font-size:10px;color:var(--dim2);margin-top:2px}
+.trigger-action{font-size:10px;color:var(--accent);margin-top:4px}
+/* Thesis card */
+.thesis{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:14px 16px;margin-bottom:10px}
+.thesis-window{font-family:'IBM Plex Mono';font-size:11px;font-weight:600}
+.thesis-text{font-size:12px;margin-top:6px;line-height:1.7}
+.thesis-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.thesis-meta-item{font-size:10px;color:var(--dim2)}
+.thesis-meta-item strong{color:var(--dim)}
+/* Equilibria */
+.eq-bar{display:flex;gap:2px;margin-top:6px}
+.eq-seg{height:20px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:600;color:#fff;position:relative;cursor:pointer;transition:opacity .2s}
+.eq-seg:hover{opacity:.8}
+.eq-tooltip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#1f2937;padding:4px 8px;border-radius:3px;font-size:9px;white-space:nowrap;z-index:10;margin-bottom:4px}
+.eq-seg:hover .eq-tooltip{display:block}
+/* Node selector for causal tree */
+.node-list{width:220px;flex-shrink:0;max-height:70vh;overflow-y:auto}
+.node-btn{display:block;width:100%;text-align:left;padding:6px 10px;margin-bottom:2px;background:var(--card);border:1px solid var(--border);border-radius:4px;cursor:pointer;color:var(--dim2);font-size:11px;font-family:inherit}
+.node-btn.active{background:#1e1b4b;border-color:var(--blue);color:var(--accent)}
+.node-btn .prob{font-family:'IBM Plex Mono';font-size:10px;color:var(--dim)}
+.node-detail{flex:1;min-width:300px}
+/* SHS */
+.shs-card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:12px 14px;margin-bottom:8px;border-left:3px solid var(--cyan)}
+.shs-title{font-size:12px;font-weight:600}
+.shs-body{font-size:11px;color:var(--dim2);margin-top:6px;line-height:1.7}
+/* Divergence */
+.div-card{background:var(--card);border:1px solid rgba(245,158,11,.3);border-radius:6px;padding:12px 14px;margin-bottom:8px}
+.div-models{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.div-model{background:var(--bg);border-radius:4px;padding:8px 10px;font-size:10px;line-height:1.6}
+/* Invalidation */
+.inv-card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:10px 14px;margin-bottom:6px;font-size:11px}
+.inv-card .condition{color:var(--yellow)}
+.inv-card .action-text{color:var(--accent);margin-top:4px}
+/* Model trace */
+.model-row{display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:11px}
+.model-id{font-weight:600;width:140px;flex-shrink:0}
+.model-role{width:24px;text-align:center}
+.model-summary{flex:1;color:var(--dim2);font-size:10px}
+@media(max-width:700px){.grid2,.grid3,.grid4{grid-template-columns:1fr}.flex{flex-direction:column}.node-list{width:100%;max-height:200px}.thesis-meta,.pos-meta,.div-models{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container" id="app"></div>
+<script>
+const DAG = __DAG_DATA__;
+const RUN = __RUN_OUTPUT__;
+
+const WINDOW_LABELS = {W1_5:'W1-5 冲击期',W6_16:'W6-16 消耗期',W17_25plus:'W17-25+ 长尾'};
+const WINDOW_COLORS = {W1_5:'#ef4444',W6_16:'#f59e0b',W17_25plus:'#6366f1'};
+const SCENARIO_COLORS = ['#a78bfa','#f59e0b','#10b981','#ef4444','#6366f1','#22d3ee'];
+const DIR_ICONS = {long:'▲',short:'▼',hedge:'◆'};
+const DIR_COLORS_MAP = {long:'#10b981',short:'#ef4444',hedge:'#f59e0b'};
+const DOMAIN_COLORS = {'军事':'#ef4444','能源':'#f59e0b','经济':'#a78bfa','金融':'#6366f1','政治':'#10b981','社会':'#22d3ee','外交':'#ec4899','科技':'#8b5cf6'};
+const TYPE_BADGES = {M:['机械','badge-blue'],S:['策略','badge-purple'],H:['混合','badge-yellow']};
+
+let state = {tab:'overview'};
+
+function h(tag,attrs,...ch){const el=document.createElement(tag);if(attrs)Object.entries(attrs).forEach(([k,v])=>{if(k==='className')el.className=v;else if(k.startsWith('on'))el.addEventListener(k.slice(2).toLowerCase(),v);else if(k==='innerHTML')el.innerHTML=v;else if(k==='style'&&typeof v==='object')Object.assign(el.style,v);else el.setAttribute(k,v)});ch.flat(9).forEach(c=>{if(c==null)return;el.appendChild(typeof c==='string'?document.createTextNode(c):c)});return el}
+
+function badge(text,cls){return h('span',{className:`badge ${cls}`},text)}
+
+function pctColor(p){return p>=0.8?'var(--red)':p>=0.6?'var(--orange)':p>=0.4?'var(--yellow)':p>=0.2?'var(--green)':'var(--dim)'}
+
+function pct(p){return(p*100).toFixed(0)+'%'}
+
+function probBar(p,w){return h('span',{className:'prob-bar',style:{width:(p*w)+'px',background:pctColor(p)}})}
+
+function formatTime(ts){try{const d=new Date(ts);return d.toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}catch(e){return ts}}
+
+function renderOverview(){
+  const r=RUN,m=r.meta,reg=r.regime;
+  const nodes=DAG.nodes;
+  const nodeCount=Object.keys(nodes).length;
+  const edgeCount=DAG.edges.length;
+
+  // Compute GRI from DAG
+  const probs=Object.values(nodes).filter(n=>n.node_type!=='event').map(n=>n.probability);
+  const gri=probs.length?(probs.reduce((a,b)=>a+b,0)/probs.length*100).toFixed(1):'N/A';
+
+  const panel=h('div',{className:'panel active',id:'p-overview'});
+
+  // Stats row
+  const stats=h('div',{className:'grid4',style:{marginBottom:'12px'}},
+    h('div',{className:'stat'},h('div',{className:'stat-label'},'全局风险指数'),h('div',{className:'stat-value',style:{color:gri>80?'var(--red)':gri>60?'var(--orange)':'var(--green)'}},gri),h('div',{className:'stat-sub'},`${nodeCount} 节点 / ${edgeCount} 边 / v${DAG.version}`)),
+    h('div',{className:'stat'},h('div',{className:'stat-label'},'Regime'),h('div',{className:'stat-value',style:{color:'var(--accent)'}},reg.current),h('div',{className:'stat-sub'},`联合得分 ${reg.joint_score.toFixed(3)} | SAD ${reg.factor_scores.SAD.toFixed(2)}`)),
+    h('div',{className:'stat'},h('div',{className:'stat-label'},'场景分支'),h('div',{className:'stat-value'},r.scenarios.length+''),h('div',{className:'stat-sub'},`主分支: ${r.scenarios[0]?.label.slice(0,8)||'N/A'} ${pct(r.scenarios[0]?.weight||0)}`)),
+    h('div',{className:'stat'},h('div',{className:'stat-label'},'运行信息'),h('div',{className:'stat-value mono',style:{fontSize:'13px'}},m.run_id.replace('run_','')),h('div',{className:'stat-sub'},`${formatTime(m.timestamp)} | ${m.trigger_type} | ${m.evidence_count} 证据`))
+  );
+  panel.appendChild(stats);
+
+  // Scenario weight stacked bar
+  const barCard=h('div',{className:'card'});
+  barCard.appendChild(h('div',{className:'card-title'},'场景权重分布'));
+  const bar=h('div',{className:'stacked'});
+  r.scenarios.forEach((s,i)=>{
+    const seg=h('div',{className:'stacked-seg',style:{width:pct(s.weight),background:SCENARIO_COLORS[i%SCENARIO_COLORS.length]}});
+    if(s.weight>=0.1)seg.appendChild(h('span',null,`${s.label.slice(0,6)} ${pct(s.weight)}`));
+    bar.appendChild(seg);
+  });
+  barCard.appendChild(bar);
+  // Legend
+  const legend=h('div',{style:{display:'flex',gap:'12px',flexWrap:'wrap',marginTop:'4px'}});
+  r.scenarios.forEach((s,i)=>{
+    legend.appendChild(h('span',{style:{fontSize:'10px',color:'var(--dim2)'}},
+      h('span',{style:{display:'inline-block',width:'8px',height:'8px',borderRadius:'2px',background:SCENARIO_COLORS[i],marginRight:'4px',verticalAlign:'middle'}}),
+      `${s.label} (${pct(s.weight)})`
+    ));
+  });
+  barCard.appendChild(legend);
+  panel.appendChild(barCard);
+
+  // Key probability changes (engine result highlights)
+  const probCard=h('div',{className:'card'});
+  probCard.appendChild(h('div',{className:'card-title'},'引擎概率评估 ',badge(`${r.engine_result.mechanical_nodes.length}M + ${r.engine_result.strategic_nodes.length}S + ${r.engine_result.hybrid_nodes.length}H`,'badge-blue')));
+  // Hybrid highlights
+  if(r.engine_result.hybrid_nodes.length){
+    const hybT=h('table');
+    hybT.appendChild(h('thead',null,h('tr',null,h('th',null,'混合节点'),h('th',null,'L3基线'),h('th',null,'L3.5修正'),h('th',null,'Δ'),h('th',null,'收敛'))));
+    const hybB=h('tbody');
+    r.engine_result.hybrid_nodes.forEach(hn=>{
+      const nodeLabel=(nodes[hn.node_id]||{}).label||hn.node_id;
+      const color=hn.delta>0?'var(--red)':hn.delta<0?'var(--green)':'var(--dim2)';
+      hybB.appendChild(h('tr',null,
+        h('td',null,nodeLabel),
+        h('td',{className:'mono'},pct(hn.baseline_prob)),
+        h('td',{className:'mono',style:{color}},pct(hn.override_prob)),
+        h('td',{className:'mono',style:{color}},(hn.delta>0?'+':'')+pct(hn.delta)),
+        h('td',null,hn.iteration_converged?'✅':'⚠️')
+      ));
+    });
+    hybT.appendChild(hybB);
+    probCard.appendChild(hybT);
+  }
+  panel.appendChild(probCard);
+
+  // Bottleneck nodes
+  const bnCard=h('div',{className:'card'});
+  bnCard.appendChild(h('div',{className:'card-title'},'🎯 瓶颈节点 ',badge(r.bottlenecks.length+'','badge-red')));
+  const bnT=h('table');
+  bnT.appendChild(h('thead',null,h('tr',null,h('th',null,'节点'),h('th',null,'类型'),h('th',null,'路径重要度'),h('th',null,'SAD/PD/NCC'),h('th',null,'标记'))));
+  const bnB=h('tbody');
+  r.bottlenecks.sort((a,b)=>b.path_importance-a.path_importance).forEach(bn=>{
+    const [typeName,typeCls]=TYPE_BADGES[bn.type]||['?','badge-blue'];
+    const flags=[];
+    if(bn.irreversible)flags.push('🔒不可逆');
+    if(bn.locked)flags.push('📌锁定');
+    bnB.appendChild(h('tr',null,
+      h('td',{style:{fontWeight:'500'}},bn.label),
+      h('td',null,badge(typeName,typeCls)),
+      h('td',null,h('span',{className:'mono'},pct(bn.path_importance)),probBar(bn.path_importance,60)),
+      h('td',{className:'mono',style:{fontSize:'10px',color:'var(--dim2)'}},`${bn.factor_scores.SAD.toFixed(1)}/${bn.factor_scores.PD.toFixed(1)}/${bn.factor_scores.NCC.toFixed(1)}`),
+      h('td',{style:{fontSize:'10px'}},flags.join(' ')||'—')
+    ));
+  });
+  bnT.appendChild(bnB);
+  bnCard.appendChild(bnT);
+  panel.appendChild(bnCard);
+
+  // SHS
+  if(r.shs_writeback&&r.shs_writeback.length){
+    const shsCard=h('div',{className:'card'});
+    shsCard.appendChild(h('div',{className:'card-title'},'🧠 Standing Hypothesis Set ',badge(r.shs_writeback.length+' 条','badge-cyan')));
+    r.shs_writeback.forEach(sw=>{
+      shsCard.appendChild(h('div',{className:'shs-card'},
+        h('div',{className:'shs-title'},sw.hypothesis_ref,' ',badge(sw.action,'badge-green')),
+        h('div',{className:'shs-body'},sw.new_value),
+        h('div',{style:{fontSize:'9px',color:'var(--dim)',marginTop:'4px'}},`触发: ${sw.trigger_reason}`)
+      ));
+    });
+    panel.appendChild(shsCard);
+  }
+
+  return panel;
+}
+
+function renderScenarios(){
+  const panel=h('div',{className:'panel',id:'p-scenarios'});
+
+  // Stacked bar
+  const bar=h('div',{className:'stacked',style:{marginBottom:'14px'}});
+  RUN.scenarios.forEach((s,i)=>{
+    const seg=h('div',{className:'stacked-seg',style:{width:pct(s.weight),background:SCENARIO_COLORS[i%SCENARIO_COLORS.length]}});
+    if(s.weight>=0.08)seg.appendChild(h('span',null,pct(s.weight)));
+    bar.appendChild(seg);
+  });
+  panel.appendChild(bar);
+
+  RUN.scenarios.forEach((s,i)=>{
+    const card=h('div',{className:'scenario',style:{borderLeftColor:SCENARIO_COLORS[i%SCENARIO_COLORS.length]}});
+
+    // Header
+    const header=h('div',{className:'scenario-header'},
+      h('div',null,
+        h('span',{className:'scenario-label'},s.label),
+        s.is_new?badge('NEW','badge-green'):'',
+        s.is_from_divergence?badge('分歧催生','badge-yellow'):''
+      ),
+      h('div',null,
+        h('span',{className:'scenario-weight'},pct(s.weight))
+      )
+    );
+    card.appendChild(header);
+
+    // Premises
+    card.appendChild(h('div',{className:'section-label'},'前提条件'));
+    const ul=h('ul',{className:'premise-list'});
+    s.premises.forEach(p=>ul.appendChild(h('li',null,p)));
+    card.appendChild(ul);
+
+    // Antithesis
+    if(s.antithesis){
+      card.appendChild(h('div',{className:'section-label'},'⚔️ 反论 (D类审计)'));
+      card.appendChild(h('div',{className:'antithesis'},s.antithesis));
+    }
+
+    // Open questions
+    if(s.open_questions&&s.open_questions.length){
+      card.appendChild(h('div',{className:'section-label'},'❓ 待解决问题'));
+      s.open_questions.forEach(q=>{
+        card.appendChild(h('div',{className:'open-q'},'• '+q));
+      });
+    }
+
+    // Source models
+    if(s.source_models&&s.source_models.length){
+      const models=h('div',{style:{marginTop:'8px',display:'flex',gap:'4px'}});
+      s.source_models.forEach(m=>models.appendChild(badge(m,'badge-blue')));
+      card.appendChild(models);
+    }
+
+    panel.appendChild(card);
+  });
+
+  // Divergence flags
+  if(RUN.model_trace.divergence_flags&&RUN.model_trace.divergence_flags.length){
+    panel.appendChild(h('div',{className:'card-title',style:{marginTop:'16px'}},'⚡ 模型分歧'));
+    RUN.model_trace.divergence_flags.forEach(df=>{
+      const card=h('div',{className:'div-card'},
+        h('div',{style:{fontSize:'12px',fontWeight:'600'}},df.topic,' ',badge(df.resolution,'badge-yellow')),
+        h('div',{style:{fontSize:'10px',color:'var(--dim)',marginTop:'4px'}},`Layer: ${df.layer}`),
+        h('div',{className:'div-models'},
+          h('div',{className:'div-model'},h('strong',{style:{color:'var(--green)'}},'🟢 '+df.model_a),h('br'),df.model_a_says),
+          h('div',{className:'div-model'},h('strong',{style:{color:'var(--red)'}},'🔴 '+df.model_b),h('br'),df.model_b_says)
+        )
+      );
+      if(df.spawned_scenario)card.appendChild(h('div',{style:{fontSize:'10px',color:'var(--accent)',marginTop:'6px'}},`→ 催生分支: ${df.spawned_scenario}`));
+      panel.appendChild(card);
+    });
+  }
+
+  return panel;
+}
+
+function renderEngine(){
+  const panel=h('div',{className:'panel',id:'p-engine'});
+  const er=RUN.engine_result;
+  const nodes=DAG.nodes;
+
+  panel.appendChild(h('div',{style:{fontSize:'11px',color:'var(--dim2)',marginBottom:'10px'}},
+    `Regime ${er.regime_used} | ${er.mechanical_nodes.length} 机械 + ${er.strategic_nodes.length} 策略 + ${er.hybrid_nodes.length} 混合`
+  ));
+
+  // Mechanical nodes
+  const mechCard=h('div',{className:'card'});
+  mechCard.appendChild(h('div',{className:'card-title'},'⚙️ 机械节点 (L3 Noisy-OR) ',badge(er.mechanical_nodes.length+'','badge-blue')));
+  const mT=h('table');
+  mT.appendChild(h('thead',null,h('tr',null,h('th',null,'节点'),h('th',null,'概率'),h('th',{style:{width:'120px'}},'\u00A0'),h('th',null,'影响度'),h('th',null,'上游驱动'))));
+  const mB=h('tbody');
+  er.mechanical_nodes.sort((a,b)=>b.propagated_prob-a.propagated_prob).forEach(mn=>{
+    const label=(nodes[mn.node_id]||{}).label||mn.node_id;
+    const drivers=mn.upstream_drivers.map(d=>(nodes[d]||{}).label||d).join(', ');
+    mB.appendChild(h('tr',null,
+      h('td',{style:{fontWeight:'500',maxWidth:'200px'}},label),
+      h('td',{className:'mono'},pct(mn.propagated_prob)),
+      h('td',null,probBar(mn.propagated_prob,100)),
+      h('td',{className:'mono'},mn.impact_magnitude.toFixed(2)),
+      h('td',{style:{fontSize:'10px',color:'var(--dim2)',maxWidth:'300px'}},drivers)
+    ));
+  });
+  mT.appendChild(mB);
+  mechCard.appendChild(mT);
+  panel.appendChild(mechCard);
+
+  // Strategic nodes
+  if(er.strategic_nodes.length){
+    const stratCard=h('div',{className:'card'});
+    stratCard.appendChild(h('div',{className:'card-title'},'♟️ 策略节点 (L3.5 博弈论) ',badge(er.strategic_nodes.length+'','badge-purple')));
+    er.strategic_nodes.forEach(sn=>{
+      const label=(nodes[sn.node_id]||{}).label||sn.node_id;
+      const box=h('div',{style:{background:'var(--bg)',borderRadius:'4px',padding:'10px 12px',marginBottom:'8px',border:'1px solid var(--border)'}});
+      box.appendChild(h('div',{style:{display:'flex',justifyContent:'space-between',alignItems:'center'}},
+        h('span',{style:{fontWeight:'600',fontSize:'12px'}},label),
+        h('span',{className:'mono',style:{fontSize:'10px',color:'var(--dim2)'}},`承诺可信度 ${sn.commitment_score.toFixed(2)} | 退出成本比 ${sn.exit_cost_ratio.toFixed(1)}x`)
+      ));
+
+      // Equilibria bar
+      if(sn.equilibria.length){
+        const eqBar=h('div',{className:'eq-bar'});
+        const eqColors=['#6366f1','#a78bfa','#c4b5fd','#818cf8'];
+        sn.equilibria.forEach((eq,j)=>{
+          const isSelected=eq.eq_id===sn.selected_eq;
+          const seg=h('div',{className:'eq-seg',style:{
+            width:pct(eq.probability),flex:eq.probability<0.05?'none':'auto',minWidth:'40px',
+            background:eqColors[j%eqColors.length],
+            opacity:isSelected?1:0.5,
+            border:isSelected?'2px solid #fff':'none'
+          }},
+            h('span',null,pct(eq.probability)),
+            h('div',{className:'eq-tooltip'},`${eq.label}${eq.is_focal?' ⭐焦点':''}${isSelected?' ✓选定':''}`)
+          );
+          eqBar.appendChild(seg);
+        });
+        box.appendChild(eqBar);
+
+        // Eq labels
+        const eqLegend=h('div',{style:{display:'flex',gap:'10px',marginTop:'4px',flexWrap:'wrap'}});
+        sn.equilibria.forEach((eq,j)=>{
+          const isSelected=eq.eq_id===sn.selected_eq;
+          eqLegend.appendChild(h('span',{style:{fontSize:'10px',color:isSelected?'var(--text)':'var(--dim2)'}},
+            h('span',{style:{display:'inline-block',width:'6px',height:'6px',borderRadius:'1px',background:eqColors[j%eqColors.length],marginRight:'3px',verticalAlign:'middle'}}),
+            eq.label,eq.is_focal?' ⭐':'',isSelected?' ✓':''
+          ));
+        });
+        box.appendChild(eqLegend);
+      }
+
+      stratCard.appendChild(box);
+    });
+    panel.appendChild(stratCard);
+  }
+
+  // Hybrid nodes
+  if(er.hybrid_nodes.length){
+    const hybCard=h('div',{className:'card'});
+    hybCard.appendChild(h('div',{className:'card-title'},'🔀 混合节点 (L3→L3.5 修正) ',badge(er.hybrid_nodes.length+'','badge-yellow')));
+    er.hybrid_nodes.forEach(hn=>{
+      const label=(nodes[hn.node_id]||{}).label||hn.node_id;
+      const color=hn.delta>0?'var(--red)':'var(--green)';
+      const box=h('div',{style:{background:'var(--bg)',borderRadius:'4px',padding:'10px 12px',marginBottom:'6px',border:'1px solid var(--border)',display:'flex',justifyContent:'space-between',alignItems:'center'}},
+        h('div',null,
+          h('span',{style:{fontWeight:'500',fontSize:'12px'}},label),
+          h('span',{style:{fontSize:'10px',color:'var(--dim2)',marginLeft:'8px'}},`下游重算: ${hn.recomp_subgraph.length} 节点`)
+        ),
+        h('div',{className:'mono',style:{display:'flex',gap:'8px',alignItems:'center',fontSize:'12px'}},
+          h('span',{style:{color:'var(--dim2)'}},pct(hn.baseline_prob)),
+          h('span',{style:{color:'var(--dim)'}},`→`),
+          h('span',{style:{color,fontWeight:'600'}},pct(hn.override_prob)),
+          h('span',{style:{fontSize:'10px',color}},(hn.delta>0?'+':'')+pct(hn.delta))
+        )
+      );
+      hybCard.appendChild(box);
+    });
+    panel.appendChild(hybCard);
+  }
+
+  // Model trace
+  const traceCard=h('div',{className:'card'});
+  traceCard.appendChild(h('div',{className:'card-title'},'📋 模型调用记录 ',badge(`${RUN.model_trace.total_model_calls} calls / ${RUN.model_trace.total_cost}`,'badge-blue')));
+  RUN.model_trace.models_loaded.forEach(mc=>{
+    const roleColor=mc.role==='P'?'var(--green)':'var(--red)';
+    traceCard.appendChild(h('div',{className:'model-row'},
+      h('span',{className:'model-id'},mc.model_id),
+      h('span',{className:'model-role',style:{color:roleColor,fontWeight:'700'}},mc.role),
+      h('span',null,badge(mc.layer,'badge-blue'),' ',badge(mc.cost,'badge-purple')),
+      h('span',{className:'model-summary'},mc.output_summary)
+    ));
+  });
+  panel.appendChild(traceCard);
+
+  return panel;
+}
+
+function renderExecution(){
+  const panel=h('div',{className:'panel',id:'p-execution'});
+
+  // Horizon theses
+  panel.appendChild(h('div',{className:'card-title'},'📐 交易命题'));
+  RUN.horizon_theses.forEach(ht=>{
+    const wColor=WINDOW_COLORS[ht.window]||'var(--dim)';
+    const card=h('div',{className:'thesis',style:{borderLeft:`3px solid ${wColor}`}});
+    card.appendChild(h('div',{style:{display:'flex',justifyContent:'space-between'}},
+      h('span',{className:'thesis-window',style:{color:wColor}},WINDOW_LABELS[ht.window]||ht.window),
+      h('span',{className:'mono',style:{fontSize:'11px'}},`置信度 ${pct(ht.confidence)}`)
+    ));
+    card.appendChild(h('div',{className:'thesis-text'},ht.thesis));
+    card.appendChild(h('div',{style:{marginTop:'8px',fontSize:'11px',color:'var(--accent)'}},`💹 ${ht.tradeable_as}`));
+    card.appendChild(h('div',{className:'thesis-meta'},
+      h('div',{className:'thesis-meta-item'},h('strong',null,'关键假设: '),ht.key_assumption),
+      h('div',{className:'thesis-meta-item'},h('strong',null,'失效条件: '),ht.kill_condition)
+    ));
+    panel.appendChild(card);
+  });
+
+  // Positions
+  panel.appendChild(h('div',{className:'card-title',style:{marginTop:'16px'}},'📊 仓位建议'));
+  RUN.execution_plan.positions.forEach(pos=>{
+    const card=h('div',{className:`pos-card ${pos.direction}`});
+    card.appendChild(h('div',{className:'pos-header'},
+      h('span',{className:'pos-asset'},pos.asset),
+      h('span',{className:'pos-dir',style:{color:DIR_COLORS_MAP[pos.direction]||'var(--dim)'}},
+        `${DIR_ICONS[pos.direction]||''} ${pos.direction.toUpperCase()}`
+      )
+    ));
+    card.appendChild(h('div',{className:'pos-body'},pos.sizing_note));
+    card.appendChild(h('div',{className:'pos-meta'},
+      h('div',{className:'pos-meta-item'},h('div',{className:'label'},'入场条件'),h('div',{className:'val'},pos.entry_condition)),
+      h('div',{className:'pos-meta-item'},h('div',{className:'label'},'止损条件'),h('div',{className:'val'},pos.stop_condition)),
+      h('div',{className:'pos-meta-item'},h('div',{className:'label'},'时间窗口'),h('div',{className:'val'},WINDOW_LABELS[pos.horizon]||pos.horizon)),
+      h('div',{className:'pos-meta-item'},h('div',{className:'label'},'关联命题'),h('div',{className:'val'},pos.linked_thesis))
+    ));
+    panel.appendChild(card);
+  });
+
+  // Triggers
+  panel.appendChild(h('div',{className:'card-title',style:{marginTop:'16px'}},'🔔 监控触发器'));
+  RUN.execution_plan.triggers.sort((a,b)=>{
+    const order={act:0,alert:1,watch:2};
+    return (order[a.urgency]||2)-(order[b.urgency]||2);
+  }).forEach(tr=>{
+    panel.appendChild(h('div',{className:'trigger-card'},
+      h('div',{className:`trigger-urgency ${tr.urgency}`}),
+      h('div',{className:'trigger-body'},
+        h('div',{className:'trigger-signal'},tr.signal,' ',badge(tr.urgency,tr.urgency==='act'?'badge-red':tr.urgency==='alert'?'badge-yellow':'badge-blue')),
+        h('div',{className:'trigger-condition'},`条件: ${tr.condition}`),
+        h('div',{className:'trigger-action'},`→ ${tr.action}`)
+      )
+    ));
+  });
+
+  // Invalidation
+  panel.appendChild(h('div',{className:'card-title',style:{marginTop:'16px'}},'🛑 失效条件'));
+  if(RUN.invalidation.trade_level){
+    panel.appendChild(h('div',{className:'section-label'},'交易级'));
+    RUN.invalidation.trade_level.forEach(inv=>{
+      panel.appendChild(h('div',{className:'inv-card'},
+        h('span',{style:{fontWeight:'500'}},inv.position_ref),
+        h('span',{className:'condition',style:{marginLeft:'8px'}},inv.condition),
+        h('div',{className:'action-text'},`→ ${inv.action} | 回流到 ${inv.backflow_to}`)
+      ));
+    });
+  }
+  if(RUN.invalidation.scenario_level){
+    panel.appendChild(h('div',{className:'section-label'},'场景级'));
+    RUN.invalidation.scenario_level.forEach(inv=>{
+      panel.appendChild(h('div',{className:'inv-card'},
+        h('span',{style:{fontWeight:'500'}},inv.scenario_ref),
+        h('span',{className:'condition',style:{marginLeft:'8px'}},inv.premise_broken),
+        h('div',{style:{fontSize:'10px',color:'var(--dim2)',marginTop:'2px'}},`证据: ${inv.evidence}`),
+        h('div',{className:'action-text'},`→ 回流到 ${inv.backflow_to}${inv.shs_writeback?' | SHS回写':''}`)
+      ));
+    });
+  }
+  if(RUN.invalidation.regime_level){
+    const ri=RUN.invalidation.regime_level;
+    panel.appendChild(h('div',{className:'section-label'},'Regime级'));
+    panel.appendChild(h('div',{className:'inv-card',style:{borderColor:'rgba(239,68,68,.3)'}},
+      h('span',{style:{fontWeight:'500'}},`当前 Regime ${ri.current_regime}`),
+      h('div',{className:'condition',style:{marginTop:'4px'}},ri.contradiction),
+      h('div',{className:'action-text'},`→ 回流到 ${ri.backflow_to}${ri.shs_writeback?' | SHS回写':''}`)
+    ));
+  }
+
+  return panel;
+}
+
+function renderCausalTree(){
+  const panel=h('div',{className:'panel',id:'p-tree'});
+  const nodes=Object.entries(DAG.nodes).map(([id,n])=>({id,...n})).sort((a,b)=>b.probability-a.probability);
+  const edges=DAG.edges;
+
+  // Compute order via Bellman-Ford
+  const orders={};
+  nodes.forEach(n=>{orders[n.id]=0});
+  for(let i=0;i<20;i++){
+    let changed=false;
+    edges.forEach(e=>{
+      if(orders[e.source]!==undefined&&(orders[e.target]||0)<orders[e.source]+1){
+        orders[e.target]=orders[e.source]+1;changed=true;
+      }
+    });
+    if(!changed)break;
+  }
+  const maxOrder=Math.max(...Object.values(orders),0);
+
+  // Group by order
+  const groups={};
+  nodes.forEach(n=>{
+    const o=orders[n.id]||0;
+    if(!groups[o])groups[o]=[];
+    groups[o].push(n);
+  });
+
+  // SVG dimensions
+  const colW=220,rowH=38,padX=60,padY=50;
+  const svgW=(maxOrder+1)*colW+padX*2;
+  const maxGroupSize=Math.max(...Object.values(groups).map(g=>g.length));
+  const svgH=maxGroupSize*rowH+padY*2;
+
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('viewBox',`0 0 ${svgW} ${svgH}`);
+  svg.setAttribute('width','100%');
+  svg.style.maxHeight='70vh';
+  svg.style.background='var(--bg)';
+  svg.style.borderRadius='6px';
+  svg.style.border='1px solid var(--border2)';
+
+  // Defs
+  const defs=document.createElementNS(ns,'defs');
+  const marker=document.createElementNS(ns,'marker');
+  marker.setAttribute('id','arrow');marker.setAttribute('viewBox','0 0 10 10');
+  marker.setAttribute('refX','10');marker.setAttribute('refY','5');
+  marker.setAttribute('markerWidth','6');marker.setAttribute('markerHeight','6');
+  marker.setAttribute('orient','auto');
+  const mpath=document.createElementNS(ns,'path');
+  mpath.setAttribute('d','M 0 0 L 10 5 L 0 10 z');mpath.setAttribute('fill','#374151');
+  marker.appendChild(mpath);defs.appendChild(marker);svg.appendChild(defs);
+
+  // Compute positions
+  const pos={};
+  Object.entries(groups).forEach(([order,group])=>{
+    const o=parseInt(order);
+    group.sort((a,b)=>b.probability-a.probability);
+    const startY=padY+(maxGroupSize-group.length)*rowH/2;
+    group.forEach((n,i)=>{
+      pos[n.id]={x:padX+o*colW+colW/2,y:startY+i*rowH+rowH/2};
+    });
+  });
+
+  // Edges
+  edges.forEach(e=>{
+    if(!pos[e.source]||!pos[e.target])return;
+    const line=document.createElementNS(ns,'line');
+    line.setAttribute('x1',pos[e.source].x+70);line.setAttribute('y1',pos[e.source].y);
+    line.setAttribute('x2',pos[e.target].x-70);line.setAttribute('y2',pos[e.target].y);
+    line.setAttribute('stroke','#374151');line.setAttribute('stroke-width','1');
+    line.setAttribute('marker-end','url(#arrow)');line.setAttribute('opacity','0.5');
+    svg.appendChild(line);
+  });
+
+  // Nodes
+  nodes.forEach(n=>{
+    if(!pos[n.id])return;
+    const p=pos[n.id];
+    const g=document.createElementNS(ns,'g');
+    
+    // Domain color
+    const domain=(n.domains&&n.domains[0])||'';
+    const domColor=DOMAIN_COLORS[domain]||'#6b7280';
+
+    // Background rect
+    const rect=document.createElementNS(ns,'rect');
+    rect.setAttribute('x',p.x-65);rect.setAttribute('y',p.y-13);
+    rect.setAttribute('width',130);rect.setAttribute('height',26);
+    rect.setAttribute('rx',4);rect.setAttribute('fill','#161923');
+    rect.setAttribute('stroke',domColor);rect.setAttribute('stroke-width','1');
+    rect.setAttribute('opacity','0.9');
+    g.appendChild(rect);
+
+    // Prob bar
+    const barW=Math.max(2,n.probability*126);
+    const bar=document.createElementNS(ns,'rect');
+    bar.setAttribute('x',p.x-63);bar.setAttribute('y',p.y+8);
+    bar.setAttribute('width',barW);bar.setAttribute('height',3);
+    bar.setAttribute('rx',1);bar.setAttribute('fill',pctColor(n.probability));
+    bar.setAttribute('opacity','0.6');
+    g.appendChild(bar);
+
+    // Label (truncated)
+    const label=n.label.length>10?n.label.slice(0,10)+'…':n.label;
+    const text=document.createElementNS(ns,'text');
+    text.setAttribute('x',p.x-58);text.setAttribute('y',p.y+3);
+    text.setAttribute('font-size','9');text.setAttribute('fill','#e5e7eb');
+    text.setAttribute('font-family','IBM Plex Sans, Noto Sans SC, sans-serif');
+    text.textContent=label;
+    g.appendChild(text);
+
+    // Prob text
+    const pText=document.createElementNS(ns,'text');
+    pText.setAttribute('x',p.x+58);pText.setAttribute('y',p.y+3);
+    pText.setAttribute('font-size','9');pText.setAttribute('fill','#9ca3af');
+    pText.setAttribute('font-family','IBM Plex Mono');pText.setAttribute('text-anchor','end');
+    pText.textContent=pct(n.probability);
+    g.appendChild(pText);
+
+    // Tooltip
+    const title=document.createElementNS(ns,'title');
+    title.textContent=`${n.label}\n概率: ${pct(n.probability)}\n类型: ${n.node_type}\n域: ${(n.domains||[]).join(', ')}`;
+    g.appendChild(title);
+
+    svg.appendChild(g);
+  });
+
+  // Column headers
+  for(let o=0;o<=maxOrder;o++){
+    const text=document.createElementNS(ns,'text');
+    text.setAttribute('x',padX+o*colW+colW/2);text.setAttribute('y',padY-20);
+    text.setAttribute('text-anchor','middle');text.setAttribute('font-size','10');
+    text.setAttribute('fill','#6b7280');text.setAttribute('font-family','IBM Plex Mono');
+    text.textContent=o===0?'触发事件':`第${o}阶`;
+    svg.appendChild(text);
+  }
+
+  // Legend
+  const legendY=svgH-20;
+  let legendX=padX;
+  Object.entries(DOMAIN_COLORS).forEach(([name,color])=>{
+    const circle=document.createElementNS(ns,'circle');
+    circle.setAttribute('cx',legendX);circle.setAttribute('cy',legendY);
+    circle.setAttribute('r','4');circle.setAttribute('fill',color);
+    svg.appendChild(circle);
+    const lt=document.createElementNS(ns,'text');
+    lt.setAttribute('x',legendX+8);lt.setAttribute('y',legendY+3);
+    lt.setAttribute('font-size','9');lt.setAttribute('fill','#6b7280');
+    lt.setAttribute('font-family','IBM Plex Sans, Noto Sans SC');
+    lt.textContent=name;
+    svg.appendChild(lt);
+    legendX+=50;
+  });
+
+  panel.appendChild(svg);
+  return panel;
+}
+
+function render(){
+  const app=document.getElementById('app');
+  app.innerHTML='';
+
+  // Header
+  const header=h('div',{style:{display:'flex',justifyContent:'space-between',alignItems:'flex-end'}},
+    h('div',null,
+      h('h1',null,'🌐 战忽局 GeoPulse v7.4'),
+      h('div',{className:'subtitle'},`${DAG.scenario_label} | Run ${RUN.meta.run_id} | ${formatTime(RUN.meta.timestamp)} | Regime ${RUN.regime.current}`)
+    ),
+    h('div',{style:{display:'flex',gap:'6px'}},
+      badge(`GRI ${(Object.values(DAG.nodes).filter(n=>n.node_type!=='event').reduce((s,n)=>s+n.probability,0)/Math.max(1,Object.values(DAG.nodes).filter(n=>n.node_type!=='event').length)*100).toFixed(0)}`,'badge-red'),
+      badge(`${Object.keys(DAG.nodes).length}N/${DAG.edges.length}E`,'badge-blue'),
+      badge(`v${DAG.version}`,'badge-purple')
+    )
+  );
+  app.appendChild(header);
+
+  // Tabs
+  const tabs=[
+    {id:'overview',label:'📊 态势总览'},
+    {id:'scenarios',label:'🎯 场景分支'},
+    {id:'engine',label:'⚡ 分析引擎'},
+    {id:'execution',label:'📈 执行计划'},
+    {id:'tree',label:'🌳 因果树'},
+  ];
+  const tabBar=h('div',{className:'tabs'});
+  tabs.forEach(t=>{
+    const btn=h('button',{
+      className:'tab'+(state.tab===t.id?' active':''),
+      onClick:()=>{state.tab=t.id;render()}
+    },t.label);
+    tabBar.appendChild(btn);
+  });
+  app.appendChild(tabBar);
+
+  // Panels
+  const renderers={overview:renderOverview,scenarios:renderScenarios,engine:renderEngine,execution:renderExecution,tree:renderCausalTree};
+  const panelEl=renderers[state.tab]();
+  panelEl.classList.add('active');
+  app.appendChild(panelEl);
+}
+
+render();
+</script>
+</body>
+</html>
