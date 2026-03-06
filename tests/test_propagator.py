@@ -31,12 +31,27 @@ class TestPropagate:
         result = propagate(dag)
         assert result.nodes["a"].probability == 0.7
 
-    def test_llm_probability_preserved_if_higher(self):
+    def test_propagated_value_overrides_initial(self):
+        """After design change: propagated value always wins for nodes with parents.
+        This ensures probabilities can both rise AND fall based on parent changes."""
         dag = DAG(scenario="test", scenario_label="test",
                   nodes={"a": _node("a", 0.3), "b": _node("b", 0.5)},
                   edges=[Edge(source="a", target="b", weight=0.2, reasoning="t")])
         result = propagate(dag)
-        assert result.nodes["b"].probability == 0.5
+        # Noisy-OR: 1 - (1 - 0.3*0.2) = 0.06
+        assert abs(result.nodes["b"].probability - 0.06) < 0.01
+
+    def test_probability_can_decrease(self):
+        """Key test: if parent probability drops, child should drop too."""
+        dag_high = DAG(scenario="test", scenario_label="test",
+                       nodes={"a": _node("a", 1.0), "b": _node("b", 0.0)},
+                       edges=[Edge(source="a", target="b", weight=0.8, reasoning="t")])
+        dag_low = DAG(scenario="test", scenario_label="test",
+                      nodes={"a": _node("a", 0.2), "b": _node("b", 0.0)},
+                      edges=[Edge(source="a", target="b", weight=0.8, reasoning="t")])
+        result_high = propagate(dag_high)
+        result_low = propagate(dag_low)
+        assert result_high.nodes["b"].probability > result_low.nodes["b"].probability
 
     def test_chain_propagation(self):
         dag = DAG(scenario="test", scenario_label="test",

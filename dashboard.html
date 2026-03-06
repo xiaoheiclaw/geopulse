@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>战忽局 GeoPulse — 美伊冲突决策面板</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f1117;--card:#161923;--border:#1f2937;--border2:#374151;--text:#e5e7eb;--dim:#6b7280;--dim2:#9ca3af;--accent:#a78bfa;--red:#ef4444;--green:#10b981;--yellow:#f59e0b;--blue:#6366f1;--orange:#f97316}
+body{font-family:'IBM Plex Sans','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.container{max-width:1100px;margin:0 auto;padding:16px 20px}
+h1{font-size:18px;font-weight:700;color:#f9fafb}
+.subtitle{font-size:11px;color:var(--dim);font-family:'IBM Plex Mono';margin-top:4px}
+.tabs{display:flex;gap:1px;border-bottom:1px solid var(--border);margin:14px 0;overflow-x:auto}
+.tab{padding:7px 14px;border:none;border-bottom:2px solid transparent;background:transparent;color:var(--dim);cursor:pointer;font-size:12px;font-weight:500;white-space:nowrap;font-family:inherit}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:hover{color:var(--dim2)}
+.panel{display:none}.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--border2);border-radius:6px;padding:12px 14px;margin-bottom:10px}
+.card-title{font-size:12px;font-weight:600;margin-bottom:8px}
+.mono{font-family:'IBM Plex Mono'}
+.badge{font-size:9px;padding:1px 6px;border-radius:3px;font-weight:600;display:inline-block}
+.flex{display:flex;gap:12px;flex-wrap:wrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+/* Timeline */
+.tl-item{display:flex;gap:12px;margin-bottom:2px}
+.tl-line{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:24px}
+.tl-dot{width:10px;height:10px;border-radius:50%;cursor:pointer;transition:all .2s}
+.tl-dot.active{width:13px;height:13px;border:2px solid rgba(255,255,255,.3);box-shadow:0 0 8px rgba(167,139,250,.4)}
+.tl-stem{width:1px;flex:1;background:var(--border2);min-height:12px}
+.tl-content{flex:1;padding-bottom:6px;cursor:pointer}
+.tl-header{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tl-weeks{font-family:'IBM Plex Mono';font-size:10px;font-weight:600}
+.tl-label{font-size:12px;font-weight:600;color:#f3f4f6}
+.tl-dates{font-size:9px;color:var(--dim)}
+.tl-prob{font-size:9px;font-family:'IBM Plex Mono';color:var(--dim2);margin-left:auto}
+.tl-detail{margin-top:6px;padding:8px 12px;background:var(--bg);border-radius:5px;font-size:11px;border-left:2px solid var(--accent)}
+.tl-detail .section-label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:6px}
+.tl-detail .section-label:first-child{margin-top:0}
+.tl-detail .val{color:#d1d5db;margin-top:2px;padding-left:6px}
+.tl-detail .action{color:var(--accent);margin-top:2px}
+/* Bar */
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.bar-label{width:100px;font-size:10px;color:var(--dim2);text-align:right;flex-shrink:0}
+.bar-track{flex:1;height:18px;background:var(--border);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;transition:width .4s}
+.bar-fill span{font-size:10px;font-weight:700;color:#fff;font-family:'IBM Plex Mono'}
+/* Stacked bar */
+.stacked{height:22px;background:var(--border);border-radius:3px;display:flex;overflow:hidden}
+.stacked-seg{display:flex;align-items:center;justify-content:center;border-right:1px solid var(--bg)}
+.stacked-seg span{font-size:8px;font-weight:700;color:#fff}
+/* Dialectic */
+.dia-box{padding:10px 12px;border-radius:5px;margin-bottom:8px;font-size:11px;line-height:1.7}
+.dia-for{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.3)}
+.dia-against{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.3)}
+.dia-synth{background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.4)}
+.dia-title{font-size:11px;font-weight:600;margin-bottom:4px}
+.revision{font-size:10px;color:var(--dim2);padding-left:8px;border-left:2px solid var(--border2);margin-top:4px}
+/* Matrix */
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{padding:7px 8px;text-align:left;color:var(--dim2);font-weight:500;border-bottom:2px solid var(--border2)}
+td{padding:7px 8px;border-bottom:1px solid var(--border)}
+tr:hover{background:rgba(167,139,250,.05)}
+.dir{font-size:15px;text-align:center}
+/* Node selector */
+.node-list{width:220px;flex-shrink:0;max-height:70vh;overflow-y:auto}
+.node-btn{display:block;width:100%;text-align:left;padding:6px 10px;margin-bottom:2px;background:var(--card);border:1px solid var(--border);border-radius:4px;cursor:pointer;color:var(--dim2);font-size:11px;font-family:inherit}
+.node-btn.active{background:#1e1b4b;border-color:var(--blue);color:var(--accent)}
+.node-btn .prob{font-family:'IBM Plex Mono';font-size:10px;color:var(--dim)}
+.node-detail{flex:1;min-width:300px}
+/* Action cards */
+.action-card{border-left:3px solid var(--border2);padding:10px 14px;background:var(--card);border-radius:0 5px 5px 0;margin-bottom:8px}
+.action-card.peak{border-left-color:var(--yellow)}
+.action-card.peak2{border-left-color:var(--accent)}
+.action-phase{font-family:'IBM Plex Mono';font-size:10px;font-weight:600}
+.action-title{font-size:12px;font-weight:600;color:#f3f4f6;margin-top:2px}
+.action-body{font-size:11px;color:var(--dim2);margin-top:4px}
+.pos-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}
+.pos-box{background:var(--bg);padding:6px 8px;border-radius:3px;border:1px solid var(--border)}
+.pos-box .label{font-size:9px;color:var(--dim);margin-bottom:2px}
+.pos-box .val{font-size:10px;color:#d1d5db;line-height:1.6}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}.flex{flex-direction:column}.node-list{width:100%;max-height:200px}}
+</style>
+</head>
+<body>
+<div class="container" id="app"></div>
+<script>
+const DAG_URL = './data/dag.json';
+
+const PHASES = [
+  {id:'w1_2',label:'冲击期',weeks:'W1-2',dates:'当前→3月中',color:'#ef4444'},
+  {id:'w3_5',label:'Trump窗口',weeks:'W3-5',dates:'3月中→4月初',color:'#f59e0b'},
+  {id:'w6_10',label:'第一消耗期 ★',weeks:'W6-10',dates:'4月→5月初',color:'#fbbf24'},
+  {id:'w11_16',label:'疲劳/升级分叉 ★',weeks:'W11-16',dates:'5月→6月中',color:'#a78bfa'},
+  {id:'w17_24',label:'深度消耗',weeks:'W17-24',dates:'6月中→8月',color:'#6366f1'},
+  {id:'w25_plus',label:'长尾',weeks:'W25+',dates:'8月后',color:'#4b5563'},
+];
+
+const DIR_COLORS = {'⬆⬆':'#dc2626','⬆':'#ef4444','↑↑':'#ef4444','↑':'#f59e0b','→↑':'#f59e0b','→':'#6b7280','→↓':'#6b7280','↓':'#10b981','⬇':'#dc2626'};
+
+let dag = null;
+let state = {tab:'timeline', selectedNode:null, expandedPhase:'w1_2', scenario:'base'};
+
+async function load() {
+  try {
+    const r = await fetch(DAG_URL);
+    dag = await r.json();
+  } catch(e) {
+    // Embedded fallback
+    dag = null;
+  }
+  render();
+}
+
+function getNodes() {
+  if (!dag) return [];
+  return Object.entries(dag.nodes)
+    .map(([id,n]) => ({id,...n}))
+    .sort((a,b) => b.probability - a.probability);
+}
+
+function getTemporalNodes() {
+  return getNodes().filter(n => n.time_phases && n.time_phases.length > 0);
+}
+
+function getDialecticNodes() {
+  return getNodes().filter(n => n.dialectic);
+}
+
+function h(tag, attrs, ...children) {
+  const el = document.createElement(tag);
+  if (attrs) Object.entries(attrs).forEach(([k,v]) => {
+    if (k === 'style' && typeof v === 'object') Object.assign(el.style, v);
+    else if (k.startsWith('on')) el.addEventListener(k.slice(2).toLowerCase(), v);
+    else if (k === 'className') el.className = v;
+    else if (k === 'innerHTML') el.innerHTML = v;
+    else el.setAttribute(k, v);
+  });
+  children.flat(9).forEach(c => {
+    if (c == null) return;
+    el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+  });
+  return el;
+}
+
+function renderBar(value, max, color, label) {
+  const pct = Math.min(100, (value / max) * 100);
+  return h('div', {className:'bar-row'}, 
+    h('div', {className:'bar-label'}, label),
+    h('div', {className:'bar-track'},
+      h('div', {className:'bar-fill', style:{width:pct+'%',background:color}},
+        h('span', null, Math.round(value*100)+'%')
+      )
+    )
+  );
+}
+
+function renderTimeline() {
+  const nodes = getTemporalNodes();
+  const conflict = nodes.find(n => n.id === 'conflict_duration_over_2m');
+  
+  const box = h('div', {style:{maxWidth:'850px'}});
+  
+  // Summary cards
+  const summary = h('div', {className:'flex', style:{marginBottom:'14px'}});
+  summary.appendChild(h('div', {className:'card', style:{flex:1,minWidth:'200px'}},
+    h('div', {style:{fontSize:'10px',color:'var(--dim)',marginBottom:'4px'}}, '概率密度'),
+    h('div', {style:{fontSize:'11px',color:'#d1d5db',lineHeight:'1.7'}, innerHTML:
+      '冲突以<span style="color:#fbbf24;font-weight:600">决策节点</span>跳跃而非匀速推进。<br>' +
+      '<span style="color:#fbbf24">★ W6-10</span> SPR临界+政治压力+第三方调解<br>' +
+      '<span style="color:#a78bfa">★ W11-16</span> 疲劳降级 vs 代理人全面战分叉'
+    })
+  ));
+  summary.appendChild(h('div', {className:'card', style:{minWidth:'140px',textAlign:'center',borderColor:'var(--accent)'}},
+    h('div', {style:{fontSize:'10px',color:'var(--dim)'}}, 'W6-16 (4月→6月中)'),
+    h('div', {className:'mono', style:{fontSize:'24px',fontWeight:700,color:'#fbbf24'}}, '53%'),
+    h('div', {style:{fontSize:'10px',color:'var(--accent)'}}, '真正的 alpha 窗口')
+  ));
+  box.appendChild(summary);
+
+  // Timeline
+  if (conflict && conflict.time_phases) {
+    conflict.time_phases.forEach((phase, i) => {
+      const isActive = i === 0;
+      const isOpen = state.expandedPhase === phase.id;
+      const phaseColor = PHASES.find(p => p.id === phase.id)?.color || '#6b7280';
+      const dates = PHASES.find(p => p.id === phase.id)?.dates || '';
+      
+      const item = h('div', {className:'tl-item'});
+      const line = h('div', {className:'tl-line'});
+      const dot = h('div', {className:'tl-dot' + (isActive ? ' active' : ''), style:{background:phaseColor}, onClick:() => {state.expandedPhase = isOpen ? null : phase.id; render();}});
+      line.appendChild(dot);
+      if (i < conflict.time_phases.length - 1) line.appendChild(h('div', {className:'tl-stem'}));
+      item.appendChild(line);
+      
+      const content = h('div', {className:'tl-content', onClick:() => {state.expandedPhase = isOpen ? null : phase.id; render();}});
+      const header = h('div', {className:'tl-header'},
+        h('span', {className:'tl-weeks', style:{color:phaseColor}}, phase.weeks),
+        h('span', {className:'tl-label'}, phase.label),
+        h('span', {className:'tl-dates'}, dates),
+        h('span', {className:'tl-prob'}, 'P:'+Math.round(phase.prob_density*100)+'%')
+      );
+      content.appendChild(header);
+      
+      if (isOpen) {
+        const detail = h('div', {className:'tl-detail', style:{borderLeftColor:phaseColor+'66'}});
+        if (phase.triggers?.length) {
+          detail.appendChild(h('div', {className:'section-label'}, '触发器'));
+          phase.triggers.forEach(t => detail.appendChild(h('div', {className:'val', style:{borderLeft:'2px solid '+phaseColor+'44',paddingLeft:'6px'}}, t)));
+        }
+        if (phase.signals?.length) {
+          detail.appendChild(h('div', {className:'section-label'}, '信号'));
+          phase.signals.forEach(s => detail.appendChild(h('div', {className:'val'}, s)));
+        }
+        if (phase.actions?.length) {
+          detail.appendChild(h('div', {className:'section-label'}, '行动'));
+          phase.actions.forEach(a => detail.appendChild(h('div', {className:'action'}, a)));
+        }
+        content.appendChild(detail);
+      }
+      item.appendChild(content);
+      box.appendChild(item);
+    });
+
+    // Stacked probability bar
+    const stackCard = h('div', {className:'card', style:{marginTop:'10px'}});
+    stackCard.appendChild(h('div', {style:{fontSize:'10px',color:'var(--dim)',marginBottom:'6px'}}, '累计结束概率'));
+    const stacked = h('div', {className:'stacked'});
+    conflict.time_phases.forEach(p => {
+      const pct = p.prob_density * 100;
+      const phaseColor = PHASES.find(ph => ph.id === p.id)?.color || '#6b7280';
+      if (pct > 0) {
+        const seg = h('div', {className:'stacked-seg', style:{width:pct+'%',background:phaseColor}});
+        if (pct >= 6) seg.appendChild(h('span', null, Math.round(pct)+'%'));
+        stacked.appendChild(seg);
+      }
+    });
+    stackCard.appendChild(stacked);
+    const labels = h('div', {style:{display:'flex',marginTop:'3px'}});
+    conflict.time_phases.forEach(p => {
+      const pct = p.prob_density * 100;
+      if (pct >= 6) labels.appendChild(h('div', {style:{fontSize:'8px',color:'var(--dim)',textAlign:'center',width:pct+'%'}}, p.weeks));
+    });
+    stackCard.appendChild(labels);
+    box.appendChild(stackCard);
+  }
+
+  return box;
+}
+
+function renderDialectic() {
+  const nodes = getDialecticNodes();
+  const box = h('div', {className:'flex'});
+  
+  const list = h('div', {className:'node-list'});
+  nodes.forEach(n => {
+    const btn = h('button', {className:'node-btn' + (state.selectedNode === n.id ? ' active' : ''), onClick:() => {state.selectedNode = n.id; render();}},
+      h('div', {style:{display:'flex',justifyContent:'space-between',alignItems:'center'}},
+        h('span', {style:{fontWeight:600,color:state.selectedNode===n.id?'var(--accent)':'var(--dim2)'}}, n.label.slice(0,18)),
+        h('span', {className:'prob'}, Math.round(n.probability*100)+'%')
+      )
+    );
+    list.appendChild(btn);
+  });
+  if (!state.selectedNode && nodes.length) state.selectedNode = nodes[0].id;
+  box.appendChild(list);
+
+  const selected = nodes.find(n => n.id === state.selectedNode);
+  if (selected && selected.dialectic) {
+    const d = selected.dialectic;
+    const detail = h('div', {className:'node-detail'});
+    
+    detail.appendChild(h('div', {className:'card'},
+      h('h3', {style:{color:'var(--accent)',fontSize:'14px',fontWeight:700,marginBottom:'4px'}}, selected.label),
+      h('div', {style:{fontSize:'11px',color:'var(--dim)'}}, 
+        selected.node_type + ' | ' + Math.round(selected.probability*100) + '% | ' + (selected.time_horizon || '') + ' | ' + selected.domains.join('/')
+      )
+    ));
+
+    detail.appendChild(h('div', {className:'dia-box dia-for'},
+      h('div', {className:'dia-title', style:{color:'var(--green)'}}, '✓ 正论 (支持)'),
+      h('div', {style:{color:'#d1d5db'}}, d.thesis)
+    ));
+    detail.appendChild(h('div', {className:'dia-box dia-against'},
+      h('div', {className:'dia-title', style:{color:'var(--red)'}}, '✗ 反论 (质疑)'),
+      h('div', {style:{color:'#d1d5db'}}, d.antithesis)
+    ));
+    detail.appendChild(h('div', {className:'dia-box dia-synth'},
+      h('div', {className:'dia-title', style:{color:'var(--accent)'}}, '⚖ 合论'),
+      h('div', {style:{color:'#d1d5db'}}, d.synthesis)
+    ));
+
+    if (d.revision_history?.length) {
+      const rev = h('div', {className:'card'},
+        h('div', {className:'card-title', style:{color:'var(--dim2)'}}, '修正历史')
+      );
+      d.revision_history.forEach(r => rev.appendChild(h('div', {className:'revision'}, r)));
+      detail.appendChild(rev);
+    }
+
+    // Time phases if available
+    if (selected.time_phases?.length) {
+      const tpCard = h('div', {className:'card'},
+        h('div', {className:'card-title'}, '📊 概率时间分布')
+      );
+      selected.time_phases.forEach(p => {
+        const phaseColor = PHASES.find(ph => ph.id === p.id)?.color || '#6b7280';
+        tpCard.appendChild(renderBar(p.prob_density, 0.30, phaseColor, p.weeks + ' ' + p.label.slice(0,6)));
+      });
+      detail.appendChild(tpCard);
+    }
+
+    box.appendChild(detail);
+  }
+  return box;
+}
+
+function renderAssetMatrix() {
+  const nodes = getTemporalNodes();
+  const box = h('div');
+  
+  // Key assets derived from DAG
+  const assets = [
+    {name:'原油 (Brent)', nodeId:'oil_price_100_breach', current:'$85.4',
+     base:{dir:'↑',range:'$88-105'}, escalation:{dir:'⬆',range:'$105-135+'}, deesc:{dir:'↓',range:'$72-78'}},
+    {name:'黄金 (XAU)', nodeId:'safe_haven_outperformance', current:'$5,082',
+     base:{dir:'↑',range:'$5,300-6,000'}, escalation:{dir:'⬆',range:'$6,000-7,000+'}, deesc:{dir:'↓',range:'$4,900-5,100'}},
+    {name:'美股 (S&P)', nodeId:'equity_correction_deepening', current:'6,775',
+     base:{dir:'↓',range:'-7~-12%'}, escalation:{dir:'⬇',range:'-12~-22%'}, deesc:{dir:'↑',range:'+3-5%'}},
+    {name:'美债 (10Y)', nodeId:'treasury_stagflation_pricing', current:'4.13%',
+     base:{dir:'→↑',range:'4.1-4.5%'}, escalation:{dir:'↑',range:'4.4-5.0%'}, deesc:{dir:'↓',range:'3.8-4.0%'}},
+    {name:'EUR/USD', nodeId:'euro_parity_risk', current:'1.16',
+     base:{dir:'↓',range:'1.05-1.10'}, escalation:{dir:'⬇',range:'0.95-1.00'}, deesc:{dir:'↑',range:'1.18-1.22'}},
+    {name:'USD/JPY', nodeId:'jpy_carry_unwind', current:'157.4',
+     base:{dir:'→',range:'155-160'}, escalation:{dir:'⬇',range:'<150'}, deesc:{dir:'↑',range:'158-162'}},
+    {name:'USD/CNY', nodeId:'cny_controlled_depreciation', current:'6.90',
+     base:{dir:'↑',range:'7.00-7.10'}, escalation:{dir:'⬆',range:'7.10-7.25'}, deesc:{dir:'→',range:'6.85-6.95'}},
+    {name:'BTC', nodeId:'crypto_risk_correlation', current:'$68.9K',
+     base:{dir:'→↓',range:'$57-70K'}, escalation:{dir:'⬇',range:'$45-57K'}, deesc:{dir:'↑',range:'$78-88K'}},
+    {name:'天然气 (TTF)', nodeId:'europe_energy_crisis_redux', current:'飙升中',
+     base:{dir:'⬆',range:'+35-60%'}, escalation:{dir:'⬆⬆',range:'+100-180%'}, deesc:{dir:'→',range:'回落'}},
+  ];
+
+  // Scenario selector
+  const scenarios = [
+    {id:'base',l:'基准消耗',p:'45%',c:'var(--yellow)'},
+    {id:'escalation',l:'升级拖延',p:'37%',c:'var(--red)'},
+    {id:'deesc',l:'快速降级',p:'10%',c:'var(--green)'}
+  ];
+  const sel = h('div', {style:{display:'flex',gap:'6px',marginBottom:'12px'}});
+  scenarios.forEach(s => {
+    sel.appendChild(h('button', {
+      className:'tab', 
+      style:{borderBottom: state.scenario===s.id ? '2px solid '+s.c : '2px solid transparent', color: state.scenario===s.id ? s.c : 'var(--dim)', padding:'6px 12px', borderRadius:'4px'},
+      onClick:() => {state.scenario = s.id; render();}
+    }, s.l + ' P=' + s.p));
+  });
+  box.appendChild(sel);
+
+  const tbl = h('table');
+  const thead = h('thead', null, h('tr', null,
+    h('th', null, '资产'), h('th', null, '当前'), h('th', {style:{textAlign:'center',width:'30px'}}, '方向'), h('th', null, '目标区间')
+  ));
+  tbl.appendChild(thead);
+  const tbody = h('tbody');
+  assets.forEach(a => {
+    const s = a[state.scenario] || a.base;
+    const dirColor = DIR_COLORS[s.dir] || 'var(--dim)';
+    tbody.appendChild(h('tr', null,
+      h('td', {style:{fontWeight:600}}, a.name),
+      h('td', {className:'mono', style:{color:'var(--dim2)',fontSize:'10px'}}, a.current),
+      h('td', {className:'dir', style:{color:dirColor}}, s.dir),
+      h('td', {className:'mono', style:{fontWeight:600,fontSize:'10px'}}, s.range)
+    ));
+  });
+  tbl.appendChild(tbody);
+  box.appendChild(h('div', {style:{overflowX:'auto'}}, tbl));
+  return box;
+}
+
+function renderActions() {
+  const box = h('div', {style:{maxWidth:'820px'}});
+  
+  const phases = [
+    {phase:'W1-5 (现在→4月初)', title:'持有做多持续时间', peak:false,
+     detail:'市场还在"短期冲突"定价，你有信息优势。不做大调整。',
+     positions:'多: 黄金/金矿, 原油远月, 防务ETF(SHLD/XAR), 美元\n空: 航空, 新兴市场(能源进口)', risk:'头寸规模标准'},
+    {phase:'W5 节点 (4月初)', title:'第一次强制审视', peak:false,
+     detail:'三信号: ①Trump措辞软化? ②胡塞激活? ③首批商船通过霍尔木兹?',
+     positions:'均未出现→维持\n①出现→减仓20-30%做多持续时间', risk:'设定触发器，不要等待'},
+    {phase:'W6-10 (4月→5月初) ★', title:'最高波动率 — 期权替代方向', peak:true,
+     detail:'油价二元分布区间。做多波动率比做多方向更有效率。',
+     positions:'原油straddle/strangle\n黄金加仓\nVIX call spreads\nSPR释放→短期做空油机会', risk:'收紧止损; 减纯方向敞口; 增加凸性'},
+    {phase:'W11-16 (5月→6月中) ★★', title:'关键分叉 — 决定下半场', peak:true,
+     detail:'疲劳降级(霍尔木兹焦点) vs 代理人升级。观察Mojtaba+代理人。',
+     positions:'降级→平能源多头,保防务+黄金\n升级→加码通胀(TIPS,大宗生产商,浮动利率)', risk:'头寸大幅调整窗口'},
+    {phase:'W17+ (6月中后)', title:'若还在 → 通胀主线', peak:false,
+     detail:'通胀传导全面; Fed困境最尖锐。"事件交易"→"结构性重配"。',
+     positions:'空高估值成长\n多TIPS/大宗生产商/浮动利率\n防务核心多头', risk:'减杠杆; 增跨资产对冲'},
+  ];
+
+  phases.forEach(p => {
+    const card = h('div', {className:'action-card' + (p.peak ? ' peak' : '')});
+    card.appendChild(h('div', {className:'action-phase', style:{color: p.peak ? 'var(--yellow)' : 'var(--dim2)'}}, p.phase));
+    card.appendChild(h('div', {className:'action-title'}, p.title));
+    card.appendChild(h('div', {className:'action-body'}, p.detail));
+    const grid = h('div', {className:'pos-grid'});
+    grid.appendChild(h('div', {className:'pos-box'},
+      h('div', {className:'label'}, '头寸'),
+      h('div', {className:'val'}, p.positions)
+    ));
+    grid.appendChild(h('div', {className:'pos-box'},
+      h('div', {className:'label'}, '风控'),
+      h('div', {className:'val'}, p.risk)
+    ));
+    card.appendChild(grid);
+    box.appendChild(card);
+  });
+
+  // Summary
+  const insight = h('div', {className:'card', style:{borderColor:'var(--blue)',background:'#1e1b4b',marginTop:'10px'}});
+  insight.appendChild(h('div', {className:'card-title', style:{color:'var(--accent)'}}, '核心启示'));
+  insight.appendChild(h('div', {style:{fontSize:'11px',lineHeight:'1.8',color:'#d1d5db'}, innerHTML:
+    '<span style="color:#fbbf24;font-weight:600">做多持续时间</span>仍是核心alpha。' +
+    '不要均匀押注，<span style="color:#a78bfa;font-weight:600">集中在W6-16这10周alpha窗口</span>。' +
+    'W1-5持有不动；W5强制审视；W6-10用期权替代方向；W11-16根据分叉决定下半场。'
+  }));
+  box.appendChild(insight);
+
+  return box;
+}
+
+function renderDAGTree() {
+  const box = h('div', {style:{width:'100%',overflowX:'auto'}});
+  if (!dag) return box;
+
+  const N = dag.nodes, E = dag.edges;
+  const childMap = {}, parentMap = {};
+  E.forEach(e => {
+    (childMap[e.source] = childMap[e.source] || []).push({target:e.target, weight:e.weight});
+    (parentMap[e.target] = parentMap[e.target] || []).push(e.source);
+  });
+
+  // Compute order (longest-path from roots)
+  const order = {};
+  const visited = new Set();
+  function computeOrder(nid, d) {
+    if (visited.has(nid)) { order[nid] = Math.max(order[nid]||0, d); return; }
+    visited.add(nid);
+    order[nid] = Math.max(order[nid]||0, d);
+    (childMap[nid]||[]).forEach(c => computeOrder(c.target, d+1));
+  }
+  Object.keys(N).filter(id => !parentMap[id]).forEach(id => computeOrder(id, 0));
+
+  // Domain colors
+  const DC = {'军事':'#ef4444','能源':'#f59e0b','经济':'#a78bfa','金融':'#6366f1','政治':'#10b981','科技':'#06b6d4','社会':'#f97316'};
+  const probColor = p => p >= 0.9 ? '#ef4444' : p >= 0.7 ? '#f59e0b' : p >= 0.5 ? '#fbbf24' : p >= 0.3 ? '#a78bfa' : '#6b7280';
+
+  const DOMAIN_ORDER = ['军事','能源','经济','金融','政治','科技','社会'];
+  const maxOrder = Math.max(...Object.values(order));
+
+  // Compact layout
+  const COL_W = 168, ROW_H = 32, PAD_L = 8, PAD_T = 36;
+  const NODE_W = 156, NODE_H = 26;
+
+  // Group by order
+  const layers = {};
+  Object.entries(N).forEach(([id, n]) => {
+    const o = order[id] ?? 0;
+    (layers[o] = layers[o] || []).push(id);
+  });
+  Object.values(layers).forEach(arr => {
+    arr.sort((a,b) => {
+      const da = DOMAIN_ORDER.indexOf(N[a].domains?.[0]) ?? 99;
+      const db = DOMAIN_ORDER.indexOf(N[b].domains?.[0]) ?? 99;
+      return da !== db ? da - db : N[b].probability - N[a].probability;
+    });
+  });
+
+  // Positions
+  const pos = {};
+  let maxY = 0;
+  for (let o = 0; o <= maxOrder; o++) {
+    (layers[o] || []).forEach((nid, i) => {
+      const x = PAD_L + o * COL_W;
+      const y = PAD_T + i * ROW_H;
+      pos[nid] = {x, y};
+      maxY = Math.max(maxY, y + NODE_H);
+    });
+  }
+
+  const svgW = PAD_L + (maxOrder + 1) * COL_W + 16;
+  const svgH = maxY + 20;
+  let s = '';
+
+  // Defs: gradient glow + arrow marker
+  s += `<defs>
+    <marker id="ah" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0,0 6,2.5 0,5" fill="#4b5563"/>
+    </marker>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>`;
+
+  // Edges
+  E.forEach(e => {
+    const sp = pos[e.source], tp = pos[e.target];
+    if (!sp || !tp) return;
+    const x1 = sp.x + NODE_W, y1 = sp.y + NODE_H/2;
+    const x2 = tp.x, y2 = tp.y + NODE_H/2;
+    const w = Math.max(0.3, (e.weight || 0.5));
+    const opacity = 0.15 + w * 0.25;
+    const strokeW = 0.4 + w * 0.8;
+    const dx = (x2 - x1) * 0.45;
+    s += `<path d="M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}" fill="none" stroke="#4b5563" stroke-width="${strokeW}" opacity="${opacity}" marker-end="url(#ah)"/>`;
+  });
+
+  // Nodes
+  Object.entries(N).forEach(([nid, n]) => {
+    const p = pos[nid]; if (!p) return;
+    const prob = n.probability;
+    const pc = probColor(prob);
+    const dc = DC[n.domains?.[0]] || '#6b7280';
+    const hasTP = n.time_phases?.length > 0;
+    const hasDi = !!n.dialectic;
+    const pct = Math.round(prob * 100);
+    const barW = Math.max(1, prob * (NODE_W - 2));
+    // Truncate label
+    let label = n.label;
+    if (label.length > 12) label = label.slice(0, 11) + '…';
+
+    s += `<g class="dag-node" data-nid="${nid}" style="cursor:pointer">`;
+    // Shadow
+    s += `<rect x="${p.x+1}" y="${p.y+1}" width="${NODE_W}" height="${NODE_H}" rx="4" fill="#000" opacity="0.3"/>`;
+    // Body
+    s += `<rect x="${p.x}" y="${p.y}" width="${NODE_W}" height="${NODE_H}" rx="4" fill="#13151d" stroke="${dc}" stroke-width="0.8"/>`;
+    // Prob bar (bottom)
+    s += `<rect x="${p.x+1}" y="${p.y+NODE_H-3}" width="${barW}" height="2" rx="1" fill="${pc}" opacity="0.5"/>`;
+    // Left domain dot
+    s += `<circle cx="${p.x+7}" cy="${p.y+NODE_H/2}" r="3" fill="${dc}" opacity="0.7"/>`;
+    // Label
+    s += `<text x="${p.x+14}" y="${p.y+NODE_H/2+3.5}" font-size="9.5" fill="#d1d5db" font-weight="500">${label}</text>`;
+    // Prob %
+    s += `<text x="${p.x+NODE_W-4}" y="${p.y+NODE_H/2+3}" font-size="8.5" fill="${pc}" text-anchor="end" font-weight="700" font-family="'IBM Plex Mono',monospace">${pct}%</text>`;
+    // Icons (tiny)
+    if (hasTP || hasDi) {
+      const icons = (hasTP ? '⏱' : '') + (hasDi ? '⚖' : '');
+      s += `<text x="${p.x+NODE_W-4}" y="${p.y+8}" font-size="7" text-anchor="end" fill="#4b5563">${icons}</text>`;
+    }
+    s += `</g>`;
+  });
+
+  // Column headers
+  const OL = ['触发层','直接冲击','传导效应','深层连锁','4阶','5阶','6阶+'];
+  for (let o = 0; o <= maxOrder; o++) {
+    const x = PAD_L + o * COL_W + NODE_W/2;
+    s += `<text x="${x}" y="${PAD_T - 8}" font-size="8.5" fill="#4b5563" text-anchor="middle" font-weight="600">${o}阶 ${OL[o]||''}</text>`;
+  }
+
+  // Tooltip
+  const tooltip = h('div', {style:{
+    position:'absolute', display:'none', background:'#1a1d2e', border:'1px solid #2d3348',
+    borderRadius:'8px', padding:'10px 14px', fontSize:'11px', maxWidth:'340px',
+    zIndex:'100', pointerEvents:'none', boxShadow:'0 8px 32px rgba(0,0,0,0.6)', lineHeight:'1.7',
+    backdropFilter:'blur(8px)'
+  }});
+
+  const wrapper = h('div', {style:{position:'relative', overflow:'auto', maxHeight:'80vh', borderRadius:'6px', border:'1px solid var(--border)'}});
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', svgW);
+  svg.setAttribute('height', svgH);
+  svg.setAttribute('viewBox', `0 0 ${svgW} ${svgH}`);
+  svg.style.fontFamily = "'IBM Plex Sans','Noto Sans SC',sans-serif";
+  svg.style.background = '#0c0e14';
+  svg.innerHTML = s;
+
+  // Hover highlight
+  let activeG = null;
+  svg.addEventListener('mouseover', (ev) => {
+    const g = ev.target.closest('.dag-node');
+    if (activeG && activeG !== g) activeG.querySelector('rect:nth-child(2)').setAttribute('fill','#13151d');
+    if (!g) { tooltip.style.display = 'none'; activeG = null; return; }
+    activeG = g;
+    g.querySelector('rect:nth-child(2)').setAttribute('fill','#1c1f2e');
+    const nid = g.dataset.nid, n = N[nid];
+    if (!n) return;
+    const prob = Math.round(n.probability * 100);
+    const nt = n.node_type === 'event' ? '事件' : n.node_type === 'state' ? '状态' : '预测';
+    const dc = DC[n.domains?.[0]] || '#6b7280';
+    const pList = (parentMap[nid] || []).map(pid => N[pid]?.label || pid);
+    const cList = (childMap[nid] || []).map(c => N[c.target]?.label || c.target);
+    let htm = `<div style="font-weight:700;color:#f9fafb;font-size:12px;margin-bottom:3px">${n.label}</div>`;
+    htm += `<div style="display:flex;gap:8px;align-items:center;margin-bottom:4px">`;
+    htm += `<span style="background:${dc}22;color:${dc};padding:1px 6px;border-radius:3px;font-size:9px;font-weight:600">${n.domains?.join('/')}</span>`;
+    htm += `<span style="color:#9ca3af;font-size:10px">${nt} · ${prob}% · ${n.time_horizon||''}</span></div>`;
+    if (n.reasoning) htm += `<div style="color:#b0b5c3;border-left:2px solid ${dc}44;padding-left:8px;margin:4px 0;font-size:10px">${n.reasoning.slice(0,180)}</div>`;
+    if (pList.length) htm += `<div style="color:#6b7280;font-size:10px;margin-top:3px">← ${pList.join(' · ')}</div>`;
+    if (cList.length) htm += `<div style="color:#6b7280;font-size:10px">→ ${cList.join(' · ')}</div>`;
+    tooltip.innerHTML = htm;
+    tooltip.style.display = 'block';
+  });
+  svg.addEventListener('mousemove', (ev) => {
+    const r = wrapper.getBoundingClientRect();
+    tooltip.style.left = (ev.clientX - r.left + wrapper.scrollLeft + 14) + 'px';
+    tooltip.style.top = (ev.clientY - r.top + wrapper.scrollTop - 8) + 'px';
+  });
+  svg.addEventListener('mouseout', (ev) => {
+    if (!ev.relatedTarget?.closest?.('.dag-node')) { tooltip.style.display = 'none'; if (activeG) { activeG.querySelector('rect:nth-child(2)').setAttribute('fill','#13151d'); activeG = null; } }
+  });
+
+  wrapper.appendChild(svg);
+  wrapper.appendChild(tooltip);
+
+  // Compact legend
+  const legend = h('div', {style:{display:'flex',gap:'10px',flexWrap:'wrap',marginBottom:'6px',alignItems:'center',fontSize:'9px',color:'var(--dim)'}});
+  Object.entries(DC).forEach(([d,c]) => {
+    const dot = h('span', {style:{display:'inline-flex',alignItems:'center',gap:'2px'}},
+      h('span', {style:{width:'6px',height:'6px',borderRadius:'50%',background:c,display:'inline-block'}}),
+      h('span', {style:{color:c}}, d)
+    );
+    legend.appendChild(dot);
+  });
+  legend.appendChild(h('span', {style:{marginLeft:'8px',color:'var(--dim2)'}}, '⏱时间化 ⚖辩证'));
+
+  box.appendChild(legend);
+  box.appendChild(wrapper);
+  return box;
+}
+
+function render() {
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+
+  // Header
+  const header = h('div', {style:{borderBottom:'1px solid var(--border2)',paddingBottom:'12px',marginBottom:'14px'}});
+  header.appendChild(h('div', {style:{display:'flex',alignItems:'baseline',gap:'10px',flexWrap:'wrap'}},
+    h('h1', null, '🌐 战忽局 GeoPulse · 美伊冲突决策面板'),
+    h('span', {className:'subtitle'}, 'v6 · 2026.03.06 · 53节点/85边')
+  ));
+  header.appendChild(h('div', {style:{fontSize:'11px',color:'var(--dim2)',marginTop:'4px'}},
+    '冲突>2月 P≈100% | 弹道导弹-90% | 无人机+代理人完好 | 全海湾8+国遭击 | GRI 85/100'
+  ));
+  app.appendChild(header);
+
+  // Tabs
+  const tabs = h('div', {className:'tabs'});
+  [{id:'timeline',l:'📅 决策时间线'},{id:'dialectic',l:'⚖️ 辩证分析'},{id:'matrix',l:'📊 资产矩阵'},{id:'actions',l:'🎯 交易策略'},{id:'tree',l:'🌳 因果树'}].forEach(t => {
+    tabs.appendChild(h('button', {className:'tab'+(state.tab===t.id?' active':''), onClick:() => {state.tab=t.id;render();}}, t.l));
+  });
+  app.appendChild(tabs);
+
+  // Panels
+  if (state.tab === 'timeline') app.appendChild(renderTimeline());
+  else if (state.tab === 'dialectic') app.appendChild(renderDialectic());
+  else if (state.tab === 'matrix') app.appendChild(renderAssetMatrix());
+  else if (state.tab === 'actions') app.appendChild(renderActions());
+  else if (state.tab === 'tree') app.appendChild(renderDAGTree());
+}
+
+load();
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@ from geopulse.mental_models import load_models, build_prompt_injection
 class TestLoadModels:
     def test_loads_all_models(self):
         models = load_models()
-        assert len(models) == 12
+        assert len(models) == 13
 
     def test_model_has_required_fields(self):
         models = load_models()

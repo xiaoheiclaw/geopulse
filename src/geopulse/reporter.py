@@ -142,11 +142,42 @@ class Reporter:
         lines = [
             f"📍 {node.label}",
             f"概率: {node.probability:.2f} | 置信度: {node.confidence:.2f}"
-            f" | 阶数: {orders.get(node_id, '?')}",
+            f" | 阶数: {orders.get(node_id, '?')} | 类型: {node.node_type}",
             f"领域: {', '.join(node.domains)}",
-            "",
-            "证据:",
         ]
+
+        if node.time_horizon:
+            lines.append(f"时间窗口: {node.time_horizon}")
+
+        # Temporal probability distribution
+        if node.time_phases:
+            lines.extend(["", "📊 概率时间分布:"])
+            for phase in node.time_phases:
+                bar_len = int(phase.prob_density * 50)
+                bar = "█" * bar_len + "░" * max(0, 10 - bar_len)
+                lines.append(f"  {phase.weeks:>6} {bar} {phase.prob_density:.0%} | {phase.label}")
+                if phase.triggers:
+                    lines.append(f"         触发: {'; '.join(phase.triggers[:2])}")
+                if phase.signals:
+                    lines.append(f"         信号: {'; '.join(phase.signals[:2])}")
+                if phase.actions:
+                    lines.append(f"         行动: {'; '.join(phase.actions[:1])}")
+
+        # Dialectic reasoning
+        if node.dialectic:
+            d = node.dialectic
+            lines.extend([
+                "", "⚖️ 辩证推理:",
+                f"  正论: {d.thesis}",
+                f"  反论: {d.antithesis}",
+                f"  合论: {d.synthesis}",
+            ])
+            if d.revision_history:
+                lines.append("  修正历史:")
+                for rev in d.revision_history:
+                    lines.append(f"    · {rev}")
+
+        lines.extend(["", "证据:"])
         for ev in node.evidence:
             lines.append(f"  ▸ {ev}")
 

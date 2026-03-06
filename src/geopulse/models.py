@@ -9,17 +9,73 @@ from typing import Any
 from pydantic import BaseModel, Field, field_validator
 
 
+class TimePhase(BaseModel):
+    """A time window with probability density for a prediction node."""
+    id: str              # e.g. "w1_2", "w3_5", "w6_10"
+    label: str           # e.g. "冲击期", "Trump时间表窗口"
+    weeks: str           # e.g. "W1-2", "W3-5"
+    start_date: str = "" # e.g. "2026-03-06"
+    end_date: str = ""   # e.g. "2026-03-20"
+    prob_density: float = 0.0  # probability mass in this window (0-1, all phases sum ≤ 1)
+    triggers: list[str] = Field(default_factory=list)  # what decides next step
+    signals: list[str] = Field(default_factory=list)    # observable signals to watch
+    actions: list[str] = Field(default_factory=list)    # what to do in this window
+
+
+class Dialectic(BaseModel):
+    """Thesis-antithesis-synthesis reasoning for a node."""
+    thesis: str = ""       # argument FOR higher probability
+    antithesis: str = ""   # argument AGAINST / structural flaws
+    synthesis: str = ""    # balanced conclusion
+    revision_history: list[str] = Field(default_factory=list)  # e.g. ["0.65 → 0.50: 护航计划削弱封锁"]
+
+
 class Node(BaseModel):
-    """A node in the causal DAG representing an event or condition."""
+    """A node in the causal DAG.
+    
+    Node types and probability semantics:
+    - event:  Discrete occurrence. prob = did it happen? (1.0 = confirmed, 0 = didn't)
+    - state:  Ongoing condition. prob = will this state persist for the next 30 days?
+    - prediction: Future event. prob = will this happen within the specified time window?
+    
+    Temporal probability:
+    - `probability` remains the aggregate scalar (backward compatible)
+    - `time_phases` holds the probability density curve across time windows
+    - If time_phases is populated, probability = sum(phase.prob_density for phase in time_phases)
+    
+    Dialectic reasoning:
+    - `dialectic` holds thesis/antithesis/synthesis for key nodes
+    - Shows HOW the probability was derived, not just WHAT it is
+    """
     id: str
     label: str
+    node_type: str = "event"  # "event" | "state" | "prediction"
     domains: list[str]
     probability: float = Field(ge=0.0, le=1.0)
     confidence: float = Field(ge=0.0, le=1.0)
     evidence: list[str] = Field(default_factory=list)
     reasoning: str = ""
+    time_horizon: str = ""  # e.g. "30d", "Q1 2026", "2026-04" — for state/prediction nodes
+    time_phases: list[TimePhase] = Field(default_factory=list)  # probability density curve
+    dialectic: Dialectic | None = None  # thesis/antithesis/synthesis
     last_updated: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     created: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+    def phase_prob(self, phase_id: str) -> float:
+        """Get probability density for a specific time phase."""
+        for p in self.time_phases:
+            if p.id == phase_id:
+                return p.prob_density
+        return 0.0
+
+    def cumulative_prob(self, up_to_phase_id: str) -> float:
+        """Get cumulative probability up to and including a phase."""
+        total = 0.0
+        for p in self.time_phases:
+            total += p.prob_density
+            if p.id == up_to_phase_id:
+                break
+        return total
 
 
 class Edge(BaseModel):

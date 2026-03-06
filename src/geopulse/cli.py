@@ -22,6 +22,7 @@ def main():
     parser.add_argument("--node-id", help="节点ID（用于 node 命令）")
     parser.add_argument("--data-dir", default="data", help="数据目录")
     parser.add_argument("--json-input", help="JSON 输入内容 (用于 apply 命令)")
+    parser.add_argument("--json-file", help="JSON 输入文件 (用于 apply 命令)")
     args = parser.parse_args()
 
     readwise_token = os.getenv("READWISE_TOKEN", "")
@@ -56,13 +57,17 @@ def main():
         print(json.dumps(articles, ensure_ascii=False, indent=2))
 
     elif args.command == "apply":
-        if not args.json_input:
-            print("错误：apply 命令需要 --json-input")
+        if not args.json_input and not args.json_file:
+            print("错误：apply 命令需要 --json-input 或 --json-file")
             sys.exit(1)
         from .pipeline import Pipeline
 
         try:
-            input_data = json.loads(args.json_input)
+            if args.json_file:
+                with open(args.json_file, "r") as f:
+                    input_data = json.load(f)
+            else:
+                input_data = json.loads(args.json_input)
         except Exception as e:
             print(f"JSON 解析错误: {e}")
             sys.exit(1)
