@@ -21,8 +21,10 @@ def build(data_dir: str = "data", output: str = "docs/index.html"):
         sys.exit(1)
     run_json = latest.model_dump_json()
     
-    # Read template
-    template_path = Path(__file__).parent / "dashboard_template.html"
+    # Read template (terminal or classic)
+    mode = sys.argv[2] if len(sys.argv) > 2 else "console"
+    tpl_name = {"console": "console_template.html", "terminal": "terminal_template.html", "classic": "dashboard_template.html"}.get(mode, "console_template.html")
+    template_path = Path(__file__).parent / tpl_name
     with open(template_path) as f:
         html = f.read()
     

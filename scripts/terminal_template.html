@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>战忽局 GeoPulse v7.4 Terminal</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#07080f;--card:#0c0e18;--card2:#0f111a;--card3:#13151f;
+  --border:#1e293b;--border2:#334155;
+  --text:#c8ccd4;--text2:#e2e8f0;--dim:#475569;--dim2:#64748b;--dim3:#94a3b8;
+  --purple:#818cf8;--violet:#a78bfa;--fuchsia:#c084fc;
+  --blue:#3b82f6;--sky:#60a5fa;
+  --amber:#f59e0b;--yellow:#fbbf24;
+  --green:#10b981;--red:#ef4444;--rose:#f43f5e;
+}
+body{font-family:'IBM Plex Mono','JetBrains Mono','Noto Sans SC',monospace;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+.header{max-width:1200px;margin:0 auto;padding:20px 14px 0}
+.header-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:3px}
+.header-top .tag{font-size:9px;letter-spacing:5px;color:var(--dim)}
+.header-top .title{font-size:20px;font-weight:700;color:var(--text2)}
+.header-top .ver{font-size:8px;color:var(--border2);border:1px solid var(--border);border-radius:3px;padding:1px 6px}
+.header-sub{font-size:9.5px;color:var(--dim);line-height:1.6}
+.header-sub .hl{color:var(--dim3)}
+.header-sub .c1{color:var(--purple)}.header-sub .c2{color:var(--fuchsia)}.header-sub .c3{color:var(--amber)}.header-sub .c4{color:var(--red)}
+.header-sub .sep{color:var(--border)}
+
+/* Axis labels */
+.axis-labels{max-width:1200px;margin:12px auto 4px;display:grid;grid-template-columns:180px 1fr 360px;gap:12px;padding:0 14px}
+.axis-label{font-size:7.5px;letter-spacing:2px;text-transform:uppercase;text-align:center;padding:2px 0}
+
+/* Main 3-col layout */
+.main{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:180px 1fr 360px;gap:12px;padding:0 14px;align-items:start}
+
+/* ===== MEMORY COLUMN ===== */
+.mem-col{position:sticky;top:20px}
+.mem-panel{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 8px}
+.mem-title{font-size:10px;font-weight:700;color:var(--fuchsia);margin-bottom:1px}
+.mem-sub{font-size:7px;color:var(--dim2);margin-bottom:7px}
+.shs-item{padding:6px 7px;background:var(--card3);border-radius:4px;border-left:2.5px solid #7c3aed33;margin-bottom:4px;cursor:pointer;transition:all .2s}
+.shs-item:hover{border-left-color:#7c3aed}
+.shs-item.active{background:#7c3aed0c;border-left-color:#7c3aed}
+.shs-id{font-size:8px;font-weight:600;color:var(--text2)}
+.shs-body{font-size:7px;color:var(--dim2);line-height:1.5;margin-top:2px;display:none}
+.shs-item.active .shs-body{display:block}
+.shs-action{font-size:6.5px;padding:0 4px;border-radius:2px;font-weight:600}
+.shs-action.add{background:#10b98112;color:var(--green)}
+.mem-flows{font-size:7px;color:#7c3aed;line-height:1.7;margin-top:8px;padding-top:6px;border-top:1px solid var(--border)}
+.mem-learn{padding:3px 5px;background:#ef44440a;border:1px dashed #ef444418;border-radius:3px;font-size:6.5px;color:var(--dim3);line-height:1.4;margin-top:6px}
+.mem-learn strong{color:var(--red);font-weight:600}
+
+/* ===== PIPELINE COLUMN ===== */
+.pipe-col{}
+/* Regime bar */
+.regime-bar{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:5px 8px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px}
+.regime-label{font-size:7.5px;letter-spacing:1px;color:var(--dim)}
+.regime-btn{background:transparent;border:1px solid var(--border);color:var(--dim);border-radius:3px;padding:1px 8px;font-size:8px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .3s}
+.regime-btn.active-a{background:#3b82f610;border-color:var(--blue);color:var(--sky)}
+.regime-btn.active-b{background:#f59e0b10;border-color:var(--amber);color:var(--yellow)}
+.regime-note{font-size:6.5px;color:var(--border2)}
+
+/* Layer row */
+.layer{display:grid;grid-template-columns:36px 1fr;gap:5px;padding:3px 0;transition:opacity .4s}
+.layer.dim{opacity:.3}
+.layer-id-col{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.layer-id{font-size:10px;font-weight:800;text-shadow:none}
+.layer-id.primary{text-shadow:0 0 8px currentColor}
+.layer-primary-tag{font-size:5.5px;letter-spacing:.8px;margin-top:1px}
+.layer-body{background:var(--card);border-radius:5px;padding:5px 8px;border-left:2.5px solid;transition:all .3s}
+.layer-body.hl{border-right:2px solid}
+.layer-header{display:flex;align-items:baseline;gap:5px;margin-bottom:1px}
+.layer-name{font-size:9.5px;font-weight:700;color:var(--text2)}
+.layer-en{font-size:7.5px;color:var(--dim)}
+.layer-task{font-size:7.5px;color:var(--dim2);line-height:1.4}
+.layer-hl-tag{margin-top:2px;font-size:6.5px;font-weight:600}
+/* Layer data (expandable) */
+.layer-data{margin-top:4px;padding-top:4px;border-top:1px solid var(--border);font-size:7.5px;color:var(--dim2);line-height:1.6;display:none}
+.layer.expanded .layer-data{display:block}
+.layer-toggle{font-size:7px;color:var(--dim);cursor:pointer;float:right;padding:2px 4px}
+.layer-toggle:hover{color:var(--dim3)}
+/* Data items */
+.data-row{display:flex;justify-content:space-between;align-items:center;padding:2px 0;border-bottom:1px solid #1e293b22}
+.data-label{color:var(--dim3);font-size:7px}
+.data-value{font-weight:600;font-size:7.5px}
+.data-bar{height:3px;border-radius:1px;display:inline-block;vertical-align:middle;margin-left:4px}
+.scenario-row{display:flex;gap:4px;align-items:center;padding:2px 4px;border-radius:3px;margin-bottom:2px}
+.scenario-weight{font-size:9px;font-weight:700;width:32px;text-align:right}
+.scenario-name{font-size:7.5px;color:var(--text2)}
+.scenario-bar{flex:1;height:4px;border-radius:2px;background:var(--border)}
+.scenario-fill{height:100%;border-radius:2px}
+
+/* Arrow connector */
+.arrow{display:flex;justify-content:center;padding:1px 0}
+.arrow svg{width:10px;height:12px}
+
+/* Dual core */
+.dual-core{border:1px solid;border-radius:7px;padding:8px 6px 6px;position:relative;transition:border-color .3s}
+.dual-core-label{font-size:6.5px;letter-spacing:1.5px;color:var(--dim);position:absolute;top:-6px;left:8px;background:var(--bg);padding:0 3px}
+.dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.core-box{border:1px solid var(--card3);border-radius:6px;padding:7px 8px;transition:all .4s}
+.core-box.primary{border-color:currentColor}
+.core-box.dim{opacity:.35}
+.core-id{font-size:12px;font-weight:800;margin-bottom:3px}
+.core-tag{font-size:6px;letter-spacing:.8px;vertical-align:middle;margin-left:5px}
+.core-name{font-size:9px;font-weight:700;color:var(--text2);margin-bottom:1px}
+.core-en{font-size:7px;color:var(--dim);margin-bottom:3px}
+.core-task{font-size:7px;color:var(--dim2);line-height:1.4}
+/* Core data */
+.core-data{margin-top:4px;padding-top:4px;border-top:1px solid var(--border);font-size:7px;color:var(--dim2);line-height:1.5}
+.node-row{display:flex;justify-content:space-between;padding:1px 0}
+.node-prob{font-weight:600;font-size:7px}
+/* Hybrid bridge */
+.hybrid-bridge{margin-top:5px;padding:3px 6px;background:#ef44440a;border:1px dashed #ef444418;border-radius:3px;font-size:7px;color:var(--dim3)}
+.hybrid-bridge strong{color:var(--red);font-weight:600}
+.hybrid-item{display:flex;justify-content:space-between;align-items:center;padding:2px 0}
+.hybrid-arrow{color:var(--dim)}
+.hybrid-old{color:var(--dim2)}
+.hybrid-new{font-weight:600}
+.hybrid-delta{font-size:6.5px}
+
+/* Backflow */
+.backflow{margin-top:5px;padding:3px 6px;background:var(--card);border-radius:4px;border:1px solid var(--border);display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.backflow-label{font-size:7px;color:var(--dim2);letter-spacing:.8px}
+.backflow-item{font-size:7px;padding:1px 4px;border-radius:2px}
+
+/* ===== REGISTRY COLUMN ===== */
+.reg-col{position:sticky;top:20px;max-height:calc(100vh - 40px);overflow-y:auto}
+.reg-col::-webkit-scrollbar{width:3px}
+.reg-col::-webkit-scrollbar-track{background:transparent}
+.reg-col::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+/* Constitution */
+.constitution{background:var(--card);border-radius:7px;border:1px solid;padding:8px 10px;margin-bottom:8px;transition:border-color .3s}
+.const-header{display:flex;justify-content:space-between;align-items:center}
+.const-title{font-size:9px;font-weight:700;color:var(--red)}
+.const-sub{font-size:7px;color:var(--dim)}
+.const-toggle{background:transparent;border:none;font-family:inherit;color:var(--dim);font-size:8px;cursor:pointer}
+.const-body{font-size:7.5px;line-height:1.7;margin-top:6px}
+.mother-rule{padding:5px 7px;background:#ef44440a;border-radius:4px;border:1px solid #ef444418;color:var(--text2);font-weight:600;font-size:8px;margin-bottom:6px}
+.corollary{padding:4px 7px;background:var(--card3);border-radius:3px;border-left:2px solid;margin-bottom:4px}
+.corollary-title{font-weight:600;font-size:7.5px;margin-bottom:1px}
+.corollary-body{color:var(--dim2);font-size:7px;line-height:1.5}
+
+/* Category filter */
+.cat-filter{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:5px}
+.cat-btn{background:transparent;border:1px solid var(--border);color:var(--border2);border-radius:3px;padding:1px 6px;font-size:7px;cursor:pointer;font-family:inherit;transition:all .2s}
+.cat-btn.active{color:currentColor}
+
+/* Model cards */
+.model-card{background:var(--card);border:1px solid var(--border);border-radius:5px;padding:6px 8px;cursor:pointer;transition:all .2s;margin-bottom:3px}
+.model-card:hover{border-color:var(--border2)}
+.model-card.selected{border-color:currentColor}
+.mc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px}
+.mc-name{font-size:9px;font-weight:700;color:var(--text2)}
+.mc-tags{display:flex;gap:3px;align-items:center}
+.mc-role{font-size:6.5px;font-weight:700;padding:0 4px;border-radius:2px}
+.mc-role.P{background:#3b82f612;color:var(--blue)}
+.mc-role.D{background:#a78bfa12;color:var(--violet)}
+.mc-cost{font-size:6.5px;color:var(--dim);padding:0 3px;background:var(--card3);border-radius:2px}
+.mc-layers{display:flex;gap:2px;flex-wrap:wrap;align-items:center}
+.mc-layer-tag{font-size:6.5px;font-weight:600;padding:0 3px;border-radius:2px}
+.mc-cat{font-size:6.5px;margin-left:2px}
+.mc-detail{font-size:7px;color:var(--dim2);line-height:1.6;border-top:1px solid var(--border);padding-top:4px;margin-top:4px;display:none}
+.model-card.selected .mc-detail{display:block}
+.mc-detail .label{color:var(--dim3)}
+/* Credit bar */
+.mc-credit{display:flex;align-items:center;gap:4px;margin-top:3px}
+.mc-credit-bar{width:50px;height:3px;background:var(--border);border-radius:1px;overflow:hidden}
+.mc-credit-fill{height:100%;border-radius:1px}
+.mc-credit-val{font-size:6.5px;color:var(--dim2)}
+
+/* Model trace (from run) */
+.trace-box{background:var(--card2);border:1px solid var(--border);border-radius:4px;padding:5px 7px;margin-top:8px}
+.trace-title{font-size:7.5px;color:var(--dim3);font-weight:600;margin-bottom:3px}
+.trace-row{display:flex;align-items:center;gap:6px;padding:2px 0;border-bottom:1px solid var(--border);font-size:7px}
+.trace-id{font-weight:600;width:100px}
+.trace-role{width:16px;text-align:center;font-weight:700;font-size:7px}
+.trace-summary{flex:1;color:var(--dim2);font-size:6.5px}
+
+/* Footer */
+.footer{max-width:1200px;margin:12px auto;padding:0 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.foot-card{padding:5px 8px;background:var(--card);border-radius:5px;border:1px solid var(--border)}
+.foot-axis{font-size:9px;font-weight:700;margin-bottom:1px}
+.foot-desc{font-size:7.5px;color:var(--dim3);margin-bottom:1px}
+.foot-detail{font-size:7px;color:var(--dim)}
+
+/* Run meta bar */
+.run-meta{max-width:1200px;margin:6px auto 0;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;font-size:7.5px;color:var(--dim)}
+.run-meta .val{color:var(--dim3);font-weight:600}
+
+/* Divergence */
+.div-flag{padding:3px 6px;background:#f59e0b08;border:1px solid #f59e0b18;border-radius:3px;margin-top:3px;font-size:6.5px;color:var(--dim2);line-height:1.5}
+.div-flag .topic{color:var(--amber);font-weight:600}
+
+@media(max-width:900px){.main,.axis-labels{grid-template-columns:1fr}.mem-col,.reg-col{position:static;max-height:none}.footer{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <span class="tag">战忽局</span>
+    <span class="title">GeoPulse v7.4</span>
+    <span class="ver">Terminal</span>
+  </div>
+  <div class="header-sub" id="header-sub"></div>
+</div>
+
+<div class="run-meta" id="run-meta"></div>
+
+<div class="axis-labels">
+  <div class="axis-label" style="color:var(--fuchsia);border-bottom:1px solid #c084fc1a">MEMORY</div>
+  <div class="axis-label" style="color:var(--purple);border-bottom:1px solid #818cf81a">PIPELINE</div>
+  <div class="axis-label" style="color:var(--amber);border-bottom:1px solid #f59e0b1a">MODEL REGISTRY</div>
+</div>
+
+<div class="main">
+  <div class="mem-col" id="memory-col"></div>
+  <div class="pipe-col" id="pipeline-col"></div>
+  <div class="reg-col" id="registry-col"></div>
+</div>
+
+<div class="footer" id="footer"></div>
+
+<script>
+const DAG = __DAG_DATA__;
+const RUN = __RUN_OUTPUT__;
+const N = DAG.nodes;
+
+const LAYERS = [
+  {id:'L1',name:'证据归一化',en:'Evidence Normalization',color:'#818cf8',task:'压缩信息流为标准化证据',group:'pre'},
+  {id:'L2a',name:'分支定义',en:'Scenario Framing',color:'#a78bfa',task:'生成/维护状态分支与质疑性检验',group:'pre'},
+  {id:'L2b',name:'瓶颈提取',en:'Bottleneck Extraction',color:'#c084fc',task:'抽出 Regime 关键节点 → 三因子聚合',group:'pre'},
+  {id:'L3',name:'结构传播',en:'Structural Propagation',color:'#3b82f6',task:'M/H基线: 非策略性因果传导',group:'engine',regime:'A'},
+  {id:'L3.5',name:'策略求解',en:'Strategic Resolution',color:'#f59e0b',task:'S/H修正: Pipeline 按需从 Registry 加载模型',group:'engine',regime:'B'},
+  {id:'L4',name:'期限映射',en:'Horizon Translation',color:'#fbbf24',task:'分支权重/均衡路径 → 分窗口交易命题',group:'post'},
+  {id:'L5',name:'执行监控',en:'Execution & Monitor',color:'#10b981',task:'仓位 · 触发器 · 失效条件',group:'post'},
+];
+
+const MODELS_DEF = [
+  {id:'schelling-focal',name:'Schelling Focal Point',cat:'博弈论',layers:['L2a','L3.5','L4'],color:'#f59e0b',role:'P',cost:'medium',
+   callable:'Pipeline 在均衡求解时发现多个候选',scope:'多均衡博弈; 不适用于单一传导链',
+   input:'玩家集合 + 均衡候选',output:'筛选后主均衡 + 置信度'},
+  {id:'schelling-commit',name:'Schelling Commitment',cat:'博弈论',layers:['L3.5','L2b'],color:'#f59e0b',role:'P',cost:'medium',
+   callable:'节点涉及公开承诺/红线声明',scope:'主权博弈/外交承诺',
+   input:'玩家承诺 + 退路 + 受众',output:'承诺可信度三维评分'},
+  {id:'bayes',name:'Bayesian Updating',cat:'概率引擎',layers:['L1','L3'],color:'#3b82f6',role:'P',cost:'light',
+   callable:'Regime A 下默认计算范式',scope:'概率推断; Regime B 下降为辅助',
+   input:'先验 + 新证据',output:'后验概率分布'},
+  {id:'dialectic',name:'辩证质疑',cat:'认知纪律',layers:['L2a','L3.5'],color:'#a78bfa',role:'D',cost:'light',
+   callable:'核心纪律: 每轮分支生成时自动请求',scope:'通用; 无边界限制',
+   input:'任意判断/分支',output:'Thesis + Antithesis + 修正'},
+  {id:'nth-order',name:'N阶推演',cat:'传导分析',layers:['L3','L3.5'],color:'#3b82f6',role:'P',cost:'medium',
+   callable:'新冲击进入系统, Pipeline 请求传导展开',scope:'因果链分析; 不适用于纯策略性节点',
+   input:'冲击事件 + 传导图谱',output:'多阶效应链 + 衰减系数'},
+  {id:'fearon',name:'Fearon Audience Cost',cat:'博弈论',layers:['L3.5','L2b'],color:'#f59e0b',role:'P',cost:'heavy',
+   callable:'节点涉及主权博弈且 NCC 评分高',scope:'国际危机; 不适用于市场微观结构',
+   input:'领导人类型 + 国内政治',output:'退出成本函数 + 升级概率'},
+  {id:'taleb',name:'Taleb 反脆弱',cat:'风险框架',layers:['L2a','L5'],color:'#ef4444',role:'D',cost:'medium',
+   callable:'框架更新完成后 + 仓位审计周期',scope:'尾部风险; 不适用于基线概率估计',
+   input:'当前框架假设集',output:'黑天鹅清单 + 凸性暴露'},
+  {id:'premortem',name:'Pre-Mortem',cat:'认知纪律',layers:['L2a','L4'],color:'#a78bfa',role:'D',cost:'light',
+   callable:'高置信度分支(>75%)时 Pipeline 强制请求',scope:'决策审计',
+   input:'主分支判断',output:'逆推失败原因清单'},
+  {id:'perez',name:'Carlota Perez',cat:'长周期',layers:['L2a'],color:'#c084fc',role:'P',cost:'light',
+   callable:'分支涉及技术范式转换',scope:'长周期技术-金融耦合',
+   input:'技术扩散 + 金融泡沫信号',output:'技术革命阶段判定'},
+  {id:'toc',name:'Theory of Constraints',cat:'系统分析',layers:['L2b','L3'],color:'#10b981',role:'P',cost:'light',
+   callable:'分析供应链/产能/流动性场景',scope:'系统瓶颈',
+   input:'系统节点图谱',output:'瓶颈识别 + 杠杆点'},
+];
+
+const CAT_COLORS = {'博弈论':'#f59e0b','长周期':'#c084fc','认知纪律':'#a78bfa','传导分析':'#3b82f6','风险框架':'#ef4444','概率引擎':'#3b82f6','系统分析':'#10b981'};
+const CATEGORIES = [...new Set(MODELS_DEF.map(m=>m.cat))];
+const WINDOW_LABELS = {W1_5:'W1-5',W6_16:'W6-16',W17_25plus:'W17-25+'};
+const SCEN_COLORS = ['#a78bfa','#f59e0b','#10b981','#ef4444'];
+const TYPE_MAP = {M:'机械',S:'策略',H:'混合'};
+
+let state = {regime:'A',selModel:null,filterCat:null,expandedLayers:new Set(['L2a','L3.5']),expandedShs:null};
+
+// Merge credit scores from registry.json if available
+function getCredits(){
+  const credits = {};
+  if(RUN.model_trace?.models_loaded){
+    RUN.model_trace.models_loaded.forEach(mc=>{
+      // Map run trace model_ids to our MODELS_DEF ids
+      const mapping = {'bayesian-updating':'bayes','dialectic-challenge':'dialectic','nth-order-reasoning':'nth-order'};
+      const defId = mapping[mc.model_id] || mc.model_id;
+      credits[defId] = {loaded:true, layer:mc.layer, summary:mc.output_summary, role:mc.role};
+    });
+  }
+  return credits;
+}
+
+function pct(p){return(p*100).toFixed(0)+'%'}
+function probColor(p){return p>=0.8?'var(--red)':p>=0.6?'var(--amber)':p>=0.4?'var(--yellow)':'var(--green)'}
+
+function renderHeader(){
+  const sub=document.getElementById('header-sub');
+  sub.innerHTML=`
+    <span class="hl">母句:</span> 事件流 → 状态分支概率 → 资产表达
+    <span class="sep"> │ </span>
+    <span class="c1">Pipeline</span> 做什么 ×
+    <span class="c2">Memory</span> 关注什么 ×
+    <span class="c3">Registry</span> 怎么想
+    <span class="sep"> │ </span>
+    <span class="c4">+ Constitution 防篡位</span>
+  `;
+  const meta=document.getElementById('run-meta');
+  const m=RUN.meta;
+  meta.innerHTML=`
+    <span>Run: <span class="val">${m.run_id}</span></span>
+    <span>Time: <span class="val">${new Date(m.timestamp).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}</span></span>
+    <span>Trigger: <span class="val">${m.trigger_type}</span></span>
+    <span>Evidence: <span class="val">${m.evidence_count}</span></span>
+    <span>Regime: <span class="val" style="color:${RUN.regime.current==='A'?'var(--sky)':'var(--yellow)'}">${RUN.regime.current}</span></span>
+    <span>GRI: <span class="val" style="color:var(--red)">${(Object.values(N).filter(n=>n.node_type!=='event').reduce((s,n)=>s+n.probability,0)/Math.max(1,Object.values(N).filter(n=>n.node_type!=='event').length)*100).toFixed(0)}</span></span>
+    <span>DAG: <span class="val">${Object.keys(N).length}N/${DAG.edges.length}E v${DAG.version}</span></span>
+  `;
+}
+
+function renderMemory(){
+  const col=document.getElementById('memory-col');
+  col.innerHTML='';
+  const panel=document.createElement('div');panel.className='mem-panel';
+
+  panel.innerHTML=`<div class="mem-title">SHS</div><div class="mem-sub">Standing Hypothesis Set</div>`;
+
+  // SHS items from writeback
+  const shs = RUN.shs_writeback||[];
+  if(shs.length===0){
+    panel.innerHTML+=`<div style="font-size:7px;color:var(--dim2);padding:4px">SHS 为空</div>`;
+  }
+  shs.forEach((h,i)=>{
+    const item=document.createElement('div');
+    item.className='shs-item'+(state.expandedShs===i?' active':'');
+    item.onclick=()=>{state.expandedShs=state.expandedShs===i?null:i;renderMemory()};
+    item.innerHTML=`
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="shs-id">${h.hypothesis_ref}</span>
+        <span class="shs-action ${h.action}">${h.action}</span>
+      </div>
+      <div class="shs-body">
+        ${h.new_value}
+        <div style="margin-top:3px;font-size:6px;color:var(--dim)">触发: ${h.trigger_reason}</div>
+      </div>
+    `;
+    panel.appendChild(item);
+  });
+
+  // Flows
+  panel.innerHTML+=`
+    <div class="mem-flows">
+      → L1 注意力先验<br>
+      → L2a 候选分支<br>
+      → L4/L5 失效条件
+    </div>
+    <div class="mem-learn"><strong>学习:</strong> b/c 重复失效→回写</div>
+  `;
+
+  col.appendChild(panel);
+}
+
+function makeArrow(c1,c2){
+  return `<div class="arrow"><svg viewBox="0 0 10 12"><line x1="5" y1="0" x2="5" y2="8" stroke="${c1||'#334155'}" stroke-width="1" stroke-opacity="0.3"/><path d="M2,7 L5,11 L8,7" fill="none" stroke="${c2||c1||'#334155'}" stroke-width="1" stroke-opacity="0.3"/></svg></div>`;
+}
+
+function layerData(layerId){
+  const er=RUN.engine_result;
+  switch(layerId){
+    case 'L1':
+      return `<div style="color:var(--dim2)">本轮证据: ${RUN.meta.evidence_count} 条${RUN.meta.evidence_count===0?' (无新证据，基于现有 DAG 状态分析)':''}</div>`;
+    case 'L2a':
+      let html='';
+      RUN.scenarios.forEach((s,i)=>{
+        const c=SCEN_COLORS[i%4];
+        html+=`<div class="scenario-row"><span class="scenario-weight" style="color:${c}">${pct(s.weight)}</span><div style="flex:1"><div class="scenario-name">${s.label}</div>`;
+        if(state.expandedLayers.has('L2a')){
+          html+=`<div style="font-size:6.5px;color:var(--dim);margin-top:2px;line-height:1.5">`;
+          html+=`<span style="color:var(--red)">⚔</span> ${s.antithesis?.slice(0,120)||'—'}${s.antithesis?.length>120?'…':''}`;
+          html+=`</div>`;
+        }
+        html+=`</div></div>`;
+      });
+      return html;
+    case 'L2b':
+      let bhtml='';
+      RUN.bottlenecks.sort((a,b)=>b.path_importance-a.path_importance).forEach(bn=>{
+        const tc=bn.type==='S'?'var(--violet)':bn.type==='H'?'var(--amber)':'var(--blue)';
+        bhtml+=`<div class="data-row"><span style="font-size:7.5px">${bn.label} <span style="color:${tc};font-size:6px">${TYPE_MAP[bn.type]}</span>${bn.irreversible?' 🔒':''}</span><span class="data-value" style="color:${probColor(bn.path_importance)}">${pct(bn.path_importance)}</span></div>`;
+      });
+      return bhtml;
+    case 'L4':
+      let thtml='';
+      RUN.horizon_theses.forEach(ht=>{
+        const wc=ht.window==='W1_5'?'var(--red)':ht.window==='W6_16'?'var(--amber)':'var(--blue)';
+        thtml+=`<div style="margin-bottom:4px;padding:3px 5px;border-left:2px solid ${wc};background:var(--card3);border-radius:0 3px 3px 0">
+          <div style="display:flex;justify-content:space-between"><span style="color:${wc};font-weight:600;font-size:7px">${WINDOW_LABELS[ht.window]||ht.window}</span><span style="font-size:6.5px;color:var(--dim2)">${pct(ht.confidence)}</span></div>
+          <div style="font-size:7px;color:var(--text);margin-top:1px">${ht.thesis.slice(0,100)}${ht.thesis.length>100?'…':''}</div>
+          <div style="font-size:6px;color:var(--amber);margin-top:1px">💹 ${ht.tradeable_as}</div>
+        </div>`;
+      });
+      return thtml;
+    case 'L5':
+      let ehtml=`<div style="margin-bottom:3px;font-size:7px;color:var(--dim3)">${RUN.execution_plan.positions.length} 仓位 · ${RUN.execution_plan.triggers.length} 触发器</div>`;
+      RUN.execution_plan.positions.forEach(p=>{
+        const dc=p.direction==='long'?'var(--green)':p.direction==='short'?'var(--red)':'var(--yellow)';
+        const di=p.direction==='long'?'▲':p.direction==='short'?'▼':'◆';
+        ehtml+=`<div class="data-row"><span style="font-size:7.5px">${p.asset}</span><span style="color:${dc};font-weight:600;font-size:7.5px">${di} ${p.direction}</span></div>`;
+      });
+      if(RUN.execution_plan.triggers.length){
+        ehtml+=`<div style="margin-top:3px;font-size:6.5px;color:var(--dim)">触发器:</div>`;
+        RUN.execution_plan.triggers.slice(0,3).forEach(t=>{
+          const uc=t.urgency==='act'?'var(--red)':t.urgency==='alert'?'var(--amber)':'var(--dim)';
+          ehtml+=`<div style="font-size:6.5px;padding:1px 0"><span style="color:${uc}">●</span> ${t.signal.slice(0,60)}</div>`;
+        });
+        if(RUN.execution_plan.triggers.length>3)ehtml+=`<div style="font-size:6px;color:var(--dim)">+${RUN.execution_plan.triggers.length-3} more</div>`;
+      }
+      return ehtml;
+    default:return '';
+  }
+}
+
+function renderPipeline(){
+  const col=document.getElementById('pipeline-col');
+  col.innerHTML='';
+  const isB=state.regime==='B';
+  const hlLayers=state.selModel?MODELS_DEF.find(m=>m.id===state.selModel)?.layers||[]:[];
+  const hlColor=state.selModel?MODELS_DEF.find(m=>m.id===state.selModel)?.color:'';
+  const hlName=state.selModel?MODELS_DEF.find(m=>m.id===state.selModel)?.name:'';
+
+  // Regime bar
+  let rbar=`<div class="regime-bar">
+    <div style="display:flex;align-items:center;gap:5px">
+      <span class="regime-label">REGIME</span>
+      <button class="regime-btn ${state.regime==='A'?'active-a':''}" onclick="state.regime='A';render()">A Structural</button>
+      <button class="regime-btn ${state.regime==='B'?'active-b':''}" onclick="state.regime='B';render()">B Strategic</button>
+    </div>
+    <span class="regime-note">当前: ${RUN.regime.current} | 联合得分 ${RUN.regime.joint_score.toFixed(3)}</span>
+  </div>`;
+  col.innerHTML+=rbar;
+
+  const pre=LAYERS.filter(l=>l.group==='pre');
+  const eng=LAYERS.filter(l=>l.group==='engine');
+  const post=LAYERS.filter(l=>l.group==='post');
+
+  function renderLayer(layer){
+    const dim=(layer.regime==='A'&&isB)||(layer.regime==='B'&&!isB);
+    const pri=(layer.regime==='A'&&!isB)||(layer.regime==='B'&&isB);
+    const hl=hlLayers.includes(layer.id);
+    const expanded=state.expandedLayers.has(layer.id);
+    const data=layerData(layer.id);
+
+    return `<div class="layer ${dim?'dim':''} ${expanded?'expanded':''}" onclick="toggleLayer('${layer.id}')">
+      <div class="layer-id-col">
+        <div class="layer-id ${pri?'primary':''}" style="color:${layer.color}">${layer.id}</div>
+        ${pri?`<div class="layer-primary-tag" style="color:${layer.color}">主引擎</div>`:''}
+      </div>
+      <div class="layer-body ${hl?'hl':''}" style="border-left-color:${layer.color}${dim?'44':''};${hl?`background:${hlColor}0c;border-right-color:${hlColor}33`:''}">
+        <div class="layer-header">
+          <span class="layer-name">${layer.name}</span>
+          <span class="layer-en">${layer.en}</span>
+          ${data?'<span class="layer-toggle">'+( expanded?'▾':'▸')+'</span>':''}
+        </div>
+        <div class="layer-task">${layer.task}</div>
+        ${hl?`<div class="layer-hl-tag" style="color:${hlColor}">← ${hlName}</div>`:''}
+        ${data?`<div class="layer-data">${data}</div>`:''}
+      </div>
+    </div>`;
+  }
+
+  // Pre layers
+  pre.forEach((l,i)=>{
+    col.innerHTML+=renderLayer(l);
+    if(i<pre.length-1)col.innerHTML+=makeArrow(l.color,pre[i+1].color);
+  });
+  col.innerHTML+=makeArrow('#c084fc','#3b82f6');
+
+  // Dual core
+  const er=RUN.engine_result;
+  let coreHtml=`<div class="dual-core" style="border-color:${isB?'#f59e0b12':'#3b82f612'}">
+    <span class="dual-core-label">DUAL-CORE</span>
+    <div class="dual-grid">`;
+
+  eng.forEach(layer=>{
+    const dim=(layer.regime==='A'&&isB)||(layer.regime==='B'&&!isB);
+    const pri=(layer.regime==='A'&&!isB)||(layer.regime==='B'&&isB);
+    const hl=hlLayers.includes(layer.id);
+
+    let coreData='';
+    if(layer.id==='L3'&&er.mechanical_nodes.length){
+      coreData=`<div class="core-data">`;
+      er.mechanical_nodes.sort((a,b)=>b.propagated_prob-a.propagated_prob).slice(0,6).forEach(mn=>{
+        const label=(N[mn.node_id]||{}).label||mn.node_id;
+        coreData+=`<div class="node-row"><span>${label.slice(0,14)}${label.length>14?'…':''}</span><span class="node-prob" style="color:${probColor(mn.propagated_prob)}">${pct(mn.propagated_prob)}</span></div>`;
+      });
+      if(er.mechanical_nodes.length>6)coreData+=`<div style="font-size:6px;color:var(--dim)">+${er.mechanical_nodes.length-6} more</div>`;
+      coreData+=`</div>`;
+    }
+    if(layer.id==='L3.5'&&er.strategic_nodes.length){
+      coreData=`<div class="core-data">`;
+      er.strategic_nodes.forEach(sn=>{
+        const label=(N[sn.node_id]||{}).label||sn.node_id;
+        const sel=sn.equilibria.find(e=>e.eq_id===sn.selected_eq);
+        coreData+=`<div class="node-row"><span>${label.slice(0,14)}${label.length>14?'…':''}</span><span class="node-prob" style="color:var(--amber)">${sel?pct(sel.probability):'?'}</span></div>`;
+        // Mini eq bar
+        if(sn.equilibria.length){
+          coreData+=`<div style="display:flex;gap:1px;margin:2px 0 4px">`;
+          const eqC=['#6366f1','#a78bfa','#c4b5fd'];
+          sn.equilibria.forEach((eq,j)=>{
+            const isSel=eq.eq_id===sn.selected_eq;
+            coreData+=`<div style="width:${eq.probability*100}%;min-width:8px;height:6px;border-radius:2px;background:${eqC[j%3]};opacity:${isSel?1:0.4};${isSel?'border:1px solid #fff':''}" title="${eq.label} ${pct(eq.probability)}${eq.is_focal?' ⭐':''}"></div>`;
+          });
+          coreData+=`</div>`;
+        }
+      });
+      coreData+=`</div>`;
+    }
+
+    coreHtml+=`<div class="core-box ${pri?'primary':''} ${dim?'dim':''}" style="color:${layer.color};${pri?`background:${layer.color}06`:''};${hl?`border-right:2px solid ${hlColor}33`:''}">
+      <div class="core-id" style="color:${layer.color}">${layer.id}<span class="core-tag" style="color:${layer.color}">${pri?'主引擎':dim?'服务':''}</span></div>
+      <div class="core-name">${layer.name}</div>
+      <div class="core-en">${layer.en}</div>
+      <div class="core-task">${layer.task}</div>
+      ${hl?`<div style="margin-top:3px;font-size:6.5px;color:${hlColor};font-weight:600">← ${hlName}</div>`:''}
+      ${coreData}
+    </div>`;
+  });
+
+  coreHtml+=`</div>`;
+
+  // Hybrid bridge
+  coreHtml+=`<div class="hybrid-bridge"><strong>H</strong> Hybrid: L3基线 → L3.5修正 → downstream recomp`;
+  if(er.hybrid_nodes.length){
+    er.hybrid_nodes.forEach(hn=>{
+      const label=(N[hn.node_id]||{}).label||hn.node_id;
+      const dc=hn.delta>0?'var(--red)':'var(--green)';
+      coreHtml+=`<div class="hybrid-item"><span>${label}</span><span><span class="hybrid-old">${pct(hn.baseline_prob)}</span> <span class="hybrid-arrow">→</span> <span class="hybrid-new" style="color:${dc}">${pct(hn.override_prob)}</span> <span class="hybrid-delta" style="color:${dc}">(${hn.delta>0?'+':''}${pct(hn.delta)})</span></span></div>`;
+    });
+  }
+  coreHtml+=`</div></div>`;
+  col.innerHTML+=coreHtml;
+
+  col.innerHTML+=makeArrow('#f59e0b','#fbbf24');
+
+  // Post layers
+  post.forEach((l,i)=>{
+    col.innerHTML+=renderLayer(l);
+    if(i<post.length-1)col.innerHTML+=makeArrow(l.color,post[i+1].color);
+  });
+
+  // Backflow
+  col.innerHTML+=`<div class="backflow">
+    <span class="backflow-label">BACKFLOW</span>
+    <span class="backflow-item" style="color:var(--green);background:#10b98110">a. Trade→L4/5</span>
+    <span class="backflow-item" style="color:var(--amber);background:#f59e0b10">b. Scenario→L2</span>
+    <span class="backflow-item" style="color:var(--red);background:#ef444410">c. Regime→重评估</span>
+  </div>`;
+
+  // Divergence flags
+  if(RUN.model_trace.divergence_flags?.length){
+    RUN.model_trace.divergence_flags.forEach(df=>{
+      col.innerHTML+=`<div class="div-flag">
+        <span class="topic">⚡ ${df.topic}</span> <span style="color:var(--dim)">(${df.layer})</span>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:2px">
+          <div><span style="color:var(--green)">🟢 ${df.model_a}:</span> ${df.model_a_says.slice(0,80)}…</div>
+          <div><span style="color:var(--red)">🔴 ${df.model_b}:</span> ${df.model_b_says.slice(0,80)}…</div>
+        </div>
+      </div>`;
+    });
+  }
+}
+
+function renderRegistry(){
+  const col=document.getElementById('registry-col');
+  col.innerHTML='';
+  const credits=getCredits();
+
+  // Constitution
+  col.innerHTML+=`<div class="constitution" style="border-color:#ef444433">
+    <div class="const-header">
+      <div style="display:flex;align-items:center;gap:5px">
+        <span class="const-title">Registry 宪法</span>
+        <span class="const-sub">Constitution</span>
+      </div>
+    </div>
+    <div class="const-body">
+      <div class="mother-rule">母规则: 模型不生成判断，模型只生成视角。判断由 Pipeline 生成。</div>
+      <div class="corollary" style="border-left-color:#f59e0b44">
+        <div class="corollary-title" style="color:var(--amber)">推论一: 调用权归 Pipeline</div>
+        <div class="corollary-body">模型不自行出场。Pipeline 在处理节点时向 Registry 发请求，由 callable_when 条件判定是否加载。</div>
+      </div>
+      <div class="corollary" style="border-left-color:#a78bfa44">
+        <div class="corollary-title" style="color:var(--violet)">推论二: 冲突不解决，标记为信号</div>
+        <div class="corollary-body">同层多模型输出不同结论时，不投票、不取均值。标记 <span style="color:var(--violet)">divergence flag</span>，上报 L2a 生成新分支。</div>
+      </div>
+      <div class="corollary" style="border-left-color:#10b98144">
+        <div class="corollary-title" style="color:var(--green)">推论三: 信用评分分两维</div>
+        <div class="corollary-body"><span style="color:var(--blue)">P 类</span> 产出判断 → 评 predictive utility<br><span style="color:var(--violet)">D 类</span> 质疑判断 → 评 risk coverage<br>D 类不因"风险没发生"被降级。</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Category filter
+  let filterHtml='<div class="cat-filter">';
+  filterHtml+=`<button class="cat-btn ${!state.filterCat?'active':''}" style="${!state.filterCat?'background:#ffffff08;color:var(--dim3)':''}" onclick="state.filterCat=null;state.selModel=null;render()">全部</button>`;
+  CATEGORIES.forEach(cat=>{
+    const c=CAT_COLORS[cat];
+    const active=state.filterCat===cat;
+    filterHtml+=`<button class="cat-btn ${active?'active':''}" style="${active?`background:${c}10;border-color:${c};color:${c}`:''}" onclick="state.filterCat=state.filterCat==='${cat}'?null:'${cat}';state.selModel=null;render()">${cat}</button>`;
+  });
+  filterHtml+='</div>';
+  col.innerHTML+=filterHtml;
+
+  // Model cards
+  const filtered=state.filterCat?MODELS_DEF.filter(m=>m.cat===state.filterCat):MODELS_DEF;
+  filtered.forEach(m=>{
+    const isSel=state.selModel===m.id;
+    const cr=credits[m.id];
+    const loaded=!!cr;
+
+    let layerTags='';
+    m.layers.forEach(lid=>{
+      const lc=LAYERS.find(l=>l.id===lid)?.color||'var(--dim)';
+      layerTags+=`<span class="mc-layer-tag" style="color:${lc};background:${lc}12">${lid}</span>`;
+    });
+
+    let detailHtml='';
+    if(isSel){
+      detailHtml=`<div class="mc-detail">
+        <div><span class="label">callable_when:</span> ${m.callable}</div>
+        <div><span class="label">输入:</span> ${m.input}</div>
+        <div><span class="label">输出:</span> ${m.output}</div>
+        <div><span class="label">scope:</span> ${m.scope}</div>
+        <div style="margin-top:2px">
+          <span class="label">role:</span> <span style="color:${m.role==='P'?'var(--blue)':'var(--violet)'};font-weight:600">${m.role==='P'?'Productive':'Disciplinary'}</span>
+          &nbsp;<span class="label">cost:</span> <span style="color:${m.cost==='heavy'?'var(--red)':m.cost==='medium'?'var(--yellow)':'var(--green)'}">${m.cost}</span>
+        </div>
+        ${loaded?`<div style="margin-top:3px;padding-top:3px;border-top:1px dashed var(--border)"><span style="color:var(--green)">✓ 本轮已加载</span> <span style="color:var(--dim)">${cr.layer}</span><div style="margin-top:1px;font-size:6.5px;color:var(--dim2)">${cr.summary?.slice(0,120)||''}</div></div>`:''}
+      </div>`;
+    }
+
+    col.innerHTML+=`<div class="model-card ${isSel?'selected':''}" style="${isSel?`background:${m.color}0c;border-color:${m.color}33`:''}" onclick="state.selModel=state.selModel==='${m.id}'?null:'${m.id}';render()">
+      <div class="mc-header">
+        <span class="mc-name">${m.name}${loaded?' <span style="color:var(--green);font-size:7px">●</span>':''}</span>
+        <div class="mc-tags">
+          <span class="mc-role ${m.role}">${m.role}</span>
+          <span class="mc-cost">${m.cost}</span>
+        </div>
+      </div>
+      <div class="mc-layers">${layerTags}<span class="mc-cat" style="color:${CAT_COLORS[m.cat]}">${m.cat}</span></div>
+      ${detailHtml}
+    </div>`;
+  });
+
+  // Model trace from actual run
+  if(RUN.model_trace.models_loaded?.length){
+    let traceHtml=`<div class="trace-box"><div class="trace-title">本轮调用记录 (${RUN.model_trace.total_model_calls} calls / ${RUN.model_trace.total_cost})</div>`;
+    RUN.model_trace.models_loaded.forEach(mc=>{
+      const rc=mc.role==='P'?'var(--blue)':'var(--violet)';
+      traceHtml+=`<div class="trace-row">
+        <span class="trace-id">${mc.model_id}</span>
+        <span class="trace-role" style="color:${rc}">${mc.role}</span>
+        <span class="trace-summary">${mc.output_summary?.slice(0,80)||''}</span>
+      </div>`;
+    });
+    traceHtml+=`</div>`;
+    col.innerHTML+=traceHtml;
+  }
+}
+
+function renderFooter(){
+  document.getElementById('footer').innerHTML=[
+    {axis:'Pipeline',desc:'做什么 — 固定',c:'var(--purple)',p:'主语·分流·回流'},
+    {axis:'Memory',desc:'关注什么 — 可学习',c:'var(--fuchsia)',p:'先验·注意力·失效'},
+    {axis:'Registry',desc:'怎么想 — 可插拔',c:'var(--amber)',p:'Card v2·跨层·竞争'},
+    {axis:'Constitution',desc:'防篡位 — 刚性',c:'var(--red)',p:'调用权归Pipeline·分歧=信号·P/D双评'},
+  ].map(a=>`<div class="foot-card"><div class="foot-axis" style="color:${a.c}">${a.axis}</div><div class="foot-desc">${a.desc}</div><div class="foot-detail">${a.p}</div></div>`).join('');
+}
+
+window.toggleLayer=function(id){
+  if(state.expandedLayers.has(id))state.expandedLayers.delete(id);
+  else state.expandedLayers.add(id);
+  renderPipeline();
+};
+
+function render(){
+  renderHeader();
+  renderMemory();
+  renderPipeline();
+  renderRegistry();
+  renderFooter();
+}
+
+render();
+</script>
+</body>
+</html>

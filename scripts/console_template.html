@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoPulse v7.4 Console</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#060810;--bg1:#0b0e1a;--bg2:#101422;--bg3:#161b2d;
+  --border:#1c2240;--bHL:#2a3358;
+  --t:#ccd0dc;--tD:#4a5278;--tM:#7880a0;
+  --blue:#4a90ff;--blueD:#4a90ff25;
+  --gold:#e0a830;--goldD:#e0a83020;
+  --red:#e04848;--redD:#e0484820;
+  --green:#28c868;--greenD:#28c86820;
+  --purple:#9868e0;--purpleD:#9868e020;
+  --cyan:#38c0d0;
+}
+body{font-family:'IBM Plex Mono','Noto Sans SC',monospace;background:var(--bg);color:var(--t);min-height:100vh}
+/* Top bar */
+.topbar{background:var(--bg1);border-bottom:1px solid var(--border);padding:7px 14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.topbar .left{display:flex;align-items:center;gap:10px}
+.topbar .brand{font-size:12px;font-weight:800;letter-spacing:1px}
+.topbar .ver{font-size:8px;color:var(--tD)}
+.topbar .sep{width:1px;height:14px;background:var(--border)}
+.topbar .run-id{font-size:8.5px;color:var(--tM)}
+.topbar .right{font-size:8px;color:var(--tD)}
+/* Tags */
+.tag{font-size:8.5px;font-weight:700;padding:1px 5px;border-radius:2px;white-space:nowrap;display:inline-block}
+.tag-blue{color:var(--blue);background:var(--blueD)}
+.tag-gold{color:var(--gold);background:var(--goldD)}
+.tag-red{color:var(--red);background:var(--redD)}
+.tag-green{color:var(--green);background:var(--greenD)}
+.tag-purple{color:var(--purple);background:var(--purpleD)}
+.tag-dim{color:var(--tM);background:#ffffff08}
+/* Regime badge */
+.regime-badge{padding:2px 8px;border-radius:3px;font-size:10px;font-weight:800}
+.regime-A{background:var(--blueD);border:1px solid #4a90ff44;color:var(--blue)}
+.regime-B{background:var(--goldD);border:1px solid #e0a83044;color:var(--gold)}
+/* Event banner */
+.banner{background:#e0a83008;border-bottom:1px solid #e0a83018;padding:5px 14px;font-size:8.5px;color:var(--gold)}
+/* Tabs */
+.tab-bar{display:flex;border-bottom:1px solid var(--border);padding:0 14px;background:var(--bg1);overflow-x:auto}
+.tab-btn{background:transparent;border:none;border-bottom:2px solid transparent;color:var(--tD);padding:8px 14px;font-size:9px;font-weight:400;cursor:pointer;font-family:inherit;letter-spacing:.3px;transition:all .2s;white-space:nowrap}
+.tab-btn.active{background:var(--bg);border-bottom-color:var(--gold);color:var(--t);font-weight:700}
+.tab-btn:hover{color:var(--tM)}
+.tab-btn .icon{margin-right:4px;opacity:.5}
+/* Content */
+.content{padding:12px 14px;max-width:1000px}
+.panel{display:none}.panel.active{display:block}
+/* Cards */
+.card{background:var(--bg2);border-radius:6px;padding:12px 14px;margin-bottom:8px;border:1px solid var(--border)}
+.card-title{font-size:12px;font-weight:800;color:var(--t);margin-bottom:10px}
+.card-l{border-left:3px solid;padding-left:11px}
+/* Bar */
+.bar{height:4px;background:#ffffff08;border-radius:2px;overflow:hidden;display:inline-block;vertical-align:middle}
+.bar-fill{height:100%;border-radius:2px}
+/* Grid */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+/* Item row */
+.item-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;padding:4px 6px;background:var(--bg1);border-radius:4px}
+/* Filter buttons */
+.filter-bar{display:flex;gap:4px;margin-bottom:10px;flex-wrap:wrap}
+.filter-btn{background:transparent;border:1px solid var(--border);color:var(--tD);border-radius:3px;padding:2px 8px;font-size:8px;cursor:pointer;font-family:inherit;transition:all .2s}
+.filter-btn.active{background:#4a90ff15;border-color:var(--blue);color:var(--blue)}
+/* Evidence card */
+.ev-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:5px;border-left:3px solid}
+.ev-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.ev-content{font-size:9px;color:var(--tM);line-height:1.5;margin-bottom:4px}
+.ev-tags{display:flex;gap:3px;flex-wrap:wrap}
+/* Scenario card */
+.sc-card{background:var(--bg2);border-radius:6px;padding:10px 12px;cursor:pointer;border-left:4px solid;margin-bottom:6px;border:1px solid var(--border);transition:border-color .2s}
+.sc-card.expanded{border-color:#e0a83044}
+.sc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+.sc-weight{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums}
+.sc-delta{font-size:11px;font-weight:600}
+.sc-detail{margin-top:10px;font-size:9px;line-height:1.7}
+/* Engine */
+.mech-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:5px;border-left:3px solid var(--blue)}
+.strat-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:5px;border-left:3px solid var(--gold);cursor:pointer}
+.strat-card.expanded{border:1px solid #e0a83033}
+.eq-grid{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
+.eq-box{padding:3px 7px;border-radius:3px;border:1px solid var(--border)}
+.eq-box.focal{background:var(--goldD);border-color:#e0a83044}
+.hybrid-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:5px;border-left:3px solid var(--red)}
+.hybrid-flow{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.hybrid-val{text-align:center}
+.hybrid-val .label{font-size:7.5px;margin-bottom:2px}
+.hybrid-val .num{font-size:16px;font-weight:800}
+/* Horizon */
+.hz-card{background:var(--bg2);border-radius:6px;padding:12px 14px;margin-bottom:8px;border-left:4px solid}
+.hz-thesis{font-size:12px;font-weight:700;line-height:1.4;margin-bottom:6px}
+.hz-asset{font-size:10px;color:var(--green);padding:4px 8px;background:var(--greenD);border-radius:4px;margin-bottom:8px}
+.hz-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:9px;line-height:1.5}
+.hz-kill{margin-top:8px;padding:5px 8px;background:var(--redD);border-radius:4px;font-size:9px}
+/* Position */
+.pos-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:5px;border-left:4px solid}
+.pos-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:9px}
+/* Trigger */
+.trig-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:4px;border-left:3px solid}
+/* Invalidation */
+.inv-card{background:var(--bg2);border-radius:4px;padding:6px 8px;margin-bottom:4px;border-left:3px solid}
+/* Model card */
+.model-card{background:var(--bg2);border-radius:5px;padding:8px 10px;margin-bottom:4px;border-left:3px solid;cursor:pointer}
+.model-detail{margin-top:6px;font-size:9px;color:var(--tM);line-height:1.7;padding:6px 8px;background:var(--bg1);border-radius:4px}
+/* Divergence */
+.div-card{background:var(--bg2);border-radius:5px;padding:10px 12px;border-left:3px solid var(--gold);margin-bottom:6px}
+.div-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:9px;line-height:1.6;margin:6px 0}
+.div-side{padding:5px 7px;border-radius:4px}
+/* SHS */
+.shs-card{background:var(--bg2);border-radius:4px;padding:6px 8px;margin-bottom:4px;border-left:3px solid var(--purple)}
+@media(max-width:700px){.g2,.hz-grid,.pos-grid,.div-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const DAG=__DAG_DATA__;
+const RUN=__RUN_OUTPUT__;
+const N=DAG.nodes;
+const nl=id=>(N[id]||{}).label||id;
+
+const UC={act:'var(--red)',alert:'var(--gold)',watch:'var(--tM)'};
+const DC={long:'var(--green)',short:'var(--red)',hedge:'var(--gold)'};
+const DI={long:'▲',short:'▼',hedge:'◆'};
+const TC={M:'var(--blue)',S:'var(--gold)',H:'var(--red)'};
+const TN={M:'M',S:'S',H:'H'};
+const WC={W1_5:'var(--red)',W6_16:'var(--gold)',W17_25plus:'var(--blue)'};
+const WL={W1_5:'W1-5',W6_16:'W6-16',W17_25plus:'W17-25+'};
+
+let st={tab:'overview',evFilter:null,expandedSc:null,expandedSt:null,expandedMd:null};
+
+function tag(t,cls){return `<span class="tag ${cls}">${t}</span>`}
+function bar(v,c,w){return `<div class="bar" style="width:${w||60}px"><div class="bar-fill" style="width:${v*100}%;background:${c||'var(--blue)'}"></div></div>`}
+function pct(v){return(v*100).toFixed(0)+'%'}
+function pc(v){return v>=0.8?'var(--red)':v>=0.6?'var(--gold)':v>=0.4?'var(--gold)':'var(--green)'}
+
+function renderTopbar(){
+  const m=RUN.meta,r=RUN.regime;
+  const rc=r.current==='B'?'regime-B':'regime-A';
+  return `<div class="topbar">
+    <div class="left">
+      <span class="brand">GeoPulse</span><span class="ver">v7.4</span>
+      <div class="sep"></div>
+      <span class="run-id">${m.run_id}</span>
+      ${tag(m.trigger_type,'tag-gold')}
+      <span class="regime-badge ${rc}">${r.current} ${r.current==='B'?'Strategic':'Structural'}</span>
+      ${r.switched?tag('SWITCHED','tag-red'):''}
+    </div>
+    <span class="right">${m.evidence_count} evidence · ${m.run_duration_ms}ms</span>
+  </div>
+  ${m.trigger_event?`<div class="banner">${m.trigger_event}</div>`:''}`;
+}
+
+function renderTabs(){
+  const tabs=[
+    {id:'overview',label:'Overview',icon:'◈'},
+    {id:'l2',label:'L2 Scenarios',icon:'◆'},
+    {id:'engine',label:'Engine',icon:'⬡'},
+    {id:'l4',label:'L4 Horizons',icon:'▽'},
+    {id:'l5',label:'L5 Execution',icon:'▷'},
+    {id:'audit',label:'Audit',icon:'◎'},
+  ];
+  return `<div class="tab-bar">${tabs.map(t=>`<button class="tab-btn ${st.tab===t.id?'active':''}" onclick="st.tab='${t.id}';render()"><span class="icon">${t.icon}</span>${t.label}</button>`).join('')}</div>`;
+}
+
+function overviewTab(){
+  const r=RUN.regime,m=RUN.meta;
+  const threshStr=r.hysteresis?r.hysteresis.enter_threshold:'0.55';
+  let html=`<div class="g2">`;
+
+  // Regime
+  html+=`<div class="card" style="border-color:${r.switched?'#e0a83044':'var(--border)'}">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+      <span style="font-size:12px;font-weight:800">Regime</span>
+      <span class="regime-badge ${r.current==='B'?'regime-B':'regime-A'}">${r.current} ${r.current==='B'?'Strategic':'Structural'}</span>
+      ${r.switched?tag('SWITCHED from '+r.previous,'tag-red'):''}
+    </div>`;
+  ['SAD','PD','NCC'].forEach(k=>{
+    const v=r.factor_scores[k];
+    html+=`<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+      <span style="font-size:10px;font-weight:700;color:${v>threshStr?'var(--gold)':'var(--tD)'};width:32px">${k}</span>
+      ${bar(v,v>threshStr?'var(--gold)':'var(--tM)',120)}
+      <span style="font-size:10px;color:var(--tM)">${(v*100).toFixed(0)}</span>
+      <span style="font-size:8px;color:var(--tD)">θ=${(threshStr*100).toFixed(0)}</span>
+    </div>`;
+  });
+  html+=`<div style="font-size:9px;color:var(--tM);margin-top:8px;line-height:1.6;padding:6px 8px;background:var(--bg1);border-radius:4px">联合得分 ${r.joint_score.toFixed(3)} | Regime ${r.current}${r.switched?' (本轮切换)':''}</div></div>`;
+
+  // Scenario weights
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Scenario Weights</span>`;
+  RUN.scenarios.forEach(s=>{
+    const d=s.weight-(s.weight_prev||0);
+    html+=`<div style="margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-size:10px;font-weight:600">${s.label}</span>
+          ${s.is_new?tag('NEW','tag-green'):''}
+        </div>
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-size:13px;font-weight:800;font-variant-numeric:tabular-nums">${pct(s.weight)}</span>
+          <span style="font-size:9px;font-weight:600;color:${d>0?'var(--green)':d<0?'var(--red)':'var(--tD)'}">${d>0?'+':''}${(d*100).toFixed(0)}pp</span>
+        </div>
+      </div>
+      ${bar(s.weight,s.weight>0.3?'var(--gold)':'var(--tM)','100%')}
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Bottleneck nodes
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Bottleneck Nodes</span>`;
+  RUN.bottlenecks.sort((a,b)=>b.path_importance-a.path_importance).forEach(bn=>{
+    html+=`<div class="item-row" style="border-left:3px solid ${TC[bn.type]}">
+      ${tag(TN[bn.type],bn.type==='M'?'tag-blue':bn.type==='S'?'tag-gold':'tag-red')}
+      <span style="font-size:9.5px;flex:1">${bn.label}</span>
+      ${bar(bn.path_importance,'var(--red)',50)}
+      <span style="font-size:9px;color:var(--tM);width:22px;text-align:right">${(bn.path_importance*100).toFixed(0)}</span>
+      ${bn.irreversible?tag('不可逆','tag-red'):''}
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Positions
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Active Positions</span>`;
+  RUN.execution_plan.positions.forEach(p=>{
+    html+=`<div class="item-row" style="border-left:3px solid ${DC[p.direction]}">
+      ${tag(p.direction.toUpperCase(),p.direction==='long'?'tag-green':p.direction==='short'?'tag-red':'tag-gold')}
+      <span style="font-size:9.5px;flex:1">${p.asset}</span>
+      <span style="font-size:8px;color:var(--tD)">${WL[p.horizon]||p.horizon}</span>
+      <span style="font-size:8px;color:var(--tM)">${p.sizing_note.slice(0,20)}</span>
+    </div>`;
+  });
+  html+=`</div></div>`;
+  return html;
+}
+
+function scenariosTab(){
+  let html='';
+  RUN.scenarios.forEach((s,i)=>{
+    const d=s.weight-(s.weight_prev||0);
+    const exp=st.expandedSc===i;
+    html+=`<div class="sc-card ${exp?'expanded':''}" style="border-left-color:${s.weight>0.3?'var(--gold)':'var(--tD)'}" onclick="st.expandedSc=st.expandedSc===${i}?null:${i};render()">
+      <div class="sc-header">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:8px;color:var(--tD);font-weight:700">${s.id}</span>
+          <span style="font-size:13px;font-weight:700">${s.label}</span>
+          ${s.is_new?tag('NEW','tag-green'):''}
+          ${s.is_from_divergence?tag('分歧催生','tag-gold'):''}
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="sc-weight">${pct(s.weight)}</span>
+          <span class="sc-delta" style="color:${d>0?'var(--green)':d<0?'var(--red)':'var(--tD)'}">${d>0?'▲':d<0?'▼':'—'} ${Math.abs(d*100).toFixed(0)}pp</span>
+        </div>
+      </div>
+      <div style="width:100%;height:4px;background:#ffffff08;border-radius:2px;overflow:hidden"><div style="width:${s.weight*100}%;height:100%;background:${s.weight>0.3?'var(--gold)':'var(--tM)'};border-radius:2px"></div></div>`;
+
+    if(exp){
+      html+=`<div class="sc-detail">
+        <div style="margin-bottom:8px"><div style="color:var(--blue);font-weight:700;margin-bottom:3px">前提</div>`;
+      (s.premises||[]).forEach(p=>{html+=`<div style="color:var(--tM);padding-left:8px;border-left:2px solid #4a90ff33">${p}</div>`});
+      html+=`</div>`;
+      if(s.antithesis){
+        html+=`<div style="padding:6px 8px;background:var(--redD);border-radius:4px;margin-bottom:8px"><span style="color:var(--red);font-weight:700">反论: </span><span style="color:var(--tM)">${s.antithesis}</span></div>`;
+      }
+      if(s.open_questions&&s.open_questions.length){
+        html+=`<div style="margin-bottom:8px"><div style="color:var(--purple);font-weight:700;margin-bottom:3px">待求解</div>`;
+        s.open_questions.forEach(q=>{html+=`<div style="color:var(--tM);padding-left:8px;border-left:2px solid #9868e033">${q}</div>`});
+        html+=`</div>`;
+      }
+      html+=`<div style="display:flex;gap:8px;flex-wrap:wrap">`;
+      if(s.source_models&&s.source_models.length){
+        html+=`<div><span style="font-size:8px;color:var(--tD)">模型: </span>`;
+        s.source_models.forEach(m=>{html+=tag(m,'tag-purple')+' '});
+        html+=`</div>`;
+      }
+      html+=`</div></div>`;
+    }
+    html+=`</div>`;
+  });
+  return html;
+}
+
+function engineTab(){
+  const er=RUN.engine_result;
+  let html='';
+
+  // Mechanical
+  html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--blue);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+    ${tag('L3','tag-blue')} Mechanical Propagation
+    ${er.regime_used==='A'?tag('主引擎','tag-blue'):tag('服务','tag-dim')}
+  </div>`;
+  er.mechanical_nodes.sort((a,b)=>b.propagated_prob-a.propagated_prob).forEach(m=>{
+    const drivers=m.upstream_drivers.map(d=>nl(d)).join(', ');
+    html+=`<div class="mech-card">
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+        <span style="font-size:10px;font-weight:700">${nl(m.node_id)}</span>
+        <div style="display:flex;align-items:center;gap:4px">
+          <span style="font-size:8px;color:var(--tD)">prob</span>
+          <span style="font-size:11px;font-weight:700;color:var(--blue)">${pct(m.propagated_prob)}</span>
+          ${tag(m.impact_magnitude>=0.7?'high':m.impact_magnitude>=0.4?'medium':'low',m.impact_magnitude>=0.7?'tag-red':'tag-gold')}
+        </div>
+      </div>
+      <div style="font-size:8.5px;color:var(--tM);line-height:1.5;padding:4px 6px;background:var(--bg1);border-radius:3px">驱动: ${drivers}</div>
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Strategic
+  if(er.strategic_nodes.length){
+    html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+      ${tag('L3.5','tag-gold')} Strategic Resolution
+      ${er.regime_used==='B'?tag('主引擎','tag-gold'):tag('服务','tag-dim')}
+    </div>`;
+    er.strategic_nodes.forEach((s,i)=>{
+      const exp=st.expandedSt===i;
+      html+=`<div class="strat-card ${exp?'expanded':''}" onclick="st.expandedSt=st.expandedSt===${i}?null:${i};render()">
+        <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+          <span style="font-size:10px;font-weight:700">${nl(s.node_id)}</span>
+          <div style="display:flex;gap:6px">
+            <span style="font-size:8px;color:var(--tD)">commit=${s.commitment_score.toFixed(2)}</span>
+            <span style="font-size:8px;color:var(--tD)">exit=${s.exit_cost_ratio}x</span>
+          </div>
+        </div>
+        <div class="eq-grid">`;
+      s.equilibria.forEach(eq=>{
+        const sel=eq.eq_id===s.selected_eq;
+        html+=`<div class="eq-box ${eq.is_focal?'focal':''}" ${sel?'style="border:2px solid var(--gold)"':''}>
+          <div style="font-size:9px;color:${eq.is_focal?'var(--gold)':'var(--tM)'};font-weight:${eq.is_focal?700:400}">${eq.label}</div>
+          <div style="font-size:11px;font-weight:700">${pct(eq.probability)}</div>
+          ${eq.is_focal?'<div style="font-size:7px;color:var(--gold)">focal point</div>':''}
+          ${sel?'<div style="font-size:7px;color:var(--green)">✓ selected</div>':''}
+        </div>`;
+      });
+      html+=`</div></div>`;
+    });
+    html+=`</div>`;
+  }
+
+  // Hybrid
+  if(er.hybrid_nodes.length){
+    html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+      ${tag('H','tag-red')} Hybrid Coupling
+    </div>`;
+    er.hybrid_nodes.forEach(h=>{
+      const dc=h.delta>0?'var(--gold)':'var(--green)';
+      html+=`<div class="hybrid-card">
+        <div style="display:flex;justify-content:space-between;margin-bottom:5px">
+          <span style="font-size:10px;font-weight:700">${nl(h.node_id)}</span>
+          <span style="font-size:10px;font-weight:700;color:var(--gold)">Δ ${h.delta>0?'+':''}${(h.delta*100).toFixed(0)}pp</span>
+        </div>
+        <div class="hybrid-flow">
+          <div class="hybrid-val"><div class="label" style="color:var(--blue)">L3 基线</div><div class="num" style="color:var(--tM)">${pct(h.baseline_prob)}</div></div>
+          <span style="font-size:14px;color:var(--tD)">→</span>
+          <div class="hybrid-val"><div class="label" style="color:var(--gold)">L3.5 修正</div><div class="num" style="color:var(--gold)">${pct(h.override_prob)}</div></div>
+          <div style="flex:1;padding-left:10px;border-left:1px solid var(--border)">
+            <div style="font-size:7.5px;color:var(--red);margin-bottom:2px">recomp subgraph</div>
+            <div style="display:flex;gap:3px;flex-wrap:wrap">${h.recomp_subgraph.map(r=>tag(nl(r),'tag-red')).join(' ')}</div>
+          </div>
+        </div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+  return html;
+}
+
+function horizonTab(){
+  let html='';
+  RUN.horizon_theses.forEach(h=>{
+    const wc=WC[h.window]||'var(--tM)';
+    html+=`<div class="hz-card" style="border-left-color:${wc}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        ${tag(WL[h.window]||h.window,h.window==='W1_5'?'tag-red':h.window==='W6_16'?'tag-gold':'tag-blue')}
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-size:8px;color:var(--tD)">confidence</span>
+          ${bar(h.confidence,wc,60)}
+          <span style="font-size:10px;font-weight:700;color:var(--tM)">${pct(h.confidence)}</span>
+        </div>
+      </div>
+      <div class="hz-thesis">${h.thesis}</div>
+      <div class="hz-asset">💹 ${h.tradeable_as}</div>
+      <div class="hz-grid">
+        <div><div style="color:var(--tD);margin-bottom:2px">核心假设</div><div style="color:var(--tM)">${h.key_assumption}</div></div>
+        <div><div style="color:var(--tD);margin-bottom:2px">关联分支</div><div style="color:var(--tM)">${h.dominant_scenario}</div></div>
+      </div>
+      <div class="hz-kill"><span style="color:var(--red);font-weight:700">Kill Condition: </span><span style="color:var(--tM)">${h.kill_condition}</span></div>
+    </div>`;
+  });
+  return html;
+}
+
+function executionTab(){
+  let html='';
+  // Positions
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:8px">Positions</div>`;
+  RUN.execution_plan.positions.forEach(p=>{
+    html+=`<div class="pos-card" style="border-left-color:${DC[p.direction]}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <div style="display:flex;align-items:center;gap:6px">
+          ${tag(p.direction.toUpperCase(),p.direction==='long'?'tag-green':'tag-red')}
+          <span style="font-size:11px;font-weight:700">${p.asset}</span>
+        </div>
+        <div style="display:flex;gap:6px">
+          ${tag(WL[p.horizon]||p.horizon,'tag-dim')}
+        </div>
+      </div>
+      <div style="font-size:9px;color:var(--tM);margin-bottom:4px">${p.sizing_note}</div>
+      <div class="pos-grid">
+        <div><span style="color:var(--green)">entry: </span><span style="color:var(--tM)">${p.entry_condition}</span></div>
+        <div><span style="color:var(--red)">stop: </span><span style="color:var(--tM)">${p.stop_condition}</span></div>
+      </div>
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Triggers
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">Triggers</div>`;
+  RUN.execution_plan.triggers.sort((a,b)=>{const o={act:0,alert:1,watch:2};return(o[a.urgency]||2)-(o[b.urgency]||2)}).forEach(t=>{
+    html+=`<div class="trig-card" style="border-left-color:${UC[t.urgency]}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+        <div style="display:flex;align-items:center;gap:6px">
+          ${tag(t.urgency,t.urgency==='act'?'tag-red':t.urgency==='alert'?'tag-gold':'tag-dim')}
+          <span style="font-size:10px;font-weight:600">${t.signal}</span>
+        </div>
+        ${t.linked_node?`<span style="font-size:8px;color:var(--tD)">${t.linked_node}</span>`:''}
+      </div>
+      <div style="font-size:8.5px;color:var(--tM);line-height:1.5"><span style="color:var(--tD)">if: </span>${t.condition}</div>
+      <div style="font-size:8.5px;color:var(--green);margin-top:2px">${t.action}</div>
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Invalidation
+  html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:8px">Invalidation Rules</div>`;
+  (RUN.invalidation.trade_level||[]).forEach(t=>{
+    html+=`<div class="inv-card" style="border-left-color:var(--green)">
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('a · Trade','tag-green')}<span style="font-size:9px">${t.position_ref}</span></div>
+      <div style="font-size:8.5px;color:var(--tM)">${t.condition} → <span style="color:var(--red)">${t.action}</span></div>
+    </div>`;
+  });
+  (RUN.invalidation.scenario_level||[]).forEach(s=>{
+    html+=`<div class="inv-card" style="border-left-color:var(--gold)">
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('b · Scenario','tag-gold')}<span style="font-size:9px">${s.scenario_ref}</span>${s.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
+      <div style="font-size:8.5px;color:var(--tM)">前提 "${s.premise_broken}" 被破坏 if: ${s.evidence}</div>
+    </div>`;
+  });
+  if(RUN.invalidation.regime_level){
+    const ri=RUN.invalidation.regime_level;
+    html+=`<div class="inv-card" style="border-left-color:var(--red);background:var(--redD)">
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('c · Regime','tag-red')}${ri.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
+      <div style="font-size:8.5px;color:var(--tM)">${ri.contradiction}</div>
+    </div>`;
+  }
+  html+=`</div>`;
+  return html;
+}
+
+function auditTab(){
+  let html='';
+  // Models
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:8px">Model Trace (${RUN.model_trace.total_model_calls} loaded)</div>`;
+  RUN.model_trace.models_loaded.forEach((m,i)=>{
+    const exp=st.expandedMd===i;
+    const rc=m.role==='P'?'var(--blue)':'var(--purple)';
+    html+=`<div class="model-card" style="border-left-color:${rc}" onclick="st.expandedMd=st.expandedMd===${i}?null:${i};render()">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="display:flex;align-items:center;gap:6px">
+          ${tag(m.role,m.role==='P'?'tag-blue':'tag-purple')}
+          <span style="font-size:10px;font-weight:700">${m.model_id}</span>
+        </div>
+        <div style="display:flex;gap:4px">
+          ${tag(m.layer,'tag-dim')}
+          ${tag(m.cost,m.cost==='heavy'?'tag-red':m.cost==='medium'?'tag-gold':'tag-green')}
+        </div>
+      </div>
+      ${exp?`<div class="model-detail">${m.output_summary}</div>`:''}
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // Divergence
+  if(RUN.model_trace.divergence_flags&&RUN.model_trace.divergence_flags.length){
+    html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">Divergence Flags (${RUN.model_trace.divergence_flags.length})</div>`;
+    RUN.model_trace.divergence_flags.forEach(dv=>{
+      html+=`<div class="div-card">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+          ${tag(dv.resolution,'tag-gold')}
+          ${dv.spawned_scenario?tag('→ '+dv.spawned_scenario,'tag-green'):''}
+          ${tag(dv.layer,'tag-dim')}
+          <span style="font-size:9px;color:var(--tM)">${dv.topic}</span>
+        </div>
+        <div class="div-grid">
+          <div class="div-side" style="background:var(--blueD)">
+            <div style="color:var(--blue);font-weight:700;margin-bottom:2px">${dv.model_a}</div>
+            <div style="color:var(--tM)">${dv.model_a_says}</div>
+          </div>
+          <div class="div-side" style="background:var(--goldD)">
+            <div style="color:var(--gold);font-weight:700;margin-bottom:2px">${dv.model_b}</div>
+            <div style="color:var(--tM)">${dv.model_b_says}</div>
+          </div>
+        </div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+
+  // SHS Writeback
+  if(RUN.shs_writeback&&RUN.shs_writeback.length){
+    html+=`<div><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:8px">SHS Writeback (${RUN.shs_writeback.length})</div>`;
+    RUN.shs_writeback.forEach(w=>{
+      html+=`<div class="shs-card">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
+          ${tag(w.action,w.action==='add'?'tag-green':'tag-gold')}
+          <span style="font-size:9.5px;font-weight:600">${w.hypothesis_ref}</span>
+        </div>
+        <div style="font-size:8.5px;color:var(--tM);line-height:1.5">
+          <div><span style="color:var(--tD)">字段:</span> ${w.field_changed}</div>
+          ${w.old_value?`<div><span style="color:var(--red)">旧:</span> ${w.old_value}</div>`:''}
+          ${w.new_value?`<div><span style="color:var(--green)">新:</span> ${w.new_value.slice(0,120)}${w.new_value.length>120?'…':''}</div>`:''}
+          <div><span style="color:var(--tD)">原因:</span> ${w.trigger_reason}</div>
+        </div>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+  return html;
+}
+
+function render(){
+  const panels={overview:overviewTab,l2:scenariosTab,engine:engineTab,l4:horizonTab,l5:executionTab,audit:auditTab};
+  let html=renderTopbar()+renderTabs();
+  html+=`<div class="content">`;
+  Object.keys(panels).forEach(k=>{
+    html+=`<div class="panel ${st.tab===k?'active':''}">${panels[k]()}</div>`;
+  });
+  html+=`</div>`;
+  document.getElementById('app').innerHTML=html;
+}
+
+render();
+</script>
+</body>
+</html>
