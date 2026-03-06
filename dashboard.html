@@ -318,37 +318,18 @@ function renderDialectic() {
 }
 
 function renderAssetMatrix() {
-  const nodes = getTemporalNodes();
   const box = h('div');
-  
-  // Key assets derived from DAG
-  const assets = [
-    {name:'原油 (Brent)', nodeId:'oil_price_100_breach', current:'$85.4',
-     base:{dir:'↑',range:'$88-105'}, escalation:{dir:'⬆',range:'$105-135+'}, deesc:{dir:'↓',range:'$72-78'}},
-    {name:'黄金 (XAU)', nodeId:'safe_haven_outperformance', current:'$5,082',
-     base:{dir:'↑',range:'$5,300-6,000'}, escalation:{dir:'⬆',range:'$6,000-7,000+'}, deesc:{dir:'↓',range:'$4,900-5,100'}},
-    {name:'美股 (S&P)', nodeId:'equity_correction_deepening', current:'6,775',
-     base:{dir:'↓',range:'-7~-12%'}, escalation:{dir:'⬇',range:'-12~-22%'}, deesc:{dir:'↑',range:'+3-5%'}},
-    {name:'美债 (10Y)', nodeId:'treasury_stagflation_pricing', current:'4.13%',
-     base:{dir:'→↑',range:'4.1-4.5%'}, escalation:{dir:'↑',range:'4.4-5.0%'}, deesc:{dir:'↓',range:'3.8-4.0%'}},
-    {name:'EUR/USD', nodeId:'euro_parity_risk', current:'1.16',
-     base:{dir:'↓',range:'1.05-1.10'}, escalation:{dir:'⬇',range:'0.95-1.00'}, deesc:{dir:'↑',range:'1.18-1.22'}},
-    {name:'USD/JPY', nodeId:'jpy_carry_unwind', current:'157.4',
-     base:{dir:'→',range:'155-160'}, escalation:{dir:'⬇',range:'<150'}, deesc:{dir:'↑',range:'158-162'}},
-    {name:'USD/CNY', nodeId:'cny_controlled_depreciation', current:'6.90',
-     base:{dir:'↑',range:'7.00-7.10'}, escalation:{dir:'⬆',range:'7.10-7.25'}, deesc:{dir:'→',range:'6.85-6.95'}},
-    {name:'BTC', nodeId:'crypto_risk_correlation', current:'$68.9K',
-     base:{dir:'→↓',range:'$57-70K'}, escalation:{dir:'⬇',range:'$45-57K'}, deesc:{dir:'↑',range:'$78-88K'}},
-    {name:'天然气 (TTF)', nodeId:'europe_energy_crisis_redux', current:'飙升中',
-     base:{dir:'⬆',range:'+35-60%'}, escalation:{dir:'⬆⬆',range:'+100-180%'}, deesc:{dir:'→',range:'回落'}},
-  ];
+  if (!dag) return box;
+
+  // Read assets from DAG (data-driven)
+  const assets = dag.assets || [];
+  const scenarioMeta = dag.scenario_weights || {};
 
   // Scenario selector
-  const scenarios = [
-    {id:'base',l:'基准消耗',p:'45%',c:'var(--yellow)'},
-    {id:'escalation',l:'升级拖延',p:'37%',c:'var(--red)'},
-    {id:'deesc',l:'快速降级',p:'10%',c:'var(--green)'}
-  ];
+  const scenarios = Object.entries(scenarioMeta).map(([id, m]) => ({
+    id, l: m.label, p: Math.round(m.prob * 100) + '%',
+    c: id === 'escalation' ? 'var(--red)' : id === 'deesc' ? 'var(--green)' : 'var(--yellow)'
+  }));
   const sel = h('div', {style:{display:'flex',gap:'6px',marginBottom:'12px'}});
   scenarios.forEach(s => {
     sel.appendChild(h('button', {
@@ -359,75 +340,153 @@ function renderAssetMatrix() {
   });
   box.appendChild(sel);
 
+  // Asset table
   const tbl = h('table');
   const thead = h('thead', null, h('tr', null,
-    h('th', null, '资产'), h('th', null, '当前'), h('th', {style:{textAlign:'center',width:'30px'}}, '方向'), h('th', null, '目标区间')
+    h('th', null, '资产'),
+    h('th', null, '关联节点'),
+    h('th', null, '当前'),
+    h('th', {style:{textAlign:'center',width:'30px'}}, '方向'),
+    h('th', null, '目标区间')
   ));
   tbl.appendChild(thead);
   const tbody = h('tbody');
   assets.forEach(a => {
-    const s = a[state.scenario] || a.base;
-    const dirColor = DIR_COLORS[s.dir] || 'var(--dim)';
+    const sc = (a.scenarios || {})[state.scenario] || (a.scenarios || {}).base || {};
+    const dirColor = DIR_COLORS[sc.dir] || 'var(--dim)';
+    const node = dag.nodes[a.node_id];
+    const prob = node ? Math.round(node.probability * 100) + '%' : '';
     tbody.appendChild(h('tr', null,
       h('td', {style:{fontWeight:600}}, a.name),
+      h('td', {style:{fontSize:'10px',color:'var(--dim2)',maxWidth:'120px',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}, (node?.label || '') + ' ' + prob),
       h('td', {className:'mono', style:{color:'var(--dim2)',fontSize:'10px'}}, a.current),
-      h('td', {className:'dir', style:{color:dirColor}}, s.dir),
-      h('td', {className:'mono', style:{fontWeight:600,fontSize:'10px'}}, s.range)
+      h('td', {className:'dir', style:{color:dirColor}}, sc.dir || '→'),
+      h('td', {className:'mono', style:{fontWeight:600,fontSize:'10px'}}, sc.range || '-')
     ));
   });
   tbl.appendChild(tbody);
   box.appendChild(h('div', {style:{overflowX:'auto'}}, tbl));
+
+  // Show node time_phases for selected scenario's key assets
+  const highlight = assets.filter(a => dag.nodes[a.node_id]?.time_phases?.length);
+  if (highlight.length) {
+    const phCard = h('div', {className:'card', style:{marginTop:'10px'}});
+    phCard.appendChild(h('div', {className:'card-title', style:{color:'var(--dim2)'}}, '关键资产概率分布 (来自DAG)'));
+    highlight.slice(0, 4).forEach(a => {
+      const node = dag.nodes[a.node_id];
+      if (!node?.time_phases) return;
+      phCard.appendChild(h('div', {style:{fontSize:'10px',fontWeight:600,color:'var(--accent)',marginTop:'6px',marginBottom:'2px'}}, a.name + ' — ' + node.label));
+      node.time_phases.forEach(p => {
+        const phaseColor = PHASES.find(ph => ph.id === p.id)?.color || '#6b7280';
+        phCard.appendChild(renderBar(p.prob_density, 0.25, phaseColor, p.weeks + ' ' + (p.label||'').slice(0,4)));
+      });
+    });
+    box.appendChild(phCard);
+  }
+
   return box;
 }
 
 function renderActions() {
   const box = h('div', {style:{maxWidth:'820px'}});
-  
-  const phases = [
-    {phase:'W1-5 (现在→4月初)', title:'持有做多持续时间', peak:false,
-     detail:'市场还在"短期冲突"定价，你有信息优势。不做大调整。',
-     positions:'多: 黄金/金矿, 原油远月, 防务ETF(SHLD/XAR), 美元\n空: 航空, 新兴市场(能源进口)', risk:'头寸规模标准'},
-    {phase:'W5 节点 (4月初)', title:'第一次强制审视', peak:false,
-     detail:'三信号: ①Trump措辞软化? ②胡塞激活? ③首批商船通过霍尔木兹?',
-     positions:'均未出现→维持\n①出现→减仓20-30%做多持续时间', risk:'设定触发器，不要等待'},
-    {phase:'W6-10 (4月→5月初) ★', title:'最高波动率 — 期权替代方向', peak:true,
-     detail:'油价二元分布区间。做多波动率比做多方向更有效率。',
-     positions:'原油straddle/strangle\n黄金加仓\nVIX call spreads\nSPR释放→短期做空油机会', risk:'收紧止损; 减纯方向敞口; 增加凸性'},
-    {phase:'W11-16 (5月→6月中) ★★', title:'关键分叉 — 决定下半场', peak:true,
-     detail:'疲劳降级(霍尔木兹焦点) vs 代理人升级。观察Mojtaba+代理人。',
-     positions:'降级→平能源多头,保防务+黄金\n升级→加码通胀(TIPS,大宗生产商,浮动利率)', risk:'头寸大幅调整窗口'},
-    {phase:'W17+ (6月中后)', title:'若还在 → 通胀主线', peak:false,
-     detail:'通胀传导全面; Fed困境最尖锐。"事件交易"→"结构性重配"。',
-     positions:'空高估值成长\n多TIPS/大宗生产商/浮动利率\n防务核心多头', risk:'减杠杆; 增跨资产对冲'},
+  if (!dag) return box;
+
+  // Aggregate actions from all nodes' time_phases, grouped by phase
+  const phaseActions = {};
+  const phaseTriggers = {};
+  const phaseSignals = {};
+  PHASES.forEach(p => { phaseActions[p.id] = []; phaseTriggers[p.id] = []; phaseSignals[p.id] = []; });
+
+  Object.entries(dag.nodes).forEach(([nid, n]) => {
+    if (!n.time_phases) return;
+    n.time_phases.forEach(tp => {
+      const pid = tp.id;
+      if (!phaseActions[pid]) return;
+      (tp.actions || []).forEach(a => {
+        if (a && a.length > 1) phaseActions[pid].push({node: n.label, action: a});
+      });
+      (tp.triggers || []).forEach(t => {
+        if (t) phaseTriggers[pid].push(t);
+      });
+      (tp.signals || []).forEach(s => {
+        if (s) phaseSignals[pid].push(s);
+      });
+    });
+  });
+
+  // Deduplicate
+  const dedup = arr => [...new Set(arr)];
+
+  const phaseConfig = [
+    {ids: ['w1_2','w3_5'], label: 'W1-5 (现在→4月初)', title: '观察+持仓', peak: false},
+    {ids: ['w6_10'], label: 'W6-10 (4月→5月初) ★', title: '最高波动率窗口', peak: true},
+    {ids: ['w11_16'], label: 'W11-16 (5月→6月中) ★★', title: '关键分叉', peak: true},
+    {ids: ['w17_24'], label: 'W17-24 (6月中→8月)', title: '深度消耗 → 通胀主线', peak: false},
+    {ids: ['w25_plus'], label: 'W25+ (8月后)', title: '长尾 / 结构性重配', peak: false},
   ];
 
-  phases.forEach(p => {
-    const card = h('div', {className:'action-card' + (p.peak ? ' peak' : '')});
-    card.appendChild(h('div', {className:'action-phase', style:{color: p.peak ? 'var(--yellow)' : 'var(--dim2)'}}, p.phase));
-    card.appendChild(h('div', {className:'action-title'}, p.title));
-    card.appendChild(h('div', {className:'action-body'}, p.detail));
-    const grid = h('div', {className:'pos-grid'});
-    grid.appendChild(h('div', {className:'pos-box'},
-      h('div', {className:'label'}, '头寸'),
-      h('div', {className:'val'}, p.positions)
-    ));
-    grid.appendChild(h('div', {className:'pos-box'},
-      h('div', {className:'label'}, '风控'),
-      h('div', {className:'val'}, p.risk)
-    ));
+  phaseConfig.forEach(pc => {
+    const actions = pc.ids.flatMap(id => phaseActions[id] || []);
+    const triggers = dedup(pc.ids.flatMap(id => phaseTriggers[id] || []));
+    const signals = dedup(pc.ids.flatMap(id => phaseSignals[id] || []));
+    if (!actions.length && !triggers.length) return;
+
+    const card = h('div', {className:'action-card' + (pc.peak ? ' peak' : '')});
+    card.appendChild(h('div', {className:'action-phase', style:{color: pc.peak ? 'var(--yellow)' : 'var(--dim2)'}}, pc.label));
+    card.appendChild(h('div', {className:'action-title'}, pc.title));
+
+    const grid = h('div', {className:'pos-grid', style:{gridTemplateColumns:'1fr 1fr 1fr'}});
+
+    // Triggers
+    if (triggers.length) {
+      const tb = h('div', {className:'pos-box'});
+      tb.appendChild(h('div', {className:'label'}, '触发器 (' + triggers.length + ')'));
+      triggers.slice(0, 5).forEach(t => tb.appendChild(h('div', {className:'val', style:{fontSize:'10px'}}, '· ' + t.slice(0, 40))));
+      if (triggers.length > 5) tb.appendChild(h('div', {className:'val', style:{color:'var(--dim)',fontSize:'9px'}}, '...' + (triggers.length - 5) + ' more'));
+      grid.appendChild(tb);
+    }
+
+    // Signals
+    if (signals.length) {
+      const sb = h('div', {className:'pos-box'});
+      sb.appendChild(h('div', {className:'label'}, '信号 (' + signals.length + ')'));
+      signals.slice(0, 5).forEach(s => sb.appendChild(h('div', {className:'val', style:{fontSize:'10px'}}, '· ' + s.slice(0, 40))));
+      grid.appendChild(sb);
+    }
+
+    // Actions grouped by node
+    if (actions.length) {
+      const ab = h('div', {className:'pos-box'});
+      ab.appendChild(h('div', {className:'label'}, '行动 (' + actions.length + ')'));
+      actions.slice(0, 6).forEach(a => {
+        ab.appendChild(h('div', {className:'val', style:{fontSize:'10px',color:'var(--accent)'}}, '· ' + a.action.slice(0, 45)));
+      });
+      if (actions.length > 6) ab.appendChild(h('div', {className:'val', style:{color:'var(--dim)',fontSize:'9px'}}, '...' + (actions.length - 6) + ' more'));
+      grid.appendChild(ab);
+    }
+
     card.appendChild(grid);
     box.appendChild(card);
   });
 
-  // Summary
-  const insight = h('div', {className:'card', style:{borderColor:'var(--blue)',background:'#1e1b4b',marginTop:'10px'}});
-  insight.appendChild(h('div', {className:'card-title', style:{color:'var(--accent)'}}, '核心启示'));
-  insight.appendChild(h('div', {style:{fontSize:'11px',lineHeight:'1.8',color:'#d1d5db'}, innerHTML:
-    '<span style="color:#fbbf24;font-weight:600">做多持续时间</span>仍是核心alpha。' +
-    '不要均匀押注，<span style="color:#a78bfa;font-weight:600">集中在W6-16这10周alpha窗口</span>。' +
-    'W1-5持有不动；W5强制审视；W6-10用期权替代方向；W11-16根据分叉决定下半场。'
-  }));
-  box.appendChild(insight);
+  // Prob density summary card
+  const conflict = dag.nodes.conflict_duration_over_2m;
+  if (conflict?.time_phases) {
+    const sumCard = h('div', {className:'card', style:{borderColor:'var(--blue)',background:'#1e1b4b',marginTop:'10px'}});
+    sumCard.appendChild(h('div', {className:'card-title', style:{color:'var(--accent)'}}, '概率密度 (来自DAG: 冲突持续>2月)'));
+    const stacked = h('div', {className:'stacked'});
+    conflict.time_phases.forEach(p => {
+      const pct = p.prob_density * 100;
+      const phaseColor = PHASES.find(ph => ph.id === p.id)?.color || '#6b7280';
+      if (pct > 0) {
+        const seg = h('div', {className:'stacked-seg', style:{width:pct+'%',background:phaseColor}});
+        if (pct >= 6) seg.appendChild(h('span', null, p.weeks + ' ' + Math.round(pct) + '%'));
+        stacked.appendChild(seg);
+      }
+    });
+    sumCard.appendChild(stacked);
+    box.appendChild(sumCard);
+  }
 
   return box;
 }
