@@ -177,17 +177,28 @@ function overviewTab(){
       <span style="font-size:12px;font-weight:800">Regime</span>
       <span class="regime-badge ${r.current==='B'?'regime-B':'regime-A'}">${r.current} ${r.current==='B'?'Strategic':'Structural'}</span>
       ${r.switched?tag('SWITCHED from '+r.previous,'tag-red'):''}
+    </div>
+    <div style="display:flex;gap:10px;margin-bottom:8px;padding:4px 8px;background:var(--bg1);border-radius:4px;font-size:8px;color:var(--tD);line-height:1.4">
+      <span><b style="color:var(--blue)">A</b> Structural — 结构/机制传导主导</span>
+      <span><b style="color:var(--gold)">B</b> Strategic — 策略博弈主导</span>
     </div>`;
+  const factorTip={SAD:'Strategic Actor Density — 多少节点取决于人的决策',PD:'Payoff Dependence — 结果对收益结构的敏感度',NCC:'Non-Cooperative Complexity — 非合作博弈的复杂度'};
   ['SAD','PD','NCC'].forEach(k=>{
     const v=r.factor_scores[k];
     html+=`<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
-      <span style="font-size:10px;font-weight:700;color:${v>threshStr?'var(--gold)':'var(--tD)'};width:32px">${k}</span>
+      <span style="font-size:10px;font-weight:700;color:${v>threshStr?'var(--gold)':'var(--tD)'};width:32px" title="${factorTip[k]}">${k}</span>
       ${bar(v,v>threshStr?'var(--gold)':'var(--tM)',120)}
       <span style="font-size:10px;color:var(--tM)">${(v*100).toFixed(0)}</span>
       <span style="font-size:8px;color:var(--tD)">θ=${(threshStr*100).toFixed(0)}</span>
     </div>`;
   });
-  html+=`<div style="font-size:9px;color:var(--tM);margin-top:8px;line-height:1.6;padding:6px 8px;background:var(--bg1);border-radius:4px">联合得分 ${r.joint_score.toFixed(3)} | Regime ${r.current}${r.switched?' (本轮切换)':''}</div></div>`;
+  html+=`<div style="font-size:9px;color:var(--tM);margin-top:8px;line-height:1.6;padding:6px 8px;background:var(--bg1);border-radius:4px">
+    联合得分 ${r.joint_score.toFixed(3)} | Regime ${r.current}${r.switched?' (本轮切换)':''}
+    <div style="margin-top:4px;font-size:7.5px;color:var(--tD);line-height:1.5">
+      SAD = Strategic Actor Density · PD = Payoff Dependence · NCC = Non-Cooperative Complexity<br>
+      joint > θ<sub>enter</sub>(${(threshStr*100).toFixed(0)}%) → Regime B · joint < θ<sub>exit</sub> → Regime A
+    </div>
+  </div></div>`;
 
   // Scenario weights
   html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Scenario Weights</span>`;
@@ -210,7 +221,12 @@ function overviewTab(){
   html+=`</div>`;
 
   // Bottleneck nodes
-  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Bottleneck Nodes</span>`;
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:6px">Bottleneck Nodes</span>
+    <div style="display:flex;gap:10px;margin-bottom:8px;font-size:7.5px;color:var(--tD)">
+      <span>${tag('M','tag-blue')} Mechanical — 结构传导</span>
+      <span>${tag('S','tag-gold')} Strategic — 策略博弈</span>
+      <span>${tag('H','tag-red')} Hybrid — 混合</span>
+    </div>`;
   RUN.bottlenecks.sort((a,b)=>b.path_importance-a.path_importance).forEach(bn=>{
     html+=`<div class="item-row" style="border-left:3px solid ${TC[bn.type]}">
       ${tag(TN[bn.type],bn.type==='M'?'tag-blue':bn.type==='S'?'tag-gold':'tag-red')}
@@ -287,10 +303,11 @@ function engineTab(){
   let html='';
 
   // Mechanical
-  html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--blue);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+  html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--blue);margin-bottom:4px;display:flex;align-items:center;gap:6px">
     ${tag('L3','tag-blue')} Mechanical Propagation
     ${er.regime_used==='A'?tag('主引擎','tag-blue'):tag('服务','tag-dim')}
-  </div>`;
+  </div>
+  <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">Noisy-OR 结构传导 — 供应链、物理规律、市场机制驱动的概率传播</div>`;
   er.mechanical_nodes.sort((a,b)=>b.propagated_prob-a.propagated_prob).forEach(m=>{
     const drivers=m.upstream_drivers.map(d=>nl(d)).join(', ');
     html+=`<div class="mech-card">
@@ -309,10 +326,11 @@ function engineTab(){
 
   // Strategic
   if(er.strategic_nodes.length){
-    html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+    html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:4px;display:flex;align-items:center;gap:6px">
       ${tag('L3.5','tag-gold')} Strategic Resolution
       ${er.regime_used==='B'?tag('主引擎','tag-gold'):tag('服务','tag-dim')}
-    </div>`;
+    </div>
+    <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">博弈论求解 — Schelling focal point、承诺可信度、退出成本非对称分析</div>`;
     er.strategic_nodes.forEach((s,i)=>{
       const exp=st.expandedSt===i;
       html+=`<div class="strat-card ${exp?'expanded':''}" onclick="st.expandedSt=st.expandedSt===${i}?null:${i};render()">
@@ -340,9 +358,10 @@ function engineTab(){
 
   // Hybrid
   if(er.hybrid_nodes.length){
-    html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:8px;display:flex;align-items:center;gap:6px">
+    html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px;display:flex;align-items:center;gap:6px">
       ${tag('H','tag-red')} Hybrid Coupling
-    </div>`;
+    </div>
+    <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">L3 给基线概率 → L3.5 用策略判断修正 → 差值(Δ)回注下游重算</div>`;
     er.hybrid_nodes.forEach(h=>{
       const dc=h.delta>0?'var(--gold)':'var(--green)';
       html+=`<div class="hybrid-card">
@@ -460,7 +479,11 @@ function executionTab(){
 function auditTab(){
   let html='';
   // Models
-  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:8px">Model Trace (${RUN.model_trace.total_model_calls} loaded)</div>`;
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:4px">Model Trace (${RUN.model_trace.total_model_calls} loaded)</div>
+    <div style="display:flex;gap:12px;margin-bottom:8px;font-size:7.5px;color:var(--tD)">
+      <span>${tag('P','tag-blue')} Productive — 生成判断/视角</span>
+      <span>${tag('D','tag-purple')} Disciplinary — 质疑/审计 (不受成本预算·不可降级)</span>
+    </div>`;
   RUN.model_trace.models_loaded.forEach((m,i)=>{
     const exp=st.expandedMd===i;
     const rc=m.role==='P'?'var(--blue)':'var(--purple)';
