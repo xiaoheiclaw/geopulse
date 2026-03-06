@@ -146,22 +146,22 @@ function renderTopbar(){
       <div class="sep"></div>
       <span class="run-id">${m.run_id}</span>
       ${tag(m.trigger_type,'tag-gold')}
-      <span class="regime-badge ${rc}">${r.current} ${r.current==='B'?'Strategic':'Structural'}</span>
-      ${r.switched?tag('SWITCHED','tag-red'):''}
+      <span class="regime-badge ${rc}">${r.current} ${r.current==='B'?'策略型':'结构型'}</span>
+      ${r.switched?tag('已切换','tag-red'):''}
     </div>
-    <span class="right">${m.evidence_count} evidence · ${m.run_duration_ms}ms</span>
+    <span class="right">${m.evidence_count} 条证据 · ${m.run_duration_ms}ms</span>
   </div>
   ${m.trigger_event?`<div class="banner">${m.trigger_event}</div>`:''}`;
 }
 
 function renderTabs(){
   const tabs=[
-    {id:'overview',label:'Overview',icon:'◈'},
-    {id:'l2',label:'L2 Scenarios',icon:'◆'},
-    {id:'engine',label:'Engine',icon:'⬡'},
-    {id:'l4',label:'L4 Horizons',icon:'▽'},
-    {id:'l5',label:'L5 Execution',icon:'▷'},
-    {id:'audit',label:'Audit',icon:'◎'},
+    {id:'overview',label:'总览',icon:'◈'},
+    {id:'l2',label:'L2 场景分支',icon:'◆'},
+    {id:'engine',label:'引擎',icon:'⬡'},
+    {id:'l4',label:'L4 交易命题',icon:'▽'},
+    {id:'l5',label:'L5 执行',icon:'▷'},
+    {id:'audit',label:'审计',icon:'◎'},
   ];
   return `<div class="tab-bar">${tabs.map(t=>`<button class="tab-btn ${st.tab===t.id?'active':''}" onclick="st.tab='${t.id}';render()"><span class="icon">${t.icon}</span>${t.label}</button>`).join('')}</div>`;
 }
@@ -174,13 +174,13 @@ function overviewTab(){
   // Regime
   html+=`<div class="card" style="border-color:${r.switched?'#e0a83044':'var(--border)'}">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-      <span style="font-size:12px;font-weight:800">Regime</span>
-      <span class="regime-badge ${r.current==='B'?'regime-B':'regime-A'}">${r.current} ${r.current==='B'?'Strategic':'Structural'}</span>
-      ${r.switched?tag('SWITCHED from '+r.previous,'tag-red'):''}
+      <span style="font-size:12px;font-weight:800">体制</span>
+      <span class="regime-badge ${r.current==='B'?'regime-B':'regime-A'}">${r.current} ${r.current==='B'?'策略型':'结构型'}</span>
+      ${r.switched?tag('切换自 '+r.previous,'tag-red'):''}
     </div>
     <div style="display:flex;gap:10px;margin-bottom:8px;padding:4px 8px;background:var(--bg1);border-radius:4px;font-size:8px;color:var(--tD);line-height:1.4">
-      <span><b style="color:var(--blue)">A</b> Structural — 结构/机制传导主导</span>
-      <span><b style="color:var(--gold)">B</b> Strategic — 策略博弈主导</span>
+      <span><b style="color:var(--blue)">A</b> 结构型 — 结构/机制传导主导</span>
+      <span><b style="color:var(--gold)">B</b> 策略型 — 策略博弈主导</span>
     </div>`;
   const factorTip={SAD:'Strategic Actor Density — 多少节点取决于人的决策',PD:'Payoff Dependence — 结果对收益结构的敏感度',NCC:'Non-Cooperative Complexity — 非合作博弈的复杂度'};
   ['SAD','PD','NCC'].forEach(k=>{
@@ -201,7 +201,7 @@ function overviewTab(){
   </div></div>`;
 
   // Scenario weights
-  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Scenario Weights</span>`;
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">场景权重</span>`;
   RUN.scenarios.forEach(s=>{
     const d=s.weight-(s.weight_prev||0);
     html+=`<div style="margin-bottom:8px">
@@ -221,7 +221,7 @@ function overviewTab(){
   html+=`</div>`;
 
   // Bottleneck nodes
-  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:6px">Bottleneck Nodes</span>
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:6px">瓶颈节点</span>
     <div style="display:flex;gap:10px;margin-bottom:8px;font-size:7.5px;color:var(--tD)">
       <span>${tag('M','tag-blue')} Mechanical — 结构传导</span>
       <span>${tag('S','tag-gold')} Strategic — 策略博弈</span>
@@ -239,7 +239,7 @@ function overviewTab(){
   html+=`</div>`;
 
   // Positions
-  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">Active Positions</span>`;
+  html+=`<div class="card"><span class="card-title" style="display:block;margin-bottom:10px">当前仓位</span>`;
   RUN.execution_plan.positions.forEach(p=>{
     html+=`<div class="item-row" style="border-left:3px solid ${DC[p.direction]}">
       ${tag(p.direction.toUpperCase(),p.direction==='long'?'tag-green':p.direction==='short'?'tag-red':'tag-gold')}
@@ -304,7 +304,7 @@ function engineTab(){
 
   // Mechanical
   html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--blue);margin-bottom:4px;display:flex;align-items:center;gap:6px">
-    ${tag('L3','tag-blue')} Mechanical Propagation
+    ${tag('L3','tag-blue')} 结构传导
     ${er.regime_used==='A'?tag('主引擎','tag-blue'):tag('服务','tag-dim')}
   </div>
   <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">Noisy-OR 结构传导 — 供应链、物理规律、市场机制驱动的概率传播</div>`;
@@ -314,9 +314,9 @@ function engineTab(){
       <div style="display:flex;justify-content:space-between;margin-bottom:4px">
         <span style="font-size:10px;font-weight:700">${nl(m.node_id)}</span>
         <div style="display:flex;align-items:center;gap:4px">
-          <span style="font-size:8px;color:var(--tD)">prob</span>
+          <span style="font-size:8px;color:var(--tD)">概率</span>
           <span style="font-size:11px;font-weight:700;color:var(--blue)">${pct(m.propagated_prob)}</span>
-          ${tag(m.impact_magnitude>=0.7?'high':m.impact_magnitude>=0.4?'medium':'low',m.impact_magnitude>=0.7?'tag-red':'tag-gold')}
+          ${tag(m.impact_magnitude>=0.7?'高':m.impact_magnitude>=0.4?'中':'低',m.impact_magnitude>=0.7?'tag-red':'tag-gold')}
         </div>
       </div>
       <div style="font-size:8.5px;color:var(--tM);line-height:1.5;padding:4px 6px;background:var(--bg1);border-radius:3px">驱动: ${drivers}</div>
@@ -324,21 +324,21 @@ function engineTab(){
   });
   html+=`</div>`;
 
-  // Strategic
+  // 策略型
   if(er.strategic_nodes.length){
     html+=`<div style="margin-bottom:14px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:4px;display:flex;align-items:center;gap:6px">
-      ${tag('L3.5','tag-gold')} Strategic Resolution
+      ${tag('L3.5','tag-gold')} 策略求解
       ${er.regime_used==='B'?tag('主引擎','tag-gold'):tag('服务','tag-dim')}
     </div>
-    <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">博弈论求解 — Schelling focal point、承诺可信度、退出成本非对称分析</div>`;
+    <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">博弈论求解 — Schelling 聚焦点、承诺可信度、退出成本非对称分析</div>`;
     er.strategic_nodes.forEach((s,i)=>{
       const exp=st.expandedSt===i;
       html+=`<div class="strat-card ${exp?'expanded':''}" onclick="st.expandedSt=st.expandedSt===${i}?null:${i};render()">
         <div style="display:flex;justify-content:space-between;margin-bottom:4px">
           <span style="font-size:10px;font-weight:700">${nl(s.node_id)}</span>
           <div style="display:flex;gap:6px">
-            <span style="font-size:8px;color:var(--tD)">commit=${s.commitment_score.toFixed(2)}</span>
-            <span style="font-size:8px;color:var(--tD)">exit=${s.exit_cost_ratio}x</span>
+            <span style="font-size:8px;color:var(--tD)">承诺=${s.commitment_score.toFixed(2)}</span>
+            <span style="font-size:8px;color:var(--tD)">退出=${s.exit_cost_ratio}x</span>
           </div>
         </div>
         <div class="eq-grid">`;
@@ -347,8 +347,8 @@ function engineTab(){
         html+=`<div class="eq-box ${eq.is_focal?'focal':''}" ${sel?'style="border:2px solid var(--gold)"':''}>
           <div style="font-size:9px;color:${eq.is_focal?'var(--gold)':'var(--tM)'};font-weight:${eq.is_focal?700:400}">${eq.label}</div>
           <div style="font-size:11px;font-weight:700">${pct(eq.probability)}</div>
-          ${eq.is_focal?'<div style="font-size:7px;color:var(--gold)">focal point</div>':''}
-          ${sel?'<div style="font-size:7px;color:var(--green)">✓ selected</div>':''}
+          ${eq.is_focal?'<div style="font-size:7px;color:var(--gold)">聚焦点</div>':''}
+          ${sel?'<div style="font-size:7px;color:var(--green)">✓ 选定</div>':''}
         </div>`;
       });
       html+=`</div></div>`;
@@ -359,7 +359,7 @@ function engineTab(){
   // Hybrid
   if(er.hybrid_nodes.length){
     html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:4px;display:flex;align-items:center;gap:6px">
-      ${tag('H','tag-red')} Hybrid Coupling
+      ${tag('H','tag-red')} 混合耦合
     </div>
     <div style="font-size:7.5px;color:var(--tD);margin-bottom:8px;padding:3px 6px;background:var(--bg1);border-radius:3px">L3 给基线概率 → L3.5 用策略判断修正 → 差值(Δ)回注下游重算</div>`;
     er.hybrid_nodes.forEach(h=>{
@@ -374,7 +374,7 @@ function engineTab(){
           <span style="font-size:14px;color:var(--tD)">→</span>
           <div class="hybrid-val"><div class="label" style="color:var(--gold)">L3.5 修正</div><div class="num" style="color:var(--gold)">${pct(h.override_prob)}</div></div>
           <div style="flex:1;padding-left:10px;border-left:1px solid var(--border)">
-            <div style="font-size:7.5px;color:var(--red);margin-bottom:2px">recomp subgraph</div>
+            <div style="font-size:7.5px;color:var(--red);margin-bottom:2px">重算子图</div>
             <div style="display:flex;gap:3px;flex-wrap:wrap">${h.recomp_subgraph.map(r=>tag(nl(r),'tag-red')).join(' ')}</div>
           </div>
         </div>
@@ -393,7 +393,7 @@ function horizonTab(){
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
         ${tag(WL[h.window]||h.window,h.window==='W1_5'?'tag-red':h.window==='W6_16'?'tag-gold':'tag-blue')}
         <div style="display:flex;align-items:center;gap:6px">
-          <span style="font-size:8px;color:var(--tD)">confidence</span>
+          <span style="font-size:8px;color:var(--tD)">置信度</span>
           ${bar(h.confidence,wc,60)}
           <span style="font-size:10px;font-weight:700;color:var(--tM)">${pct(h.confidence)}</span>
         </div>
@@ -404,7 +404,7 @@ function horizonTab(){
         <div><div style="color:var(--tD);margin-bottom:2px">核心假设</div><div style="color:var(--tM)">${h.key_assumption}</div></div>
         <div><div style="color:var(--tD);margin-bottom:2px">关联分支</div><div style="color:var(--tM)">${h.dominant_scenario}</div></div>
       </div>
-      <div class="hz-kill"><span style="color:var(--red);font-weight:700">Kill Condition: </span><span style="color:var(--tM)">${h.kill_condition}</span></div>
+      <div class="hz-kill"><span style="color:var(--red);font-weight:700">失效条件: </span><span style="color:var(--tM)">${h.kill_condition}</span></div>
     </div>`;
   });
   return html;
@@ -413,7 +413,7 @@ function horizonTab(){
 function executionTab(){
   let html='';
   // Positions
-  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:8px">Positions</div>`;
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:8px">仓位</div>`;
   RUN.execution_plan.positions.forEach(p=>{
     html+=`<div class="pos-card" style="border-left-color:${DC[p.direction]}">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
@@ -427,15 +427,15 @@ function executionTab(){
       </div>
       <div style="font-size:9px;color:var(--tM);margin-bottom:4px">${p.sizing_note}</div>
       <div class="pos-grid">
-        <div><span style="color:var(--green)">entry: </span><span style="color:var(--tM)">${p.entry_condition}</span></div>
-        <div><span style="color:var(--red)">stop: </span><span style="color:var(--tM)">${p.stop_condition}</span></div>
+        <div><span style="color:var(--green)">建仓: </span><span style="color:var(--tM)">${p.entry_condition}</span></div>
+        <div><span style="color:var(--red)">止损: </span><span style="color:var(--tM)">${p.stop_condition}</span></div>
       </div>
     </div>`;
   });
   html+=`</div>`;
 
   // Triggers
-  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">Triggers</div>`;
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">触发器</div>`;
   RUN.execution_plan.triggers.sort((a,b)=>{const o={act:0,alert:1,watch:2};return(o[a.urgency]||2)-(o[b.urgency]||2)}).forEach(t=>{
     html+=`<div class="trig-card" style="border-left-color:${UC[t.urgency]}">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
@@ -445,30 +445,30 @@ function executionTab(){
         </div>
         ${t.linked_node?`<span style="font-size:8px;color:var(--tD)">${t.linked_node}</span>`:''}
       </div>
-      <div style="font-size:8.5px;color:var(--tM);line-height:1.5"><span style="color:var(--tD)">if: </span>${t.condition}</div>
-      <div style="font-size:8.5px;color:var(--green);margin-top:2px">${t.action}</div>
+      <div style="font-size:8.5px;color:var(--tM);line-height:1.5"><span style="color:var(--tD)">条件: </span>${t.condition}</div>
+      <div style="font-size:8.5px;color:var(--green);margin-top:2px">→ ${t.action}</div>
     </div>`;
   });
   html+=`</div>`;
 
   // Invalidation
-  html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:8px">Invalidation Rules</div>`;
+  html+=`<div><div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:8px">失效规则</div>`;
   (RUN.invalidation.trade_level||[]).forEach(t=>{
     html+=`<div class="inv-card" style="border-left-color:var(--green)">
-      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('a · Trade','tag-green')}<span style="font-size:9px">${t.position_ref}</span></div>
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('a · 交易','tag-green')}<span style="font-size:9px">${t.position_ref}</span></div>
       <div style="font-size:8.5px;color:var(--tM)">${t.condition} → <span style="color:var(--red)">${t.action}</span></div>
     </div>`;
   });
   (RUN.invalidation.scenario_level||[]).forEach(s=>{
     html+=`<div class="inv-card" style="border-left-color:var(--gold)">
-      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('b · Scenario','tag-gold')}<span style="font-size:9px">${s.scenario_ref}</span>${s.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
-      <div style="font-size:8.5px;color:var(--tM)">前提 "${s.premise_broken}" 被破坏 if: ${s.evidence}</div>
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('b · 场景','tag-gold')}<span style="font-size:9px">${s.scenario_ref}</span>${s.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
+      <div style="font-size:8.5px;color:var(--tM)">前提 "${s.premise_broken}" 被破坏: ${s.evidence}</div>
     </div>`;
   });
   if(RUN.invalidation.regime_level){
     const ri=RUN.invalidation.regime_level;
     html+=`<div class="inv-card" style="border-left-color:var(--red);background:var(--redD)">
-      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('c · Regime','tag-red')}${ri.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
+      <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px">${tag('c · 体制','tag-red')}${ri.shs_writeback?tag('SHS回写','tag-purple'):''}</div>
       <div style="font-size:8.5px;color:var(--tM)">${ri.contradiction}</div>
     </div>`;
   }
@@ -479,7 +479,7 @@ function executionTab(){
 function auditTab(){
   let html='';
   // Models
-  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:4px">Model Trace (${RUN.model_trace.total_model_calls} loaded)</div>
+  html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:4px">模型调用 (${RUN.model_trace.total_model_calls} 已加载)</div>
     <div style="display:flex;gap:12px;margin-bottom:8px;font-size:7.5px;color:var(--tD)">
       <span>${tag('P','tag-blue')} Productive — 生成判断/视角</span>
       <span>${tag('D','tag-purple')} Disciplinary — 质疑/审计 (不受成本预算·不可降级)</span>
@@ -495,7 +495,7 @@ function auditTab(){
         </div>
         <div style="display:flex;gap:4px">
           ${tag(m.layer,'tag-dim')}
-          ${tag(m.cost,m.cost==='heavy'?'tag-red':m.cost==='medium'?'tag-gold':'tag-green')}
+          ${tag(m.cost,m.cost==='heavy'?'tag-red':m.cost==='中'?'tag-gold':'tag-green')}
         </div>
       </div>
       ${exp?`<div class="model-detail">${m.output_summary}</div>`:''}
@@ -505,7 +505,7 @@ function auditTab(){
 
   // Divergence
   if(RUN.model_trace.divergence_flags&&RUN.model_trace.divergence_flags.length){
-    html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">Divergence Flags (${RUN.model_trace.divergence_flags.length})</div>`;
+    html+=`<div style="margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px">分歧标记 (${RUN.model_trace.divergence_flags.length})</div>`;
     RUN.model_trace.divergence_flags.forEach(dv=>{
       html+=`<div class="div-card">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
@@ -529,9 +529,9 @@ function auditTab(){
     html+=`</div>`;
   }
 
-  // SHS Writeback
+  // SHS 回写
   if(RUN.shs_writeback&&RUN.shs_writeback.length){
-    html+=`<div><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:8px">SHS Writeback (${RUN.shs_writeback.length})</div>`;
+    html+=`<div><div style="font-size:11px;font-weight:700;color:var(--purple);margin-bottom:8px">SHS 回写 (${RUN.shs_writeback.length})</div>`;
     RUN.shs_writeback.forEach(w=>{
       html+=`<div class="shs-card">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
@@ -549,10 +549,10 @@ function auditTab(){
     html+=`</div>`;
   }
 
-  // Graph Proposals (Phase 4)
+  // DAG 结构提案 (Phase 4)
   const gp=RUN.graph_proposals||[];
   if(gp.length){
-    html+=`<div style="margin-top:16px"><div style="font-size:11px;font-weight:700;color:var(--cyan);margin-bottom:8px;display:flex;align-items:center;gap:6px">${tag('P4','tag-dim')} Graph Proposals (${gp.length})</div>`;
+    html+=`<div style="margin-top:16px"><div style="font-size:11px;font-weight:700;color:var(--cyan);margin-bottom:8px;display:flex;align-items:center;gap:6px">${tag('P4','tag-dim')} DAG 结构提案 (${gp.length})</div>`;
     const levelC={1:'var(--green)',2:'var(--gold)',3:'var(--red)'};
     const levelL={1:'L1 Auto',2:'L2 Deferred',3:'L3 Human'};
     const typeI={add_node:'+node',remove_node:'-node',add_edge:'+edge',remove_edge:'-edge',retype_node:'retype',restructure_path:'restruct'};
