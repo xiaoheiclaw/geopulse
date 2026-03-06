@@ -51,33 +51,54 @@ class Reporter:
                     )
                 lines.append("")
 
-        lines.append("🌐 因果网络")
+        # --- 按阶数（纵向） ---
+        order_labels = {0: "触发层", 1: "直接冲击", 2: "传导效应", 3: "深层连锁"}
+        lines.append("🌐 因果网络（按传导阶数）")
         lines.append("")
 
         max_order = max(orders.values()) if orders else 0
         for order in range(max_order + 1):
-            nodes_at_order = [nid for nid, o in orders.items() if o == order]
+            nodes_at_order = sorted(
+                [nid for nid, o in orders.items() if o == order],
+                key=lambda nid: -dag.nodes[nid].probability,
+            )
             if not nodes_at_order:
                 continue
-            prefix = f"{order}阶"
-            for i, nid in enumerate(nodes_at_order):
+            label = order_labels.get(order, f"{order}阶")
+            lines.append(f"{order}阶 — {label}")
+            for nid in nodes_at_order:
                 node = dag.nodes[nid]
                 domains_str = "/".join(node.domains)
-                if len(nodes_at_order) == 1:
-                    connector = "─"
-                elif i == 0:
-                    connector = "┬"
-                elif i == len(nodes_at_order) - 1:
-                    connector = "└"
-                else:
-                    connector = "├"
                 lines.append(
-                    f"{prefix} {connector} {node.label}"
-                    f"({node.probability:.2f}) [{domains_str}]"
+                    f"▸ {node.label} → {node.probability:.2f} [{domains_str}]"
                 )
-                prefix = "     "
+            lines.append("")
 
-        lines.append("")
+        # --- 按领域（横向） ---
+        all_domains = ["军事", "能源", "经济", "科技", "金融", "政治", "社会"]
+        domain_nodes: dict[str, list[str]] = {d: [] for d in all_domains}
+        for nid, node in dag.nodes.items():
+            for d in node.domains:
+                if d in domain_nodes:
+                    domain_nodes[d].append(nid)
+
+        active_domains = {d: nids for d, nids in domain_nodes.items() if nids}
+        if active_domains:
+            lines.append("🏷️ 领域全景")
+            lines.append("")
+            for domain in all_domains:
+                nids = domain_nodes.get(domain, [])
+                if not nids:
+                    continue
+                sorted_nids = sorted(nids, key=lambda n: -dag.nodes[n].probability)
+                lines.append(f"【{domain}】")
+                for nid in sorted_nids:
+                    node = dag.nodes[nid]
+                    order = orders.get(nid, 0)
+                    lines.append(
+                        f"  {order}阶 {node.label} → {node.probability:.2f}"
+                    )
+                lines.append("")
 
         if model_insights:
             lines.append("🧠 思维模型洞察")

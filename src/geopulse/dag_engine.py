@@ -17,14 +17,25 @@ DAG_ENGINE_SYSTEM_PROMPT = """\
 ## 你的分析工具箱（思维模型）
 {mental_models}
 
+## 两个维度
+DAG 有两个正交维度，必须同时体现：
+- **阶数**（纵向）：因果距离。0阶=触发事件，1阶=直接后果，2阶=间接传导，3阶+=深层连锁
+- **领域**（横向）：军事 / 能源 / 经济 / 科技 / 金融 / 政治 / 社会。每个节点只归属 1-2 个最相关领域，不要堆砌
+
+## 节点类型
+- **事实节点**：已发生的事件，概率接近 1.0（例：哈梅内伊遇袭身亡）
+- **预测节点**：尚未发生但可能发生的后果，概率反映你的判断（例：油价突破120美元 → 0.45）
+请明确区分两者。预测节点才是 DAG 的核心价值。
+
 ## 规则
 1. 概率范围 0.0-1.0，保留两位小数
 2. DAG 必须无环（不允许循环因果）
-3. 每个新节点必须指定 domains（可选：军事/能源/经济/科技/金融/政治/社会）
+3. 每个节点归属 1-2 个领域（不要超过 2 个）
 4. 每条边必须有 reasoning 解释因果关系
 5. 概率变化必须有 evidence 支撑
-6. 只在有充分理由时才新增节点，避免网络过度膨胀
-7. 如果事件不影响任何现有节点且不值得新增节点，输出空更新
+6. **确保每个领域至少有 2-3 个节点**，覆盖军事→能源→经济→科技→金融→政治→社会的完整传导链
+7. 预测节点的概率应该有区分度，避免全部集中在 0.8-1.0 区间
+8. 如果事件不影响任何现有节点且不值得新增节点，输出空更新
 
 ## 输出格式（严格 JSON，无 markdown 代码块）
 {{
@@ -87,7 +98,7 @@ class DAGEngine:
         llm_output = self._call_llm(dag, events)
         return self._apply_updates(dag, llm_output)
 
-    def _call_llm(self, dag: DAG, events: list[Event]) -> dict[str, Any]:
+    def _call_llm(self, dag: DAG, events: list[Event], retries: int = 2) -> dict[str, Any]:
         """Call the LLM with current DAG state and new events."""
         mental_models = build_prompt_injection()
         system = DAG_ENGINE_SYSTEM_PROMPT.replace("{mental_models}", mental_models)
@@ -97,15 +108,25 @@ class DAGEngine:
             f"## 新接收到的事件\n```json\n"
             f"{json.dumps(events_json, ensure_ascii=False, indent=2)}\n```"
         )
-        resp = self.client.messages.create(
-            model=self.model,
-            max_tokens=4096,
-            temperature=0.3,
-            system=system,
-            messages=[{"role": "user", "content": user_prompt}],
-        )
-        text = "".join(b.text for b in resp.content if hasattr(b, "text"))
-        return self._parse_json(text)
+        last_err: Exception | None = None
+        for attempt in range(1 + retries):
+            resp = self.client.messages.create(
+                model=self.model,
+                max_tokens=8192,
+                temperature=0.2,
+                system=system,
+                messages=[{"role": "user", "content": user_prompt}],
+            )
+            text = "".join(b.text for b in resp.content if hasattr(b, "text"))
+            try:
+                return self._parse_json(text)
+            except (json.JSONDecodeError, Exception) as e:
+                last_err = e
+                if attempt < retries:
+                    import time
+                    time.sleep(1)
+                    continue
+        raise last_err  # type: ignore[misc]
 
     def _apply_updates(self, dag: DAG, output: dict[str, Any]) -> DAG:
         """Apply LLM-generated updates to the DAG, rejecting cycles."""
@@ -196,5 +217,34 @@ class DAGEngine:
         # Find the outermost JSON object
         match = re.search(r"\{.*\}", text, re.DOTALL)
         if match:
-            return json.loads(match.group(0))
+            raw = match.group(0)
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError:
+                pass
+            # Attempt to fix common LLM JSON issues:
+            # 1. Trailing commas before } or ]
+            fixed = re.sub(r",\s*([}\]])", r"\1", raw)
+            # 2. Single quotes -> double quotes (only outside strings)
+            try:
+                return json.loads(fixed)
+            except json.JSONDecodeError:
+                pass
+            # 3. Try truncating to last valid closing brace
+            depth = 0
+            last_valid = -1
+            for i, ch in enumerate(fixed):
+                if ch == '{':
+                    depth += 1
+                elif ch == '}':
+                    depth -= 1
+                    if depth == 0:
+                        last_valid = i
+                        break
+            if last_valid > 0:
+                try:
+                    return json.loads(fixed[: last_valid + 1])
+                except json.JSONDecodeError:
+                    pass
+            raise
         return json.loads(text)
