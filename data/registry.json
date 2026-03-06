@@ -1,0 +1,172 @@
+[
+  {
+    "id": "bayesian-updating",
+    "name": "Bayesian Updating",
+    "category": "传导分析",
+    "layers": [
+      "L1",
+      "L3"
+    ],
+    "role": "P",
+    "cost": "light",
+    "callable_when": "每轮默认加载",
+    "scope": "Regime A 基础计算范式。概率更新、先验-后验转化。",
+    "input_spec": "prior probabilities + new evidence",
+    "output_spec": "posterior probabilities with confidence intervals",
+    "credit_score": 0.56,
+    "always_on": true
+  },
+  {
+    "id": "dialectic-challenge",
+    "name": "辩证质疑",
+    "category": "认知纪律",
+    "layers": [
+      "L2a",
+      "L3.5"
+    ],
+    "role": "D",
+    "cost": "light",
+    "callable_when": "每轮默认加载",
+    "scope": "每条分支必须有反论。通用，不限领域。",
+    "input_spec": "scenario branch with premises",
+    "output_spec": "antithesis + strongest counter-argument",
+    "credit_score": 0.58,
+    "always_on": true
+  },
+  {
+    "id": "nth-order-reasoning",
+    "name": "N阶推演",
+    "category": "传导分析",
+    "layers": [
+      "L3",
+      "L3.5"
+    ],
+    "role": "P",
+    "cost": "light",
+    "callable_when": "每轮默认加载",
+    "scope": "传导链展开的基本工具。4阶因果推演。",
+    "input_spec": "trigger event + causal DAG context",
+    "output_spec": "ordered impact chain with probability decay",
+    "credit_score": 0.56,
+    "always_on": true
+  },
+  {
+    "id": "schelling-focal",
+    "name": "Schelling Focal Point",
+    "category": "博弈论",
+    "layers": [
+      "L2a",
+      "L3.5",
+      "L4"
+    ],
+    "role": "P",
+    "cost": "medium",
+    "callable_when": "存在 S/H 类节点或 Regime B 时",
+    "scope": "识别博弈焦点、协调均衡。适用于多方决策场景。不适用于纯传导。",
+    "input_spec": "strategic nodes + actor set",
+    "output_spec": "focal equilibria candidates with salience scores",
+    "credit_score": 0.54,
+    "always_on": false
+  },
+  {
+    "id": "schelling-commitment",
+    "name": "Schelling Commitment",
+    "category": "博弈论",
+    "layers": [
+      "L3.5",
+      "L2b"
+    ],
+    "role": "P",
+    "cost": "medium",
+    "callable_when": "存在 S/H 类节点或涉及承诺/威慑",
+    "scope": "承诺可信度分析、退出成本。适用于威慑与承诺博弈。",
+    "input_spec": "actor commitments + exit costs",
+    "output_spec": "commitment credibility score + exit cost ratio",
+    "credit_score": 0.54,
+    "always_on": false
+  },
+  {
+    "id": "carlota-perez",
+    "name": "Carlota Perez",
+    "category": "传导分析",
+    "layers": [
+      "L2a"
+    ],
+    "role": "P",
+    "cost": "light",
+    "callable_when": "scenario 涉及技术范式转换或长周期结构变化",
+    "scope": "技术革命-金融资本周期。不适用于短期军事冲突。",
+    "input_spec": "technology/paradigm shift evidence",
+    "output_spec": "cycle phase assessment + structural implications",
+    "credit_score": 0.5,
+    "always_on": false
+  },
+  {
+    "id": "fearon-audience-cost",
+    "name": "Fearon Audience Cost",
+    "category": "博弈论",
+    "layers": [
+      "L3.5",
+      "L2b"
+    ],
+    "role": "P",
+    "cost": "heavy",
+    "callable_when": "关键路径 path_importance > 0.6 或 Regime B",
+    "scope": "国内观众成本约束领导人决策。适用于民主/威权政体的对外决策。",
+    "input_spec": "leader + domestic political context + public statements",
+    "output_spec": "audience cost estimate + escalation/de-escalation probability shift",
+    "credit_score": 0.5,
+    "always_on": false
+  },
+  {
+    "id": "taleb-antifragile",
+    "name": "Taleb 反脆弱",
+    "category": "认知纪律",
+    "layers": [
+      "L2a",
+      "L5"
+    ],
+    "role": "D",
+    "cost": "medium",
+    "callable_when": "执行计划涉及尾部风险或非线性影响",
+    "scope": "尾部风险识别、凸性/凹性分析。挑战线性外推假设。",
+    "input_spec": "execution plan + position sizing",
+    "output_spec": "fragility assessment + tail risk flags",
+    "credit_score": 0.5,
+    "always_on": false
+  },
+  {
+    "id": "pre-mortem",
+    "name": "Pre-Mortem",
+    "category": "认知纪律",
+    "layers": [
+      "L2a",
+      "L4"
+    ],
+    "role": "D",
+    "cost": "light",
+    "callable_when": "任何 scenario.weight > 0.75（高置信度必须质疑）",
+    "scope": "假设失败后反推原因。通用纪律模型。",
+    "input_spec": "high-confidence scenario + premises",
+    "output_spec": "failure modes + overlooked risks",
+    "credit_score": 0.5,
+    "always_on": false
+  },
+  {
+    "id": "theory-of-constraints",
+    "name": "Theory of Constraints",
+    "category": "传导分析",
+    "layers": [
+      "L2b",
+      "L3"
+    ],
+    "role": "P",
+    "cost": "light",
+    "callable_when": "scenario 涉及供应链/产能瓶颈",
+    "scope": "识别系统瓶颈、约束链。适用于供应链和产能分析。",
+    "input_spec": "supply chain / capacity nodes",
+    "output_spec": "bottleneck identification + constraint relaxation paths",
+    "credit_score": 0.5,
+    "always_on": false
+  }
+]

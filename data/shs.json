@@ -1,0 +1,77 @@
+[
+  {
+    "id": "H1_commitment_paradox",
+    "label": "H1_commitment_paradox",
+    "statement": "承诺悖论假设：美国通过斩首行动消灭了唯一能签停火协议的人，导致冲突结构性无法终止。时间轴：W4-8是关键窗口——如果莫杰塔巴未能整合IRGC，该假设确认。",
+    "trigger_signals": [],
+    "invalidation_signals": [],
+    "observed_entities": [],
+    "horizon": "",
+    "asset_expression": "",
+    "confidence": 0.42,
+    "status": "active",
+    "created_at": "2026-03-06T12:50:10.919539Z",
+    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "source_run_ids": [
+      "run_20260306T124600Z",
+      "run_20260306T125400Z",
+      "run_20260306T140000Z"
+    ]
+  },
+  {
+    "id": "H2_ammo_depletion_clock",
+    "label": "H2_ammo_depletion_clock",
+    "statement": "弹药耗尽时钟假设：$3.5K无人机 vs $1-3M拦截弹的成本非对称意味着盟军防空弹药在W3-5窗口触及物理极限。这是冲突走向的隐藏计时器。",
+    "trigger_signals": [],
+    "invalidation_signals": [],
+    "observed_entities": [],
+    "horizon": "",
+    "asset_expression": "",
+    "confidence": 0.68,
+    "status": "active",
+    "created_at": "2026-03-06T12:50:10.919539Z",
+    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "source_run_ids": [
+      "run_20260306T124600Z",
+      "run_20260306T125400Z",
+      "run_20260306T140000Z"
+    ]
+  },
+  {
+    "id": "H3_stagflation_pricing_regime",
+    "label": "H3_stagflation_pricing_regime",
+    "statement": "滞胀定价假设：美债正在从避险资产转为滞胀定价资产。如果油价维持>$85超过6周，市场将完成范式切换——10Y收益率上行但equity同跌。",
+    "trigger_signals": [],
+    "invalidation_signals": [],
+    "observed_entities": [],
+    "horizon": "",
+    "asset_expression": "",
+    "confidence": 0.58,
+    "status": "active",
+    "created_at": "2026-03-06T12:50:10.919539Z",
+    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "source_run_ids": [
+      "run_20260306T124600Z",
+      "run_20260306T125400Z",
+      "run_20260306T140000Z"
+    ]
+  },
+  {
+    "id": "H4_ammunition_enforced_boundary",
+    "label": "H4_ammunition_enforced_boundary",
+    "statement": "弹药耗尽时钟假设：盟军防空弹药库存将在W3-5触及物理极限（无法继续维持>85%拦截率）。这会强制所有方进入谈判或接受更高伤亡率。这比权力交接更能界定冲突终局。",
+    "trigger_signals": [],
+    "invalidation_signals": [],
+    "observed_entities": [],
+    "horizon": "",
+    "asset_expression": "",
+    "confidence": 0.5,
+    "status": "active",
+    "created_at": "2026-03-06T13:07:32.088581Z",
+    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "source_run_ids": [
+      "run_20260306T125400Z",
+      "run_20260306T140000Z"
+    ]
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "run_id": "run_20260306T120000Z",
+    "timestamp": "2026-03-06T12:00:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": null,
+    "evidence_count": 3,
+    "run_duration_ms": 5000
+  },
+  "regime": {
+    "current": "A",
+    "previous": "A",
+    "switched": false,
+    "held_since": "2026-03-05T00:00:00Z",
+    "factor_scores": {"SAD": 0.2, "PD": 0.3, "NCC": 0.1},
+    "joint_score": 0.21,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.40,
+      "min_hold": "PT24H",
+      "time_in_current": "PT36H"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "s1_limited_conflict",
+      "label": "有限冲突",
+      "weight": 0.55,
+      "weight_prev": 0.50,
+      "premises": ["伊朗不寻求全面对抗", "美国目标有限"],
+      "antithesis": "意外升级可能打破有限冲突假设",
+      "open_questions": ["伊朗代理人是否独立行动？"],
+      "source_models": ["schelling-focal", "dialectic-challenge"],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "s2_negotiation",
+      "label": "快速谈判",
+      "weight": 0.30,
+      "weight_prev": 0.35,
+      "premises": ["双方面临国内压力", "第三方调停可行"],
+      "antithesis": "国内政治周期可能阻碍谈判",
+      "open_questions": [],
+      "source_models": ["bayesian-updating"],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "s3_escalation",
+      "label": "全面升级",
+      "weight": 0.15,
+      "weight_prev": 0.15,
+      "premises": ["红线被突破", "军方主导决策"],
+      "antithesis": "核均衡仍具约束力",
+      "open_questions": ["以色列是否介入？"],
+      "source_models": ["nth-order-reasoning"],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "bn_sanctions",
+      "label": "制裁升级",
+      "type": "M",
+      "parent_scenarios": ["s1_limited_conflict"],
+      "path_importance": 0.7,
+      "factor_scores": {"SAD": 0.1, "PD": 0.4, "NCC": 0.05},
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "bn_strait",
+      "label": "霍尔木兹海峡通行",
+      "type": "S",
+      "parent_scenarios": ["s1_limited_conflict", "s3_escalation"],
+      "path_importance": 0.85,
+      "factor_scores": {"SAD": 0.8, "PD": 0.6, "NCC": 0.7},
+      "irreversible": true,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "A",
+    "mechanical_nodes": [
+      {
+        "node_id": "bn_sanctions",
+        "propagated_prob": 0.65,
+        "upstream_drivers": ["us_iran_tensions"],
+        "impact_magnitude": 0.3
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "bn_strait",
+        "equilibria": [
+          {"eq_id": "eq_open", "label": "海峡保持开放", "probability": 0.7, "is_focal": true},
+          {"eq_id": "eq_partial", "label": "部分封锁", "probability": 0.25, "is_focal": false},
+          {"eq_id": "eq_full", "label": "完全封锁", "probability": 0.05, "is_focal": false}
+        ],
+        "selected_eq": "eq_open",
+        "commitment_score": 0.6,
+        "exit_cost_ratio": 2.5
+      }
+    ],
+    "hybrid_nodes": []
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "短期内制裁升级驱动油价波动",
+      "dominant_scenario": "s1_limited_conflict",
+      "confidence": 0.65,
+      "tradeable_as": "long oil vol",
+      "key_assumption": "制裁不会被豁免",
+      "kill_condition": "美伊宣布临时停火"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "CL (WTI Crude)",
+        "direction": "long",
+        "sizing_note": "5% of portfolio in near-month calls",
+        "horizon": "W1_5",
+        "linked_thesis": "短期内制裁升级驱动油价波动",
+        "entry_condition": "WTI > $85",
+        "stop_condition": "WTI < $78"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "t1_strait",
+        "signal": "霍尔木兹海峡通行受限报道",
+        "condition": "两家以上主流媒体确认",
+        "action": "升级 s3_escalation 权重，加仓油vol",
+        "linked_node": "bn_strait",
+        "urgency": "alert"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "CL (WTI Crude)",
+        "condition": "美伊直接谈判启动",
+        "action": "exit",
+        "backflow_to": "L4"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "s1_limited_conflict",
+        "premise_broken": "伊朗不寻求全面对抗",
+        "evidence": "伊朗宣布核武器计划重启",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      }
+    ],
+    "regime_level": null
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1",
+        "role": "P",
+        "called_by": "L1_evidence_assessment",
+        "input_summary": "3 evidence items",
+        "output_summary": "posterior probabilities updated",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "L2a_scenario_review",
+        "input_summary": "3 scenarios",
+        "output_summary": "antitheses generated for all branches",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L3",
+        "role": "P",
+        "called_by": "L3_propagation",
+        "input_summary": "DAG with 50 nodes",
+        "output_summary": "4-order chains traced",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "L3.5_strategic_resolution",
+        "input_summary": "strait node",
+        "output_summary": "focal equilibrium identified",
+        "cost": "medium"
+      }
+    ],
+    "divergence_flags": [],
+    "total_model_calls": 4,
+    "total_cost": "medium"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "有限冲突假设",
+      "field_changed": "confidence",
+      "old_value": "0.5",
+      "new_value": "0.55",
+      "trigger_reason": "新证据支持有限冲突情景",
+      "source_run_ids": ["run_20260306T120000Z"]
+    }
+  ]
+}
