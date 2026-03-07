@@ -246,3 +246,172 @@ def apply_deviation(
         return round(max(0.01, min(0.99, new_prob)), 4)
     
     return current_prob
+
+
+# ═══════════════════════════════════════════
+# 多方法聚合规则
+# ═══════════════════════════════════════════
+
+METHOD_PRIORITY = {
+    "market_implied": 1.0,     # 有真金白银做后盾
+    "supply_demand_model": 0.9,
+    "decomposition": 0.7,      # 结构工具，子概率质量决定总质量
+    "reference_class": 0.6,    # 样本小，调整因子主观
+    "expert_judgment": 0.4,    # 最后手段
+}
+
+
+def aggregate_methods(
+    estimates: list[dict],
+) -> dict:
+    """
+    多方法冲突时的聚合规则。
+    
+    estimates: [{"method": "market_implied", "value": 0.39, "range": [0.30, 0.55]}, ...]
+    
+    规则:
+    1. 如果只有一种方法 → 直接用
+    2. 如果区间有重叠 → 取重叠区间的加权中点
+    3. 如果区间无重叠 → 用方法优先级加权平均，但标记 FLAG
+    """
+    if len(estimates) == 1:
+        e = estimates[0]
+        return {"value": e["value"], "range": e["range"], "conflict": False}
+    
+    # 按优先级排序
+    for e in estimates:
+        e["weight"] = METHOD_PRIORITY.get(e["method"], 0.5)
+    
+    # 检查区间重叠
+    lo = max(e["range"][0] for e in estimates)
+    hi = min(e["range"][1] for e in estimates)
+    overlap = lo <= hi
+    
+    if overlap:
+        # 重叠区间内的加权中点
+        total_w = sum(e["weight"] for e in estimates)
+        weighted_val = sum(e["value"] * e["weight"] for e in estimates) / total_w
+        # 钳制到重叠区间
+        final = max(lo, min(hi, weighted_val))
+        return {
+            "value": round(final, 3),
+            "range": [round(lo, 3), round(hi, 3)],
+            "conflict": False,
+            "note": f"区间重叠[{lo:.0%},{hi:.0%}], 加权中点",
+        }
+    else:
+        # 无重叠 → FLAG
+        total_w = sum(e["weight"] for e in estimates)
+        weighted_val = sum(e["value"] * e["weight"] for e in estimates) / total_w
+        full_lo = min(e["range"][0] for e in estimates)
+        full_hi = max(e["range"][1] for e in estimates)
+        return {
+            "value": round(weighted_val, 3),
+            "range": [round(full_lo, 3), round(full_hi, 3)],
+            "conflict": True,
+            "flag": f"⚠️ 方法冲突: 区间不重叠, 加权平均{weighted_val:.0%}, 高优先级方法偏向{estimates[0]['method']}",
+        }
+
+
+# ═══════════════════════════════════════════
+# 时间累积/衰减模型
+# ═══════════════════════════════════════════
+
+import math
+
+def time_adjusted_prob(
+    base_prob: float,
+    days_elapsed: int,
+    window_days: int,
+    pattern: str = "front_loaded",
+) -> float:
+    """
+    节点概率的时间调整。
+    
+    pattern:
+    - "front_loaded": 早期更可能发生(如军事突袭)
+        → 没发生的每一天都降低概率
+    - "cumulative": 随时间累积(如需求崩塌)
+        → 时间越长概率越高
+    - "window": 有特定窗口(如选举前)
+        → 窗口外概率骤降
+    
+    返回: 在第days_elapsed天的条件概率
+    """
+    t = days_elapsed / window_days  # 归一化时间 [0, 1+]
+    
+    if pattern == "front_loaded":
+        # 如果window_days内没发生，概率按指数衰减
+        # 逻辑: 如果会发生，大概率在前期
+        if t >= 1.0:
+            # 窗口已过，大幅衰减
+            return round(base_prob * 0.3, 4)
+        # 窗口内: 条件概率 = base * (1 - t^0.5)的某种形式
+        # 更直觉: 已经过了t%的窗口没发生 → 后验下调
+        survival = 1 - t  # 剩余窗口比例
+        # 贝叶斯: P(最终发生|前t没发生) 取决于发生时间分布
+        # 假设均匀分布: P = base * survival / (1 - base + base*survival)
+        conditional = base_prob * survival / (1 - base_prob + base_prob * survival)
+        return round(max(0.01, conditional), 4)
+    
+    elif pattern == "cumulative":
+        # 随时间累积——越久越可能
+        # 1 - (1-daily_rate)^days, daily_rate从base_prob反推
+        if window_days <= 0:
+            return base_prob
+        daily_rate = 1 - (1 - base_prob) ** (1 / window_days)
+        cumulative = 1 - (1 - daily_rate) ** days_elapsed
+        return round(max(0.01, min(0.99, cumulative)), 4)
+    
+    elif pattern == "window":
+        # 窗口型: 窗口前概率上升，窗口后骤降
+        if t > 1.2:
+            return round(base_prob * 0.1, 4)  # 窗口过后大幅下降
+        elif t > 0.8:
+            return round(min(0.99, base_prob * 1.2), 4)  # 临近窗口峰值
+        else:
+            return round(base_prob * (0.5 + 0.5 * t / 0.8), 4)  # 逐步上升
+    
+    return base_prob
+
+
+# ═══════════════════════════════════════════
+# 似然比相关性修正
+# ═══════════════════════════════════════════
+
+def correlated_lr_adjust(
+    likelihood_ratios: list[tuple[str, float]],
+    correlations: dict[tuple[str, str], float] | None = None,
+) -> float:
+    """
+    修正似然比连乘的独立性假设。
+    
+    likelihood_ratios: [(name, lr), ...]
+    correlations: {(name1, name2): rho, ...}  rho ∈ [0, 1]
+    
+    如果两个因子相关(rho>0)，第二个因子的LR向1衰减:
+    effective_lr2 = 1 + (lr2 - 1) * (1 - rho)
+    """
+    if not correlations:
+        # 无相关性信息 → 直接乘（原始行为）
+        result = 1.0
+        for _, lr in likelihood_ratios:
+            result *= lr
+        return round(result, 4)
+    
+    # 按顺序应用，考虑相关性衰减
+    applied = []
+    result = 1.0
+    
+    for name, lr in likelihood_ratios:
+        max_rho = 0.0
+        for prev_name in applied:
+            key = (prev_name, name) if (prev_name, name) in correlations else (name, prev_name)
+            if key in correlations:
+                max_rho = max(max_rho, correlations[key])
+        
+        effective_lr = 1 + (lr - 1) * (1 - max_rho)
+        result *= effective_lr
+        applied.append(name)
+    
+    return round(result, 4)
