@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260307T042547Z",
+  "raw": "```json\n{\n  \"evidence_text\": \"WaPo reports citing 3 anonymous US officials that Russia is providing comprehensive targeting intelligence to Iran on US warship and aircraft positions. CBS and Daily Mail independently confirmed.\",\n  \"source\": \"Washington Post + CBS + Daily Mail\",\n  \"source_tier\": 2,\n  \"cross_verification_count\": 3,\n  \"bias_assessment\": \"mild\",\n  \"specificity\": \"detailed\",\n  \"hours_old\": 0,\n  \"score_breakdown\": {\n    \"base\": 0.7,\n    \"cross_verify\": 0.15,\n    \"bias\": -0.05,\n    \"specificity\": 0.0,\n    \"timeliness\": 0.05\n  },\n  \"final_score\": 0.85,\n  \"usable\": true,\n  \"reasoning\": \"三家媒体交叉验证的二手消息，具体但涉及美国官方立场\"\n}\n```"
+}
