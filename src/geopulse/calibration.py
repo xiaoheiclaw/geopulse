@@ -204,3 +204,45 @@ if __name__ == "__main__":
     for mag, lr, order, conf, d in test_cases:
         delta = calculate_delta(mag, lr, order, conf, d)
         print(f"{mag:<14} {lr:>5} {order:>4} {conf:>5.1f} {d:>6} → {delta:>+7.2%}")
+
+
+# ═══════════════════════════════════════════
+# P4/P2/P6 偏离程度→调整量映射
+# ═══════════════════════════════════════════
+
+# 红队/场景评估的偏离程度 → 建议调整的似然比
+DEVIATION_LR = {
+    "fair": 1.0,           # 不调
+    "slight": 1.20,        # 小幅调整
+    "moderate": 1.50,      # 中等调整
+    "strong": 2.00,        # 大幅调整
+}
+
+
+def apply_deviation(
+    current_prob: float,
+    assessment: str,       # "overestimated" | "underestimated" | "fair"
+    deviation: str = "moderate",  # "slight" | "moderate" | "strong"
+) -> float:
+    """
+    根据红队的定性偏离判断计算调整后概率。
+    
+    overestimated → 下调 (LR < 1)
+    underestimated → 上调 (LR > 1)
+    fair → 不变
+    """
+    lr = DEVIATION_LR.get(deviation, 1.0)
+    
+    if assessment == "overestimated":
+        lr = 1 / lr  # 取倒数 → 下调
+    elif assessment == "fair":
+        return current_prob
+    # underestimated: lr > 1 → 上调
+    
+    if 0 < current_prob < 1:
+        odds = current_prob / (1 - current_prob)
+        new_odds = odds * lr
+        new_prob = new_odds / (1 + new_odds)
+        return round(max(0.01, min(0.99, new_prob)), 4)
+    
+    return current_prob

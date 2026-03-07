@@ -279,15 +279,17 @@
 对每个节点:
 - 构造一个它 NOT 发生的**最可信场景**（不是稻草人，是你真诚相信的最强反论）
 - 引用至少1个历史先例来支撑你的反论
-- 给出你认为的"公平概率"（可以和当前一样，如果你确实同意）
-- 如果你的公平概率与当前偏差>10%: 标记 FLAG
+- 判断当前概率是: overestimated / underestimated / fair
+- 如果不是fair，偏离程度: slight / moderate / strong
+- 不要给出具体数字（由校准代码计算）
 
 ## 2. 高权重边质疑 (权重>0.7的每一条)
 对每条边:
 - 找一个 A发生但B没发生 的历史案例
 - 如果找不到案例: 说明为什么这条边是无条件的
-- 给出你认为的"公平权重"
-- 如果你的公平权重与当前偏差>0.15: 标记 FLAG
+- 判断当前权重是: overestimated / underestimated / fair
+- 如果不是fair，偏离程度: slight / moderate / strong
+- 不要给出具体数字
 
 ## 3. 隐含假设 (恰好3个，不多不少)
 - 分析者没有明说但DAG结构暗含的前提
@@ -425,9 +427,9 @@
 
 # 对DAG的影响
 基于以上分析:
-- ceasefire_backchannel 当前 {ceasefire_prob}%: 应该上调/下调/维持？具体到多少？
-- conflict_deescalation 当前 {deescalation_prob}%: 应该上调/下调/维持？具体到多少？
-- conflict_protracted 当前 {protracted_prob}%: 应该上调/下调/维持？具体到多少？
+- ceasefire_backchannel 当前 {ceasefire_prob}%: 应该上调/下调/维持？偏离程度: slight/moderate/strong（不要给具体数字）
+- conflict_deescalation 当前 {deescalation_prob}%: 应该上调/下调/维持？偏离程度: slight/moderate/strong（不要给具体数字）
+- conflict_protracted 当前 {protracted_prob}%: 应该上调/下调/维持？偏离程度: slight/moderate/strong（不要给具体数字）
 - 是否需要新增"体面退出路径"相关节点？
 
 # 当前概率

@@ -195,15 +195,23 @@ def build_p4() -> str:
     return f"""# 角色
 你是GeoPulse红队审计员。你是分析师的对手。你的唯一KPI是找到错误。
 
+# ⚠ 关键约束：你不输出具体概率数字或权重数字
+你只判断：当前概率/权重是偏高(overestimated)、偏低(underestimated)、还是合理(fair)。
+如果偏了，给出偏离程度：slight(差一个量级内) / moderate(差1-2个量级) / strong(差2个量级以上)。
+具体数字由校准代码计算。
+
 # 任务
-1. 高概率节点反论(>60%每一个): 构造NOT发生的最可信场景，引用历史先例，给公平概率
+1. 高概率节点反论(>60%每一个): 构造NOT发生的最可信场景，引用历史先例
+   - 判断: overestimated / underestimated / fair
+   - 偏离: slight / moderate / strong
 2. 高权重边质疑(>0.7每一条): 找A发生但B没发生的案例
+   - 判断: overestimated / underestimated / fair
+   - 偏离: slight / moderate / strong
 3. 隐含假设(恰好3个)
 4. 缺失节点(恰好3个)
 5. 做空论据(恰好5个，每个有可验证预测)
 6. 自我评估(1-10分)
 
-偏差>10%的概率或>0.15的权重标记 FLAG。
 影响仓位的错误用 🚨 标注。
 输出JSON。
 
