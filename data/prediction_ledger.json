@@ -12,7 +12,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "hormuz_blockade_20260307T100221",
@@ -27,7 +29,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "equity_correction_20260307T100221",
@@ -42,7 +46,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "energy_crisis_20260307T100221",
@@ -57,7 +63,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "global_stagflation_20260307T100221",
@@ -72,7 +80,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "conflict_protracted_20260307T100221",
@@ -87,7 +97,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "em_debt_crisis_20260307T100221",
@@ -102,7 +114,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "safe_haven_rally_20260307T100221",
@@ -117,7 +131,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "cyber_attack_20260307T100221",
@@ -132,7 +148,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "oil_price_100_20260307T100230",
@@ -147,7 +165,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "hormuz_blockade_20260307T100230",
@@ -162,7 +182,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "equity_correction_20260307T100230",
@@ -177,7 +199,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "energy_crisis_20260307T100230",
@@ -192,7 +216,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "global_stagflation_20260307T100230",
@@ -207,7 +233,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "conflict_protracted_20260307T100230",
@@ -222,7 +250,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "em_debt_crisis_20260307T100230",
@@ -237,7 +267,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "safe_haven_rally_20260307T100230",
@@ -252,7 +284,9 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   },
   {
     "id": "cyber_attack_20260307T100230",
@@ -267,6 +301,8 @@
     "notes": "",
     "outcome": null,
     "resolved_at": null,
-    "brier": null
+    "brier": null,
+    "criteria_locked": true,
+    "resolver": null
   }
 ]

@@ -216,7 +216,7 @@ if __name__ == "__main__":
 # 闭环: 校准结果 → 参数调整
 # ═══════════════════════════════════════════
 
-def auto_adjust(min_resolved: int = 10) -> dict | None:
+def auto_adjust(min_resolved: int = 50) -> dict | None:
     """
     从校准结果自动调整系统参数。
     
@@ -266,7 +266,7 @@ def auto_adjust(min_resolved: int = 10) -> dict | None:
         if method_briers[worst] > method_briers[best] * 2:
             # 最差方法Brier是最好的2倍以上 → 降权
             old_w = METHOD_PRIORITY.get(worst, 0.5)
-            new_w = round(max(0.1, old_w * 0.7), 2)  # 降30%
+            new_w = round(max(0.3, old_w * 0.7), 2)  # 降30%，下限0.3防止被消灭
             adjustments.append({
                 "type": "method_reweight",
                 "worst_method": worst,
