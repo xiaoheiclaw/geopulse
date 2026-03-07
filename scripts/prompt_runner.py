@@ -98,15 +98,27 @@ def build_p1(news_text: str) -> str:
 3. **避免锚定**：不要被数字锚定。"涨8%"感觉很大，但要问"相对于历史波动率是几个sigma？"
 4. **因果不等于相关**
 
-# 校准锚点
-- 微调 (1-3%): 预期内消息
-- 中等 (3-8%): 超预期但不改变结构
-- 显著 (8-15%): 改变博弈结构
-- 剧烈 (>15%): 黑天鹅
-绝大多数日常新闻应该是微调或中等。
+# ⚠ 关键约束：你不输出具体概率数字
+你只判断：方向(up/down) + 量级(negligible/minor/moderate/significant/dramatic)
+具体的概率delta由下游校准代码计算。你不需要也不应该猜"+12%"这种数字。
+
+# 量级定义
+- **negligible**: 预期内消息，对概率无实质影响
+- **minor**: 预期内但有增量信息，轻微调整
+- **moderate**: 超预期，改变某个子环节的判断
+- **significant**: 改变博弈结构或因果链的判断
+- **dramatic**: 黑天鹅级别，颠覆核心假设
+绝大多数日常新闻是 negligible 或 minor。significant 应该很少见。dramatic 极罕见。
+
+# 似然比思维
+对每个影响，你需要回答：
+- P(E|H): 如果该节点代表的事件/状态确实发生，出现这条新闻的概率有多大？
+- P(E|¬H): 如果该节点不发生，出现这条新闻的概率有多大？
+- 似然比 = P(E|H) / P(E|¬H)。似然比>1说明新闻支持H，<1说明新闻反对H
+给出似然比估计（不需要精确，给范围即可：1-2弱证据 / 2-5中等 / 5-10强 / >10极强）
 
 # 多阶传导
-不要只标注一阶。A→B→C至少追到第3阶，每阶衰减30-50%。
+不要只标注一阶。A→B→C至少追到第3阶。注意：高阶传导的量级应比前一阶降一级（significant→moderate→minor）。
 
 # 输出格式（严格JSON）
 {{
@@ -117,7 +129,7 @@ def build_p1(news_text: str) -> str:
       "node_id": "existing_node_id",
       "direction": "up|down|unchanged",
       "magnitude": "negligible|minor|moderate|significant|dramatic",
-      "delta_estimate": "+3%",
+      "likelihood_ratio": "1-2|2-5|5-10|>10",
       "transmission_order": 1,
       "mechanism": "传导机制",
       "counter_argument": "反方向论证",
