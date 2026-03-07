@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260307T042709Z",
+  "raw": "```json\n{\n  \"evidence_text\": \"WaPo援引3名匿名美国官员报道称，俄罗斯正向伊朗提供美国军舰和飞机位置的全面目标情报；CBS和每日邮报独立证实。\",\n  \"source\": \"Washington Post / CBS News / Daily Mail（匿名官员）\",\n  \"source_tier\": 2,\n  \"cross_verification_count\": 3,\n  \"bias_assessment\": \"mild\",\n  \"specificity\": \"detailed\",\n  \"hours_old\": 12,\n  \"score_breakdown\": {\n    \"base\": 0.70,\n    \"cross_verify\": 0.15,\n    \"bias\": -0.05,\n    \"specificity\": 0.00,\n    \"timeliness\": 0.00\n  },\n  \"final_score\": 0.80,\n  \"usable\": true,\n  \"reasoning\": \"三家媒体独立证实提升可信度，但全部依赖匿名官员（无法核实动机）且Daily Mail可信度存疑，综合评定为中等偏高可用。\"\n}\n```\n\n---\n\n**⚠️ 分析师注记**\n\n| 项目 | 说明 |\n|------|------|\n| **关键弱点** | 所有来源均为**匿名官员**，无法排除政治泄露动机或信息操纵 |\n| **来源质量不均** | WaPo/CBS 属专业新闻机构；Daily Mail 在情报报道领域可信度存疑，其\"独立证实\"权重存疑 |\n| **定性风险** | \"comprehensive targeting intelligence\"措辞极强，此类说法通常需要SIGINT/IMINT等一手情报佐证 |\n| **建议** | 在政府官方声明或直接情报来源出现前，**评分上限建议维持0.80**，不宜作为行动级情报独立使用 |"
+}
