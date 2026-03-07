@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "run_id": "run_20260306T140000Z",
+    "timestamp": "2026-03-06T14:00:00Z",
+    "trigger_type": "manual",
+    "trigger_event": "v7.4 端到端测试 (opus)",
+    "evidence_count": 0,
+    "run_duration_ms": 151823,
+    "updated": "2026-03-07T03:10:41.874039+00:00"
+  },
+  "regime": {
+    "current": "A",
+    "previous": "A",
+    "switched": false,
+    "held_since": "2026-03-06T12:50:10.912898Z",
+    "factor_scores": {
+      "SAD": 0.5,
+      "PD": 0.8467,
+      "NCC": 0.75
+    },
+    "joint_score": 0.679,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT21M20S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1_protracted_attrition",
+      "label": "持久消耗战",
+      "weight": 0.45,
+      "weight_prev": 0.4,
+      "premises": [
+        "伊朗弹道导弹/无人机产能未被彻底摧毁",
+        "莫杰塔巴未能快速整合IRGC指挥链导致分散式报复",
+        "美国国内聚旗效应维持战争支持度>55%",
+        "海湾盟国被迫选边但拒绝提供前沿基地"
+      ],
+      "antithesis": "若伊朗导弹产能在首轮打击中被摧毁>70%，消耗战无法持续；且美国选举周期压力可能在W8前强制寻求退出",
+      "open_questions": [
+        "伊朗地下设施实际存活率？",
+        "巴基斯坦是否向伊朗提供弹药补给通道？",
+        "美国国内反战拐点何时出现？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S2_rapid_escalation_nuclear_threshold",
+      "label": "快速升级至核门槛",
+      "weight": 0.25,
+      "weight_prev": 0.2,
+      "premises": [
+        "伊朗在领导层被斩首后启动核武器紧急计划",
+        "美国情报研判伊朗距breakout<2周",
+        "以色列单方面对Fordow/Natanz实施穿透打击",
+        "国际社会未能在W2内建立有效外交通道"
+      ],
+      "antithesis": "伊朗核设施在首轮打击中已被严重破坏，且IRGC内部权力斗争使核决策链断裂——核升级需要完整指挥链而当前恰恰缺失",
+      "open_questions": [
+        "伊朗实际浓缩铀库存？",
+        "俄罗斯是否提供核保护伞暗示？",
+        "美国是否已部署B-2携带GBU-57？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S3_negotiated_offramp",
+      "label": "外交斡旋降级",
+      "weight": 0.08,
+      "weight_prev": 0.15,
+      "premises": [
+        "中国/俄罗斯联合施压开启秘密外交渠道",
+        "油价突破$120触发全球经济紧急响应",
+        "美国国内选举压力+战争开支超预算强制寻求出口",
+        "伊朗新领导层需要巩固权力而非对外消耗"
+      ],
+      "antithesis": "H1承诺悖论——能签协议的人已被消灭，莫杰塔巴缺乏内部合法性和外交经验来进行可信谈判；且美国已公开regime change意图使谈判缺乏互信基础",
+      "open_questions": [
+        "是否存在秘密back-channel（阿曼/卡塔尔）？",
+        "莫杰塔巴是否有足够权威签署任何协议？",
+        "美国是否愿意放弃regime change作为谈判筹码？"
+      ],
+      "source_models": [
+        "schelling-focal",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S4_fragmentation_proxy_war",
+      "label": "碎片化代理人战争",
+      "weight": 0.22,
+      "weight_prev": 0.25,
+      "premises": [
+        "IRGC各派系自行其是——不再有统一指挥",
+        "什叶派民兵网络(伊拉克/叙利亚/也门/巴林)独立行动",
+        "美国被迫从精准打击转向区域维稳(mission creep)",
+        "沙特/阿联酋秘密与伊朗残余势力达成互不攻击默契"
+      ],
+      "antithesis": "碎片化恰恰降低了每个代理人的打击能力——没有IRGC统一协调，胡塞/真主党各自为战的杀伤力远低于协同打击；美国可以各个击破",
+      "open_questions": [
+        "真主党在以色列地面入侵后还有多少战斗力？",
+        "伊拉克什叶派民兵是否会攻击美军基地？",
+        "也门胡塞是否能独立维持红海封锁？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "iran_regime_transition",
+      "label": "伊朗权力交接(莫杰塔巴继位)",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S3_negotiated_offramp",
+        "S4_fragmentation_proxy_war"
+      ],
+      "path_importance": 0.92,
+      "factor_scores": {
+        "SAD": 0.9,
+        "PD": 0.85,
+        "NCC": 0.8
+      },
+      "irreversible": true,
+      "locked": false
+    },
+    {
+      "node_id": "conflict_duration_over_2m",
+      "label": "冲突持续超2个月",
+      "type": "H",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S4_fragmentation_proxy_war"
+      ],
+      "path_importance": 0.85,
+      "factor_scores": {
+        "SAD": 0.7,
+        "PD": 0.8,
+        "NCC": 0.75
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "oil_price_100_breach",
+      "label": "油价突破$100",
+      "type": "M",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S2_rapid_escalation_nuclear_threshold",
+        "S4_fragmentation_proxy_war"
+      ],
+      "path_importance": 0.88,
+      "factor_scores": {
+        "SAD": 0.55,
+        "PD": 0.9,
+        "NCC": 0.5
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "energy_crisis_global",
+      "label": "全球能源危机",
+      "type": "M",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S2_rapid_escalation_nuclear_threshold"
+      ],
+      "path_importance": 0.9,
+      "factor_scores": {
+        "SAD": 0.5,
+        "PD": 0.85,
+        "NCC": 0.45
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "iran_missile_capability_degraded",
+      "label": "伊朗导弹能力削弱",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S2_rapid_escalation_nuclear_threshold"
+      ],
+      "path_importance": 0.78,
+      "factor_scores": {
+        "SAD": 0.85,
+        "PD": 0.75,
+        "NCC": 0.7
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "fed_policy_dilemma",
+      "label": "美联储政策困境",
+      "type": "M",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S3_negotiated_offramp"
+      ],
+      "path_importance": 0.75,
+      "factor_scores": {
+        "SAD": 0.4,
+        "PD": 0.8,
+        "NCC": 0.35
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "A",
+    "mechanical_nodes": [
+      {
+        "node_id": "oil_price_100_breach",
+        "propagated_prob": 0.9438,
+        "upstream_drivers": [
+          "iran_attacks_all_gulf",
+          "bahrain_refinery_drone_strike",
+          "shipping_insurance_crisis"
+        ],
+        "impact_magnitude": 0.85
+      },
+      {
+        "node_id": "energy_crisis_global",
+        "propagated_prob": 0.991,
+        "upstream_drivers": [
+          "oil_price_100_breach",
+          "asia_refinery_cuts",
+          "shipping_insurance_crisis"
+        ],
+        "impact_magnitude": 0.9
+      },
+      {
+        "node_id": "global_stagflation_risk",
+        "propagated_prob": 0.9458,
+        "upstream_drivers": [
+          "oil_price_100_breach",
+          "energy_crisis_global",
+          "fed_policy_dilemma"
+        ],
+        "impact_magnitude": 0.82
+      },
+      {
+        "node_id": "fed_policy_dilemma",
+        "propagated_prob": 0.9413,
+        "upstream_drivers": [
+          "oil_price_100_breach",
+          "global_stagflation_risk"
+        ],
+        "impact_magnitude": 0.7
+      },
+      {
+        "node_id": "em_currency_crisis",
+        "propagated_prob": 0.94,
+        "upstream_drivers": [
+          "fed_policy_dilemma",
+          "energy_crisis_global",
+          "oil_price_100_breach"
+        ],
+        "impact_magnitude": 0.75
+      },
+      {
+        "node_id": "shipping_insurance_crisis",
+        "propagated_prob": 0.9827,
+        "upstream_drivers": [
+          "iran_attacks_all_gulf",
+          "bahrain_refinery_drone_strike",
+          "regional_war_spillover"
+        ],
+        "impact_magnitude": 0.88
+      },
+      {
+        "node_id": "asia_refinery_cuts",
+        "propagated_prob": 0.9161,
+        "upstream_drivers": [
+          "shipping_insurance_crisis",
+          "energy_crisis_global"
+        ],
+        "impact_magnitude": 0.65
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "iran_regime_transition",
+        "equilibria": [
+          {
+            "eq_id": "eq1_mojtaba_consolidates",
+            "label": "莫杰塔巴成功整合IRGC——集权但经验不足",
+            "probability": 0.45,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq2_irgc_fragmentation",
+            "label": "IRGC各派系拒绝服从——碎片化",
+            "probability": 0.35,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq3_military_coup",
+            "label": "IRGC高级将领发动军事政变",
+            "probability": 0.12,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq4_collective_leadership",
+            "label": "过渡期集体领导制",
+            "probability": 0.08,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq1_mojtaba_consolidates",
+        "commitment_score": 0.38,
+        "exit_cost_ratio": 3.5
+      },
+      {
+        "node_id": "iran_missile_capability_degraded",
+        "equilibria": [
+          {
+            "eq_id": "eq_degraded_severe",
+            "label": "导弹能力被削弱>60%——转向非对称手段",
+            "probability": 0.55,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_degraded_moderate",
+            "label": "导弹能力被削弱30-60%——仍可维持有限报复",
+            "probability": 0.3,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_degraded_minor",
+            "label": "地下设施存活——仍保有战略打击能力",
+            "probability": 0.15,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_degraded_severe",
+        "commitment_score": 0.55,
+        "exit_cost_ratio": 2.1
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "conflict_duration_over_2m",
+        "baseline_prob": 0.9376,
+        "override_prob": 0.88,
+        "delta": -0.0576,
+        "recomp_subgraph": [
+          "global_stagflation_risk",
+          "fed_policy_dilemma",
+          "em_currency_crisis"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "能源供应链断裂已成事实：海湾全面攻击+巴林炼油设施被击+航运保险危机三重叠加，油价将在W1-5维持$95-115区间，Brent期货曲线深度backwardation。做多近月原油/做空航运保险CDS。",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.82,
+      "tradeable_as": "long front-month Brent crude / long energy equities / short container shipping",
+      "key_assumption": "伊朗对全海湾攻击持续且未被完全压制",
+      "kill_condition": "美伊在W3前达成停火或美国释放>100M桶战略储备"
+    },
+    {
+      "window": "W1_5",
+      "thesis": "防空弹药耗尽时钟正在计时：H2/H4假设指向W3-5窗口盟军拦截率下降，短期内防务股+导弹制造商将获得紧急订单驱动。做多RTX/LMT/Rheinmetall。",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.72,
+      "tradeable_as": "long defense contractors (RTX, LMT, RHM)",
+      "key_assumption": "弹药消耗率维持当前水平且补给链无法在W5前填补缺口",
+      "kill_condition": "冲突烈度在W2前显著下降或盟国获得紧急弹药补给"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "滞胀定价切换确认：H3假设——若油价维持>$85超6周，10Y UST从避险转为滞胀定价。做空长端美债/做多TIPS breakeven/做多黄金。美联储陷入两难：加息杀经济，不加息通胀失控。",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.7,
+      "tradeable_as": "short 10Y UST / long TIPS breakeven / long gold / short USD vs commodity FX",
+      "key_assumption": "油价在W6仍维持>$85且美联储未找到政策出路",
+      "kill_condition": "油价回落至$75以下持续2周或美联储推出创新工具有效管理预期"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "新兴市场货币危机传导：能源进口国(土耳其/印度/巴基斯坦/泰国)经常账户急剧恶化，央行被迫加息但仍无法阻止资本外流。做空EM FX篮子/做多USD。",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.65,
+      "tradeable_as": "short TRY/INR/PKR basket vs USD / long EM CDS",
+      "key_assumption": "能源危机持续且美元走强形成双重压力",
+      "kill_condition": "中国推出大规模人民币计价能源贸易安排或IMF紧急干预"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "后冲突重建+能源安全重构：无论哪个scenario主导终局，全球能源安全架构将永久改变——加速核电/可再生能源投资，海湾石油依赖度结构性下降。做多铀/核电股/清洁能源ETF。",
+      "dominant_scenario": "S3_negotiated_offramp",
+      "confidence": 0.55,
+      "tradeable_as": "long uranium (CCJ, SRUUF) / long nuclear utilities / long clean energy ETF",
+      "key_assumption": "冲突在W17前进入某种形式的降级或冻结",
+      "kill_condition": "冲突持续升级至核门槛或全球经济衰退导致能源需求暴跌"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "Brent Crude Front-Month",
+        "direction": "long",
+        "sizing_note": "核心仓位 — 高conviction，仓位5-8%，滚动近月合约",
+        "horizon": "W1_5",
+        "linked_thesis": "能源供应链断裂",
+        "entry_condition": "Brent>$90持续3日",
+        "stop_condition": "Brent<$82或停火协议签署"
+      },
+      {
+        "asset": "RTX/LMT/Rheinmetall",
+        "direction": "long",
+        "sizing_note": "防务板块等权配置 — 仓位3-5%",
+        "horizon": "W1_5",
+        "linked_thesis": "防空弹药耗尽时钟",
+        "entry_condition": "任一防务股突破52周高点",
+        "stop_condition": "冲突烈度指标下降>30%"
+      },
+      {
+        "asset": "10Y UST",
+        "direction": "short",
+        "sizing_note": "通过TBT或期货空头 — 仓位3-4%",
+        "horizon": "W6_16",
+        "linked_thesis": "滞胀定价切换",
+        "entry_condition": "10Y yield>4.8%且油价仍>$85",
+        "stop_condition": "10Y yield>5.5%（获利了结）或油价<$75"
+      },
+      {
+        "asset": "Gold (GLD/GC)",
+        "direction": "long",
+        "sizing_note": "避险+抗滞胀 — 仓位4-6%",
+        "horizon": "W6_16",
+        "linked_thesis": "滞胀定价切换",
+        "entry_condition": "Gold>$2200且实际利率走平",
+        "stop_condition": "美联储明确鹰派转向且油价暴跌"
+      },
+      {
+        "asset": "TIPS Breakeven",
+        "direction": "long",
+        "sizing_note": "通过TIP ETF — 仓位2-3%",
+        "horizon": "W6_16",
+        "linked_thesis": "滞胀定价切换",
+        "entry_condition": "5Y breakeven>2.8%",
+        "stop_condition": "Breakeven回落至2.3%以下"
+      },
+      {
+        "asset": "EM FX Basket (TRY/INR/PKR)",
+        "direction": "short",
+        "sizing_note": "通过FX forward或期权 — 仓位2-3%",
+        "horizon": "W6_16",
+        "linked_thesis": "新兴市场货币危机",
+        "entry_condition": "INR>86/USD或TRY>40/USD",
+        "stop_condition": "IMF宣布紧急流动性支持"
+      },
+      {
+        "asset": "Uranium/Nuclear (CCJ, SRUUF)",
+        "direction": "long",
+        "sizing_note": "长期主题仓位 — 仓位2-3%，逐步建仓",
+        "horizon": "W17_25plus",
+        "linked_thesis": "后冲突能源安全重构",
+        "entry_condition": "各国核电政策加速信号（如G7声明）",
+        "stop_condition": "全球经济深度衰退导致能源需求暴跌"
+      },
+      {
+        "asset": "VIX/VIXM",
+        "direction": "long",
+        "sizing_note": "尾部对冲 — 仓位1-2%",
+        "horizon": "W1_5",
+        "linked_thesis": "全场景波动率对冲",
+        "entry_condition": "VIX<35时建仓",
+        "stop_condition": "VIX>55获利了结或scenario clarity提升"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "T1_ceasefire_signal",
+        "signal": "任何官方或可信back-channel停火谈判信号",
+        "condition": "多个独立源确认秘密谈判或公开停火提议",
+        "action": "触发S3权重上调，减仓能源多头，平仓防务多头",
+        "linked_node": "conflict_duration_over_2m",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T2_ammo_depletion_evidence",
+        "signal": "盟军拦截率下降或弹药紧急采购公开信息",
+        "condition": "拦截率报道<75%或五角大楼紧急弹药补给请求",
+        "action": "确认H2/H4，加仓防务多头，上调S1权重",
+        "linked_node": "iran_missile_capability_degraded",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T3_oil_120_breach",
+        "signal": "Brent突破$120",
+        "condition": "Brent连续2日收盘>$120",
+        "action": "触发SPR释放预期评估，评估是否获利了结部分能源多头",
+        "linked_node": "oil_price_100_breach",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T4_nuclear_breakout_signal",
+        "signal": "IAEA异常报告或伊朗核设施异常活动卫星图",
+        "condition": "可信源报告伊朗浓缩>60%或新离心机安装",
+        "action": "S2权重大幅上调，加仓黄金/VIX，评估极端尾部对冲",
+        "linked_node": "iran_regime_transition",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T5_irgc_fragmentation",
+        "signal": "伊朗内部权力斗争公开化",
+        "condition": "多个IRGC派系公开矛盾或地方武装独立行动",
+        "action": "S4权重上调，S1下调，评估代理人战争传导路径",
+        "linked_node": "iran_regime_transition",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T6_fed_emergency",
+        "signal": "美联储非常规会议或紧急声明",
+        "condition": "Fed宣布紧急降息或新流动性工具",
+        "action": "调整滞胀定价thesis，评估美债空头是否需要平仓",
+        "linked_node": "fed_policy_dilemma",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T7_regime_score_drift",
+        "signal": "三因子联合得分漂移",
+        "condition": "joint_score>0.82持续1周（向Regime B漂移）",
+        "action": "启动Regime切换评估，加载全部S类模型",
+        "linked_node": null,
+        "urgency": "alert"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "Brent Crude Front-Month",
+        "condition": "停火协议签署或SPR释放>80M桶",
+        "action": "exit",
+        "backflow_to": "L5"
+      },
+      {
+        "position_ref": "10Y UST short",
+        "condition": "10Y yield>5.5%或油价<$75持续2周",
+        "action": "exit",
+        "backflow_to": "L5"
+      },
+      {
+        "position_ref": "EM FX Basket short",
+        "condition": "IMF宣布紧急EM流动性支持",
+        "action": "adjust",
+        "backflow_to": "L4"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "S2_rapid_escalation_nuclear_threshold",
+        "premise_broken": "伊朗核设施在首轮打击中被证实完全摧毁",
+        "evidence": "IAEA现场核查确认或高分辨率卫星图",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      },
+      {
+        "scenario_ref": "S3_negotiated_offramp",
+        "premise_broken": "H1承诺悖论确认——莫杰塔巴公开拒绝任何谈判",
+        "evidence": "伊朗官方声明或可信情报源",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "S1_protracted_attrition",
+        "premise_broken": "伊朗导弹产能被证实摧毁>70%",
+        "evidence": "多源情报交叉验证",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      }
+    ],
+    "regime_level": {
+      "current_regime": "A",
+      "contradiction": "若三因子联合得分持续>0.82超过1周，当前Regime A的结构传播模型不再适用——需切换至Regime B启用博弈论主引擎",
+      "backflow_to": "Regime",
+      "shs_writeback": true
+    }
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1",
+        "role": "P",
+        "called_by": "pipeline_l1_evidence_eval",
+        "input_summary": "无新证据，基于SHS先验和DAG状态进行贝叶斯基线维护",
+        "output_summary": "所有SHS假设置信度维持不变，DAG概率无更新",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L2a",
+        "role": "P",
+        "called_by": "pipeline_l2a_scenario_branch",
+        "input_summary": "4个现有scenario + DAG v19状态 + SHS H1-H4",
+        "output_summary": "维持4分支权重不变(0.40/0.20/0.15/0.25)，无新证据触发权重调整；识别S1和S4之间的边界模糊区域",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "pipeline_l2a_d_audit",
+        "input_summary": "审计4个scenario——特别关注weight>0.8的分支(无)和主分支S1(0.40)",
+        "output_summary": "S1反论：伊朗导弹产能可能被高估，首轮打击后消耗战可能比预期短；S3反论：H1承诺悖论是真实障碍，谈判scenario权重不应>0.20；S4反论：碎片化降低每个代理人杀伤力但增加不可预测性",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_l35_strategic",
+        "input_summary": "iran_regime_transition节点：4个候选均衡",
+        "output_summary": "莫杰塔巴继位为Schelling focal point(宪法继承+IRGC最低成本选项)但commitment_score仅0.38——内部合法性不足",
+        "cost": "medium"
+      },
+      {
+        "model_id": "schelling-commitment",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_l35_strategic",
+        "input_summary": "iran_missile_capability_degraded节点 + 退出成本分析",
+        "output_summary": "美国已深度沉没(>$50B + regime change公开声明)，exit_cost_ratio=2.1意味着继续打击比停止便宜；伊朗commitment_score=0.55(中等可信)",
+        "cost": "medium"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L4",
+        "role": "D",
+        "called_by": "pipeline_l4_thesis_audit",
+        "input_summary": "审计5个horizon_theses的kill_conditions和key_assumptions",
+        "output_summary": "W6_16滞胀thesis最脆弱——若美国快速释放SPR+沙特增产，油价可能在W4前回落至$80以下；W17_25plus核电thesis依赖冲突终局假设，不确定性最高",
+        "cost": "light"
+      }
+    ],
+    "divergence_flags": [
+      {
+        "flag_id": "div_01",
+        "layer": "L2a",
+        "model_a": "nth-order-reasoning",
+        "model_b": "dialectic-challenge",
+        "topic": "S4碎片化scenario的净效应",
+        "model_a_says": "碎片化增加冲突持续时间和不可预测性，应上调S4权重至0.30",
+        "model_b_says": "碎片化降低总体杀伤力，S4和S1可能合并为单一消耗战scenario",
+        "resolution": "noted",
+        "spawned_scenario": null
+      }
+    ],
+    "total_model_calls": 6,
+    "total_cost": "medium"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "H1_commitment_paradox",
+      "field_changed": "confidence",
+      "old_value": "0.42",
+      "new_value": "0.42",
+      "trigger_reason": "无新证据，维持当前置信度。Schelling focal分析确认莫杰塔巴为focal point但commitment_score低(0.38)，与H1方向一致但不足以更新",
+      "source_run_ids": [
+        "run_20260306T140000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H2_ammo_depletion_clock",
+      "field_changed": "confidence",
+      "old_value": "0.68",
+      "new_value": "0.68",
+      "trigger_reason": "无新证据。DAG中冲突节点全部prob=1.0，弹药消耗持续但无具体拦截率数据更新",
+      "source_run_ids": [
+        "run_20260306T140000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H3_stagflation_pricing_regime",
+      "field_changed": "confidence",
+      "old_value": "0.58",
+      "new_value": "0.58",
+      "trigger_reason": "无新证据。oil_price_100_breach prob=0.9438支持该假设方向，但需等待实际油价数据确认是否维持>$85超6周",
+      "source_run_ids": [
+        "run_20260306T140000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H4_ammunition_enforced_boundary",
+      "field_changed": "confidence",
+      "old_value": "0.50",
+      "new_value": "0.50",
+      "trigger_reason": "无新证据。与H2高度重叠，建议未来run合并或分化——H2聚焦弹药库存物理极限，H4聚焦冲突终局强制效应",
+      "source_run_ids": [
+        "run_20260306T140000Z"
+      ]
+    }
+  ]
+}
