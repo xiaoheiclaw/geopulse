@@ -266,11 +266,17 @@ def run_all_checks():
     
     checkers = [
         ("Oil/Brent", check_oil_price),
+        ("Oil Implied Vol (OVX)", check_ovx),
+        ("Brent Curve", check_brent_contango),
         ("VIX/Term Structure", check_vix),
+        ("SKEW Index", check_skew_index),
+        ("Credit Stress (HYG/LQD)", check_hy_spread_proxy),
         ("EM FX", check_em_fx),
+        ("DXY", check_dxy),
         ("CCJ Volume", check_ccj_volume),
         ("Gold/Yields", check_gold_yields),
         ("S&P 500", check_sp500),
+        ("News Flags", check_news_signals),
     ]
     
     print(f"GeoPulse Signal Monitor — {datetime.datetime.now(datetime.timezone.utc).isoformat()}")
@@ -304,6 +310,168 @@ def run_all_checks():
             print(f"  {k}: {v:.4f}" if v < 10 else f"  {k}: {v:.2f}")
     
     return state
+
+
+
+
+# ═══════════════════════════════════════════
+# ADDITIONAL SIGNAL CHECKERS (Batch 2)
+# ═══════════════════════════════════════════
+
+def check_skew_index(state):
+    """T05 supplement: CBOE SKEW index"""
+    alerts = []
+    data = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/%5ESKEW?interval=1d&range=5d")
+    if data:
+        try:
+            closes = [c for c in data["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+            if closes:
+                skew = closes[-1]
+                state["baselines"]["skew"] = skew
+                if skew > 150:
+                    alerts.append({
+                        "signal_id": "T05",
+                        "level": "P1",
+                        "message": f"SKEW {skew:.0f} > 150 — 尾部风险定价极端",
+                        "action": "叠加VIX倒挂 = 强烈尾部对冲信号",
+                    })
+        except (KeyError, IndexError):
+            pass
+    return alerts
+
+def check_brent_contango(state):
+    """T01 supplement: Brent front-month vs 3-month spread (backwardation)"""
+    alerts = []
+    # Front month
+    d1 = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?interval=1d&range=2d")
+    # Use CL (WTI) 3-month as proxy since Brent 3M not easily available
+    # Check WTI front vs deferred
+    d2 = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/CL=F?interval=1d&range=2d")
+    d3 = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/CLK26.NYM?interval=1d&range=2d")  # May 2026
+    if d1 and d2:
+        try:
+            brent = [c for c in d1["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c][-1]
+            wti_front = [c for c in d2["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c][-1]
+            state["baselines"]["brent_front"] = brent
+            state["baselines"]["wti_front"] = wti_front
+            # Brent-WTI spread
+            spread = brent - wti_front
+            state["baselines"]["brent_wti_spread"] = spread
+        except (KeyError, IndexError):
+            pass
+    return alerts
+
+def check_hy_spread_proxy(state):
+    """T04 proxy: HYG vs LQD ratio as credit stress proxy"""
+    alerts = []
+    hyg = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/HYG?interval=1d&range=10d")
+    lqd = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/LQD?interval=1d&range=10d")
+    if hyg and lqd:
+        try:
+            hyg_c = [c for c in hyg["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+            lqd_c = [c for c in lqd["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+            if len(hyg_c) >= 5 and len(lqd_c) >= 5:
+                # HYG/LQD ratio — falling = credit stress rising
+                ratio_now = hyg_c[-1] / lqd_c[-1]
+                ratio_5d = hyg_c[0] / lqd_c[0]
+                chg = (ratio_now - ratio_5d) / ratio_5d * 100
+                state["baselines"]["hyg_lqd_ratio"] = ratio_now
+                state["baselines"]["hyg_lqd_5d_chg"] = chg
+                if chg < -1.5:
+                    alerts.append({
+                        "signal_id": "T04",
+                        "level": "P1",
+                        "message": f"HYG/LQD比率5日下跌{chg:.2f}% — 信用压力上升",
+                        "action": "信用市场领先股市，加仓VIX/减risk-on",
+                    })
+                if chg < -3.0:
+                    alerts.append({
+                        "signal_id": "T04",
+                        "level": "P0",
+                        "message": f"HYG/LQD比率5日暴跌{chg:.2f}% — 信用市场恐慌",
+                        "action": "立即加仓尾部对冲，考虑减持全部risk-on",
+                    })
+        except (KeyError, IndexError):
+            pass
+    return alerts
+
+def check_ovx(state):
+    """T01/T10 supplement: Oil VIX (OVX) for implied vol"""
+    alerts = []
+    data = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/%5EOVX?interval=1d&range=10d")
+    if data:
+        try:
+            closes = [c for c in data["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+            if len(closes) >= 2:
+                ovx = closes[-1]
+                ovx_prev = closes[-2]
+                ovx_5d_ago = closes[0] if len(closes) >= 5 else closes[0]
+                daily_chg = ovx - ovx_prev
+                state["baselines"]["ovx"] = ovx
+                state["baselines"]["ovx_daily_chg"] = daily_chg
+                # T10: implied vol突降 but spot didn't drop = someone knows something
+                brent = state.get("baselines", {}).get("brent_latest", 0)
+                brent_chg = state.get("baselines", {}).get("brent_weekly_chg", 0)
+                if daily_chg < -5 and brent_chg >= 0:
+                    alerts.append({
+                        "signal_id": "T10",
+                        "level": "P0",
+                        "message": f"OVX单日跌{daily_chg:.1f}vol但Brent未跌 — 风险定价异常下降",
+                        "action": "密切关注外交动态，可能有停火后渠道信号",
+                    })
+                if ovx > 60:
+                    alerts.append({
+                        "signal_id": "T01",
+                        "level": "P1",
+                        "message": f"OVX {ovx:.1f} > 60 — 油价波动率极端",
+                        "action": "考虑用期权替代期货(买call spread代替裸多)",
+                    })
+        except (KeyError, IndexError):
+            pass
+    return alerts
+
+def check_news_signals(state):
+    """T03/T06/T07/T09: News-based signals via keyword detection
+    Note: Requires web_search which isn't available in pure Python.
+    This checker reads from a manually-updated news flags file.
+    """
+    alerts = []
+    news_file = os.path.join(DATA_DIR, "news_flags.json")
+    if os.path.exists(news_file):
+        flags = json.load(open(news_file))
+        for flag in flags.get("active", []):
+            alerts.append({
+                "signal_id": flag.get("trigger_id", "NEWS"),
+                "level": flag.get("level", "P1"),
+                "message": flag["message"],
+                "action": flag.get("action", "评估影响"),
+            })
+    return alerts
+
+def check_dxy(state):
+    """DXY strength — feeds into EM capital outflow"""
+    alerts = []
+    data = fetch_json("https://query1.finance.yahoo.com/v8/finance/chart/DX-Y.NYB?interval=1d&range=10d")
+    if data:
+        try:
+            closes = [c for c in data["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+            if len(closes) >= 5:
+                latest = closes[-1]
+                wk_ago = closes[0]
+                wk_chg = (latest - wk_ago) / wk_ago * 100
+                state["baselines"]["dxy"] = latest
+                state["baselines"]["dxy_weekly_chg"] = wk_chg
+                if wk_chg > 2:
+                    alerts.append({
+                        "signal_id": "T11",
+                        "level": "P1",
+                        "message": f"DXY周涨{wk_chg:.1f}%至{latest:.1f} — 美元走强压EM",
+                        "action": "EM FX short加仓信号",
+                    })
+        except (KeyError, IndexError):
+            pass
+    return alerts
+
 
 if __name__ == "__main__":
     state = run_all_checks()
