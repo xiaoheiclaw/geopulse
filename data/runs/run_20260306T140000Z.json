@@ -6,7 +6,7 @@
     "trigger_event": "v7.4 端到端测试 (opus)",
     "evidence_count": 0,
     "run_duration_ms": 151823,
-    "updated": "2026-03-07T03:19:23.087350+00:00"
+    "updated": "2026-03-07T03:29:10.709790+00:00"
   },
   "regime": {
     "current": "A",
@@ -520,19 +520,19 @@
           "hormuz_blockade",
           "supply_disruption_volume"
         ],
-        "lead_time": "即时",
+        "lead_time": "即时-1天(运费/AIS是实物流的直接反映，先于新闻报道)",
         "trigger_id": "T02"
       },
       {
-        "signal": "SPR释放公告 或 IEA协调释放声明",
-        "condition": "官方干预 = 确认供应紧张到政治不可忍受",
-        "action": "短期获利了结Brent 30%仓位(利好出尽)，但中期保留",
+        "signal": "SPR释放: 白宫/DOE泄露释放计划(>30M桶) 或 IEA宣布协调释放",
+        "condition": "官方干预前通常有1-2天媒体泄露。释放量>30M桶才有意义(日均需求~100M桶)",
+        "action": "Brent多头获利了结30%(利好出尽效应)，保留70%中期仓位",
         "urgency": "act",
         "linked_nodes": [
           "supply_offset_capacity",
           "oil_price_100"
         ],
-        "lead_time": "0-1天",
+        "lead_time": "1-2天(泄露先于公告)",
         "trigger_id": "T03"
       },
       {
@@ -559,9 +559,9 @@
         "trigger_id": "T05"
       },
       {
-        "signal": "主要投行下修S&P EPS forecast(≥2家同周下修)",
-        "condition": "盈利预期拐点确认 — 基本面恶化的硬信号",
-        "action": "评估equity_correction从65%上调",
+        "signal": "≥2家主要投行(GS/JPM/MS/BAC)同周下修S&P EPS预测≥3%",
+        "condition": "华尔街共识拐点 — 历史上EPS下修潮领先S&P实际回撤1-2周",
+        "action": "加仓VIX多头至3%，考虑买入S&P put spread (3M 5% OTM)",
         "urgency": "alert",
         "linked_nodes": [
           "earnings_downgrade",
@@ -571,19 +571,19 @@
         "trigger_id": "T06"
       },
       {
-        "signal": "伊朗外交官取消IAEA例行访问 或 Natanz/Fordow卫星图异常(新建筑/车辆)",
-        "condition": "核设施活动异常先于IAEA正式报告数周",
-        "action": "核升级场景权重上调，加仓黄金+VIX",
+        "signal": "IAEA: 伊朗取消≥2次例行核查 或 浓缩铀库存报告偏离>20%预期 或 ISIS卫星分析报告异常",
+        "condition": "取消核查是标准前奏(朝鲜2003模式)。ISIS(非恐怖组织)公开发布卫星分析，无需订阅",
+        "action": "核升级场景权重上调至35%+，加仓黄金2%+VIX 1%",
         "urgency": "act",
         "linked_nodes": [
           "irgc_nuclear"
         ],
-        "lead_time": "2-4周",
+        "lead_time": "2-4周(取消核查→突破→IAEA正式报告)",
         "trigger_id": "T07"
       },
       {
-        "signal": "铀期货(UxC spot)单周涨>5% 或 CCJ异常放量(>3x均量)",
-        "condition": "铀市场的\"聪明钱\"在核信号公开前先动",
+        "signal": "铀期货(UxC spot)单周涨>5% 或 CCJ放量>3x均量 且 非ETF调仓日",
+        "condition": "排除月末ETF再平衡和期权到期日的噪声。确认机构流而非散户",
         "action": "加速建仓CCJ/SRUUF",
         "urgency": "alert",
         "linked_nodes": [
@@ -593,20 +593,20 @@
         "trigger_id": "T08"
       },
       {
-        "signal": "阿曼外长突访德黑兰/华盛顿 或 瑞士突发\"中东问题\"声明",
-        "condition": "中间人活动是后渠道谈判的领先信号",
-        "action": "如确认 → 准备减仓能源多头30%",
+        "signal": "阿曼/瑞士/中国外长48h内访问≥2个冲突方首都 且 安理会非公开磋商频次>2次/周",
+        "condition": "单次出访=噪声。≥2个冲突方+安理会活动=模式确认。参照2015伊核谈判前奏",
+        "action": "准备减仓能源多头30%，设置Brent stop-loss收紧至$88",
         "urgency": "alert",
         "linked_nodes": [
           "ceasefire_backchannel"
         ],
-        "lead_time": "1-3天",
+        "lead_time": "3-7天(磋商→框架→公告)",
         "trigger_id": "T09"
       },
       {
         "signal": "Brent近月implied vol突降>5vol但现货未跌",
         "condition": "期权市场在价格之前定价风险下降 — 可能有人知道什么",
-        "action": "密切关注外交动态，准备翻转能源仓位",
+        "action": "立即检查外交新闻源(Al Jazeera/Reuters wire)。如确认停火信号: 退出Brent多头50%，买入Brent put保护",
         "urgency": "alert",
         "linked_nodes": [
           "ceasefire_backchannel",
