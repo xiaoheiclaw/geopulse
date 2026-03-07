@@ -78,45 +78,101 @@ def apply_impacts(impacts: list[dict], dag: dict) -> dict:
     """
     将P1提取的impacts应用到DAG，返回更新后的DAG。
     
-    每个impact需要: node_id, direction, magnitude, likelihood_ratio,
-                    transmission_order, confidence
+    使用贝叶斯乘法更新而非线性叠加:
+    - 同一节点多条evidence: 用odds乘法(避免超100%)
+    - P_new = P_old × LR / (P_old × LR + (1 - P_old))
+      其中 LR = 似然比（从magnitude和likelihood_ratio推算）
     """
     import copy
     result = copy.deepcopy(dag)
     nodes = result["nodes"]
     changes = []
     
+    # 按node_id分组
+    from collections import defaultdict
+    node_impacts = defaultdict(list)
     for imp in impacts:
         nid = imp.get("node_id", "")
-        if nid not in nodes:
-            continue
-        if imp.get("direction") == "unchanged":
-            continue
-        
-        delta = calculate_delta(
-            magnitude=imp.get("magnitude", "minor"),
-            likelihood_ratio=imp.get("likelihood_ratio", "2-5"),
-            transmission_order=imp.get("transmission_order", 1),
-            confidence=imp.get("confidence", 0.7),
-            direction=imp.get("direction", "up"),
-        )
-        
+        if nid in nodes and imp.get("direction") != "unchanged":
+            node_impacts[nid].append(imp)
+    
+    for nid, imps in node_impacts.items():
         old_prob = nodes[nid]["probability"]
-        new_prob = max(0.0, min(1.0, old_prob + delta))
+        prob = old_prob
         
-        if abs(delta) >= 0.005:  # 忽略<0.5%的变化
-            nodes[nid]["probability"] = round(new_prob, 4)
+        for imp in imps:
+            # 计算等效似然比
+            lr = _effective_likelihood_ratio(
+                magnitude=imp.get("magnitude", "minor"),
+                likelihood_ratio=imp.get("likelihood_ratio", "2-5"),
+                transmission_order=imp.get("transmission_order", 1),
+                confidence=imp.get("confidence", 0.7),
+                direction=imp.get("direction", "up"),
+            )
+            
+            # 贝叶斯更新: P_new = P × LR / (P × LR + (1-P))
+            if lr > 0 and 0 < prob < 1:
+                odds = prob / (1 - prob)
+                new_odds = odds * lr
+                prob = new_odds / (1 + new_odds)
+        
+        prob = round(max(0.01, min(0.99, prob)), 4)  # 永远不到0或1
+        
+        if abs(prob - old_prob) >= 0.005:
+            nodes[nid]["probability"] = prob
             changes.append({
                 "node_id": nid,
                 "old": old_prob,
-                "new": new_prob,
-                "delta": delta,
-                "magnitude": imp.get("magnitude"),
-                "likelihood_ratio": imp.get("likelihood_ratio"),
-                "order": imp.get("transmission_order"),
+                "new": prob,
+                "delta": prob - old_prob,
+                "n_impacts": len(imps),
             })
     
     return result, changes
+
+
+# 似然比映射
+_LR_BASE = {
+    "negligible": 1.05,
+    "minor":      1.15,
+    "moderate":   1.40,
+    "significant":1.80,
+    "dramatic":   3.00,
+}
+
+_LR_SCALING = {
+    "1-2":  0.7,
+    "2-5":  1.0,
+    "5-10": 1.3,
+    ">10":  1.6,
+}
+
+def _effective_likelihood_ratio(
+    magnitude: str,
+    likelihood_ratio: str,
+    transmission_order: int,
+    confidence: float,
+    direction: str,
+) -> float:
+    """计算等效似然比。"""
+    base_lr = _LR_BASE.get(magnitude, 1.15)
+    lr_scale = _LR_SCALING.get(likelihood_ratio, 1.0)
+    
+    # 基础LR
+    lr = base_lr ** lr_scale
+    
+    # 传导衰减: LR向1靠拢
+    decay = ORDER_DECAY.get(transmission_order, 0.15)
+    lr = 1 + (lr - 1) * decay
+    
+    # 置信度: LR向1靠拢
+    lr = 1 + (lr - 1) * confidence
+    
+    # 方向: down则取倒数
+    if direction == "down":
+        lr = 1 / lr
+    
+    return lr
 
 
 # ═══════════════════════════════════════════
