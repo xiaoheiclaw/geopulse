@@ -213,7 +213,7 @@ MODELS = {
 }
 
 
-def call_llm(prompt: str, model: str = MODELS["primary"], max_tokens: int = 4000) -> str:
+def call_llm(prompt: str, model: str = MODELS["primary"], max_tokens: int = 8000) -> str:
     """Call Anthropic API with automatic fallback."""
     client = get_client()
     
