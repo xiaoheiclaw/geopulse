@@ -29,10 +29,10 @@ def propagate(dag: DAG, overrides: dict[str, float] | None = None) -> DAG:
         if weight > 0:
             parents_map.setdefault(edge.target, []).append((edge.source, weight))
 
-    # Pinned nodes: confirmed events + LLM overrides
+    # Pinned nodes: confirmed events + LLM overrides + manually calibrated
     pinned = {
         nid for nid, n in result.nodes.items()
-        if n.node_type == "event" and n.probability >= 0.95
+        if (n.node_type == "event" and n.probability >= 0.95) or n.pinned
     }
     pinned.update(overrides.keys())
 

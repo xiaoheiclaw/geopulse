@@ -56,6 +56,7 @@ class Node(BaseModel):
     evidence: list[str] = Field(default_factory=list)
     reasoning: str = ""
     time_horizon: str = ""  # e.g. "30d", "Q1 2026", "2026-04" — for state/prediction nodes
+    pinned: bool = False  # True = 手动校准，propagator不覆盖
     time_phases: list[TimePhase] = Field(default_factory=list)  # probability density curve
     dialectic: Dialectic | None = None  # thesis/antithesis/synthesis
     last_updated: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
