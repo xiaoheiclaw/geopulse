@@ -6,7 +6,7 @@
     "trigger_event": "v7.4 端到端测试 (opus)",
     "evidence_count": 0,
     "run_duration_ms": 151823,
-    "updated": "2026-03-07T03:10:41.874039+00:00"
+    "updated": "2026-03-07T03:19:23.087350+00:00"
   },
   "regime": {
     "current": "A",
@@ -501,60 +501,142 @@
     ],
     "triggers": [
       {
-        "trigger_id": "T1_ceasefire_signal",
-        "signal": "任何官方或可信back-channel停火谈判信号",
-        "condition": "多个独立源确认秘密谈判或公开停火提议",
-        "action": "触发S3权重上调，减仓能源多头，平仓防务多头",
-        "linked_node": "conflict_duration_over_2m",
-        "urgency": "act"
+        "signal": "Brent 25-delta call skew > 10vol 且 1M/3M backwardation走陡",
+        "condition": "期权市场定价尾部风险上升 — 先于现货破百",
+        "action": "加仓Brent近月多头，考虑买入OTM call spread",
+        "urgency": "act",
+        "linked_nodes": [
+          "oil_price_100"
+        ],
+        "lead_time": "1-3天",
+        "trigger_id": "T01"
       },
       {
-        "trigger_id": "T2_ammo_depletion_evidence",
-        "signal": "盟军拦截率下降或弹药紧急采购公开信息",
-        "condition": "拦截率报道<75%或五角大楼紧急弹药补给请求",
-        "action": "确认H2/H4，加仓防务多头，上调S1权重",
-        "linked_node": "iran_missile_capability_degraded",
-        "urgency": "alert"
+        "signal": "VLCC波斯湾运费>WS300 或 MarineTraffic海峡AIS船舶数连续3天<10艘",
+        "condition": "实物市场确认封锁加深 — 运费是供应紧张的一阶导",
+        "action": "能源链全线加仓(Brent+炼厂利润+LNG)",
+        "urgency": "act",
+        "linked_nodes": [
+          "hormuz_blockade",
+          "supply_disruption_volume"
+        ],
+        "lead_time": "即时",
+        "trigger_id": "T02"
       },
       {
-        "trigger_id": "T3_oil_120_breach",
-        "signal": "Brent突破$120",
-        "condition": "Brent连续2日收盘>$120",
-        "action": "触发SPR释放预期评估，评估是否获利了结部分能源多头",
-        "linked_node": "oil_price_100_breach",
-        "urgency": "act"
+        "signal": "SPR释放公告 或 IEA协调释放声明",
+        "condition": "官方干预 = 确认供应紧张到政治不可忍受",
+        "action": "短期获利了结Brent 30%仓位(利好出尽)，但中期保留",
+        "urgency": "act",
+        "linked_nodes": [
+          "supply_offset_capacity",
+          "oil_price_100"
+        ],
+        "lead_time": "0-1天",
+        "trigger_id": "T03"
       },
       {
-        "trigger_id": "T4_nuclear_breakout_signal",
-        "signal": "IAEA异常报告或伊朗核设施异常活动卫星图",
-        "condition": "可信源报告伊朗浓缩>60%或新离心机安装",
-        "action": "S2权重大幅上调，加仓黄金/VIX，评估极端尾部对冲",
-        "linked_node": "iran_regime_transition",
-        "urgency": "act"
+        "signal": "HY CDX spread单日走阔>20bp 或 投资级CDS走阔>10bp",
+        "condition": "信用市场先于股市定价违约风险 — 信用是股的领先指标",
+        "action": "加仓VIX/VIXM，减持risk-on",
+        "urgency": "act",
+        "linked_nodes": [
+          "credit_tightening",
+          "equity_correction"
+        ],
+        "lead_time": "1-5天",
+        "trigger_id": "T04"
       },
       {
-        "trigger_id": "T5_irgc_fragmentation",
-        "signal": "伊朗内部权力斗争公开化",
-        "condition": "多个IRGC派系公开矛盾或地方武装独立行动",
-        "action": "S4权重上调，S1下调，评估代理人战争传导路径",
-        "linked_node": "iran_regime_transition",
-        "urgency": "alert"
+        "signal": "VIX期限结构倒挂(VIX>VIX3M) 且 SKEW指数>150",
+        "condition": "市场为近期尾部风险定价 — 恐慌还没到但在积累",
+        "action": "尾部对冲加仓(买put spread或加VIX)",
+        "urgency": "alert",
+        "linked_nodes": [
+          "equity_correction"
+        ],
+        "lead_time": "3-7天",
+        "trigger_id": "T05"
       },
       {
-        "trigger_id": "T6_fed_emergency",
-        "signal": "美联储非常规会议或紧急声明",
-        "condition": "Fed宣布紧急降息或新流动性工具",
-        "action": "调整滞胀定价thesis，评估美债空头是否需要平仓",
-        "linked_node": "fed_policy_dilemma",
-        "urgency": "act"
+        "signal": "主要投行下修S&P EPS forecast(≥2家同周下修)",
+        "condition": "盈利预期拐点确认 — 基本面恶化的硬信号",
+        "action": "评估equity_correction从65%上调",
+        "urgency": "alert",
+        "linked_nodes": [
+          "earnings_downgrade",
+          "equity_correction"
+        ],
+        "lead_time": "1-2周",
+        "trigger_id": "T06"
       },
       {
-        "trigger_id": "T7_regime_score_drift",
-        "signal": "三因子联合得分漂移",
-        "condition": "joint_score>0.82持续1周（向Regime B漂移）",
-        "action": "启动Regime切换评估，加载全部S类模型",
-        "linked_node": null,
-        "urgency": "alert"
+        "signal": "伊朗外交官取消IAEA例行访问 或 Natanz/Fordow卫星图异常(新建筑/车辆)",
+        "condition": "核设施活动异常先于IAEA正式报告数周",
+        "action": "核升级场景权重上调，加仓黄金+VIX",
+        "urgency": "act",
+        "linked_nodes": [
+          "irgc_nuclear"
+        ],
+        "lead_time": "2-4周",
+        "trigger_id": "T07"
+      },
+      {
+        "signal": "铀期货(UxC spot)单周涨>5% 或 CCJ异常放量(>3x均量)",
+        "condition": "铀市场的\"聪明钱\"在核信号公开前先动",
+        "action": "加速建仓CCJ/SRUUF",
+        "urgency": "alert",
+        "linked_nodes": [
+          "irgc_nuclear"
+        ],
+        "lead_time": "1-2周",
+        "trigger_id": "T08"
+      },
+      {
+        "signal": "阿曼外长突访德黑兰/华盛顿 或 瑞士突发\"中东问题\"声明",
+        "condition": "中间人活动是后渠道谈判的领先信号",
+        "action": "如确认 → 准备减仓能源多头30%",
+        "urgency": "alert",
+        "linked_nodes": [
+          "ceasefire_backchannel"
+        ],
+        "lead_time": "1-3天",
+        "trigger_id": "T09"
+      },
+      {
+        "signal": "Brent近月implied vol突降>5vol但现货未跌",
+        "condition": "期权市场在价格之前定价风险下降 — 可能有人知道什么",
+        "action": "密切关注外交动态，准备翻转能源仓位",
+        "urgency": "alert",
+        "linked_nodes": [
+          "ceasefire_backchannel",
+          "conflict_deescalation"
+        ],
+        "lead_time": "数小时到1天",
+        "trigger_id": "T10"
+      },
+      {
+        "signal": "TRY NDF 1W单日贬>3% 或 INR offshore单日贬>1.5%",
+        "condition": "EM FX离岸市场先于在岸/股市反应 — 热钱先跑",
+        "action": "加仓EM FX short",
+        "urgency": "act",
+        "linked_nodes": [
+          "em_capital_outflow",
+          "cny_depreciation"
+        ],
+        "lead_time": "1-3天",
+        "trigger_id": "T11"
+      },
+      {
+        "signal": "PBOC连续3天设中间价偏弱(>模型预测100pips)",
+        "condition": "PBOC信号: 允许有序贬值 — 政策层面确认",
+        "action": "建仓CNY short(USD/CNH)",
+        "urgency": "act",
+        "linked_nodes": [
+          "cny_depreciation"
+        ],
+        "lead_time": "即时(政策信号)",
+        "trigger_id": "T12"
       }
     ]
   },
