@@ -1,0 +1,466 @@
+{
+  "meta": {
+    "run_id": "run_20260306T150100Z",
+    "timestamp": "2026-03-06T15:01:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": null,
+    "evidence_count": 0,
+    "run_duration_ms": 77838
+  },
+  "regime": {
+    "current": "A",
+    "previous": "A",
+    "switched": false,
+    "held_since": "2026-03-06T12:50:10.912898Z",
+    "factor_scores": {
+      "SAD": 0.6667,
+      "PD": 0.7833,
+      "NCC": 0.775
+    },
+    "joint_score": 0.7342,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT15H38M58S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "SC1_commitment_trap",
+      "label": "承诺陷阱分支",
+      "weight": 0.72,
+      "weight_prev": 0.68,
+      "premises": [
+        "哈梅内伊遇袭消除唯一可信停火谈判人",
+        "IRGC内部无人能承继权威",
+        "美国斩首行动事实上锁死谈判路径"
+      ],
+      "antithesis": "莫杰塔巴·哈梅内伊在W4-6成功整合IRGC并获得停火权威，推翻承诺悖论假设",
+      "open_questions": [
+        "莫杰塔巴整合时间窗口",
+        "代理人冲突升级是否已脱离德黑兰控制",
+        "第三方调停可能性"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "SC2_ammo_depletion",
+      "label": "弹药耗尽强制边界",
+      "weight": 0.84,
+      "weight_prev": 0.79,
+      "premises": [
+        "$3.5K无人机vs$1-3M拦截弹成本非对称",
+        "盟军防空弹药在W3-5触及物理极限",
+        "拦截率低于85%触发政治不可接受阈值"
+      ],
+      "antithesis": "美国动员军工产能快速补充库存，或接受更高伤亡率维持拦截",
+      "open_questions": [
+        "欧洲盟友弹药贡献度",
+        "以色列铁穹独立持续能力",
+        "俄国是否向伊朗提供更多无人机"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "nth-order-reasoning"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "SC3_energy_regime_shift",
+      "label": "能源驱动通胀范式",
+      "weight": 0.61,
+      "weight_prev": 0.58,
+      "premises": [
+        "霍尔木兹封锁推动油价>$85超过6周",
+        "美债从避险资产转为滞胀定价",
+        "央行政策受限于能源输入通胀"
+      ],
+      "antithesis": "战略石油储备释放和需求破坏抑制油价，范式转换流产",
+      "open_questions": [
+        "欧洲冬季天然气需求峰值",
+        "中国战略采购行为",
+        "美联储鹰鸽转换点"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "SC4_spillover_containment",
+      "label": "外溢遏制失败",
+      "weight": 0.45,
+      "weight_prev": 0.42,
+      "premises": [
+        "伊朗对海湾6国发动攻击",
+        "沙特/阿联酋被迫选边",
+        "地区安全架构崩溃"
+      ],
+      "antithesis": "海湾国家通过外交管道与伊朗达成默契，避免直接卷入",
+      "open_questions": [
+        "俄国在海湾的调停作用",
+        "中国能源利益考量",
+        "土耳其北约内部分化效应"
+      ],
+      "source_models": [
+        "nth-order-reasoning"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "conflict_protracted",
+      "label": "冲突持久化",
+      "type": "S",
+      "parent_scenarios": [
+        "SC1_commitment_trap",
+        "SC2_ammo_depletion"
+      ],
+      "path_importance": 0.85,
+      "factor_scores": {
+        "SAD": 0.8,
+        "PD": 0.9,
+        "NCC": 0.75
+      },
+      "irreversible": true,
+      "locked": false
+    },
+    {
+      "node_id": "hormuz_blockade",
+      "label": "霍尔木兹海峡事实封锁",
+      "type": "M",
+      "parent_scenarios": [
+        "SC2_ammo_depletion",
+        "SC3_energy_regime_shift"
+      ],
+      "path_importance": 0.78,
+      "factor_scores": {
+        "SAD": 0.3,
+        "PD": 0.95,
+        "NCC": 0.6
+      },
+      "irreversible": false,
+      "locked": true
+    },
+    {
+      "node_id": "energy_crisis",
+      "label": "全球能源危机",
+      "type": "H",
+      "parent_scenarios": [
+        "SC3_energy_regime_shift",
+        "SC4_spillover_containment"
+      ],
+      "path_importance": 0.72,
+      "factor_scores": {
+        "SAD": 0.5,
+        "PD": 0.85,
+        "NCC": 0.8
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "A",
+    "mechanical_nodes": [
+      {
+        "node_id": "hormuz_blockade",
+        "propagated_prob": 0.9,
+        "upstream_drivers": [
+          "iran_retaliation",
+          "regional_spillover"
+        ],
+        "impact_magnitude": 0.15
+      },
+      {
+        "node_id": "supply_disruption_volume",
+        "propagated_prob": 0.85,
+        "upstream_drivers": [
+          "hormuz_blockade",
+          "iran_gulf_attacks"
+        ],
+        "impact_magnitude": 0.12
+      },
+      {
+        "node_id": "shipping_insurance_collapse",
+        "propagated_prob": 0.82,
+        "upstream_drivers": [
+          "hormuz_blockade",
+          "supply_disruption_volume"
+        ],
+        "impact_magnitude": 0.08
+      },
+      {
+        "node_id": "net_supply_gap",
+        "propagated_prob": 0.81,
+        "upstream_drivers": [
+          "supply_disruption_volume",
+          "qatar_lng_disrupted"
+        ],
+        "impact_magnitude": 0.09
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "conflict_protracted",
+        "equilibria": [
+          {
+            "eq_id": "EQ1_grinding_attrition",
+            "label": "消耗战均衡",
+            "probability": 0.72,
+            "is_focal": true
+          },
+          {
+            "eq_id": "EQ2_proxy_escalation",
+            "label": "代理人升级",
+            "probability": 0.23,
+            "is_focal": false
+          },
+          {
+            "eq_id": "EQ3_negotiated_pause",
+            "label": "谈判暂停",
+            "probability": 0.05,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "EQ1_grinding_attrition",
+        "commitment_score": 0.85,
+        "exit_cost_ratio": 3.2
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "energy_crisis",
+        "baseline_prob": 0.72,
+        "override_prob": 0.76,
+        "delta": 0.04,
+        "recomp_subgraph": [
+          "oil_price_100",
+          "aviation_demand_cut",
+          "russia_energy_leverage"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "弹药库存耗尽将在W3-5强制冲突进入新阶段，要么接受更高伤亡率要么被迫谈判",
+      "dominant_scenario": "SC2_ammo_depletion",
+      "confidence": 0.84,
+      "tradeable_as": "long vol, short equity",
+      "key_assumption": "盟军防空弹药确实触及物理极限",
+      "kill_condition": "美国成功大规模动员军工产能或接受85%以下拦截率"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "能源驱动的滞胀范式转换将重塑资产定价，美债失去避险属性",
+      "dominant_scenario": "SC3_energy_regime_shift",
+      "confidence": 0.61,
+      "tradeable_as": "short duration, long commodities",
+      "key_assumption": "油价维持>$85超过6周",
+      "kill_condition": "战略石油储备释放成功压制油价或需求大幅萎缩"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "承诺悖论假设成立将导致结构性冲突持久化，重塑中东地缘版图",
+      "dominant_scenario": "SC1_commitment_trap",
+      "confidence": 0.72,
+      "tradeable_as": "long defense, short emerging markets",
+      "key_assumption": "莫杰塔巴无法在W4-8整合IRGC权威",
+      "kill_condition": "出现新的可信停火谈判代表或第三方强制介入"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "VIX",
+        "direction": "long",
+        "sizing_note": "波动率将在W3-5弹药耗尽窗口急剧上升",
+        "horizon": "W1_5",
+        "linked_thesis": "弹药库存耗尽强制阶段",
+        "entry_condition": "防空库存报告显示<30天储备",
+        "stop_condition": "军工产能大规模动员或拦截率标准下调"
+      },
+      {
+        "asset": "UST_10Y",
+        "direction": "short",
+        "sizing_note": "美债避险属性在滞胀范式下失效",
+        "horizon": "W6_16",
+        "linked_thesis": "能源滞胀范式转换",
+        "entry_condition": "油价稳定>$85持续4周",
+        "stop_condition": "战略石油储备大规模释放或需求萎缩"
+      },
+      {
+        "asset": "WTI",
+        "direction": "long",
+        "sizing_note": "霍尔木兹封锁的供给冲击",
+        "horizon": "W6_16",
+        "linked_thesis": "能源滞胀范式转换",
+        "entry_condition": "霍尔木兹通行率<50%",
+        "stop_condition": "外交突破或替代路线开通"
+      },
+      {
+        "asset": "LMT",
+        "direction": "long",
+        "sizing_note": "防务需求结构性增长",
+        "horizon": "W17_25plus",
+        "linked_thesis": "结构性冲突持久化",
+        "entry_condition": "冲突持续超过W8",
+        "stop_condition": "可信停火协议签署"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "T1_ammo_depletion",
+        "signal": "盟军防空库存报告",
+        "condition": "可用储备<30天或拦截率下降至<85%",
+        "action": "重新评估SC2_ammo_depletion权重",
+        "linked_node": "conflict_protracted",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T2_mojtaba_consolidation",
+        "signal": "IRGC内部权力整合信号",
+        "condition": "莫杰塔巴获得明确继承地位或发布停火权威声明",
+        "action": "回流至L2重新评估SC1_commitment_trap",
+        "linked_node": "conflict_protracted",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T3_oil_persistence",
+        "signal": "布伦特/WTI价格监控",
+        "condition": "均价>$85持续6周",
+        "action": "确认SC3_energy_regime_shift，触发滞胀交易",
+        "linked_node": "energy_crisis",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T4_spr_release",
+        "signal": "美国战略石油储备释放",
+        "condition": "单次释放>50万桶/日或累计>1亿桶",
+        "action": "重新评估SC3权重，可能触发方案失效",
+        "linked_node": "energy_crisis",
+        "urgency": "act"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "VIX_long",
+        "condition": "美国接受<85%拦截率作为新常态",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "UST_10Y_short",
+        "condition": "油价跌破$75并持续2周",
+        "action": "adjust",
+        "backflow_to": "L4"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "SC1_commitment_trap",
+        "premise_broken": "唯一停火谈判人假设",
+        "evidence": "莫杰塔巴获得IRGC明确支持或第三方调停成功",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "SC2_ammo_depletion",
+        "premise_broken": "物理极限假设",
+        "evidence": "美国军工产能大规模动员成功或政策标准调整",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      }
+    ],
+    "regime_level": {
+      "current_regime": "A",
+      "contradiction": "如果SAD因子持续下降至<0.5且持续4周以上，机械传导模式可能失效",
+      "backflow_to": "Regime",
+      "shs_writeback": true
+    }
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1",
+        "role": "P",
+        "called_by": "L1_evidence_assessment",
+        "input_summary": "无新证据，权重更新基于时间衰减",
+        "output_summary": "scenario权重微调，SC2增强至0.84",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "L2a_scenario_update",
+        "input_summary": "4个现有scenario的前提审查",
+        "output_summary": "为SC1和SC3生成强反论，识别关键失效条件",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L2b",
+        "role": "P",
+        "called_by": "L2b_bottleneck_id",
+        "input_summary": "DAG关键路径分析",
+        "output_summary": "识别3个关键瓶颈，conflict_protracted为S类高重要度节点",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "L3.5_strategic_solve",
+        "input_summary": "conflict_protracted战略节点求解",
+        "output_summary": "消耗战均衡成为focal point，概率0.72",
+        "cost": "medium"
+      }
+    ],
+    "divergence_flags": [],
+    "total_model_calls": 4,
+    "total_cost": "medium"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "H2_ammo_depletion_clock",
+      "field_changed": "confidence",
+      "old_value": "0.79",
+      "new_value": "0.84",
+      "trigger_reason": "时间推进使弹药耗尽窗口更加确定",
+      "source_run_ids": [
+        "run_20260306T150100Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H1_commitment_paradox",
+      "field_changed": "confidence",
+      "old_value": "0.68",
+      "new_value": "0.72",
+      "trigger_reason": "莫杰塔巴整合时间窗口W4-8逐步逼近",
+      "source_run_ids": [
+        "run_20260306T150100Z"
+      ]
+    }
+  ],
+  "graph_proposals": []
+}

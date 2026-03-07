@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260307T043637Z",
+  "raw": "```json\n{\n  \"evidence_text\": \"伊朗警告欧洲国家：如支持美国军事行动将成为'合法目标'\",\n  \"source\": \"未标明具体来源\",\n  \"source_tier\": 2,\n  \"cross_verification_count\": 0,\n  \"bias_assessment\": \"adversarial\",\n  \"specificity\": \"vague\",\n  \"hours_old\": 0,\n  \"score_breakdown\": {\n    \"base\": 0.70,\n    \"cross_verify\": 0.00,\n    \"bias\": -0.25,\n    \"specificity\": -0.10,\n    \"timeliness\": 0.05\n  },\n  \"final_score\": 0.40,\n  \"usable\": false,\n  \"reasoning\": \"交战方官方威胁声明，缺乏具体细节（谁发表、何时、何渠道），无交叉验证来源，属典型心理战信息，可信度低\"\n}\n```"
+}

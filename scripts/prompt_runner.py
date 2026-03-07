@@ -206,7 +206,7 @@ def build_p4() -> str:
 # Runner
 # ═══════════════════════════════════════════
 
-def call_llm(prompt: str, model: str = "claude-sonnet-4-6", max_tokens: int = 4000) -> str:
+def call_llm(prompt: str, model: str = "claude-opus-4-5-20251101", max_tokens: int = 4000) -> str:
     """Call Anthropic API."""
     client = get_client()
     response = client.messages.create(
@@ -242,7 +242,7 @@ def main():
     parser.add_argument("text", nargs="?", default="", help="Input text")
     parser.add_argument("--file", help="Read input from file")
     parser.add_argument("--save", action="store_true", help="Save result to data/prompt_results/")
-    parser.add_argument("--model", default="claude-sonnet-4-6")
+    parser.add_argument("--model", default="claude-opus-4-5-20251101")
     args = parser.parse_args()
 
     # Input text

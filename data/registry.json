@@ -13,7 +13,7 @@
     "scope": "Regime A 基础计算范式。概率更新、先验-后验转化。",
     "input_spec": "prior probabilities + new evidence",
     "output_spec": "posterior probabilities with confidence intervals",
-    "credit_score": 0.62,
+    "credit_score": 0.64,
     "always_on": true
   },
   {
@@ -30,7 +30,7 @@
     "scope": "每条分支必须有反论。通用，不限领域。",
     "input_spec": "scenario branch with premises",
     "output_spec": "antithesis + strongest counter-argument",
-    "credit_score": 0.64,
+    "credit_score": 0.66,
     "always_on": true
   },
   {
@@ -47,7 +47,7 @@
     "scope": "传导链展开的基本工具。4阶因果推演。",
     "input_spec": "trigger event + causal DAG context",
     "output_spec": "ordered impact chain with probability decay",
-    "credit_score": 0.62,
+    "credit_score": 0.64,
     "always_on": true
   },
   {
@@ -65,7 +65,7 @@
     "scope": "识别博弈焦点、协调均衡。适用于多方决策场景。不适用于纯传导。",
     "input_spec": "strategic nodes + actor set",
     "output_spec": "focal equilibria candidates with salience scores",
-    "credit_score": 0.6,
+    "credit_score": 0.62,
     "always_on": false
   },
   {
