@@ -5,7 +5,8 @@
     "trigger_type": "manual",
     "trigger_event": "v7.4 端到端测试 (opus)",
     "evidence_count": 0,
-    "run_duration_ms": 151823
+    "run_duration_ms": 151823,
+    "updated": "2026-03-07T03:10:41.874039+00:00"
   },
   "regime": {
     "current": "A",
@@ -29,7 +30,7 @@
     {
       "id": "S1_protracted_attrition",
       "label": "持久消耗战",
-      "weight": 0.4,
+      "weight": 0.45,
       "weight_prev": 0.4,
       "premises": [
         "伊朗弹道导弹/无人机产能未被彻底摧毁",
@@ -53,7 +54,7 @@
     {
       "id": "S2_rapid_escalation_nuclear_threshold",
       "label": "快速升级至核门槛",
-      "weight": 0.2,
+      "weight": 0.25,
       "weight_prev": 0.2,
       "premises": [
         "伊朗在领导层被斩首后启动核武器紧急计划",
@@ -77,7 +78,7 @@
     {
       "id": "S3_negotiated_offramp",
       "label": "外交斡旋降级",
-      "weight": 0.15,
+      "weight": 0.08,
       "weight_prev": 0.15,
       "premises": [
         "中国/俄罗斯联合施压开启秘密外交渠道",
@@ -101,7 +102,7 @@
     {
       "id": "S4_fragmentation_proxy_war",
       "label": "碎片化代理人战争",
-      "weight": 0.25,
+      "weight": 0.22,
       "weight_prev": 0.25,
       "premises": [
         "IRGC各派系自行其是——不再有统一指挥",
