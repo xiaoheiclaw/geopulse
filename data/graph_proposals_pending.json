@@ -134,5 +134,72 @@
     },
     "errors": [],
     "timestamp": "2026-03-07T02:05:17.176498"
+  },
+  {
+    "proposal_id": "prop_002_power_transition_node_retype",
+    "run_id": "run_20260306T150000Z",
+    "type": "retype_node",
+    "target": "iran_power_transition",
+    "payload": {
+      "old_type": "H",
+      "new_type": "S",
+      "justification": "权力过渡涉及伊朗最高权力(最高领导人、IRGC、司法机构)的博弈,属于完全strategic决策,不是混合型"
+    },
+    "justification": "H型分类导致过低权重,实际上权力整合速度完全由战略行为体(莫杰塔巴、IRGC派系、保守派)的利益冲突决定",
+    "source_model": "schelling-focal",
+    "approval_level": 3,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "iran_power_transition",
+        "conflict_protracted",
+        "iran_retaliation"
+      ],
+      "affected_edges": [
+        "iran_power_transition→iran_retaliation",
+        "iran_power_transition→conflict_protracted"
+      ],
+      "regime_impact": true,
+      "scenario_impact": [
+        "s1_limited_escalation",
+        "s2_protracted_conflict"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-07T04:12:28.181632"
+  },
+  {
+    "proposal_id": "prop_003_add_node_ammo_emergency_supply",
+    "run_id": "run_20260306T150000Z",
+    "type": "add_node",
+    "target": "new_node: us_emergency_ammo_mobilization",
+    "payload": {
+      "node_id": "us_emergency_ammo_mobilization",
+      "label": "美国紧急工业令启动(防空弹药补充)",
+      "node_type": "S",
+      "base_probability": 0.35,
+      "description": "美国政府发动战争权限命令加急生产防空导弹,罗马尼亚/波兰产能激活"
+    },
+    "justification": "当前DAG缺失美国应急工业政策节点,导致弹药耗尽悲观情景权重过高。历史上冷战末期美国在90天内完成15倍弹药产能扩张(例1991海湾战争),需要建模这种政策响应",
+    "source_model": "nth-order-reasoning",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "ammo_depletion_physics",
+        "defense_contractors_revenue",
+        "pentagon_war_cost"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "s2_protracted_conflict",
+        "s1_limited_escalation"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-07T04:12:28.181660"
   }
 ]
