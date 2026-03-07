@@ -1,0 +1,775 @@
+{
+  "meta": {
+    "run_id": "run_20260306T150000Z",
+    "timestamp": "2026-03-06T15:00:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": null,
+    "evidence_count": 0,
+    "run_duration_ms": 93743
+  },
+  "regime": {
+    "current": "A",
+    "previous": "A",
+    "switched": false,
+    "held_since": "2026-03-06T12:50:10.912898Z",
+    "factor_scores": {
+      "SAD": 1.0,
+      "PD": 0.828,
+      "NCC": 0.784
+    },
+    "joint_score": 0.8836,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT12H26M51S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1_commitment_collapse",
+      "label": "承诺机制崩溃（哈梅内伊死亡→无签署权人）",
+      "weight": 0.38,
+      "weight_prev": 0.35,
+      "premises": [
+        "H1_commitment_paradox activated",
+        "莫杰塔巴难以快速整合IRGC",
+        "美国明示regime change",
+        "W4-8窗口内无谈判突破"
+      ],
+      "antithesis": "莫杰塔巴有隐密授权；伊斯兰议会/守护委员会可代理决策；国际调停（中俄）创造谈判替代路径；美国未必执行regime change",
+      "open_questions": [
+        "莫杰塔巴是否已获哈梅内伊权力移交？",
+        "IRGC内部派系是否会分裂？",
+        "中俄是否会提供政治保护伞？"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge",
+        "nth-order-reasoning"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S2_ammunition_boundary",
+      "label": "弹药耗尽强制谈判（W3-5防空极限）",
+      "weight": 0.35,
+      "weight_prev": 0.33,
+      "premises": [
+        "H2_ammo_depletion_clock + H4_ammunition_enforced_boundary",
+        "盟军无法维持>85%拦截率",
+        "伊朗保持无人机+导弹压力",
+        "W3-5物理崩溃点"
+      ],
+      "antithesis": "美国/欧洲额外弹药注入；以色列开发新拦截技术；伊朗弹药也耗尽；三方陷入低烈度消耗战而非谈判",
+      "open_questions": [
+        "北约弹药储备还剩多少？",
+        "伊朗无人机生产能跟上消耗吗？",
+        "拦截率跌至60%时是否触发外交投降？"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S3_stagflation_pricing",
+      "label": "滞胀定价范式切换（油价>$85×6周）",
+      "weight": 0.18,
+      "weight_prev": 0.2,
+      "premises": [
+        "H3_stagflation_pricing_regime",
+        "油价维持$85-$95区间",
+        "美债从避险转为滞胀定价",
+        "10Y收益率上行+equity同跌"
+      ],
+      "antithesis": "油价跌至$70以下（供应侧恢复或需求冲击）；美联储降息预期抵消滞胀定价；股市反弹（企业盈利韧性）",
+      "open_questions": [
+        "油价什么时候会触及$100？",
+        "美债与原油的相关性反演点何时？",
+        "等权板块是否会因滞胀而领涨？"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "nth-order-reasoning"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S4_regional_subsumption",
+      "label": "区域冲突内化（海湾6国融入大框架）",
+      "weight": 0.09,
+      "weight_prev": 0.12,
+      "premises": [
+        "iran_gulf_attacks=1.0",
+        "regional_spillover=0.95",
+        "沙特/阿联酋防空告急",
+        "以色列+美国称霸地区权力结构"
+      ],
+      "antithesis": "海湾国家保持中立或对美国冲突冷眼旁观；土耳其/俄罗斯介入平衡；伊朗通过代理人保持威慑；沙阿联防线稳定",
+      "open_questions": [
+        "沙特是否会正式加入对伊作战？",
+        "伊拉克/叙利亚会如何选择？",
+        "约旦/埃及能保持置身事外吗？"
+      ],
+      "source_models": [
+        "bayesian-updating"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "khamenei_killed",
+      "label": "哈梅内伊遇袭身亡",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_commitment_collapse",
+        "S2_ammunition_boundary"
+      ],
+      "path_importance": 0.92,
+      "factor_scores": {
+        "SAD": 0.95,
+        "PD": 0.88,
+        "NCC": 0.82
+      },
+      "irreversible": true,
+      "locked": true
+    },
+    {
+      "node_id": "ammunition_limits_w3_w5",
+      "label": "W3-5防空弹药触及物理极限",
+      "type": "H",
+      "parent_scenarios": [
+        "S2_ammunition_boundary"
+      ],
+      "path_importance": 0.87,
+      "factor_scores": {
+        "SAD": 0.6,
+        "PD": 0.85,
+        "NCC": 0.72
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "oil_price_sustained_85plus",
+      "label": "油价维持>$85超过6周",
+      "type": "H",
+      "parent_scenarios": [
+        "S3_stagflation_pricing"
+      ],
+      "path_importance": 0.71,
+      "factor_scores": {
+        "SAD": 0.45,
+        "PD": 0.8,
+        "NCC": 0.65
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "iran_ceasefire_signing",
+      "label": "伊朗正式签署停火协议",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_commitment_collapse",
+        "S2_ammunition_boundary"
+      ],
+      "path_importance": 0.85,
+      "factor_scores": {
+        "SAD": 0.92,
+        "PD": 0.9,
+        "NCC": 0.88
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "us_regime_change_execution",
+      "label": "美国执行regime change军事行动",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_commitment_collapse"
+      ],
+      "path_importance": 0.79,
+      "factor_scores": {
+        "SAD": 0.98,
+        "PD": 0.92,
+        "NCC": 0.85
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "A",
+    "mechanical_nodes": [
+      {
+        "node_id": "conflict_protracted",
+        "propagated_prob": 0.9965,
+        "upstream_drivers": [
+          "khamenei_killed",
+          "us_regime_change",
+          "iran_retaliation"
+        ],
+        "impact_magnitude": 0.82
+      },
+      {
+        "node_id": "supply_disruption_volume",
+        "propagated_prob": 0.9871,
+        "upstream_drivers": [
+          "iran_gulf_attacks",
+          "hormuz_blockade"
+        ],
+        "impact_magnitude": 0.78
+      },
+      {
+        "node_id": "shipping_insurance_collapse",
+        "propagated_prob": 0.9859,
+        "upstream_drivers": [
+          "regional_spillover",
+          "hormuz_blockade"
+        ],
+        "impact_magnitude": 0.76
+      },
+      {
+        "node_id": "trade_route_reshuffle",
+        "propagated_prob": 0.973,
+        "upstream_drivers": [
+          "hormuz_blockade",
+          "supply_disruption_volume"
+        ],
+        "impact_magnitude": 0.74
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "iran_ceasefire_signing",
+        "equilibria": [
+          {
+            "eq_id": "eq_A1",
+            "label": "快速谈判路径（美国压力+弹药耗尽）",
+            "probability": 0.32,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_A2",
+            "label": "莫杰塔巴权力整合成功→协议签署",
+            "probability": 0.28,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_A3",
+            "label": "拖延战术（伊朗赌时间）",
+            "probability": 0.22,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_A4",
+            "label": "冲突升级至regime change",
+            "probability": 0.18,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_A2",
+        "commitment_score": 0.65,
+        "exit_cost_ratio": 1.85
+      },
+      {
+        "node_id": "us_regime_change_execution",
+        "equilibria": [
+          {
+            "eq_id": "eq_B1",
+            "label": "有限打击（防空系统/核设施）",
+            "probability": 0.38,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_B2",
+            "label": "全面入侵（occupy+govern）",
+            "probability": 0.15,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_B3",
+            "label": "威胁但不执行（承诺可信度破裂）",
+            "probability": 0.32,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_B4",
+            "label": "国际干预阻止",
+            "probability": 0.15,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_B1",
+        "commitment_score": 0.58,
+        "exit_cost_ratio": 2.12
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "ammunition_limits_w3_w5",
+        "baseline_prob": 0.76,
+        "override_prob": 0.81,
+        "delta": 0.05,
+        "recomp_subgraph": [
+          "iran_ceasefire_signing",
+          "conflict_protracted"
+        ],
+        "iteration_converged": true
+      },
+      {
+        "node_id": "oil_price_sustained_85plus",
+        "baseline_prob": 0.68,
+        "override_prob": 0.72,
+        "delta": 0.04,
+        "recomp_subgraph": [
+          "shipping_insurance_collapse",
+          "trade_route_reshuffle"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "伊朗权力交接瓶颈期（H1）vs 防空弹药耗尽压力（H2）形成博弈对峙。美国或伊朗任一方率先让步可能性低（观众成本）。预期：高烈度、低变化，直到W3底部防空极限显现。",
+      "dominant_scenario": "S2_ammunition_boundary",
+      "confidence": 0.76,
+      "tradeable_as": "long_oil_volatility + short_equities",
+      "key_assumption": "盟军防空拦截率维持>85%直至W3底",
+      "kill_condition": "伊朗突然停火或美国主动降级"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "弹药耗尽强制转折点。美国/以色列若不寻求外交出口，将面临防空失效+油价飙升的双重压力。伊朗莫杰塔巴若完成权力整合（概率0.28）,可能利用西方疲惫感启动谈判。预期：逐步从军事对抗向混合谈判转换。",
+      "dominant_scenario": "S1_commitment_collapse",
+      "confidence": 0.68,
+      "tradeable_as": "long_energy_stability + short_geopolitical_vol",
+      "key_assumption": "莫杰塔巴在W4-8完成IRGC整合且获得国内合法性",
+      "kill_condition": "美国执行全面regime change或伊朗拒绝所有谈判"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "冲突结构性终局。若前两窗口未达协议，区域秩序将永久改变：美以霸权强化、伊朗核能力升级、海湾国家加强防卫一体化、贸易路线多元化（不经霍尔木兹）。预期：冷和平状态，伴随持续低烈度冲突。",
+      "dominant_scenario": "S3_stagflation_pricing",
+      "confidence": 0.62,
+      "tradeable_as": "long_lng + long_alternative_energy + short_traditional_shipping",
+      "key_assumption": "无全面谈判协议达成；各方已适应新秩序成本",
+      "kill_condition": "突发性大规模升级或国际强行调停"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "Brent_Crude",
+        "direction": "long",
+        "sizing_note": "W1_5: 超配1.5倍，目标$90-$95。W6_16: 保持长头寸但减仓0.5倍至$80支撑。W17_25+: 维持平衡头寸，防守$70下行。",
+        "horizon": "W1_5",
+        "linked_thesis": "W1_5 thesis",
+        "entry_condition": "油价突破$82，伊朗确认报复",
+        "stop_condition": "油价跌至$75或伊朗公开谈判"
+      },
+      {
+        "asset": "US_10Y_Yield",
+        "direction": "long",
+        "sizing_note": "W1_5: 低配，避险情绪压制收益率。W6_16: 转长头寸（滞胀定价显现）。目标2.8%-3.1%。W17_25+: 维持长头寸，预期5-6年维持3%+。",
+        "horizon": "W6_16",
+        "linked_thesis": "S3_stagflation_pricing",
+        "entry_condition": "油价维持>$85超2周；CPI重新上升",
+        "stop_condition": "Fed降息信号明确或油价崩盘"
+      },
+      {
+        "asset": "VIX_Volatility",
+        "direction": "long",
+        "sizing_note": "W1_5: 超配2倍（对冲eq风险）。W6_16: 减仓至1倍。W17_25+: 清仓或转为短头寸（波动归一化）。",
+        "horizon": "W1_5",
+        "linked_thesis": "W1_5 thesis",
+        "entry_condition": "VIX<18，准备上升",
+        "stop_condition": "VIX>35或地缘风险缓解"
+      },
+      {
+        "asset": "GCC_Equity_Index",
+        "direction": "short",
+        "sizing_note": "W1_5: 低配空头（观望）。W6_16: 转空头1倍（防御压力升级）。W17_25+: 转多头（区域稳定化）。",
+        "horizon": "W6_16",
+        "linked_thesis": "S4_regional_subsumption",
+        "entry_condition": "沙阿联防空系统告急；伊朗无人机突破",
+        "stop_condition": "区域谈判启动或防御系统升级成功"
+      },
+      {
+        "asset": "LNG_Asian",
+        "direction": "long",
+        "sizing_note": "W17_25+: 超配2倍。中长期替代霍尔木兹供应逻辑。",
+        "horizon": "W17_25plus",
+        "linked_thesis": "W17_25+ thesis",
+        "entry_condition": "海湾供应中断超3个月或油价>$100",
+        "stop_condition": "霍尔木兹恢复通航或LNG价格>$40/MMBtu"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "T1_ammo_alert",
+        "signal": "防空拦截率跌至85%以下（NATO情报确认）",
+        "condition": "拦截率 < 85% for 2 consecutive days",
+        "action": "发出L4回流信号；考虑减仓eq空头头寸；增加油价对冲",
+        "linked_node": "ammunition_limits_w3_w5",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T2_oil_breakout",
+        "signal": "油价突破$90/bbl且维持",
+        "condition": "Brent > $90 for 3 consecutive days AND supply disruption >1M bbl/d confirmed",
+        "action": "增仓long oil; 启动滞胀定价假设验证模块",
+        "linked_node": "oil_price_sustained_85plus",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T3_ceasefire_signal",
+        "signal": "伊朗官方暗示或美国主动提议谈判",
+        "condition": "官方声明 OR 中俄提出具体停火框架",
+        "action": "启动谈判路径分析；回流至L2a更新S1权重",
+        "linked_node": "iran_ceasefire_signing",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T4_regime_change_prep",
+        "signal": "美国增加地面部队部署至伊拉克/阿曼",
+        "condition": ">10K troops deployment confirmed OR explicit regime change statement",
+        "action": "立即回流至L3.5；重估eq风险；强制清仓短头寸",
+        "linked_node": "us_regime_change_execution",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T5_hormuz_closure",
+        "signal": "霍尔木兹海峡关闭或通航能力<50%",
+        "condition": "shipping traffic < 50% normal OR explicit Iranian blockade declaration",
+        "action": "触发emergency scenario S_full_blockade; 强制增仓long oil至3倍",
+        "linked_node": "hormuz_blockade",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T6_mojehtada_power_confirm",
+        "signal": "莫杰塔巴整合IRGC成功的确认信号",
+        "condition": "伊朗国防部长/军队领导人公开支持莫杰塔巴",
+        "action": "启动快速谈判路径；回流至L2a增加S1权重至0.55+",
+        "linked_node": "iran_ceasefire_signing",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T7_oil_collapse",
+        "signal": "油价跌至$70以下",
+        "condition": "Brent < $70 for 3 consecutive days",
+        "action": "回流至L2a质疑S3成立条件；减仓long oil；增加eq多头",
+        "linked_node": "oil_price_sustained_85plus",
+        "urgency": "watch"
+      },
+      {
+        "trigger_id": "T8_gcca_military_upgrade",
+        "signal": "沙特/阿联酋宣布防空系统升级或外援",
+        "condition": "公开宣布 OR 新防空系统到位",
+        "action": "回流至L2b重估S4 path_importance; 可能启动新分支",
+        "linked_node": "regional_spillover",
+        "urgency": "watch"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "Brent_Crude",
+        "condition": "油价>$110×2周 OR 油价<$65×3天",
+        "action": "adjust",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "US_10Y_Yield",
+        "condition": "Fed 降息信号明确 OR 油价<$70",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "VIX_Volatility",
+        "condition": "VIX持续<15×1周（波动归一化）",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "GCC_Equity_Index",
+        "condition": "区域谈判启动正式阶段",
+        "action": "adjust",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "LNG_Asian",
+        "condition": "霍尔木兹通航恢复至正常水平",
+        "action": "exit",
+        "backflow_to": "L4"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "S1_commitment_collapse",
+        "premise_broken": "莫杰塔巴在W4-8未能整合IRGC",
+        "evidence": "伊朗军方分裂声明 OR 权力斗争升级",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      },
+      {
+        "scenario_ref": "S2_ammunition_boundary",
+        "premise_broken": "北约弹药补给显著增加 OR 伊朗弹药耗尽",
+        "evidence": "NATO官方确认 OR 伊朗无人机发射频率显著下降",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      },
+      {
+        "scenario_ref": "S3_stagflation_pricing",
+        "premise_broken": "油价跌至<$75或美联储启动降息",
+        "evidence": "Brent <$75 sustained OR Fed signal",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      },
+      {
+        "scenario_ref": "S4_regional_subsumption",
+        "premise_broken": "沙特/阿联酋对伊朗妥协 OR 伊朗防线突破",
+        "evidence": "外交声明 OR 防卫一体化崩溃",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      }
+    ],
+    "regime_level": {
+      "current_regime": "A",
+      "contradiction": "如果伊朗ceasefire_signing概率突升至>0.65（从当前0.28的focal eq），Regime A的SAF(Strategic Actor Freedom)假设受挑战——从无约束对抗向有约束谈判转移，可能触发Regime B阈值(joint_score>0.72)。",
+      "backflow_to": "Regime",
+      "shs_writeback": true
+    }
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1+L3",
+        "role": "P",
+        "called_by": "L1_evidence_assessment",
+        "input_summary": "0 evidence items; L3 baseline probability propagation",
+        "output_summary": "Mechanical nodes propagated: 4/10 critical paths updated; recomp subgraph includes ammunition_limits and oil_price nodes",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "L2a_scenario_branching",
+        "input_summary": "4 scenarios with weight>0.15; SHS H1-H4 confidence range [0.42-0.68]",
+        "output_summary": "Antithesis generated for S1-S4; S1 antithesis emphasizes hidden authorization & international mediation; S2 antithesis highlights ammo stockpile replenishment risk; identified divergence: ammunition enforcement vs. political settlement",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L3+L2a",
+        "role": "P",
+        "called_by": "L2a_scenario_branching",
+        "input_summary": "Scenarios S1-S4; causal chains from khamenei_killed → conflict_protracted",
+        "output_summary": "4-level causal decomposition: military operations → strategic actor repositioning → market responses (oil, shipping, VIX) → structural regime shift. Identified second-order effects: ammunition depletion → forced negotiation → ceasefire probability reweight. Third-order: oil spike → stagflation pricing → equity selloff + bonds rally.",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "L3.5_strategic_equilibrium",
+        "input_summary": "S1 ceasefire node: 4 equilibria candidates; S2 regime_change node: 4 equilibria candidates",
+        "output_summary": "eq_A2 (mojehtada power consolidation → agreement signing) marked as Schelling focal point (probability=0.28); eq_B1 (limited strikes on air defense/nuclear) marked as focal for regime_change (probability=0.38). Focal point analysis suggests S1 and S2 equilibria are partially coordinated on Schelling principle of 'proportionate response without regime toppling'.",
+        "cost": "medium"
+      },
+      {
+        "model_id": "schelling-commitment",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "L3.5_strategic_equilibrium",
+        "input_summary": "iran_ceasefire_signing node: audience cost analysis (mojehtada, IRGC, Iranian public); us_regime_change_execution: Trump admin credibility, Israeli security, domestic pressure",
+        "output_summary": "iran_ceasefire commitment_score=0.65 (mojehtada's power legitimacy still fragile; public rally-around-flag weakening); us_regime_change commitment_score=0.58 (Trump admin credibility at 2024 election risk; Israel prioritizes containment over toppling). Exit cost ratio (Iran:US) = 1.85:1 for ceasefire (Iran faces internal opposition), 2.12:1 for regime change (US faces military+economic costs).",
+        "cost": "medium"
+      }
+    ],
+    "divergence_flags": [
+      {
+        "flag_id": "DIV_001",
+        "layer": "L2a",
+        "model_a": "dialectic-challenge",
+        "model_b": "nth-order-reasoning",
+        "topic": "ammunition enforcement vs. political solution",
+        "model_a_says": "ammunition depletion is structural constraint forcing negotiation (H2+H4 confluence)",
+        "model_b_says": "ammunition depletion may accelerate yet also incentivize escalation (sunk cost escalation + commitment credibility pressure)",
+        "resolution": "new_branch",
+        "spawned_scenario": "S5_low_intensity_stalemate (reserve branch: neither side escalates fully, ammunition consumed in attritional pattern W3-12)"
+      },
+      {
+        "flag_id": "DIV_002",
+        "layer": "L3.5",
+        "model_a": "schelling-focal",
+        "model_b": "schelling-commitment",
+        "topic": "mojehtada's legitimacy to sign ceasefire",
+        "model_a_says": "eq_A2 (mojehtada consolidation) is Schelling focal point with high salience (historical precedent: post-Khomeini transition 1989)",
+        "model_b_says": "mojehtada's commitment credibility is LOW (commitment_score 0.65) due to internal IRGC divisions; eq_A3 (delay tactic) may be equally focal from Iranian internal politics perspective",
+        "resolution": "noted",
+        "spawned_scenario": null
+      }
+    ],
+    "total_model_calls": 5,
+    "total_cost": "medium"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "H1_commitment_paradox",
+      "field_changed": "confidence",
+      "old_value": "0.42",
+      "new_value": "0.46",
+      "trigger_reason": "Schelling analysis confirms focal point at eq_A2 (mojehtada consolidation) but commitment_score only 0.65; window W4-8 remains critical. If mojehtada consolidates by W5, confidence rises toward 0.55.",
+      "source_run_ids": [
+        "run_20260306T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H2_ammo_depletion_clock",
+      "field_changed": "confidence",
+      "old_value": "0.68",
+      "new_value": "0.71",
+      "trigger_reason": "Hybrid node recomputation shows ammunition_limits probability rising from 0.76→0.81. No contrary evidence of massive NATO ammo injection. Strategic equilibrium analysis (Schelling commitment) aligns with H2 logic: depletion forces W6-16 inflection.",
+      "source_run_ids": [
+        "run_20260306T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H3_stagflation_pricing_regime",
+      "field_changed": "confidence",
+      "old_value": "0.58",
+      "new_value": "0.62",
+      "trigger_reason": "Oil_price_sustained_85plus hybrid override probability 0.72; N-order reasoning confirmed stagflation cascade (oil→equity selloff→bond rally). 10Y yield long thesis now supported by execution plan.",
+      "source_run_ids": [
+        "run_20260306T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H4_ammunition_enforced_boundary",
+      "field_changed": "confidence",
+      "old_value": "0.50",
+      "new_value": "0.68",
+      "trigger_reason": "Unified with H2 in analysis. Ammunition boundary now linked to ceasefire probability in S2 scenario (0.35 weight). Mechanical propagation confirms supply_disruption driven by ammunition-constrained defense.",
+      "source_run_ids": [
+        "run_20260306T150000Z"
+      ]
+    }
+  ],
+  "graph_proposals": [
+    {
+      "proposal_id": "PROP_001",
+      "type": "add_node",
+      "target": "new_node_mojehtada_consolidation",
+      "payload": {
+        "label": "莫杰塔巴对IRGC权力整合成功",
+        "node_type": "S",
+        "estimated_prob": 0.28,
+        "parent_nodes": [
+          "khamenei_killed",
+          "iran_internal_crisis"
+        ],
+        "child_nodes": [
+          "iran_ceasefire_signing"
+        ]
+      },
+      "justification": "S1 scenario analysis reveals mojehtada consolidation as Schelling focal point (eq_A2). Current DAG lacks explicit modeling of this transition node; adding it clarifies W4-8 causal chain.",
+      "source_evidence": [],
+      "source_model": "schelling-focal",
+      "impact_assessment": {
+        "affected_nodes": [
+          "iran_ceasefire_signing",
+          "conflict_protracted"
+        ],
+        "affected_edges": [
+          "iran_internal_crisis→iran_ceasefire_signing"
+        ],
+        "regime_impact": false,
+        "scenario_impact": [
+          "S1_commitment_collapse",
+          "S2_ammunition_boundary"
+        ]
+      },
+      "urgency": "next_run",
+      "auto_approvable": false,
+      "approval_level": 2,
+      "status": "pending"
+    },
+    {
+      "proposal_id": "PROP_002",
+      "type": "add_edge",
+      "target": "ammunition_limits_w3_w5→iran_ceasefire_signing",
+      "payload": {
+        "edge_weight": 0.72,
+        "direction": "forward",
+        "causal_type": "enabling (ammunition shortage enables diplomatic breakthrough)"
+      },
+      "justification": "Hybrid recomputation shows ammunition limits strongly coupled to ceasefire probability via strategic equilibrium (Schelling commitment analysis). H2+H4 confluence warrants explicit edge.",
+      "source_evidence": [],
+      "source_model": "nth-order-reasoning",
+      "impact_assessment": {
+        "affected_nodes": [
+          "iran_ceasefire_signing"
+        ],
+        "affected_edges": [],
+        "regime_impact": false,
+        "scenario_impact": [
+          "S2_ammunition_boundary"
+        ]
+      },
+      "urgency": "next_run",
+      "auto_approvable": false,
+      "approval_level": 2,
+      "status": "pending"
+    },
+    {
+      "proposal_id": "PROP_003",
+      "type": "retype_node",
+      "target": "iran_ceasefire_signing",
+      "payload": {
+        "current_type": "S",
+        "proposed_type": "H",
+        "rationale": "Hybrid nodes better capture ammunition-driven forcing function + political determination mix"
+      },
+      "justification": "Current S-type categorization ignores ammunition constraint. Reclassifying to H allows L3.5 iteration to properly weight mechanic (ammo limit) + strategic (IRGC authorization) drivers.",
+      "source_evidence": [],
+      "source_model": "engine_result",
+      "impact_assessment": {
+        "affected_nodes": [
+          "iran_ceasefire_signing"
+        ],
+        "affected_edges": [
+          "ammunition_limits_w3_w5→iran_ceasefire_signing",
+          "khamenei_killed→iran_ceasefire_signing"
+        ],
+        "regime_impact": false,
+        "scenario_impact": [
+          "S1_commitment_collapse",
+          "S2_ammunition_boundary"
+        ]
+      },
+      "urgency": "review",
+      "auto_approvable": false,
+      "approval_level": 2,
+      "status": "rejected"
+    }
+  ]
+}

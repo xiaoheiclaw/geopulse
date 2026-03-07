@@ -1,0 +1,172 @@
+[
+  {
+    "proposal_id": "PROP_001",
+    "run_id": "run_20260306T150000Z",
+    "type": "add_node",
+    "target": "new_node_mojehtada_consolidation",
+    "payload": {
+      "label": "莫杰塔巴对IRGC权力整合成功",
+      "node_type": "S",
+      "estimated_prob": 0.28,
+      "parent_nodes": [
+        "khamenei_killed",
+        "iran_internal_crisis"
+      ],
+      "child_nodes": [
+        "iran_ceasefire_signing"
+      ]
+    },
+    "justification": "S1 scenario analysis reveals mojehtada consolidation as Schelling focal point (eq_A2). Current DAG lacks explicit modeling of this transition node; adding it clarifies W4-8 causal chain.",
+    "source_model": "schelling-focal",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "iran_ceasefire_signing",
+        "conflict_protracted"
+      ],
+      "affected_edges": [
+        "iran_internal_crisis→iran_ceasefire_signing"
+      ],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_commitment_collapse",
+        "S2_ammunition_boundary"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-07T01:17:02.115440"
+  },
+  {
+    "proposal_id": "PROP_002",
+    "run_id": "run_20260306T150000Z",
+    "type": "add_edge",
+    "target": "ammunition_limits_w3_w5→iran_ceasefire_signing",
+    "payload": {
+      "edge_weight": 0.72,
+      "direction": "forward",
+      "causal_type": "enabling (ammunition shortage enables diplomatic breakthrough)"
+    },
+    "justification": "Hybrid recomputation shows ammunition limits strongly coupled to ceasefire probability via strategic equilibrium (Schelling commitment analysis). H2+H4 confluence warrants explicit edge.",
+    "source_model": "nth-order-reasoning",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "iran_ceasefire_signing"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S2_ammunition_boundary"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-07T01:17:02.115470"
+  },
+  {
+    "proposal_id": "PROP_003",
+    "run_id": "run_20260306T150000Z",
+    "type": "retype_node",
+    "target": "iran_ceasefire_signing",
+    "payload": {
+      "current_type": "S",
+      "proposed_type": "H",
+      "rationale": "Hybrid nodes better capture ammunition-driven forcing function + political determination mix"
+    },
+    "justification": "Current S-type categorization ignores ammunition constraint. Reclassifying to H allows L3.5 iteration to properly weight mechanic (ammo limit) + strategic (IRGC authorization) drivers.",
+    "source_model": "engine_result",
+    "approval_level": 2,
+    "status": "rejected",
+    "urgency": "review",
+    "impact": {
+      "affected_nodes": [
+        "iran_ceasefire_signing"
+      ],
+      "affected_edges": [
+        "ammunition_limits_w3_w5→iran_ceasefire_signing",
+        "khamenei_killed→iran_ceasefire_signing"
+      ],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_commitment_collapse",
+        "S2_ammunition_boundary"
+      ]
+    },
+    "errors": [
+      "ValidationError(PROP_003: Node 'iran_ceasefire_signing' not found)"
+    ],
+    "timestamp": "2026-03-07T01:17:02.115488"
+  },
+  {
+    "proposal_id": "PROP_1_ammo_timeline_node",
+    "run_id": "run_20260306T160000Z",
+    "type": "add_node",
+    "target": "S1b_compressed_ammo_timeline_risk",
+    "payload": {
+      "node_label": "Compressed ammo resupply timeline risk (W3-5)",
+      "node_description": "Procurement bottleneck delays production relief into W5, creating binary outcome: supply breakthrough in W4 averts crisis, or supply crunch W5 forces ceasefire.",
+      "parent_scenario": "S1_ammunition_clock",
+      "parent_nodes": [
+        "ammo_resupply_rate",
+        "pentagon_war_cost"
+      ],
+      "probability": 0.52
+    },
+    "justification": "Divergence flag DIV_1 identified compressed timeline risk; nth-order reasoning probability=0.52 vs Bayesian=0.71; spawning new branch for explicit tracking",
+    "source_model": "nth-order-reasoning",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "ammo_resupply_rate",
+        "conflict_protracted",
+        "hormuz_blockade"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_ammunition_clock"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-07T02:05:17.176479"
+  },
+  {
+    "proposal_id": "PROP_2_mojettaba_focal_point",
+    "run_id": "run_20260306T160000Z",
+    "type": "add_node",
+    "target": "mojettaba_focal_validation",
+    "payload": {
+      "node_label": "Mojettaba focal point validation (W4-8)",
+      "node_description": "Test whether Schelling focal point eq_1a (unified IRGC command under Mojettaba) achieves 0.51 baseline probability by W8 endgame.",
+      "parent_scenario": "S2_commitment_paradox",
+      "parent_nodes": [
+        "mojettaba_irgc_integration"
+      ],
+      "probability": 0.51
+    },
+    "justification": "Schelling focal point analysis identified eq_1a as focal with p=0.51; adding explicit validation node to track realization in W4-8 window; critical for commitment paradox resolution.",
+    "source_model": "schelling-focal",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "mojettaba_irgc_integration",
+        "coalition_coherence"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S2_commitment_paradox",
+        "S4_rapid_escalation_spiral"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-07T02:05:17.176508"
+  }
+]

@@ -8,14 +8,16 @@
     "observed_entities": [],
     "horizon": "",
     "asset_expression": "",
-    "confidence": 0.42,
+    "confidence": 0.48,
     "status": "active",
     "created_at": "2026-03-06T12:50:10.919539Z",
-    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "updated_at": "2026-03-07T02:05:17.173286Z",
     "source_run_ids": [
       "run_20260306T124600Z",
       "run_20260306T125400Z",
-      "run_20260306T140000Z"
+      "run_20260306T140000Z",
+      "run_20260306T150000Z",
+      "run_20260306T160000Z"
     ]
   },
   {
@@ -27,14 +29,16 @@
     "observed_entities": [],
     "horizon": "",
     "asset_expression": "",
-    "confidence": 0.68,
+    "confidence": 0.71,
     "status": "active",
     "created_at": "2026-03-06T12:50:10.919539Z",
-    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "updated_at": "2026-03-07T02:05:17.173286Z",
     "source_run_ids": [
       "run_20260306T124600Z",
       "run_20260306T125400Z",
-      "run_20260306T140000Z"
+      "run_20260306T140000Z",
+      "run_20260306T150000Z",
+      "run_20260306T160000Z"
     ]
   },
   {
@@ -46,14 +50,16 @@
     "observed_entities": [],
     "horizon": "",
     "asset_expression": "",
-    "confidence": 0.58,
+    "confidence": 0.64,
     "status": "active",
     "created_at": "2026-03-06T12:50:10.919539Z",
-    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "updated_at": "2026-03-07T02:05:17.173286Z",
     "source_run_ids": [
       "run_20260306T124600Z",
       "run_20260306T125400Z",
-      "run_20260306T140000Z"
+      "run_20260306T140000Z",
+      "run_20260306T150000Z",
+      "run_20260306T160000Z"
     ]
   },
   {
@@ -65,13 +71,15 @@
     "observed_entities": [],
     "horizon": "",
     "asset_expression": "",
-    "confidence": 0.5,
+    "confidence": 0.69,
     "status": "active",
     "created_at": "2026-03-06T13:07:32.088581Z",
-    "updated_at": "2026-03-06T13:11:31.414908Z",
+    "updated_at": "2026-03-07T02:05:17.173286Z",
     "source_run_ids": [
       "run_20260306T125400Z",
-      "run_20260306T140000Z"
+      "run_20260306T140000Z",
+      "run_20260306T150000Z",
+      "run_20260306T160000Z"
     ]
   }
 ]

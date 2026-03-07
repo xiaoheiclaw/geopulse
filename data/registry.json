@@ -13,7 +13,7 @@
     "scope": "Regime A 基础计算范式。概率更新、先验-后验转化。",
     "input_spec": "prior probabilities + new evidence",
     "output_spec": "posterior probabilities with confidence intervals",
-    "credit_score": 0.56,
+    "credit_score": 0.6,
     "always_on": true
   },
   {
@@ -30,7 +30,7 @@
     "scope": "每条分支必须有反论。通用，不限领域。",
     "input_spec": "scenario branch with premises",
     "output_spec": "antithesis + strongest counter-argument",
-    "credit_score": 0.58,
+    "credit_score": 0.62,
     "always_on": true
   },
   {
@@ -47,7 +47,7 @@
     "scope": "传导链展开的基本工具。4阶因果推演。",
     "input_spec": "trigger event + causal DAG context",
     "output_spec": "ordered impact chain with probability decay",
-    "credit_score": 0.56,
+    "credit_score": 0.6,
     "always_on": true
   },
   {
@@ -65,7 +65,7 @@
     "scope": "识别博弈焦点、协调均衡。适用于多方决策场景。不适用于纯传导。",
     "input_spec": "strategic nodes + actor set",
     "output_spec": "focal equilibria candidates with salience scores",
-    "credit_score": 0.54,
+    "credit_score": 0.58,
     "always_on": false
   },
   {
@@ -82,7 +82,7 @@
     "scope": "承诺可信度分析、退出成本。适用于威慑与承诺博弈。",
     "input_spec": "actor commitments + exit costs",
     "output_spec": "commitment credibility score + exit cost ratio",
-    "credit_score": 0.54,
+    "credit_score": 0.58,
     "always_on": false
   },
   {
@@ -98,7 +98,7 @@
     "scope": "技术革命-金融资本周期。不适用于短期军事冲突。",
     "input_spec": "technology/paradigm shift evidence",
     "output_spec": "cycle phase assessment + structural implications",
-    "credit_score": 0.5,
+    "credit_score": 0.52,
     "always_on": false
   },
   {

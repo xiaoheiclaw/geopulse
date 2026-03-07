@@ -380,8 +380,8 @@ class SHSWriteback(BaseModel):
     action: SHSAction
     hypothesis_ref: str = Field(..., description="SHS 中的假设名称")
     field_changed: str = Field(..., description="哪个字段被更新")
-    old_value: str = Field("")
-    new_value: str = Field("")
+    old_value: str | None = Field("")
+    new_value: str | None = Field("")
     trigger_reason: str = Field("", description="为什么更新")
     source_run_ids: list[str] = Field(default_factory=list, description="触发此更新的历史 run IDs")
 
