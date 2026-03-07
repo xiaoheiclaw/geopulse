@@ -51,6 +51,7 @@ def audit_dag(dag: DAG, old_dag: DAG | None = None) -> AuditReport:
     """对DAG执行全面红队审计。"""
     report = AuditReport()
     
+    # 原有检查
     _check_fact_prediction_consistency(dag, report)
     _check_probability_calibration(dag, report)
     _check_duplicate_nodes(dag, report)
@@ -58,6 +59,12 @@ def audit_dag(dag: DAG, old_dag: DAG | None = None) -> AuditReport:
     _check_edge_validity(dag, report)
     _check_reasoning_quality(dag, report)
     _check_causal_depth(dag, report)
+    
+    # v25新增：结构性检查
+    _check_cycles(dag, report)
+    _check_low_decay_edges(dag, report)
+    _check_cross_domain_edges(dag, report)
+    _check_threshold_definitions(dag, report)
     
     if old_dag:
         _check_update_sanity(dag, old_dag, report)
@@ -289,3 +296,108 @@ def _check_causal_depth(dag: DAG, report: AuditReport):
             category="shallow_chain",
             message=f"{len(leaf_predictions)}个预测节点是叶子节点(无下游)，可能存在未建模的传导链"
         ))
+
+
+# ═══════════════════════════════════════════
+# v25新增检查（此前每次临时手写，现在固化）
+# ═══════════════════════════════════════════
+
+def _check_cycles(dag: DAG, report: AuditReport):
+    """检测有向图中的环。DAG不允许有环。"""
+    from collections import defaultdict
+    adj: dict[str, list[str]] = defaultdict(list)
+    for edge in dag.edges:
+        adj[edge.source].append(edge.target)
+    
+    visited: set[str] = set()
+    rec_stack: set[str] = set()
+    
+    def dfs(v: str, path: list[str]):
+        visited.add(v)
+        rec_stack.add(v)
+        for u in adj.get(v, []):
+            if u not in visited:
+                dfs(u, path + [u])
+            elif u in rec_stack:
+                cycle = path[path.index(u):] + [u]
+                report.issues.append(AuditIssue(
+                    severity="error",
+                    node_id=cycle[0],
+                    category="cycle",
+                    message=f"循环依赖: {' → '.join(cycle)}"
+                ))
+        rec_stack.discard(v)
+    
+    for v in dag.nodes:
+        if v not in visited:
+            dfs(v, [v])
+
+
+def _check_low_decay_edges(dag: DAG, report: AuditReport):
+    """检测衰减过低的边（父子概率差<4%）。
+    
+    传导链每跳应有合理衰减，否则等于同义重复。
+    DT反馈(2026-03-07): "92%→92%→92%不是因果传导，是同一件事说了三遍。"
+    """
+    for edge in dag.edges:
+        source = dag.nodes.get(edge.source)
+        target = dag.nodes.get(edge.target)
+        if not source or not target:
+            continue
+        if source.node_type == "event":
+            continue  # Event→State的第一跳可以不衰减
+        
+        sp = source.probability
+        tp = target.probability
+        if abs(sp - tp) < 0.04 and sp > 0:
+            report.issues.append(AuditIssue(
+                severity="warning",
+                node_id=f"{edge.source}->{edge.target}",
+                category="low_decay",
+                message=f"衰减过低: {sp:.0%}→{tp:.0%} (Δ{abs(sp-tp):.0%})，考虑是否需要中间节点"
+            ))
+
+
+def _check_cross_domain_edges(dag: DAG, report: AuditReport):
+    """检测跨域直连（无共享domain的边）。
+    
+    跨域边通常需要中间节点来解释传导机制。
+    DT反馈(2026-03-07): "封锁→危机之间还要有别的因子。"
+    """
+    for edge in dag.edges:
+        source = dag.nodes.get(edge.source)
+        target = dag.nodes.get(edge.target)
+        if not source or not target:
+            continue
+        if source.node_type == "event":
+            continue
+        
+        sd = set(source.domains) if source.domains else set()
+        td = set(target.domains) if target.domains else set()
+        
+        if sd and td and not sd.intersection(td):
+            report.issues.append(AuditIssue(
+                severity="warning",
+                node_id=f"{edge.source}->{edge.target}",
+                category="cross_domain",
+                message=f"跨域直连: [{','.join(sd)}]→[{','.join(td)}]，考虑加桥接节点"
+            ))
+
+
+def _check_threshold_definitions(dag: DAG, report: AuditReport):
+    """检查非Event节点是否有量化阈值定义。
+    
+    每个节点的reasoning应包含"定义:"开头的量化触发条件。
+    DT反馈(2026-03-07): "霍尔木兹封锁和全球能源危机定义清楚。"
+    """
+    for nid, node in dag.nodes.items():
+        if node.node_type == "event":
+            continue
+        reasoning = node.reasoning or ""
+        if "定义:" not in reasoning:
+            report.issues.append(AuditIssue(
+                severity="error",
+                node_id=nid,
+                category="no_definition",
+                message=f"缺少量化阈值定义（reasoning中无'定义:'字段）"
+            ))
