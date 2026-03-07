@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "run_id": "run_20260306T152000Z",
+    "timestamp": "2026-03-06T15:20:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": null,
+    "evidence_count": 0,
+    "run_duration_ms": 85325
+  },
+  "regime": {
+    "current": "A",
+    "previous": "A",
+    "switched": false,
+    "held_since": "2026-03-06T12:50:10.912898Z",
+    "factor_scores": {
+      "SAD": 0.5,
+      "PD": 0.7575,
+      "NCC": 0.65
+    },
+    "joint_score": 0.6222,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT19H12M18S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1_commitment_paradox",
+      "label": "承诺悖论困局",
+      "weight": 0.76,
+      "weight_prev": 0.76,
+      "premises": [
+        "哈梅内伊遇袭身亡已确认",
+        "莫杰塔巴整合IRGC能力存疑",
+        "美国regime change意图明确",
+        "签署停火协议的权威人物缺失"
+      ],
+      "antithesis": "军事指挥结构可能在外部压力下快速整合，特别是面临生存威胁时权力真空往往被迅速填补",
+      "open_questions": [
+        "莫杰塔巴在IRGC中的实际影响力",
+        "替代性权威人物的可能性",
+        "国际调停的可接受性"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S2_ammo_depletion_forcing",
+      "label": "弹药耗尽强制终局",
+      "weight": 0.84,
+      "weight_prev": 0.84,
+      "premises": [
+        "盟军防空系统成本非对称明显",
+        "拦截率需维持>85%",
+        "物理弹药库存有限",
+        "$3.5K无人机vs$1-3M拦截弹比例"
+      ],
+      "antithesis": "工业动员能力可能被低估，战时生产线扩张和替代技术部署可能突破库存限制",
+      "open_questions": [
+        "确切的弹药库存数量",
+        "工业生产扩张速度",
+        "替代防御技术的可行性"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S3_stagflation_transition",
+      "label": "滞胀定价体制转换",
+      "weight": 0.63,
+      "weight_prev": 0.63,
+      "premises": [
+        "油价已突破$85并维持",
+        "美债避险功能弱化",
+        "股债同跌模式显现",
+        "通胀预期重新锚定"
+      ],
+      "antithesis": "央行可能采取非常规干预措施，市场流动性供应和预期管理能力不容低估",
+      "open_questions": [
+        "央行政策反应的时机和力度",
+        "其他避险资产的表现",
+        "实体经济传导的滞后性"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S4_protracted_asymmetric",
+      "label": "长期不对称消耗战",
+      "weight": 0.68,
+      "weight_prev": 0.68,
+      "premises": [
+        "伊朗代理人网络完整",
+        "美国公众战争疲劳",
+        "成本不对称持续存在",
+        "地缘政治支持分化"
+      ],
+      "antithesis": "代理人控制可能失效，升级可能超越各方意愿形成自动化冲突",
+      "open_questions": [
+        "代理人的自主性程度",
+        "盟友支持的持久性",
+        "国内政治压力的临界点"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "supply_disruption_volume",
+      "label": "波斯湾石油/LNG出口中断量",
+      "type": "M",
+      "parent_scenarios": [
+        "S2_ammo_depletion_forcing",
+        "S4_protracted_asymmetric"
+      ],
+      "path_importance": 0.85,
+      "factor_scores": {
+        "SAD": 0.3,
+        "PD": 0.9,
+        "NCC": 0.4
+      },
+      "irreversible": false,
+      "locked": true
+    },
+    {
+      "node_id": "shipping_insurance_collapse",
+      "label": "航运保险市场崩溃",
+      "type": "M",
+      "parent_scenarios": [
+        "S2_ammo_depletion_forcing",
+        "S3_stagflation_transition"
+      ],
+      "path_importance": 0.82,
+      "factor_scores": {
+        "SAD": 0.2,
+        "PD": 0.85,
+        "NCC": 0.3
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "coalition_forming",
+      "label": "反伊联盟形成",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_commitment_paradox",
+        "S4_protracted_asymmetric"
+      ],
+      "path_importance": 0.68,
+      "factor_scores": {
+        "SAD": 0.8,
+        "PD": 0.7,
+        "NCC": 0.6
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "conflict_protracted",
+      "label": "冲突长期化确定性",
+      "type": "H",
+      "parent_scenarios": [
+        "S1_commitment_paradox",
+        "S4_protracted_asymmetric"
+      ],
+      "path_importance": 0.68,
+      "factor_scores": {
+        "SAD": 0.6,
+        "PD": 0.8,
+        "NCC": 0.7
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "A",
+    "mechanical_nodes": [
+      {
+        "node_id": "supply_disruption_volume",
+        "propagated_prob": 0.85,
+        "upstream_drivers": [
+          "hormuz_blockade",
+          "iran_gulf_attacks"
+        ],
+        "impact_magnitude": 0.12
+      },
+      {
+        "node_id": "shipping_insurance_collapse",
+        "propagated_prob": 0.82,
+        "upstream_drivers": [
+          "supply_disruption_volume",
+          "regional_spillover"
+        ],
+        "impact_magnitude": 0.08
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "coalition_forming",
+        "equilibria": [
+          {
+            "eq_id": "eq1_loose_coalition",
+            "label": "松散反伊联盟",
+            "probability": 0.45,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq2_formal_alliance",
+            "label": "正式军事同盟",
+            "probability": 0.23,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq3_fragmented",
+            "label": "各自为政",
+            "probability": 0.32,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq1_loose_coalition",
+        "commitment_score": 0.6,
+        "exit_cost_ratio": 0.3
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "conflict_protracted",
+        "baseline_prob": 0.68,
+        "override_prob": 0.72,
+        "delta": 0.04,
+        "recomp_subgraph": [
+          "energy_crisis",
+          "russia_energy_leverage"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "弹药库存危机将在近期窗口强制各方重新评估升级策略",
+      "dominant_scenario": "S2_ammo_depletion_forcing",
+      "confidence": 0.84,
+      "tradeable_as": "long vol, long energy",
+      "key_assumption": "盟军防空弹药确实接近物理极限",
+      "kill_condition": "工业动员超预期或替代防御技术部署"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "承诺悖论导致的权威真空将延长冲突解决时间",
+      "dominant_scenario": "S1_commitment_paradox",
+      "confidence": 0.76,
+      "tradeable_as": "short duration, long oil",
+      "key_assumption": "莫杰塔巴无法有效整合IRGC",
+      "kill_condition": "出现新的权威谈判主体"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "滞胀定价体制转换将重构全球资产配置逻辑",
+      "dominant_scenario": "S3_stagflation_transition",
+      "confidence": 0.63,
+      "tradeable_as": "short bonds, long commodities",
+      "key_assumption": "油价持续>$85且央行政策滞后",
+      "kill_condition": "央行强力干预或供应快速恢复"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "VIX",
+        "direction": "long",
+        "sizing_note": "近期波动率将显著上升",
+        "horizon": "W1_5",
+        "linked_thesis": "弹药库存危机",
+        "entry_condition": "VIX<25",
+        "stop_condition": "VIX>45或弹药生产恢复"
+      },
+      {
+        "asset": "WTI",
+        "direction": "long",
+        "sizing_note": "供应中断溢价尚未充分定价",
+        "horizon": "W6_16",
+        "linked_thesis": "承诺悖论困局",
+        "entry_condition": "WTI回测$85支撑",
+        "stop_condition": "新权威主体出现或冲突降级"
+      },
+      {
+        "asset": "10Y Treasury",
+        "direction": "short",
+        "sizing_note": "避险功能弱化，通胀预期重新锚定",
+        "horizon": "W17_25plus",
+        "linked_thesis": "滞胀定价体制",
+        "entry_condition": "10Y收益率突破4.2%",
+        "stop_condition": "央行政策明确转向或油价回落<$80"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "T1_ammo_critical",
+        "signal": "盟军防空拦截率",
+        "condition": "连续7天<85%",
+        "action": "升级至ACT级别警报",
+        "linked_node": "supply_disruption_volume",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T2_irgc_consolidation",
+        "signal": "莫杰塔巴在IRGC中的话语权",
+        "condition": "获得3个以上派系明确支持",
+        "action": "重新评估S1权重",
+        "linked_node": "coalition_forming",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T3_insurance_breakdown",
+        "signal": "波斯湾航运保险费率",
+        "condition": "超过正常水平10倍",
+        "action": "触发供应链应急预案",
+        "linked_node": "shipping_insurance_collapse",
+        "urgency": "watch"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "VIX long",
+        "condition": "工业动员明显超预期",
+        "action": "exit",
+        "backflow_to": "L4"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "S1_commitment_paradox",
+        "premise_broken": "出现新的权威谈判主体",
+        "evidence": "国际承认的伊朗新领导层",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      }
+    ],
+    "regime_level": null
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1",
+        "role": "P",
+        "called_by": "evidence_assessment",
+        "input_summary": "0条新证据，维持先验概率",
+        "output_summary": "权重保持不变",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "scenario_review",
+        "input_summary": "4个现有scenario权重>0.6",
+        "output_summary": "对每个分支提出反论质疑",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L2b",
+        "role": "P",
+        "called_by": "bottleneck_analysis",
+        "input_summary": "4个候选瓶颈节点",
+        "output_summary": "识别路径重要度和传导链",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "strategic_solving",
+        "input_summary": "coalition_forming节点分析",
+        "output_summary": "松散联盟为焦点解",
+        "cost": "medium"
+      }
+    ],
+    "divergence_flags": [],
+    "total_model_calls": 4,
+    "total_cost": "medium"
+  },
+  "shs_writeback": [],
+  "graph_proposals": []
+}

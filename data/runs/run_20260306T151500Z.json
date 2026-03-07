@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "run_id": "run_20260306T151500Z",
+    "timestamp": "2026-03-06T15:15:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": null,
+    "evidence_count": 0,
+    "run_duration_ms": 81659
+  },
+  "regime": {
+    "current": "A",
+    "previous": "A",
+    "switched": false,
+    "held_since": "2026-03-06T12:50:10.912898Z",
+    "factor_scores": {
+      "SAD": 0.75,
+      "PD": 0.755,
+      "NCC": 0.8
+    },
+    "joint_score": 0.7665,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT17H12M42S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "commitment_paradox_deepening",
+      "label": "承诺悖论深化",
+      "weight": 0.76,
+      "weight_prev": 0.72,
+      "premises": [
+        "哈梅内伊死后权力真空持续",
+        "IRGC派系无法达成妥协",
+        "美国意识到斩首行动的战略错误",
+        "伊朗代理人网络失去统一指挥"
+      ],
+      "antithesis": "莫杰塔巴·哈梅内伊可能在W4-6窗口成功整合IRGC并建立新的决策权威",
+      "open_questions": [
+        "美国是否会尝试与IRGC直接接触",
+        "代理人网络会否发展为独立行动者",
+        "中俄是否愿意填补调停真空"
+      ],
+      "source_models": [
+        "dialectic-challenge",
+        "nth-order-reasoning"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "ammo_depletion_forced_boundary",
+      "label": "弹药耗尽强制边界",
+      "weight": 0.84,
+      "weight_prev": 0.84,
+      "premises": [
+        "盟军防空弹药库存已降至临界水平",
+        "伊朗无人机生产能力保持完整",
+        "成本非对称趋势不可逆转",
+        "W3-5窗口是物理极限"
+      ],
+      "antithesis": "美国可能启动战时生产法案大幅扩产拦截弹，或开发更廉价的反制手段",
+      "open_questions": [
+        "以色列Iron Dome库存的真实水平",
+        "美国战时生产能力的激活速度",
+        "是否存在技术跃迁式解决方案"
+      ],
+      "source_models": [
+        "bayesian-updating"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "energy_market_regime_shift",
+      "label": "能源市场体制转换",
+      "weight": 0.68,
+      "weight_prev": 0.65,
+      "premises": [
+        "油价已突破$85并维持3周",
+        "美债避险属性正在弱化",
+        "通胀预期重新抬头",
+        "能源供应中断预期固化"
+      ],
+      "antithesis": "中国经济疲软可能抵消供应冲击，全球需求萎缩导致油价回落",
+      "open_questions": [
+        "SPR释放的政治可行性",
+        "OPEC+的增产意愿",
+        "新兴市场需求毁灭的临界点"
+      ],
+      "source_models": [
+        "dialectic-challenge",
+        "carlota-perez"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "controlled_escalation_failure",
+      "label": "控制升级失效",
+      "weight": 0.52,
+      "weight_prev": 0.58,
+      "premises": [
+        "升级已部分自动化",
+        "代理人网络失控",
+        "误判风险持续上升",
+        "热线机制效力下降"
+      ],
+      "antithesis": "军方专业主义和制度惯性仍能防止失控升级",
+      "open_questions": [
+        "现有升级控制机制的实际效力",
+        "技术系统的误触发概率",
+        "第三方调停的可能性"
+      ],
+      "source_models": [
+        "pre-mortem"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "hormuz_blockade",
+      "label": "霍尔木兹海峡事实封锁",
+      "type": "H",
+      "parent_scenarios": [
+        "ammo_depletion_forced_boundary",
+        "energy_market_regime_shift"
+      ],
+      "path_importance": 0.87,
+      "factor_scores": {
+        "SAD": 0.7,
+        "PD": 0.9,
+        "NCC": 0.8
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "oil_price_100",
+      "label": "油价突破$100",
+      "type": "M",
+      "parent_scenarios": [
+        "energy_market_regime_shift"
+      ],
+      "path_importance": 0.72,
+      "factor_scores": {
+        "SAD": 0.3,
+        "PD": 0.8,
+        "NCC": 0.4
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "iran_missile_degraded",
+      "label": "伊朗导弹能力显著下降",
+      "type": "S",
+      "parent_scenarios": [
+        "ammo_depletion_forced_boundary"
+      ],
+      "path_importance": 0.78,
+      "factor_scores": {
+        "SAD": 0.8,
+        "PD": 0.7,
+        "NCC": 0.9
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "conflict_protracted",
+      "label": "冲突持续超过6个月",
+      "type": "H",
+      "parent_scenarios": [
+        "commitment_paradox_deepening",
+        "controlled_escalation_failure"
+      ],
+      "path_importance": 0.65,
+      "factor_scores": {
+        "SAD": 0.6,
+        "PD": 0.8,
+        "NCC": 0.7
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "A",
+    "mechanical_nodes": [
+      {
+        "node_id": "oil_price_100",
+        "propagated_prob": 0.72,
+        "upstream_drivers": [
+          "hormuz_blockade",
+          "supply_disruption_volume"
+        ],
+        "impact_magnitude": 0.15
+      },
+      {
+        "node_id": "net_supply_gap",
+        "propagated_prob": 0.81,
+        "upstream_drivers": [
+          "hormuz_blockade",
+          "qatar_lng_disrupted"
+        ],
+        "impact_magnitude": 0.18
+      },
+      {
+        "node_id": "aviation_demand_cut",
+        "propagated_prob": 0.72,
+        "upstream_drivers": [
+          "oil_price_100",
+          "energy_crisis"
+        ],
+        "impact_magnitude": 0.12
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "iran_missile_degraded",
+        "equilibria": [
+          {
+            "eq_id": "mutual_attrition",
+            "label": "相互消耗均衡",
+            "probability": 0.65,
+            "is_focal": true
+          },
+          {
+            "eq_id": "iran_surrender",
+            "label": "伊朗武力投降",
+            "probability": 0.25,
+            "is_focal": false
+          },
+          {
+            "eq_id": "escalation_spiral",
+            "label": "升级螺旋",
+            "probability": 0.1,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "mutual_attrition",
+        "commitment_score": 0.7,
+        "exit_cost_ratio": 2.3
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "hormuz_blockade",
+        "baseline_prob": 0.9,
+        "override_prob": 0.87,
+        "delta": -0.03,
+        "recomp_subgraph": [
+          "net_supply_gap",
+          "oil_price_100"
+        ],
+        "iteration_converged": true
+      },
+      {
+        "node_id": "conflict_protracted",
+        "baseline_prob": 0.72,
+        "override_prob": 0.68,
+        "delta": -0.04,
+        "recomp_subgraph": [
+          "energy_crisis",
+          "secondary_sanctions"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "弹药耗尽时钟将在未来3-5周触发强制谈判，但谈判对象缺失将导致停火协议无法签署",
+      "dominant_scenario": "ammo_depletion_forced_boundary",
+      "confidence": 0.84,
+      "tradeable_as": "long oil vol, short equity",
+      "key_assumption": "盟军防空弹药库存确实接近物理极限",
+      "kill_condition": "美国启动战时生产法案大幅扩产拦截弹"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "能源市场完成避险向通胀定价转换，美债熊市与股市熊市并存，stagflation交易窗口开启",
+      "dominant_scenario": "energy_market_regime_shift",
+      "confidence": 0.68,
+      "tradeable_as": "long commodities, short duration, defensive equity",
+      "key_assumption": "中国需求不会因经济疲软而显著萎缩",
+      "kill_condition": "油价跌破$75并持续2周"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "承诺悖论固化为新的地缘政治结构，中东进入多极竞争状态，能源供应长期不稳定",
+      "dominant_scenario": "commitment_paradox_deepening",
+      "confidence": 0.72,
+      "tradeable_as": "structurally long energy, emerging market differentiation",
+      "key_assumption": "莫杰塔巴无法在6个月内整合伊朗权力结构",
+      "kill_condition": "出现有效的外部调停机制"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "WTI_crude",
+        "direction": "long",
+        "sizing_note": "中等仓位，关注W3-5窗口",
+        "horizon": "W1_5",
+        "linked_thesis": "弹药耗尽时钟将在未来3-5周触发强制谈判",
+        "entry_condition": "油价回调至$82以下",
+        "stop_condition": "美国宣布大规模增产拦截弹"
+      },
+      {
+        "asset": "VIX",
+        "direction": "long",
+        "sizing_note": "小仓位，期限结构策略",
+        "horizon": "W1_5",
+        "linked_thesis": "弹药耗尽时钟将在未来3-5周触发强制谈判",
+        "entry_condition": "VIX低于25",
+        "stop_condition": "冲突明确降级信号"
+      },
+      {
+        "asset": "US10Y",
+        "direction": "short",
+        "sizing_note": "中等仓位，duration bet",
+        "horizon": "W6_16",
+        "linked_thesis": "能源市场完成避险向通胀定价转换",
+        "entry_condition": "10Y收益率低于4.2%",
+        "stop_condition": "通胀预期明确回落"
+      },
+      {
+        "asset": "XLE_ETF",
+        "direction": "long",
+        "sizing_note": "核心仓位，长期配置",
+        "horizon": "W17_25plus",
+        "linked_thesis": "承诺悖论固化为新的地缘政治结构",
+        "entry_condition": "能源股相对标普500折价超15%",
+        "stop_condition": "中东出现持久和平协议"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "ammo_threshold_alert",
+        "signal": "美军或以军防空拦截率连续3天低于80%",
+        "condition": "Iron Dome/Patriot 拦截效率显著下降",
+        "action": "立即增加oil long仓位至最大配置",
+        "linked_node": "iran_missile_degraded",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "mojtaba_consolidation",
+        "signal": "莫杰塔巴·哈梅内伊获得IRGC正式支持",
+        "condition": "伊朗官媒确认新的最高权威",
+        "action": "减持长期energy仓位50%",
+        "linked_node": "conflict_protracted",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "oil_100_breach",
+        "signal": "WTI突破$100并收盘确认",
+        "condition": "连续2个交易日收在$100上方",
+        "action": "启动stagflation组合配置",
+        "linked_node": "oil_price_100",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "spr_release_signal",
+        "signal": "拜登政府暗示大规模SPR释放",
+        "condition": "官方表态或媒体泄露SPR动用计划",
+        "action": "临时减持oil long仓位",
+        "linked_node": "hormuz_blockade",
+        "urgency": "watch"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "WTI_crude_long",
+        "condition": "美国启动战时生产法案扩产拦截弹",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "US10Y_short",
+        "condition": "油价跌破$75持续2周",
+        "action": "adjust",
+        "backflow_to": "L4"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "ammo_depletion_forced_boundary",
+        "premise_broken": "盟军防空弹药库存充足",
+        "evidence": "拦截率持续保持>90%超过4周",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "energy_market_regime_shift",
+        "premise_broken": "中国需求大幅萎缩",
+        "evidence": "中国原油进口环比下降>20%",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      }
+    ],
+    "regime_level": {
+      "current_regime": "A",
+      "contradiction": "战略节点开始主导机械节点，SAD因子上升至0.8以上",
+      "backflow_to": "Regime",
+      "shs_writeback": true
+    }
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1",
+        "role": "P",
+        "called_by": "evidence_assessment",
+        "input_summary": "0 new evidence items",
+        "output_summary": "prior beliefs maintained",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "scenario_refinement",
+        "input_summary": "4 scenarios with weights >0.5",
+        "output_summary": "strengthened antithesis for commitment_paradox and energy_regime scenarios",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L2b",
+        "role": "P",
+        "called_by": "bottleneck_analysis",
+        "input_summary": "66 nodes, focus on high-probability critical path",
+        "output_summary": "identified 4 key bottlenecks with hybrid characteristics",
+        "cost": "light"
+      },
+      {
+        "model_id": "pre-mortem",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "scenario_stress_test",
+        "input_summary": "controlled_escalation_failure scenario weight check",
+        "output_summary": "identified failure modes in escalation control mechanisms",
+        "cost": "light"
+      },
+      {
+        "model_id": "carlota-perez",
+        "layer": "L2a",
+        "role": "P",
+        "called_by": "regime_shift_analysis",
+        "input_summary": "energy market paradigm transition signals",
+        "output_summary": "confirmed structural shift from financial to commodity paradigm",
+        "cost": "light"
+      }
+    ],
+    "divergence_flags": [],
+    "total_model_calls": 5,
+    "total_cost": "light"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "H1_commitment_paradox",
+      "field_changed": "confidence",
+      "old_value": "0.72",
+      "new_value": "0.76",
+      "trigger_reason": "无新证据反驳，时间推进增强假设可信度",
+      "source_run_ids": [
+        "run_20260306T151500Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H3_stagflation_pricing_regime",
+      "field_changed": "confidence",
+      "old_value": "0.58",
+      "new_value": "0.63",
+      "trigger_reason": "油价维持高位3周，市场行为开始显示范式转换信号",
+      "source_run_ids": [
+        "run_20260306T151500Z"
+      ]
+    }
+  ],
+  "graph_proposals": []
+}

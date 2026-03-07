@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-03-07T15:22:00+08:00",
+  "baselines": {
+    "brent_latest": 92.69,
+    "brent_weekly_chg": 19.23,
+    "ovx": 103.6,
+    "ovx_daily_chg": 19.77,
+    "vix": 29.49,
+    "vix3m": 27.56,
+    "skew": 151.8,
+    "sp500": 6740.02,
+    "sp500_drawdown": -3.42,
+    "gold": 5146.1,
+    "tnx": 4.133,
+    "dxy": 98.99,
+    "dxy_weekly_chg": 1.13,
+    "hyg_lqd_ratio": 0.7234,
+    "hyg_lqd_5d_chg": -0.073,
+    "brent_wti_spread": 1.79,
+    "wti_front": 90.9,
+    "ccj_vol_ratio": 1.10,
+    "TRY_rate": 44.03,
+    "INR_rate": 91.79
+  }
+}

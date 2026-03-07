@@ -49,7 +49,9 @@
         "dialectic-challenge"
       ],
       "is_new": false,
-      "is_from_divergence": false
+      "is_from_divergence": false,
+      "deprecated": true,
+      "deprecation_note": "红队审计发现场景非互斥(持久消耗+代理人同时发生)。改用独立维度框架。"
     },
     {
       "id": "S2_rapid_escalation_nuclear_threshold",
@@ -73,7 +75,9 @@
         "dialectic-challenge"
       ],
       "is_new": false,
-      "is_from_divergence": false
+      "is_from_divergence": false,
+      "deprecated": true,
+      "deprecation_note": "红队审计发现场景非互斥(持久消耗+代理人同时发生)。改用独立维度框架。"
     },
     {
       "id": "S3_negotiated_offramp",
@@ -97,7 +101,9 @@
         "dialectic-challenge"
       ],
       "is_new": false,
-      "is_from_divergence": false
+      "is_from_divergence": false,
+      "deprecated": true,
+      "deprecation_note": "红队审计发现场景非互斥(持久消耗+代理人同时发生)。改用独立维度框架。"
     },
     {
       "id": "S4_fragmentation_proxy_war",
@@ -121,7 +127,9 @@
         "dialectic-challenge"
       ],
       "is_new": false,
-      "is_from_divergence": false
+      "is_from_divergence": false,
+      "deprecated": true,
+      "deprecation_note": "红队审计发现场景非互斥(持久消耗+代理人同时发生)。改用独立维度框架。"
     }
   ],
   "bottlenecks": [
@@ -809,5 +817,100 @@
         "run_20260306T140000Z"
       ]
     }
-  ]
+  ],
+  "scenario_framework": {
+    "type": "independent_dimensions",
+    "note": "场景不再互斥。每个维度独立评估概率。实际结果可能是多个维度的组合。",
+    "dimensions": [
+      {
+        "id": "intensity",
+        "label": "冲突烈度",
+        "options": [
+          {
+            "label": "高烈度持续打击",
+            "probability": 0.55,
+            "description": "当前状态的延续：空袭+导弹攻防"
+          },
+          {
+            "label": "降级为低烈度",
+            "probability": 0.35,
+            "description": "伊朗常规能力耗尽后转为游击/网络/代理人"
+          },
+          {
+            "label": "停火/冻结",
+            "probability": 0.1,
+            "description": "任何形式的停火"
+          }
+        ]
+      },
+      {
+        "id": "geography",
+        "label": "地理范围",
+        "options": [
+          {
+            "label": "伊朗本土为主",
+            "probability": 0.4,
+            "description": "打击集中在伊朗"
+          },
+          {
+            "label": "多线(伊朗+黎巴嫩+红海)",
+            "probability": 0.5,
+            "description": "当前状态：以色列入侵黎巴嫩+胡塞"
+          },
+          {
+            "label": "波及欧洲/全球",
+            "probability": 0.1,
+            "description": "伊朗网络攻击或代理人在欧洲行动"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "label": "持续时间",
+        "options": [
+          {
+            "label": "<30天",
+            "probability": 0.25,
+            "description": "快速军事解决或崩溃"
+          },
+          {
+            "label": "1-3个月",
+            "probability": 0.45,
+            "description": "消耗战但有尽头"
+          },
+          {
+            "label": ">3个月",
+            "probability": 0.3,
+            "description": "泥潭化"
+          }
+        ]
+      },
+      {
+        "id": "escalation",
+        "label": "升级路径",
+        "options": [
+          {
+            "label": "常规战争",
+            "probability": 0.55,
+            "description": "当前水平"
+          },
+          {
+            "label": "核门槛(脏弹/浓缩突破)",
+            "probability": 0.2,
+            "description": "伊朗被逼向核选项"
+          },
+          {
+            "label": "大国直接对抗",
+            "probability": 0.15,
+            "description": "俄罗斯升级到武器提供/美俄直接摩擦"
+          },
+          {
+            "label": "降级/外交解决",
+            "probability": 0.1,
+            "description": "找到体面退出路径"
+          }
+        ]
+      }
+    ]
+  }
 }
