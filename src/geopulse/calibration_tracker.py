@@ -313,3 +313,98 @@ def apply_shrinkage(probability: float, shrinkage: float) -> float:
     shrinkage=0.10 means: 新概率 = 原概率×0.90 + 0.50×0.10
     """
     return round(probability * (1 - shrinkage) + 0.5 * shrinkage, 4)
+
+
+# ═══════════════════════════════════════════
+# 连续校准: 不等deadline，每天更新
+# ═══════════════════════════════════════════
+
+def continuous_resolve(dag: dict, market_data: dict) -> list[dict]:
+    """
+    每次运行时检查: 有没有节点已经可以resolve了?
+    
+    market_data: {"brent": 92.69, "sp500": 6740, "vix": 29.5, ...}
+    
+    返回: 已resolve的预测列表
+    """
+    ledger = _load_ledger()
+    resolved = []
+    
+    # 自动resolve规则: 可量化的节点不用等人
+    auto_rules = {
+        "oil_price_100": {
+            "check": lambda d: d.get("brent", 0) >= 100,
+            "outcome": 1.0,
+            "description": "Brent >= $100",
+        },
+        "equity_correction": {
+            "check": lambda d: d.get("sp500", 99999) <= 6460,
+            "outcome": 1.0,
+            "description": "S&P <= 6460 (-5%)",
+        },
+    }
+    
+    for entry in ledger:
+        if entry.get("outcome") is not None:
+            continue  # 已resolve
+            
+        nid = entry["node_id"]
+        
+        # 自动resolve: 市场数据触发
+        if nid in auto_rules:
+            rule = auto_rules[nid]
+            if rule["check"](market_data):
+                entry["outcome"] = rule["outcome"]
+                entry["resolved_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+                entry["brier"] = (entry["probability"] - rule["outcome"]) ** 2
+                entry["resolve_method"] = "auto_market"
+                entry["resolve_note"] = rule["description"]
+                resolved.append(entry)
+        
+        # 自动resolve: deadline已过且未触发 → outcome=0
+        if entry.get("resolve_by"):
+            try:
+                deadline = datetime.datetime.fromisoformat(entry["resolve_by"])
+                if deadline.tzinfo is None:
+                    deadline = deadline.replace(tzinfo=datetime.timezone.utc)
+                now = datetime.datetime.now(datetime.timezone.utc)
+                if now > deadline and entry.get("outcome") is None:
+                    entry["outcome"] = 0.0
+                    entry["resolved_at"] = now.isoformat()
+                    entry["brier"] = (entry["probability"] - 0.0) ** 2
+                    entry["resolve_method"] = "auto_deadline_expired"
+                    entry["resolve_note"] = f"Deadline {entry['resolve_by']} passed without trigger"
+                    resolved.append(entry)
+            except (ValueError, TypeError):
+                pass
+    
+    if resolved:
+        _save_ledger(ledger)
+    
+    return resolved
+
+
+def track_progress(node_id: str, current_value: float, target_value: float) -> dict:
+    """
+    追踪节点向目标的进度。不等二元resolve。
+    
+    返回进度指标，可以用来实时调整概率。
+    """
+    if target_value == 0:
+        return {"progress": 0, "momentum": "unknown"}
+    
+    progress = current_value / target_value
+    
+    return {
+        "node_id": node_id,
+        "current": current_value,
+        "target": target_value,
+        "progress": round(progress, 3),
+        "progress_pct": f"{progress:.0%}",
+        "interpretation": (
+            "on_track" if progress >= 0.8 else
+            "approaching" if progress >= 0.6 else
+            "behind" if progress >= 0.3 else
+            "unlikely"
+        ),
+    }
