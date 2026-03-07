@@ -206,15 +206,31 @@ def build_p4() -> str:
 # Runner
 # ═══════════════════════════════════════════
 
-def call_llm(prompt: str, model: str = "claude-opus-4-5-20251101", max_tokens: int = 4000) -> str:
-    """Call Anthropic API."""
+MODELS = {
+    "primary": "claude-opus-4-6",
+    "fallback": "claude-opus-4-5-20251101",
+    "fast": "claude-sonnet-4-6",
+}
+
+
+def call_llm(prompt: str, model: str = MODELS["primary"], max_tokens: int = 4000) -> str:
+    """Call Anthropic API with automatic fallback."""
     client = get_client()
-    response = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.content[0].text
+    
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            messages=[{"role": "user", "content": prompt}],
+            timeout=90.0,
+        )
+        return response.content[0].text
+    except Exception as e:
+        if model == MODELS["primary"]:
+            fb = MODELS["fallback"]
+            print(f"⚠️  {model} failed ({type(e).__name__}), falling back to {fb}...")
+            return call_llm(prompt, model=fb, max_tokens=max_tokens)
+        raise
 
 
 def save_result(prompt_id: str, result: str):
@@ -242,7 +258,7 @@ def main():
     parser.add_argument("text", nargs="?", default="", help="Input text")
     parser.add_argument("--file", help="Read input from file")
     parser.add_argument("--save", action="store_true", help="Save result to data/prompt_results/")
-    parser.add_argument("--model", default="claude-opus-4-5-20251101")
+    parser.add_argument("--model", default=MODELS["primary"])
     args = parser.parse_args()
 
     # Input text

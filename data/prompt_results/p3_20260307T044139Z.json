@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260307T044139Z",
+  "raw": "\n\n```json\n{\n  \"evidence_text\": \"Brent crude hits $92.69, up 8.52% on the day, marking the largest weekly gain since 1983 at 35%.\",\n  \"source\": \"未注明（疑似金融市场数据/新闻报道）\",\n  \"source_tier\": 2,\n  \"cross_verification_count\": 0,\n  \"bias_assessment\": \"neutral\",\n  \"specificity\": \"precise\",\n  \"hours_old\": 0,\n  \"score_breakdown\": {\n    \"base\": 0.70,\n    \"cross_verify\": 0.00,\n    \"bias\": 0.00,\n    \"specificity\": 0.10,\n    \"timeliness\": 0.05\n  },\n  \"final_score\": 0.85,\n  \"usable\": true,\n  \"reasoning\": \"价格数据精确可验证（$92.69、8.52%、35%周涨幅、1983年历史锚点），属于市场客观报价，偏见风险极低；但来源未明确标注（无法确认是Bloomberg/Reuters等一手终端还是转引），按二手源计；单源无交叉验证；若能从任一主流金融终端确认该报价即可升至0.95+。\"\n}\n```"
+}
