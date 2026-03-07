@@ -210,3 +210,106 @@ if __name__ == "__main__":
     report = calibration_report()
     print(f"  状态: {report['status']}")
     print(f"  总记录: {report.get('total_predictions', report.get('total', '?'))}, 待验证: {report.get('pending', '?')}")
+
+
+# ═══════════════════════════════════════════
+# 闭环: 校准结果 → 参数调整
+# ═══════════════════════════════════════════
+
+def auto_adjust(min_resolved: int = 10) -> dict | None:
+    """
+    从校准结果自动调整系统参数。
+    
+    需要至少 min_resolved 条已验证预测才启动。
+    
+    调整逻辑:
+    1. 整体偏差 → 调整全局 shrinkage factor
+    2. 按方法偏差 → 调整 METHOD_PRIORITY 权重
+    3. 按概率区间偏差 → 调整特定区间的 base rate
+    """
+    report = calibration_report()
+    
+    if report["status"] != "ok" or report["resolved"] < min_resolved:
+        return {
+            "status": "insufficient_data",
+            "resolved": report.get("resolved", 0),
+            "needed": min_resolved,
+            "message": f"需要{min_resolved}条已验证预测，当前{report.get('resolved', 0)}条",
+        }
+    
+    adjustments = []
+    
+    # ── 1. 整体偏差 → shrinkage ──
+    bias = report["bias"]
+    if abs(bias) > 0.05:
+        # 我们系统性偏高/偏低
+        # shrinkage: 所有新概率向50%收缩 bias量
+        shrinkage = round(min(0.15, abs(bias)), 3)
+        direction = "toward_50" if bias > 0 else "away_from_50"
+        adjustments.append({
+            "type": "global_shrinkage",
+            "bias": bias,
+            "shrinkage_factor": shrinkage,
+            "direction": direction,
+            "action": f"所有新概率向50%{'收缩' if bias > 0 else '推离'}{shrinkage:.1%}",
+            "reason": f"系统{'高估' if bias > 0 else '低估'}偏差={bias:.1%}",
+        })
+    
+    # ── 2. 按方法偏差 → 权重调整 ──
+    from geopulse.calibration import METHOD_PRIORITY
+    
+    method_briers = report.get("by_method", {})
+    if len(method_briers) >= 2:
+        best = min(method_briers, key=method_briers.get)
+        worst = max(method_briers, key=method_briers.get)
+        
+        if method_briers[worst] > method_briers[best] * 2:
+            # 最差方法Brier是最好的2倍以上 → 降权
+            old_w = METHOD_PRIORITY.get(worst, 0.5)
+            new_w = round(max(0.1, old_w * 0.7), 2)  # 降30%
+            adjustments.append({
+                "type": "method_reweight",
+                "worst_method": worst,
+                "worst_brier": method_briers[worst],
+                "best_method": best,
+                "best_brier": method_briers[best],
+                "old_weight": old_w,
+                "new_weight": new_w,
+                "action": f"METHOD_PRIORITY['{worst}'] {old_w}→{new_w}",
+                "reason": f"{worst}的Brier({method_briers[worst]:.3f})是{best}({method_briers[best]:.3f})的{method_briers[worst]/method_briers[best]:.1f}倍",
+            })
+    
+    # ── 3. 按区间偏差 → 校准曲线修正 ──
+    for bucket in report.get("calibration_curve", []):
+        gap = bucket["gap"]  # predicted - actual
+        if abs(gap) > 0.10 and bucket["count"] >= 3:
+            adjustments.append({
+                "type": "bucket_correction",
+                "range": bucket["range"],
+                "predicted_avg": bucket["avg_predicted"],
+                "actual_avg": bucket["avg_actual"],
+                "gap": gap,
+                "count": bucket["count"],
+                "action": f"[{bucket['range']}]区间的概率偏{'高' if gap > 0 else '低'}{abs(gap):.0%}",
+                "reason": f"预测{bucket['avg_predicted']:.0%} vs 实际{bucket['avg_actual']:.0%} (n={bucket['count']})",
+            })
+    
+    result = {
+        "status": "adjustments_ready",
+        "resolved": report["resolved"],
+        "overall_brier": report["overall_brier"],
+        "bias": report["bias"],
+        "adjustments": adjustments,
+        "auto_apply": False,  # 需要人工确认
+    }
+    
+    return result
+
+
+def apply_shrinkage(probability: float, shrinkage: float) -> float:
+    """
+    向50%收缩。
+    
+    shrinkage=0.10 means: 新概率 = 原概率×0.90 + 0.50×0.10
+    """
+    return round(probability * (1 - shrinkage) + 0.5 * shrinkage, 4)
