@@ -77,6 +77,7 @@ DOMAIN_SYSTEM_PROMPT = """\
 11. **跨领域传导**：优先建立跨越2个以上领域的传导链（如军事→能源→化工→农业→社会）
 
 ## 输出格式（严格 JSON，无 markdown 代码块）
+⚠️ 直接输出 JSON 对象，不要在 JSON 前后写任何分析文字或解释。整个回复必须是一个合法的 JSON 对象。
 {{
   "domain": "{domain}",
   "analysis": "{domain}视角分析摘要（150字内）",
@@ -136,7 +137,8 @@ class DAGEngine:
         if proxy:
             import httpx
 
-            kwargs["http_client"] = httpx.Client(proxy=proxy)
+            kwargs["http_client"] = httpx.Client(proxy=proxy, timeout=300.0)
+        kwargs["timeout"] = 300.0
         self.client = anthropic.Anthropic(**kwargs)
 
     def update(self, dag: DAG, events: list[Event]) -> DAG:
@@ -185,25 +187,51 @@ class DAGEngine:
             return ALL_DOMAINS
         return [d for d in ALL_DOMAINS if d in touched]
 
+    def _compact_dag_json(self, dag: DAG) -> str:
+        """Return an ultra-compact JSON representation of the DAG for smaller prompts."""
+        compact_nodes = {}
+        for nid, n in dag.nodes.items():
+            compact_nodes[nid] = [n.label, round(n.probability, 2), n.domains]
+        compact_edges = [[e.source, e.target, round(e.weight, 2)] for e in dag.edges]
+        return json.dumps({"n": compact_nodes, "e": compact_edges, "v": dag.version}, ensure_ascii=False)
+
     def _call_llm_for_domain(
         self, dag: DAG, events: list[Event], domain: str, retries: int = 2
     ) -> dict[str, Any]:
         """Call the LLM for a specific domain perspective."""
         mental_models = build_prompt_injection(domains=[domain])
-        system = DOMAIN_SYSTEM_PROMPT.replace("{domain}", domain).replace(
-            "{mental_models}", mental_models
-        )
+        system = DOMAIN_SYSTEM_PROMPT_MINI.replace("{domain}", domain)
         events_json = [e.model_dump(mode="json") for e in events]
+        # Use compact system prompt to avoid relay timeouts
+        system = (
+            f"你是地缘政治风险分析师，从**{domain}**视角分析事件对DAG的影响。"
+            f"规则：概率0.0-1.0；DAG无环；每条边有reasoning含传导机制+时间尺度；推演至少4阶。"
+            f"直接输出JSON（无markdown fence），格式："
+            "{"
+            f"\"domain\":\"{domain}\","
+            "\"analysis\":\"150字内摘要\","
+            "\"causal_chains\":[\"A→B→C→D\"],"
+            "\"updates\":{"
+            "\"new_nodes\":[{\"id\":\"snake_case\",\"label\":\"中文\",\"node_type\":\"event|state|prediction\","
+            "\"time_horizon\":\"30d\",\"domains\":[\"领域\"],\"probability\":0.5,\"confidence\":0.7,"
+            "\"evidence\":[\"证据\"],\"reasoning\":\"原因\"}],"
+            "\"new_edges\":[{\"from\":\"src\",\"to\":\"tgt\",\"weight\":0.7,\"reasoning\":\"机制+时间\"}],"
+            "\"probability_changes\":[{\"node_id\":\"id\",\"new_probability\":0.6,\"new_confidence\":0.8,"
+            "\"evidence\":[\"证据\"],\"reasoning\":\"原因\"}],"
+            "\"removed_nodes\":[],\"removed_edges\":[]"
+            "}}"
+        )
+        compact_dag = self._compact_dag_json(dag)
         user_prompt = (
-            f"## 当前 DAG 状态\n```json\n{dag.to_json()}\n```\n\n"
-            f"## 新接收到的事件\n```json\n"
-            f"{json.dumps(events_json, ensure_ascii=False, indent=2)}\n```"
+            f"DAG状态:\n{compact_dag}\n\n"
+            f"新事件:\n{json.dumps(events_json, ensure_ascii=False)}\n\n"
+            f"只输出JSON对象。"
         )
         last_err: Exception | None = None
         for attempt in range(1 + retries):
             resp = self.client.messages.create(
                 model=self.model,
-                max_tokens=4096,
+                max_tokens=8192,
                 temperature=0.2,
                 system=system,
                 messages=[{"role": "user", "content": user_prompt}],
@@ -341,5 +369,32 @@ class DAGEngine:
                     return json.loads(fixed[: last_valid + 1])
                 except json.JSONDecodeError:
                     pass
-            raise
+            raise json.JSONDecodeError(
+                f"Could not parse JSON from LLM output (len={len(text)})",
+                text[:200],
+                0,
+            )
+        # No matched {..} pair — likely truncated JSON. Try to repair.
+        first_brace = text.find("{")
+        if first_brace >= 0:
+            fragment = text[first_brace:]
+            # Remove trailing partial string/key (cut at last complete value)
+            # Find the last comma or colon, then truncate there
+            repaired = re.sub(r'[,\s]*"[^"]*$', "", fragment)  # drop trailing partial string
+            repaired = re.sub(r",\s*$", "", repaired)  # drop trailing comma
+            # Close all open brackets/braces
+            open_braces = repaired.count("{") - repaired.count("}")
+            open_brackets = repaired.count("[") - repaired.count("]")
+            repaired += "]" * max(0, open_brackets) + "}" * max(0, open_braces)
+            try:
+                return json.loads(repaired)
+            except json.JSONDecodeError:
+                pass
         return json.loads(text)
+
+# Minimal system prompt for faster API calls
+DOMAIN_SYSTEM_PROMPT_MINI = """\
+地缘政治{domain}视角分析师。从DAG和事件中识别因果链并更新概率。
+输出格式(直接JSON，无其他文字)：
+{{"domain":"{domain}","analysis":"50字摘要","updates":{{"probability_changes":[{{"node_id":"id","new_probability":0.5,"reasoning":"原因"}}],"new_nodes":[],"new_edges":[]}}}}
+"""
