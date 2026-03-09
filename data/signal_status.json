@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "last_updated": "2026-03-09T19:53:00+08:00",
+  "last_updated": "2026-03-09T14:24:56.050293+00:00",
   "dag_version": 56,
   "summary": {
-    "deescalation_active": 0,
-    "deescalation_total": 23,
+    "deescalation_active": 5,
+    "deescalation_total": 25,
     "escalation_active": 0,
     "escalation_total": 7,
     "false_alarms": 0
@@ -166,6 +166,17 @@
         "expiry_days": null,
         "evidence": "需追踪Bonbast.com非官方汇率",
         "notes": "阈值: 突破1:800,000"
+      },
+      {
+        "id": "ir_china_economic_pressure",
+        "label": "中国经济施压/创造聚点",
+        "layer": 2,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 14,
+        "evidence": "中国是伊朗最大贸易伙伴和石油买家。Lloyd's List引用中国航运高管'不清楚北京能否接触IRGC'",
+        "notes": "具体观测: ①暂停对伊贸易结算(昆仑银行) ②冻结伊朗油轮在中国港口准入 ③习近平/王毅公开声明(不是泛泛呼吁而是具体要求) ④中国特使赴德黑兰(可通过航班追踪确认)。这是谢林框架中唯一可能创造新聚点的路径"
       }
     ],
     "physical": [
@@ -267,6 +278,17 @@
         "expiry_days": null,
         "evidence": "当前Brent $106.95",
         "notes": "滞后确认指标"
+      },
+      {
+        "id": "ph_irgc_ammo_depletion",
+        "label": "IRGC弹药/无人机衰减信号",
+        "layer": 3,
+        "status": "watching",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": "IRGC声称6个月储备，但2/28以来持续消耗。需观测攻击频率/规模趋势",
+        "notes": "关键观测: ①攻击频率下降(周级趋势) ②弹头从导弹降级为无人机/水雷 ③单次攻击规模缩小 ④攻击间隔拉长。这是打破承诺锁定的物理路径——谢林承诺机制在弹药耗尽时自动失效"
       }
     ]
   },
