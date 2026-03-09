@@ -28,9 +28,18 @@ def build(data_dir: str = "data", output: str = "docs/index.html"):
     with open(template_path) as f:
         html = f.read()
     
+    # Load signal status
+    signal_path = data / "signal_status.json"
+    if signal_path.exists():
+        with open(signal_path) as f:
+            signals_json = f.read()
+    else:
+        signals_json = '{"version":0}'
+    
     # Inject data
     html = html.replace("__DAG_DATA__", dag_json)
     html = html.replace("__RUN_OUTPUT__", run_json)
+    html = html.replace("__SIGNALS_DATA__", signals_json)
     
     # Write output
     out_path = Path(output)

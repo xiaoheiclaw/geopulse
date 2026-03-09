@@ -119,6 +119,7 @@ body{font-family:'IBM Plex Mono','Noto Sans SC',monospace;background:var(--bg);c
 <script>
 const DAG=__DAG_DATA__;
 const RUN=__RUN_OUTPUT__;
+const SIGNALS=__SIGNALS_DATA__;
 const N=DAG.nodes;
 const nl=id=>(N[id]||{}).label||id;
 
@@ -162,6 +163,7 @@ function renderTabs(){
     {id:'l4',label:'L4 交易命题',icon:'▽'},
     {id:'l5',label:'L5 执行',icon:'▷'},
     {id:'audit',label:'审计',icon:'◎'},
+    {id:'signals',label:'信号监控',icon:'📡'},
   ];
   return `<div class="tab-bar">${tabs.map(t=>`<button class="tab-btn ${st.tab===t.id?'active':''}" onclick="st.tab='${t.id}';render()"><span class="icon">${t.icon}</span>${t.label}</button>`).join('')}</div>`;
 }
@@ -584,8 +586,143 @@ function auditTab(){
   return html;
 }
 
+function signalsTab(){
+  if(!SIGNALS||!SIGNALS.version) return '<div class="card"><div class="card-title">📡 信号监控</div><div style="font-size:10px;color:var(--tD)">无信号数据</div></div>';
+  const S=SIGNALS;
+  const statusColor=(s)=>({
+    'not_triggered':'var(--tD)',
+    'watching':'var(--gold)',
+    'triggered':'var(--green)',
+    'inverse_triggered':'var(--red)',
+    'expired':'var(--tM)',
+    'false_alarm':'var(--purple)'
+  }[s]||'var(--tD)');
+  const statusLabel=(s)=>({
+    'not_triggered':'⬜ 未触发',
+    'watching':'🟡 观察中',
+    'triggered':'🟢 已触发',
+    'inverse_triggered':'🔴 反向触发',
+    'expired':'⬛ 已过期',
+    'false_alarm':'🟣 假信号'
+  }[s]||s);
+  const severityColor=(s)=>s==='P0'?'var(--red)':'var(--gold)';
+
+  let html='';
+
+  // Summary
+  html+=`<div class="card" style="border-color:var(--gold)">
+    <div class="card-title">📡 信号监控面板</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:10px;margin-bottom:8px">
+      <span>DAG v${S.dag_version}</span>
+      <span style="color:var(--tD)">更新: ${S.last_updated}</span>
+    </div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="text-align:center;padding:8px 16px;background:var(--bg1);border-radius:6px">
+        <div style="font-size:24px;font-weight:800;color:var(--green)">${S.summary.deescalation_active}</div>
+        <div style="font-size:8px;color:var(--tD)">降级信号活跃 / ${S.summary.deescalation_total}</div>
+      </div>
+      <div style="text-align:center;padding:8px 16px;background:var(--bg1);border-radius:6px">
+        <div style="font-size:24px;font-weight:800;color:var(--red)">${S.summary.escalation_active}</div>
+        <div style="font-size:8px;color:var(--tD)">升级信号活跃 / ${S.summary.escalation_total}</div>
+      </div>
+      <div style="text-align:center;padding:8px 16px;background:var(--bg1);border-radius:6px">
+        <div style="font-size:24px;font-weight:800;color:var(--purple)">${S.summary.false_alarms}</div>
+        <div style="font-size:8px;color:var(--tD)">假信号</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Deescalation layers
+  const layers=[
+    {key:'us_side',title:'L1 美国侧焦点创建信号',subtitle:'最先出现',color:'var(--blue)'},
+    {key:'iran_side',title:'L2 伊朗侧决策链修复信号',subtitle:'较难观测',color:'var(--gold)'},
+    {key:'physical',title:'L3 物理层面降级信号',subtitle:'最可信但最滞后',color:'var(--green)'}
+  ];
+
+  html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">▽ 降级信号</div>`;
+
+  layers.forEach(layer=>{
+    const items=S.deescalation[layer.key]||[];
+    const active=items.filter(i=>i.status==='triggered'||i.status==='watching').length;
+    html+=`<div class="card card-l" style="border-left-color:${layer.color}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div>
+          <span style="font-size:11px;font-weight:700">${layer.title}</span>
+          <span style="font-size:8px;color:var(--tD);margin-left:6px">${layer.subtitle}</span>
+        </div>
+        <span style="font-size:9px;color:${layer.color}">${active}/${items.length} 活跃</span>
+      </div>`;
+    items.forEach(sig=>{
+      const sc=statusColor(sig.status);
+      html+=`<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;padding:6px 8px;background:var(--bg1);border-radius:4px;border-left:3px solid ${sc}">
+        <div style="flex:1">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+            <span style="font-size:10px;font-weight:600">${sig.label}</span>
+            <span style="font-size:8px;color:${sc};font-weight:600">${statusLabel(sig.status)}</span>
+          </div>
+          ${sig.evidence?`<div style="font-size:8.5px;color:var(--tM);margin-bottom:2px">📎 ${sig.evidence}</div>`:''}
+          ${sig.notes?`<div style="font-size:8px;color:var(--tD)">${sig.notes}</div>`:''}
+          <div style="display:flex;gap:8px;margin-top:3px;font-size:7.5px;color:var(--tD)">
+            ${sig.expiry_days?`<span>⏱ ${sig.expiry_days}d expiry</span>`:'<span>⏱ 持续性</span>'}
+            ${sig.triggered_at?`<span>触发: ${sig.triggered_at}</span>`:''}
+            ${sig.expires_at?`<span style="color:var(--red)">过期: ${sig.expires_at}</span>`:''}
+          </div>
+        </div>
+      </div>`;
+    });
+    html+=`</div>`;
+  });
+
+  // Escalation signals
+  html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">△ 升级信号</div>`;
+  html+=`<div class="card card-l" style="border-left-color:var(--red)">`;
+  (S.escalation||[]).forEach(sig=>{
+    const sc=statusColor(sig.status);
+    const svc=severityColor(sig.severity);
+    html+=`<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;padding:6px 8px;background:var(--bg1);border-radius:4px;border-left:3px solid ${sc}">
+      <div style="flex:1">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+          <span style="font-size:10px;font-weight:600">${sig.label}</span>
+          <div style="display:flex;gap:6px;align-items:center">
+            <span style="font-size:7.5px;font-weight:700;padding:1px 5px;border-radius:2px;color:${svc};background:${sig.severity==='P0'?'var(--redD)':'var(--goldD)'}">${sig.severity}</span>
+            <span style="font-size:8px;color:${sc};font-weight:600">${statusLabel(sig.status)}</span>
+          </div>
+        </div>
+        ${sig.evidence?`<div style="font-size:8.5px;color:var(--tM);margin-bottom:2px">📎 ${sig.evidence}</div>`:''}
+        ${sig.notes?`<div style="font-size:8px;color:var(--tD)">${sig.notes}</div>`:''}
+      </div>
+    </div>`;
+  });
+  html+=`</div>`;
+
+  // False alarms
+  if(S.false_alarms&&S.false_alarms.length){
+    html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">⚠ 假信号记录</div>`;
+    html+=`<div class="card">`;
+    S.false_alarms.forEach(fa=>{
+      html+=`<div style="padding:4px 6px;margin-bottom:4px;font-size:9px;background:var(--bg1);border-radius:3px;border-left:2px solid var(--purple)">
+        <span style="font-weight:600">${fa.signal_id}</span> — ${fa.reason} <span style="color:var(--tD)">${fa.date}</span>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+
+  // DAG adjustment rules
+  html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">⚙ DAG概率调整触发规则</div>`;
+  html+=`<div class="card" style="font-size:9px;line-height:2">
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L1 任意2个信号同时出现 → <b style="color:var(--green)">conflict_deescalation: 2% → 5-8%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L1 + L2 各≥1个 → <b style="color:var(--green)">conflict_deescalation: → 10-15%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L3 IRGC攻击归零 + 扫雷无重布 → <b style="color:var(--green)">hormuz_blockade: 97% → 85%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L3 ≥3个信号同时 → <b style="color:var(--green)">conflict_deescalation: → 20%+</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">升级P0任意触发 → <b style="color:var(--red)">conflict_deescalation: → 1%, 对应升级节点 +15-25%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px">假信号无后续确认 → <b style="color:var(--tM)">维持当前概率，标注false alarm</b></div>
+  </div>`;
+
+  return html;
+}
+
 function render(){
-  const panels={overview:overviewTab,l2:scenariosTab,engine:engineTab,l4:horizonTab,l5:executionTab,audit:auditTab};
+  const panels={overview:overviewTab,l2:scenariosTab,engine:engineTab,l4:horizonTab,l5:executionTab,audit:auditTab,signals:signalsTab};
   let html=renderTopbar()+renderTabs();
   html+=`<div class="content">`;
   Object.keys(panels).forEach(k=>{
