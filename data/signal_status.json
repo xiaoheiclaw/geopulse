@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "last_updated": "2026-03-09T19:53:00+08:00",
+  "dag_version": 56,
+  "summary": {
+    "deescalation_active": 0,
+    "deescalation_total": 23,
+    "escalation_active": 0,
+    "escalation_total": 7,
+    "false_alarms": 0
+  },
+  "deescalation": {
+    "us_side": [
+      {
+        "id": "us_limited_victory",
+        "label": "\"有限胜利\"话术出现",
+        "layer": 1,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": null,
+        "notes": "当前Trump仍在'unconditional surrender'模式"
+      },
+      {
+        "id": "us_bessent_narrative",
+        "label": "Bessent主导叙事",
+        "layer": 1,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 5,
+        "evidence": null,
+        "notes": null
+      },
+      {
+        "id": "us_polling_market",
+        "label": "民调/市场触发线",
+        "layer": 1,
+        "status": "watching",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": "VIX 33.93 (接近35线), 汽油尚未到$5",
+        "notes": "持续性指标，VIX已接近阈值但未持续突破"
+      },
+      {
+        "id": "us_congress_split",
+        "label": "国会裂缝",
+        "layer": 1,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 14,
+        "evidence": null,
+        "notes": "War Powers Resolution已提交但尚无GOP反对声"
+      },
+      {
+        "id": "us_pentagon_leak",
+        "label": "五角大楼泄露",
+        "layer": 1,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": null,
+        "notes": null
+      },
+      {
+        "id": "us_israel_decouple",
+        "label": "以色列解耦信号",
+        "layer": 1,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 10,
+        "evidence": null,
+        "notes": "内塔尼亚胡仍在'推翻政权'模式"
+      },
+      {
+        "id": "us_ally_pressure",
+        "label": "盟友私下施压",
+        "layer": 1,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 14,
+        "evidence": null,
+        "notes": "Macron公开要求Hormuz自由通行，但未施压美国退出"
+      }
+    ],
+    "iran_side": [
+      {
+        "id": "ir_mojtaba_statement",
+        "label": "莫杰塔巴实质性表态",
+        "layer": 2,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": null,
+        "notes": "3/8刚继位，目前只有仪式性声明"
+      },
+      {
+        "id": "ir_irgc_unified_command",
+        "label": "IRGC指挥链统一信号",
+        "layer": 2,
+        "status": "inverse_triggered",
+        "triggered_at": "2026-03-07",
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": "FM确认去中心化模式/31自治单位",
+        "notes": "反向触发：指挥链碎片化已确认，统一信号需要逆转当前状态"
+      },
+      {
+        "id": "ir_selective_passage",
+        "label": "选择性通行扩大",
+        "layer": 2,
+        "status": "watching",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 5,
+        "evidence": "当前仅中国/部分国家旗帜船只有限通行",
+        "notes": "需观测印度/日本/韩国旗帜船是否被放行"
+      },
+      {
+        "id": "ir_diplomacy_reactivate",
+        "label": "外交渠道重新激活",
+        "layer": 2,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 10,
+        "evidence": null,
+        "notes": "阿拉格齐明确说'不谈判'，拉里贾尼同调"
+      },
+      {
+        "id": "ir_proxy_divergence",
+        "label": "代理人行为分化",
+        "layer": 2,
+        "status": "watching",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": "胡塞暂时按兵不动(DAG已标注)",
+        "notes": "持续性指标。胡塞沉默是降级信号之一，但真主党/伊拉克民兵仍需观测"
+      },
+      {
+        "id": "ir_bazaar_shutdown",
+        "label": "巴扎关门",
+        "layer": 2,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": null,
+        "notes": "事件型指标，伊朗政治史最可靠先行指标"
+      },
+      {
+        "id": "ir_rial_collapse",
+        "label": "里亚尔汇率崩溃",
+        "layer": 2,
+        "status": "watching",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": "需追踪Bonbast.com非官方汇率",
+        "notes": "阈值: 突破1:800,000"
+      }
+    ],
+    "physical": [
+      {
+        "id": "ph_strait_traffic",
+        "label": "海峡通行回升",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 3,
+        "evidence": "当前约4艘/日",
+        "notes": "阈值: 回升到8-10艘/日且无新袭击"
+      },
+      {
+        "id": "ph_insurance_resume",
+        "label": "保险恢复承保",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": null,
+        "notes": null
+      },
+      {
+        "id": "ph_irgc_attack_zero",
+        "label": "IRGC攻击频率归零(72h)",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 3,
+        "evidence": null,
+        "notes": "⚠️ 关键区分：72h零攻击可能是装填间歇而非降级"
+      },
+      {
+        "id": "ph_mutual_restraint",
+        "label": "72h相互克制",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 3,
+        "evidence": null,
+        "notes": null
+      },
+      {
+        "id": "ph_minesweep_no_relay",
+        "label": "扫雷+无重新布雷",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 5,
+        "evidence": null,
+        "notes": "事实停火的物理起点"
+      },
+      {
+        "id": "ph_air_sortie_drop",
+        "label": "空中侦察节奏下降",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 5,
+        "evidence": null,
+        "notes": "ADSB追踪KC-135/RQ-4，阈值:20+/日→个位数"
+      },
+      {
+        "id": "ph_satellite_rebuild",
+        "label": "卫星可见重建",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 14,
+        "evidence": null,
+        "notes": null
+      },
+      {
+        "id": "ph_ovx_below_60",
+        "label": "OVX回落至60以下",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": "当前OVX 103.6",
+        "notes": "持续性指标"
+      },
+      {
+        "id": "ph_brent_below_90",
+        "label": "Brent<$90+VIX同步下行",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": "当前Brent $106.95",
+        "notes": "滞后确认指标"
+      }
+    ]
+  },
+  "escalation": [
+    {
+      "id": "esc_trump_escalate",
+      "label": "Trump目标再升级(地面部队/Kharg岛)",
+      "status": "not_triggered",
+      "severity": "P0",
+      "triggered_at": null,
+      "evidence": null,
+      "notes": "War Powers已提交，但尚未宣布地面行动"
+    },
+    {
+      "id": "esc_neutral_ship_hit",
+      "label": "中立国船只被击中(中国/日韩)",
+      "status": "not_triggered",
+      "severity": "P0",
+      "triggered_at": null,
+      "evidence": null,
+      "notes": null
+    },
+    {
+      "id": "esc_irgc_energy_infra",
+      "label": "IRGC打击海湾能源设施",
+      "status": "watching",
+      "severity": "P0",
+      "triggered_at": null,
+      "evidence": "迪拜/阿布扎比已被攻击，但尚非油田/管道",
+      "notes": "从运输中断→产能永久损失是质变"
+    },
+    {
+      "id": "esc_nuclear_breakout",
+      "label": "核突破(IAEA驱逐/90%丰度)",
+      "status": "not_triggered",
+      "severity": "P0",
+      "triggered_at": null,
+      "evidence": null,
+      "notes": "DAG节点irgc_nuclear=45%"
+    },
+    {
+      "id": "esc_us_mass_casualty",
+      "label": "美军单次伤亡>50人",
+      "status": "watching",
+      "severity": "P0",
+      "triggered_at": null,
+      "evidence": "已有6人阵亡+俘虏争议，DAG us_casualties_major=80%",
+      "notes": "触发后美国两极分化，Trump历史模式是加倍下注"
+    },
+    {
+      "id": "esc_russia_weapons",
+      "label": "俄罗斯提供进攻性武器",
+      "status": "not_triggered",
+      "severity": "P1",
+      "triggered_at": null,
+      "evidence": "情报共享已确认，但非武器转让",
+      "notes": null
+    },
+    {
+      "id": "esc_pezeshkian_removed",
+      "label": "佩泽什基安被撤职/完全边缘化",
+      "status": "watching",
+      "severity": "P1",
+      "triggered_at": null,
+      "evidence": "3/7已被IRGC公开打脸，实质边缘化进行中",
+      "notes": "区分实质vs形式：目前实质已边缘化，形式上仍在任"
+    }
+  ],
+  "false_alarms": []
+}

@@ -130,6 +130,9 @@ const TN={M:'M',S:'S',H:'H'};
 const WC={W1_5:'var(--red)',W6_16:'var(--gold)',W17_25plus:'var(--blue)'};
 const WL={W1_5:'W1-5',W6_16:'W6-16',W17_25plus:'W17-25+'};
 
+
+const SIGNALS={"version": 1, "last_updated": "2026-03-09T19:53:00+08:00", "dag_version": 56, "summary": {"deescalation_active": 0, "deescalation_total": 23, "escalation_active": 0, "escalation_total": 7, "false_alarms": 0}, "deescalation": {"us_side": [{"id": "us_limited_victory", "label": "\"有限胜利\"话术出现", "layer": 1, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 7, "evidence": null, "notes": "当前Trump仍在'unconditional surrender'模式"}, {"id": "us_bessent_narrative", "label": "Bessent主导叙事", "layer": 1, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 5, "evidence": null, "notes": null}, {"id": "us_polling_market", "label": "民调/市场触发线", "layer": 1, "status": "watching", "triggered_at": null, "expires_at": null, "expiry_days": null, "evidence": "VIX 33.93 (接近35线), 汽油尚未到$5", "notes": "持续性指标，VIX已接近阈值但未持续突破"}, {"id": "us_congress_split", "label": "国会裂缝", "layer": 1, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 14, "evidence": null, "notes": "War Powers Resolution已提交但尚无GOP反对声"}, {"id": "us_pentagon_leak", "label": "五角大楼泄露", "layer": 1, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 7, "evidence": null, "notes": null}, {"id": "us_israel_decouple", "label": "以色列解耦信号", "layer": 1, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 10, "evidence": null, "notes": "内塔尼亚胡仍在'推翻政权'模式"}, {"id": "us_ally_pressure", "label": "盟友私下施压", "layer": 1, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 14, "evidence": null, "notes": "Macron公开要求Hormuz自由通行，但未施压美国退出"}], "iran_side": [{"id": "ir_mojtaba_statement", "label": "莫杰塔巴实质性表态", "layer": 2, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 7, "evidence": null, "notes": "3/8刚继位，目前只有仪式性声明"}, {"id": "ir_irgc_unified_command", "label": "IRGC指挥链统一信号", "layer": 2, "status": "inverse_triggered", "triggered_at": "2026-03-07", "expires_at": null, "expiry_days": 7, "evidence": "FM确认去中心化模式/31自治单位", "notes": "反向触发：指挥链碎片化已确认，统一信号需要逆转当前状态"}, {"id": "ir_selective_passage", "label": "选择性通行扩大", "layer": 2, "status": "watching", "triggered_at": null, "expires_at": null, "expiry_days": 5, "evidence": "当前仅中国/部分国家旗帜船只有限通行", "notes": "需观测印度/日本/韩国旗帜船是否被放行"}, {"id": "ir_diplomacy_reactivate", "label": "外交渠道重新激活", "layer": 2, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 10, "evidence": null, "notes": "阿拉格齐明确说'不谈判'，拉里贾尼同调"}, {"id": "ir_proxy_divergence", "label": "代理人行为分化", "layer": 2, "status": "watching", "triggered_at": null, "expires_at": null, "expiry_days": null, "evidence": "胡塞暂时按兵不动(DAG已标注)", "notes": "持续性指标。胡塞沉默是降级信号之一，但真主党/伊拉克民兵仍需观测"}, {"id": "ir_bazaar_shutdown", "label": "巴扎关门", "layer": 2, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": null, "evidence": null, "notes": "事件型指标，伊朗政治史最可靠先行指标"}, {"id": "ir_rial_collapse", "label": "里亚尔汇率崩溃", "layer": 2, "status": "watching", "triggered_at": null, "expires_at": null, "expiry_days": null, "evidence": "需追踪Bonbast.com非官方汇率", "notes": "阈值: 突破1:800,000"}], "physical": [{"id": "ph_strait_traffic", "label": "海峡通行回升", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 3, "evidence": "当前约4艘/日", "notes": "阈值: 回升到8-10艘/日且无新袭击"}, {"id": "ph_insurance_resume", "label": "保险恢复承保", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 7, "evidence": null, "notes": null}, {"id": "ph_irgc_attack_zero", "label": "IRGC攻击频率归零(72h)", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 3, "evidence": null, "notes": "⚠️ 关键区分：72h零攻击可能是装填间歇而非降级"}, {"id": "ph_mutual_restraint", "label": "72h相互克制", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 3, "evidence": null, "notes": null}, {"id": "ph_minesweep_no_relay", "label": "扫雷+无重新布雷", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 5, "evidence": null, "notes": "事实停火的物理起点"}, {"id": "ph_air_sortie_drop", "label": "空中侦察节奏下降", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 5, "evidence": null, "notes": "ADSB追踪KC-135/RQ-4，阈值:20+/日→个位数"}, {"id": "ph_satellite_rebuild", "label": "卫星可见重建", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": 14, "evidence": null, "notes": null}, {"id": "ph_ovx_below_60", "label": "OVX回落至60以下", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": null, "evidence": "当前OVX 103.6", "notes": "持续性指标"}, {"id": "ph_brent_below_90", "label": "Brent<$90+VIX同步下行", "layer": 3, "status": "not_triggered", "triggered_at": null, "expires_at": null, "expiry_days": null, "evidence": "当前Brent $106.95", "notes": "滞后确认指标"}]}, "escalation": [{"id": "esc_trump_escalate", "label": "Trump目标再升级(地面部队/Kharg岛)", "status": "not_triggered", "severity": "P0", "triggered_at": null, "evidence": null, "notes": "War Powers已提交，但尚未宣布地面行动"}, {"id": "esc_neutral_ship_hit", "label": "中立国船只被击中(中国/日韩)", "status": "not_triggered", "severity": "P0", "triggered_at": null, "evidence": null, "notes": null}, {"id": "esc_irgc_energy_infra", "label": "IRGC打击海湾能源设施", "status": "watching", "severity": "P0", "triggered_at": null, "evidence": "迪拜/阿布扎比已被攻击，但尚非油田/管道", "notes": "从运输中断→产能永久损失是质变"}, {"id": "esc_nuclear_breakout", "label": "核突破(IAEA驱逐/90%丰度)", "status": "not_triggered", "severity": "P0", "triggered_at": null, "evidence": null, "notes": "DAG节点irgc_nuclear=45%"}, {"id": "esc_us_mass_casualty", "label": "美军单次伤亡>50人", "status": "watching", "severity": "P0", "triggered_at": null, "evidence": "已有6人阵亡+俘虏争议，DAG us_casualties_major=80%", "notes": "触发后美国两极分化，Trump历史模式是加倍下注"}, {"id": "esc_russia_weapons", "label": "俄罗斯提供进攻性武器", "status": "not_triggered", "severity": "P1", "triggered_at": null, "evidence": "情报共享已确认，但非武器转让", "notes": null}, {"id": "esc_pezeshkian_removed", "label": "佩泽什基安被撤职/完全边缘化", "status": "watching", "severity": "P1", "triggered_at": null, "evidence": "3/7已被IRGC公开打脸，实质边缘化进行中", "notes": "区分实质vs形式：目前实质已边缘化，形式上仍在任"}], "false_alarms": []};
+
 let st={tab:'overview',evFilter:null,expandedSc:null,expandedSt:null,expandedMd:null};
 
 function tag(t,cls){return `<span class="tag ${cls}">${t}</span>`}
@@ -162,6 +165,7 @@ function renderTabs(){
     {id:'l4',label:'L4 交易命题',icon:'▽'},
     {id:'l5',label:'L5 执行',icon:'▷'},
     {id:'audit',label:'审计',icon:'◎'},
+    {id:'signals',label:'信号监控',icon:'📡'},
   ];
   return `<div class="tab-bar">${tabs.map(t=>`<button class="tab-btn ${st.tab===t.id?'active':''}" onclick="st.tab='${t.id}';render()"><span class="icon">${t.icon}</span>${t.label}</button>`).join('')}</div>`;
 }
@@ -584,8 +588,151 @@ function auditTab(){
   return html;
 }
 
+
+function signalsTab(){
+  const S=SIGNALS;
+  const statusColor=(s)=>({
+    'not_triggered':'var(--tD)',
+    'watching':'var(--gold)',
+    'triggered':'var(--green)',
+    'inverse_triggered':'var(--red)',
+    'expired':'var(--tM)',
+    'false_alarm':'var(--purple)'
+  }[s]||'var(--tD)');
+  const statusLabel=(s)=>({
+    'not_triggered':'⬜ 未触发',
+    'watching':'🟡 观察中',
+    'triggered':'🟢 已触发',
+    'inverse_triggered':'🔴 反向触发',
+    'expired':'⬛ 已过期',
+    'false_alarm':'🟣 假信号'
+  }[s]||s);
+  const severityColor=(s)=>s==='P0'?'var(--red)':'var(--gold)';
+
+  let html='';
+
+  // Summary card
+  html+=`<div class="card" style="border-color:var(--gold)">
+    <div class="card-title">📡 信号监控面板</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;font-size:10px;margin-bottom:8px">
+      <span>DAG v${S.dag_version}</span>
+      <span style="color:var(--tD)">更新: ${S.last_updated}</span>
+    </div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="text-align:center;padding:8px 16px;background:var(--bg1);border-radius:6px">
+        <div style="font-size:24px;font-weight:800;color:var(--green)">${S.summary.deescalation_active}</div>
+        <div style="font-size:8px;color:var(--tD)">降级信号活跃 / ${S.summary.deescalation_total}</div>
+      </div>
+      <div style="text-align:center;padding:8px 16px;background:var(--bg1);border-radius:6px">
+        <div style="font-size:24px;font-weight:800;color:var(--red)">${S.summary.escalation_active}</div>
+        <div style="font-size:8px;color:var(--tD)">升级信号活跃 / ${S.summary.escalation_total}</div>
+      </div>
+      <div style="text-align:center;padding:8px 16px;background:var(--bg1);border-radius:6px">
+        <div style="font-size:24px;font-weight:800;color:var(--purple)">${S.summary.false_alarms}</div>
+        <div style="font-size:8px;color:var(--tD)">假信号</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Deescalation signals
+  const layers=[
+    {key:'us_side',title:'L1 美国侧焦点创建信号',subtitle:'最先出现',color:'var(--blue)'},
+    {key:'iran_side',title:'L2 伊朗侧决策链修复信号',subtitle:'较难观测',color:'var(--gold)'},
+    {key:'physical',title:'L3 物理层面降级信号',subtitle:'最可信但最滞后',color:'var(--green)'}
+  ];
+
+  html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">▽ 降级信号</div>`;
+
+  layers.forEach(layer=>{
+    const items=S.deescalation[layer.key]||[];
+    const active=items.filter(i=>i.status==='triggered'||i.status==='watching').length;
+    html+=`<div class="card card-l" style="border-left-color:${layer.color}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div>
+          <span style="font-size:11px;font-weight:700">${layer.title}</span>
+          <span style="font-size:8px;color:var(--tD);margin-left:6px">${layer.subtitle}</span>
+        </div>
+        <span style="font-size:9px;color:${layer.color}">${active}/${items.length} 活跃</span>
+      </div>`;
+
+    items.forEach(sig=>{
+      const sc=statusColor(sig.status);
+      html+=`<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;padding:6px 8px;background:var(--bg1);border-radius:4px;border-left:2px solid ${sc}">
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+            <span style="font-size:10px;font-weight:600">${sig.label}</span>
+            <span style="font-size:8px;padding:1px 5px;border-radius:2px;background:${sc}15;color:${sc}">${statusLabel(sig.status)}</span>
+          </div>
+          ${sig.evidence?`<div style="font-size:8.5px;color:var(--tM);margin-bottom:2px">📎 ${sig.evidence}</div>`:''}
+          ${sig.notes?`<div style="font-size:8px;color:var(--tD)">${sig.notes}</div>`:''}
+          <div style="display:flex;gap:8px;margin-top:3px;font-size:7.5px;color:var(--tD)">
+            ${sig.expiry_days?`<span>⏱ ${sig.expiry_days}d 有效期</span>`:'<span>⏱ 持续性</span>'}
+            ${sig.triggered_at?`<span>触发: ${sig.triggered_at}</span>`:''}
+            ${sig.expires_at?`<span>过期: ${sig.expires_at}</span>`:''}
+          </div>
+        </div>
+      </div>`;
+    });
+
+    html+=`</div>`;
+  });
+
+  // Escalation signals
+  html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">△ 升级信号</div>`;
+  html+=`<div class="card card-l" style="border-left-color:var(--red)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <span style="font-size:11px;font-weight:700">升级/看涨油价信号</span>
+      <span style="font-size:9px;color:var(--red)">${S.escalation.filter(e=>e.status==='watching'||e.status==='triggered').length}/${S.escalation.length} 活跃</span>
+    </div>`;
+
+  S.escalation.forEach(sig=>{
+    const sc=sig.status==='watching'?'var(--gold)':sig.status==='triggered'?'var(--red)':'var(--tD)';
+    const sevc=severityColor(sig.severity);
+    html+=`<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;padding:6px 8px;background:var(--bg1);border-radius:4px;border-left:2px solid ${sc}">
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+          <div style="display:flex;align-items:center;gap:5px">
+            <span style="font-size:8px;padding:1px 4px;border-radius:2px;background:${sevc}20;color:${sevc};font-weight:700">${sig.severity}</span>
+            <span style="font-size:10px;font-weight:600">${sig.label}</span>
+          </div>
+          <span style="font-size:8px;padding:1px 5px;border-radius:2px;background:${sc}15;color:${sc}">${statusLabel(sig.status)}</span>
+        </div>
+        ${sig.evidence?`<div style="font-size:8.5px;color:var(--tM);margin-bottom:2px">📎 ${sig.evidence}</div>`:''}
+        ${sig.notes?`<div style="font-size:8px;color:var(--tD)">${sig.notes}</div>`:''}
+      </div>
+    </div>`;
+  });
+
+  html+=`</div>`;
+
+  // False alarms
+  if(S.false_alarms&&S.false_alarms.length>0){
+    html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">⚠ 假信号记录</div>`;
+    html+=`<div class="card">`;
+    S.false_alarms.forEach(fa=>{
+      html+=`<div style="padding:4px 6px;margin-bottom:4px;font-size:9px;background:var(--bg1);border-radius:3px;border-left:2px solid var(--purple)">
+        <span style="font-weight:600">${fa.signal_id}</span> — ${fa.reason} <span style="color:var(--tD)">${fa.date}</span>
+      </div>`;
+    });
+    html+=`</div>`;
+  }
+
+  // DAG adjustment rules
+  html+=`<div class="card-title" style="margin:16px 0 8px;font-size:14px">⚙ DAG概率调整触发规则</div>`;
+  html+=`<div class="card" style="font-size:9px;line-height:2">
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L1 任意2个信号同时出现 → <b style="color:var(--green)">conflict_deescalation: 2% → 5-8%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L1 + L2 各≥1个 → <b style="color:var(--green)">conflict_deescalation: → 10-15%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L3 IRGC攻击归零 + 扫雷无重布 → <b style="color:var(--green)">hormuz_blockade: 97% → 85%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">L3 ≥3个信号同时 → <b style="color:var(--green)">conflict_deescalation: → 20%+</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px;margin-bottom:3px">升级P0任意触发 → <b style="color:var(--red)">conflict_deescalation: → 1%, 对应升级节点 +15-25%</b></div>
+    <div style="padding:3px 6px;background:var(--bg1);border-radius:3px">假信号无后续确认 → <b style="color:var(--tM)">维持当前概率，标注false alarm</b></div>
+  </div>`;
+
+  return html;
+}
+
 function render(){
-  const panels={overview:overviewTab,l2:scenariosTab,engine:engineTab,l4:horizonTab,l5:executionTab,audit:auditTab};
+  const panels={overview:overviewTab,l2:scenariosTab,engine:engineTab,l4:horizonTab,l5:executionTab,audit:auditTab,signals:signalsTab};
   let html=renderTopbar()+renderTabs();
   html+=`<div class="content">`;
   Object.keys(panels).forEach(k=>{
