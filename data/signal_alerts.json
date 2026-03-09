@@ -2,67 +2,49 @@
   "alerts": [
     {
       "signal_id": "T01",
-      "level": "P0",
-      "message": "Brent $106.95 — 距$100仅$-6.9",
-      "action": "检查call skew和backwardation"
-    },
-    {
-      "signal_id": "T01",
       "level": "P1",
-      "message": "Brent周涨31.4% — 异常波动",
-      "action": "评估是否需要减仓获利"
-    },
-    {
-      "signal_id": "T01",
-      "level": "P1",
-      "message": "OVX 103.6 > 60 — 油价波动率极端",
+      "message": "OVX 100.5 > 60 — 油价波动率极端",
       "action": "考虑用期权替代期货(买call spread代替裸多)"
     },
     {
       "signal_id": "T05",
       "level": "P1",
-      "message": "VIX期限倒挂: VIX 33.9 > VIX3M 27.6",
+      "message": "VIX期限倒挂: VIX 25.5 > VIX3M 25.3",
       "action": "近期尾部风险定价升高，加仓尾部对冲"
     },
     {
       "signal_id": "T05",
       "level": "P1",
-      "message": "SKEW 152 > 150 — 尾部风险定价极端",
+      "message": "SKEW 158 > 150 — 尾部风险定价极端",
       "action": "叠加VIX倒挂 = 强烈尾部对冲信号"
-    },
-    {
-      "signal_id": "EQUITY",
-      "level": "P1",
-      "message": "S&P 500 从高点回撤-3.4%",
-      "action": "接近-5%阈值，关注信用市场确认"
     }
   ],
-  "last_check": "2026-03-09T08:47:40.932999+00:00",
+  "last_check": "2026-03-09T21:23:24.187276+00:00",
   "baselines": {
-    "brent_latest": 106.94999694824219,
-    "brent_weekly_chg": 31.3882001761884,
-    "vix": 33.93000030517578,
-    "vix3m": 27.559999465942383,
-    "TRY_rate": 44.07979965209961,
-    "TRY_daily_chg": 0.10537038083037024,
-    "INR_rate": 92.32250213623047,
-    "INR_daily_chg": 0.583524157752176,
-    "ccj_vol_ratio": 1.0995159846151248,
-    "gold": 5101.0,
-    "tnx": 4.132999897003174,
-    "sp500": 6740.02001953125,
-    "sp500_drawdown": -3.4187383542026812,
-    "ovx": 103.5999984741211,
-    "ovx_daily_chg": 19.769996643066406,
-    "brent_front": 106.94999694824219,
-    "wti_front": 103.33000183105469,
-    "brent_wti_spread": 3.6199951171875,
-    "skew": 151.8000030517578,
-    "hyg_lqd_ratio": 0.7234023220064254,
-    "hyg_lqd_5d_chg": -0.07262274705603591,
-    "dxy": 99.5719985961914,
-    "dxy_weekly_chg": 1.8222698271609408
+    "brent_latest": 88.69000244140625,
+    "brent_weekly_chg": 8.95577491262047,
+    "vix": 25.5,
+    "vix3m": 25.34000015258789,
+    "TRY_rate": 44.042598724365234,
+    "TRY_daily_chg": 0.020886951260546134,
+    "INR_rate": 92.11199951171875,
+    "INR_daily_chg": 0.3541857480695418,
+    "ccj_vol_ratio": 0.8302739062858308,
+    "gold": 5148.7001953125,
+    "tnx": 4.136000156402588,
+    "sp500": 6795.990234375,
+    "sp500_drawdown": -2.6167119583565075,
+    "ovx": 100.52999877929688,
+    "ovx_daily_chg": -3.0699996948242188,
+    "brent_front": 88.69000244140625,
+    "wti_front": 85.08000183105469,
+    "brent_wti_spread": 3.6100006103515625,
+    "skew": 157.97999572753906,
+    "hyg_lqd_ratio": 0.7234253599505253,
+    "hyg_lqd_5d_chg": -0.022092734917161475,
+    "dxy": 98.73200225830078,
+    "dxy_weekly_chg": 0.9632900439249961
   },
-  "alert_count": 6,
-  "p0_count": 1
+  "alert_count": 3,
+  "p0_count": 0
 }

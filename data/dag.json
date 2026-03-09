@@ -2,7 +2,7 @@
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
   "version": 58,
-  "updated": "2026-03-07T18:01:55.094711Z",
+  "updated": "2026-03-09T21:26:32.401653+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -731,15 +731,15 @@
         "能源",
         "经济"
       ],
-      "probability": 0.65,
+      "probability": 0.9,
       "confidence": 0.9,
       "evidence": [],
-      "reasoning": "定义: 全球≥20%的石油贸易路线发生永久性改变(如亚洲客户转向非中东供应商签长约)。65%反映短期应急vs长期重组的区别。",
+      "reasoning": "半事实节点。中印转向俄油(确认)、Exxon从墨西哥湾运汽油到澳大利亚(确认)、中国暂停燃料出口(确认)。重组已在发生，但长期固化程度取决于冲突持续时间。",
       "time_horizon": "W4-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-07T00:09:06.708994Z",
+      "last_updated": "2026-03-09T21:26:32.401410+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
