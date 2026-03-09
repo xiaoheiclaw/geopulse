@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 56,
+  "version": 57,
   "updated": "2026-03-07T18:01:55.094711Z",
   "nodes": {
     "us_israel_strikes": {
@@ -352,18 +352,19 @@
         "军事",
         "政治"
       ],
-      "probability": 0.45,
+      "probability": 0.53,
       "confidence": 0.65,
       "evidence": [
         "五角大楼联合声明",
-        "英法舰队部署确认"
+        "英法舰队部署确认",
+        "[2026-03-09] 沙特MBS誓言反击+多国防空拦截(红队降级53%:防御协调≠反伊联盟)"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T15:26:36.522330+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "secondary_sanctions": {
@@ -509,21 +510,22 @@
         "军事",
         "政治"
       ],
-      "probability": 0.7895,
+      "probability": 0.86,
       "confidence": 0.7,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
         "BBC: \"firepower over Iran to surge dramatically\"",
         "Trump: military doing \"phenomenally\"",
         "Independent: \"this could go on for quite some time\"",
-        "[2026-03-09] E3+E6+E7: 双方最大化+俄介入+新领导立威 (LR=2.5)"
+        "[2026-03-09] E3+E6+E7: 双方最大化+俄介入+新领导立威 (LR=2.5)",
+        "[2026-03-09] Day10停火遭拒+莫杰塔巴继位延长战争能力+$200油价威胁(红队:弹药约束影响形态非持续时间)"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T15:26:36.522330+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "us_ground_war": {
@@ -558,15 +560,17 @@
         "经济",
         "金融"
       ],
-      "probability": 0.52,
+      "probability": 0.62,
       "confidence": 0.65,
-      "evidence": [],
+      "evidence": [
+        "[2026-03-09] 卡塔尔LNG受阻72%+欧洲夏季补库困难(红队:多元化有效但低估恐慌效应)"
+      ],
       "reasoning": "定义: TTF天然气期货>€80/MWh 或 欧洲天然气库存消耗速度较5年均值快>50%。62%因卡塔尔LNG中断传导但欧洲已有多元化(美国LNG、挪威管道)。",
       "time_horizon": "W2-12",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T15:26:36.522330+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "global_stagflation": {
@@ -634,20 +638,21 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.65,
+      "probability": 0.78,
       "confidence": 0.7,
       "evidence": [
         "Yahoo Finance: S&P -1.3% Friday, -2% weekly, NEGATIVE for the year",
         "ABC: Dow -453 points (-0.9%)",
         "Nasdaq -1.6%",
-        "Seeking Alpha: S&P has -7% to -10% downside buffer"
+        "Seeking Alpha: S&P has -7% to -10% downside buffer",
+        "[2026-03-09] S&P -3.9%+VIX 28.3倒挂+SKEW 152(红队:不同于2022,霍尔木兹封锁=持续供应中断)"
       ],
       "reasoning": "定义: S&P 500从冲突前高点回撤>5%。当前: Dow -800, Russell -2.7%。80%因回撤可能已部分price-in且有技术性反弹风险。",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T15:26:36.522330+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "safe_haven_rally": {
@@ -919,15 +924,17 @@
         "军事",
         "政治"
       ],
-      "probability": 0.28,
+      "probability": 0.4,
       "confidence": 0.4,
-      "evidence": [],
+      "evidence": [
+        "[2026-03-09] 土/卡塔尔拦截伊朗弹道导弹+美撤离阿达纳+伊土边境关闭(红队降级:防御≠进攻,维持40%)"
+      ],
       "reasoning": "定义: 土耳其以保护土库曼/库尔德为由对伊拉克北部或伊朗边境采取军事行动。28%。",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T15:26:36.522330+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "em_food_riots": {
