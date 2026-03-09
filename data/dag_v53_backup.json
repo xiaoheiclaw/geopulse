@@ -1,0 +1,5000 @@
+{
+  "scenario": "us_iran_conflict",
+  "scenario_label": "美伊冲突升级",
+  "version": 53,
+  "updated": "2026-03-09T07:24:46.895579Z",
+  "nodes": {
+    "us_israel_strikes": {
+      "id": "us_israel_strikes",
+      "label": "美以联合空袭伊朗",
+      "node_type": "event",
+      "domains": [
+        "军事"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "Reuters确认",
+        "五角大楼声明"
+      ],
+      "reasoning": "2026年2月底美以对伊朗核设施和军事基地发动大规模联合空袭",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "khamenei_killed": {
+      "id": "khamenei_killed",
+      "label": "哈梅内伊遇袭身亡",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "多方消息源确认",
+        "IRGC声明",
+        "2026-03-09 Assembly of Experts紧急召开+Mojtaba提名=强烈暗示哈梅内伊已死亡或丧失能力",
+        "2026-03-08 Assembly of Experts正式选举Mojtaba为第三任最高领袖，确认哈梅内伊2/28遇袭身亡 (Reuters/NBC/Wikipedia)",
+        "2026-03-09 Assembly of Experts正式选举Mojtaba继任=哈梅内伊死亡确认(Reuters/Wikipedia/NBC)"
+      ],
+      "reasoning": "最高领袖在空袭中遇难，触发伊朗政治真空",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T07:24:46.895579Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "us_regime_change": {
+      "id": "us_regime_change",
+      "label": "美国明确regime change意图",
+      "node_type": "event",
+      "domains": [
+        "政治"
+      ],
+      "probability": 0.6,
+      "confidence": 0.95,
+      "evidence": [
+        "白宫声明",
+        "众院219-212/参院47-52授权"
+      ],
+      "reasoning": "白宫和国会多次表态支持伊朗政权更替",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "iran_retaliation": {
+      "id": "iran_retaliation",
+      "label": "伊朗大规模报复(500导弹/2000无人机)",
+      "node_type": "event",
+      "domains": [
+        "军事"
+      ],
+      "probability": 0.8275,
+      "confidence": 0.99,
+      "evidence": [
+        "CENTCOM确认",
+        "卫星图像"
+      ],
+      "reasoning": "IRGC发动史无前例的报复性打击，覆盖以色列和海湾美军基地",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "iran_gulf_attacks": {
+      "id": "iran_gulf_attacks",
+      "label": "伊朗对全海湾国家发动攻击",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "多国防部声明",
+        "巴林Ma'ameer炼油区遭无人机打击"
+      ],
+      "reasoning": "沙特/科威特/阿联酋/阿曼/巴林/阿塞拜疆均遭打击",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "hormuz_blockade": {
+      "id": "hormuz_blockade",
+      "label": "霍尔木兹海峡事实封锁",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 0.97,
+      "confidence": 0.95,
+      "evidence": [
+        "BBC: 海峡船舶流量时间线显示大幅下降",
+        "Metro: passage effectively closed for days",
+        "NBC: 无船只接受美海军护航",
+        "Guardian: 船员被困油轮",
+        "科威特遭无人机袭击",
+        "伊朗海上对峙升级",
+        "美潜艇击沉伊朗舰艇",
+        "海湾国家持续遭受攻击",
+        "2026-03-09 Macron要求伊朗保障Hormuz通行自由(反证封锁已成事实);油轮流量持续下降"
+      ],
+      "reasoning": "海湾局势全面升级，伊朗海上行动增加，事实封锁概率进一步上升",
+      "time_horizon": "持续至冲突结束",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "iran_missile_degraded": {
+      "id": "iran_missile_degraded",
+      "label": "伊朗导弹能力被削弱90%(美方数据)",
+      "node_type": "state",
+      "domains": [
+        "军事"
+      ],
+      "probability": 0.7,
+      "confidence": 0.7,
+      "evidence": [
+        "Al Jazeera: IRGC announced 23rd wave of strikes",
+        "ISW: IDF expects Iranian ballistic fire to stop soon",
+        "Cluster warhead missiles still being launched",
+        "But: Iran tracking ability weakened, relies on Russian intel"
+      ],
+      "reasoning": "定义: 伊朗中远程弹道导弹发射能力下降>70%(基于CENTCOM战损评估)。当前: CENTCOM称击沉20+舰艇，地面发射架多次被打击。85%反映美方数据可能高估。",
+      "time_horizon": "持续",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "regional_spillover": {
+      "id": "regional_spillover",
+      "label": "冲突外溢至海湾6国",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "政治",
+        "能源"
+      ],
+      "probability": 0.96,
+      "confidence": 0.97,
+      "evidence": [
+        "Guardian: Iran deputy FM warns European nations = \"legitimate targets\" if they join",
+        "CNN: NATO allies reluctantly pulled in",
+        "Al Jazeera: Israel bombs Lebanon, 217 killed, 800 injured in one day",
+        "科威特遭无人机袭击确认",
+        "贝鲁特遭以色列打击",
+        "巴格达美国使馆遭袭",
+        "伊朗导弹飞越特拉维夫",
+        "卡塔尔沙特约旦均遭袭击",
+        "卡塔尔/沙特/约旦/科威特同时遭攻击",
+        "贝鲁特IRGC指挥官被打击",
+        "巴格达大使馆遭袭"
+      ],
+      "reasoning": "从0.98上调至0.99，冲突已明确外溢至6个以上国家，几乎确定",
+      "time_horizon": "持续",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "shipping_insurance_collapse": {
+      "id": "shipping_insurance_collapse",
+      "label": "航运保险市场崩溃",
+      "node_type": "state",
+      "domains": [
+        "金融",
+        "能源"
+      ],
+      "probability": 0.97,
+      "confidence": 0.9,
+      "evidence": [
+        "Lloyd's战争险报价数据",
+        "多家船东声明暂停波斯湾航线",
+        "海湾6国均遭受攻击",
+        "科威特油轮出港风险极高",
+        "伊朗海军舰艇被击沉",
+        "海上对峙升级",
+        "科威特港口威胁",
+        "卡塔尔LNG航线受攻击",
+        "霍尔木兹实质封锁",
+        "多国能源设施被打击",
+        "海湾多国能源设施遭袭",
+        "霍尔木兹事实封锁",
+        "科威特油库起火",
+        "海湾能源风险溢价跳升",
+        "科威特设施遭袭",
+        "伊朗海军舰艇被击沉",
+        "全球航运绕行成本永久抬升"
+      ],
+      "reasoning": "波斯湾军事行动已全面证实航运保险市场崩溃条件，概率从0.98上调至0.99",
+      "time_horizon": "持续至冲突结束",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "iran_power_transition": {
+      "id": "iran_power_transition",
+      "label": "伊朗权力交接(莫杰塔巴继位)",
+      "node_type": "state",
+      "domains": [
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "IRGC内部消息",
+        "伊朗国家电视台声明",
+        "哈梅内伊已确认死亡",
+        "能源基础设施遭打击加剧权威危机",
+        "IRGC可能争夺主导权",
+        "伊朗内部分歧显现",
+        "2026-03-09 伊朗专家会议将在24小时内召开选举新最高领袖;多方报道Mojtaba Khamenei将被提名",
+        "2026-03-08/09 Mojtaba Khamenei正式被宣布为伊朗第三任最高领袖 (Reuters/Guardian/NBC)",
+        "2026-03-08/09 Mojtaba Khamenei正式被Assembly of Experts选为第三任最高领袖(Reuters/Guardian/NBC)"
+      ],
+      "reasoning": "能源打击和IRGC独立行动迹象表明伊朗权力结构正在重组",
+      "time_horizon": "3-6个月过渡期",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T07:24:46.895579Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "pentagon_war_cost": {
+      "id": "pentagon_war_cost",
+      "label": "五角大楼战争开支已超$50亿",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "经济"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "国会预算办公室报告"
+      ],
+      "reasoning": "确认的财政支出数据",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "energy_crisis": {
+      "id": "energy_crisis",
+      "label": "全球能源危机爆发",
+      "node_type": "state",
+      "domains": [
+        "能源",
+        "经济",
+        "金融"
+      ],
+      "probability": 0.95,
+      "confidence": 0.92,
+      "evidence": [
+        "IEA紧急声明",
+        "OPEC+紧急会议",
+        "伊朗能源基础设施遭打击",
+        "科威特被迫削减产量",
+        "海湾国家持续受攻击",
+        "航运保险崩溃",
+        "能源基础设施被直接打击",
+        "多国供应同时受损",
+        "伊朗炼油能力骤降30-50%",
+        "科威特减产",
+        "卡塔尔LNG受威胁",
+        "航运保险崩溃"
+      ],
+      "reasoning": "全球能源危机已从预测转为既成事实，多重供应端冲击同时发生，上调至接近确定",
+      "time_horizon": "持续至航线恢复",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:12:40.178638Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "oil_price_100": {
+      "id": "oil_price_100",
+      "label": "Brent突破$100/桶",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "能源",
+        "经济"
+      ],
+      "probability": 1.0,
+      "confidence": 1.0,
+      "evidence": [
+        "CNBC: Brent $92.69 (+8.52% Friday), WTI $90.90",
+        "Bloomberg: Brent hit $90 for first time in almost 2 years",
+        "CNBC: 35% weekly gain, largest in futures history since 1983",
+        "oilpriceapi: $92.69 as of 3/7 01:40 GMT",
+        "伊朗油库被炸",
+        "科威特减产",
+        "海湾地区全面冲突",
+        "净供应缺口扩大",
+        "德黑兰油库打击",
+        "科威特减产",
+        "海湾多国威胁",
+        "恐慌性囤油持续",
+        "2026-03-09 Brent突破$114/桶 (多源确认: CNBC/Guardian/NYT/AP)"
+      ],
+      "reasoning": "从0.85上调至0.92，供应端多重打击确认$100突破概率大幅上升",
+      "time_horizon": "W1-4",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "asia_refinery_cuts": {
+      "id": "asia_refinery_cuts",
+      "label": "亚洲炼厂因原油供应中断削减产能",
+      "node_type": "state",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.62,
+      "confidence": 0.75,
+      "evidence": [
+        "中石化/SK Energy减产公告",
+        "日本炼厂产能利用率数据"
+      ],
+      "reasoning": "定义: 亚洲主要炼厂(中日韩印)原油加工量合计下降>10%。当前: 供应中断已导致中东原油断供，但部分可从其他产地采购。75%反映替代采购的部分对冲。",
+      "time_horizon": "W2-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "qatar_lng_disrupted": {
+      "id": "qatar_lng_disrupted",
+      "label": "卡塔尔LNG出口受阻",
+      "node_type": "state",
+      "domains": [
+        "能源"
+      ],
+      "probability": 0.9,
+      "confidence": 0.85,
+      "evidence": [
+        "卡塔尔能源部声明",
+        "LNG现货价格数据",
+        "卡塔尔遭受10架伊朗无人机袭击",
+        "9架被拦截仍有1架可能命中",
+        "海湾安全局势全面恶化",
+        "卡塔尔遭10架无人机袭击，9架被拦截",
+        "IRGC独立行动持续",
+        "佩泽什基安条件性停火不确定"
+      ],
+      "reasoning": "从0.85上调至0.90，卡塔尔已遭直接攻击，LNG出口中断风险显著上升",
+      "time_horizon": "持续至航线恢复",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "coalition_forming": {
+      "id": "coalition_forming",
+      "label": "多国反伊朗军事联盟形成",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.35,
+      "confidence": 0.72,
+      "evidence": [
+        "五角大楼联合声明",
+        "英法舰队部署确认",
+        "科威特遭直接攻击",
+        "沙特阿联酋卡塔尔均遭袭击",
+        "海湾国家面临生死存亡压力",
+        "但伊朗条件性停打信号提供外交出口",
+        "全球反战压力削弱盟友意愿",
+        "巴基斯坦寻求中立",
+        "印尼国内压力",
+        "中国明确反对",
+        "全球反战示威削弱参与意愿",
+        "巴基斯坦寻求中立",
+        "海湾国家战略对冲"
+      ],
+      "reasoning": "反战示威+海湾国家对冲行为+中立化趋势共同削弱正式军事联盟形成概率",
+      "time_horizon": "W1-4",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "secondary_sanctions": {
+      "id": "secondary_sanctions",
+      "label": "美国发起二级制裁潮",
+      "node_type": "state",
+      "domains": [
+        "政治",
+        "经济"
+      ],
+      "probability": 0.85,
+      "confidence": 0.82,
+      "evidence": [
+        "美国财政部制裁名单",
+        "OFAC更新",
+        "俄伊情报合作报道",
+        "中国反对regime change",
+        "美国强化制裁信号"
+      ],
+      "reasoning": "盟友不配合+俄伊合作激活二级制裁扩大压力",
+      "time_horizon": "W2-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "irgc_nuclear": {
+      "id": "irgc_nuclear",
+      "label": "IRGC加速核武计划(突破90%浓缩铀)",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.58,
+      "confidence": 0.65,
+      "evidence": [
+        "冲突升级至能源基础设施层级",
+        "IRGC可能独立行动",
+        "美国政权更迭目标明确",
+        "核选项作为终极威慑逻辑增强"
+      ],
+      "reasoning": "冲突升级和存亡威胁增加IRGC推进核武的紧迫性，上调概率",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "kurdish_proxy": {
+      "id": "kurdish_proxy",
+      "label": "CIA武装库尔德人开辟地面战线",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.7,
+      "confidence": 0.68,
+      "evidence": [
+        "OSINT: 库尔德斯坦地区武器流入增加",
+        "情报评估",
+        "美国考虑武装伊朗库尔德人报道",
+        "巴格达使馆遭袭后寻求替代战线",
+        "历史教训警示但战略压力增大"
+      ],
+      "reasoning": "战略需求增加，美国加速推进库尔德代理人选项",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "china_energy_diplomacy": {
+      "id": "china_energy_diplomacy",
+      "label": "中国能源外交斡旋",
+      "node_type": "state",
+      "domains": [
+        "政治",
+        "能源"
+      ],
+      "probability": 0.75,
+      "confidence": 0.75,
+      "evidence": [
+        "NBC: Li谈5轮美中贸易谈判积极成果",
+        "经贸合作\"更稳定\"",
+        "中国不会因伊朗冒险与美国直接对抗",
+        "中国官方明确反对政权更迭",
+        "中国能源敞口风险激活",
+        "习近平外交压力"
+      ],
+      "reasoning": "中国从表态转向实质行动，能源外交斡旋概率从0.5升至0.75",
+      "time_horizon": "W2-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:12:40.178638Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "russia_energy_leverage": {
+      "id": "russia_energy_leverage",
+      "label": "俄罗斯借能源危机增加地缘杠杆",
+      "node_type": "state",
+      "domains": [
+        "政治",
+        "能源"
+      ],
+      "probability": 0.82,
+      "confidence": 0.78,
+      "evidence": [
+        "WaPo: Russia providing Iran targeting info on US warships/aircraft positions",
+        "CBS: \"pretty comprehensive effort\" to help Iran target US forces",
+        "Daily Mail: Iran own tracking weakened, relies on Russian intel",
+        "Kremlin: Peskov confirms \"dialogue\" with Iranian leadership",
+        "俄罗斯疑向伊朗提供情报",
+        "冲突延长增加俄能源议价空间",
+        "欧洲能源危机压力加大"
+      ],
+      "reasoning": "俄伊合作迹象强化俄罗斯地缘杠杆，上调概率",
+      "time_horizon": "持续",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "ceasefire_backchannel": {
+      "id": "ceasefire_backchannel",
+      "label": "停火后渠道谈判",
+      "node_type": "prediction",
+      "domains": [
+        "政治"
+      ],
+      "probability": 0.65,
+      "confidence": 0.68,
+      "evidence": [
+        "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
+        "Sky News: rules out diplomatic deal",
+        "ABC: new leadership must be installed",
+        "中国明确呼吁停火",
+        "伊朗总统发出条件性信号",
+        "但IRGC独立行动使停火信号失效",
+        "美国坚持政权更迭目标",
+        "佩泽什基安发出条件性停火信号",
+        "中国明确反对政权更迭并呼吁停火",
+        "平民伤亡叙事加强谈判压力",
+        "中国明确反对政权更迭",
+        "伊朗总统发出条件性信号",
+        "中国外交斡旋压力增大",
+        "全球反战压力上升",
+        "中国明确呼吁停火谈判",
+        "伊朗总统发出条件性停止信号",
+        "IRGC独立行动制约谈判有效性",
+        "中国明确反对政权更迭并呼吁停火",
+        "伊朗总统发出条件性停打信号",
+        "平民伤亡叙事强化国际压力",
+        "中国明确呼吁停火谈判",
+        "伊朗总统发出条件性信号",
+        "但IRGC持续行动抵消",
+        "中国明确反对政权更迭并呼吁谈判",
+        "伊朗总统发出条件性停止信号（尽管可信度低）",
+        "全球反战压力上升",
+        "全球南方合法性批评提供外交空间"
+      ],
+      "reasoning": "多方停火压力源汇聚，中国表态强硬为谈判提供外交保护伞，尽管IRGC阻力依然存在，后台接触渠道开放概率上升，从0.55上调至0.65",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "conflict_protracted": {
+      "id": "conflict_protracted",
+      "label": "冲突持续超过2个月",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.55,
+      "confidence": 0.92,
+      "evidence": [
+        "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
+        "BBC: \"firepower over Iran to surge dramatically\"",
+        "Trump: military doing \"phenomenally\"",
+        "Independent: \"this could go on for quite some time\"",
+        "冲突进入第9天仍持续升级",
+        "美军出现阵亡",
+        "以色列扩大打击范围",
+        "IRGC可能独立行动",
+        "中美俄均已介入外交",
+        "美以持续扩大打击范围至能源设施",
+        "IRGC独立行动",
+        "战争已进入第9天升级而非降级",
+        "战事进入第9天持续升级",
+        "IRGC独立行动",
+        "伊朗总统条件性停火未被接受",
+        "美国明确政权更迭意图",
+        "IRGC独立行动与总统信号背离",
+        "战事进入第九天仍升级",
+        "美军阵亡强化报复压力",
+        "内塔尼亚胡宣誓继续打击",
+        "内塔尼亚胡誓言持续打击",
+        "战争进入第9天无降级迹象",
+        "IRGC独立行动持续"
+      ],
+      "reasoning": "双方领导层均显示无意停战，IRGC脱离总统控制独立行动使停火更加复杂",
+      "time_horizon": "W8+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "us_ground_war": {
+      "id": "us_ground_war",
+      "label": "美军地面部队入伊朗",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.48,
+      "confidence": 0.65,
+      "evidence": [
+        "Wikipedia: US expressed reluctance to deploy ground troops",
+        "Trump: virtually unlimited supply of heavy weaponry",
+        "Air campaign preferred",
+        "俘虏争议存在",
+        "美军阵亡激化升级压力",
+        "库尔德代理人战线正在推进",
+        "但空中打击仍是主要手段",
+        "俘虏争议持续发酵",
+        "美军伤亡累积",
+        "regime change目标明确"
+      ],
+      "reasoning": "伤亡+俘虏争议+regime change目标组合推升地面战压力，概率上升",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "europe_energy_crisis": {
+      "id": "europe_energy_crisis",
+      "label": "欧洲爆发第二次能源危机(TTF>€80)",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "经济",
+        "金融"
+      ],
+      "probability": 0.9,
+      "confidence": 0.85,
+      "evidence": [
+        "卡塔尔LNG供应威胁升级",
+        "油价上涨压力加大",
+        "俄能源杠杆增强",
+        "卡塔尔LNG威胁升级",
+        "德黑兰油库打击加深供应缺口",
+        "俄罗斯能源杠杆持续",
+        "卡塔尔LNG出口受阻概率上升",
+        "TTF现货价格上涨",
+        "欧洲储气库耗尽风险",
+        "2026-03-09 卡塔尔LNG中断+油价$114=欧洲能源危机2.0加速兑现"
+      ],
+      "reasoning": "卡塔尔LNG受威胁叠加俄罗斯能源杠杆，欧洲能源危机概率从0.78升至0.88",
+      "time_horizon": "W2-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "global_stagflation": {
+      "id": "global_stagflation",
+      "label": "全球经济进入滞胀(通胀>4%+GDP<1%)",
+      "node_type": "prediction",
+      "domains": [
+        "经济",
+        "金融"
+      ],
+      "probability": 0.88,
+      "confidence": 0.82,
+      "evidence": [
+        "能源价格持续上涨",
+        "多国供应中断",
+        "航空成本上升",
+        "全球经济面临多重冲击",
+        "油价向$110突破",
+        "多重供应中断",
+        "输入性通胀传导链条激活",
+        "油价向$110加速",
+        "航空成本量化确认",
+        "输入性通胀传导加速",
+        "企业盈利下修",
+        "油价$110阈值概率上调",
+        "航空成本激增量化",
+        "全球贸易路线重组成本永久抬升",
+        "供应缺口持续扩大",
+        "2026-03-09 油价暴涨+股市暴跌+VIX期限倒挂=滞胀信号全面亮灯"
+      ],
+      "reasoning": "能源冲击强度和持续时间双重上调，$110油价路径叠加航运重组成本，滞胀路径从0.78上调至0.85",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "fed_dilemma": {
+      "id": "fed_dilemma",
+      "label": "美联储两难(通胀vs增长)",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "经济"
+      ],
+      "probability": 0.82,
+      "confidence": 0.78,
+      "evidence": [
+        "滞胀概率上修",
+        "油价向$110加速",
+        "美国国内政治压力上升",
+        "全球滞胀概率上调",
+        "汽油价格飙升已发生",
+        "通胀预期脱锚风险上升"
+      ],
+      "reasoning": "通胀压力更为确定，增长下行风险同步上升，美联储两难概率从0.72上调至0.82",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "em_debt_crisis": {
+      "id": "em_debt_crisis",
+      "label": "新兴市场出现主权债务危机",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "经济",
+        "社会"
+      ],
+      "probability": 0.65,
+      "confidence": 0.7,
+      "evidence": [
+        "新兴市场资本外流加速",
+        "油价上涨冲击能源进口国",
+        "美元避险走强",
+        "滞胀概率上调",
+        "资本外流压力增大",
+        "油价$110阈值临近",
+        "美元持续走强"
+      ],
+      "reasoning": "能源进口型新兴市场双重打击（油价+美元）同步恶化，主权债务危机概率从0.55上调至0.65",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "equity_correction": {
+      "id": "equity_correction",
+      "label": "全球股市回调(S&P -5%+)",
+      "node_type": "prediction",
+      "domains": [
+        "金融"
+      ],
+      "probability": 0.98,
+      "confidence": 0.95,
+      "evidence": [
+        "Yahoo Finance: S&P -1.3% Friday, -2% weekly, NEGATIVE for the year",
+        "ABC: Dow -453 points (-0.9%)",
+        "Nasdaq -1.6%",
+        "Seeking Alpha: S&P has -7% to -10% downside buffer",
+        "能源价格急剧上升",
+        "美军阵亡升级风险",
+        "盈利预期下修加速",
+        "全球航空成本上升",
+        "企业盈利下修加速",
+        "航空业损失量化",
+        "能源危机确认",
+        "全球滞胀概率上升",
+        "美军首批阵亡6人",
+        "德黑兰持续遭袭",
+        "企业盈利预期下修加速",
+        "IRGC独立行动",
+        "2026-03-09 S&P期货-2.1%, 累计从高点回撤将达-5.5%; Nikkei-7%; Dow期货-1000点",
+        "2026-03-09 S&P期货盘前-2%，Dow期货-1100点，S&P从高点回撤-3.4%→预计开盘扩大至-5%+",
+        "2026-03-09 S&P futures -1.5~2%(CNBC), 叠加上周-1.98%, 累计回撤接近-5%"
+      ],
+      "reasoning": "冲突升级超出前期预期，企业盈利下修叠加政治不确定性，股市回调概率从0.85上调至0.92",
+      "time_horizon": "W1-4",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T07:24:46.895579Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "safe_haven_rally": {
+      "id": "safe_haven_rally",
+      "label": "避险资产(黄金/美元)持续跑赢",
+      "node_type": "state",
+      "domains": [
+        "金融"
+      ],
+      "probability": 0.85,
+      "confidence": 0.82,
+      "evidence": [
+        "Gold -1% to ,080",
+        "Gold futures ,098",
+        "Treasury yields连涨4天",
+        "DXY走强压制黄金",
+        "地缘风险持续升级",
+        "股市回调概率上升",
+        "全球避险情绪强化",
+        "避险需求系统性上升",
+        "美军伤亡确认",
+        "油价持续上行",
+        "滞胀预期强化"
+      ],
+      "reasoning": "多重确认性事件强化避险需求，黄金/美元持续跑赢概率从0.72上调至0.85",
+      "time_horizon": "持续",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "treasury_stagflation": {
+      "id": "treasury_stagflation",
+      "label": "美债定价滞胀(10Y>4%)",
+      "node_type": "state",
+      "domains": [
+        "金融"
+      ],
+      "probability": 0.62,
+      "confidence": 0.7,
+      "evidence": [
+        "Treasury yields连涨4天",
+        "Fed降息预期推迟",
+        "油价推高通胀预期",
+        "美联储两难概率上调",
+        "滞胀路径确认",
+        "油价$110向$120挑战"
+      ],
+      "reasoning": "10Y美债>4%定价滞胀概率从0.48上调至0.62，通胀预期上行主导",
+      "time_horizon": "W2-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "food_price_surge": {
+      "id": "food_price_surge",
+      "label": "全球粮食价格飙升(化肥传导链)",
+      "node_type": "prediction",
+      "domains": [
+        "经济",
+        "社会"
+      ],
+      "probability": 0.78,
+      "confidence": 0.72,
+      "evidence": [
+        "油价上涨推高化肥/运输成本",
+        "航运绕行增加粮食运输成本",
+        "新兴市场货币贬值",
+        "能源成本传导化肥价格",
+        "全球贸易路线重组",
+        "航运成本永久抬升"
+      ],
+      "reasoning": "能源→化肥→农业成本传导链更加清晰，粮食价格飙升概率从0.68上调至0.78",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "trade_route_reshuffle": {
+      "id": "trade_route_reshuffle",
+      "label": "全球能源贸易路线重组",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.75,
+      "confidence": 0.72,
+      "evidence": [
+        "霍尔木兹实质封锁",
+        "伊朗空域关闭",
+        "海湾多条航线中断"
+      ],
+      "reasoning": "从0.65上调至0.75，多条关键通道同时受阻，贸易路线重组确定性上升",
+      "time_horizon": "W4-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "iran_internal_crisis": {
+      "id": "iran_internal_crisis",
+      "label": "伊朗爆发大规模反政府抗议",
+      "node_type": "prediction",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.85,
+      "confidence": 0.82,
+      "evidence": [
+        "Al Jazeera: Iranian Red Crescent death toll 1,332 since start",
+        "Wikipedia: HRANA estimates 7,000 dead",
+        "US engineered dollar shortage → rial freefall → protests",
+        "首都油库爆炸",
+        "1332人死亡",
+        "能源基础设施被摧毁",
+        "儿童伤亡引发人道主义关注",
+        "能源基础设施被打击",
+        "炼油能力受损导致燃油短缺",
+        "1332人死亡激化民众情绪",
+        "持续轰炸首都",
+        "伊朗炼油能力骤降导致国内燃料短缺",
+        "德黑兰油库爆炸引发城市恐慌",
+        "IRGC独立行动与总统停火信号矛盾公开化",
+        "1332人死亡叙事激化民众悲愤"
+      ],
+      "reasoning": "燃料短缺+城市轰炸+体制内矛盾公开化构成抗议爆发的三重条件，历史上2019年伊朗抗议正是由燃料价格上涨触发，当前条件远更严峻，概率从0.75上调至0.85",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "eu_defense_surge": {
+      "id": "eu_defense_surge",
+      "label": "欧洲防务开支加速(GDP 2%+)",
+      "node_type": "prediction",
+      "domains": [
+        "政治",
+        "经济"
+      ],
+      "probability": 0.6,
+      "confidence": 0.65,
+      "evidence": [],
+      "reasoning": "定义: ≥3个欧盟主要成员国宣布国防预算提升至GDP 2%+。60%。",
+      "time_horizon": "W8-24+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "refugee_wave": {
+      "id": "refugee_wave",
+      "label": "中东难民潮涌入欧洲(≥50万)",
+      "node_type": "prediction",
+      "domains": [
+        "社会",
+        "政治"
+      ],
+      "probability": 0.72,
+      "confidence": 0.75,
+      "evidence": [
+        "1332人死亡",
+        "德黑兰平民疏散",
+        "伊朗国内燃料危机初现",
+        "德黑兰持续遭轰炸推动城市平民流离",
+        "伊朗国内燃料危机加剧生活条件恶化",
+        "海湾地区攻击推动跨国移民压力",
+        "冲突进入第二周无停火迹象"
+      ],
+      "reasoning": "多重推力叠加：伊朗城市轰炸+燃料危机+海湾社会恐慌，难民潮从潜在威胁转向实际发生阶段，概率从0.58上调至0.72",
+      "time_horizon": "W12-24+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "us_domestic_pressure": {
+      "id": "us_domestic_pressure",
+      "label": "美国国内政治反弹(汽油>$5)",
+      "node_type": "prediction",
+      "domains": [
+        "政治",
+        "金融"
+      ],
+      "probability": 0.95,
+      "confidence": 0.92,
+      "evidence": [
+        "6名士兵遗体已运回美国",
+        "伊朗俘虏争议持续",
+        "汽油价格上涨",
+        "国内反战压力",
+        "阵亡士兵遗体仪式引发关注",
+        "俘虏争议持续",
+        "汽油价格上涨压力",
+        "2026-03-09 油价$114+意味着美国汽油将迅速突破$5/加仑; Trump称\"small price to pay\"",
+        "2026-03-09 Brent$106+→美国汽油零售价将突破$5(NPR/CNBC)"
+      ],
+      "reasoning": "多重压力因素同步激活，国内政治反弹概率显著提升",
+      "time_horizon": "W4-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T07:24:46.895579Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "credit_tightening": {
+      "id": "credit_tightening",
+      "label": "高收益债利差走阔>500bp",
+      "node_type": "prediction",
+      "domains": [
+        "金融"
+      ],
+      "probability": 0.52,
+      "confidence": 0.65,
+      "evidence": [
+        "高收益债发行人中能源密集型占比高",
+        "股市回调加速",
+        "滞胀预期系统性上升"
+      ],
+      "reasoning": "信用利差走阔驱动因素全面强化，高收益债>500bp概率从0.35上调至0.52",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "cny_depreciation": {
+      "id": "cny_depreciation",
+      "label": "人民币有序贬值突破7.0",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "外汇"
+      ],
+      "probability": 0.38,
+      "confidence": 0.55,
+      "evidence": [],
+      "reasoning": "定义: USD/CNY突破7.50(离岸)且PBOC允许有序贬值(非急跌)。48%因PBOC有充足外储和管理工具。",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "jpy_carry_unwind": {
+      "id": "jpy_carry_unwind",
+      "label": "日元套利交易大规模平仓(USD/JPY<150)",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "外汇"
+      ],
+      "probability": 0.35,
+      "confidence": 0.45,
+      "evidence": [],
+      "reasoning": "定义: USD/JPY从高位回落>10%(如165→148)且日本投资者大规模赎回海外资产。38%因BOJ仍在管理曲线。",
+      "time_horizon": "W2-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "euro_parity": {
+      "id": "euro_parity",
+      "label": "欧元跌破对美元平价",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "外汇"
+      ],
+      "probability": 0.48,
+      "confidence": 0.62,
+      "evidence": [
+        "欧洲能源危机概率维持高位",
+        "美元避险需求上升",
+        "ECB与Fed政策分化加剧"
+      ],
+      "reasoning": "欧元承压因素增强，能源冲击叠加避险美元需求，欧元平价概率从0.38上调至0.48",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "conflict_deescalation": {
+      "id": "conflict_deescalation",
+      "label": "冲突降级/部分停火",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治",
+        "能源"
+      ],
+      "probability": 0.03,
+      "confidence": 0.85,
+      "evidence": [
+        "IRGC独立行动使停打信号失效",
+        "能源基础设施打击激化报复",
+        "美军出现伤亡",
+        "以色列扩大打击范围",
+        "佩泽什基安条件性停火",
+        "但IRGC独立行动持续",
+        "美以继续扩大打击目标至能源设施",
+        "能源基础设施打击升级",
+        "内塔尼亚胡regime change宣誓",
+        "IRGC拒绝停火信号",
+        "2026-03-09 Trump提交战争授权决议+Netanyahu誓言继续=停火窗口进一步缩小",
+        "2026-03-09 Mojtaba(强硬派)继位+Trump拒绝和谈=停火窗口进一步收窄",
+        "2026-03-09 强硬派Mojtaba继任+Trump拒绝停火谈判=降级概率进一步下降"
+      ],
+      "reasoning": "战争升级至能源基础设施层面后降级概率大幅下降",
+      "time_horizon": "W12-24+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T07:24:46.895579Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "turkey_intervention": {
+      "id": "turkey_intervention",
+      "label": "土耳其因库尔德问题介入风险",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.35,
+      "confidence": 0.65,
+      "evidence": [
+        "贝鲁特IRGC指挥官被清除（临近土叙边境影响）",
+        "库尔德武装计划",
+        "冲突外溢持续"
+      ],
+      "reasoning": "IRGC域外网络被打击可能改变土耳其安全计算，概率小幅上升",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "em_food_riots": {
+      "id": "em_food_riots",
+      "label": "新兴市场爆发食品价格骚乱(≥3国)",
+      "node_type": "prediction",
+      "domains": [
+        "社会"
+      ],
+      "probability": 0.42,
+      "confidence": 0.6,
+      "evidence": [
+        "全球粮食价格飙升趋势确认",
+        "能源成本传导至化肥价格",
+        "新兴市场外汇储备承压"
+      ],
+      "reasoning": "粮食价格压力在能源危机持续情况下累积，但需要3-6个月传导，短期30天内概率适度上调，从0.28至0.42",
+      "time_horizon": "W12-24+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "ecb_rate_reversal": {
+      "id": "ecb_rate_reversal",
+      "label": "ECB从降息转向加息",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "经济"
+      ],
+      "probability": 0.42,
+      "confidence": 0.62,
+      "evidence": [
+        "欧洲能源危机深化",
+        "油价$110阈值临近",
+        "TTF天然气价格压力"
+      ],
+      "reasoning": "欧洲通胀复燃压力增强，ECB从降息转加息概率从0.28上调至0.42",
+      "time_horizon": "W8-24",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "wartime_capital_controls": {
+      "id": "wartime_capital_controls",
+      "label": "战时经济政策(回购限制/产能管制)",
+      "node_type": "prediction",
+      "domains": [
+        "政治",
+        "经济"
+      ],
+      "probability": 0.28,
+      "confidence": 0.55,
+      "evidence": [
+        "美国国内政治压力上升",
+        "战争成本超$50亿",
+        "冲突持续超2个月概率上调"
+      ],
+      "reasoning": "战时经济政策条件持续积累，概率从0.18上调至0.28",
+      "time_horizon": "W16-24+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "oil_new_equilibrium": {
+      "id": "oil_new_equilibrium",
+      "label": "原油市场找到新均衡($85-100区间)",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "金融"
+      ],
+      "probability": 0.45,
+      "confidence": 0.45,
+      "evidence": [],
+      "reasoning": "定义: Brent在$85-100区间波动>4周且波动率(ATM implied vol)回落至冲突前+50%以内。45%。",
+      "time_horizon": "W8-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "europe_right_wing": {
+      "id": "europe_right_wing",
+      "label": "欧洲右翼政党显著上升(+5%)",
+      "node_type": "prediction",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.35,
+      "confidence": 0.45,
+      "evidence": [],
+      "reasoning": "定义: 欧洲右翼/民粹政党在选举或民调中较冲突前上升>5pp(受能源价格和难民推动)。40%。",
+      "time_horizon": "W12-24+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "eu_nuclear_umbrella": {
+      "id": "eu_nuclear_umbrella",
+      "label": "法德启动欧洲核保护伞计划",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.3,
+      "confidence": 0.35,
+      "evidence": [],
+      "reasoning": "定义: 法德联合提出欧洲独立核威慑计划(超越现有英法独立核力量框架)。30%因政治阻力极大。",
+      "time_horizon": "W16+",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "crypto_risk_correlation": {
+      "id": "crypto_risk_correlation",
+      "label": "加密资产与风险资产保持高相关性",
+      "node_type": "state",
+      "domains": [
+        "金融"
+      ],
+      "probability": 0.6,
+      "confidence": 0.55,
+      "evidence": [
+        "BTC跌破$66K",
+        "BTC-SPX 90日相关系数>0.6"
+      ],
+      "reasoning": "定义: BTC与S&P 500的30日滚动相关系数>0.6。60%。",
+      "time_horizon": "持续",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "created": "2026-03-06T14:31:59.393633Z"
+    },
+    "supply_disruption_volume": {
+      "id": "supply_disruption_volume",
+      "label": "波斯湾石油/LNG出口中断量",
+      "node_type": "state",
+      "domains": [
+        "能源"
+      ],
+      "probability": 0.99,
+      "confidence": 0.95,
+      "evidence": [
+        "霍尔木兹日均通行17mbpd石油",
+        "全球25%LNG经此通过",
+        "OPEC+波斯湾产能~20mbpd",
+        "伊朗产能受损",
+        "科威特减产",
+        "多国设施遭袭",
+        "霍尔木兹封锁",
+        "伊朗炼油骤降",
+        "科威特减产确认",
+        "卡塔尔受无人机威胁",
+        "霍尔木兹海峡事实封锁",
+        "伊朗出口中断",
+        "科威特减产",
+        "霍尔木兹封锁",
+        "海湾设施受袭"
+      ],
+      "reasoning": "多国供应同时中断，供应扰动量已确认为历史级别",
+      "time_horizon": "持续至封锁缓解",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:12:40.178638Z",
+      "created": "2026-03-07T01:01:30.106816Z"
+    },
+    "supply_offset_capacity": {
+      "id": "supply_offset_capacity",
+      "label": "替代供应对冲能力(SPR+绕行+增产)",
+      "node_type": "state",
+      "domains": [
+        "能源"
+      ],
+      "probability": 0.55,
+      "confidence": 0.5,
+      "evidence": [
+        "美国SPR 3.7亿桶(约60天@6mbpd释放)",
+        "好望角绕行加10-15天+运费翻倍",
+        "沙特东西管道~5mbpd",
+        "OPEC+闲置产能<2mbpd"
+      ],
+      "reasoning": "定义: 通过替代手段能覆盖多少中断量。SPR是应急(有限)、绕行是部分(增加成本)、东西管道是瓶颈(5mbpd)、增产空间极小。综合覆盖率估计30-40%。概率55%反映替代机制能发挥但不足以避免危机。",
+      "time_horizon": "W1-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T01:01:30.106816Z",
+      "created": "2026-03-07T01:01:30.106816Z"
+    },
+    "net_supply_gap": {
+      "id": "net_supply_gap",
+      "label": "全球石油净供应缺口(>3mbpd)",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.98,
+      "confidence": 0.95,
+      "evidence": [
+        "中断量~15mbpd - 替代覆盖~5mbpd = 净缺口~10mbpd",
+        "即使最乐观替代也无法填补",
+        "IEA紧急释放历史上仅3次",
+        "伊朗产能直接受损",
+        "科威特减产",
+        "霍尔木兹事实封锁",
+        "多国能源设施受攻击",
+        "伊朗炼油骤降+科威特减产+海湾威胁",
+        "全球供应替代能力有限",
+        "伊朗出口中断",
+        "科威特减产",
+        "霍尔木兹封锁",
+        "替代供应跟不上节奏",
+        "2026-03-09 伊拉克产量-70%+Hormuz封锁+伊朗产能受损=全球供应缺口确认>3mbpd"
+      ],
+      "reasoning": "缺口已超3mbpd目标值，概率接近确定",
+      "time_horizon": "W1-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-07T01:01:30.106816Z"
+    },
+    "input_inflation_transmission": {
+      "id": "input_inflation_transmission",
+      "label": "输入性通胀传导(能源→PPI→CPI)",
+      "node_type": "state",
+      "domains": [
+        "经济",
+        "能源"
+      ],
+      "probability": 0.72,
+      "confidence": 0.75,
+      "evidence": [
+        "油价涨10%→CPI涨0.2-0.4pp(历史经验)",
+        "化肥/运输/石化全链受影响",
+        "但核心CPI传导有6-12月滞后",
+        "油价持续上涨",
+        "航空成本激增",
+        "能源基础设施被破坏"
+      ],
+      "reasoning": "从0.62上调至0.72，多重能源成本上涨来源确认，向PPI/CPI传导加速",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-07T01:09:27.227473Z"
+    },
+    "earnings_downgrade": {
+      "id": "earnings_downgrade",
+      "label": "企业盈利预期下修(能源成本冲击)",
+      "node_type": "prediction",
+      "domains": [
+        "金融",
+        "经济"
+      ],
+      "probability": 0.58,
+      "confidence": 0.55,
+      "evidence": [
+        "能源成本占S&P企业成本~5-8%",
+        "航空/化工/运输直接受冲击",
+        "但能源/军工板块受益对冲"
+      ],
+      "reasoning": "定义: 华尔街对S&P 500未来12个月EPS预期下修>5%。72%因能源冲击确定但板块分化(能源/军工受益)。",
+      "time_horizon": "W4-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T01:09:27.227473Z",
+      "created": "2026-03-07T01:09:27.227473Z"
+    },
+    "gasoline_price_surge": {
+      "id": "gasoline_price_surge",
+      "label": "美国汽油零售价飙升(>$5/加仑)",
+      "node_type": "prediction",
+      "domains": [
+        "经济",
+        "政治"
+      ],
+      "probability": 0.78,
+      "confidence": 0.75,
+      "evidence": [
+        "Brent $89→美国汽油~$4.2(当前)",
+        "若Brent破$100→汽油$4.8-5.2",
+        "精炼利润率扩张加速零售端涨幅",
+        "2026-03-09 Brent$114→美国汽油零售价2-3周内将达$5+"
+      ],
+      "reasoning": "定义: 美国汽油均价突破$5/加仑(AAA口径)。65%因Brent尚未破百，但传导滞后+精炼瓶颈可能加速。",
+      "time_horizon": "W2-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-07T01:09:27.227473Z"
+    },
+    "em_capital_outflow": {
+      "id": "em_capital_outflow",
+      "label": "新兴市场资本外流加速",
+      "node_type": "state",
+      "domains": [
+        "金融",
+        "经济"
+      ],
+      "probability": 0.72,
+      "confidence": 0.75,
+      "evidence": [
+        "DXY走强→EM资金流出",
+        "US yield上升→套利逆转",
+        "地缘风险→risk-off→EM首当其冲",
+        "美元走强",
+        "美债收益率上行",
+        "新兴市场经常账户恶化"
+      ],
+      "reasoning": "资本外流多重驱动因素同步强化，概率从0.55上调至0.72",
+      "time_horizon": "W2-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-07T01:09:27.227473Z"
+    },
+    "eu_cost_of_living_crisis": {
+      "id": "eu_cost_of_living_crisis",
+      "label": "欧洲生活成本危机(能源账单翻倍)",
+      "node_type": "prediction",
+      "domains": [
+        "经济",
+        "社会"
+      ],
+      "probability": 0.55,
+      "confidence": 0.5,
+      "evidence": [
+        "TTF若>€80→家庭能源支出占比>10%",
+        "2022能源危机已耗尽多数国家财政缓冲",
+        "但补贴政策可延缓"
+      ],
+      "reasoning": "定义: 欧洲家庭能源支出占可支配收入比例>10%(部分国家>15%)。55%因政府补贴可能延缓但财政空间有限。",
+      "time_horizon": "W8-20",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T01:09:27.227473Z",
+      "created": "2026-03-07T01:09:27.227473Z"
+    },
+    "cyber_attack": {
+      "id": "cyber_attack",
+      "label": "伊朗对美/以关键基础设施网络攻击",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "科技"
+      ],
+      "probability": 0.62,
+      "confidence": 0.65,
+      "evidence": [
+        "2012 Shamoon攻击沙特阿美(破坏3万台电脑)",
+        "伊朗APT33/APT34有对能源和金融的攻击能力",
+        "常规战争失利时网络战是低成本升级路径",
+        "IRGC独立行动概率升至0.85",
+        "伊朗导弹能力受损增加网络非对称报复动机",
+        "伊朗炼油能力骤降制约但不消除网络能力"
+      ],
+      "reasoning": "IRGC在政治控制减弱下倾向网络攻击作为非对称手段，但物理基础设施损毁对能力形成约束，两力博弈后净概率小幅上升",
+      "time_horizon": "W2-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-07T04:00:39.567610Z"
+    },
+    "us_military_casualties": {
+      "id": "us_military_casualties",
+      "label": "美军遭受重大伤亡事件(单次>50人)",
+      "node_type": "prediction",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.95,
+      "confidence": 0.97,
+      "evidence": [
+        "50K部队+2航母部署在打击范围内",
+        "俄罗斯提供伊朗美军位置情报",
+        "但: 美军防空/反舰能力极强, 伊朗精确打击能力被削弱",
+        "6名美军士兵确认阵亡",
+        "遗体由特朗普亲自迎回",
+        "巴格达使馆遭袭",
+        "俘虏争议存在",
+        "6名士兵阵亡已确认",
+        "特朗普出席遗体接收仪式",
+        "伊朗持续攻击美军资产"
+      ],
+      "reasoning": "美军伤亡已成事实，且攻击持续，后续伤亡高度确定",
+      "time_horizon": "W1-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-07T04:00:39.567610Z"
+    },
+    "aviation_demand_cut": {
+      "id": "aviation_demand_cut",
+      "label": "航空需求削减(中东航线停飞+全球缩减)",
+      "node_type": "state",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.93,
+      "confidence": 0.9,
+      "evidence": [
+        "Wizz Air取消中东航线(-€50M)",
+        "easyJet -5%",
+        "多国航空公司取消中东航班",
+        "航油占航空成本30-40%，Brent>$90使短途不经济",
+        "伊朗空域完全关闭",
+        "全球航班被迫绕行",
+        "经济成本大幅增加",
+        "中东航线停飞确认",
+        "伊朗空域已完全关闭确认",
+        "半岛电视台数据分析绕行成本",
+        "亚欧航线强制绕行"
+      ],
+      "reasoning": "从0.88上调至0.93，空域关闭确认且持续，绕行成本已造成实质性需求冲击",
+      "time_horizon": "W1-8",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-07T04:02:36.321005Z"
+    },
+    "industrial_demand_cut": {
+      "id": "industrial_demand_cut",
+      "label": "工业需求削减(化工/制造减产)",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.48,
+      "confidence": 0.45,
+      "evidence": [
+        "石脑油是化工核心原料，油价>$90使石化利润倒挂",
+        "2022欧洲能源危机时BASF等化工巨头已减产20-30%",
+        "但: 减产决策有2-4周滞后"
+      ],
+      "reasoning": "定义: 全球石化/重工业因能源成本削减产能>10%。48%因需要油价持续>$90超过3-4周才触发减产决策，目前仅1周。",
+      "time_horizon": "W4-16",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T04:02:36.321005Z",
+      "created": "2026-03-07T04:02:36.321005Z"
+    },
+    "consumer_demand_cut": {
+      "id": "consumer_demand_cut",
+      "label": "消费需求收缩(少开车/节能/替代)",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "经济",
+        "社会"
+      ],
+      "probability": 0.42,
+      "confidence": 0.4,
+      "evidence": [
+        "美国汽油>$5/加仑历史上导致VMT(车辆行驶里程)下降3-5%",
+        "消费者行为改变有2-8周滞后",
+        "但: 短期内刚性需求(通勤)难以压缩"
+      ],
+      "reasoning": "定义: 美国VMT同比下降>3% 或 全球公路运输燃油需求下降>5%。42%因消费者行为改变慢，且当前汽油尚未破$5(我们给55%破$5概率)。",
+      "time_horizon": "W4-20",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T04:02:36.321005Z",
+      "created": "2026-03-07T04:02:36.321005Z"
+    },
+    "panic_inventory_build": {
+      "id": "panic_inventory_build",
+      "label": "恐慌性囤油(短期推高需求)",
+      "node_type": "state",
+      "domains": [
+        "能源",
+        "金融"
+      ],
+      "probability": 0.92,
+      "confidence": 0.88,
+      "evidence": [
+        "历史上每次供应中断首先触发囤货(2019沙特遇袭后1周)",
+        "亚洲炼厂已在抢购非中东原油",
+        "投机持仓创多年新高",
+        "能源基础设施遭打击",
+        "多国供应中断",
+        "科威特减产",
+        "市场恐慌情绪高涨",
+        "能源基础设施被打击触发市场恐慌",
+        "多个供应中断来源同时出现",
+        "储油设施被毁减少储备容量"
+      ],
+      "reasoning": "从0.88上调至0.92，能源设施打击触发更强烈的囤油预期",
+      "time_horizon": "W1-4",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-07T04:02:36.321005Z"
+    },
+    "aggregate_demand_destruction": {
+      "id": "aggregate_demand_destruction",
+      "label": "全球石油需求净减少(>2mbpd)",
+      "node_type": "prediction",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.4,
+      "confidence": 0.4,
+      "evidence": [
+        "航空-0.8mbpd + 工业-1.0mbpd + 消费-0.5mbpd = 潜在-2.3mbpd",
+        "但: 恐慌囤油短期+0.5-1.0mbpd抵消部分削减",
+        "净效应取决于时间: 1-4周囤油主导, 4周+减产主导"
+      ],
+      "reasoning": "定义: 全球石油需求较冲突前净减少>2mbpd(IEA月报口径)。40%因航空削减已发生但工业和消费需要4周+才能显现，且恐慌囤油短期抵消。注意: 这是时间依赖的——早期需求可能反而上升(囤油)，后期才下降。",
+      "time_horizon": "W4-20",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T04:02:36.321005Z",
+      "created": "2026-03-07T04:02:36.321005Z"
+    },
+    "govt_demand_intervention": {
+      "id": "govt_demand_intervention",
+      "label": "政府需求端干预(燃油税减免/补贴/限价)",
+      "node_type": "prediction",
+      "domains": [
+        "政治",
+        "经济"
+      ],
+      "probability": 0.55,
+      "confidence": 0.5,
+      "evidence": [
+        "2022: 德国€9公交票/法国燃油补贴/美国联邦汽油税讨论",
+        "Trump: 不太可能搞补贴(小政府),但可能威胁炼厂暴利税",
+        "欧洲更可能出补贴(已有2022先例)"
+      ],
+      "reasoning": "定义: ≥3个G20国家实施燃油补贴/税减/限价措施。55%因有2022先例且政治压力大,但实施需要2-4周立法/行政流程。",
+      "time_horizon": "W3-12",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-07T04:02:36.321005Z",
+      "created": "2026-03-07T04:02:36.321005Z"
+    },
+    "iran_energy_infra_strikes": {
+      "id": "iran_energy_infra_strikes",
+      "label": "美以打击伊朗能源基础设施(德黑兰油库/炼油厂)",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 1.0,
+      "confidence": 0.98,
+      "evidence": [
+        "以色列对德黑兰沙赫兰油库实施空袭",
+        "美以联军轰炸德黑兰5处石油储存设施",
+        "阿尔博尔兹省4处储油设施及1处生产转运中心被打击",
+        "战争第9天以色列首次打击能源基础设施",
+        "德黑兰五处油库/炼油厂确认被打击",
+        "战争第9天首次能源基础设施打击已发生"
+      ],
+      "reasoning": "事件已发生确认，概率维持1.0，置信度提升至0.98",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "iran_kuwait_drone_attack": {
+      "id": "iran_kuwait_drone_attack",
+      "label": "伊朗无人机袭击科威特政府设施",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "科威特公共社会保障机构大楼起火",
+        "伊朗无人机袭击科威特报道",
+        "科威特被迫削减石油产量"
+      ],
+      "reasoning": "伊朗无人机已实质攻击科威特境内目标，冲突溢出至海湾国家领土",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "kuwait_oil_production_cut": {
+      "id": "kuwait_oil_production_cut",
+      "label": "科威特被迫削减石油产量",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 1.0,
+      "confidence": 0.9,
+      "evidence": [
+        "科威特因伊朗攻击储油空间受限",
+        "被迫未来数日持续削减产量"
+      ],
+      "reasoning": "直接能源供应减少，强化供应缺口",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "us_soldiers_killed_iran": {
+      "id": "us_soldiers_killed_iran",
+      "label": "美军首批阵亡(6人伊朗无人机)",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "特朗普出席迎回6名阵亡士兵遗体仪式",
+        "伊朗无人机袭击致美军死亡",
+        "遗体从科威特运回"
+      ],
+      "reasoning": "美军首批确认阵亡，显著提升政治压力与升级风险",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "iran_pow_dispute": {
+      "id": "iran_pow_dispute",
+      "label": "美伊就美军俘虏信息存在严重争议",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.88,
+      "confidence": 0.85,
+      "evidence": [
+        "伊朗国安委声称俘获美军",
+        "特朗普政府予以否认",
+        "双方信息冲突严重",
+        "特朗普政府否认但伊朗持续声称",
+        "双方信息严重冲突",
+        "伊朗国安委负责人公开表态"
+      ],
+      "reasoning": "双方矛盾公开化且无法核实，政治毒性持续发酵",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "iran_sub_vessel_sunk": {
+      "id": "iran_sub_vessel_sunk",
+      "label": "美潜艇击沉伊朗海军舰艇(87人死亡)",
+      "node_type": "event",
+      "domains": [
+        "军事"
+      ],
+      "probability": 0.85,
+      "confidence": 0.75,
+      "evidence": [
+        "美国潜艇击沉非武装伊朗海军舰艇",
+        "造成87名水手死亡",
+        "斯里兰卡护送另一伊朗船只至安全水域"
+      ],
+      "reasoning": "海上军事行动确认，伊朗海军遭受重大损失，可能触发海上报复",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "iran_pezeshkian_conditional_halt": {
+      "id": "iran_pezeshkian_conditional_halt",
+      "label": "伊朗总统发出条件性停止海湾打击信号",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.55,
+      "confidence": 0.85,
+      "evidence": [
+        "佩泽什基安表示若邻国不作为攻击跳板则停止打击",
+        "伊朗总统声称已停止袭击但海湾国家仍报告遭受攻击"
+      ],
+      "reasoning": "伊朗开始释放外交信号但执行层面存在落差，IRGC可能独立行动",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "russia_iran_intel_cooperation": {
+      "id": "russia_iran_intel_cooperation",
+      "label": "俄罗斯疑向伊朗提供情报支持",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.72,
+      "confidence": 0.7,
+      "evidence": [
+        "五角大楼称正追踪俄伊联合行动",
+        "美方淡化但未完全否认相关报道",
+        "五角大楼承认追踪俄伊联合行动",
+        "美方淡化但未否认",
+        "美军伤亡事件中俄情报嫌疑",
+        "五角大楼追踪俄伊联合行动",
+        "美方淡化但未否认",
+        "报道持续"
+      ],
+      "reasoning": "五角大楼承认正在追踪但淡化处理，暗示存在一定证据基础，概率上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "china_oppose_regime_change": {
+      "id": "china_oppose_regime_change",
+      "label": "中国明确反对伊朗政权更迭",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "军事"
+      ],
+      "probability": 0.6,
+      "confidence": 0.95,
+      "evidence": [
+        "中国表示推翻伊朗政府缺乏民意基础",
+        "要求尊重伊朗主权",
+        "敦促立即停火并重返谈判桌"
+      ],
+      "reasoning": "中国外交立场明确化，强化停火渠道可能性并增加美国外交孤立程度",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "tehran_airport_struck": {
+      "id": "tehran_airport_struck",
+      "label": "德黑兰机场遭美以联合空袭",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "经济"
+      ],
+      "probability": 0.98,
+      "confidence": 0.95,
+      "evidence": [
+        "美以联合对德黑兰机场实施夜间空袭报道",
+        "空域关闭影响全球航空交通",
+        "美以联合夜间空袭德黑兰目标机场",
+        "半岛电视台确认报道"
+      ],
+      "reasoning": "机场打击已被多方来源证实，概率接近确定",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "iran_airspace_closure": {
+      "id": "iran_airspace_closure",
+      "label": "伊朗上空空域完全关闭",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "经济",
+        "交通"
+      ],
+      "probability": 1.0,
+      "confidence": 0.98,
+      "evidence": [
+        "美伊冲突致伊朗上空空域关闭",
+        "全球航班被迫绕行",
+        "半岛电视台分析绕行经济代价",
+        "机场遭袭",
+        "德黑兰上空空袭持续",
+        "航空绕行经济代价已被量化"
+      ],
+      "reasoning": "伊朗空域关闭已成既成事实，半岛电视台专题分析经济代价确认",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "beirut_irgc_strike": {
+      "id": "beirut_irgc_strike",
+      "label": "以色列打击贝鲁特IRGC圣城军指挥官",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.9,
+      "evidence": [
+        "以色列对贝鲁特拉乌谢区实施空袭4人死亡",
+        "以色列称目标为IRGC圣城军指挥官",
+        "贝鲁特酒店遭袭4人死亡"
+      ],
+      "reasoning": "以色列将打击范围延伸至黎巴嫩境内伊朗指挥链，可能激活黎巴嫩真主党",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "baghdad_us_embassy_attack": {
+      "id": "baghdad_us_embassy_attack",
+      "label": "巴格达美国大使馆遭伊朗代理人袭击",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.9,
+      "evidence": [
+        "伊朗及其盟友武装袭击巴格达美国大使馆",
+        "伊拉克不愿被卷入但无力阻止代理人行动"
+      ],
+      "reasoning": "使馆遭袭是严重外交军事事件，可能触发美国对伊拉克境内伊朗代理人的打击",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "houthi_restraint": {
+      "id": "houthi_restraint",
+      "label": "胡塞武装暂时按兵不动",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.75,
+      "confidence": 0.7,
+      "evidence": [
+        "胡塞武装选择暂不介入",
+        "担忧遭以色列报复",
+        "已损失多名领导人"
+      ],
+      "reasoning": "胡塞暂时克制降低了红海方向压力，但随时可能改变立场",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "pakistan_neutrality_pressure": {
+      "id": "pakistan_neutrality_pressure",
+      "label": "巴基斯坦在伊沙冲突间寻求中立",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.51,
+      "confidence": 0.75,
+      "evidence": [
+        "巴基斯坦与沙特签署新防务协议",
+        "但不愿直接卷入军事冲突",
+        "倾向扮演调解人角色"
+      ],
+      "reasoning": "巴基斯坦中立立场维持困难，其核能力和地缘位置使其成为关键变量",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:09:54.729196Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "global_antiwar_protests": {
+      "id": "global_antiwar_protests",
+      "label": "多国爆发反美以对伊战争抗议",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.9294,
+      "confidence": 0.95,
+      "evidence": [
+        "印尼民众大规模抗议",
+        "向总统施压要求重审对美立场",
+        "普拉博沃亲美立场遭强烈批评",
+        "印尼大规模抗议",
+        "1332人死亡累计",
+        "儿童伤亡广泛传播",
+        "多国爆发抗议",
+        "印尼大规模示威",
+        "儿童伤亡画面传播",
+        "1332人死亡数字公开",
+        "印尼大规模抗议已发生",
+        "儿童伤亡影像全球传播",
+        "1332人死亡数据广泛报道",
+        "贝鲁特空袭引发阿拉伯世界愤怒"
+      ],
+      "reasoning": "抗议已在多国实际发生，儿童伤亡影像将进一步扩大规模，概率从0.97上调至0.99，已为事实",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "iran_oil_production_cut": {
+      "id": "iran_oil_production_cut",
+      "label": "伊朗国内石油生产能力受损",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.95,
+      "confidence": 0.9,
+      "evidence": [
+        "德黑兰多处油库被炸",
+        "阿尔博尔兹省储油设施打击",
+        "炼油设施遭打击",
+        "大规模火灾持续燃烧",
+        "德黑兰油库直接被打击",
+        "炼油设施受损",
+        "持续空袭阻止修复"
+      ],
+      "reasoning": "从0.85上调至0.95，炼油/储油双重打击使生产能力受损几乎确定",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "irgc_independent_action": {
+      "id": "irgc_independent_action",
+      "label": "IRGC脱离总统指令独立行动",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.97,
+      "confidence": 0.93,
+      "evidence": [
+        "伊朗总统声称停止海湾袭击但攻击仍持续",
+        "卡塔尔沙特阿联酋仍报告遭受攻击",
+        "IRGC与政治领导层可能存在分歧",
+        "佩泽什基安停火信号与海湾攻击同时发生",
+        "IRGC对卡塔尔/沙特/约旦持续打击",
+        "总统与军事机构信号相互矛盾",
+        "伊朗总统条件性停火信号与持续攻击并存",
+        "IRGC对贝鲁特/海湾独立行动证据",
+        "伊朗总统发出条件性停止信号但海湾攻击仍持续",
+        "卡塔尔沙特阿联酋遭攻击与总统停火声明矛盾",
+        "总统声明停打但攻击仍持续",
+        "卡塔尔/沙特/阿联酋仍报告遭袭",
+        "IRGC历史上具有高度自主性",
+        "伊朗总统宣布停火但海湾攻击继续",
+        "IRGC持续对卡塔尔/沙特/约旦发动攻击",
+        "圣城军贝鲁特行动继续"
+      ],
+      "reasoning": "IRGC脱离总统指令的证据已通过海湾持续攻击得到直接证实",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:09:54.729196Z"
+    },
+    "tehran_oil_depot_strikes": {
+      "id": "tehran_oil_depot_strikes",
+      "label": "德黑兰五处油库/炼油厂遭美以联合空袭（战争第9天）",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "半岛电视台多篇报道确认德黑兰及阿尔博尔兹省油库起火",
+        "内塔尼亚胡宣誓继续打击伊朗能源基础设施",
+        "沙赫兰油库卫星图像确认大规模火灾"
+      ],
+      "reasoning": "美以首次将打击范围从军事目标扩展至能源基础设施，标志战争升级至经济战层面，对伊朗炼油和储存能力造成直接物理损毁",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "iran_refinery_capacity_collapse": {
+      "id": "iran_refinery_capacity_collapse",
+      "label": "伊朗炼油/储油能力骤降（30-50%）",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.98,
+      "confidence": 0.95,
+      "evidence": [
+        "德黑兰及周边5处设施被打击",
+        "大规模火灾难以快速扑灭",
+        "后续持续空袭威胁修复工作",
+        "德黑兰五处油库/炼油厂被炸确认",
+        "大规模火灾",
+        "无法快速修复",
+        "第九天首次打击油库已实施",
+        "五处储存设施均被摧毁",
+        "以色列总理宣誓继续打击",
+        "五处油库/炼油厂被炸",
+        "德黑兰+阿尔博尔兹双省受损",
+        "大规模火灾确认"
+      ],
+      "reasoning": "实际打击范围超过初始预期，炼油能力损失概率提升至接近确定",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "gulf_energy_infra_under_fire": {
+      "id": "gulf_energy_infra_under_fire",
+      "label": "海湾多国能源基础设施遭受攻击威胁（卡塔尔/沙特/科威特）",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "军事"
+      ],
+      "probability": 0.98,
+      "confidence": 0.95,
+      "evidence": [
+        "卡塔尔遭10架无人机袭击",
+        "沙特/约旦上空拦截伊朗导弹",
+        "科威特社保大楼起火",
+        "海湾多国攻击持续",
+        "卡塔尔遭10架无人机袭击",
+        "沙特导弹被拦截",
+        "科威特油库起火",
+        "阿联酋遭袭报告",
+        "卡塔尔遭无人机袭击（10架）",
+        "沙特/约旦上空导弹被拦截",
+        "UAE报告攻击"
+      ],
+      "reasoning": "海湾三国同时遭受攻击已成事实，基础设施威胁升级为确认状态",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "aviation_cost_surge": {
+      "id": "aviation_cost_surge",
+      "label": "全球航空绕行成本激增（伊朗空域关闭经济代价）",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "经济",
+        "交通"
+      ],
+      "probability": 0.95,
+      "confidence": 0.88,
+      "evidence": [
+        "半岛电视台数据分析报道确认绕行成本",
+        "伊朗空域完全关闭已确认",
+        "亚欧航线绕行增加2-4小时飞行时间",
+        "伊朗空域完全关闭确认",
+        "德黑兰机场遭空袭",
+        "半岛电视台量化分析发布"
+      ],
+      "reasoning": "空域关闭已成事实且机场遭打击，绕行成本已在量化，概率接近确定",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "iran_domestic_fuel_shortage": {
+      "id": "iran_domestic_fuel_shortage",
+      "label": "伊朗国内成品油短缺与民用能源危机",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "社会",
+        "政治"
+      ],
+      "probability": 0.833,
+      "confidence": 0.82,
+      "evidence": [
+        "炼油厂被打击",
+        "储油设施起火",
+        "持续空袭阻止修复",
+        "炼油能力崩溃至96%概率",
+        "德黑兰五处油库被摧毁",
+        "进口补给路线受阻"
+      ],
+      "reasoning": "炼油基础设施被系统性摧毁，国内成品油短缺几乎不可避免，概率从0.72上调至0.88",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "opec_emergency_meeting": {
+      "id": "opec_emergency_meeting",
+      "label": "OPEC+紧急会议讨论产量补偿",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "政治"
+      ],
+      "probability": 0.637,
+      "confidence": 0.6,
+      "evidence": [
+        "科威特被迫减产",
+        "海湾多国遭攻击",
+        "全球供应缺口持续扩大"
+      ],
+      "reasoning": "波斯湾产油国同时受到攻击威胁，OPEC+需讨论是否由沙特/UAE增产补偿缺口，但安全形势制约实际增产意愿",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:11:22.387005Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "oil_price_110_threshold": {
+      "id": "oil_price_110_threshold",
+      "label": "Brent原油突破$110/桶",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "金融",
+        "经济"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "德黑兰油库被打击",
+        "科威特减产",
+        "卡塔尔LNG受威胁",
+        "全球净供应缺口>3mbpd",
+        "德黑兰五处油库被炸确认",
+        "科威特产量削减",
+        "卡塔尔/沙特遭袭",
+        "伊朗出口实质中断",
+        "德黑兰五处油库炸毁",
+        "卡塔尔沙特阿联酋均遭攻击",
+        "伊朗炼油能力骤降30-50%",
+        "IRGC继续独立攻击海湾",
+        "德黑兰五处油库被炸确认",
+        "科威特减产已发生",
+        "海湾多国持续遭袭",
+        "伊朗石油出口实质中断",
+        "德黑兰五处油库被炸",
+        "海湾持续攻击",
+        "伊朗炼油能力骤降",
+        "2026-03-09 Brent盘中最高$117.08 (Guardian), 当前$114.24"
+      ],
+      "reasoning": "能源基础设施打击直接推升供应中断预期，110美元门槛已实质性突破",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T03:25:22.918041Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "civilian_casualty_narrative": {
+      "id": "civilian_casualty_narrative",
+      "label": "平民伤亡叙事强化全球反战压力",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.9803,
+      "confidence": 0.98,
+      "evidence": [
+        "儿童伤者在德黑兰救治",
+        "印尼大规模反战抗议",
+        "全球反战示威已达0.85概率",
+        "1332人死亡数据广泛传播",
+        "儿童伤亡德黑兰救治画面",
+        "1332人死亡确认",
+        "印尼等国抗议",
+        "儿童伤亡在德黑兰接受救治有视频证据",
+        "美以空袭已致1332人死亡",
+        "多国反战抗议已爆发",
+        "儿童受伤画面在德黑兰医院拍摄",
+        "1332人死亡",
+        "德黑兰上空黑烟画面"
+      ],
+      "reasoning": "平民伤亡叙事已通过多媒体渠道完全激活，视为确定事件",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:11:22.387005Z"
+    },
+    "iran_oil_export_halt": {
+      "id": "iran_oil_export_halt",
+      "label": "伊朗石油出口实质中断(>80%)",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "经济"
+      ],
+      "probability": 0.92,
+      "confidence": 0.85,
+      "evidence": [
+        "德黑兰五处油库/炼油厂被炸",
+        "伊朗空域关闭",
+        "伊朗海军舰艇被击沉影响波斯湾通道",
+        "炼油/储油能力骤降30-50%",
+        "德黑兰五处油库被炸",
+        "美以明确打击能源基础设施"
+      ],
+      "reasoning": "伊朗出口中断>80%概率从0.82上调至0.92，炼油能力崩溃加速出口停滞",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:12:40.178638Z"
+    },
+    "aviation_industry_loss_quantified": {
+      "id": "aviation_industry_loss_quantified",
+      "label": "全球航空业损失量化(每日>$2亿)",
+      "node_type": "event",
+      "domains": [
+        "经济",
+        "交通"
+      ],
+      "probability": 0.88,
+      "confidence": 0.82,
+      "evidence": [
+        "半岛电视台数据分析报道",
+        "伊朗空域关闭确认",
+        "中东航线全面停飞",
+        "半岛电视台已量化报道空域关闭经济代价",
+        "伊朗空域确认完全关闭",
+        "每日$2亿损失已有媒体引用"
+      ],
+      "reasoning": "多家媒体已开始量化报道，航空业损失数据正在被系统性收集和传播，概率显著上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:12:40.178638Z"
+    },
+    "gulf_energy_risk_premium_spike": {
+      "id": "gulf_energy_risk_premium_spike",
+      "label": "海湾能源基础设施风险溢价跳升",
+      "node_type": "event",
+      "domains": [
+        "金融",
+        "能源"
+      ],
+      "probability": 0.97,
+      "confidence": 0.88,
+      "evidence": [
+        "卡塔尔/沙特/阿联酋遭无人机导弹袭击",
+        "科威特油库起火",
+        "伊朗总统停火条件未获接受",
+        "卡塔尔沙特阿联酋均遭攻击",
+        "伊朗总统停火声明后攻击仍持续",
+        "海湾多国能源设施风险实质化",
+        "科威特减产确认",
+        "卡塔尔/沙特/阿联酋持续遭袭",
+        "伊朗海军舰艇被击沉"
+      ],
+      "reasoning": "海湾能源系统性风险已被多重事件确认，风险溢价跳升概率从0.93上调至0.97",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:12:40.178638Z"
+    },
+    "china_economic_exposure_activated": {
+      "id": "china_economic_exposure_activated",
+      "label": "中国能源经济敞口风险激活",
+      "node_type": "event",
+      "domains": [
+        "经济",
+        "政治"
+      ],
+      "probability": 0.72,
+      "confidence": 0.68,
+      "evidence": [
+        "中国明确反对政权更迭",
+        "中国高度依赖中东原油",
+        "人民币汇率承压"
+      ],
+      "reasoning": "中国约50%原油进口来自中东，冲突升级直接威胁中国能源安全，迫使中国加大外交斡旋力度同时启动应急储备",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:12:40.178638Z",
+      "created": "2026-03-08T12:12:40.178638Z"
+    },
+    "global_shipping_rerouting_cost": {
+      "id": "global_shipping_rerouting_cost",
+      "label": "全球航运绕行成本永久性抬升",
+      "node_type": "event",
+      "domains": [
+        "经济",
+        "能源"
+      ],
+      "probability": 0.2396,
+      "confidence": 0.8,
+      "evidence": [
+        "霍尔木兹事实封锁",
+        "伊朗空域关闭",
+        "航运保险崩溃",
+        "伊朗空域关闭叠加海峡封锁",
+        "科威特油产削减",
+        "海湾能源设施持续受威胁"
+      ],
+      "reasoning": "海空双重绕行需求叠加，永久性成本抬升概率进一步上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:12:40.178638Z"
+    },
+    "iran_cyberattack_capacity_degraded": {
+      "id": "iran_cyberattack_capacity_degraded",
+      "label": "伊朗网络攻击能力受基础设施损毁约束",
+      "node_type": "event",
+      "domains": [
+        "科技",
+        "军事"
+      ],
+      "probability": 0.539,
+      "confidence": 0.65,
+      "evidence": [
+        "德黑兰五处油库炼油厂被炸",
+        "伊朗国内电力/燃料短缺风险",
+        "伊朗炼油能力骤降30-50%"
+      ],
+      "reasoning": "能源基础设施破坏导致伊朗国内电力供应不稳，数据中心及网络战指挥节点运行受阻，网络攻击持续能力受到物理层约束，但攻击动机同步上升形成张力",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:13:58.883164Z"
+    },
+    "global_aviation_tech_rerouting_demand": {
+      "id": "global_aviation_tech_rerouting_demand",
+      "label": "全球航空路线重规划技术需求激增",
+      "node_type": "event",
+      "domains": [
+        "科技",
+        "经济",
+        "交通"
+      ],
+      "probability": 0.915,
+      "confidence": 0.75,
+      "evidence": [
+        "伊朗空域完全关闭",
+        "半岛电视台量化航空绕行经济代价",
+        "航空业每日损失>$2亿"
+      ],
+      "reasoning": "空域关闭迫使全球航空公司紧急重新规划航线，飞行管理系统、燃油优化算法、替代航路数据库需求激增；航空科技服务商短期受益，但航空硬件订单受长期需求萎缩压制",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:13:58.883164Z"
+    },
+    "china_tech_selfsufficiency_push": {
+      "id": "china_tech_selfsufficiency_push",
+      "label": "中国加速关键技术自主化投资(芯片/能源/航天)",
+      "node_type": "event",
+      "domains": [
+        "科技",
+        "经济",
+        "政治"
+      ],
+      "probability": 0.6531,
+      "confidence": 0.68,
+      "evidence": [
+        "中国明确反对伊朗政权更迭",
+        "中国能源经济敞口风险激活",
+        "二级制裁潮可能波及中国能源企业"
+      ],
+      "reasoning": "中国能源进口高度依赖中东，战争升级触发其加速芯片国产化(减少对美技术依赖)与能源技术自主化(海上风电/核电提速)投资，二级制裁压力进一步强化脱钩动机，时间尺度：政策宣示30天内，实质投资60-90天",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:13:58.883164Z"
+    },
+    "semiconductor_supply_chain_realignment": {
+      "id": "semiconductor_supply_chain_realignment",
+      "label": "半导体供应链地缘重组压力上升",
+      "node_type": "event",
+      "domains": [
+        "科技",
+        "经济",
+        "政治"
+      ],
+      "probability": 0.792,
+      "confidence": 0.6,
+      "evidence": [
+        "二级制裁范围扩大",
+        "中国明确反对美国政策",
+        "全球经济滞胀压力"
+      ],
+      "reasoning": "美国二级制裁扩展可能限制向中国企业出口先进芯片制造设备，中方反制措施可能涉及稀土/关键矿产出口限制，全球半导体供应链阵营化压力在战时背景下加速，台湾地缘敏感性联动上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:13:58.883164Z"
+    },
+    "critical_infra_cyber_risk_elevated": {
+      "id": "critical_infra_cyber_risk_elevated",
+      "label": "全球关键基础设施网络攻击风险系统性上升",
+      "node_type": "event",
+      "domains": [
+        "科技",
+        "军事",
+        "经济"
+      ],
+      "probability": 0.6305,
+      "confidence": 0.72,
+      "evidence": [
+        "伊朗网络攻击历史能力(Stuxnet反制)",
+        "IRGC脱离总统指令独立行动",
+        "冲突升级至第9天能源设施层面"
+      ],
+      "reasoning": "IRGC独立行动模式下，网络攻击作为非对称报复手段的吸引力上升；伊朗即便物理攻击能力受损，仍可通过预置网络武器对美/以/海湾金融、能源、电信基础设施实施报复，攻击窗口集中在停火谈判前",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:13:58.883164Z"
+    },
+    "eu_defense_tech_surge": {
+      "id": "eu_defense_tech_surge",
+      "label": "欧洲防务科技投资激增(无人机/导弹防御/卫星)",
+      "node_type": "event",
+      "domains": [
+        "科技",
+        "军事",
+        "经济"
+      ],
+      "probability": 0.5815,
+      "confidence": 0.62,
+      "evidence": [
+        "欧洲防务开支加速GDP 2%+",
+        "伊朗无人机袭击海湾国家战术曝光",
+        "欧洲核保护伞讨论"
+      ],
+      "reasoning": "伊朗大规模无人机/导弹战术在海湾的实战检验，倒逼欧洲加速防空科技采购(铁穹类系统)、无人机反制技术及卫星侦察能力投资；欧洲防务科技企业订单前景显著改善，30-60天内政策宣示，实际合同落地6-12个月",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:13:58.883164Z",
+      "created": "2026-03-08T12:13:58.883164Z"
+    },
+    "iran_pezeshkian_ceasefire_signal_credibility": {
+      "id": "iran_pezeshkian_ceasefire_signal_credibility",
+      "label": "伊朗总统停火信号可信度存疑（IRGC独立行动抵消）",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "金融"
+      ],
+      "probability": 0.8798,
+      "confidence": 0.85,
+      "evidence": [
+        "伊朗总统发出条件性停止海湾打击信号",
+        "IRGC脱离总统指令独立行动",
+        "卡塔尔/沙特/阿联酋仍报告遭受攻击",
+        "IRGC继续攻击卡塔尔/沙特/UAE",
+        "总统停火声明后海湾攻击持续",
+        "IRGC独立行动确认"
+      ],
+      "reasoning": "总统停火信号被IRGC实际行动直接否定，可信度大幅下降",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "civilian_casualty_market_discount": {
+      "id": "civilian_casualty_market_discount",
+      "label": "平民伤亡叙事形成市场政治风险折价",
+      "node_type": "event",
+      "domains": [
+        "金融",
+        "政治"
+      ],
+      "probability": 0.7058,
+      "confidence": 0.68,
+      "evidence": [
+        "儿童伤亡视频广泛传播",
+        "1332人死亡累计",
+        "印尼等国大规模抗议"
+      ],
+      "reasoning": "平民伤亡叙事强化国际政治压力，增加美以停战政治成本，市场对冲突持续时间重新定价，风险资产承压延长",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "kuwait_energy_disruption_contagion": {
+      "id": "kuwait_energy_disruption_contagion",
+      "label": "科威特能源中断向海湾蔓延风险",
+      "node_type": "event",
+      "domains": [
+        "能源",
+        "金融"
+      ],
+      "probability": 0.62,
+      "confidence": 0.65,
+      "evidence": [
+        "科威特被迫削减石油产量",
+        "伊朗无人机袭击科威特政府设施",
+        "海湾多国能源基础设施遭受攻击威胁"
+      ],
+      "reasoning": "科威特减产确认海湾能源系统性中断已发生，沙特/卡塔尔/阿联酋面临同等威胁，能源风险溢价从伊朗扩散至全海湾，油价上行压力系统性上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "us_pow_dispute_political_escalation": {
+      "id": "us_pow_dispute_political_escalation",
+      "label": "美军俘虏争议推升国内政治压力",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "金融"
+      ],
+      "probability": 0.9118,
+      "confidence": 0.7,
+      "evidence": [
+        "特朗普政府否认伊朗俘虏美兵报道",
+        "伊朗国安委声称掩盖被俘事件",
+        "美军首批阵亡遗体运回仪式"
+      ],
+      "reasoning": "俘虏信息战叠加阵亡仪式强化国内情绪波动，若信息持续矛盾将压制特朗普谈判空间，延长冲突预期，金融市场不确定性溢价上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "oil_price_120_risk": {
+      "id": "oil_price_120_risk",
+      "label": "Brent原油突破$120/桶尾部风险",
+      "node_type": "event",
+      "domains": [
+        "金融",
+        "能源"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "德黑兰五处油库被炸",
+        "科威特减产确认",
+        "海湾多国能源设施受威胁",
+        "伊朗石油出口实质中断",
+        "2026-03-09 Brent已达$117,距$120仅3美元;Hormuz仍封锁,供应缺口20%",
+        "2026-03-09 Brent盘中最高触及$119.50 (Guardian)，CNBC报$114.25，确认突破$120阈值",
+        "2026-03-09 Brent盘中触及$119.50(Guardian), CNBC报$114.25, BBC报$114.74"
+      ],
+      "reasoning": "Brent在亚太周一开盘暴涨29%至$119.50，霍尔木兹封锁+Mojtaba继位双重催化",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-09T07:24:46.895579Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "russia_intelligence_support_confirmed_risk": {
+      "id": "russia_intelligence_support_confirmed_risk",
+      "label": "俄伊情报合作升级确认风险",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治",
+        "金融"
+      ],
+      "probability": 0.38,
+      "confidence": 0.55,
+      "evidence": [
+        "五角大楼淡化但承认追踪俄伊联合行动",
+        "俄罗斯疑向伊朗提供情报支持概率0.55"
+      ],
+      "reasoning": "若俄伊情报合作被正式确认，美国将面临同时对抗俄伊压力，制裁升级与大国冲突溢价将系统性推高避险资产，美债与黄金同步受益",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:15:47.762023Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "global_antiwar_pressure_on_us_allies": {
+      "id": "global_antiwar_pressure_on_us_allies",
+      "label": "全球反战压力削弱美国联盟凝聚力",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "金融"
+      ],
+      "probability": 0.8634,
+      "confidence": 0.85,
+      "evidence": [
+        "印尼总统因亲美立场遭强烈批评",
+        "多国爆发反美以对伊战争抗议",
+        "巴基斯坦寻求中立",
+        "印尼国内压力迫使总统调整立场",
+        "全球反战示威蔓延",
+        "穆斯林国家普遍反对",
+        "印尼案例证实盟友面临实际国内压力",
+        "穆斯林世界广泛动员",
+        "儿童伤亡影像加速舆论转化"
+      ],
+      "reasoning": "印尼案例提供了实证，压力机制已在多国激活，概率从0.78上调至0.88",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:15:47.762023Z"
+    },
+    "netanyahu_regime_change_pledge": {
+      "id": "netanyahu_regime_change_pledge",
+      "label": "内塔尼亚胡誓言持续打击直至推翻伊朗政权",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "军事"
+      ],
+      "probability": 0.7,
+      "confidence": 0.95,
+      "evidence": [
+        "内塔尼亚胡公开宣誓继续打击以动摇伊朗政权",
+        "第9天升级至能源基础设施打击"
+      ],
+      "reasoning": "以色列总理明确将战争目标定性为政权更迭，与美国regime change意图高度契合，强化冲突持续信号",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "iran_missile_strike_israel": {
+      "id": "iran_missile_strike_israel",
+      "label": "伊朗导弹袭击以色列（特拉维夫/东耶路撒冷）",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.55,
+      "confidence": 0.95,
+      "evidence": [
+        "东耶路撒冷空袭警报触发",
+        "特拉维夫上空导弹被拦截",
+        "伊朗持续报复性打击"
+      ],
+      "reasoning": "伊朗持续对以色列本土实施导弹打击，验证双向升级动态",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "indonesia_prabowo_pressure": {
+      "id": "indonesia_prabowo_pressure",
+      "label": "印尼总统普拉博沃因亲美立场面临国内政治危机",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.9,
+      "confidence": 0.88,
+      "evidence": [
+        "印尼大规模反战抗议",
+        "普拉博沃调解提议引发国内强烈批评",
+        "印尼独立外交传统",
+        "印尼民众已大规模上街抗议",
+        "普拉博沃亲美立场引发强烈国内批评",
+        "印尼调解提议被国内视为背离传统外交"
+      ],
+      "reasoning": "抗议已实际发生且规模显著，普拉博沃面临的压力超出预期，概率从0.75上调至0.90",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "iran_casualties_1332_political_impact": {
+      "id": "iran_casualties_1332_political_impact",
+      "label": "伊朗1332人死亡叙事强化国际谴责压力",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.95,
+      "confidence": 0.88,
+      "evidence": [
+        "第8天已有1332人死亡",
+        "儿童伤亡画面广泛传播",
+        "全球反战示威蔓延"
+      ],
+      "reasoning": "累计伤亡数字与儿童受伤画面叠加形成强烈人道主义叙事，将系统性强化国际政治压力",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "gulf_states_hedging": {
+      "id": "gulf_states_hedging",
+      "label": "海湾国家（卡塔尔/沙特/UAE）加速战略对冲",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "军事",
+        "能源"
+      ],
+      "probability": 0.68,
+      "confidence": 0.78,
+      "evidence": [
+        "卡塔尔/沙特/UAE持续遭受攻击",
+        "巴基斯坦寻求中立",
+        "海湾国家防空拦截伊朗导弹"
+      ],
+      "reasoning": "海湾国家在承受攻击的同时，将谋求与中国/俄罗斯保持沟通渠道，防范美国撤军后的安全真空",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "us_domestic_antiwar_shift": {
+      "id": "us_domestic_antiwar_shift",
+      "label": "美国国内反战情绪显著上升（民调压力）",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.4675,
+      "confidence": 0.8,
+      "evidence": [
+        "阵亡士兵遗体运回仪式全程直播",
+        "汽油价格上涨",
+        "俘虏争议持续发酵",
+        "6名美军阵亡遗体运回引发国内悲痛",
+        "俘虏争议形成政治不确定性",
+        "汽油价格超$5触发民众不满",
+        "全球反战抗议形成舆论压力"
+      ],
+      "reasoning": "首批阵亡遗体归国仪式通过媒体直播形成强烈情感冲击，历史上此类事件是美国反战情绪转折点，概率从0.68上调至0.78",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "iran_conditional_ceasefire_gulf_dynamic": {
+      "id": "iran_conditional_ceasefire_gulf_dynamic",
+      "label": "伊朗条件性停火要求形成海湾国家外交困境",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "军事"
+      ],
+      "probability": 0.85,
+      "confidence": 0.8,
+      "evidence": [
+        "佩泽什基安提出条件性停火（邻国不作为攻击跳板）",
+        "海湾国家驻有美军基地",
+        "IRGC独立行动与总统信号矛盾"
+      ],
+      "reasoning": "伊朗将停止攻击与驱逐美军基地挂钩，将海湾国家置于必须在美国保护伞与停止被攻击之间二选一的两难",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "irgc_command_leadership_decapitation": {
+      "id": "irgc_command_leadership_decapitation",
+      "label": "贝鲁特IRGC圣城军指挥官被定点清除",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.5,
+      "confidence": 0.95,
+      "evidence": [
+        "以色列对贝鲁特拉乌谢区空袭",
+        "以方声称目标为IRGC圣城军指挥官",
+        "酒店袭击确认4人死亡"
+      ],
+      "reasoning": "IRGC域外指挥链被打击，可能进一步削弱圣城军协调能力，但亦可能激发更分散化的代理人报复",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "war_day9_energy_escalation_threshold": {
+      "id": "war_day9_energy_escalation_threshold",
+      "label": "战争第9天能源基础设施打击标志战略升级门槛突破",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "政治",
+        "能源"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "以色列首次对伊朗油库实施打击",
+        "德黑兰五处设施被炸",
+        "阿尔博尔兹省石油生产转运中心遭袭"
+      ],
+      "reasoning": "将打击目标扩至民用能源基础设施标志战争进入新阶段，国际法层面争议上升，报复升级风险显著增加",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:17:30.588597Z",
+      "created": "2026-03-08T12:17:30.588597Z"
+    },
+    "children_casualties_imagery": {
+      "id": "children_casualties_imagery",
+      "label": "儿童伤亡影像全球传播",
+      "node_type": "event",
+      "domains": [
+        "社会",
+        "政治"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "德黑兰儿童伤者接受救治视频广泛传播",
+        "半岛电视台多次报道平民尤其儿童伤亡"
+      ],
+      "reasoning": "儿童伤亡影像具有最高道德冲击力，触发穆斯林世界及全球南方国家情感动员，历史上此类影像（加沙、叙利亚）均显著加速反战舆论转化为政治压力，预计30天内持续发酵",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "muslim_world_antiwar_mobilization": {
+      "id": "muslim_world_antiwar_mobilization",
+      "label": "穆斯林世界大规模反战动员",
+      "node_type": "event",
+      "domains": [
+        "社会",
+        "政治"
+      ],
+      "probability": 0.85,
+      "confidence": 0.82,
+      "evidence": [
+        "印尼抗议者向政府施压要求脱离美国",
+        "全球反战抗议已覆盖多国",
+        "伊朗1332人死亡叙事强化道义谴责"
+      ],
+      "reasoning": "印尼（2.7亿穆斯林）、马来西亚、土耳其、巴基斯坦等国街头抗议将在儿童伤亡影像传播后显著升温，宗教动员机制将使抗议从自发转向组织化，预计2-3周内形成跨国压力网络",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "gulf_civilian_fear_spike": {
+      "id": "gulf_civilian_fear_spike",
+      "label": "海湾地区平民恐慌与撤离潮",
+      "node_type": "event",
+      "domains": [
+        "社会",
+        "经济"
+      ],
+      "probability": 0.82,
+      "confidence": 0.78,
+      "evidence": [
+        "伊朗无人机袭击科威特政府高楼",
+        "卡塔尔遭无人机袭击",
+        "沙特/约旦上空导弹被拦截"
+      ],
+      "reasoning": "海湾国家拥有大量外籍劳工（科威特70%、UAE88%为外籍），政府建筑被袭击触发外籍劳工企业撤离评估，预计2周内出现可量化的商务撤离潮，影响海湾经济运转",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "gulf_expat_evacuation_wave": {
+      "id": "gulf_expat_evacuation_wave",
+      "label": "海湾外籍劳工/商务人员撤离潮",
+      "node_type": "event",
+      "domains": [
+        "社会",
+        "经济"
+      ],
+      "probability": 0.6396,
+      "confidence": 0.7,
+      "evidence": [
+        "科威特政府建筑遭袭",
+        "卡塔尔、沙特、UAE报告遭受攻击",
+        "多国发布旅行警告"
+      ],
+      "reasoning": "外籍劳工撤离将造成海湾建筑业、服务业、金融业人力真空，尤其科威特石油行业依赖外籍技工，撤离将加剧产能削减，形成社会经济双重冲击，预计1个月内显现",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "iran_social_fracture_irgc_vs_civilian": {
+      "id": "iran_social_fracture_irgc_vs_civilian",
+      "label": "伊朗社会撕裂：IRGC行动与平民代价矛盾激化",
+      "node_type": "event",
+      "domains": [
+        "社会",
+        "政治"
+      ],
+      "probability": 0.8795,
+      "confidence": 0.75,
+      "evidence": [
+        "伊朗国内燃料短缺加剧",
+        "1332人死亡包含大量平民",
+        "IRGC独立行动脱离总统控制",
+        "德黑兰油库爆炸引发城市恐慌"
+      ],
+      "reasoning": "IRGC绕过总统发动攻击导致平民承受更大代价，而总统停火信号被无视，造成民众对IRGC与改革派政府之间权力博弈的直观感知，历史上此类矛盾（2019年伊朗抗议）在经济压力叠加时会急剧爆发",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "us_war_authorization_political_cost": {
+      "id": "us_war_authorization_political_cost",
+      "label": "美国国会战争授权政治成本上升",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.65,
+      "confidence": 0.68,
+      "evidence": [
+        "6名美军阵亡遗体运回",
+        "美国国内反战情绪上升",
+        "汽油价格超$5触发民众不满",
+        "美俘争议引发国内政治张力"
+      ],
+      "reasoning": "美军出现首批阵亡加上俘虏争议，将激活国会两党对战争授权的辩论，历史上越战、伊拉克战争均在首批伤亡后迅速引发国会压力，30天内预计有国会议员公开质疑战争合法性",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "regional_social_displacement_acceleration": {
+      "id": "regional_social_displacement_acceleration",
+      "label": "中东区域社会位移加速（难民+内部流离）",
+      "node_type": "event",
+      "domains": [
+        "社会",
+        "政治"
+      ],
+      "probability": 0.5277,
+      "confidence": 0.72,
+      "evidence": [
+        "伊朗国内燃料危机",
+        "德黑兰持续遭轰炸",
+        "海湾攻击波及多国",
+        "冲突进入第二周无停火迹象"
+      ],
+      "reasoning": "伊朗国内城市平民开始向农村或边境迁移，同时伊拉克、黎巴嫩边境地区人口流动加速。此阶段难民潮从预期转向实际发生，预计30天内欧洲相关申请量可量化上升",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    },
+    "global_south_us_legitimacy_crisis": {
+      "id": "global_south_us_legitimacy_crisis",
+      "label": "全球南方国家对美行动合法性集体质疑",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "社会"
+      ],
+      "probability": 0.9367,
+      "confidence": 0.78,
+      "evidence": [
+        "中国明确反对政权更迭",
+        "印尼民众施压政府",
+        "巴基斯坦寻求中立",
+        "伊朗1332人死亡叙事",
+        "儿童伤亡影像"
+      ],
+      "reasoning": "儿童伤亡+能源基础设施打击+平民死亡叙事形成三重道义冲击，触发非西方国家外交部门集体表态压力。联合国大会紧急会议、伊斯兰合作组织特别峰会概率上升，预计2周内形成制度化批评框架",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-08T12:19:01.095759Z",
+      "created": "2026-03-08T12:19:01.095759Z"
+    }
+  },
+  "edges": [
+    {
+      "source": "iran_retaliation",
+      "target": "hormuz_blockade",
+      "weight": 0.85,
+      "reasoning": "报复行动包括海峡布雷和反舰导弹部署"
+    },
+    {
+      "source": "iran_gulf_attacks",
+      "target": "hormuz_blockade",
+      "weight": 0.8,
+      "reasoning": "全海湾攻击使所有油轮航线风险骤升"
+    },
+    {
+      "source": "us_israel_strikes",
+      "target": "iran_missile_degraded",
+      "weight": 0.9,
+      "reasoning": "空袭主要目标之一就是导弹基地"
+    },
+    {
+      "source": "iran_retaliation",
+      "target": "iran_missile_degraded",
+      "weight": 0.7,
+      "reasoning": "大规模发射本身消耗了大量库存"
+    },
+    {
+      "source": "iran_gulf_attacks",
+      "target": "regional_spillover",
+      "weight": 0.95,
+      "reasoning": "全海湾攻击直接导致外溢"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.95,
+      "reasoning": "海峡封锁直接导致保险市场崩溃"
+    },
+    {
+      "source": "iran_gulf_attacks",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.8,
+      "reasoning": "炼油设施遭袭使港口风险激增"
+    },
+    {
+      "source": "khamenei_killed",
+      "target": "iran_power_transition",
+      "weight": 0.9,
+      "reasoning": "最高领袖死亡触发继位程序"
+    },
+    {
+      "source": "us_israel_strikes",
+      "target": "pentagon_war_cost",
+      "weight": 0.9,
+      "reasoning": "空袭行动的直接军费"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "oil_price_100",
+      "weight": 0.85,
+      "reasoning": "供应危机直接推高油价"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "oil_price_100",
+      "weight": 0.8,
+      "reasoning": "封锁预期已部分price in"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "asia_refinery_cuts",
+      "weight": 0.85,
+      "reasoning": "原油断供直接影响亚洲炼厂"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "asia_refinery_cuts",
+      "weight": 0.8,
+      "reasoning": "海峡封锁切断主要供应线"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "qatar_lng_disrupted",
+      "weight": 0.85,
+      "reasoning": "LNG运输必经海峡"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "qatar_lng_disrupted",
+      "weight": 0.6,
+      "reasoning": "区域冲突波及卡塔尔设施安全"
+    },
+    {
+      "source": "us_regime_change",
+      "target": "coalition_forming",
+      "weight": 0.7,
+      "reasoning": "regime change需要联盟支撑"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "coalition_forming",
+      "weight": 0.75,
+      "reasoning": "海湾国家遭袭后寻求集体防御"
+    },
+    {
+      "source": "us_regime_change",
+      "target": "secondary_sanctions",
+      "weight": 0.85,
+      "reasoning": "regime change战略需要经济绞杀配合"
+    },
+    {
+      "source": "us_israel_strikes",
+      "target": "irgc_nuclear",
+      "weight": 0.6,
+      "reasoning": "打击反而激发核武器动机"
+    },
+    {
+      "source": "iran_power_transition",
+      "target": "irgc_nuclear",
+      "weight": 0.55,
+      "reasoning": "权力真空中IRGC可能自主决策"
+    },
+    {
+      "source": "iran_missile_degraded",
+      "target": "irgc_nuclear",
+      "weight": 0.5,
+      "reasoning": "常规威慑丧失增加核补偿动机"
+    },
+    {
+      "source": "us_regime_change",
+      "target": "kurdish_proxy",
+      "weight": 0.75,
+      "reasoning": "regime change需要地面力量配合"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "china_energy_diplomacy",
+      "weight": 0.65,
+      "reasoning": "能源危机直接威胁中国经济"
+    },
+    {
+      "source": "secondary_sanctions",
+      "target": "china_energy_diplomacy",
+      "weight": 0.55,
+      "reasoning": "二级制裁威胁中国企业"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "russia_energy_leverage",
+      "weight": 0.8,
+      "reasoning": "能源危机直接增强俄方谈判筹码"
+    },
+    {
+      "source": "china_energy_diplomacy",
+      "target": "ceasefire_backchannel",
+      "weight": 0.5,
+      "reasoning": "中国可能提供调解渠道"
+    },
+    {
+      "source": "iran_power_transition",
+      "target": "ceasefire_backchannel",
+      "weight": 0.4,
+      "reasoning": "新领导层可能有不同战略取向"
+    },
+    {
+      "source": "us_regime_change",
+      "target": "conflict_protracted",
+      "weight": 0.8,
+      "reasoning": "regime change目标使速战速决不可能"
+    },
+    {
+      "source": "iran_power_transition",
+      "target": "conflict_protracted",
+      "weight": 0.65,
+      "reasoning": "权力真空期无人有权签署停火"
+    },
+    {
+      "source": "coalition_forming",
+      "target": "conflict_protracted",
+      "weight": 0.55,
+      "reasoning": "联盟结构增加退出协调成本"
+    },
+    {
+      "source": "us_regime_change",
+      "target": "us_ground_war",
+      "weight": 0.55,
+      "reasoning": "regime change最终需要地面力量"
+    },
+    {
+      "source": "iran_missile_degraded",
+      "target": "us_ground_war",
+      "weight": 0.4,
+      "reasoning": "导弹威慑降低使地面行动风险下降"
+    },
+    {
+      "source": "qatar_lng_disrupted",
+      "target": "europe_energy_crisis",
+      "weight": 0.8,
+      "reasoning": "LNG中断直接冲击欧洲"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "europe_energy_crisis",
+      "weight": 0.7,
+      "reasoning": "全球能源危机传导至欧洲"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "global_stagflation",
+      "weight": 0.75,
+      "reasoning": "能源危机是滞胀的经典触发器"
+    },
+    {
+      "source": "global_stagflation",
+      "target": "fed_dilemma",
+      "weight": 0.65,
+      "reasoning": "滞胀不必然导致两难——Fed可能果断选一边(Volcker式抗通胀或容忍通胀保增长)。"
+    },
+    {
+      "source": "oil_price_100",
+      "target": "fed_dilemma",
+      "weight": 0.65,
+      "reasoning": "油价推高通胀预期"
+    },
+    {
+      "source": "global_stagflation",
+      "target": "em_debt_crisis",
+      "weight": 0.65,
+      "reasoning": "滞胀环境恶化EM基本面"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "em_debt_crisis",
+      "weight": 0.6,
+      "reasoning": "能源进口国经常账恶化"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "safe_haven_rally",
+      "weight": 0.5,
+      "reasoning": "危机≠避险上涨。Day 7黄金在危机中下跌(yield压制)。传导取决于Fed政策预期方向。"
+    },
+    {
+      "source": "equity_correction",
+      "target": "safe_haven_rally",
+      "weight": 0.7,
+      "reasoning": "股市回调加速避险"
+    },
+    {
+      "source": "global_stagflation",
+      "target": "treasury_stagflation",
+      "weight": 0.8,
+      "reasoning": "滞胀直接推高长端利率"
+    },
+    {
+      "source": "fed_dilemma",
+      "target": "treasury_stagflation",
+      "weight": 0.65,
+      "reasoning": "政策不确定性增加期限溢价"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "food_price_surge",
+      "weight": 0.65,
+      "reasoning": "能源→化肥→粮食传导链"
+    },
+    {
+      "source": "europe_energy_crisis",
+      "target": "food_price_surge",
+      "weight": 0.5,
+      "reasoning": "欧洲化肥产能受限"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "trade_route_reshuffle",
+      "weight": 0.85,
+      "reasoning": "海峡封锁迫使航线调整"
+    },
+    {
+      "source": "shipping_insurance_collapse",
+      "target": "trade_route_reshuffle",
+      "weight": 0.7,
+      "reasoning": "保险成本差异驱动路线选择"
+    },
+    {
+      "source": "iran_power_transition",
+      "target": "iran_internal_crisis",
+      "weight": 0.6,
+      "reasoning": "权力真空削弱社会控制"
+    },
+    {
+      "source": "secondary_sanctions",
+      "target": "iran_internal_crisis",
+      "weight": 0.5,
+      "reasoning": "经济恶化加剧民怨"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "eu_defense_surge",
+      "weight": 0.65,
+      "reasoning": "区域战争刺激欧洲安全意识"
+    },
+    {
+      "source": "europe_energy_crisis",
+      "target": "eu_defense_surge",
+      "weight": 0.55,
+      "reasoning": "能源脆弱性→战略自主需求"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "refugee_wave",
+      "weight": 0.65,
+      "reasoning": "持久冲突是难民潮主因"
+    },
+    {
+      "source": "iran_internal_crisis",
+      "target": "refugee_wave",
+      "weight": 0.5,
+      "reasoning": "伊朗国内危机加速外流"
+    },
+    {
+      "source": "pentagon_war_cost",
+      "target": "us_domestic_pressure",
+      "weight": 0.5,
+      "reasoning": "战争开支引发财政质疑"
+    },
+    {
+      "source": "global_stagflation",
+      "target": "credit_tightening",
+      "weight": 0.65,
+      "reasoning": "滞胀恶化企业基本面"
+    },
+    {
+      "source": "equity_correction",
+      "target": "credit_tightening",
+      "weight": 0.55,
+      "reasoning": "股市下跌与信贷紧缩正反馈"
+    },
+    {
+      "source": "em_debt_crisis",
+      "target": "cny_depreciation",
+      "weight": 0.5,
+      "reasoning": "EM风险传染"
+    },
+    {
+      "source": "safe_haven_rally",
+      "target": "jpy_carry_unwind",
+      "weight": 0.55,
+      "reasoning": "避险情绪触发carry unwind"
+    },
+    {
+      "source": "equity_correction",
+      "target": "jpy_carry_unwind",
+      "weight": 0.5,
+      "reasoning": "股市回调迫使杠杆平仓"
+    },
+    {
+      "source": "europe_energy_crisis",
+      "target": "euro_parity",
+      "weight": 0.65,
+      "reasoning": "能源危机打击欧元基本面"
+    },
+    {
+      "source": "safe_haven_rally",
+      "target": "euro_parity",
+      "weight": 0.5,
+      "reasoning": "美元避险需求压制欧元"
+    },
+    {
+      "source": "ceasefire_backchannel",
+      "target": "conflict_deescalation",
+      "weight": 0.5,
+      "reasoning": "后渠道谈判是降级前提"
+    },
+    {
+      "source": "china_energy_diplomacy",
+      "target": "conflict_deescalation",
+      "weight": 0.35,
+      "reasoning": "中国斡旋提供外交台阶"
+    },
+    {
+      "source": "kurdish_proxy",
+      "target": "turkey_intervention",
+      "weight": 0.65,
+      "reasoning": "库尔德武装是土耳其核心关切"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "turkey_intervention",
+      "weight": 0.4,
+      "reasoning": "区域冲突扩大土耳其风险暴露"
+    },
+    {
+      "source": "food_price_surge",
+      "target": "em_food_riots",
+      "weight": 0.6,
+      "reasoning": "粮价是社会稳定的直接触发器"
+    },
+    {
+      "source": "em_debt_crisis",
+      "target": "em_food_riots",
+      "weight": 0.45,
+      "reasoning": "经济危机放大社会脆弱性"
+    },
+    {
+      "source": "europe_energy_crisis",
+      "target": "ecb_rate_reversal",
+      "weight": 0.6,
+      "reasoning": "能源通胀倒逼加息"
+    },
+    {
+      "source": "global_stagflation",
+      "target": "ecb_rate_reversal",
+      "weight": 0.5,
+      "reasoning": "滞胀压力传导"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "wartime_capital_controls",
+      "weight": 0.5,
+      "reasoning": "持久冲突增加战时动员需求"
+    },
+    {
+      "source": "us_domestic_pressure",
+      "target": "wartime_capital_controls",
+      "weight": 0.4,
+      "reasoning": "政治压力可能触发经济干预"
+    },
+    {
+      "source": "oil_price_100",
+      "target": "oil_new_equilibrium",
+      "weight": 0.6,
+      "reasoning": "超调后市场寻找均衡"
+    },
+    {
+      "source": "trade_route_reshuffle",
+      "target": "oil_new_equilibrium",
+      "weight": 0.55,
+      "reasoning": "新贸易路线重新定价供应链"
+    },
+    {
+      "source": "conflict_deescalation",
+      "target": "oil_new_equilibrium",
+      "weight": 0.45,
+      "reasoning": "停火信号会加速价格回落"
+    },
+    {
+      "source": "refugee_wave",
+      "target": "europe_right_wing",
+      "weight": 0.65,
+      "reasoning": "难民问题是右翼崛起的核心议题"
+    },
+    {
+      "source": "eu_defense_surge",
+      "target": "eu_nuclear_umbrella",
+      "weight": 0.55,
+      "reasoning": "防务加速是核伞计划的前提"
+    },
+    {
+      "source": "irgc_nuclear",
+      "target": "eu_nuclear_umbrella",
+      "weight": 0.5,
+      "reasoning": "伊朗核突破刺激欧洲核自主需求"
+    },
+    {
+      "source": "equity_correction",
+      "target": "crypto_risk_correlation",
+      "weight": 0.65,
+      "reasoning": "股市回调带动加密下跌"
+    },
+    {
+      "source": "jpy_carry_unwind",
+      "target": "crypto_risk_correlation",
+      "weight": 0.45,
+      "reasoning": "杠杆平仓波及加密"
+    },
+    {
+      "source": "us_domestic_pressure",
+      "target": "equity_correction",
+      "weight": 0.35,
+      "reasoning": "政治不确定性压制市场信心"
+    },
+    {
+      "source": "coalition_forming",
+      "target": "hormuz_blockade",
+      "weight": 0.3,
+      "reasoning": "联军巡逻可能部分缓解封锁(负相关)"
+    },
+    {
+      "source": "russia_energy_leverage",
+      "target": "oil_new_equilibrium",
+      "weight": 0.4,
+      "reasoning": "俄罗斯增产填补缺口但有地缘政治条件"
+    },
+    {
+      "source": "asia_refinery_cuts",
+      "target": "oil_price_100",
+      "weight": 0.55,
+      "reasoning": "亚洲减产加剧全球供应短缺推高油价"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "irgc_nuclear",
+      "weight": 0.5,
+      "reasoning": "持久冲突增加核武器作为终极威慑的诱惑"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "irgc_nuclear",
+      "weight": 0.45,
+      "reasoning": "区域战争使伊朗安全环境极度恶化→核补偿"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "ceasefire_backchannel",
+      "weight": 0.35,
+      "reasoning": "持久消耗增加双方谈判意愿"
+    },
+    {
+      "source": "iran_missile_degraded",
+      "target": "conflict_protracted",
+      "weight": 0.5,
+      "reasoning": "常规威慑丧失但地面抵抗仍在→僵持"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "conflict_protracted",
+      "weight": 0.6,
+      "reasoning": "区域化冲突比双边更难停止"
+    },
+    {
+      "source": "coalition_forming",
+      "target": "us_ground_war",
+      "weight": 0.45,
+      "reasoning": "联盟降低美军单独行动的政治成本"
+    },
+    {
+      "source": "kurdish_proxy",
+      "target": "us_ground_war",
+      "weight": 0.4,
+      "reasoning": "代理人战争失败可能迫使直接介入"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "trade_route_reshuffle",
+      "weight": 0.7,
+      "reasoning": "能源危机驱动贸易路线调整"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "iran_internal_crisis",
+      "weight": 0.55,
+      "reasoning": "持久冲突耗竭国内资源→社会不满"
+    },
+    {
+      "source": "coalition_forming",
+      "target": "eu_defense_surge",
+      "weight": 0.5,
+      "reasoning": "联盟暴露欧洲防务贡献不足"
+    },
+    {
+      "source": "regional_spillover",
+      "target": "refugee_wave",
+      "weight": 0.55,
+      "reasoning": "区域冲突直接产生难民流"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "us_domestic_pressure",
+      "weight": 0.6,
+      "reasoning": "持久冲突消耗公众支持"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "turkey_intervention",
+      "weight": 0.4,
+      "reasoning": "持久冲突增加库尔德势力壮大的风险"
+    },
+    {
+      "source": "fed_dilemma",
+      "target": "wartime_capital_controls",
+      "weight": 0.35,
+      "reasoning": "常规政策失效倒逼非常规干预"
+    },
+    {
+      "source": "conflict_protracted",
+      "target": "eu_nuclear_umbrella",
+      "weight": 0.4,
+      "reasoning": "持久冲突暴露美国安全承诺的可靠性问题"
+    },
+    {
+      "source": "us_ground_war",
+      "target": "conflict_protracted",
+      "weight": 0.7,
+      "reasoning": "地面部队入伊使冲突不可逆地长期化"
+    },
+    {
+      "source": "us_ground_war",
+      "target": "iran_internal_crisis",
+      "weight": 0.45,
+      "reasoning": "地面入侵可能激发民族主义也可能瓦解政权"
+    },
+    {
+      "source": "russia_energy_leverage",
+      "target": "ceasefire_backchannel",
+      "weight": 0.4,
+      "reasoning": "俄罗斯可能利用能源杠杆在安理会推动停火以换取制裁放松"
+    },
+    {
+      "source": "russia_energy_leverage",
+      "target": "europe_energy_crisis",
+      "weight": 0.45,
+      "reasoning": "俄罗斯可能趁机收紧对欧天然气条件(管道+LNG)"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "supply_disruption_volume",
+      "weight": 0.9,
+      "reasoning": "封锁直接决定中断量，90%通行中断→~15mbpd受影响"
+    },
+    {
+      "source": "iran_gulf_attacks",
+      "target": "supply_disruption_volume",
+      "weight": 0.7,
+      "reasoning": "海湾设施遭袭直接影响出口能力(巴林炼厂等)"
+    },
+    {
+      "source": "supply_disruption_volume",
+      "target": "net_supply_gap",
+      "weight": 0.8,
+      "reasoning": "中断量是净缺口的主要驱动"
+    },
+    {
+      "source": "supply_offset_capacity",
+      "target": "net_supply_gap",
+      "weight": 0.35,
+      "reasoning": "替代能力越强,净缺口越小(反向因子,低权重表示抵消有限)"
+    },
+    {
+      "source": "net_supply_gap",
+      "target": "energy_crisis",
+      "weight": 0.85,
+      "reasoning": "净缺口>3mbpd是能源危机的定义性触发条件"
+    },
+    {
+      "source": "shipping_insurance_collapse",
+      "target": "supply_disruption_volume",
+      "weight": 0.65,
+      "reasoning": "保险崩溃加剧有效中断(即使没有物理封锁,保险使运输不可行)"
+    },
+    {
+      "source": "us_regime_change",
+      "target": "supply_offset_capacity",
+      "weight": 0.3,
+      "reasoning": "美国战略意图影响SPR释放决策的政治意愿"
+    },
+    {
+      "source": "oil_price_100",
+      "target": "input_inflation_transmission",
+      "weight": 0.8,
+      "reasoning": "油价破百直接推高PPI能源分项，传导至CPI有6-12月滞后"
+    },
+    {
+      "source": "input_inflation_transmission",
+      "target": "global_stagflation",
+      "weight": 0.7,
+      "reasoning": "输入性通胀叠加需求抑制→滞胀。但需要持续>2季度才满足定义"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "earnings_downgrade",
+      "weight": 0.75,
+      "reasoning": "能源成本冲击直接影响企业利润率(航空/化工/运输)"
+    },
+    {
+      "source": "earnings_downgrade",
+      "target": "equity_correction",
+      "weight": 0.8,
+      "reasoning": "EPS下修>5%历史上对应S&P回撤5-15%"
+    },
+    {
+      "source": "global_stagflation",
+      "target": "earnings_downgrade",
+      "weight": 0.65,
+      "reasoning": "滞胀环境下成本上升+需求下降双重挤压盈利"
+    },
+    {
+      "source": "oil_price_100",
+      "target": "gasoline_price_surge",
+      "weight": 0.6,
+      "reasoning": "油价→汽油传导可能被政治干预压缩(暴利税威胁、联邦汽油税豁免)。2022年拜登已有先例。"
+    },
+    {
+      "source": "gasoline_price_surge",
+      "target": "us_domestic_pressure",
+      "weight": 0.8,
+      "reasoning": "汽油>$5是美国政治毒药(参照2008年)，直接冲击总统支持率"
+    },
+    {
+      "source": "treasury_stagflation",
+      "target": "em_capital_outflow",
+      "weight": 0.7,
+      "reasoning": "US yield走高→EM与US利差收窄→资本回流美国"
+    },
+    {
+      "source": "safe_haven_rally",
+      "target": "em_capital_outflow",
+      "weight": 0.55,
+      "reasoning": "DXY走强→EM货币贬值→加速资本外流"
+    },
+    {
+      "source": "em_capital_outflow",
+      "target": "em_debt_crisis",
+      "weight": 0.7,
+      "reasoning": "资本外流→外储消耗→偿债能力下降→CDS走阔"
+    },
+    {
+      "source": "em_capital_outflow",
+      "target": "cny_depreciation",
+      "weight": 0.6,
+      "reasoning": "整体EM资本外流背景下人民币面临贬值压力"
+    },
+    {
+      "source": "europe_energy_crisis",
+      "target": "eu_cost_of_living_crisis",
+      "weight": 0.75,
+      "reasoning": "TTF>€80→家庭能源账单翻倍，2022后财政缓冲已耗尽"
+    },
+    {
+      "source": "eu_cost_of_living_crisis",
+      "target": "europe_right_wing",
+      "weight": 0.65,
+      "reasoning": "生活成本危机→民众不满→右翼民粹叙事(反移民+反建制)"
+    },
+    {
+      "source": "eu_cost_of_living_crisis",
+      "target": "refugee_wave",
+      "weight": 0.3,
+      "reasoning": "生活成本危机使欧洲对难民接纳能力/意愿下降(反向：难民加剧成本压力)"
+    },
+    {
+      "source": "earnings_downgrade",
+      "target": "safe_haven_rally",
+      "weight": 0.5,
+      "reasoning": "盈利下修→risk-off→避险资产受益(但被yield压制)"
+    },
+    {
+      "source": "iran_missile_degraded",
+      "target": "cyber_attack",
+      "weight": 0.55,
+      "reasoning": "常规军事能力被削弱→转向非对称手段(网络战)"
+    },
+    {
+      "source": "cyber_attack",
+      "target": "equity_correction",
+      "weight": 0.5,
+      "reasoning": "成功的网络攻击→市场恐慌(尤其金融/能源板块)"
+    },
+    {
+      "source": "cyber_attack",
+      "target": "regional_spillover",
+      "weight": 0.4,
+      "reasoning": "网络攻击可能波及盟友(以色列/海湾国家基础设施)"
+    },
+    {
+      "source": "russia_energy_leverage",
+      "target": "us_military_casualties",
+      "weight": 0.35,
+      "reasoning": "俄情报支持提高伊朗打击精度→增加美军伤亡概率"
+    },
+    {
+      "source": "iran_retaliation",
+      "target": "us_military_casualties",
+      "weight": 0.3,
+      "reasoning": "伊朗大规模报复中可能命中美军目标"
+    },
+    {
+      "source": "us_military_casualties",
+      "target": "us_domestic_pressure",
+      "weight": 0.85,
+      "reasoning": "美军重大伤亡→国内反战情绪暴涨(越战/索马里模式)"
+    },
+    {
+      "source": "us_military_casualties",
+      "target": "us_ground_war",
+      "weight": 0.5,
+      "reasoning": "重大伤亡后可能走两个方向: 升级(地面进攻报复)或退出"
+    },
+    {
+      "source": "us_military_casualties",
+      "target": "conflict_protracted",
+      "weight": 0.6,
+      "reasoning": "伤亡使退出更难(沉没成本谬误+\"不能白死\")"
+    },
+    {
+      "source": "oil_price_100",
+      "target": "aviation_demand_cut",
+      "weight": 0.7,
+      "reasoning": "航油成本占航空30-40%，油价破百直接使短途航线不经济"
+    },
+    {
+      "source": "oil_price_100",
+      "target": "industrial_demand_cut",
+      "weight": 0.55,
+      "reasoning": "石脑油/燃料油成本飙升→化工利润倒挂→减产，但有2-4周滞后"
+    },
+    {
+      "source": "gasoline_price_surge",
+      "target": "consumer_demand_cut",
+      "weight": 0.6,
+      "reasoning": "汽油>$5→消费者减少驾驶/转向公共交通，但行为改变慢"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "panic_inventory_build",
+      "weight": 0.75,
+      "reasoning": "供应危机首先触发恐慌囤货(炼厂+投机)，短期推高表观需求"
+    },
+    {
+      "source": "aviation_demand_cut",
+      "target": "aggregate_demand_destruction",
+      "weight": 0.65,
+      "reasoning": "航空~0.8mbpd减量是需求崩塌的第一波"
+    },
+    {
+      "source": "industrial_demand_cut",
+      "target": "aggregate_demand_destruction",
+      "weight": 0.6,
+      "reasoning": "工业减产~1.0mbpd是需求崩塌的主力(但滞后)"
+    },
+    {
+      "source": "consumer_demand_cut",
+      "target": "aggregate_demand_destruction",
+      "weight": 0.45,
+      "reasoning": "消费者行为改变贡献~0.5mbpd，是最慢的一波"
+    },
+    {
+      "source": "panic_inventory_build",
+      "target": "aggregate_demand_destruction",
+      "weight": 0.3,
+      "reasoning": "反向因子: 囤油短期增加需求，抵消部分需求崩塌(低权重=抵消有限)"
+    },
+    {
+      "source": "aggregate_demand_destruction",
+      "target": "oil_new_equilibrium",
+      "weight": 0.75,
+      "reasoning": "需求减少>2mbpd时油价将从$100+回调，在$85-95区间找到新均衡"
+    },
+    {
+      "source": "aggregate_demand_destruction",
+      "target": "global_stagflation",
+      "weight": 0.5,
+      "reasoning": "需求崩塌→GDP增速下降(滞的部分)，但也缓解通胀(胀的部分)"
+    },
+    {
+      "source": "gasoline_price_surge",
+      "target": "govt_demand_intervention",
+      "weight": 0.65,
+      "reasoning": "汽油>$5是政治红线，触发补贴/税减/限价"
+    },
+    {
+      "source": "us_domestic_pressure",
+      "target": "govt_demand_intervention",
+      "weight": 0.55,
+      "reasoning": "国内政治反弹→政府被迫采取需求端干预"
+    },
+    {
+      "source": "supply_offset_capacity",
+      "target": "panic_inventory_build",
+      "weight": 0.4,
+      "reasoning": "SPR释放声明降低恐慌心理→减少囤油行为"
+    },
+    {
+      "source": "us_israel_strikes",
+      "target": "iran_energy_infra_strikes",
+      "weight": 0.95,
+      "reasoning": "美以将打击目标从军事设施升级至能源基础设施，第9天已确认发生，直接传导"
+    },
+    {
+      "source": "iran_energy_infra_strikes",
+      "target": "iran_oil_production_cut",
+      "weight": 0.85,
+      "reasoning": "油库和炼油设施被摧毁直接削减产能，火灾持续导致修复困难，1-2周内显现"
+    },
+    {
+      "source": "iran_oil_production_cut",
+      "target": "supply_disruption_volume",
+      "weight": 0.8,
+      "reasoning": "伊朗国内产能损失直接加入全球供应缺口计算，即时传导"
+    },
+    {
+      "source": "iran_energy_infra_strikes",
+      "target": "net_supply_gap",
+      "weight": 0.75,
+      "reasoning": "伊朗石油出口能力受损叠加已有霍尔木兹封锁效应，扩大净供应缺口"
+    },
+    {
+      "source": "iran_kuwait_drone_attack",
+      "target": "kuwait_oil_production_cut",
+      "weight": 0.9,
+      "reasoning": "无人机打击科威特储油设施直接导致储油空间受限和产量削减"
+    },
+    {
+      "source": "kuwait_oil_production_cut",
+      "target": "supply_disruption_volume",
+      "weight": 0.85,
+      "reasoning": "科威特日产量约250万桶，削减直接扩大全球供应缺口"
+    },
+    {
+      "source": "iran_kuwait_drone_attack",
+      "target": "regional_spillover",
+      "weight": 0.95,
+      "reasoning": "伊朗无人机实质攻击科威特领土已确认冲突外溢，强化existing节点"
+    },
+    {
+      "source": "us_soldiers_killed_iran",
+      "target": "us_military_casualties",
+      "weight": 0.95,
+      "reasoning": "6名阵亡士兵是直接事实更新，大幅提高us_military_casualties概率"
+    },
+    {
+      "source": "us_soldiers_killed_iran",
+      "target": "us_domestic_pressure",
+      "weight": 0.9,
+      "reasoning": "阵亡士兵遗体运回仪式全国直播，显著激化国内政治压力，特朗普面临两难"
+    },
+    {
+      "source": "us_soldiers_killed_iran",
+      "target": "conflict_protracted",
+      "weight": 0.7,
+      "reasoning": "美军伤亡通常触发政治强硬化反应而非收缩，增加持续冲突倾向"
+    },
+    {
+      "source": "iran_pow_dispute",
+      "target": "us_domestic_pressure",
+      "weight": 0.6,
+      "reasoning": "俘虏争议若扩大将成为强烈政治焦点，进一步激化国内压力"
+    },
+    {
+      "source": "iran_pow_dispute",
+      "target": "us_ground_war",
+      "weight": 0.5,
+      "reasoning": "营救被俘士兵可能成为地面行动的重要政治借口"
+    },
+    {
+      "source": "iran_sub_vessel_sunk",
+      "target": "hormuz_blockade",
+      "weight": 0.6,
+      "reasoning": "美伊海上直接交火升级海峡军事对峙，伊朗可能以海上封锁报复"
+    },
+    {
+      "source": "iran_sub_vessel_sunk",
+      "target": "iran_retaliation",
+      "weight": 0.5,
+      "reasoning": "87名水手阵亡是重大损失，可能触发伊朗海上报复行动"
+    },
+    {
+      "source": "russia_iran_intel_cooperation",
+      "target": "us_military_casualties",
+      "weight": 0.55,
+      "reasoning": "俄罗斯情报支持提升伊朗打击美军精准度，增加伤亡风险"
+    },
+    {
+      "source": "russia_iran_intel_cooperation",
+      "target": "conflict_protracted",
+      "weight": 0.5,
+      "reasoning": "俄罗斯支持延长伊朗抵抗能力，使冲突难以快速解决"
+    },
+    {
+      "source": "china_oppose_regime_change",
+      "target": "ceasefire_backchannel",
+      "weight": 0.7,
+      "reasoning": "中国明确外交立场为停火谈判提供政治背书和渠道，直接强化后渠道"
+    },
+    {
+      "source": "iran_pezeshkian_conditional_halt",
+      "target": "ceasefire_backchannel",
+      "weight": 0.55,
+      "reasoning": "伊朗总统条件性停打信号是谈判意愿的间接表达，为后渠道提供空间"
+    },
+    {
+      "source": "irgc_independent_action",
+      "target": "conflict_protracted",
+      "weight": 0.65,
+      "reasoning": "指挥链分裂使停火协议难以执行，延长冲突"
+    },
+    {
+      "source": "tehran_airport_struck",
+      "target": "iran_airspace_closure",
+      "weight": 0.85,
+      "reasoning": "机场被打击直接导致空域关闭或严重受限"
+    },
+    {
+      "source": "iran_airspace_closure",
+      "target": "aviation_demand_cut",
+      "weight": 0.9,
+      "reasoning": "伊朗上空空域关闭强制全球航班绕行，直接削减中东航线运力并增加成本"
+    },
+    {
+      "source": "iran_airspace_closure",
+      "target": "supply_disruption_volume",
+      "weight": 0.35,
+      "reasoning": "空域关闭间接影响货运和军事补给"
+    },
+    {
+      "source": "beirut_irgc_strike",
+      "target": "regional_spillover",
+      "weight": 0.7,
+      "reasoning": "以色列打击贝鲁特将黎巴嫩直接卷入冲突，外溢范围扩大"
+    },
+    {
+      "source": "beirut_irgc_strike",
+      "target": "turkey_intervention",
+      "weight": 0.25,
+      "reasoning": "黎巴嫩局势恶化增加土耳其评估是否介入的政治压力"
+    },
+    {
+      "source": "baghdad_us_embassy_attack",
+      "target": "regional_spillover",
+      "weight": 0.8,
+      "reasoning": "伊拉克境内美国使馆遭袭将伊拉克事实上卷入冲突"
+    },
+    {
+      "source": "baghdad_us_embassy_attack",
+      "target": "us_military_casualties",
+      "weight": 0.55,
+      "reasoning": "使馆及驻伊美军持续面临代理人武装威胁"
+    },
+    {
+      "source": "baghdad_us_embassy_attack",
+      "target": "kurdish_proxy",
+      "weight": 0.45,
+      "reasoning": "伊拉克成为战场推动美国寻求盟友，库尔德选项更迫切"
+    },
+    {
+      "source": "houthi_restraint",
+      "target": "conflict_deescalation",
+      "weight": 0.3,
+      "reasoning": "胡塞克制降低红海方向压力，为局部降级提供可能性"
+    },
+    {
+      "source": "global_antiwar_protests",
+      "target": "ceasefire_backchannel",
+      "weight": 0.3,
+      "reasoning": "国际舆论压力增加各国政府推动停火的动力"
+    },
+    {
+      "source": "iran_energy_infra_strikes",
+      "target": "iran_internal_crisis",
+      "weight": 0.6,
+      "reasoning": "首都油库爆炸、燃油短缺和民众恐慌可能激化国内不满情绪"
+    },
+    {
+      "source": "iran_energy_infra_strikes",
+      "target": "oil_price_100",
+      "weight": 0.7,
+      "reasoning": "伊朗产能直接受损叠加战争风险溢价推升油价"
+    },
+    {
+      "source": "us_soldiers_killed_iran",
+      "target": "equity_correction",
+      "weight": 0.4,
+      "reasoning": "美军阵亡升级风险感知，直接冲击市场情绪"
+    },
+    {
+      "source": "irgc_independent_action",
+      "target": "irgc_nuclear",
+      "weight": 0.55,
+      "reasoning": "IRGC脱离政治控制行动表明其自主性，核计划加速更可能独立推进"
+    },
+    {
+      "source": "tehran_oil_depot_strikes",
+      "target": "iran_refinery_capacity_collapse",
+      "weight": 0.88,
+      "reasoning": "直接物理打击导致炼油/储油能力骤降，火灾和后续空袭威胁阻止修复，时间尺度：即时-7天"
+    },
+    {
+      "source": "tehran_oil_depot_strikes",
+      "target": "iran_oil_production_cut",
+      "weight": 0.85,
+      "reasoning": "储油/炼油设施被毁直接切断伊朗石油出口链条，时间尺度：即时"
+    },
+    {
+      "source": "tehran_oil_depot_strikes",
+      "target": "supply_disruption_volume",
+      "weight": 0.8,
+      "reasoning": "伊朗炼油出口归零叠加存储损毁，直接增加全球供应缺口，时间尺度：即时"
+    },
+    {
+      "source": "tehran_oil_depot_strikes",
+      "target": "iran_internal_crisis",
+      "weight": 0.7,
+      "reasoning": "国内成品油短缺引发民众排队抢购，激化反政府情绪，时间尺度：7-14天"
+    },
+    {
+      "source": "iran_refinery_capacity_collapse",
+      "target": "iran_domestic_fuel_shortage",
+      "weight": 0.85,
+      "reasoning": "炼油能力损失30-50%直接导致国内成品油短缺，时间尺度：3-7天"
+    },
+    {
+      "source": "iran_domestic_fuel_shortage",
+      "target": "iran_internal_crisis",
+      "weight": 0.72,
+      "reasoning": "燃油短缺引发民众恐慌和排队，激化对政府的不满，时间尺度：7-21天"
+    },
+    {
+      "source": "gulf_energy_infra_under_fire",
+      "target": "supply_disruption_volume",
+      "weight": 0.75,
+      "reasoning": "卡塔尔/沙特/科威特能源设施受威胁导致主动减产或被动中断，时间尺度：即时-7天"
+    },
+    {
+      "source": "gulf_energy_infra_under_fire",
+      "target": "qatar_lng_disrupted",
+      "weight": 0.8,
+      "reasoning": "卡塔尔遭无人机袭击直接威胁LNG出口设施运营安全，时间尺度：即时"
+    },
+    {
+      "source": "gulf_energy_infra_under_fire",
+      "target": "opec_emergency_meeting",
+      "weight": 0.65,
+      "reasoning": "海湾多国同时受威胁，需要集体协调应对产量缺口，时间尺度：3-7天"
+    },
+    {
+      "source": "kuwait_oil_production_cut",
+      "target": "gulf_energy_infra_under_fire",
+      "weight": 0.8,
+      "reasoning": "科威特减产是海湾能源基础设施受打击的直接证据，相互强化，时间尺度：即时"
+    },
+    {
+      "source": "aviation_cost_surge",
+      "target": "aviation_demand_cut",
+      "weight": 0.75,
+      "reasoning": "绕行成本激增推高票价，进一步压制需求，时间尺度：7-14天"
+    },
+    {
+      "source": "aviation_cost_surge",
+      "target": "input_inflation_transmission",
+      "weight": 0.6,
+      "reasoning": "航空燃油消耗增加推高航空运输成本并向票价传导，时间尺度：14-30天"
+    },
+    {
+      "source": "iran_airspace_closure",
+      "target": "aviation_cost_surge",
+      "weight": 0.9,
+      "reasoning": "空域关闭直接强制绕行，燃油消耗和时间成本立即上升，时间尺度：即时"
+    },
+    {
+      "source": "tehran_oil_depot_strikes",
+      "target": "oil_price_110_threshold",
+      "weight": 0.72,
+      "reasoning": "能源基础设施打击释放额外地缘风险溢价，推动油价突破前期高点，时间尺度：1-7天"
+    },
+    {
+      "source": "gulf_energy_infra_under_fire",
+      "target": "oil_price_110_threshold",
+      "weight": 0.7,
+      "reasoning": "海湾多国同时受威胁叠加供应中断预期，恐慌性溢价激活，时间尺度：即时"
+    },
+    {
+      "source": "oil_price_110_threshold",
+      "target": "global_stagflation",
+      "weight": 0.75,
+      "reasoning": "油价超过$110触发能源成本向全经济链条传导，推高通胀同时压制增长，时间尺度：30-60天"
+    },
+    {
+      "source": "civilian_casualty_narrative",
+      "target": "global_antiwar_protests",
+      "weight": 0.72,
+      "reasoning": "儿童伤亡图像和死亡人数数据激化全球反战情绪，推动更大规模示威，时间尺度：即时-7天"
+    },
+    {
+      "source": "civilian_casualty_narrative",
+      "target": "ceasefire_backchannel",
+      "weight": 0.5,
+      "reasoning": "国际人道主义压力增加，为停火谈判创造政治空间，时间尺度：7-21天"
+    },
+    {
+      "source": "opec_emergency_meeting",
+      "target": "supply_offset_capacity",
+      "weight": 0.55,
+      "reasoning": "OPEC+若达成增产协议可部分弥补供应缺口，但受安全形势制约，时间尺度：14-30天"
+    },
+    {
+      "source": "iran_pezeshkian_conditional_halt",
+      "target": "gulf_energy_infra_under_fire",
+      "weight": 0.6,
+      "reasoning": "佩泽什基安条件性停火与IRGC独立行动之间的矛盾，使海湾能源设施威胁持续存在，时间尺度：即时"
+    },
+    {
+      "source": "irgc_independent_action",
+      "target": "gulf_energy_infra_under_fire",
+      "weight": 0.7,
+      "reasoning": "IRGC脱离总统控制继续对海湾发动攻击，能源基础设施威胁难以政治解决，时间尺度：即时"
+    },
+    {
+      "source": "iran_oil_export_halt",
+      "target": "net_supply_gap",
+      "weight": 0.85,
+      "reasoning": "伊朗出口中断直接增加全球供应缺口，伊朗日均出口约150万桶，中断后缺口扩大至4-5mbpd，48小时内传导至现货市场"
+    },
+    {
+      "source": "iran_oil_export_halt",
+      "target": "oil_price_110_threshold",
+      "weight": 0.72,
+      "reasoning": "出口中断叠加已有供应缺口推动油价突破$110，市场在3-7天内完成定价"
+    },
+    {
+      "source": "gulf_energy_risk_premium_spike",
+      "target": "oil_price_110_threshold",
+      "weight": 0.78,
+      "reasoning": "风险溢价跳升直接体现为期货市场升水扩大，WTI-Brent价差收窄，现货价格向$110靠拢"
+    },
+    {
+      "source": "aviation_industry_loss_quantified",
+      "target": "earnings_downgrade",
+      "weight": 0.65,
+      "reasoning": "航空业每日$2亿+损失叠加绕行燃油成本，Q1/Q2盈利预测大幅下修，带动运输板块拖累整体企业盈利"
+    },
+    {
+      "source": "aviation_industry_loss_quantified",
+      "target": "input_inflation_transmission",
+      "weight": 0.55,
+      "reasoning": "航空绕行成本转化为全球货运溢价，经由供应链传导至商品价格，增加PPI压力"
+    },
+    {
+      "source": "china_economic_exposure_activated",
+      "target": "china_energy_diplomacy",
+      "weight": 0.72,
+      "reasoning": "经济敞口压力迫使中国升级外交斡旋力度，从被动表态转向主动介入，提升停火谈判实质进展概率"
+    },
+    {
+      "source": "china_economic_exposure_activated",
+      "target": "cny_depreciation",
+      "weight": 0.55,
+      "reasoning": "中国能源进口成本骤增恶化经常账户，叠加美元避险需求，人民币承压走弱"
+    },
+    {
+      "source": "global_shipping_rerouting_cost",
+      "target": "input_inflation_transmission",
+      "weight": 0.68,
+      "reasoning": "绕行成本转化为全球商品价格底部抬升，通过运费→进口价格→PPI链条在30-60天内传导至CPI"
+    },
+    {
+      "source": "global_shipping_rerouting_cost",
+      "target": "trade_route_reshuffle",
+      "weight": 0.75,
+      "reasoning": "永久性绕行成本推动航运公司重新规划固定航线，红海/苏伊士路线替代安排加速形成"
+    },
+    {
+      "source": "gulf_energy_risk_premium_spike",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.7,
+      "reasoning": "海湾设施遭袭现实使保险商将整个波斯湾列为战争风险区，保费跳升至不可承受水平，触发实质性保险市场崩溃"
+    },
+    {
+      "source": "iran_refinery_capacity_collapse",
+      "target": "iran_cyberattack_capacity_degraded",
+      "weight": 0.55,
+      "reasoning": "炼油能力崩溃导致电力供应短缺，网络战指挥中心及服务器集群运行受基础能源约束，降低持续性网络攻击能力上限；传导时间：2-4周"
+    },
+    {
+      "source": "irgc_independent_action",
+      "target": "critical_infra_cyber_risk_elevated",
+      "weight": 0.65,
+      "reasoning": "IRGC脱离政治控制后，倾向以非对称网络手段实施报复，不受外交停火信号约束；传导时间：即时至2周"
+    },
+    {
+      "source": "critical_infra_cyber_risk_elevated",
+      "target": "equity_correction",
+      "weight": 0.45,
+      "reasoning": "系统性网络风险上升触发科技/金融板块避险性抛售，叠加已有的能源冲击，加深股市回调；传导时间：事件驱动，1-5天"
+    },
+    {
+      "source": "iran_airspace_closure",
+      "target": "global_aviation_tech_rerouting_demand",
+      "weight": 0.82,
+      "reasoning": "空域关闭直接触发航空公司紧急重规划需求，飞行管理系统和航线优化技术服务需求激增；传导时间：即时"
+    },
+    {
+      "source": "aviation_industry_loss_quantified",
+      "target": "global_aviation_tech_rerouting_demand",
+      "weight": 0.6,
+      "reasoning": "损失量化报道强化市场对永久性绕行的预期，推动航空公司加大技术投资以控制长期运营成本；传导时间：1-2周"
+    },
+    {
+      "source": "global_aviation_tech_rerouting_demand",
+      "target": "aviation_cost_surge",
+      "weight": 0.4,
+      "reasoning": "短期技术重规划成本叠加绕行燃油消耗，进一步推高航空运营成本；传导时间：即时至1周"
+    },
+    {
+      "source": "china_oppose_regime_change",
+      "target": "china_tech_selfsufficiency_push",
+      "weight": 0.58,
+      "reasoning": "政治立场对立强化中国对美技术依赖风险认知，推动芯片/能源技术国产化政策加速；传导时间：政策层1-2周，资金层1-3个月"
+    },
+    {
+      "source": "china_economic_exposure_activated",
+      "target": "china_tech_selfsufficiency_push",
+      "weight": 0.65,
+      "reasoning": "能源经济敞口风险激活直接推动中国加速能源技术(核电/海上风电/储能)自主化以降低中东依赖；传导时间：2-4周政策宣示"
+    },
+    {
+      "source": "secondary_sanctions",
+      "target": "semiconductor_supply_chain_realignment",
+      "weight": 0.62,
+      "reasoning": "二级制裁扩大覆盖中国能源企业，触发中方对美国技术出口管制的反制预期，半导体供应链阵营化压力上升；传导时间：1-4周"
+    },
+    {
+      "source": "china_tech_selfsufficiency_push",
+      "target": "semiconductor_supply_chain_realignment",
+      "weight": 0.55,
+      "reasoning": "中国加速芯片国产化直接冲击全球半导体供应链整合模式，推动阵营化重组；传导时间：3-6个月"
+    },
+    {
+      "source": "eu_defense_surge",
+      "target": "eu_defense_tech_surge",
+      "weight": 0.7,
+      "reasoning": "防务开支激增直接转化为防务科技采购订单，无人机/导弹防御/电子战设备需求上升；传导时间：政策宣示2-4周，合同落地3-12个月"
+    },
+    {
+      "source": "irgc_nuclear",
+      "target": "eu_defense_tech_surge",
+      "weight": 0.48,
+      "reasoning": "核技术突破风险推动欧洲加速战略威慑科技投资，包括核探测技术和反导系统；传导时间：1-2个月"
+    },
+    {
+      "source": "civilian_casualty_narrative",
+      "target": "semiconductor_supply_chain_realignment",
+      "weight": 0.32,
+      "reasoning": "平民伤亡叙事加剧全球反美情绪，部分新兴市场国家寻求技术来源多元化，间接推动供应链重组；传导时间：1-3个月"
+    },
+    {
+      "source": "critical_infra_cyber_risk_elevated",
+      "target": "global_shipping_rerouting_cost",
+      "weight": 0.38,
+      "reasoning": "港口和航运基础设施网络攻击风险上升推高保险成本并延缓数字化运营系统部署，叠加绕行成本；传导时间：2-6周"
+    },
+    {
+      "source": "iran_pezeshkian_conditional_halt",
+      "target": "iran_pezeshkian_ceasefire_signal_credibility",
+      "weight": 0.75,
+      "reasoning": "总统停打声明是信号可信度问题的直接来源，IRGC继续行动是反证，市场需定价二者背离；即时生效"
+    },
+    {
+      "source": "irgc_independent_action",
+      "target": "iran_pezeshkian_ceasefire_signal_credibility",
+      "weight": 0.82,
+      "reasoning": "IRGC独立行动直接削弱总统信号可信度，卡塔尔/沙特/阿联酋持续遭袭是实证；即时生效"
+    },
+    {
+      "source": "civilian_casualty_narrative",
+      "target": "civilian_casualty_market_discount",
+      "weight": 0.72,
+      "reasoning": "平民伤亡叙事通过国际舆论压力传导至政治风险溢价，影响冲突持续时间预期定价；1-2周内生效"
+    },
+    {
+      "source": "us_soldiers_killed_iran",
+      "target": "us_pow_dispute_political_escalation",
+      "weight": 0.65,
+      "reasoning": "阵亡确认与俘虏争议共同构成国内政治压力来源，遗体归国仪式放大情绪效应；即时生效"
+    },
+    {
+      "source": "iran_pow_dispute",
+      "target": "us_pow_dispute_political_escalation",
+      "weight": 0.85,
+      "reasoning": "俘虏信息战是政治升压的核心驱动，特朗普否认但无法平息疑虑；即时至2周内生效"
+    },
+    {
+      "source": "us_pow_dispute_political_escalation",
+      "target": "us_domestic_pressure",
+      "weight": 0.7,
+      "reasoning": "俘虏争议强化国内政治反弹，与汽油价格双重叠加；2-4周内转化为民调压力"
+    },
+    {
+      "source": "kuwait_energy_disruption_contagion",
+      "target": "gulf_energy_infra_under_fire",
+      "weight": 0.72,
+      "reasoning": "科威特确认减产验证海湾能源系统性风险，强化对卡塔尔/沙特/阿联酋的蔓延路径预期；即时生效"
+    },
+    {
+      "source": "kuwait_energy_disruption_contagion",
+      "target": "oil_price_120_risk",
+      "weight": 0.58,
+      "reasoning": "科威特供应中断叠加伊朗出口中断，供应缺口若扩大至5mbpd以上触发$120尾部风险；2-4周内生效"
+    },
+    {
+      "source": "oil_price_110_threshold",
+      "target": "oil_price_120_risk",
+      "weight": 0.55,
+      "reasoning": "$110突破后市场动能加速，若海湾基础设施持续遭袭则上行动能增强；1-3周内生效"
+    },
+    {
+      "source": "gulf_energy_infra_under_fire",
+      "target": "oil_price_120_risk",
+      "weight": 0.62,
+      "reasoning": "海湾能源基础设施遭袭直接推升供应中断预期，触发更高油价尾部风险；1-2周内生效"
+    },
+    {
+      "source": "oil_price_120_risk",
+      "target": "fed_dilemma",
+      "weight": 0.72,
+      "reasoning": "$120油价将大幅加剧通胀压力，使美联储降息空间几乎归零，两难困境尖锐化；4-8周内传导"
+    },
+    {
+      "source": "oil_price_120_risk",
+      "target": "em_debt_crisis",
+      "weight": 0.65,
+      "reasoning": "能源进口国外汇储备耗损加速，经常账户恶化推升主权信用风险；4-8周内生效"
+    },
+    {
+      "source": "russia_intelligence_support_confirmed_risk",
+      "target": "safe_haven_rally",
+      "weight": 0.65,
+      "reasoning": "大国介入确认将触发系统性避险需求，黄金/美元/美债同步受益；确认后即时生效"
+    },
+    {
+      "source": "russia_intelligence_support_confirmed_risk",
+      "target": "secondary_sanctions",
+      "weight": 0.58,
+      "reasoning": "俄伊情报合作确认将推动美国扩大二级制裁范围至俄罗斯关联实体；2-4周内生效"
+    },
+    {
+      "source": "global_antiwar_pressure_on_us_allies",
+      "target": "ceasefire_backchannel",
+      "weight": 0.42,
+      "reasoning": "全球反战压力为停火谈判提供外部政治支撑，增加调解国行动空间；2-4周内生效"
+    },
+    {
+      "source": "civilian_casualty_market_discount",
+      "target": "equity_correction",
+      "weight": 0.38,
+      "reasoning": "平民伤亡政治风险折价通过冲突持续时间预期延长传导至股市压力；1-3周内生效"
+    },
+    {
+      "source": "iran_sub_vessel_sunk",
+      "target": "gulf_energy_risk_premium_spike",
+      "weight": 0.6,
+      "reasoning": "击沉87人军舰事件强化波斯湾航运极端风险认知，保险市场重新定价海湾能源基础设施风险；即时至1周内生效"
+    },
+    {
+      "source": "iran_pezeshkian_ceasefire_signal_credibility",
+      "target": "ceasefire_backchannel",
+      "weight": 0.35,
+      "reasoning": "即使信号可信度存疑，总统声明仍为后渠道谈判提供政治接触窗口；2-4周内生效"
+    },
+    {
+      "source": "netanyahu_regime_change_pledge",
+      "target": "conflict_protracted",
+      "weight": 0.85,
+      "reasoning": "以色列总理公开宣誓持续打击直至政权更迭，从政治承诺层面锁定冲突持续，短期内无退出机制，1-3个月内有效"
+    },
+    {
+      "source": "iran_missile_strike_israel",
+      "target": "us_military_casualties",
+      "weight": 0.55,
+      "reasoning": "伊朗持续对以色列本土发射导弹增加美军防空资产伤亡概率，1-2周传导"
+    },
+    {
+      "source": "iran_missile_strike_israel",
+      "target": "regional_spillover",
+      "weight": 0.75,
+      "reasoning": "伊朗导弹越过约旦/沙特领空被拦截，事实上已造成区域外溢，即时效应"
+    },
+    {
+      "source": "indonesia_prabowo_pressure",
+      "target": "global_antiwar_pressure_on_us_allies",
+      "weight": 0.72,
+      "reasoning": "最大穆斯林国家领导人承压案例向其他中等大国传递信号，2-4周内影响"
+    },
+    {
+      "source": "indonesia_prabowo_pressure",
+      "target": "coalition_forming",
+      "weight": 0.0,
+      "reasoning": "印尼国内压力阻止其加入美国主导联盟"
+    },
+    {
+      "source": "iran_casualties_1332_political_impact",
+      "target": "civilian_casualty_narrative",
+      "weight": 0.88,
+      "reasoning": "具体死亡数字与儿童伤亡画面叠加强化叙事，即时传导"
+    },
+    {
+      "source": "iran_casualties_1332_political_impact",
+      "target": "global_antiwar_protests",
+      "weight": 0.8,
+      "reasoning": "累计伤亡数字成为抗议动员核心论据，1周内持续推升示威规模"
+    },
+    {
+      "source": "gulf_states_hedging",
+      "target": "coalition_forming",
+      "weight": 0.0,
+      "reasoning": "海湾国家战略对冲意味着不愿公开加入反伊军事联盟"
+    },
+    {
+      "source": "gulf_states_hedging",
+      "target": "ceasefire_backchannel",
+      "weight": 0.55,
+      "reasoning": "海湾国家同时维持与中国/俄罗斯沟通渠道，为停火谈判提供侧翼支持，2-4周"
+    },
+    {
+      "source": "us_domestic_antiwar_shift",
+      "target": "us_domestic_pressure",
+      "weight": 0.75,
+      "reasoning": "国内反战情绪上升直接强化政治压力，民调反馈周期2-4周"
+    },
+    {
+      "source": "us_domestic_antiwar_shift",
+      "target": "conflict_deescalation",
+      "weight": 0.35,
+      "reasoning": "国内压力上升是降级的必要非充分条件，政治压力传导至政策需4-8周"
+    },
+    {
+      "source": "iran_conditional_ceasefire_gulf_dynamic",
+      "target": "gulf_states_hedging",
+      "weight": 0.8,
+      "reasoning": "伊朗停火条件将驱逐美军基地与停止攻击挂钩，直接迫使海湾国家战略再平衡，1-2周"
+    },
+    {
+      "source": "iran_conditional_ceasefire_gulf_dynamic",
+      "target": "pakistan_neutrality_pressure",
+      "weight": 0.6,
+      "reasoning": "相同逻辑适用于巴基斯坦，伊朗条件性停火框架强化其中立倾向，1-2周"
+    },
+    {
+      "source": "irgc_command_leadership_decapitation",
+      "target": "irgc_independent_action",
+      "weight": 0.65,
+      "reasoning": "圣城军指挥层被清除导致指挥链断裂，各级单位更可能独立行动，即时至1周效应"
+    },
+    {
+      "source": "irgc_command_leadership_decapitation",
+      "target": "regional_spillover",
+      "weight": 0.6,
+      "reasoning": "圣城军在黎巴嫩指挥官被清除激活黎巴嫩真主党残余网络反应，1-2周"
+    },
+    {
+      "source": "war_day9_energy_escalation_threshold",
+      "target": "iran_retaliation",
+      "weight": 0.7,
+      "reasoning": "能源基础设施被打击触发伊朗国家生存逻辑，报复级别升级概率上升，即时至1周"
+    },
+    {
+      "source": "war_day9_energy_escalation_threshold",
+      "target": "oil_price_120_risk",
+      "weight": 0.68,
+      "reasoning": "打击首都油库标志愿意升级能源战，市场对尾部风险重定价，即时金融传导"
+    },
+    {
+      "source": "russia_iran_intel_cooperation",
+      "target": "russia_energy_leverage",
+      "weight": 0.6,
+      "reasoning": "俄伊情报合作确认强化俄罗斯在能源博弈中的筹码，美国制裁俄罗斯难度上升，2-4周"
+    },
+    {
+      "source": "iran_casualties_1332_political_impact",
+      "target": "eu_defense_surge",
+      "weight": 0.45,
+      "reasoning": "大规模伤亡叙事加速欧洲认知安全威胁，推动防务开支提速，1-3个月"
+    },
+    {
+      "source": "indonesia_prabowo_pressure",
+      "target": "secondary_sanctions",
+      "weight": 0.35,
+      "reasoning": "盟友国内压力削弱美国二级制裁执行效果，但同时也可能促使美国加强制裁以替代联盟动员，2-4周"
+    },
+    {
+      "source": "gulf_states_hedging",
+      "target": "china_energy_diplomacy",
+      "weight": 0.65,
+      "reasoning": "海湾国家对冲为中国能源外交提供接触机会，中方可借此扩大影响力，2-4周"
+    },
+    {
+      "source": "iran_conditional_ceasefire_gulf_dynamic",
+      "target": "ceasefire_backchannel",
+      "weight": 0.5,
+      "reasoning": "伊朗明确条件为谈判提供可操作框架，即使IRGC破坏也为外交斡旋留有余地，1-2周"
+    },
+    {
+      "source": "children_casualties_imagery",
+      "target": "muslim_world_antiwar_mobilization",
+      "weight": 0.85,
+      "reasoning": "儿童伤亡影像在穆斯林世界具有最高情感动员效应，通过宗教网络与社交媒体24小时内完成跨国传播，直接转化为街头动员，印尼案例已证实此机制，时间尺度：3-7天"
+    },
+    {
+      "source": "children_casualties_imagery",
+      "target": "global_south_us_legitimacy_crisis",
+      "weight": 0.78,
+      "reasoning": "儿童伤亡作为道义叙事核心，触发全球南方国家外交部门必须表态的政治压力，通过联合国渠道转化为制度性批评，时间尺度：1-2周"
+    },
+    {
+      "source": "muslim_world_antiwar_mobilization",
+      "target": "us_domestic_antiwar_shift",
+      "weight": 0.55,
+      "reasoning": "全球穆斯林社区抗议通过美国国内穆斯林社区（360万）及进步派舆论产生传导，叠加汽油价格压力，加速美国国内民调转向，时间尺度：2-3周"
+    },
+    {
+      "source": "muslim_world_antiwar_mobilization",
+      "target": "global_antiwar_pressure_on_us_allies",
+      "weight": 0.72,
+      "reasoning": "印尼、马来西亚、土耳其等美国盟友或合作伙伴面临国内穆斯林社区压力，直接削弱这些国家配合美国制裁与军事行动的政治空间，时间尺度：1-2周"
+    },
+    {
+      "source": "iran_domestic_fuel_shortage",
+      "target": "iran_social_fracture_irgc_vs_civilian",
+      "weight": 0.75,
+      "reasoning": "民用能源危机使平民直接感受到IRGC攻击行动带来的报复性代价，当总统停火信号被IRGC无视时，民众将愤怒指向IRGC体制，时间尺度：1-2周"
+    },
+    {
+      "source": "irgc_independent_action",
+      "target": "iran_social_fracture_irgc_vs_civilian",
+      "weight": 0.7,
+      "reasoning": "IRGC独立行动破坏总统权威，在伊朗国内形成'谁在领导战争'的政治问号，改革派民众将此视为IRGC劫持国家政策的证据，激化体制内外矛盾，时间尺度：持续累积"
+    },
+    {
+      "source": "iran_social_fracture_irgc_vs_civilian",
+      "target": "iran_internal_crisis",
+      "weight": 0.72,
+      "reasoning": "社会撕裂通过燃料短缺、经济崩溃、恐慌情绪叠加，为大规模街头抗议提供燃料，历史上伊朗每次经济+政治双重压力都会触发大规模抗议（2009、2019），时间尺度：2-4周"
+    },
+    {
+      "source": "gulf_civilian_fear_spike",
+      "target": "gulf_expat_evacuation_wave",
+      "weight": 0.78,
+      "reasoning": "政府建筑遭袭击（科威特案例）触发外籍劳工安全评估机制，企业开始启动员工撤离预案，航空公司开始增加撤离航班，时间尺度：1-2周"
+    },
+    {
+      "source": "gulf_expat_evacuation_wave",
+      "target": "kuwait_oil_production_cut",
+      "weight": 0.55,
+      "reasoning": "石油行业外籍技术工人撤离直接削弱科威特油田运营能力，科威特石油公司45%技术岗位为外籍人员，大规模撤离将进一步压缩产能，时间尺度：2-3周"
+    },
+    {
+      "source": "gulf_expat_evacuation_wave",
+      "target": "gulf_energy_infra_under_fire",
+      "weight": 0.35,
+      "reasoning": "外籍技工撤离导致能源基础设施维护能力下降，在攻击威胁持续情况下形成'能力空心化'，增加基础设施在攻击下的脆弱性，时间尺度：2-4周"
+    },
+    {
+      "source": "iran_casualties_1332_political_impact",
+      "target": "global_south_us_legitimacy_crisis",
+      "weight": 0.75,
+      "reasoning": "1332人死亡数据通过半岛电视台等媒体在全球南方形成强烈道义叙事，推动非西方国家在联合国等多边平台集体批评，时间尺度：已发生，持续强化"
+    },
+    {
+      "source": "global_south_us_legitimacy_crisis",
+      "target": "coalition_forming",
+      "weight": 0.0,
+      "reasoning": "全球南方合法性质疑直接削减潜在联盟参与意愿，尤其印尼、土耳其等伊斯兰国家在国内压力下将拒绝加入反伊朗联盟，时间尺度：1-3周"
+    },
+    {
+      "source": "global_south_us_legitimacy_crisis",
+      "target": "ceasefire_backchannel",
+      "weight": 0.55,
+      "reasoning": "全球南方国家集体批评为中国、土耳其等调解方提供外交空间，增加停火谈判的国际支持基础，时间尺度：2-4周"
+    },
+    {
+      "source": "us_war_authorization_political_cost",
+      "target": "us_domestic_pressure",
+      "weight": 0.68,
+      "reasoning": "国会层面战争授权辩论通过媒体放大转化为总统政治压力，历史上国会质疑始终是美国战争决策的核心约束，时间尺度：3-6周"
+    },
+    {
+      "source": "us_war_authorization_political_cost",
+      "target": "conflict_deescalation",
+      "weight": 0.38,
+      "reasoning": "国会压力叠加民调下滑可能迫使行政部门寻求'有条件停火'的外交出口，尤其当军事代价（阵亡+俘虏）持续可见时，时间尺度：4-8周"
+    },
+    {
+      "source": "regional_social_displacement_acceleration",
+      "target": "refugee_wave",
+      "weight": 0.72,
+      "reasoning": "伊朗城市平民位移、伊拉克黎巴嫩边境人口流动共同构成向欧洲迁移的源头压力，通过土耳其走廊传导，时间尺度：3-6周"
+    },
+    {
+      "source": "iran_social_fracture_irgc_vs_civilian",
+      "target": "regional_social_displacement_acceleration",
+      "weight": 0.6,
+      "reasoning": "社会撕裂与经济崩溃叠加推动有能力出走的伊朗中产阶级加速移民，构成区域社会位移的重要组成部分，时间尺度：2-4周"
+    },
+    {
+      "source": "global_south_us_legitimacy_crisis",
+      "target": "secondary_sanctions",
+      "weight": 0.0,
+      "reasoning": "全球南方合法性危机削弱美国发起二次制裁的国际执行能力，潜在合作国在国内舆论压力下减少配合，时间尺度：3-6周"
+    },
+    {
+      "source": "children_casualties_imagery",
+      "target": "civilian_casualty_narrative",
+      "weight": 0.88,
+      "reasoning": "儿童伤亡影像是平民伤亡叙事中最具传播力的元素，直接增强现有平民伤亡叙事的情感强度与媒体持续曝光度，时间尺度：即时"
+    }
+  ]
+}
