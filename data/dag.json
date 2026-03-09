@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 57,
+  "version": 58,
   "updated": "2026-03-07T18:01:55.094711Z",
   "nodes": {
     "us_israel_strikes": {
@@ -260,19 +260,20 @@
         "经济",
         "金融"
       ],
-      "probability": 0.9048,
+      "probability": 0.92,
       "confidence": 0.85,
       "evidence": [
         "IEA紧急声明",
         "OPEC+紧急会议",
-        "[2026-03-09] E5+E10: 德黑兰炼油厂被炸+伊拉克-70% (LR=3.0)"
+        "[2026-03-09] E5+E10: 德黑兰炼油厂被炸+伊拉克-70% (LR=3.0)",
+        "[2026-03-09] 首次打击能源设施=新升级域+Brent盘中$110+G7紧急SPR会议(红队:SPR是2-3月创可贴)"
       ],
       "reasoning": "定义: 全球石油净供应缺口>3mbpd且持续>2周, 或IEA宣布供应紧急状态。依赖净供应缺口(72%)经传导。75%反映: 缺口很可能存在但SPR释放+绕行可能将crisis延迟或减轻。",
       "time_horizon": "持续至航线恢复",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T19:26:31.848095+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "oil_price_100": {
@@ -352,19 +353,20 @@
         "军事",
         "政治"
       ],
-      "probability": 0.53,
+      "probability": 0.58,
       "confidence": 0.65,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
-        "[2026-03-09] 沙特MBS誓言反击+多国防空拦截(红队降级53%:防御协调≠反伊联盟)"
+        "[2026-03-09] 沙特MBS誓言反击+多国防空拦截(红队降级53%:防御协调≠反伊联盟)",
+        "[2026-03-09] 沙特撤离令+黎巴嫩禁止真主党军事活动=事实站队(红队:海湾被迫选边)"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T15:26:36.522330+00:00",
+      "last_updated": "2026-03-09T19:26:31.848095+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "secondary_sanctions": {
@@ -461,21 +463,22 @@
         "政治",
         "能源"
       ],
-      "probability": 0.8824,
+      "probability": 0.91,
       "confidence": 0.7,
       "evidence": [
         "WaPo: Russia providing Iran targeting info on US warships/aircraft positions",
         "CBS: \"pretty comprehensive effort\" to help Iran target US forces",
         "Daily Mail: Iran own tracking weakened, relies on Russian intel",
         "Kremlin: Peskov confirms \"dialogue\" with Iranian leadership",
-        "[2026-03-09] E7: 俄提供情报(红队降级:匿名源-0.15) (LR=2.5)"
+        "[2026-03-09] E7: 俄提供情报(红队降级:匿名源-0.15) (LR=2.5)",
+        "[2026-03-09] 普京致电莫杰塔巴承诺坚定支持+俄作为替代供应商定位(红队:杠杆靠能源渠道不靠军事)"
       ],
       "reasoning": "定义: 俄罗斯借能源危机+军事情报增加地缘杠杆。WaPo/CBS确认俄罗斯向伊朗提供美军舰艇和飞机位置情报。这超越了能源杠杆——是直接军事支持。75%。",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-09T19:26:31.848095+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "ceasefire_backchannel": {
@@ -510,7 +513,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.86,
+      "probability": 0.9,
       "confidence": 0.7,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
@@ -518,14 +521,15 @@
         "Trump: military doing \"phenomenally\"",
         "Independent: \"this could go on for quite some time\"",
         "[2026-03-09] E3+E6+E7: 双方最大化+俄介入+新领导立威 (LR=2.5)",
-        "[2026-03-09] Day10停火遭拒+莫杰塔巴继位延长战争能力+$200油价威胁(红队:弹药约束影响形态非持续时间)"
+        "[2026-03-09] Day10停火遭拒+莫杰塔巴继位延长战争能力+$200油价威胁(红队:弹药约束影响形态非持续时间)",
+        "[2026-03-09] 伊朗拒绝停火+以军首次打击能源设施+美撤离沙特=所有降级路径封堵(红队:不对称能力维持消耗战)"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T15:26:36.522330+00:00",
+      "last_updated": "2026-03-09T19:26:31.848095+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "us_ground_war": {
@@ -1101,20 +1105,21 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.55,
+      "probability": 0.58,
       "confidence": 0.5,
       "evidence": [
         "美国SPR 3.7亿桶(约60天@6mbpd释放)",
         "好望角绕行加10-15天+运费翻倍",
         "沙特东西管道~5mbpd",
-        "OPEC+闲置产能<2mbpd"
+        "OPEC+闲置产能<2mbpd",
+        "[2026-03-09] G7正式讨论联合SPR释放(红队降级:SPR有限+OPEC+增产存疑+缺口>3mbpd)"
       ],
       "reasoning": "定义: 通过替代手段能覆盖多少中断量。SPR是应急(有限)、绕行是部分(增加成本)、东西管道是瓶颈(5mbpd)、增产空间极小。综合覆盖率估计30-40%。概率55%反映替代机制能发挥但不足以避免危机。",
       "time_horizon": "W1-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-07T01:01:30.106816Z",
+      "last_updated": "2026-03-09T19:26:31.848095+00:00",
       "created": "2026-03-07T01:01:30.106816Z"
     },
     "net_supply_gap": {
