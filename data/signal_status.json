@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "last_updated": "2026-03-09T14:24:56.050293+00:00",
+  "last_updated": "2026-03-09T22:37:05.003309+00:00",
   "dag_version": 56,
   "summary": {
-    "deescalation_active": 5,
+    "deescalation_active": 6,
     "deescalation_total": 25,
     "escalation_active": 0,
     "escalation_total": 7,
@@ -15,12 +15,12 @@
         "id": "us_limited_victory",
         "label": "\"有限胜利\"话术出现",
         "layer": 1,
-        "status": "not_triggered",
-        "triggered_at": null,
-        "expires_at": null,
+        "status": "triggered",
+        "triggered_at": "2026-03-09",
+        "expires_at": "2026-03-16",
         "expiry_days": 7,
-        "evidence": null,
-        "notes": "当前Trump仍在'unconditional surrender'模式"
+        "evidence": "Trump佛州记者会: 'objectives pretty well complete', 'ended soon', 'I think so'(本周). 但同场矛盾: 'haven't won enough'+regime change暗示+威胁升级",
+        "notes": "⚠️ 高假信号风险。7天确认窗口。如果72h内出现新军事目标升级/UNCONDITIONAL SURRENDER回归则标记false alarm"
       },
       {
         "id": "us_bessent_narrative",
