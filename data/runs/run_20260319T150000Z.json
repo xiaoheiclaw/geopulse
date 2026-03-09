@@ -1,0 +1,648 @@
+{
+  "meta": {
+    "run_id": "run_20260319T150000Z",
+    "timestamp": "2026-03-19T15:00:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": "定期调度运行，无新证据输入",
+    "evidence_count": 0,
+    "run_duration_ms": 160363
+  },
+  "regime": {
+    "current": "B",
+    "previous": "B",
+    "switched": false,
+    "held_since": "2026-03-07T18:01:55.098253Z",
+    "factor_scores": {
+      "SAD": 0.6,
+      "PD": 0.834,
+      "NCC": 0.7167
+    },
+    "joint_score": 0.7052,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT33H27M59S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1_protracted_attrition",
+      "label": "持久消耗战",
+      "weight": 0.42,
+      "weight_prev": 0.42,
+      "premises": [
+        "承诺悖论(H1)使停火谈判缺乏对手方签约人",
+        "弹药耗尽时钟(H2/H4)迫使双方进入高伤亡低拦截率阶段",
+        "美国国内聚旗效应尚未消退，政治无法支持单方面退出",
+        "伊朗代理人网络分布式打击使战场无法收敛"
+      ],
+      "antithesis": "如果莫杰塔巴在W4-5内完成IRGC整合并获得最高领袖授权，停火谈判对手方可能重新出现，悖论被打破；或第三方（中国/土耳其）强力斡旋绕过IRGC直接与哈梅内伊建立后渠道",
+      "open_questions": [
+        "莫杰塔巴整合IRGC的进度如何？",
+        "美国是否有秘密后渠道绕过正式停火框架？",
+        "沙特/UAE是否会在弹药耗尽前施压美国降级？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S2_negotiated_offramp",
+      "label": "谈判降级",
+      "weight": 0.18,
+      "weight_prev": 0.18,
+      "premises": [
+        "弹药耗尽压力迫使美国寻求退出",
+        "中国/土耳其提供可信调停框架",
+        "伊朗最高领袖直接授权绕过IRGC指挥链谈判",
+        "油价>$110触发全球经济衰退压力倒逼各方"
+      ],
+      "antithesis": "承诺悖论未解决——没有可信的伊方签约人，任何停火协议都缺乏执行保障；美国阵亡士兵的沉没成本使国内政治无法接受'无条件停火'",
+      "open_questions": [
+        "中国是否愿意承担调停的政治成本？",
+        "伊朗是否存在IRGC以外的授权签约渠道？",
+        "美国能否在国内构建'体面退出'叙事？"
+      ],
+      "source_models": [
+        "schelling-focal",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S3_horizontal_escalation",
+      "label": "水平升级扩散",
+      "weight": 0.28,
+      "weight_prev": 0.28,
+      "premises": [
+        "伊朗对海湾国家攻击已扩散至科威特",
+        "霍尔木兹海峡航运保险费率飙升触发供应链级联",
+        "伊朗在弹药耗尽前选择'use-it-or-lose-it'式全面打击",
+        "以色列独立扩大打击范围至叙利亚/也门"
+      ],
+      "antithesis": "伊朗常规军事力量有限，水平扩散会分散本已不足的资源；海湾国家可能通过私下渠道与伊朗达成'不打我我不打你'的默契，限制扩散范围",
+      "open_questions": [
+        "伊朗弹道导弹库存还能支撑多少轮齐射？",
+        "海湾国家是否已启动秘密后渠道？",
+        "霍尔木兹海峡封锁是否已进入不可逆阶段？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "schelling-commitment"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S4_domestic_fracture",
+      "label": "美国国内政治断裂",
+      "weight": 0.12,
+      "weight_prev": 0.12,
+      "premises": [
+        "儿童伤亡影像持续传播侵蚀聚旗效应",
+        "五角大楼战争开支超$50亿引发财政鹰派反弹",
+        "美军阵亡人数累积触发越战类比叙事",
+        "2026中期选举压力使两党分裂"
+      ],
+      "antithesis": "当前聚旗效应仍在高位，美军阵亡人数(6人)远低于触发反战运动的阈值；媒体议程被伊朗攻击画面主导，伤亡叙事尚未翻转",
+      "open_questions": [
+        "聚旗效应拐点的具体阵亡人数阈值是多少？",
+        "媒体叙事何时从'伊朗侵略'转向'美国泥潭'？",
+        "国会是否会启动战争授权辩论？"
+      ],
+      "source_models": [
+        "fearon-audience-cost",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "supply_disruption_volume",
+      "label": "海湾供应中断量(mbd)",
+      "type": "M",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S3_horizontal_escalation"
+      ],
+      "path_importance": 0.92,
+      "factor_scores": {
+        "SAD": 0.3,
+        "PD": 0.9,
+        "NCC": 0.4
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "net_supply_gap",
+      "label": "全球净供应缺口",
+      "type": "M",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S3_horizontal_escalation"
+      ],
+      "path_importance": 0.88,
+      "factor_scores": {
+        "SAD": 0.25,
+        "PD": 0.95,
+        "NCC": 0.35
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "us_military_casualties",
+      "label": "美军累计伤亡",
+      "type": "H",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S4_domestic_fracture"
+      ],
+      "path_importance": 0.85,
+      "factor_scores": {
+        "SAD": 0.7,
+        "PD": 0.75,
+        "NCC": 0.65
+      },
+      "irreversible": true,
+      "locked": false
+    },
+    {
+      "node_id": "iran_missile_strike_israel",
+      "label": "伊朗弹道导弹打击以色列",
+      "type": "S",
+      "parent_scenarios": [
+        "S3_horizontal_escalation"
+      ],
+      "path_importance": 0.8,
+      "factor_scores": {
+        "SAD": 0.85,
+        "PD": 0.85,
+        "NCC": 0.8
+      },
+      "irreversible": true,
+      "locked": true
+    },
+    {
+      "node_id": "civilian_casualty_narrative",
+      "label": "平民伤亡叙事主导权",
+      "type": "S",
+      "parent_scenarios": [
+        "S4_domestic_fracture",
+        "S2_negotiated_offramp"
+      ],
+      "path_importance": 0.72,
+      "factor_scores": {
+        "SAD": 0.75,
+        "PD": 0.6,
+        "NCC": 0.7
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "B",
+    "mechanical_nodes": [
+      {
+        "node_id": "supply_disruption_volume",
+        "propagated_prob": 0.99,
+        "upstream_drivers": [
+          "iran_gulf_attacks",
+          "kuwait_oil_production_cut",
+          "iran_energy_infra_strikes"
+        ],
+        "impact_magnitude": 0.95
+      },
+      {
+        "node_id": "net_supply_gap",
+        "propagated_prob": 0.98,
+        "upstream_drivers": [
+          "supply_disruption_volume",
+          "oil_price_100"
+        ],
+        "impact_magnitude": 0.9
+      },
+      {
+        "node_id": "oil_price_110_threshold",
+        "propagated_prob": 1.0,
+        "upstream_drivers": [
+          "net_supply_gap",
+          "supply_disruption_volume"
+        ],
+        "impact_magnitude": 0.88
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "iran_missile_strike_israel",
+        "equilibria": [
+          {
+            "eq_id": "eq_limited_retaliation",
+            "label": "有限报复（精确打击军事目标）",
+            "probability": 0.55,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_full_salvo",
+            "label": "全面齐射（城市+基础设施）",
+            "probability": 0.25,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_restraint",
+            "label": "克制不打（保留威慑存量）",
+            "probability": 0.2,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_limited_retaliation",
+        "commitment_score": 0.72,
+        "exit_cost_ratio": 3.5
+      },
+      {
+        "node_id": "civilian_casualty_narrative",
+        "equilibria": [
+          {
+            "eq_id": "eq_iran_victim",
+            "label": "伊朗平民受害者叙事主导",
+            "probability": 0.4,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_us_defense",
+            "label": "美国正当防卫叙事主导",
+            "probability": 0.45,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_mutual_blame",
+            "label": "双方互指叙事僵局",
+            "probability": 0.15,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_us_defense",
+        "commitment_score": 0.55,
+        "exit_cost_ratio": 1.8
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "us_military_casualties",
+        "baseline_prob": 0.98,
+        "override_prob": 0.95,
+        "delta": -0.03,
+        "recomp_subgraph": [
+          "civilian_casualty_narrative",
+          "pentagon_war_cost"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "油价将维持$100-115区间震荡偏上，供应中断已price-in但弹药耗尽时钟未到拐点，short-term没有降级催化剂",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.75,
+      "tradeable_as": "long crude (Brent front-month), long energy equities, short airlines",
+      "key_assumption": "海湾供应中断维持2-3mbd以上且SPR释放不超过1mbd/day",
+      "kill_condition": "美伊秘密后渠道被曝光且双方确认停火框架，或OPEC+宣布紧急增产>2mbd"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "弹药耗尽时钟在W6-8窗口触及临界——防空拦截率跌破70%将迫使美国要么大规模增兵（政治成本飙升）要么寻求降级，市场将在W6-8经历剧烈波动",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.68,
+      "tradeable_as": "long vol (VIX calls), long gold, long UST 2Y as recession hedge, short USD vs CHF",
+      "key_assumption": "H2/H4弹药耗尽假设成立，盟军无法在W6前获得足够补给",
+      "kill_condition": "美国成功空运足够拦截弹补给（>500枚Patriot PAC-3），或伊朗无人机/导弹发射率显著下降（库存耗尽）"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "无论哪个场景主导，中东地缘风险溢价将结构性抬升——能源供应链重构加速，滞胀定价范式确立，美债避险属性永久削弱",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.58,
+      "tradeable_as": "long TIPS, long commodities basket, long defense sector, short long-duration UST",
+      "key_assumption": "H3滞胀定价假设确认——油价>$85持续超6周触发范式切换",
+      "kill_condition": "快速和平协议+伊朗政权更迭导致石油供应完全恢复+美联储大幅降息"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "Brent Crude Front-Month",
+        "direction": "long",
+        "sizing_note": "核心仓位，2-3%风险预算，供应中断持续支撑",
+        "horizon": "W1_5",
+        "linked_thesis": "W1_5油价震荡偏上",
+        "entry_condition": "Brent回调至$98-100区间",
+        "stop_condition": "Brent跌破$92或停火协议确认"
+      },
+      {
+        "asset": "VIX June Calls",
+        "direction": "long",
+        "sizing_note": "尾部对冲，0.5%风险预算，弹药耗尽窗口波动率飙升期权",
+        "horizon": "W6_16",
+        "linked_thesis": "W6_16弹药耗尽拐点波动",
+        "entry_condition": "VIX<22时建仓",
+        "stop_condition": "弹药补给确认到位或冲突降级"
+      },
+      {
+        "asset": "Gold Spot",
+        "direction": "long",
+        "sizing_note": "避险核心仓，3%风险预算",
+        "horizon": "W6_16",
+        "linked_thesis": "W6_16避险需求",
+        "entry_condition": "当前价位分批建仓",
+        "stop_condition": "实际利率大幅上行>100bp"
+      },
+      {
+        "asset": "UST 10Y",
+        "direction": "short",
+        "sizing_note": "滞胀定价交易，1.5%风险预算",
+        "horizon": "W17_25plus",
+        "linked_thesis": "W17_25plus滞胀范式",
+        "entry_condition": "10Y yield回调至4.2%以下",
+        "stop_condition": "CPI连续3个月回落至3%以下"
+      },
+      {
+        "asset": "TIPS ETF",
+        "direction": "long",
+        "sizing_note": "通胀保护，2%风险预算",
+        "horizon": "W17_25plus",
+        "linked_thesis": "W17_25plus滞胀定价",
+        "entry_condition": "breakeven<2.8%时建仓",
+        "stop_condition": "油价跌破$75且维持4周"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "T1_ammo_intercept_rate",
+        "signal": "盟军防空拦截率报告",
+        "condition": "拦截率跌破75%",
+        "action": "加仓VIX calls，减仓equity，触发L2回流重估S1权重",
+        "linked_node": "us_military_casualties",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T2_mojtaba_consolidation",
+        "signal": "莫杰塔巴IRGC整合进展情报",
+        "condition": "莫杰塔巴获得IRGC全部派系效忠或被边缘化",
+        "action": "若整合成功→S2权重上调→减仓原油；若失败→S1确认→维持仓位",
+        "linked_node": "civilian_casualty_narrative",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T3_backchannel_leak",
+        "signal": "美伊秘密后渠道谈判泄露",
+        "condition": "可信来源确认双方有直接或通过第三方间接接触",
+        "action": "紧急减仓原油多头，平仓VIX，回流L2重估所有场景",
+        "linked_node": null,
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T4_oil_price_breakout",
+        "signal": "Brent价格突破$115",
+        "condition": "日收盘连续3日>$115",
+        "action": "部分止盈原油多头，加仓TIPS，检查H3滞胀假设是否加速确认",
+        "linked_node": "net_supply_gap",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "T5_us_casualty_spike",
+        "signal": "美军阵亡人数报告",
+        "condition": "累计阵亡>20人或单次事件>10人",
+        "action": "触发S4权重急升，监控国会反应，准备defense sector对冲",
+        "linked_node": "us_military_casualties",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "T6_hormuz_blockade",
+        "signal": "霍尔木兹海峡通行状态",
+        "condition": "日通行油轮数跌破正常水平50%",
+        "action": "S3权重急升至>0.35，全面加仓能源/航运，做空全球equity",
+        "linked_node": "supply_disruption_volume",
+        "urgency": "act"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "Brent Crude Front-Month",
+        "condition": "停火协议确认或SPR释放>1.5mbd",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "VIX June Calls",
+        "condition": "弹药补给确认到位且拦截率恢复>85%",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "UST 10Y Short",
+        "condition": "CPI连续回落+油价<$80维持4周",
+        "action": "exit",
+        "backflow_to": "L5"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "S1_protracted_attrition",
+        "premise_broken": "莫杰塔巴在W5前完成IRGC整合并获得谈判授权",
+        "evidence": "可信情报确认IRGC全派系效忠莫杰塔巴+最高领袖公开授权",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "S2_negotiated_offramp",
+        "premise_broken": "中国/土耳其明确拒绝调停或美国拒绝一切谈判",
+        "evidence": "外交声明+可信泄露确认调停渠道关闭",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "S3_horizontal_escalation",
+        "premise_broken": "海湾国家与伊朗达成秘密互不攻击协议",
+        "evidence": "攻击频率骤降+外交信号确认",
+        "backflow_to": "L2",
+        "shs_writeback": false
+      }
+    ],
+    "regime_level": {
+      "current_regime": "B",
+      "contradiction": "如果所有战略行为体同时失去决策自主权（如全面失控的代理人战争），NCC和SAD可能急剧下降至Regime A阈值以下",
+      "backflow_to": "Regime",
+      "shs_writeback": true
+    }
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1",
+        "role": "P",
+        "called_by": "pipeline_L1_evidence_eval",
+        "input_summary": "0条新证据，维持先验",
+        "output_summary": "无更新，所有后验概率维持上轮水平",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "pipeline_L2a_scenario_audit",
+        "input_summary": "审计4个场景分支，重点挑战S1(weight=0.42>0.4)",
+        "output_summary": "S1反论：莫杰塔巴整合可能比预期快，W4窗口可能出现谈判对手方；S2反论：即使有对手方，沉没成本使双方难以接受现有条件；S4反论：聚旗效应在低伤亡下极为坚韧",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L2a",
+        "role": "P",
+        "called_by": "pipeline_L2a_scenario_generation",
+        "input_summary": "4阶推演冲突持续路径",
+        "output_summary": "1阶:防空弹药持续消耗→2阶:拦截率下降触发美军部署调整→3阶:调整引发国内政治辩论→4阶:如持续至W10+，美军中东部署模式永久改变",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_L35_strategic_solve",
+        "input_summary": "求解S型节点iran_missile_strike_israel和civilian_casualty_narrative的均衡",
+        "output_summary": "iran_missile_strike_israel的Schelling焦点为有限报复(精确打击军事目标)——双方都需要'可控升级'叙事；civilian_casualty_narrative当前焦点为美国正当防卫叙事但极不稳定",
+        "cost": "medium"
+      },
+      {
+        "model_id": "schelling-commitment",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_L35_commitment_analysis",
+        "input_summary": "评估伊朗导弹打击承诺可信度和退出成本",
+        "output_summary": "承诺可信度0.72——伊朗已公开声明报复且国内政治不允许不回应；退出成本比3.5——伊朗退出成本远高于美国(政权合法性vs选举周期)",
+        "cost": "medium"
+      },
+      {
+        "model_id": "fearon-audience-cost",
+        "layer": "L2a",
+        "role": "P",
+        "called_by": "pipeline_L2a_S4_analysis",
+        "input_summary": "评估美国国内观众成本对S4场景的约束",
+        "output_summary": "当前观众成本双向锁定——退出需要更高成本的政治叙事(需要'胜利'标签)，但继续升级的边际观众成本也在上升(阵亡人数敏感度非线性)",
+        "cost": "heavy"
+      }
+    ],
+    "divergence_flags": [
+      {
+        "flag_id": "DIV001",
+        "layer": "L2a",
+        "model_a": "nth-order-reasoning",
+        "model_b": "dialectic-challenge",
+        "topic": "弹药耗尽时钟的实际影响窗口",
+        "model_a_says": "W6-8是硬性拐点，拦截率会断崖式下降，迫使战略调整",
+        "model_b_says": "美国可能有未公开的弹药补给渠道（盟国转让、加急生产线），拐点可能延后至W10-12",
+        "resolution": "noted",
+        "spawned_scenario": null
+      }
+    ],
+    "total_model_calls": 6,
+    "total_cost": "medium"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "H1_commitment_paradox",
+      "field_changed": "confidence",
+      "old_value": "0.76",
+      "new_value": "0.76",
+      "trigger_reason": "无新证据，维持。关键监控：莫杰塔巴整合进展",
+      "source_run_ids": [
+        "run_20260318T150000Z",
+        "run_20260319T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H2_ammo_depletion_clock",
+      "field_changed": "confidence",
+      "old_value": "0.87",
+      "new_value": "0.86",
+      "trigger_reason": "D类模型指出可能存在未公开补给渠道，微幅下调。DIV001标记需持续监控",
+      "source_run_ids": [
+        "run_20260319T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H3_stagflation_pricing_regime",
+      "field_changed": "confidence",
+      "old_value": "0.63",
+      "new_value": "0.65",
+      "trigger_reason": "油价>$100已维持多日，距6周阈值更近，上调2bp",
+      "source_run_ids": [
+        "run_20260319T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H4_ammunition_enforced_boundary",
+      "field_changed": "confidence",
+      "old_value": "0.85",
+      "new_value": "0.84",
+      "trigger_reason": "与H2联动，D类模型质疑拐点可能延后，微幅下调",
+      "source_run_ids": [
+        "run_20260319T150000Z"
+      ]
+    }
+  ],
+  "graph_proposals": [
+    {
+      "proposal_id": "GP001",
+      "type": "add_node",
+      "target": "ammo_resupply_channel",
+      "payload": {
+        "label": "盟国弹药转让/加急生产补给渠道",
+        "type": "M",
+        "initial_prob": 0.3,
+        "parents": [
+          "pentagon_war_cost"
+        ],
+        "children": [
+          "us_military_casualties"
+        ]
+      },
+      "justification": "DIV001分歧揭示当前DAG缺乏弹药补给路径建模——nth-order-reasoning和dialectic-challenge对弹药耗尽时间线产生分歧，根因是DAG中没有建模补给可能性",
+      "source_evidence": [],
+      "source_model": "dialectic-challenge",
+      "impact_assessment": {
+        "affected_nodes": [
+          "us_military_casualties",
+          "supply_disruption_volume"
+        ],
+        "affected_edges": [],
+        "regime_impact": false,
+        "scenario_impact": [
+          "S1_protracted_attrition",
+          "S4_domestic_fracture"
+        ]
+      },
+      "urgency": "next_run",
+      "auto_approvable": false,
+      "approval_level": 2,
+      "status": "pending"
+    }
+  ]
+}

@@ -1,0 +1,700 @@
+{
+  "meta": {
+    "run_id": "run_20260308T150000Z",
+    "timestamp": "2026-03-08T15:00:00Z",
+    "trigger_type": "scheduled",
+    "trigger_event": "Scheduled daily run — no new evidence",
+    "evidence_count": 0,
+    "run_duration_ms": 149348
+  },
+  "regime": {
+    "current": "B",
+    "previous": "B",
+    "switched": false,
+    "held_since": "2026-03-07T18:01:55.098253Z",
+    "factor_scores": {
+      "SAD": 0.8,
+      "PD": 0.81,
+      "NCC": 0.745
+    },
+    "joint_score": 0.7865,
+    "hysteresis": {
+      "enter_threshold": 0.55,
+      "exit_threshold": 0.4,
+      "min_hold": "PT24H",
+      "time_in_current": "PT30H5M36S"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1_protracted_attrition",
+      "label": "持久消耗战",
+      "weight": 0.42,
+      "weight_prev": 0.42,
+      "premises": [
+        "哈梅内伊遇袭后IRGC指挥链碎片化，无单一谈判对手",
+        "弹药耗尽时钟使双方进入消耗竞赛",
+        "美国国内聚旗效应尚未消退，白宫无降级政治空间",
+        "伊朗代理人网络（真主党、PMF）自主运作，无中央停火指令可执行"
+      ],
+      "antithesis": "消耗战假设忽略了双方后勤极限的非对称性——美国可通过盟友弹药转让和国防生产法案延长防空窗口，而伊朗弹道导弹库存不可再生且已消耗>40%，消耗战可能比预期更快达到伊朗承受极限而非盟军极限",
+      "open_questions": [
+        "莫杰塔巴·哈梅内伊能否在W4-8整合IRGC？",
+        "美国国防工业基础能否在90天内补充拦截弹库存？",
+        "伊朗是否保留了未使用的战略储备导弹？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S2_negotiated_pause",
+      "label": "外部斡旋暂停",
+      "weight": 0.18,
+      "weight_prev": 0.18,
+      "premises": [
+        "中国明确反对政权更迭为外交介入提供了合法性",
+        "弹药耗尽迫使双方寻求暂停窗口",
+        "油价持续>$85给全球经济施压，G7/G20压力增大",
+        "伊朗内部有务实派愿意接受非正式停火"
+      ],
+      "antithesis": "承诺悖论（H1）直接矛盾——斩首行动消灭了唯一能签协议的人，IRGC碎片化意味着没有单一对手可以谈判，即使达成协议也无人能在伊朗一侧执行",
+      "open_questions": [
+        "中国是否愿意承担调停成本？",
+        "暂停是否会被双方用于重新武装？",
+        "谁在伊朗一侧有权签署任何协议？"
+      ],
+      "source_models": [
+        "schelling-focal",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S3_escalation_to_regime_change",
+      "label": "升级至政权更迭尝试",
+      "weight": 0.22,
+      "weight_prev": 0.22,
+      "premises": [
+        "内塔尼亚胡已公开承诺政权更迭",
+        "哈梅内伊已死，权力真空降低了政权更迭的门槛",
+        "美军已有阵亡，沉没成本效应推动升级",
+        "伊朗能源基础设施已被打击，经济崩溃加速内部不稳定"
+      ],
+      "antithesis": "伊拉克战争教训表明政权更迭后的治理成本远超军事成本；中国/俄罗斯明确反对将导致安理会僵局；伊朗8800万人口使占领不可行；美国中期选举压力可能在W12-16窗口逆转政治动力",
+      "open_questions": [
+        "美国是否会从空中打击升级到地面部队？",
+        "伊朗内部反对派是否有组织能力？",
+        "俄罗斯是否会向伊朗提供S-400系统？"
+      ],
+      "source_models": [
+        "nth-order-reasoning",
+        "fearon-audience-cost"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    },
+    {
+      "id": "S4_ammo_ceiling_forced_deescalation",
+      "label": "弹药天花板强制降级",
+      "weight": 0.18,
+      "weight_prev": 0.18,
+      "premises": [
+        "H2/H4弹药耗尽时钟在W3-5触及物理极限",
+        "拦截率跌破85%后平民伤亡激增，政治压力骤升",
+        "成本非对称（$3.5K无人机 vs $1-3M拦截弹）不可持续",
+        "防空弹药库存数据将泄露或被推断，市场提前定价"
+      ],
+      "antithesis": "弹药天花板假设可能高估了时间紧迫性——美国已启动紧急生产线，日本/韩国可能转让PAC-3库存，且伊朗自身的弹道导弹消耗速度同样不可持续，双方可能同时接近极限而非单边触顶",
+      "open_questions": [
+        "实际拦截弹库存消耗率是多少？",
+        "盟友弹药转让的政治障碍有多大？",
+        "拦截率下降的临界点是否已被军方内部讨论？"
+      ],
+      "source_models": [
+        "bayesian-updating",
+        "dialectic-challenge"
+      ],
+      "is_new": false,
+      "is_from_divergence": false
+    }
+  ],
+  "bottlenecks": [
+    {
+      "node_id": "ammo_depletion_threshold",
+      "label": "防空弹药耗尽临界点",
+      "type": "M",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S4_ammo_ceiling_forced_deescalation"
+      ],
+      "path_importance": 0.92,
+      "factor_scores": {
+        "SAD": 0.3,
+        "PD": 0.95,
+        "NCC": 0.2
+      },
+      "irreversible": true,
+      "locked": false
+    },
+    {
+      "node_id": "irgc_succession_consolidation",
+      "label": "IRGC指挥权整合",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S2_negotiated_pause",
+        "S3_escalation_to_regime_change"
+      ],
+      "path_importance": 0.88,
+      "factor_scores": {
+        "SAD": 0.9,
+        "PD": 0.85,
+        "NCC": 0.88
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "oil_price_regime_shift",
+      "label": "油价>$85持续6周触发滞胀定价",
+      "type": "H",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S3_escalation_to_regime_change"
+      ],
+      "path_importance": 0.78,
+      "factor_scores": {
+        "SAD": 0.6,
+        "PD": 0.75,
+        "NCC": 0.55
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "us_domestic_political_tolerance",
+      "label": "美国国内政治容忍度",
+      "type": "S",
+      "parent_scenarios": [
+        "S1_protracted_attrition",
+        "S3_escalation_to_regime_change",
+        "S4_ammo_ceiling_forced_deescalation"
+      ],
+      "path_importance": 0.82,
+      "factor_scores": {
+        "SAD": 0.85,
+        "PD": 0.7,
+        "NCC": 0.75
+      },
+      "irreversible": false,
+      "locked": false
+    },
+    {
+      "node_id": "china_mediation_commitment",
+      "label": "中国调停承诺可信度",
+      "type": "S",
+      "parent_scenarios": [
+        "S2_negotiated_pause"
+      ],
+      "path_importance": 0.65,
+      "factor_scores": {
+        "SAD": 0.9,
+        "PD": 0.6,
+        "NCC": 0.8
+      },
+      "irreversible": false,
+      "locked": false
+    }
+  ],
+  "engine_result": {
+    "regime_used": "B",
+    "mechanical_nodes": [
+      {
+        "node_id": "ammo_depletion_threshold",
+        "propagated_prob": 0.84,
+        "upstream_drivers": [
+          "iran_retaliation",
+          "iran_gulf_attacks",
+          "pentagon_war_cost"
+        ],
+        "impact_magnitude": 0.12
+      },
+      {
+        "node_id": "oil_price_regime_shift",
+        "propagated_prob": 0.62,
+        "upstream_drivers": [
+          "iran_energy_infra_strikes",
+          "kuwait_oil_production_cut",
+          "iran_airspace_closure"
+        ],
+        "impact_magnitude": 0.08
+      }
+    ],
+    "strategic_nodes": [
+      {
+        "node_id": "irgc_succession_consolidation",
+        "equilibria": [
+          {
+            "eq_id": "eq_mojtaba_consolidates",
+            "label": "莫杰塔巴整合IRGC形成统一指挥",
+            "probability": 0.35,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_fragmented_factions",
+            "label": "IRGC分裂为2-3个自主派系",
+            "probability": 0.45,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_collective_leadership",
+            "label": "集体领导模式（类似苏联后期）",
+            "probability": 0.2,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_fragmented_factions",
+        "commitment_score": 0.3,
+        "exit_cost_ratio": 2.8
+      },
+      {
+        "node_id": "us_domestic_political_tolerance",
+        "equilibria": [
+          {
+            "eq_id": "eq_rally_holds",
+            "label": "聚旗效应维持，支持率>55%",
+            "probability": 0.4,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_casualty_erosion",
+            "label": "伤亡累积侵蚀支持，W8-12出现拐点",
+            "probability": 0.45,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_black_swan_collapse",
+            "label": "重大伤亡事件导致支持率骤降",
+            "probability": 0.15,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_casualty_erosion",
+        "commitment_score": 0.55,
+        "exit_cost_ratio": 1.8
+      },
+      {
+        "node_id": "china_mediation_commitment",
+        "equilibria": [
+          {
+            "eq_id": "eq_active_mediation",
+            "label": "中国投入外交资本积极斡旋",
+            "probability": 0.25,
+            "is_focal": false
+          },
+          {
+            "eq_id": "eq_rhetorical_opposition",
+            "label": "中国口头反对但不实质介入",
+            "probability": 0.55,
+            "is_focal": true
+          },
+          {
+            "eq_id": "eq_strategic_exploitation",
+            "label": "中国利用局势扩大影响力但不调停",
+            "probability": 0.2,
+            "is_focal": false
+          }
+        ],
+        "selected_eq": "eq_rhetorical_opposition",
+        "commitment_score": 0.2,
+        "exit_cost_ratio": 0.5
+      }
+    ],
+    "hybrid_nodes": [
+      {
+        "node_id": "oil_price_regime_shift",
+        "baseline_prob": 0.62,
+        "override_prob": 0.58,
+        "delta": -0.04,
+        "recomp_subgraph": [
+          "regional_spillover",
+          "stagflation_pricing_confirmation"
+        ],
+        "iteration_converged": true
+      }
+    ]
+  },
+  "horizon_theses": [
+    {
+      "window": "W1_5",
+      "thesis": "弹药耗尽时钟进入关键窗口——防空拦截率将出现可观测下降信号（拦截失败事件频率上升），油价维持高位但尚未触发滞胀定价范式切换。冲突维持当前烈度，波动率居高不下。",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.72,
+      "tradeable_as": "long crude vol, long defense sector, short Gulf equities",
+      "key_assumption": "弹药耗尽曲线按H2/H4预测的W3-5窗口实现",
+      "kill_condition": "美国宣布紧急弹药补充计划且盟友确认转让拦截弹库存，拦截率维持>90%"
+    },
+    {
+      "window": "W6_16",
+      "thesis": "IRGC指挥权碎片化确认（莫杰塔巴未能整合），冲突从国家间战争退化为多头代理人消耗战。美国国内聚旗效应在W8-12出现拐点，政治压力推动寻找退出方案但缺乏谈判对手。滞胀定价假设在此窗口接受检验。",
+      "dominant_scenario": "S1_protracted_attrition",
+      "confidence": 0.58,
+      "tradeable_as": "long gold, long vol term structure steepeners, short 10Y UST",
+      "key_assumption": "IRGC碎片化为焦点均衡且美国伤亡持续累积",
+      "kill_condition": "莫杰塔巴成功整合IRGC并通过中国渠道发出停火信号"
+    },
+    {
+      "window": "W17_25plus",
+      "thesis": "冲突进入冻结态或低烈度持续阶段——双方弹药库存均已大幅消耗，形成事实停火但无正式协议。油价从峰值回落但结构性高于冲突前水平$15-20。市场开始定价新常态。",
+      "dominant_scenario": "S4_ammo_ceiling_forced_deescalation",
+      "confidence": 0.45,
+      "tradeable_as": "long energy infrastructure rebuild plays, short vol (mean reversion), long EM ex-Gulf",
+      "key_assumption": "双方同时接近弹药极限且无外部大规模军事援助改变平衡",
+      "kill_condition": "美国或伊朗获得大规模弹药补充（美国国防生产法案成功/俄罗斯向伊朗转让弹道导弹）"
+    }
+  ],
+  "execution_plan": {
+    "positions": [
+      {
+        "asset": "Brent Crude",
+        "direction": "long",
+        "sizing_note": "维持现有仓位，波动率溢价支撑持有逻辑",
+        "horizon": "W1_5",
+        "linked_thesis": "W1_5弹药耗尽时钟",
+        "entry_condition": "已持有",
+        "stop_condition": "Brent跌破$78且停火协议签署"
+      },
+      {
+        "asset": "Gold",
+        "direction": "long",
+        "sizing_note": "中等仓位，对冲滞胀风险和地缘不确定性",
+        "horizon": "W6_16",
+        "linked_thesis": "W6_16 IRGC碎片化+滞胀检验",
+        "entry_condition": "Gold回调至$2050以下加仓",
+        "stop_condition": "实际利率快速上行>50bps且地缘风险溢价消退"
+      },
+      {
+        "asset": "VIX term structure",
+        "direction": "long",
+        "sizing_note": "轻仓买入VIX日历价差（做陡期限结构）",
+        "horizon": "W6_16",
+        "linked_thesis": "W6_16波动率期限结构陡峭化",
+        "entry_condition": "VIX期限结构倒挂或平坦化时建仓",
+        "stop_condition": "VIX持续<18超过两周"
+      },
+      {
+        "asset": "US 10Y Treasury",
+        "direction": "short",
+        "sizing_note": "轻仓，等待滞胀定价确认信号后加仓",
+        "horizon": "W6_16",
+        "linked_thesis": "W6_16滞胀定价检验",
+        "entry_condition": "油价连续4周>$85且CPI超预期",
+        "stop_condition": "油价跌破$80或Fed明确鸽派转向"
+      },
+      {
+        "asset": "Gulf Equity ETF",
+        "direction": "short",
+        "sizing_note": "轻仓，科威特产量削减和区域不稳定持续",
+        "horizon": "W1_5",
+        "linked_thesis": "W1_5区域冲突持续",
+        "entry_condition": "已持有",
+        "stop_condition": "停火协议或科威特恢复全部产量"
+      }
+    ],
+    "triggers": [
+      {
+        "trigger_id": "TRG_intercept_rate",
+        "signal": "公开报道的拦截失败事件频率",
+        "condition": "单周拦截失败事件>3次或官方承认拦截率<80%",
+        "action": "上调S4权重+0.1，触发紧急RunOutput",
+        "linked_node": "ammo_depletion_threshold",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "TRG_mojtaba_speech",
+        "signal": "莫杰塔巴·哈梅内伊公开露面或发表声明",
+        "condition": "莫杰塔巴以最高领袖身份发表公开声明且获得IRGC高层列席",
+        "action": "下调S1权重，上调S2权重，重评H1_commitment_paradox",
+        "linked_node": "irgc_succession_consolidation",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "TRG_oil_6week",
+        "signal": "Brent原油价格",
+        "condition": "Brent连续6周收盘>$85",
+        "action": "确认H3_stagflation_pricing_regime，上调oil_price_regime_shift概率至0.75",
+        "linked_node": "oil_price_regime_shift",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "TRG_us_casualty_spike",
+        "signal": "美军伤亡报道",
+        "condition": "单次事件美军阵亡>10人",
+        "action": "触发S3重评估，上调eq_black_swan_collapse概率",
+        "linked_node": "us_domestic_political_tolerance",
+        "urgency": "act"
+      },
+      {
+        "trigger_id": "TRG_china_envoy",
+        "signal": "中国外交动作",
+        "condition": "中国任命中东特使或召集安理会特别会议",
+        "action": "上调S2权重+0.08，重评china_mediation_commitment均衡",
+        "linked_node": "china_mediation_commitment",
+        "urgency": "alert"
+      },
+      {
+        "trigger_id": "TRG_ammo_transfer",
+        "signal": "盟友弹药转让",
+        "condition": "日本/韩国/欧洲确认向美转让PAC-3或SM-6库存",
+        "action": "下调S4权重-0.08，延长弹药耗尽时钟估计",
+        "linked_node": "ammo_depletion_threshold",
+        "urgency": "watch"
+      }
+    ]
+  },
+  "invalidation": {
+    "trade_level": [
+      {
+        "position_ref": "Brent Crude long",
+        "condition": "正式停火协议签署且双方开始撤军",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "US 10Y Treasury short",
+        "condition": "油价跌破$80持续2周",
+        "action": "exit",
+        "backflow_to": "L4"
+      },
+      {
+        "position_ref": "Gulf Equity ETF short",
+        "condition": "科威特宣布恢复全部石油产量",
+        "action": "exit",
+        "backflow_to": "L5"
+      }
+    ],
+    "scenario_level": [
+      {
+        "scenario_ref": "S2_negotiated_pause",
+        "premise_broken": "承诺悖论（H1）被确认——无人有权代表伊朗签署协议",
+        "evidence": "IRGC公开声明拒绝承认任何谈判代表的合法性",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "S3_escalation_to_regime_change",
+        "premise_broken": "美国国内政治转向反战",
+        "evidence": "国会通过战争权力决议限制总统军事行动",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      },
+      {
+        "scenario_ref": "S4_ammo_ceiling_forced_deescalation",
+        "premise_broken": "弹药补充成功延长窗口",
+        "evidence": "国防部确认拦截弹库存恢复至冲突前60%以上",
+        "backflow_to": "L2",
+        "shs_writeback": true
+      }
+    ],
+    "regime_level": {
+      "current_regime": "B",
+      "contradiction": "三因子联合得分跌破0.45——战略行为体密度下降（IRGC碎片化导致无战略行为体）或收益依赖度下降（冲突冻结后转为纯机械传导）",
+      "backflow_to": "Regime",
+      "shs_writeback": true
+    }
+  },
+  "model_trace": {
+    "models_loaded": [
+      {
+        "model_id": "bayesian-updating",
+        "layer": "L1-L2a",
+        "role": "P",
+        "called_by": "pipeline_scheduled",
+        "input_summary": "No new evidence; prior scenario weights maintained; SHS confidence scores unchanged",
+        "output_summary": "All scenario weights held constant; recommended monitoring triggers for next evidence batch",
+        "cost": "light"
+      },
+      {
+        "model_id": "dialectic-challenge",
+        "layer": "L2a",
+        "role": "D",
+        "called_by": "pipeline_L2a_audit",
+        "input_summary": "Audit all scenarios with weight>0.15; challenge S1 protracted attrition dominance and S4 ammo ceiling timeline",
+        "output_summary": "Challenged S1: ammo asymmetry may favor US not Iran; Challenged S4: timeline may be longer if allies transfer stocks; Challenged S2: commitment paradox makes negotiation structurally impossible; all antitheses updated",
+        "cost": "light"
+      },
+      {
+        "model_id": "nth-order-reasoning",
+        "layer": "L2a-L2b",
+        "role": "P",
+        "called_by": "pipeline_L2b",
+        "input_summary": "4th-order causal chain analysis on ammo depletion → intercept rate drop → civilian casualties → political pressure → forced de-escalation",
+        "output_summary": "Identified feedback loop: intercept failures → media coverage → domestic pressure → demand for ceasefire → but no negotiating partner → continued conflict; loop reinforces S1 over S4",
+        "cost": "light"
+      },
+      {
+        "model_id": "schelling-focal",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_L3.5_strategic",
+        "input_summary": "Analyze focal equilibria for IRGC succession, US domestic tolerance, China mediation",
+        "output_summary": "IRGC fragmentation is focal (no Schelling point for consolidation); US casualty erosion is focal (Vietnam/Iraq precedent); China rhetorical opposition is focal (low cost, high optionality)",
+        "cost": "medium"
+      },
+      {
+        "model_id": "schelling-commitment",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_L3.5_strategic",
+        "input_summary": "Assess commitment credibility for IRGC consolidation under Mojtaba, US political commitment to regime change, China mediation",
+        "output_summary": "Mojtaba commitment score 0.3 (lacks institutional legitimacy); US commitment 0.55 (high sunk cost but eroding); China commitment 0.2 (no skin in game)",
+        "cost": "medium"
+      },
+      {
+        "model_id": "fearon-audience-cost",
+        "layer": "L3.5",
+        "role": "P",
+        "called_by": "pipeline_L3.5_strategic",
+        "input_summary": "Audience cost analysis for Netanyahu regime change pledge, US administration war commitment, Iranian retaliation pledges",
+        "output_summary": "Netanyahu locked in (audience cost >0.8); US administration moderate lock-in (0.55); Iranian audience costs distributed across fragmented actors (effectively lower per-actor)",
+        "cost": "heavy"
+      }
+    ],
+    "divergence_flags": [
+      {
+        "flag_id": "DIV_001",
+        "layer": "L2a",
+        "model_a": "nth-order-reasoning",
+        "model_b": "dialectic-challenge",
+        "topic": "Ammo depletion timeline asymmetry",
+        "model_a_says": "Feedback loop reinforces protracted conflict — both sides approach limits simultaneously around W8-10",
+        "model_b_says": "Asymmetry favors US — Iran ballistic missile stock is non-renewable while US can receive allied transfers, Iran hits ceiling first around W5-6",
+        "resolution": "noted",
+        "spawned_scenario": null
+      }
+    ],
+    "total_model_calls": 6,
+    "total_cost": "heavy"
+  },
+  "shs_writeback": [
+    {
+      "action": "update",
+      "hypothesis_ref": "H1_commitment_paradox",
+      "field_changed": "confidence",
+      "old_value": "0.76",
+      "new_value": "0.76",
+      "trigger_reason": "No new evidence to update; IRGC succession node remains at fragmentation focal equilibrium (0.45 prob), consistent with hypothesis",
+      "source_run_ids": [
+        "run_20260307T150000Z",
+        "run_20260308T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H2_ammo_depletion_clock",
+      "field_changed": "confidence",
+      "old_value": "0.86",
+      "new_value": "0.86",
+      "trigger_reason": "No new evidence; divergence flag DIV_001 notes asymmetry debate but insufficient to shift confidence without observational data on intercept rates",
+      "source_run_ids": [
+        "run_20260307T150000Z",
+        "run_20260308T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H3_stagflation_pricing_regime",
+      "field_changed": "confidence",
+      "old_value": "0.65",
+      "new_value": "0.63",
+      "trigger_reason": "Hybrid node oil_price_regime_shift baseline 0.62 overridden down to 0.58 by strategic analysis (China rhetorical-only stance reduces supply disruption escalation probability); slight downward pressure on stagflation hypothesis",
+      "source_run_ids": [
+        "run_20260308T150000Z"
+      ]
+    },
+    {
+      "action": "update",
+      "hypothesis_ref": "H4_ammunition_enforced_boundary",
+      "field_changed": "confidence",
+      "old_value": "0.84",
+      "new_value": "0.84",
+      "trigger_reason": "Divergence on timeline asymmetry (DIV_001) but no resolution — maintaining confidence pending intercept rate data",
+      "source_run_ids": [
+        "run_20260307T150000Z",
+        "run_20260308T150000Z"
+      ]
+    }
+  ],
+  "graph_proposals": [
+    {
+      "proposal_id": "GP_001",
+      "type": "add_node",
+      "target": "allied_ammo_transfer",
+      "payload": {
+        "label": "盟友拦截弹紧急转让",
+        "type": "M",
+        "initial_prob": 0.25,
+        "parents": [
+          "pentagon_war_cost"
+        ],
+        "children": [
+          "ammo_depletion_threshold"
+        ]
+      },
+      "justification": "DIV_001 divergence flag highlights that allied ammo transfers could significantly extend the depletion timeline; current DAG lacks this pathway. Adding this node allows explicit tracking of transfer signals and their impact on the ammo ceiling hypothesis.",
+      "source_evidence": [
+        "DIV_001"
+      ],
+      "source_model": "dialectic-challenge",
+      "impact_assessment": {
+        "affected_nodes": [
+          "ammo_depletion_threshold",
+          "regional_spillover"
+        ],
+        "affected_edges": [
+          "pentagon_war_cost->ammo_depletion_threshold"
+        ],
+        "regime_impact": false,
+        "scenario_impact": [
+          "S4_ammo_ceiling_forced_deescalation",
+          "S1_protracted_attrition"
+        ]
+      },
+      "urgency": "next_run",
+      "auto_approvable": false,
+      "approval_level": 2,
+      "status": "pending"
+    },
+    {
+      "proposal_id": "GP_002",
+      "type": "add_edge",
+      "target": "irgc_succession_consolidation->S2_negotiated_pause_viability",
+      "payload": {
+        "weight": 0.7,
+        "relationship": "blocks_if_fragmented"
+      },
+      "justification": "H1 commitment paradox implies IRGC fragmentation directly blocks negotiated pause viability; this causal link is implicit in scenario analysis but not explicit in DAG structure",
+      "source_evidence": [],
+      "source_model": "schelling-focal",
+      "impact_assessment": {
+        "affected_nodes": [
+          "irgc_succession_consolidation"
+        ],
+        "affected_edges": [],
+        "regime_impact": false,
+        "scenario_impact": [
+          "S2_negotiated_pause"
+        ]
+      },
+      "urgency": "next_run",
+      "auto_approvable": false,
+      "approval_level": 2,
+      "status": "pending"
+    }
+  ]
+}

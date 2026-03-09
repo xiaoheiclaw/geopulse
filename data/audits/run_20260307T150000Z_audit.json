@@ -1,0 +1,12 @@
+{
+  "audit_timestamp": "2026-03-09T07:33:00+08:00",
+  "run_id": "run_20260307T150000Z",
+  "dag_version": 44,
+  "nodes": 127,
+  "edges": 282,
+  "leaf_pct": 12.6,
+  "cycles": false,
+  "orphans": 0,
+  "errors": 0,
+  "result": "PASSED"
+}

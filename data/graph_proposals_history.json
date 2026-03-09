@@ -271,5 +271,454 @@
     },
     "errors": [],
     "timestamp": "2026-03-07T04:12:28.181669"
+  },
+  {
+    "proposal_id": "gp_01_irgc_fragmentation_node",
+    "run_id": "run_20260307T150000Z",
+    "type": "add_node",
+    "target": "irgc_regional_fragmentation",
+    "payload": {
+      "label": "IRGC分裂为地区性民兵联盟",
+      "type": "S",
+      "parents": [
+        "irgc_command_leadership_decapitation"
+      ],
+      "initial_prob": 0.35,
+      "rationale": "N阶推演第4阶输出：W8后IRGC可能事实上分裂。当前DAG缺少此演化路径"
+    },
+    "justification": "nth-order-reasoning 4阶推演识别出IRGC长期分裂路径，当前DAG仅建模短期权力真空，缺少W8+的结构演化节点",
+    "source_model": "nth-order-reasoning",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "irgc_command_leadership_decapitation",
+        "iran_retaliation"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_protracted_attrition",
+        "S3_escalation_spiral"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-08T23:32:53.521800"
+  },
+  {
+    "proposal_id": "gp_02_hormuz_closure_node",
+    "run_id": "run_20260307T150000Z",
+    "type": "add_node",
+    "target": "hormuz_strait_closure",
+    "payload": {
+      "label": "霍尔木兹海峡封锁/实质中断",
+      "type": "H",
+      "parents": [
+        "iran_gulf_attacks",
+        "iran_retaliation"
+      ],
+      "initial_prob": 0.15,
+      "rationale": "S3升级螺旋的关键升级节点，当前DAG缺少此显式节点"
+    },
+    "justification": "霍尔木兹封锁是S3_escalation_spiral的核心升级路径，也是T5触发器的目标。当前DAG未显式建模此节点",
+    "source_model": "schelling-focal",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "kuwait_oil_production_cut",
+        "iran_gulf_attacks"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S3_escalation_spiral",
+        "S4_stagflation_lock"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-08T23:32:53.521823"
+  },
+  {
+    "proposal_id": "GP_001",
+    "run_id": "run_20260308T150000Z",
+    "type": "add_node",
+    "target": "allied_ammo_transfer",
+    "payload": {
+      "label": "盟友拦截弹紧急转让",
+      "type": "M",
+      "initial_prob": 0.25,
+      "parents": [
+        "pentagon_war_cost"
+      ],
+      "children": [
+        "ammo_depletion_threshold"
+      ]
+    },
+    "justification": "DIV_001 divergence flag highlights that allied ammo transfers could significantly extend the depletion timeline; current DAG lacks this pathway. Adding this node allows explicit tracking of transfer signals and their impact on the ammo ceiling hypothesis.",
+    "source_model": "dialectic-challenge",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "ammo_depletion_threshold",
+        "regional_spillover"
+      ],
+      "affected_edges": [
+        "pentagon_war_cost->ammo_depletion_threshold"
+      ],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S4_ammo_ceiling_forced_deescalation",
+        "S1_protracted_attrition"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T00:07:31.771534"
+  },
+  {
+    "proposal_id": "GP_002",
+    "run_id": "run_20260308T150000Z",
+    "type": "add_edge",
+    "target": "irgc_succession_consolidation->S2_negotiated_pause_viability",
+    "payload": {
+      "weight": 0.7,
+      "relationship": "blocks_if_fragmented"
+    },
+    "justification": "H1 commitment paradox implies IRGC fragmentation directly blocks negotiated pause viability; this causal link is implicit in scenario analysis but not explicit in DAG structure",
+    "source_model": "schelling-focal",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "irgc_succession_consolidation"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S2_negotiated_pause"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T00:07:31.771561"
+  },
+  {
+    "proposal_id": "gp_001",
+    "run_id": "run_20260309T150000Z",
+    "type": "add_node",
+    "target": "china_mediation_framework",
+    "payload": {
+      "label": "中国提出正式停火调停框架",
+      "type": "S",
+      "initial_prob": 0.2,
+      "parents": [
+        "china_oppose_regime_change"
+      ],
+      "children": [
+        "irgc_succession_consolidation"
+      ]
+    },
+    "justification": "Schelling focal point分析表明当前缺乏停火焦点，中国调停是最可能的外部焦点生成器；当前DAG未显式建模此路径",
+    "source_model": "schelling-focal",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "irgc_succession_consolidation",
+        "regional_spillover"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S3_negotiated_ceasefire"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:04:21.535597"
+  },
+  {
+    "proposal_id": "gp_002",
+    "run_id": "run_20260309T150000Z",
+    "type": "add_edge",
+    "target": "us_soldiers_killed_iran→us_domestic_casualty_threshold",
+    "payload": {
+      "from": "us_soldiers_killed_iran",
+      "to": "us_domestic_casualty_threshold",
+      "weight": 0.7,
+      "type": "causal"
+    },
+    "justification": "Fearon audience cost分析确认美军伤亡到国内政治约束的因果传导路径在DAG中缺失",
+    "source_model": "fearon-audience-cost",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "us_domestic_casualty_threshold"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S2_escalation_to_ground",
+        "S3_negotiated_ceasefire"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:04:21.535938"
+  },
+  {
+    "proposal_id": "GP_001",
+    "run_id": "run_20260316T150000Z",
+    "type": "add_node",
+    "target": "us_congress_war_powers_debate",
+    "payload": {
+      "label": "美国国会战争权辩论",
+      "type": "S",
+      "initial_prob": 0.3,
+      "parents": [
+        "pentagon_war_cost",
+        "us_soldiers_killed_iran",
+        "civilian_casualty_narrative"
+      ],
+      "children": [
+        "us_political_pressure_ceasefire"
+      ]
+    },
+    "justification": "五角大楼开支超$50亿+首批美军阵亡+平民伤亡叙事三重汇聚，国会辩论成为S1→S2转换的关键中介节点。当前DAG缺少美国国内政治反馈回路。",
+    "source_model": "nth-order-reasoning",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "pentagon_war_cost",
+        "us_soldiers_killed_iran",
+        "civilian_casualty_narrative"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_protracted_attrition",
+        "S2_ammo_forced_negotiation"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:08:30.493518"
+  },
+  {
+    "proposal_id": "GP_002",
+    "run_id": "run_20260316T150000Z",
+    "type": "add_edge",
+    "target": "china_oppose_regime_change→iran_retaliation",
+    "payload": {
+      "label": "中国反对立场强化伊朗报复决心",
+      "weight": 0.15,
+      "mechanism": "中国外交支持降低伊朗国际孤立感，间接提升持续报复的政治可行性"
+    },
+    "justification": "中国明确反对政权更迭的立场为伊朗提供了国际合法性后盾，影响伊朗报复策略的持续性。当前DAG未捕获此传导路径。",
+    "source_model": "schelling-commitment",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "china_oppose_regime_change",
+        "iran_retaliation"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_protracted_attrition"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:08:30.493546"
+  },
+  {
+    "proposal_id": "GP1_add_drone_supply_chain",
+    "run_id": "run_20260317T150000Z",
+    "type": "add_node",
+    "target": "iran_drone_supply_chain_depth",
+    "payload": {
+      "label": "伊朗无人机零部件供应链深度",
+      "type": "M",
+      "initial_prob": 0.7,
+      "parents": [
+        "iran_gulf_attacks"
+      ],
+      "children": [
+        "ammo_depletion_threshold"
+      ]
+    },
+    "justification": "nth-order reasoning identified drone supply chain sustainability as a critical unknown that mediates the ammo depletion clock. If Iran's supply chain is shallow, the asymmetry reverses. Currently no node captures this.",
+    "source_model": "nth-order-reasoning",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "ammo_depletion_threshold",
+        "iran_gulf_attacks"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_protracted_attrition"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:43:23.450380"
+  },
+  {
+    "proposal_id": "GP2_add_spro_intervention",
+    "run_id": "run_20260317T150000Z",
+    "type": "add_node",
+    "target": "strategic_petroleum_reserve_release",
+    "payload": {
+      "label": "美国/中国协同战略石油储备释放",
+      "type": "S",
+      "initial_prob": 0.25,
+      "parents": [
+        "energy_crisis"
+      ],
+      "children": [
+        "supply_disruption_volume"
+      ]
+    },
+    "justification": "S4 antithesis identifies SPR release as primary circuit breaker for stagflation spiral, but no DAG node currently represents this intervention pathway.",
+    "source_model": "dialectic-challenge",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "energy_crisis",
+        "supply_disruption_volume"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S4_stagflation_spiral"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:43:23.450404"
+  },
+  {
+    "proposal_id": "gp_001_proxy_autonomy_node",
+    "run_id": "run_20260318T150000Z",
+    "type": "add_node",
+    "target": "proxy_autonomy_risk",
+    "payload": {
+      "label": "代理人自主行动风险",
+      "type": "S",
+      "initial_prob": 0.35,
+      "description": "Hezbollah/Iraqi militias may act independently of IRGC command, making ceasefire mechanically unenforceable even if principals agree",
+      "upstream_edges": [
+        "conflict_protracted",
+        "beirut_irgc_strike"
+      ],
+      "downstream_edges": [
+        "conflict_protracted"
+      ]
+    },
+    "justification": "Dialectic-challenge identified proxy autonomy as under-weighted spoiler risk in current DAG. This creates a feedback loop on conflict_protracted that is not currently modeled.",
+    "source_model": "dialectic-challenge",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "conflict_protracted",
+        "beirut_irgc_strike"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_protracted_attrition",
+        "S4_negotiated_offramp"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:57:53.511455"
+  },
+  {
+    "proposal_id": "gp_002_israel_spoiler_node",
+    "run_id": "run_20260318T150000Z",
+    "type": "add_node",
+    "target": "israel_independent_escalation",
+    "payload": {
+      "label": "以色列独立升级行动",
+      "type": "S",
+      "initial_prob": 0.2,
+      "description": "Israel conducts independent military action (e.g., strikes on Iranian nuclear sites) that derails any US-Iran negotiation track",
+      "upstream_edges": [
+        "beirut_irgc_strike",
+        "us_israel_strikes"
+      ],
+      "downstream_edges": [
+        "conflict_protracted",
+        "S4_negotiated_offramp_invalidation"
+      ]
+    },
+    "justification": "Dialectic-challenge strengthened S4 antithesis noting Israel independent action as spoiler not captured in DAG. This is a structural gap.",
+    "source_model": "dialectic-challenge",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "conflict_protracted"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S4_negotiated_offramp",
+        "S1_protracted_attrition"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T01:57:53.511482"
+  },
+  {
+    "proposal_id": "GP001",
+    "run_id": "run_20260319T150000Z",
+    "type": "add_node",
+    "target": "ammo_resupply_channel",
+    "payload": {
+      "label": "盟国弹药转让/加急生产补给渠道",
+      "type": "M",
+      "initial_prob": 0.3,
+      "parents": [
+        "pentagon_war_cost"
+      ],
+      "children": [
+        "us_military_casualties"
+      ]
+    },
+    "justification": "DIV001分歧揭示当前DAG缺乏弹药补给路径建模——nth-order-reasoning和dialectic-challenge对弹药耗尽时间线产生分歧，根因是DAG中没有建模补给可能性",
+    "source_model": "dialectic-challenge",
+    "approval_level": 2,
+    "status": "pending",
+    "urgency": "next_run",
+    "impact": {
+      "affected_nodes": [
+        "us_military_casualties",
+        "supply_disruption_volume"
+      ],
+      "affected_edges": [],
+      "regime_impact": false,
+      "scenario_impact": [
+        "S1_protracted_attrition",
+        "S4_domestic_fracture"
+      ]
+    },
+    "errors": [],
+    "timestamp": "2026-03-09T03:29:54.767732"
   }
 ]
