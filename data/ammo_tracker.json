@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "last_updated": "2026-03-10T01:38:00Z",
+  "baseline_estimates": {
+    "source": "IISS Military Balance 2025 + Fars 3/5 self-report + CSIS estimates",
+    "pre_war_inventory": {
+      "ballistic_missiles": {"estimate": 3000, "range": [2000, 4000], "note": "Shahab/Emad/Sejjil/Fateh family"},
+      "cruise_missiles": {"estimate": 500, "range": [300, 800], "note": "Soumar/Hoveyzeh/Paveh"},
+      "drones_attack": {"estimate": 5000, "range": [3000, 8000], "note": "Shahed-136/238 + Mohajer + Ababil"},
+      "anti_ship_missiles": {"estimate": 1000, "range": [500, 2000], "note": "Noor/Qader/Khalij Fars"},
+      "naval_mines": {"estimate": 5000, "range": [2000, 10000], "note": "EM-52/SADAF + contact mines"},
+      "sam_interceptors": {"estimate": 2000, "range": [1000, 3000], "note": "Bavar-373/Khordad-15/Sayyad"}
+    },
+    "confirmed_expenditure": {
+      "as_of": "2026-03-05",
+      "ballistic_missiles_fired": 500,
+      "drones_launched": 2000,
+      "source": "Fars News Agency (self-reported)"
+    },
+    "us_claimed_destroyed": {
+      "as_of": "2026-03-09",
+      "missile_sites": "majority",
+      "naval_vessels": "most of navy sunk",
+      "air_defense": "significant",
+      "source": "Pentagon/Trump (apply 0.5-0.7 discount)",
+      "note": "Trump: 'shot everything they have to shoot' — likely exaggeration"
+    }
+  },
+  "depletion_tracking": [
+    {
+      "date": "2026-02-28",
+      "day": 1,
+      "event": "战争开始，大规模导弹齐射",
+      "ballistic_est_remaining_pct": 100,
+      "drone_est_remaining_pct": 100,
+      "attack_intensity": "extreme"
+    },
+    {
+      "date": "2026-03-05",
+      "day": 6,
+      "event": "Fars报500弹道+2000无人机已发射",
+      "ballistic_est_remaining_pct": 83,
+      "drone_est_remaining_pct": 60,
+      "attack_intensity": "high_declining"
+    },
+    {
+      "date": "2026-03-09",
+      "day": 10,
+      "event": "多方确认发射频率持续下降，Trump称弹药耗尽",
+      "ballistic_est_remaining_pct": 60,
+      "drone_est_remaining_pct": 40,
+      "attack_intensity": "moderate_declining",
+      "notes": "弹道导弹发射频率下降最明显；无人机仍在持续使用但规模缩小"
+    }
+  ],
+  "observable_proxies": [
+    {"id": "attack_frequency", "source": "CENTCOM/UKMTO/news", "automation": "high", "update_freq": "daily"},
+    {"id": "weapon_type_shift", "source": "OSINT/IDF intercept reports", "automation": "medium", "update_freq": "daily"},
+    {"id": "us_destroy_claims", "source": "Pentagon briefings", "automation": "high", "update_freq": "daily"},
+    {"id": "satellite_imagery", "source": "Planet Labs/Maxar/OSINT", "automation": "low", "update_freq": "weekly"},
+    {"id": "resupply_flights", "source": "FlightRadar24 An-124 tracking", "automation": "medium", "update_freq": "daily"},
+    {"id": "proxy_activity", "source": "Houthi/Hezbollah attack rate", "automation": "high", "update_freq": "daily"}
+  ],
+  "key_thresholds": {
+    "ballistic_30pct": "弹道导弹剩余<30% → 被迫转向纯无人机/水雷战术",
+    "drone_20pct": "无人机剩余<20% → 海峡封锁能力实质性下降",
+    "sam_50pct": "防空导弹剩余<50% → 领空防御出现大面积漏洞",
+    "mine_depleted": "水雷耗尽 → 海峡物理清除成为可能"
+  }
+}
