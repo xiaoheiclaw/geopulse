@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 59,
+  "version": 60,
   "updated": "2026-03-09T21:26:32.401653+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -145,13 +145,14 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.7,
-      "confidence": 0.7,
+      "probability": 0.68,
+      "confidence": 0.55,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
         "Cluster warhead missiles still being launched",
-        "But: Iran tracking ability weakened, relies on Russian intel"
+        "But: Iran tracking ability weakened, relies on Russian intel",
+        "IRGC claims \"firing in greater numbers with >1 tonne warheads\" — propaganda-discounted but non-zero info. Previous ISW evidence still supports degradation. Confidence LOWERED due to conflicting signals."
       ],
       "reasoning": "定义: 伊朗中远程弹道导弹发射能力下降>70%(基于CENTCOM战损评估)。当前: CENTCOM称击沉20+舰艇，地面发射架多次被打击。85%反映美方数据可能高估。",
       "time_horizon": "持续",
@@ -353,13 +354,14 @@
         "军事",
         "政治"
       ],
-      "probability": 0.58,
-      "confidence": 0.65,
+      "probability": 0.62,
+      "confidence": 0.7,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
         "[2026-03-09] 沙特MBS誓言反击+多国防空拦截(红队降级53%:防御协调≠反伊联盟)",
-        "[2026-03-09] 沙特撤离令+黎巴嫩禁止真主党军事活动=事实站队(红队:海湾被迫选边)"
+        "[2026-03-09] 沙特撤离令+黎巴嫩禁止真主党军事活动=事实站队(红队:海湾被迫选边)",
+        "Qatar combat engagement + UK/DE/IT Hormuz escort talks + IEA 30-nation stockpile coordination + multi-power mediation = broadening coalition."
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
@@ -488,14 +490,15 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.02,
-      "confidence": 0.4,
+      "probability": 0.05,
+      "confidence": 0.45,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
         "ABC: new leadership must be installed",
         "[2026-03-09] E3+E6: FM拒谈+Mojtaba继位(红队降级:公开≠私下) (LR=4.0)",
-        "[2026-03-09] IRGC架空文官政府:佩泽什基安道歉被打脸,阿拉格齐/拉里贾尼明确拒谈(LR=1.5)"
+        "[2026-03-09] IRGC架空文官政府:佩泽什基安道歉被打脸,阿拉格齐/拉里贾尼明确拒谈(LR=1.5)",
+        "Multi-power mediation (CN/RU/FR) exists but IRGC \"Iran decides when war ends\" + Araghchi \"negotiations not on table\" = firm rejection. 5% reflects tiny window from mediation contacts only."
       ],
       "reasoning": "定义: 可信后渠道谈判信号(通过阿曼/瑞士/中国等中间人)。当前: Trump公开排除谈判可能。12%保留微小窗口。",
       "time_horizon": "W4-16",
@@ -513,8 +516,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.9,
-      "confidence": 0.7,
+      "probability": 0.93,
+      "confidence": 0.75,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
         "BBC: \"firepower over Iran to surge dramatically\"",
@@ -522,7 +525,8 @@
         "Independent: \"this could go on for quite some time\"",
         "[2026-03-09] E3+E6+E7: 双方最大化+俄介入+新领导立威 (LR=2.5)",
         "[2026-03-09] Day10停火遭拒+莫杰塔巴继位延长战争能力+$200油价威胁(红队:弹药约束影响形态非持续时间)",
-        "[2026-03-09] 伊朗拒绝停火+以军首次打击能源设施+美撤离沙特=所有降级路径封堵(红队:不对称能力维持消耗战)"
+        "[2026-03-09] 伊朗拒绝停火+以军首次打击能源设施+美撤离沙特=所有降级路径封堵(红队:不对称能力维持消耗战)",
+        "Hegseth \"most intense day\" + IRGC \"Iran determines when war ends\" = bilateral commitment lock. Araghchi explicitly closes diplomatic door. Both sides escalating."
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
@@ -564,10 +568,11 @@
         "经济",
         "金融"
       ],
-      "probability": 0.62,
-      "confidence": 0.65,
+      "probability": 0.66,
+      "confidence": 0.7,
       "evidence": [
-        "[2026-03-09] 卡塔尔LNG受阻72%+欧洲夏季补库困难(红队:多元化有效但低估恐慌效应)"
+        "[2026-03-09] 卡塔尔LNG受阻72%+欧洲夏季补库困难(红队:多元化有效但低估恐慌效应)",
+        "Hormuz still closed to Western ships, LNG disruption confirmed, Aramco CEO \"catastrophic\", forced EU coordination response."
       ],
       "reasoning": "定义: TTF天然气期货>€80/MWh 或 欧洲天然气库存消耗速度较5年均值快>50%。62%因卡塔尔LNG中断传导但欧洲已有多元化(美国LNG、挪威管道)。",
       "time_horizon": "W2-12",
@@ -585,9 +590,11 @@
         "经济",
         "金融"
       ],
-      "probability": 0.45,
+      "probability": 0.48,
       "confidence": 0.6,
-      "evidence": [],
+      "evidence": [
+        "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet."
+      ],
       "reasoning": "定义: 全球CPI>4% 且 GDP增速<1%(IMF修正后)持续≥2个季度。55%因需要时间传导+各国财政缓冲力度不同。",
       "time_horizon": "W8-24",
       "pinned": true,
@@ -604,9 +611,11 @@
         "金融",
         "经济"
       ],
-      "probability": 0.52,
-      "confidence": 0.75,
-      "evidence": [],
+      "probability": 0.55,
+      "confidence": 0.7,
+      "evidence": [
+        "Higher oil → inflation pressure. Supply chain stress + market uncertainty → growth slowdown. Twin forces trap Fed. 10Y at 4.14% reflects growing tension."
+      ],
       "reasoning": "定义: Fed在连续两次FOMC会议中维持利率不变(既不加也不降)且声明中出现\"balanced risks\"或类似两难措辞。65%。",
       "time_horizon": "W4-16",
       "pinned": true,
@@ -1005,9 +1014,11 @@
         "能源",
         "金融"
       ],
-      "probability": 0.45,
-      "confidence": 0.45,
-      "evidence": [],
+      "probability": 0.4,
+      "confidence": 0.4,
+      "evidence": [
+        "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered."
+      ],
       "reasoning": "定义: Brent在$85-100区间波动>4周且波动率(ATM implied vol)回落至冲突前+50%以内。45%。",
       "time_horizon": "W8-16",
       "pinned": true,
@@ -1292,13 +1303,14 @@
         "军事",
         "政治"
       ],
-      "probability": 0.8,
-      "confidence": 0.35,
+      "probability": 0.83,
+      "confidence": 0.8,
       "evidence": [
         "50K部队+2航母部署在打击范围内",
         "俄罗斯提供伊朗美军位置情报",
         "但: 美军防空/反舰能力极强, 伊朗精确打击能力被削弱",
-        "[2026-03-09] E4: 6名美军阵亡—从0到非0阶跃 (LR=12.0)"
+        "[2026-03-09] E4: 6名美军阵亡—从0到非0阶跃 (LR=12.0)",
+        "Pentagon confirms 7 KIA + 108 wounded + 8 severe. \"Most intense day\" increases exposure. Russia satellite intel to Iran boosts targeting precision."
       ],
       "reasoning": "定义: 单次事件导致美军阵亡>50人(如舰艇被反舰导弹击中或基地被打击)。25%因美军防护极强但俄情报支持+IRGC还在发射第23波意味着风险不是零。这是改变美国政治的最大单一变量。",
       "time_horizon": "W1-8",
@@ -1455,13 +1467,14 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.85,
-      "confidence": 0.7,
+      "probability": 0.8,
+      "confidence": 0.65,
       "evidence": [
         "FM阿拉格齐: 军事单位已转入去中心化模式,31个自治省级单位",
         "Chertoff Group: 被斩首政权在谈判前先升级",
         "Lloyd's List: 中国航运高管确认IRGC与政府双轨指挥",
-        "Carnegie/Sadjadpour: 佩泽什基安无关紧要,不决定伊朗未来"
+        "Carnegie/Sadjadpour: 佩泽什基安无关紧要,不决定伊朗未来",
+        "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command."
       ],
       "reasoning": "定义: IRGC已转入去中心化指挥模式,地方单位按预设指令自主行动,中央召回困难。3/7佩泽什基安道歉后数小时IRGC打脸袭击迪拜/阿布扎比,证实文官政府无法约束军事行动。含义: 即使出现停火政治意愿,执行链断裂使其无法落地。",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
@@ -1470,6 +1483,20 @@
       "dialectic": null,
       "last_updated": "2026-03-09T11:29:06.389530+00:00",
       "created": "2026-03-09T11:29:06.389530+00:00"
+    },
+    "spr_coordinated_release": {
+      "id": "spr_coordinated_release",
+      "label": "IEA Coordinated SPR Release (300-400M bbl)",
+      "domains": [
+        "energy",
+        "economic"
+      ],
+      "probability": 0.6,
+      "confidence": 0.55,
+      "reasoning": "IEA extraordinary meeting convened. G7 \"ready to take necessary measures\". US pushing 300-400M barrel release — would be largest in IEA 52-year history. No decision yet but mechanism active.",
+      "evidence": [
+        "IEA meeting convened, 300-400M barrels discussed, G7 supportive but no decision yet."
+      ]
     }
   },
   "edges": [
@@ -2366,7 +2393,25 @@
       "target": "irgc_command_fragmentation",
       "weight": 0.75,
       "reasoning": "莫杰塔巴继位由IRGC操盘,新领袖无独立军事权威,加速指挥碎片化"
+    },
+    {
+      "source": "spr_coordinated_release",
+      "target": "oil_new_equilibrium",
+      "weight": 0.5,
+      "reasoning": "Massive SPR release would anchor oil price and accelerate equilibrium formation"
+    },
+    {
+      "source": "energy_crisis",
+      "target": "spr_coordinated_release",
+      "weight": 0.6,
+      "reasoning": "Energy crisis severity drives IEA emergency response"
+    },
+    {
+      "source": "spr_coordinated_release",
+      "target": "global_stagflation",
+      "weight": 0.3,
+      "reasoning": "[INVERSE] SPR release partially alleviates supply-side inflation pressure"
     }
   ],
-  "last_updated": "2026-03-09T09:22:00Z"
+  "last_updated": "2026-03-10T21:30Z"
 }

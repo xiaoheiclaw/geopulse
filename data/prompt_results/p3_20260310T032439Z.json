@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260310T032439Z",
+  "raw": "```json\n{\n  \"evidence_text\": \"Day 11综合报道：特朗普与普京通话后称'战争基本结束'、'我们已在很多方面赢得战争'，随后改口称'对谈判不感兴趣'；威胁伊朗若封锁霍尔木兹将遭受'二十倍打击'；Axios称这是特朗普首次暗示战争可能很快结束；Soufan Center报道美国缺乏退出战略；伊朗继续反击巴林、科威特、沙特；德黑兰油库被袭；参议院否决战争权力决议；油价剧烈波动，布伦特原油下跌3%至$71.28\",\n  \"source\": \"多源综合：Axios、Soufan Center、Business Insider、官方声明\",\n  \"source_tier\": 2,\n  \"cross_verification_count\": 3,\n  \"bias_assessment\": \"mild\",\n  \"specificity\": \"detailed\",\n  \"hours_old\": 12,\n  \"score_breakdown\": {\n    \"base\": 0.70,\n    \"cross_verify\": 0.15,\n    \"bias\": -0.05,\n    \"specificity\": 0.00,\n    \"timeliness\": 0.00\n  },\n  \"final_score\": 0.80,\n  \"usable\": true,\n  \"reasoning\": \"多个独立媒体源交叉验证，特朗普声明前后矛盾增加不确定性，油价数据精确可查，但政治解读存在轻度媒体偏见\"\n}\n```"
+}
