@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 58,
+  "version": 59,
   "updated": "2026-03-09T21:26:32.401653+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -1105,21 +1105,22 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.58,
+      "probability": 0.63,
       "confidence": 0.5,
       "evidence": [
         "美国SPR 3.7亿桶(约60天@6mbpd释放)",
         "好望角绕行加10-15天+运费翻倍",
         "沙特东西管道~5mbpd",
         "OPEC+闲置产能<2mbpd",
-        "[2026-03-09] G7正式讨论联合SPR释放(红队降级:SPR有限+OPEC+增产存疑+缺口>3mbpd)"
+        "[2026-03-09] G7正式讨论联合SPR释放(红队降级:SPR有限+OPEC+增产存疑+缺口>3mbpd)",
+        "[2026-03-10] Reuters 3源: Trump考虑放松俄油制裁(+1-2mbpd) + G7能源部长周二继续讨论SPR. 但俄油需国会配合且时间滞后"
       ],
       "reasoning": "定义: 通过替代手段能覆盖多少中断量。SPR是应急(有限)、绕行是部分(增加成本)、东西管道是瓶颈(5mbpd)、增产空间极小。综合覆盖率估计30-40%。概率55%反映替代机制能发挥但不足以避免危机。",
       "time_horizon": "W1-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T19:26:31.848095+00:00",
+      "last_updated": "2026-03-10T01:38:50.047558+00:00",
       "created": "2026-03-07T01:01:30.106816Z"
     },
     "net_supply_gap": {

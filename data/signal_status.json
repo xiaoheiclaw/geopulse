@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-03-09T22:37:05.003309+00:00",
+  "last_updated": "2026-03-10T01:38:50.047558+00:00",
   "dag_version": 56,
   "summary": {
     "deescalation_active": 6,
@@ -19,7 +19,7 @@
         "triggered_at": "2026-03-09",
         "expires_at": "2026-03-16",
         "expiry_days": 7,
-        "evidence": "Trump佛州记者会: 'objectives pretty well complete', 'ended soon', 'I think so'(本周). 但同场矛盾: 'haven't won enough'+regime change暗示+威胁升级",
+        "evidence": "Trump佛州记者会: 'objectives pretty well complete', 'ended soon', 'I think so'(本周). 但同场矛盾: 'haven't won enough'+regime change暗示+威胁升级 | CBS采访: 'very complete, pretty much' + 'thinking about taking over Hormuz' + 'shot everything they have'. 油价盘后暴跌$119.50→$85.27(市场price in降级预期). 同时考虑放松俄油制裁压油价(Reuters 3源确认)",
         "notes": "⚠️ 高假信号风险。7天确认窗口。如果72h内出现新军事目标升级/UNCONDITIONAL SURRENDER回归则标记false alarm"
       },
       {
@@ -287,8 +287,8 @@
         "triggered_at": null,
         "expires_at": null,
         "expiry_days": null,
-        "evidence": "IRGC声称6个月储备，但2/28以来持续消耗。需观测攻击频率/规模趋势",
-        "notes": "关键观测: ①攻击频率下降(周级趋势) ②弹头从导弹降级为无人机/水雷 ③单次攻击规模缩小 ④攻击间隔拉长。这是打破承诺锁定的物理路径——谢林承诺机制在弹药耗尽时自动失效"
+        "evidence": "Fars通讯社3/5: 已发射500+弹道导弹+~2000无人机。多方分析确认发射频率从战争初期持续下降。Trump声称'shot everything they have'(偏见来源但方向一致)。Reddit军事分析+Wikipedia引分析师: 弹药消耗+战略配给双因素",
+        "notes": "关键观测升级: ①发射频率下降已被多方确认(非单一来源) ②500弹道+2000无人机是巨大消耗 ③下一步观测:攻击是否从导弹降级为纯无人机/水雷"
       }
     ]
   },
