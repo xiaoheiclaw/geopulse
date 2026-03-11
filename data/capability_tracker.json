@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "framework": "v3.0 capability output tracking (replaces v1 stock depletion model)",
+  "last_updated": "2026-03-11T05:56:00Z",
+  "design_note": "不追踪库存(不可观测),追踪能力输出(可观测)。与v3.0 Q1代理变量对齐",
+  "q1_proxy": {
+    "variable": "IRGC每日袭击频率(次/天)",
+    "rationale": "压缩所有弹药存量和作战能力为单一可观测量。W1-W4不需区分频率下降原因(耗尽/配给/降级),效果都是封锁强度减弱",
+    "sources": [
+      "CENTCOM daily statements",
+      "UKMTO warnings",
+      "news event count"
+    ],
+    "thresholds": {
+      "gt_3_per_day": "封锁强度高于预期 → 能源加仓",
+      "lt_2_per_day": "Q2扫雷时钟启动条件",
+      "lt_1_per_day_5d": "能力衰减快于预期 → irgcDecayMean下调"
+    }
+  },
+  "capability_dimensions": [
+    {
+      "id": "mine_laying",
+      "label": "布雷能力(对封锁最关键)",
+      "renewable": true,
+      "importance": 5,
+      "observable": "扫雷后是否重新布设(48h窗口)",
+      "note": "水雷是二战级技术,小艇即可布设,几乎不可能根除。这使Q2从'清除存量'变成'压制流量'"
+    },
+    {
+      "id": "anti_ship",
+      "label": "反舰攻击能力",
+      "renewable": "partially",
+      "importance": 5,
+      "observable": "UKMTO警告频率+油轮被攻击数+武器类型(导弹vs无人机vs快艇)",
+      "note": "反舰导弹产线自主但较慢;快艇群可持续;无人机半可再生"
+    },
+    {
+      "id": "drone_harassment",
+      "label": "无人机骚扰能力",
+      "renewable": true,
+      "importance": 3,
+      "observable": "IDF/CENTCOM每日拦截报告数量+类型",
+      "note": "Shahed-136成本~$20k,基于民用组件,分散生产难根除"
+    },
+    {
+      "id": "ballistic_strike",
+      "label": "弹道导弹打击能力",
+      "renewable": false,
+      "importance": 2,
+      "observable": "每日发射数+类型(Emad/Sejjil vs Fateh短程)",
+      "note": "唯一真正受耗尽约束的类型。对封锁不重要但对升级/威慑重要。Fars报3/5已发500+枚"
+    },
+    {
+      "id": "air_defense",
+      "label": "防空抵抗能力",
+      "renewable": false,
+      "importance": 3,
+      "observable": "美以空袭是否遇到抵抗减少(SAM发射频率)",
+      "note": "间接指标:防空崩溃→美以可自由打击→加速其他能力衰减"
+    }
+  ],
+  "daily_tracking": [
+    {
+      "date": "2026-03-05",
+      "day": 6,
+      "attack_freq_est": "high_declining",
+      "weapon_mix": "ballistic+drone+ASCM",
+      "ballistic_launched_cumulative": 500,
+      "drones_launched_cumulative": 2000,
+      "source": "Fars News Agency self-report",
+      "notes": "首次官方消耗数据"
+    },
+    {
+      "date": "2026-03-09",
+      "day": 10,
+      "attack_freq_est": "moderate_declining",
+      "weapon_mix": "drone-heavy, ballistic declining",
+      "mine_events": 0,
+      "source": "multiple analysts + Trump claim",
+      "notes": "弹道导弹频率确认下降;但无人机/快艇仍活跃"
+    }
+  ],
+  "key_insight": "弹药耗尽时钟(SHS H2)需重新表述为'封锁维持能力衰减曲线'。弹道导弹可能W4-W6打完,但封锁靠水雷+反舰+无人机,这些都是可再生的。时间尺度差异可能是月级别的。"
+}

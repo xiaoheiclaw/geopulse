@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 60,
+  "version": 61,
   "updated": "2026-03-09T21:26:32.401653+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -1497,6 +1497,31 @@
       "evidence": [
         "IEA meeting convened, 300-400M barrels discussed, G7 supportive but no decision yet."
       ]
+    },
+    "minesweeping_bottleneck": {
+      "id": "minesweeping_bottleneck",
+      "label": "扫雷瓶颈(美军能力处于几十年最低)",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 0.9,
+      "confidence": 0.8,
+      "evidence": [
+        "Avenger级4艘专用扫雷舰2026年1月刚从巴林撤走退役",
+        "替代者仅3艘LCS(Santa Barbara/Canberra/Tulsa)配扫雷模块,长期延迟+未经实战验证",
+        "盟军扫雷贡献:英国/沙特合计3-6艘(增量有限)",
+        "从美本土调扫雷资产到海湾需数周(不可压缩物理时间)",
+        "1988先例:伊朗150枚水雷,一枚WWI老式水雷险些击沉USS Roberts"
+      ],
+      "reasoning": "定义:美军扫雷能力不足以在合理时间内(<4周)清除海峡水雷威胁。当前状态:专用扫雷舰已退役,LCS替代未验证,增援需数周。Q2时钟受Q1约束:IRGC袭击>2次/天时扫雷无法安全作业。即使IRGC能力归零,已布水雷不会消失。",
+      "time_horizon": "W5-W12+(串联约束:Q1阈值后+5周)",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-11T05:57:14.219757+00:00",
+      "created": "2026-03-11T05:57:14.219757+00:00"
     }
   },
   "edges": [
@@ -2411,6 +2436,24 @@
       "target": "global_stagflation",
       "weight": 0.3,
       "reasoning": "[INVERSE] SPR release partially alleviates supply-side inflation pressure"
+    },
+    {
+      "source": "minesweeping_bottleneck",
+      "target": "hormuz_blockade",
+      "weight": 0.85,
+      "reasoning": "扫雷瓶颈是封锁持续的独立约束:即使IRGC导弹/快艇被压制,水雷持续威胁通行。Q2不独立于Q1但也不从属于Q1"
+    },
+    {
+      "source": "irgc_command_fragmentation",
+      "target": "minesweeping_bottleneck",
+      "weight": 0.5,
+      "reasoning": "碎片化指挥下地方单位可自主布雷(小艇/三桅帆船),使扫雷变成'压制流量'而非'清除存量'问题"
+    },
+    {
+      "source": "minesweeping_bottleneck",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.8,
+      "reasoning": "保险恢复需要:连续无触雷事件1-2周+扫雷进展确认。瓶颈直接延长保险恢复时间线"
     }
   ],
   "last_updated": "2026-03-10T21:30Z"

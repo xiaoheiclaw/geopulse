@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "last_updated": "2026-03-10T01:38:50.047558+00:00",
+  "last_updated": "2026-03-11T05:57:42.092695+00:00",
   "dag_version": 56,
   "summary": {
-    "deescalation_active": 6,
-    "deescalation_total": 25,
+    "deescalation_active": 7,
+    "deescalation_total": 29,
     "escalation_active": 0,
     "escalation_total": 7,
     "false_alarms": 0
@@ -20,7 +20,7 @@
         "expires_at": "2026-03-16",
         "expiry_days": 7,
         "evidence": "Trump佛州记者会: 'objectives pretty well complete', 'ended soon', 'I think so'(本周). 但同场矛盾: 'haven't won enough'+regime change暗示+威胁升级 | CBS采访: 'very complete, pretty much' + 'thinking about taking over Hormuz' + 'shot everything they have'. 油价盘后暴跌$119.50→$85.27(市场price in降级预期). 同时考虑放松俄油制裁压油价(Reuters 3源确认)",
-        "notes": "⚠️ 高假信号风险。7天确认窗口。如果72h内出现新军事目标升级/UNCONDITIONAL SURRENDER回归则标记false alarm"
+        "notes": "⚠️ v3.0重分类: Trump言辞归入噪声层。单独的话术变化不进入决策流程。需与物理层信号(Q2扫雷进展/通行量回升)交叉验证才有意义。保留追踪但权重降至最低"
       },
       {
         "id": "us_bessent_narrative",
@@ -87,6 +87,17 @@
         "expiry_days": 14,
         "evidence": null,
         "notes": "Macron公开要求Hormuz自由通行，但未施压美国退出"
+      },
+      {
+        "id": "us_signal_inconsistency",
+        "label": "美方信号包不一致(言行矛盾)",
+        "layer": 1,
+        "status": "watching",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": "Trump说'war ending soon'但同时威胁'hit harder'+考虑接管Hormuz。言辞矛盾不算,需观测:修辞仍强硬但军事行动转向护航(言行不一致),或任命谈判代表(行动与不谈判立场矛盾)",
+        "notes": "v3.0框架:检测信号包内部矛盾,而非单个信号。美方解锁更可能先于伊朗方(前景理论:Trump承诺弹性>IRGC)"
       }
     ],
     "iran_side": [
@@ -177,6 +188,17 @@
         "expiry_days": 14,
         "evidence": "中国是伊朗最大贸易伙伴和石油买家。Lloyd's List引用中国航运高管'不清楚北京能否接触IRGC'",
         "notes": "具体观测: ①暂停对伊贸易结算(昆仑银行) ②冻结伊朗油轮在中国港口准入 ③习近平/王毅公开声明(不是泛泛呼吁而是具体要求) ④中国特使赴德黑兰(可通过航班追踪确认)。这是谢林框架中唯一可能创造新聚点的路径"
+      },
+      {
+        "id": "ir_signal_inconsistency",
+        "label": "伊朗方信号包不一致(内部矛盾)",
+        "layer": 2,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": null,
+        "notes": "v3.0框架:观测IRGC内部不一致——某区域袭击停止而其他继续(Allison:区域行为分化),或文官渠道传递降级信号且未被IRGC否定(权力结构不一致)"
       }
     ],
     "physical": [
@@ -289,6 +311,28 @@
         "expiry_days": null,
         "evidence": "Fars通讯社3/5: 已发射500+弹道导弹+~2000无人机。多方分析确认发射频率从战争初期持续下降。Trump声称'shot everything they have'(偏见来源但方向一致)。Reddit军事分析+Wikipedia引分析师: 弹药消耗+战略配给双因素",
         "notes": "关键观测升级: ①发射频率下降已被多方确认(非单一来源) ②500弹道+2000无人机是巨大消耗 ③下一步观测:攻击是否从导弹降级为纯无人机/水雷"
+      },
+      {
+        "id": "ph_mine_strike_event",
+        "label": "触雷事件(Q2最高优先级)",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": null,
+        "evidence": null,
+        "notes": "⚠️ 触雷=Q2时间线推迟数周+保险恢复重置。这是整个系统的最高优先级负面信号。一次触雷>所有博弈层信号"
+      },
+      {
+        "id": "ph_minesweep_progress",
+        "label": "CENTCOM公布扫雷进展",
+        "layer": 3,
+        "status": "not_triggered",
+        "triggered_at": null,
+        "expires_at": null,
+        "expiry_days": 7,
+        "evidence": null,
+        "notes": "观测:增派扫雷资产→convoyStart下调0.5周;航道清除宣布→下调1周;IRGC攻击扫雷舰→上调2周(时钟重置)"
       }
     ]
   },
