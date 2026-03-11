@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 61,
-  "updated": "2026-03-09T21:26:32.401653+00:00",
+  "version": 62,
+  "updated": "2026-03-11T21:32:51.182785+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -120,15 +120,16 @@
         "军事",
         "能源"
       ],
-      "probability": 0.97,
-      "confidence": 0.8,
+      "probability": 0.99,
+      "confidence": 0.9,
       "evidence": [
         "BBC: 海峡船舶流量时间线显示大幅下降",
         "Metro: passage effectively closed for days",
         "NBC: 无船只接受美海军护航",
         "Guardian: 船员被困油轮",
         "[2026-03-09] E1: IRGC攻击油轮+选择性封锁执行(红队降级:选择性≠全面) (LR=3.5)",
-        "[2026-03-09] IRGC指挥碎片化使封锁不可逆:即使有停火意愿也无法执行(LR=2.0)"
+        "[2026-03-09] IRGC指挥碎片化使封锁不可逆:即使有停火意愿也无法执行(LR=2.0)",
+        "[2026-03-11] Only 2 non-Iran/Russia ships attempted Hormuz transit; 3 merchant ships struck incl Thai bulk carrier fire (Guardian) (credibility: 0.95)"
       ],
       "reasoning": "定义: 波斯湾商业航运通行量下降>80%(含保险驱动自主回避)。当前状态: BBC延时摄影确认船流大幅下降, 零船接受美军护航, 船员被困。满足条件。",
       "time_horizon": "持续至冲突结束",
@@ -171,15 +172,19 @@
         "政治",
         "能源"
       ],
-      "probability": 0.9744,
-      "confidence": 0.85,
+      "probability": 0.99,
+      "confidence": 0.9,
       "evidence": [
         "Guardian: Iran deputy FM warns European nations = \"legitimate targets\" if they join",
         "CNN: NATO allies reluctantly pulled in",
         "Al Jazeera: Israel bombs Lebanon, 217 killed, 800 injured in one day",
-        "[2026-03-09] E4+E9: 科威特美军阵亡+撤离沙特=海湾溢出加速 (LR=2.0)"
+        "[2026-03-09] E4+E9: 科威特美军阵亡+撤离沙特=海湾溢出加速 (LR=2.0)",
+        "Wikipedia/JPost: Qatar struck Iran after Iran attempted to hit Doha airport, shot down 2 Su-24s",
+        "Reuters 2026-03-10: Qatar seeks to bolster US security partnership post-Iranian strikes",
+        "UAE intercepting missiles/drones from Iran (Mar 11)",
+        "[2026-03-11] Qatar confirmed belligerent, UAE intercepting missiles, Islamic Resistance in Iraq claimed Erbil explosions, 3 gulf states with casualties (17 killed) (credibility: 0.9)"
       ],
-      "reasoning": "定义: ≥3个海湾国家领土/基础设施遭受直接军事打击。当前: 巴林/阿联酋/沙特/科威特/卡塔尔/阿曼均受波及。满足条件。",
+      "reasoning": "Qatar joining as 7th Gulf state involved. Iran attacking Doha airport = expansion to previously neutral party. Spillover now comprehensive.",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
@@ -332,11 +337,12 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.72,
-      "confidence": 0.7,
+      "probability": 0.82,
+      "confidence": 0.75,
       "evidence": [
         "卡塔尔能源部声明",
-        "LNG现货价格数据"
+        "LNG现货价格数据",
+        "[2026-03-11] Qatar now active belligerent; Iran attempted Doha airport strike; missile interceptions in Doha — direct threat to Qatar LNG infrastructure (credibility: 0.85)"
       ],
       "reasoning": "定义: 卡塔尔LNG出口量下降>50%(正常~80mtpa)。当前: 海峡封锁直接影响LNG船通行。72%反映部分长约LNG可能绕行或延迟而非完全中断。",
       "time_horizon": "持续至航线恢复",
@@ -354,14 +360,15 @@
         "军事",
         "政治"
       ],
-      "probability": 0.62,
+      "probability": 0.78,
       "confidence": 0.7,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
         "[2026-03-09] 沙特MBS誓言反击+多国防空拦截(红队降级53%:防御协调≠反伊联盟)",
         "[2026-03-09] 沙特撤离令+黎巴嫩禁止真主党军事活动=事实站队(红队:海湾被迫选边)",
-        "Qatar combat engagement + UK/DE/IT Hormuz escort talks + IEA 30-nation stockpile coordination + multi-power mediation = broadening coalition."
+        "Qatar combat engagement + UK/DE/IT Hormuz escort talks + IEA 30-nation stockpile coordination + multi-power mediation = broadening coalition.",
+        "[2026-03-11] Qatar struck Iran after Doha airport attack attempt, shot down 2 Iranian Su-24s; seeks US security partnership (Reuters/JPost/Channel12) (credibility: 0.8)"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
@@ -490,17 +497,21 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.05,
-      "confidence": 0.45,
+      "probability": 0.02,
+      "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
         "ABC: new leadership must be installed",
         "[2026-03-09] E3+E6: FM拒谈+Mojtaba继位(红队降级:公开≠私下) (LR=4.0)",
         "[2026-03-09] IRGC架空文官政府:佩泽什基安道歉被打脸,阿拉格齐/拉里贾尼明确拒谈(LR=1.5)",
-        "Multi-power mediation (CN/RU/FR) exists but IRGC \"Iran decides when war ends\" + Araghchi \"negotiations not on table\" = firm rejection. 5% reflects tiny window from mediation contacts only."
+        "Multi-power mediation (CN/RU/FR) exists but IRGC \"Iran decides when war ends\" + Araghchi \"negotiations not on table\" = firm rejection. 5% reflects tiny window from mediation contacts only.",
+        "Guardian 2026-03-10: Iran spurned two messages from Witkoff seeking ceasefire",
+        "ToI 2026-03-10: Witkoff says Iran has not shown interest in negotiations since Feb 28",
+        "Guardian: Araghchi says unilateral US declaration won't end conflict",
+        "[2026-03-11] Iran spurned two Witkoff ceasefire messages; Ghalibaf: 'not seeking ceasefire'; Witkoff: 'no interest from Iran since Feb 28' (Guardian/ToI) (credibility: 0.9)"
       ],
-      "reasoning": "定义: 可信后渠道谈判信号(通过阿曼/瑞士/中国等中间人)。当前: Trump公开排除谈判可能。12%保留微小窗口。",
+      "reasoning": "Iran is becoming MORE defiant, not less. Both backchannel attempts rejected. Ghalibaf explicit: \"we aren't seeking a ceasefire\". Near-zero probability of diplomatic track.",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
@@ -516,8 +527,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.93,
-      "confidence": 0.75,
+      "probability": 0.96,
+      "confidence": 0.8,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
         "BBC: \"firepower over Iran to surge dramatically\"",
@@ -526,7 +537,8 @@
         "[2026-03-09] E3+E6+E7: 双方最大化+俄介入+新领导立威 (LR=2.5)",
         "[2026-03-09] Day10停火遭拒+莫杰塔巴继位延长战争能力+$200油价威胁(红队:弹药约束影响形态非持续时间)",
         "[2026-03-09] 伊朗拒绝停火+以军首次打击能源设施+美撤离沙特=所有降级路径封堵(红队:不对称能力维持消耗战)",
-        "Hegseth \"most intense day\" + IRGC \"Iran determines when war ends\" = bilateral commitment lock. Araghchi explicitly closes diplomatic door. Both sides escalating."
+        "Hegseth \"most intense day\" + IRGC \"Iran determines when war ends\" = bilateral commitment lock. Araghchi explicitly closes diplomatic door. Both sides escalating.",
+        "[2026-03-11] Israeli ministers: regime change may take a year; Iran more defiant under strikes; Araghchi says US victory declaration won't end conflict (ToI/Guardian) (credibility: 0.85)"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
@@ -590,12 +602,16 @@
         "经济",
         "金融"
       ],
-      "probability": 0.48,
+      "probability": 0.55,
       "confidence": 0.6,
       "evidence": [
-        "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet."
+        "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet.",
+        "Oil rebounding to $90 despite 400M bbl SPR",
+        "10Y yields rising (4.21%) = stagflation pricing",
+        "OVX 121 extreme vol = uncertainty premium persistent",
+        "S&P drawdown -2.9% = growth fears"
       ],
-      "reasoning": "定义: 全球CPI>4% 且 GDP增速<1%(IMF修正后)持续≥2个季度。55%因需要时间传导+各国财政缓冲力度不同。",
+      "reasoning": "SPR addresses supply but not demand destruction or inflation expectation anchoring. Oil above $85 with Hormuz closed = sustained cost-push inflation. Growth decelerating simultaneously.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
@@ -651,14 +667,15 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.78,
-      "confidence": 0.7,
+      "probability": 0.72,
+      "confidence": 0.65,
       "evidence": [
         "Yahoo Finance: S&P -1.3% Friday, -2% weekly, NEGATIVE for the year",
         "ABC: Dow -453 points (-0.9%)",
         "Nasdaq -1.6%",
         "Seeking Alpha: S&P has -7% to -10% downside buffer",
-        "[2026-03-09] S&P -3.9%+VIX 28.3倒挂+SKEW 152(红队:不同于2022,霍尔木兹封锁=持续供应中断)"
+        "[2026-03-09] S&P -3.9%+VIX 28.3倒挂+SKEW 152(红队:不同于2022,霍尔木兹封锁=持续供应中断)",
+        "[2026-03-11] S&P 6776 (drawdown -2.9%), VIX 24.23 — market absorbing shock better than expected, SPR provides psychological floor (credibility: 0.85)"
       ],
       "reasoning": "定义: S&P 500从冲突前高点回撤>5%。当前: Dow -800, Russell -2.7%。80%因回撤可能已部分price-in且有技术性反弹风险。",
       "time_horizon": "W1-4",
@@ -675,15 +692,18 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.48,
-      "confidence": 0.75,
+      "probability": 0.6,
+      "confidence": 0.7,
       "evidence": [
         "Gold -1% to ,080",
         "Gold futures ,098",
         "Treasury yields连涨4天",
-        "DXY走强压制黄金"
+        "DXY走强压制黄金",
+        "Signal monitor: Gold $5,183.90, DXY 99.25",
+        "10Y yield rising to 4.21% despite war risk (stagflation pricing)",
+        "[2026-03-11] Gold $5184, DXY 99.25 (up from 98.82), 10Y yields 4.21% (up) — safe haven + stagflation mix (credibility: 0.9)"
       ],
-      "reasoning": "定义: 黄金现货较冲突前上涨>5% 且/或 DXY指数上涨>3%。当前: 黄金被yield压制(-1%)但美元走强。75%反映避险需求存在但被滞胀定价部分抵消。",
+      "reasoning": "Gold sustained above $5K for multiple days. DXY strengthening. Classic safe-haven pattern persists despite SPR announcement.",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
@@ -698,14 +718,17 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.48,
+      "probability": 0.55,
       "confidence": 0.65,
       "evidence": [
         "Treasury yields连涨4天",
         "Fed降息预期推迟",
-        "油价推高通胀预期"
+        "油价推高通胀预期",
+        "Signal monitor: 10Y 4.208% (up from 4.136% yesterday)",
+        "Brent rebounding to $90+ despite SPR 400M announcement",
+        "OVX 121 extreme vol = continued uncertainty"
       ],
-      "reasoning": "定义: 10Y UST yield >4.5% 且 2Y-10Y利差>0(正常化)且TIPS breakeven >3%同时出现。68%。",
+      "reasoning": "Yields rising during a war = market pricing stagflation not safe-haven. Oil rebounding despite largest-ever SPR release reinforces inflation persistence.",
       "time_horizon": "W2-12",
       "pinned": true,
       "time_phases": [],
@@ -748,7 +771,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T21:26:32.401410+00:00",
+      "last_updated": "2026-03-11T21:32:51.182536+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -820,10 +843,15 @@
         "政治",
         "金融"
       ],
-      "probability": 0.48,
-      "confidence": 0.55,
-      "evidence": [],
-      "reasoning": "定义: 总统支持率因战争下降>5pp 或 汽油均价>$5/加仑引发国会反战决议。52%。",
+      "probability": 0.62,
+      "confidence": 0.7,
+      "evidence": [
+        "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
+        "NPR: 7 US soldiers dead, 8 seriously wounded cumulative",
+        "Trump contradictory messaging: 'very complete' vs military escalation",
+        "[2026-03-11] NYT: Military investigation confirmed US responsible for Iranian elementary school strike; Trump asked about it leaving White House (credibility: 0.9)"
+      ],
+      "reasoning": "School strike is Abu Ghraib-tier domestic liability. Combined with rising casualties and gas prices, domestic pressure building. But still pre-tipping point — no major protest movement yet.",
       "time_horizon": "W4-12",
       "pinned": true,
       "time_phases": [],
@@ -915,11 +943,12 @@
         "政治",
         "能源"
       ],
-      "probability": 0.02,
-      "confidence": 0.35,
+      "probability": 0.01,
+      "confidence": 0.85,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
-        "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)"
+        "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
+        "[2026-03-11] Zero ceasefire pathway: Iran defiant, Trump demanded unconditional surrender Mar 6, both sides escalating (credibility: 0.9)"
       ],
       "reasoning": "定义: 正式停火协议签署 或 双方军事行动强度下降>50%持续>1周。当前: Trump无条件投降要求使此几乎不可能。10%。",
       "time_horizon": "W12-24+",
@@ -1014,12 +1043,16 @@
         "能源",
         "金融"
       ],
-      "probability": 0.4,
-      "confidence": 0.4,
+      "probability": 0.48,
+      "confidence": 0.45,
       "evidence": [
-        "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered."
+        "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
+        "Brent: spiked $120 → crashed to $85 → rebounded to $90",
+        "SPR 400M bbl provides floor against extreme spikes",
+        "But OVX 121 = market still not equilibrated",
+        "[2026-03-11] Brent rebounded $85→$90 despite 400M bbl SPR announcement; market pricing structural Hormuz closure; OVX 121 (extreme vol) (credibility: 0.9)"
       ],
-      "reasoning": "定义: Brent在$85-100区间波动>4周且波动率(ATM implied vol)回落至冲突前+50%以内。45%。",
+      "reasoning": "Price action suggests range formation ($85-95) but OVX extreme vol means equilibrium fragile. SPR creates temporary ceiling but doesnt address structural supply gap.",
       "time_horizon": "W8-16",
       "pinned": true,
       "time_phases": [],
@@ -1116,15 +1149,16 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.63,
-      "confidence": 0.5,
+      "probability": 0.7,
+      "confidence": 0.65,
       "evidence": [
         "美国SPR 3.7亿桶(约60天@6mbpd释放)",
         "好望角绕行加10-15天+运费翻倍",
         "沙特东西管道~5mbpd",
         "OPEC+闲置产能<2mbpd",
         "[2026-03-09] G7正式讨论联合SPR释放(红队降级:SPR有限+OPEC+增产存疑+缺口>3mbpd)",
-        "[2026-03-10] Reuters 3源: Trump考虑放松俄油制裁(+1-2mbpd) + G7能源部长周二继续讨论SPR. 但俄油需国会配合且时间滞后"
+        "[2026-03-10] Reuters 3源: Trump考虑放松俄油制裁(+1-2mbpd) + G7能源部长周二继续讨论SPR. 但俄油需国会配合且时间滞后",
+        "[2026-03-11] 400M bbl SPR at 2mb/d covers only ~10% of Hormuz throughput gap, but provides psychological market buffer (credibility: 0.9)"
       ],
       "reasoning": "定义: 通过替代手段能覆盖多少中断量。SPR是应急(有限)、绕行是部分(增加成本)、东西管道是瓶颈(5mbpd)、增产空间极小。综合覆盖率估计30-40%。概率55%反映替代机制能发挥但不足以避免危机。",
       "time_horizon": "W1-8",
@@ -1491,12 +1525,17 @@
         "energy",
         "economic"
       ],
-      "probability": 0.6,
-      "confidence": 0.55,
-      "reasoning": "IEA extraordinary meeting convened. G7 \"ready to take necessary measures\". US pushing 300-400M barrel release — would be largest in IEA 52-year history. No decision yet but mechanism active.",
+      "probability": 0.92,
+      "confidence": 0.85,
+      "reasoning": "No longer speculative — IEA extraordinary meeting concluded with unanimous 32-member backing. 400M bbl confirmed. Only execution logistics remain uncertain.",
       "evidence": [
-        "IEA meeting convened, 300-400M barrels discussed, G7 supportive but no decision yet."
-      ]
+        "IEA meeting convened, 300-400M barrels discussed, G7 supportive but no decision yet.",
+        "Reuters 2026-03-11: IEA proposes LARGEST EVER oil release, all 32 members backed",
+        "CNBC 2026-03-11: IEA 32 countries agreed to release 400M barrels",
+        "Euronews 2026-03-11: IEA approves largest-ever oil reserve release",
+        "[2026-03-11] IEA confirmed largest-ever 400M bbl SPR release, all 32 member countries agreed (Reuters/CNBC) (credibility: 0.95)"
+      ],
+      "node_type": "prediction"
     },
     "minesweeping_bottleneck": {
       "id": "minesweeping_bottleneck",
@@ -2456,5 +2495,6 @@
       "reasoning": "保险恢复需要:连续无触雷事件1-2周+扫雷进展确认。瓶颈直接延长保险恢复时间线"
     }
   ],
-  "last_updated": "2026-03-10T21:30Z"
+  "last_updated": "2026-03-11T21:32Z",
+  "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
