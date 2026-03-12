@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 62,
-  "updated": "2026-03-11T21:32:51.182785+00:00",
+  "version": 63,
+  "updated": "2026-03-12T15:34:00.793984+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -172,7 +172,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.99,
+      "probability": 0.995,
       "confidence": 0.9,
       "evidence": [
         "Guardian: Iran deputy FM warns European nations = \"legitimate targets\" if they join",
@@ -182,7 +182,8 @@
         "Wikipedia/JPost: Qatar struck Iran after Iran attempted to hit Doha airport, shot down 2 Su-24s",
         "Reuters 2026-03-10: Qatar seeks to bolster US security partnership post-Iranian strikes",
         "UAE intercepting missiles/drones from Iran (Mar 11)",
-        "[2026-03-11] Qatar confirmed belligerent, UAE intercepting missiles, Islamic Resistance in Iraq claimed Erbil explosions, 3 gulf states with casualties (17 killed) (credibility: 0.9)"
+        "[2026-03-11] Qatar confirmed belligerent, UAE intercepting missiles, Islamic Resistance in Iraq claimed Erbil explosions, 3 gulf states with casualties (17 killed) (credibility: 0.9)",
+        "[2026-03-12] Oil tankers struck in Iraq. IRGC directly engaged merchant ship (first direct fighter engagement). Qatar joined strikes. Iraq militia claiming Erbil attacks"
       ],
       "reasoning": "Qatar joining as 7th Gulf state involved. Iran attacking Doha airport = expansion to previously neutral party. Spillover now comprehensive.",
       "time_horizon": "持续",
@@ -497,7 +498,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.02,
+      "probability": 0.01,
       "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -509,7 +510,8 @@
         "Guardian 2026-03-10: Iran spurned two messages from Witkoff seeking ceasefire",
         "ToI 2026-03-10: Witkoff says Iran has not shown interest in negotiations since Feb 28",
         "Guardian: Araghchi says unilateral US declaration won't end conflict",
-        "[2026-03-11] Iran spurned two Witkoff ceasefire messages; Ghalibaf: 'not seeking ceasefire'; Witkoff: 'no interest from Iran since Feb 28' (Guardian/ToI) (credibility: 0.9)"
+        "[2026-03-11] Iran spurned two Witkoff ceasefire messages; Ghalibaf: 'not seeking ceasefire'; Witkoff: 'no interest from Iran since Feb 28' (Guardian/ToI) (credibility: 0.9)",
+        "[2026-03-12] Iran rejected 2 Witkoff messages. Mojtaba vengeance vow = no diplomatic off-ramp. Witkoff confirms Iran shows no interest in negotiations"
       ],
       "reasoning": "Iran is becoming MORE defiant, not less. Both backchannel attempts rejected. Ghalibaf explicit: \"we aren't seeking a ceasefire\". Near-zero probability of diplomatic track.",
       "time_horizon": "W4-16",
@@ -527,7 +529,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.96,
+      "probability": 0.98,
       "confidence": 0.8,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
@@ -538,7 +540,8 @@
         "[2026-03-09] Day10停火遭拒+莫杰塔巴继位延长战争能力+$200油价威胁(红队:弹药约束影响形态非持续时间)",
         "[2026-03-09] 伊朗拒绝停火+以军首次打击能源设施+美撤离沙特=所有降级路径封堵(红队:不对称能力维持消耗战)",
         "Hegseth \"most intense day\" + IRGC \"Iran determines when war ends\" = bilateral commitment lock. Araghchi explicitly closes diplomatic door. Both sides escalating.",
-        "[2026-03-11] Israeli ministers: regime change may take a year; Iran more defiant under strikes; Araghchi says US victory declaration won't end conflict (ToI/Guardian) (credibility: 0.85)"
+        "[2026-03-11] Israeli ministers: regime change may take a year; Iran more defiant under strikes; Araghchi says US victory declaration won't end conflict (ToI/Guardian) (credibility: 0.85)",
+        "[2026-03-12] Mojtaba Khamenei first public statement: vowed vengeance, Hormuz stays shut, US bases threat. Iran launched 'most intense operation'"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
@@ -602,14 +605,15 @@
         "经济",
         "金融"
       ],
-      "probability": 0.55,
+      "probability": 0.65,
       "confidence": 0.6,
       "evidence": [
         "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet.",
         "Oil rebounding to $90 despite 400M bbl SPR",
         "10Y yields rising (4.21%) = stagflation pricing",
         "OVX 121 extreme vol = uncertainty premium persistent",
-        "S&P drawdown -2.9% = growth fears"
+        "S&P drawdown -2.9% = growth fears",
+        "[2026-03-12] Guardian: 'largest supply disruption in history of oil markets'. Oil $97-101, Goldman revising. 10Y at 4.247%"
       ],
       "reasoning": "SPR addresses supply but not demand destruction or inflation expectation anchoring. Oil above $85 with Hormuz closed = sustained cost-push inflation. Growth decelerating simultaneously.",
       "time_horizon": "W8-24",
@@ -667,7 +671,7 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.72,
+      "probability": 0.82,
       "confidence": 0.65,
       "evidence": [
         "Yahoo Finance: S&P -1.3% Friday, -2% weekly, NEGATIVE for the year",
@@ -675,7 +679,8 @@
         "Nasdaq -1.6%",
         "Seeking Alpha: S&P has -7% to -10% downside buffer",
         "[2026-03-09] S&P -3.9%+VIX 28.3倒挂+SKEW 152(红队:不同于2022,霍尔木兹封锁=持续供应中断)",
-        "[2026-03-11] S&P 6776 (drawdown -2.9%), VIX 24.23 — market absorbing shock better than expected, SPR provides psychological floor (credibility: 0.85)"
+        "[2026-03-11] S&P 6776 (drawdown -2.9%), VIX 24.23 — market absorbing shock better than expected, SPR provides psychological floor (credibility: 0.85)",
+        "[2026-03-12] S&P -4.1% (approaching -5% threshold). VIX term structure inverted 27.2>26.8 = acute crisis pricing. Goldman revising forecasts"
       ],
       "reasoning": "定义: S&P 500从冲突前高点回撤>5%。当前: Dow -800, Russell -2.7%。80%因回撤可能已部分price-in且有技术性反弹风险。",
       "time_horizon": "W1-4",
@@ -692,7 +697,7 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.6,
+      "probability": 0.68,
       "confidence": 0.7,
       "evidence": [
         "Gold -1% to ,080",
@@ -701,7 +706,8 @@
         "DXY走强压制黄金",
         "Signal monitor: Gold $5,183.90, DXY 99.25",
         "10Y yield rising to 4.21% despite war risk (stagflation pricing)",
-        "[2026-03-11] Gold $5184, DXY 99.25 (up from 98.82), 10Y yields 4.21% (up) — safe haven + stagflation mix (credibility: 0.9)"
+        "[2026-03-11] Gold $5184, DXY 99.25 (up from 98.82), 10Y yields 4.21% (up) — safe haven + stagflation mix (credibility: 0.9)",
+        "[2026-03-12] Gold >$5K sustained. DXY 99.7 (approaching 100). Classic dual safe haven bid"
       ],
       "reasoning": "Gold sustained above $5K for multiple days. DXY strengthening. Classic safe-haven pattern persists despite SPR announcement.",
       "time_horizon": "持续",
@@ -718,7 +724,7 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.55,
+      "probability": 0.63,
       "confidence": 0.65,
       "evidence": [
         "Treasury yields连涨4天",
@@ -726,7 +732,8 @@
         "油价推高通胀预期",
         "Signal monitor: 10Y 4.208% (up from 4.136% yesterday)",
         "Brent rebounding to $90+ despite SPR 400M announcement",
-        "OVX 121 extreme vol = continued uncertainty"
+        "OVX 121 extreme vol = continued uncertainty",
+        "[2026-03-12] 10Y yield 4.247% (+4bp), rising despite equity selloff = stagflation not deflation pricing"
       ],
       "reasoning": "Yields rising during a war = market pricing stagflation not safe-haven. Oil rebounding despite largest-ever SPR release reinforces inflation persistence.",
       "time_horizon": "W2-12",
@@ -771,7 +778,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-11T21:32:51.182536+00:00",
+      "last_updated": "2026-03-12T15:34:00.793741+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -843,13 +850,14 @@
         "政治",
         "金融"
       ],
-      "probability": 0.62,
+      "probability": 0.72,
       "confidence": 0.7,
       "evidence": [
         "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
         "NPR: 7 US soldiers dead, 8 seriously wounded cumulative",
         "Trump contradictory messaging: 'very complete' vs military escalation",
-        "[2026-03-11] NYT: Military investigation confirmed US responsible for Iranian elementary school strike; Trump asked about it leaving White House (credibility: 0.9)"
+        "[2026-03-11] NYT: Military investigation confirmed US responsible for Iranian elementary school strike; Trump asked about it leaving White House (credibility: 0.9)",
+        "[2026-03-12] Military confirmed school strike. Mojtaba weaponizing it. Oil $100. 17 US sites damaged. Cost asymmetry of interceptors vs projectiles"
       ],
       "reasoning": "School strike is Abu Ghraib-tier domestic liability. Combined with rising casualties and gas prices, domestic pressure building. But still pre-tipping point — no major protest movement yet.",
       "time_horizon": "W4-12",
@@ -943,12 +951,13 @@
         "政治",
         "能源"
       ],
-      "probability": 0.01,
+      "probability": 0.005,
       "confidence": 0.85,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
-        "[2026-03-11] Zero ceasefire pathway: Iran defiant, Trump demanded unconditional surrender Mar 6, both sides escalating (credibility: 0.9)"
+        "[2026-03-11] Zero ceasefire pathway: Iran defiant, Trump demanded unconditional surrender Mar 6, both sides escalating (credibility: 0.9)",
+        "[2026-03-12] Supreme leader's vengeance statement + escalation to 'most intense' operations = deescalation essentially eliminated"
       ],
       "reasoning": "定义: 正式停火协议签署 或 双方军事行动强度下降>50%持续>1周。当前: Trump无条件投降要求使此几乎不可能。10%。",
       "time_horizon": "W12-24+",
@@ -1043,14 +1052,15 @@
         "能源",
         "金融"
       ],
-      "probability": 0.48,
+      "probability": 0.35,
       "confidence": 0.45,
       "evidence": [
         "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
         "Brent: spiked $120 → crashed to $85 → rebounded to $90",
         "SPR 400M bbl provides floor against extreme spikes",
         "But OVX 121 = market still not equilibrated",
-        "[2026-03-11] Brent rebounded $85→$90 despite 400M bbl SPR announcement; market pricing structural Hormuz closure; OVX 121 (extreme vol) (credibility: 0.9)"
+        "[2026-03-11] Brent rebounded $85→$90 despite 400M bbl SPR announcement; market pricing structural Hormuz closure; OVX 121 (extreme vol) (credibility: 0.9)",
+        "[2026-03-12] Brent $90→$101.59→$97 in 18h DESPITE 400M bbl SPR announcement. Equilibrium breaking, not forming. Price whipsawing $85-101"
       ],
       "reasoning": "Price action suggests range formation ($85-95) but OVX extreme vol means equilibrium fragile. SPR creates temporary ceiling but doesnt address structural supply gap.",
       "time_horizon": "W8-16",
@@ -1245,12 +1255,13 @@
         "经济",
         "政治"
       ],
-      "probability": 0.55,
+      "probability": 0.68,
       "confidence": 0.6,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
         "若Brent破$100→汽油$4.8-5.2",
-        "精炼利润率扩张加速零售端涨幅"
+        "精炼利润率扩张加速零售端涨幅",
+        "[2026-03-12] Brent re-approaching $100 despite SPR. US retail gasoline lag ~2 weeks. $5/gal threshold approaching"
       ],
       "reasoning": "定义: 美国汽油均价突破$5/加仑(AAA口径)。65%因Brent尚未破百，但传导滞后+精炼瓶颈可能加速。",
       "time_horizon": "W2-8",
