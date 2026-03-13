@@ -63,7 +63,7 @@ def load_dag_summary():
 
     lines = []
     for nid, n in sorted(nodes.items(), key=lambda x: -x[1]["probability"]):
-        lines.append(f"{nid}: {n['label']} [{n['node_type']}] {n['probability']:.0%}")
+        lines.append(f"{nid}: {n['label']} [{n.get('node_type', n.get('type', '?'))}] {n['probability']:.0%}")
     return "\n".join(lines)
 
 

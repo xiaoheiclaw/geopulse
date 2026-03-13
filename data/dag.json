@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 64,
+  "version": 65,
   "updated": "2026-03-13T02:51:27.640081+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -121,8 +121,8 @@
         "军事",
         "能源"
       ],
-      "probability": 0.99,
-      "confidence": 0.9,
+      "probability": 0.995,
+      "confidence": 0.95,
       "evidence": [
         "BBC: 海峡船舶流量时间线显示大幅下降",
         "Metro: passage effectively closed for days",
@@ -130,7 +130,8 @@
         "Guardian: 船员被困油轮",
         "[2026-03-09] E1: IRGC攻击油轮+选择性封锁执行(红队降级:选择性≠全面) (LR=3.5)",
         "[2026-03-09] IRGC指挥碎片化使封锁不可逆:即使有停火意愿也无法执行(LR=2.0)",
-        "[2026-03-11] Only 2 non-Iran/Russia ships attempted Hormuz transit; 3 merchant ships struck incl Thai bulk carrier fire (Guardian) (credibility: 0.95)"
+        "[2026-03-11] Only 2 non-Iran/Russia ships attempted Hormuz transit; 3 merchant ships struck incl Thai bulk carrier fire (Guardian) (credibility: 0.95)",
+        "[2026-03-13] NYT: US officials confirm Iran ACTIVELY MINING Hormuz. CNN: Trump admin didnt plan for this"
       ],
       "reasoning": "定义: 波斯湾商业航运通行量下降>80%(含保险驱动自主回避)。当前状态: BBC延时摄影确认船流大幅下降, 零船接受美军护航, 船员被困。满足条件。",
       "time_horizon": "持续至冲突结束",
@@ -173,8 +174,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.995,
-      "confidence": 0.9,
+      "probability": 1.0,
+      "confidence": 0.99,
       "evidence": [
         "Guardian: Iran deputy FM warns European nations = \"legitimate targets\" if they join",
         "CNN: NATO allies reluctantly pulled in",
@@ -184,7 +185,8 @@
         "Reuters 2026-03-10: Qatar seeks to bolster US security partnership post-Iranian strikes",
         "UAE intercepting missiles/drones from Iran (Mar 11)",
         "[2026-03-11] Qatar confirmed belligerent, UAE intercepting missiles, Islamic Resistance in Iraq claimed Erbil explosions, 3 gulf states with casualties (17 killed) (credibility: 0.9)",
-        "[2026-03-12] Oil tankers struck in Iraq. IRGC directly engaged merchant ship (first direct fighter engagement). Qatar joined strikes. Iraq militia claiming Erbil attacks"
+        "[2026-03-12] Oil tankers struck in Iraq. IRGC directly engaged merchant ship (first direct fighter engagement). Qatar joined strikes. Iraq militia claiming Erbil attacks",
+        "[2026-03-13] Drones target Riyadh Embassies District + Shaybah oilfield. All 5 Gulf states intercepting. Sirens at NATO base in Turkey"
       ],
       "reasoning": "Qatar joining as 7th Gulf state involved. Iran attacking Doha airport = expansion to previously neutral party. Spillover now comprehensive.",
       "time_horizon": "持续",
@@ -202,12 +204,13 @@
         "金融",
         "能源"
       ],
-      "probability": 0.88,
-      "confidence": 0.75,
+      "probability": 0.95,
+      "confidence": 0.88,
       "evidence": [
         "Lloyd's战争险报价数据",
         "多家船东声明暂停波斯湾航线",
-        "[2026-03-13] Iraq tanker attacks + Oman strikes + Hormuz continuous (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Iraq tanker attacks + Oman strikes + Hormuz continuous (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Active mines in Hormuz = war risk insurance effectively impossible. Confirmed minefield"
       ],
       "reasoning": "定义: 波斯湾航线战争险费率>总保额的5%(正常<0.05%)，导致商业航运经济上不可行。88%。",
       "time_horizon": "持续至冲突结束",
@@ -248,10 +251,11 @@
         "政治",
         "经济"
       ],
-      "probability": 1.0,
+      "probability": 0.99,
       "confidence": 0.95,
       "evidence": [
-        "国会预算办公室报告"
+        "国会预算办公室报告",
+        "[2026-03-13] Pentagon: $11.3B for first 6 days = $1.9B/day (was $5B estimate earlier)"
       ],
       "reasoning": "确认的财政支出数据",
       "time_horizon": "",
@@ -270,14 +274,15 @@
         "经济",
         "金融"
       ],
-      "probability": 0.95,
-      "confidence": 0.85,
+      "probability": 0.98,
+      "confidence": 0.9,
       "evidence": [
         "IEA紧急声明",
         "OPEC+紧急会议",
         "[2026-03-09] E5+E10: 德黑兰炼油厂被炸+伊拉克-70% (LR=3.0)",
         "[2026-03-09] 首次打击能源设施=新升级域+Brent盘中$110+G7紧急SPR会议(红队:SPR是2-3月创可贴)",
-        "[2026-03-13] Brent $100 + sustained disruption = crisis confirmed (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Brent $100 + sustained disruption = crisis confirmed (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Oil +10% despite Russia waiver + SPR release. Both emergency measures failing to calm markets"
       ],
       "reasoning": "定义: 全球石油净供应缺口>3mbpd且持续>2周, 或IEA宣布供应紧急状态。依赖净供应缺口(72%)经传导。75%反映: 缺口很可能存在但SPR释放+绕行可能将crisis延迟或减轻。",
       "time_horizon": "持续至航线恢复",
@@ -343,13 +348,14 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.85,
-      "confidence": 0.72,
+      "probability": 0.92,
+      "confidence": 0.82,
       "evidence": [
         "卡塔尔能源部声明",
         "LNG现货价格数据",
         "[2026-03-11] Qatar now active belligerent; Iran attempted Doha airport strike; missile interceptions in Doha — direct threat to Qatar LNG infrastructure (credibility: 0.85)",
-        "[2026-03-13] Hormuz locked + no escort = LNG trapped (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Hormuz locked + no escort = LNG trapped (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Active mining of Hormuz = no LNG transit without minesweeping. Qatar completely landlocked for exports"
       ],
       "reasoning": "定义: 卡塔尔LNG出口量下降>50%(正常~80mtpa)。当前: 海峡封锁直接影响LNG船通行。72%反映部分长约LNG可能绕行或延迟而非完全中断。",
       "time_horizon": "持续至航线恢复",
@@ -367,15 +373,16 @@
         "军事",
         "政治"
       ],
-      "probability": 0.78,
-      "confidence": 0.7,
+      "probability": 0.85,
+      "confidence": 0.75,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
         "[2026-03-09] 沙特MBS誓言反击+多国防空拦截(红队降级53%:防御协调≠反伊联盟)",
         "[2026-03-09] 沙特撤离令+黎巴嫩禁止真主党军事活动=事实站队(红队:海湾被迫选边)",
         "Qatar combat engagement + UK/DE/IT Hormuz escort talks + IEA 30-nation stockpile coordination + multi-power mediation = broadening coalition.",
-        "[2026-03-11] Qatar struck Iran after Doha airport attack attempt, shot down 2 Iranian Su-24s; seeks US security partnership (Reuters/JPost/Channel12) (credibility: 0.8)"
+        "[2026-03-11] Qatar struck Iran after Doha airport attack attempt, shot down 2 Iranian Su-24s; seeks US security partnership (Reuters/JPost/Channel12) (credibility: 0.8)",
+        "[2026-03-13] Sirens at NATO facility in Turkey. All Gulf states actively defending. War expanding beyond bilateral"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
@@ -415,10 +422,11 @@
         "军事",
         "政治"
       ],
-      "probability": 0.65,
-      "confidence": 0.7,
+      "probability": 0.55,
+      "confidence": 0.65,
       "evidence": [
-        "[2026-03-13] Isfahan uranium retrievable + Iran claims 11 bombs capability (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Isfahan uranium retrievable + Iran claims 11 bombs capability (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Netanyahu claims Israeli strikes killed top nuclear scientists. Reduces near-term breakout capability. Counter: may increase desperation"
       ],
       "reasoning": "定义: 伊朗浓缩铀纯度突破60%→90%(武器级)或IAEA报告显著偏离。当前: 常规威慑丧失增加核补偿动机。45%因技术障碍+以色列精准打击核设施。",
       "time_horizon": "W8-24",
@@ -481,15 +489,16 @@
         "政治",
         "能源"
       ],
-      "probability": 0.91,
-      "confidence": 0.7,
+      "probability": 0.98,
+      "confidence": 0.9,
       "evidence": [
         "WaPo: Russia providing Iran targeting info on US warships/aircraft positions",
         "CBS: \"pretty comprehensive effort\" to help Iran target US forces",
         "Daily Mail: Iran own tracking weakened, relies on Russian intel",
         "Kremlin: Peskov confirms \"dialogue\" with Iranian leadership",
         "[2026-03-09] E7: 俄提供情报(红队降级:匿名源-0.15) (LR=2.5)",
-        "[2026-03-09] 普京致电莫杰塔巴承诺坚定支持+俄作为替代供应商定位(红队:杠杆靠能源渠道不靠军事)"
+        "[2026-03-09] 普京致电莫杰塔巴承诺坚定支持+俄作为替代供应商定位(红队:杠杆靠能源渠道不靠军事)",
+        "[2026-03-13] CONFIRMED: Trump 30-day waiver lifting Russia oil sanctions at sea. US forced to give Russia geopolitical concession due to energy crisis"
       ],
       "reasoning": "定义: 俄罗斯借能源危机+军事情报增加地缘杠杆。WaPo/CBS确认俄罗斯向伊朗提供美军舰艇和飞机位置情报。这超越了能源杠杆——是直接军事支持。75%。",
       "time_horizon": "持续",
@@ -537,8 +546,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.99,
-      "confidence": 0.85,
+      "probability": 0.995,
+      "confidence": 0.92,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
         "BBC: \"firepower over Iran to surge dramatically\"",
@@ -550,7 +559,8 @@
         "Hegseth \"most intense day\" + IRGC \"Iran determines when war ends\" = bilateral commitment lock. Araghchi explicitly closes diplomatic door. Both sides escalating.",
         "[2026-03-11] Israeli ministers: regime change may take a year; Iran more defiant under strikes; Araghchi says US victory declaration won't end conflict (ToI/Guardian) (credibility: 0.85)",
         "[2026-03-12] Mojtaba Khamenei first public statement: vowed vengeance, Hormuz stays shut, US bases threat. Iran launched 'most intense operation'",
-        "[2026-03-13] No regime change plan + hardline Mojtaba = locked in (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] No regime change plan + hardline Mojtaba = locked in (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Reuters: Leaders of Iran, Israel AND US all voiced defiance and vowed to fight on"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
@@ -614,15 +624,16 @@
         "经济",
         "金融"
       ],
-      "probability": 0.65,
-      "confidence": 0.6,
+      "probability": 0.72,
+      "confidence": 0.65,
       "evidence": [
         "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet.",
         "Oil rebounding to $90 despite 400M bbl SPR",
         "10Y yields rising (4.21%) = stagflation pricing",
         "OVX 121 extreme vol = uncertainty premium persistent",
         "S&P drawdown -2.9% = growth fears",
-        "[2026-03-12] Guardian: 'largest supply disruption in history of oil markets'. Oil $97-101, Goldman revising. 10Y at 4.247%"
+        "[2026-03-12] Guardian: 'largest supply disruption in history of oil markets'. Oil $97-101, Goldman revising. 10Y at 4.247%",
+        "[2026-03-13] Oil +10% in single day. SPR/Russia waiver failing. Pentagon $1.9B/day fiscal drain"
       ],
       "reasoning": "SPR addresses supply but not demand destruction or inflation expectation anchoring. Oil above $85 with Hormuz closed = sustained cost-push inflation. Growth decelerating simultaneously.",
       "time_horizon": "W8-24",
@@ -680,8 +691,8 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.88,
-      "confidence": 0.78,
+      "probability": 0.9,
+      "confidence": 0.8,
       "evidence": [
         "Yahoo Finance: S&P -1.3% Friday, -2% weekly, NEGATIVE for the year",
         "ABC: Dow -453 points (-0.9%)",
@@ -690,7 +701,8 @@
         "[2026-03-09] S&P -3.9%+VIX 28.3倒挂+SKEW 152(红队:不同于2022,霍尔木兹封锁=持续供应中断)",
         "[2026-03-11] S&P 6776 (drawdown -2.9%), VIX 24.23 — market absorbing shock better than expected, SPR provides psychological floor (credibility: 0.85)",
         "[2026-03-12] S&P -4.1% (approaching -5% threshold). VIX term structure inverted 27.2>26.8 = acute crisis pricing. Goldman revising forecasts",
-        "[2026-03-13] S&P -4.4% cumulative, approaching -5% threshold (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] S&P -4.4% cumulative, approaching -5% threshold (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] VIX 28.0 (up from 27.3 this AM). S&P -4.4% and war escalating with no off-ramp"
       ],
       "reasoning": "定义: S&P 500从冲突前高点回撤>5%。当前: Dow -800, Russell -2.7%。80%因回撤可能已部分price-in且有技术性反弹风险。",
       "time_horizon": "W1-4",
@@ -964,12 +976,13 @@
         "能源"
       ],
       "probability": 0.005,
-      "confidence": 0.85,
+      "confidence": 0.92,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
         "[2026-03-11] Zero ceasefire pathway: Iran defiant, Trump demanded unconditional surrender Mar 6, both sides escalating (credibility: 0.9)",
-        "[2026-03-12] Supreme leader's vengeance statement + escalation to 'most intense' operations = deescalation essentially eliminated"
+        "[2026-03-12] Supreme leader's vengeance statement + escalation to 'most intense' operations = deescalation essentially eliminated",
+        "[2026-03-13] All three leaders defiant. New wave strikes on Tehran. Active mining = hard to reverse quickly"
       ],
       "reasoning": "定义: 正式停火协议签署 或 双方军事行动强度下降>50%持续>1周。当前: Trump无条件投降要求使此几乎不可能。10%。",
       "time_horizon": "W12-24+",
@@ -1148,13 +1161,14 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.9577,
-      "confidence": 0.8,
+      "probability": 0.97,
+      "confidence": 0.85,
       "evidence": [
         "霍尔木兹日均通行17mbpd石油",
         "全球25%LNG经此通过",
         "OPEC+波斯湾产能~20mbpd",
-        "[2026-03-09] E10: 伊拉克-70%+Hormuz动能打击 (LR=4.0)"
+        "[2026-03-09] E10: 伊拉克-70%+Hormuz动能打击 (LR=4.0)",
+        "[2026-03-13] Oil surged 10% despite Russia waiver. Active mining makes Hormuz reopening timeline longer"
       ],
       "reasoning": "定义: 因封锁导致的波斯湾石油/LNG出口减少量。当前封锁程度~90%→受影响量约15-17mbpd石油+大部分卡塔尔LNG。",
       "time_horizon": "持续至封锁缓解",
@@ -1198,13 +1212,14 @@
         "能源",
         "经济"
       ],
-      "probability": 0.85,
-      "confidence": 0.7,
+      "probability": 0.9,
+      "confidence": 0.78,
       "evidence": [
         "中断量~15mbpd - 替代覆盖~5mbpd = 净缺口~10mbpd",
         "即使最乐观替代也无法填补",
         "IEA紧急释放历史上仅3次",
-        "[2026-03-13] Bypass routes compromised + SPR effect TBD (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Bypass routes compromised + SPR effect TBD (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Russia waiver + SPR both insufficient. Active mining extends disruption timeline significantly"
       ],
       "reasoning": "定义: 全球石油供应缺口超过3mbpd。受影响量~15mbpd, 替代最多覆盖5-6mbpd(SPR+管道+增产), 净缺口~9-10mbpd。远超3mbpd阈值。72%而非90%因为封锁程度和持续时间有不确定性。",
       "time_horizon": "W1-8",
@@ -1526,14 +1541,15 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.8,
-      "confidence": 0.65,
+      "probability": 0.82,
+      "confidence": 0.7,
       "evidence": [
         "FM阿拉格齐: 军事单位已转入去中心化模式,31个自治省级单位",
         "Chertoff Group: 被斩首政权在谈判前先升级",
         "Lloyd's List: 中国航运高管确认IRGC与政府双轨指挥",
         "Carnegie/Sadjadpour: 佩泽什基安无关紧要,不决定伊朗未来",
-        "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command."
+        "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command.",
+        "[2026-03-13] Iran fighting on multiple fronts simultaneously (Hormuz mining, Gulf drones, Riyadh, Israel missiles, Lebanon). Mosaic defense pattern"
       ],
       "reasoning": "定义: IRGC已转入去中心化指挥模式,地方单位按预设指令自主行动,中央召回困难。3/7佩泽什基安道歉后数小时IRGC打脸袭击迪拜/阿布扎比,证实文官政府无法约束军事行动。含义: 即使出现停火政治意愿,执行链断裂使其无法落地。",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
@@ -1571,15 +1587,16 @@
         "军事",
         "能源"
       ],
-      "probability": 0.92,
-      "confidence": 0.72,
+      "probability": 0.95,
+      "confidence": 0.85,
       "evidence": [
         "Avenger级4艘专用扫雷舰2026年1月刚从巴林撤走退役",
         "替代者仅3艘LCS(Santa Barbara/Canberra/Tulsa)配扫雷模块,长期延迟+未经实战验证",
         "盟军扫雷贡献:英国/沙特合计3-6艘(增量有限)",
         "从美本土调扫雷资产到海湾需数周(不可压缩物理时间)",
         "1988先例:伊朗150枚水雷,一枚WWI老式水雷险些击沉USS Roberts",
-        "[2026-03-13] Navy refusing daily escort requests (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Navy refusing daily escort requests (P1 extraction from Mar 10-13 news)",
+        "[2026-03-13] Active mining confirmed. Minesweeping now prerequisite for ANY Hormuz transit. US capability at decades low"
       ],
       "reasoning": "定义:美军扫雷能力不足以在合理时间内(<4周)清除海峡水雷威胁。当前状态:专用扫雷舰已退役,LCS替代未验证,增援需数周。Q2时钟受Q1约束:IRGC袭击>2次/天时扫雷无法安全作业。即使IRGC能力归零,已布水雷不会消失。",
       "time_horizon": "W5-W12+(串联约束:Q1阈值后+5周)",
@@ -2543,6 +2560,6 @@
       "reasoning": "Regional spillover pressures neutral states"
     }
   ],
-  "last_updated": "2026-03-13T02:51:14.904865Z",
+  "last_updated": "2026-03-13T08:59:45.036455+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
