@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 67,
-  "updated": "2026-03-13T02:51:27.640081+00:00",
+  "version": 68,
+  "updated": "2026-03-13T22:39:02.969334+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -429,12 +429,14 @@
         "军事",
         "政治"
       ],
-      "probability": 0.55,
-      "confidence": 0.62,
+      "probability": 0.65,
+      "confidence": 0.65,
       "evidence": [
         "[2026-03-13] Isfahan uranium retrievable + Iran claims 11 bombs capability (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Netanyahu claims Israeli strikes killed top nuclear scientists. Reduces near-term breakout capability. Counter: may increase desperation",
-        "[2026-03-13 PM] Nuclear scientists killed by Israel - program capability degraded"
+        "[2026-03-13 PM] Nuclear scientists killed by Israel - program capability degraded",
+        "[2026-03-13] (NYT, cred:0.85) Isfahan buried uranium recoverable per US intelligence",
+        "[2026-03-13] (Iran state media, cred:0.6) Iran claims 460kg 60% enriched uranium, enough for 11 weapons"
       ],
       "reasoning": "定义: 伊朗浓缩铀纯度突破60%→90%(武器级)或IAEA报告显著偏离。当前: 常规威慑丧失增加核补偿动机。45%因技术障碍+以色列精准打击核设施。",
       "time_horizon": "W8-24",
@@ -634,8 +636,8 @@
         "经济",
         "金融"
       ],
-      "probability": 0.72,
-      "confidence": 0.65,
+      "probability": 0.78,
+      "confidence": 0.7,
       "evidence": [
         "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet.",
         "Oil rebounding to $90 despite 400M bbl SPR",
@@ -643,7 +645,8 @@
         "OVX 121 extreme vol = uncertainty premium persistent",
         "S&P drawdown -2.9% = growth fears",
         "[2026-03-12] Guardian: 'largest supply disruption in history of oil markets'. Oil $97-101, Goldman revising. 10Y at 4.247%",
-        "[2026-03-13] Oil +10% in single day. SPR/Russia waiver failing. Pentagon $1.9B/day fiscal drain"
+        "[2026-03-13] Oil +10% in single day. SPR/Russia waiver failing. Pentagon $1.9B/day fiscal drain",
+        "[2026-03-13] (CNBC/Reuters, cred:0.85) Brent > for 2nd consecutive day; 1973 stagflation parallels in media"
       ],
       "reasoning": "SPR addresses supply but not demand destruction or inflation expectation anchoring. Oil above $85 with Hormuz closed = sustained cost-push inflation. Growth decelerating simultaneously.",
       "time_horizon": "W8-24",
@@ -661,10 +664,11 @@
         "金融",
         "经济"
       ],
-      "probability": 0.55,
-      "confidence": 0.7,
+      "probability": 0.65,
+      "confidence": 0.65,
       "evidence": [
-        "Higher oil → inflation pressure. Supply chain stress + market uncertainty → growth slowdown. Twin forces trap Fed. 10Y at 4.14% reflects growing tension."
+        "Higher oil → inflation pressure. Supply chain stress + market uncertainty → growth slowdown. Twin forces trap Fed. 10Y at 4.14% reflects growing tension.",
+        "[2026-03-13] (Reuters, cred:0.9) Fed convenes March 17; oil spike not yet in data but rates likely held elevated"
       ],
       "reasoning": "定义: Fed在连续两次FOMC会议中维持利率不变(既不加也不降)且声明中出现\"balanced risks\"或类似两难措辞。65%。",
       "time_horizon": "W4-16",
@@ -812,7 +816,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-13T02:51:27.639779+00:00",
+      "last_updated": "2026-03-13T22:39:02.969078+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -884,7 +888,7 @@
         "政治",
         "金融"
       ],
-      "probability": 0.72,
+      "probability": 0.78,
       "confidence": 0.7,
       "evidence": [
         "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
@@ -1247,7 +1251,7 @@
         "经济",
         "能源"
       ],
-      "probability": 0.62,
+      "probability": 0.7,
       "confidence": 0.65,
       "evidence": [
         "油价涨10%→CPI涨0.2-0.4pp(历史经验)",
@@ -1293,8 +1297,8 @@
         "经济",
         "政治"
       ],
-      "probability": 0.68,
-      "confidence": 0.6,
+      "probability": 0.75,
+      "confidence": 0.7,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
         "若Brent破$100→汽油$4.8-5.2",
@@ -1386,8 +1390,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.88,
-      "confidence": 0.72,
+      "probability": 0.78,
+      "confidence": 0.6,
       "evidence": [
         "50K部队+2航母部署在打击范围内",
         "俄罗斯提供伊朗美军位置情报",
@@ -1395,7 +1399,8 @@
         "[2026-03-09] E4: 6名美军阵亡—从0到非0阶跃 (LR=12.0)",
         "Pentagon confirms 7 KIA + 108 wounded + 8 severe. \"Most intense day\" increases exposure. Russia satellite intel to Iran boosts targeting precision.",
         "[2026-03-13] Khamenei threatening US bases (P1 extraction from Mar 10-13 news)",
-        "[2026-03-13 PM] KC-135 crash with 5 crew (non-hostile) + British troops targeted"
+        "[2026-03-13 PM] KC-135 crash with 5 crew (non-hostile) + British troops targeted",
+        "[2026-03-14] (Al Jazeera, cred:0.85) 11 US soldiers killed total across 14 days; no single mass-casualty event yet"
       ],
       "reasoning": "定义: 单次事件导致美军阵亡>50人(如舰艇被反舰导弹击中或基地被打击)。25%因美军防护极强但俄情报支持+IRGC还在发射第23波意味着风险不是零。这是改变美国政治的最大单一变量。",
       "time_horizon": "W1-8",
@@ -1598,8 +1603,8 @@
         "军事",
         "能源"
       ],
-      "probability": 0.96,
-      "confidence": 0.85,
+      "probability": 0.98,
+      "confidence": 0.92,
       "evidence": [
         "Avenger级4艘专用扫雷舰2026年1月刚从巴林撤走退役",
         "替代者仅3艘LCS(Santa Barbara/Canberra/Tulsa)配扫雷模块,长期延迟+未经实战验证",
@@ -1608,7 +1613,8 @@
         "1988先例:伊朗150枚水雷,一枚WWI老式水雷险些击沉USS Roberts",
         "[2026-03-13] Navy refusing daily escort requests (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Active mining confirmed. Minesweeping now prerequisite for ANY Hormuz transit. US capability at decades low",
-        "[2026-03-13 PM] Active mining = clearance takes months not weeks"
+        "[2026-03-13 PM] Active mining = clearance takes months not weeks",
+        "[2026-03-13] (Sky News, cred:0.9) US Treasury Sec announces Navy escort plan, but escorts have failed to materialise"
       ],
       "reasoning": "定义:美军扫雷能力不足以在合理时间内(<4周)清除海峡水雷威胁。当前状态:专用扫雷舰已退役,LCS替代未验证,增援需数周。Q2时钟受Q1约束:IRGC袭击>2次/天时扫雷无法安全作业。即使IRGC能力归零,已布水雷不会消失。",
       "time_horizon": "W5-W12+(串联约束:Q1阈值后+5周)",
@@ -1641,10 +1647,11 @@
         "military",
         "energy"
       ],
-      "probability": 0.95,
-      "confidence": 0.88,
+      "probability": 0.98,
+      "confidence": 0.95,
       "evidence": [
-        "[2026-03-13] NYT: US officials confirm Iran actively mining Strait of Hormuz"
+        "[2026-03-13] NYT: US officials confirm Iran actively mining Strait of Hormuz",
+        "[2026-03-12] (NYT/CNN, cred:0.9) Iran confirmed laying mines in Hormuz, laying faster than US can clear"
       ],
       "reasoning": "布雷行动确认，不同于封锁状态，直接影响扫雷时间表和航行安全"
     }
