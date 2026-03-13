@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260313T024622Z",
+  "raw": "\n\n```json\n{\n  \"evidence_text\": \"Bloomberg报道：布伦特原油首次自2022年8月以来收于100美元/桶以上。数百万桶原油滞留波斯湾——史上最大石油市场中断。CNN确认伊朗新领导人称霍尔木兹海峡将继续关闭。布伦特目前报99.75美元，小幅回调。\",\n  \"source\": \"Bloomberg（主要报道），CNN（交叉验证）\",\n  \"source_tier\": 1,\n  \"cross_verification_count\": 2,\n  \"bias_assessment\": \"neutral\",\n  \"specificity\": \"precise\",\n  \"hours_old\": 6,\n  \"score_breakdown\": {\n    \"base\": 0.9,\n    \"cross_verify\": 0.10,\n    \"bias\": 0.00,\n    \"specificity\": 0.10,\n    \"timeliness\": 0.00\n  },\n  \"final_score\": 1.00,\n  \"usable\": true,\n  \"reasoning\": \"Bloomberg一手市场数据报道，含精确价格点位（$100突破、$99.75回调）和具体基准时间参照（2022年8月以来），CNN独立交叉验证伊朗领导人关于海峡关闭的声明；两大顶级国际财经/新闻机构均为中性来源，无明显立场偏见；信息时效在6-24小时窗口内；唯一需注意的是'史上最大石油市场中断'这一表述带有一定修辞色彩，但核心事实（价格、海峡封锁、原油滞留）均为可验证的精确信息，综合评分封顶至1.00。\"\n}\n```"
+}
