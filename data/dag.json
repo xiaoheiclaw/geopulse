@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 68,
-  "updated": "2026-03-13T22:39:02.969334+00:00",
+  "version": 70,
+  "updated": "2026-03-13T22:42:29.201560+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -132,14 +132,15 @@
         "[2026-03-09] IRGC指挥碎片化使封锁不可逆:即使有停火意愿也无法执行(LR=2.0)",
         "[2026-03-11] Only 2 non-Iran/Russia ships attempted Hormuz transit; 3 merchant ships struck incl Thai bulk carrier fire (Guardian) (credibility: 0.95)",
         "[2026-03-13] NYT: US officials confirm Iran ACTIVELY MINING Hormuz. CNN: Trump admin didnt plan for this",
-        "[2026-03-13 PM] US officials confirm Iran ACTIVELY MINING Hormuz (NYT)"
+        "[2026-03-13 PM] US officials confirm Iran ACTIVELY MINING Hormuz (NYT)",
+        "NYT Mar 12: US officials confirm Iran is mining Strait of Hormuz"
       ],
       "reasoning": "定义: 波斯湾商业航运通行量下降>80%(含保险驱动自主回避)。当前状态: BBC延时摄影确认船流大幅下降, 零船接受美军护航, 船员被困。满足条件。",
       "time_horizon": "持续至冲突结束",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T11:29:06.389530+00:00",
+      "last_updated": "2026-03-13T22:42:03.988336+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_missile_degraded": {
@@ -149,22 +150,25 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.68,
-      "confidence": 0.55,
+      "probability": 0.55,
+      "confidence": 0.6,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
         "Cluster warhead missiles still being launched",
         "But: Iran tracking ability weakened, relies on Russian intel",
-        "IRGC claims \"firing in greater numbers with >1 tonne warheads\" — propaganda-discounted but non-zero info. Previous ISW evidence still supports degradation. Confidence LOWERED due to conflicting signals."
+        "IRGC claims \"firing in greater numbers with >1 tonne warheads\" — propaganda-discounted but non-zero info. Previous ISW evidence still supports degradation. Confidence LOWERED due to conflicting signals.",
+        "[2026-03-14] Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
+        "Mar 13-14: Iran barrage hit Shoham/Holon in central Israel"
       ],
-      "reasoning": "定义: 伊朗中远程弹道导弹发射能力下降>70%(基于CENTCOM战损评估)。当前: CENTCOM称击沉20+舰艇，地面发射架多次被打击。85%反映美方数据可能高估。",
+      "reasoning": "Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "last_updated": "2026-03-13T22:42:03.988336+00:00",
+      "created": "2026-03-06T14:31:59.393633Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "regional_spillover": {
       "id": "regional_spillover",
@@ -305,7 +309,7 @@
         "能源",
         "经济"
       ],
-      "probability": 0.99,
+      "probability": 1.0,
       "confidence": 0.97,
       "evidence": [
         "CNBC: Brent $92.69 (+8.52% Friday), WTI $90.90",
@@ -314,14 +318,15 @@
         "oilpriceapi: $92.69 as of 3/7 01:40 GMT",
         "[2026-03-09] Brent $113+ confirmed 2026-03-09",
         "[2026-03-13] CONFIRMED: Bloomberg Mar 12 - Brent settled >$100 (P1 extraction from Mar 10-13 news)",
-        "[2026-03-14 00:33] Brent $101.96 — holding above $100 after pullback, no longer a one-day spike"
+        "[2026-03-14 00:33] Brent $101.96 — holding above $100 after pullback, no longer a one-day spike",
+        "CNBC Mar 13: Brent closed above $100 for 2nd consecutive day ($103.86)"
       ],
       "reasoning": "RESOLVED 2026-03-09: Brent $113+",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-13T22:42:03.988336+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "asia_refinery_cuts": {
@@ -407,19 +412,21 @@
         "政治",
         "经济"
       ],
-      "probability": 0.78,
-      "confidence": 0.8,
+      "probability": 0.65,
+      "confidence": 0.7,
       "evidence": [
         "美国财政部制裁名单",
-        "OFAC更新"
+        "OFAC更新",
+        "[2026-03-14] Day 14: US forced to relax Russia oil sanctions undermines secondary sanctions credibility. Sanction system eroding under energy pressure."
       ],
-      "reasoning": "定义: 美国对≥5个第三国实体/银行实施与伊朗相关的二级制裁。当前: 制裁潮已启动但具体数量待确认。",
+      "reasoning": "Day 14: US forced to relax Russia oil sanctions undermines secondary sanctions credibility. Sanction system eroding under energy pressure.",
       "time_horizon": "W2-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-06T14:31:59.393633Z",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "irgc_nuclear": {
       "id": "irgc_nuclear",
@@ -476,20 +483,22 @@
         "政治",
         "能源"
       ],
-      "probability": 0.5,
-      "confidence": 0.6,
+      "probability": 0.58,
+      "confidence": 0.58,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
         "经贸合作\"更稳定\"",
-        "中国不会因伊朗冒险与美国直接对抗"
+        "中国不会因伊朗冒险与美国直接对抗",
+        "[2026-03-14] Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position."
       ],
-      "reasoning": "定义: 中国以官方身份提出停火方案或组织多边斡旋。当前: 中国表态优先中美经贸关系，不会为伊朗冒险。50%反映中国有动机(能源安全)但不愿付代价。",
+      "reasoning": "Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
       "time_horizon": "W2-12",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-06T14:31:59.393633Z",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "russia_energy_leverage": {
       "id": "russia_energy_leverage",
@@ -636,8 +645,8 @@
         "经济",
         "金融"
       ],
-      "probability": 0.78,
-      "confidence": 0.7,
+      "probability": 0.8,
+      "confidence": 0.72,
       "evidence": [
         "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet.",
         "Oil rebounding to $90 despite 400M bbl SPR",
@@ -646,15 +655,17 @@
         "S&P drawdown -2.9% = growth fears",
         "[2026-03-12] Guardian: 'largest supply disruption in history of oil markets'. Oil $97-101, Goldman revising. 10Y at 4.247%",
         "[2026-03-13] Oil +10% in single day. SPR/Russia waiver failing. Pentagon $1.9B/day fiscal drain",
-        "[2026-03-13] (CNBC/Reuters, cred:0.85) Brent > for 2nd consecutive day; 1973 stagflation parallels in media"
+        "[2026-03-13] (CNBC/Reuters, cred:0.85) Brent > for 2nd consecutive day; 1973 stagflation parallels in media",
+        "[2026-03-14] Day 14: Brent at $103.86 for 2nd day above $100. S&P -4.9%. Russian oil release provides marginal relief but structural supply shock persists."
       ],
-      "reasoning": "SPR addresses supply but not demand destruction or inflation expectation anchoring. Oil above $85 with Hormuz closed = sustained cost-push inflation. Growth decelerating simultaneously.",
+      "reasoning": "Day 14: Brent at $103.86 for 2nd day above $100. S&P -4.9%. Russian oil release provides marginal relief but structural supply shock persists.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-06T14:31:59.393633Z",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "fed_dilemma": {
       "id": "fed_dilemma",
@@ -816,7 +827,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-13T22:39:02.969078+00:00",
+      "last_updated": "2026-03-13T22:42:29.201322+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -888,22 +899,24 @@
         "政治",
         "金融"
       ],
-      "probability": 0.78,
-      "confidence": 0.7,
+      "probability": 0.88,
+      "confidence": 0.78,
       "evidence": [
         "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
         "NPR: 7 US soldiers dead, 8 seriously wounded cumulative",
         "Trump contradictory messaging: 'very complete' vs military escalation",
         "[2026-03-11] NYT: Military investigation confirmed US responsible for Iranian elementary school strike; Trump asked about it leaving White House (credibility: 0.9)",
-        "[2026-03-12] Military confirmed school strike. Mojtaba weaponizing it. Oil $100. 17 US sites damaged. Cost asymmetry of interceptors vs projectiles"
+        "[2026-03-12] Military confirmed school strike. Mojtaba weaponizing it. Oil $100. 17 US sites damaged. Cost asymmetry of interceptors vs projectiles",
+        "[2026-03-14] Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13."
       ],
-      "reasoning": "School strike is Abu Ghraib-tier domestic liability. Combined with rising casualties and gas prices, domestic pressure building. But still pre-tipping point — no major protest movement yet.",
+      "reasoning": "Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13.",
       "time_horizon": "W4-12",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-06T14:31:59.393633Z",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "credit_tightening": {
       "id": "credit_tightening",
@@ -1199,8 +1212,8 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.7,
-      "confidence": 0.65,
+      "probability": 0.78,
+      "confidence": 0.68,
       "evidence": [
         "美国SPR 3.7亿桶(约60天@6mbpd释放)",
         "好望角绕行加10-15天+运费翻倍",
@@ -1208,15 +1221,17 @@
         "OPEC+闲置产能<2mbpd",
         "[2026-03-09] G7正式讨论联合SPR释放(红队降级:SPR有限+OPEC+增产存疑+缺口>3mbpd)",
         "[2026-03-10] Reuters 3源: Trump考虑放松俄油制裁(+1-2mbpd) + G7能源部长周二继续讨论SPR. 但俄油需国会配合且时间滞后",
-        "[2026-03-11] 400M bbl SPR at 2mb/d covers only ~10% of Hormuz throughput gap, but provides psychological market buffer (credibility: 0.9)"
+        "[2026-03-11] 400M bbl SPR at 2mb/d covers only ~10% of Hormuz throughput gap, but provides psychological market buffer (credibility: 0.9)",
+        "[2026-03-14] Day 14: Trump temporarily lifts sanctions on Russian oil at sea; adds ~0.5-1mbpd alternate supply. But insufficient vs 3mbpd+ Hormuz gap."
       ],
-      "reasoning": "定义: 通过替代手段能覆盖多少中断量。SPR是应急(有限)、绕行是部分(增加成本)、东西管道是瓶颈(5mbpd)、增产空间极小。综合覆盖率估计30-40%。概率55%反映替代机制能发挥但不足以避免危机。",
+      "reasoning": "Day 14: Trump temporarily lifts sanctions on Russian oil at sea; adds ~0.5-1mbpd alternate supply. But insufficient vs 3mbpd+ Hormuz gap.",
       "time_horizon": "W1-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-10T01:38:50.047558+00:00",
-      "created": "2026-03-07T01:01:30.106816Z"
+      "created": "2026-03-07T01:01:30.106816Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "net_supply_gap": {
       "id": "net_supply_gap",
@@ -1226,22 +1241,24 @@
         "能源",
         "经济"
       ],
-      "probability": 0.9,
-      "confidence": 0.78,
+      "probability": 0.87,
+      "confidence": 0.75,
       "evidence": [
         "中断量~15mbpd - 替代覆盖~5mbpd = 净缺口~10mbpd",
         "即使最乐观替代也无法填补",
         "IEA紧急释放历史上仅3次",
         "[2026-03-13] Bypass routes compromised + SPR effect TBD (P1 extraction from Mar 10-13 news)",
-        "[2026-03-13] Russia waiver + SPR both insufficient. Active mining extends disruption timeline significantly"
+        "[2026-03-13] Russia waiver + SPR both insufficient. Active mining extends disruption timeline significantly",
+        "[2026-03-14] Day 14: Russian oil partially offsets gap but Hormuz still at standstill. Gap remains >2.5mbpd minimum."
       ],
-      "reasoning": "定义: 全球石油供应缺口超过3mbpd。受影响量~15mbpd, 替代最多覆盖5-6mbpd(SPR+管道+增产), 净缺口~9-10mbpd。远超3mbpd阈值。72%而非90%因为封锁程度和持续时间有不确定性。",
+      "reasoning": "Day 14: Russian oil partially offsets gap but Hormuz still at standstill. Gap remains >2.5mbpd minimum.",
       "time_horizon": "W1-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-07T01:01:30.106816Z",
-      "created": "2026-03-07T01:01:30.106816Z"
+      "created": "2026-03-07T01:01:30.106816Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "input_inflation_transmission": {
       "id": "input_inflation_transmission",
@@ -1390,8 +1407,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.78,
-      "confidence": 0.6,
+      "probability": 0.88,
+      "confidence": 0.75,
       "evidence": [
         "50K部队+2航母部署在打击范围内",
         "俄罗斯提供伊朗美军位置情报",
@@ -1400,15 +1417,18 @@
         "Pentagon confirms 7 KIA + 108 wounded + 8 severe. \"Most intense day\" increases exposure. Russia satellite intel to Iran boosts targeting precision.",
         "[2026-03-13] Khamenei threatening US bases (P1 extraction from Mar 10-13 news)",
         "[2026-03-13 PM] KC-135 crash with 5 crew (non-hostile) + British troops targeted",
-        "[2026-03-14] (Al Jazeera, cred:0.85) 11 US soldiers killed total across 14 days; no single mass-casualty event yet"
+        "[2026-03-14] (Al Jazeera, cred:0.85) 11 US soldiers killed total across 14 days; no single mass-casualty event yet",
+        "[2026-03-14] Day 14: KC-135 midair collision crash in Iraq kills 6, total US deaths=13. Operational attrition accelerating even without hostile fire.",
+        "KC-135 crash Mar 13: 6 crew dead, US total now 13"
       ],
-      "reasoning": "定义: 单次事件导致美军阵亡>50人(如舰艇被反舰导弹击中或基地被打击)。25%因美军防护极强但俄情报支持+IRGC还在发射第23波意味着风险不是零。这是改变美国政治的最大单一变量。",
+      "reasoning": "Day 14: KC-135 midair collision crash in Iraq kills 6, total US deaths=13. Operational attrition accelerating even without hostile fire.",
       "time_horizon": "W1-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-07T04:00:39.567610Z",
-      "created": "2026-03-07T04:00:39.567610Z"
+      "last_updated": "2026-03-13T22:42:03.988336+00:00",
+      "created": "2026-03-07T04:00:39.567610Z",
+      "updated": "2026-03-13T22:41:43.076948Z"
     },
     "aviation_demand_cut": {
       "id": "aviation_demand_cut",
@@ -1637,7 +1657,8 @@
       "evidence": [
         "[2026-03-13] Drones struck Duqm and Salalah bypass ports - Iran targeting neutral Omans infrastructure (Wikipedia/Guardian)"
       ],
-      "reasoning": "阿曼传统中立角色受威胁，可能被迫选边"
+      "reasoning": "阿曼传统中立角色受威胁，可能被迫选边",
+      "node_type": "prediction"
     },
     "active_hormuz_mining": {
       "id": "active_hormuz_mining",
@@ -1653,7 +1674,50 @@
         "[2026-03-13] NYT: US officials confirm Iran actively mining Strait of Hormuz",
         "[2026-03-12] (NYT/CNN, cred:0.9) Iran confirmed laying mines in Hormuz, laying faster than US can clear"
       ],
-      "reasoning": "布雷行动确认，不同于封锁状态，直接影响扫雷时间表和航行安全"
+      "reasoning": "布雷行动确认，不同于封锁状态，直接影响扫雷时间表和航行安全",
+      "node_type": "event"
+    },
+    "russia_sanctions_erosion": {
+      "id": "russia_sanctions_erosion",
+      "label": "对俄制裁体系侵蚀",
+      "node_type": "event",
+      "domains": [
+        "地缘",
+        "能源"
+      ],
+      "probability": 0.85,
+      "confidence": 0.8,
+      "evidence": [
+        "NYT/WaPo Mar 12: Trump temporarily lifts sanctions on Russian oil at sea"
+      ],
+      "reasoning": "美国被迫解禁俄油以平抑油价，标志制裁体系因能源需求被迫松动",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-13T22:42:03.988336+00:00",
+      "created": "2026-03-13T22:42:03.988336+00:00"
+    },
+    "domestic_war_opposition": {
+      "id": "domestic_war_opposition",
+      "label": "美国国内反战压力上升",
+      "node_type": "risk",
+      "domains": [
+        "政治"
+      ],
+      "probability": 0.65,
+      "confidence": 0.6,
+      "evidence": [
+        "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
+        "Senate chairman planning first public oversight hearing on war"
+      ],
+      "reasoning": "五角大楼against-interest承认误判+国会启动监督听证，政治约束开始收紧",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-13T22:42:03.988336+00:00",
+      "created": "2026-03-13T22:42:03.988336+00:00"
     }
   },
   "edges": [
@@ -2610,8 +2674,46 @@
       "target": "hormuz_blockade",
       "weight": 0.95,
       "reasoning": "Mining operationalizes blockade"
+    },
+    {
+      "source": "russia_sanctions_erosion",
+      "target": "supply_offset_capacity",
+      "weight": 0.6,
+      "reasoning": "Sanctions erosion increases Russian oil flow"
+    },
+    {
+      "source": "russia_sanctions_erosion",
+      "target": "secondary_sanctions",
+      "weight": 0.3,
+      "reasoning": "[INVERSE] Undermines broader sanctions credibility",
+      "inverse": true
+    },
+    {
+      "source": "russia_sanctions_erosion",
+      "target": "net_supply_gap",
+      "weight": 0.15,
+      "reasoning": "俄油入市部分缓解供应缺口"
+    },
+    {
+      "source": "russia_sanctions_erosion",
+      "target": "global_stagflation",
+      "weight": 0.1,
+      "reasoning": "[INVERSE] 俄油缓解油价上行压力，降低滞胀风险",
+      "inverse": true
+    },
+    {
+      "source": "us_military_casualties",
+      "target": "domestic_war_opposition",
+      "weight": 0.25,
+      "reasoning": "美军伤亡上升推动国内反战"
+    },
+    {
+      "source": "domestic_war_opposition",
+      "target": "ceasefire_backchannel",
+      "weight": 0.15,
+      "reasoning": "国内压力可能推动政府寻求停火"
     }
   ],
-  "last_updated": "2026-03-13T16:34:40.614785+00:00",
+  "last_updated": "2026-03-13T22:42:03.988336+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
