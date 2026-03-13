@@ -1,5 +1,5 @@
 readwise:
-  proxy: "http://127.0.0.1:7890"  # 换代理端口时同步改这里 + scripts/seed_dag.py
+  proxy: "http://127.0.0.1:59527"  # 换代理端口时同步改这里 + scripts/seed_dag.py
   timeout: 30
   tag: "geopulse"
 

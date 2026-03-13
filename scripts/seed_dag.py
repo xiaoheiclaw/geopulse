@@ -10,7 +10,7 @@ from geopulse.propagator import propagate
 from geopulse.reporter import Reporter
 from geopulse.storage import DAGStorage
 
-PROXY = "http://127.0.0.1:7890"
+PROXY = "http://127.0.0.1:59527"
 API_KEY = os.environ["ANTHROPIC_API_KEY"]
 BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "") or None
 MODEL = "claude-sonnet-4-5-20250929"
