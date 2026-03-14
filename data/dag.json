@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 72,
-  "updated": "2026-03-14T10:53:36.536753+00:00",
+  "version": 74,
+  "updated": "2026-03-14T23:06:30.230116+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -150,8 +150,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.55,
-      "confidence": 0.6,
+      "probability": 0.62,
+      "confidence": 0.63,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
@@ -159,7 +159,8 @@
         "But: Iran tracking ability weakened, relies on Russian intel",
         "IRGC claims \"firing in greater numbers with >1 tonne warheads\" — propaganda-discounted but non-zero info. Previous ISW evidence still supports degradation. Confidence LOWERED due to conflicting signals.",
         "[2026-03-14] Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
-        "Mar 13-14: Iran barrage hit Shoham/Holon in central Israel"
+        "Mar 13-14: Iran barrage hit Shoham/Holon in central Israel",
+        "[2026-03-14] (cred:0.77) Day 15: CENTCOM hit missile facilities and mines on Kharg. Further degradation of Iran retaliatory capability. Up from 0.55. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
       "time_horizon": "持续",
@@ -210,14 +211,15 @@
         "金融",
         "能源"
       ],
-      "probability": 0.92,
-      "confidence": 0.82,
+      "probability": 0.94,
+      "confidence": 0.85,
       "evidence": [
         "Lloyd's战争险报价数据",
         "多家船东声明暂停波斯湾航线",
         "[2026-03-13] Iraq tanker attacks + Oman strikes + Hormuz continuous (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Active mines in Hormuz = war risk insurance effectively impossible. Confirmed minefield",
-        "[2026-03-13 PM] Active mines = no insurance coverage possible"
+        "[2026-03-13 PM] Active mines = no insurance coverage possible",
+        "[2026-03-14] (cred:0.77) Day 15: Kharg strike increases Gulf shipping risk perception. Insurance tightening continues. Up from 0.92. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "定义: 波斯湾航线战争险费率>总保额的5%(正常<0.05%)，导致商业航运经济上不可行。88%。",
       "time_horizon": "持续至冲突结束",
@@ -384,7 +386,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.92,
+      "probability": 0.95,
       "confidence": 0.75,
       "evidence": [
         "五角大楼联合声明",
@@ -396,7 +398,8 @@
         "[2026-03-13] Sirens at NATO facility in Turkey. All Gulf states actively defending. War expanding beyond bilateral",
         "[2026-03-13 PM] British troops attacked by Iranian drones = NATO directly targeted",
         "Iran threatening Gulf states increases anti-Iran coalition incentive",
-        "Iran threat to UAE increases Gulf states motivation to join anti-Iran coalition"
+        "Iran threat to UAE increases Gulf states motivation to join anti-Iran coalition",
+        "[2026-03-14] (cred:0.77) UK Parliament briefing: US authorized to use UK military bases for \"specific and limited defensive purpose.\" — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
@@ -539,8 +542,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.03,
-      "confidence": 0.8,
+      "probability": 0.02,
+      "confidence": 0.82,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -555,7 +558,8 @@
         "[2026-03-12] Iran rejected 2 Witkoff messages. Mojtaba vengeance vow = no diplomatic off-ramp. Witkoff confirms Iran shows no interest in negotiations",
         "P1 analysis: oil spared = classic coercive design preserving negotiation space",
         "Kharg oil infra deliberately spared = coercive bargaining space exists",
-        "Kharg oil sparing = implicit offer of off-ramp in coercive bargaining"
+        "Kharg oil sparing = implicit offer of off-ramp in coercive bargaining",
+        "[2026-03-14] (cred:0.77) Day 15: NYT no off-ramp visible. Kharg strike makes ceasefire harder for Iran without losing face. Down from 0.03. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "Iran is becoming MORE defiant, not less. Both backchannel attempts rejected. Ghalibaf explicit: \"we aren't seeking a ceasefire\". Near-zero probability of diplomatic track.",
       "time_horizon": "W4-16",
@@ -837,7 +841,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T10:53:36.536612+00:00",
+      "last_updated": "2026-03-14T23:06:30.229880+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -912,15 +916,16 @@
         "政治",
         "金融"
       ],
-      "probability": 0.88,
-      "confidence": 0.78,
+      "probability": 0.9,
+      "confidence": 0.8,
       "evidence": [
         "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
         "NPR: 7 US soldiers dead, 8 seriously wounded cumulative",
         "Trump contradictory messaging: 'very complete' vs military escalation",
         "[2026-03-11] NYT: Military investigation confirmed US responsible for Iranian elementary school strike; Trump asked about it leaving White House (credibility: 0.9)",
         "[2026-03-12] Military confirmed school strike. Mojtaba weaponizing it. Oil $100. 17 US sites damaged. Cost asymmetry of interceptors vs projectiles",
-        "[2026-03-14] Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13."
+        "[2026-03-14] Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13.",
+        "[2026-03-14] (cred:0.77) Day 15: Oil at +, no ceasefire, entering 3rd week. Consumer/political pressure accumulating. Up from 0.88. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13.",
       "time_horizon": "W4-12",
@@ -1327,13 +1332,14 @@
         "经济",
         "政治"
       ],
-      "probability": 0.75,
-      "confidence": 0.7,
+      "probability": 0.8,
+      "confidence": 0.72,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
         "若Brent破$100→汽油$4.8-5.2",
         "精炼利润率扩张加速零售端涨幅",
-        "[2026-03-12] Brent re-approaching $100 despite SPR. US retail gasoline lag ~2 weeks. $5/gal threshold approaching"
+        "[2026-03-12] Brent re-approaching $100 despite SPR. US retail gasoline lag ~2 weeks. $5/gal threshold approaching",
+        "[2026-03-14] (cred:0.77) Day 15: Brent + confirmed for 2nd day, Goldman + March avg. 2-3 week lag to retail. Up from 0.75. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "定义: 美国汽油均价突破$5/加仑(AAA口径)。65%因Brent尚未破百，但传导滞后+精炼瓶颈可能加速。",
       "time_horizon": "W2-8",
@@ -1522,12 +1528,13 @@
         "能源",
         "金融"
       ],
-      "probability": 0.79,
-      "confidence": 0.6,
+      "probability": 0.83,
+      "confidence": 0.65,
       "evidence": [
         "历史上每次供应中断首先触发囤货(2019沙特遇袭后1周)",
         "亚洲炼厂已在抢购非中东原油",
-        "投机持仓创多年新高"
+        "投机持仓创多年新高",
+        "[2026-03-14] (cred:0.77) Day 15: Kharg + Iran Gulf oil threat → increased supply uncertainty → hoarding pressure. Up from 0.79. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "定义: 全球商业原油库存周环比增加>10M桶 或 期货投机净多仓增加>100K手。78%因恐慌囤油已在发生（亚洲炼厂抢购），但这是短期效应(2-4周)。",
       "time_horizon": "W1-4",
@@ -1741,11 +1748,12 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.9,
+      "probability": 0.95,
       "confidence": 0.75,
       "evidence": [
         "Trump explicit: if Iran interferes with Hormuz, oil infrastructure next",
-        "Iranian parliament warned Kharg strike would provoke new retaliation level"
+        "Iranian parliament warned Kharg strike would provoke new retaliation level",
+        "[2026-03-14] (cred:0.77) US escalation ladder confirmed: Kharg military → oil infra would be next step if Iran doesn't comply. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)"
       ],
       "reasoning": "Spiral model风险: 伊朗不报复=屈服, 报复=触发油田打击. 胁迫陷阱正在形成",
       "time_horizon": "1-2 weeks",
@@ -1763,13 +1771,15 @@
         "能源",
         "军事"
       ],
-      "probability": 0.55,
-      "confidence": 0.5,
+      "probability": 0.72,
+      "confidence": 0.58,
       "evidence": [
         "Trump: if Iran interferes with Hormuz, oil infrastructure will be targeted",
         "Kharg: 90% of Iran crude exports, 7mbpd capacity",
         "Chatham House: → if oil infra hit",
-        "Iranian parliament warned new level of retaliation"
+        "Iranian parliament warned new level of retaliation",
+        "[2026-03-14] (cred:0.77) CENTCOM struck 90+ military targets on Kharg Island, claimed oil infra preserved. Satellite verification pending. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
+        "[2026-03-14] (cred:0.77) Day 15: US on Kharg + Iran threatens Gulf oil retaliation (NBC, cred 0.72). Mutual escalation pressure on oil infra. Up from 0.68. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "胁迫陷阱: 伊朗不报复=屈服, 报复=触发油田打击。spiral model高风险。概率取55%反映不确定性",
       "time_horizon": "",
@@ -1787,12 +1797,14 @@
         "军事",
         "能源"
       ],
-      "probability": 0.45,
-      "confidence": 0.55,
+      "probability": 0.58,
+      "confidence": 0.62,
       "evidence": [
         "Trump conditional threat: oil infra targeted if Hormuz interference continues",
         "Iranian parliament speaker warned new level of retaliation if Kharg struck",
-        "Chatham House: oil price → if oil infra hit"
+        "Chatham House: oil price → if oil infra hit",
+        "[2026-03-14] (cred:0.77) US struck Kharg military targets. Both sides claim oil infra undamaged — classic symmetric disinformation. Satellite needed. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
+        "[2026-03-14] (cred:0.77) Day 15: US demonstrated precision strike capability on Kharg (90+ mil targets), deliberately spared oil infra. Lowers threshold for future oil infra strike. Up from 0.50. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
       "time_horizon": "",
@@ -1833,11 +1845,13 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.75,
-      "confidence": 0.65,
+      "probability": 0.88,
+      "confidence": 0.7,
       "evidence": [
         "Iran military: any attack on Iran oil infra → immediate destruction of regional oil infra of US-cooperating companies",
-        "Trump: chose NOT to hit oil infra, conditional on Hormuz"
+        "Trump: chose NOT to hit oil infra, conditional on Hormuz",
+        "[2026-03-14] (cred:0.77) US preserved Kharg oil infra as coercive leverage. Iran threatens Gulf oil retaliation but hasn't struck Saudi/UAE oil yet. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
+        "[2026-03-14] (cred:0.77) Day 15: US Kharg strike validated credible threat + credible restraint model. Deterrence equilibrium strengthened. Up from 0.85. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "双方均以石油设施为筹码建立对等威慑。稳定但脆弱——任何误判可触发螺旋",
       "time_horizon": "1-4 weeks",
@@ -1855,12 +1869,13 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.72,
+      "probability": 0.78,
       "confidence": 0.65,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
         "Iran urges UAE residents to stay away from ports",
-        "Iran asserts right to strike US missiles in UAE"
+        "Iran asserts right to strike US missiles in UAE",
+        "[2026-03-14] (cred:0.77) Iran threat to Gulf oil infra includes UAE ports and facilities. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)"
       ],
       "reasoning": "从口头威胁到具体目标指示(港口)，但实际攻击阿联酋会触发海湾集体反击",
       "time_horizon": "48-72h",
@@ -1879,11 +1894,12 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.75,
+      "probability": 0.85,
       "confidence": 0.65,
       "evidence": [
         "Iran military: attack on our oil infra → immediate destruction of US-cooperating oil companies infra in region",
-        "Trump: chose NOT to hit oil infra, conditional threat if Hormuz continues"
+        "Trump: chose NOT to hit oil infra, conditional threat if Hormuz continues",
+        "[2026-03-14] (cred:0.77) Duplicate node tracking same concept. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)"
       ],
       "reasoning": "双方建立了对等报复原则。美国保留Kharg油田作筹码，伊朗威胁攻击区域美资油田设施。类似核MAD的石油版本",
       "time_horizon": "1-4 weeks",
@@ -1901,12 +1917,14 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.72,
-      "confidence": 0.65,
+      "probability": 0.8,
+      "confidence": 0.68,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
         "Iran urges UAE residents to stay away from ports",
-        "Iran asserts right to strike US missiles in UAE"
+        "Iran asserts right to strike US missiles in UAE",
+        "[2026-03-14] (cred:0.77) NBC: Iran threatens to strike Gulf oil infrastructure in retaliation for Kharg Island strikes. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
+        "[2026-03-14] (cred:0.77) Day 15: Iran specifically threatening Gulf oil facilities (NBC). UAE as largest Gulf exporter is primary target. Up from 0.78. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
       "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
       "time_horizon": "1-2 weeks",
@@ -1936,6 +1954,37 @@
       "dialectic": null,
       "last_updated": "2026-03-14T10:53:35.598778+00:00",
       "created": "2026-03-14T10:53:35.598778+00:00"
+    },
+    "iran_gulf_oil_retaliation_threat": {
+      "id": "iran_gulf_oil_retaliation_threat",
+      "label": "伊朗威胁打击海湾国家石油设施(沙特/阿联酋/卡塔尔)",
+      "domains": [
+        "military",
+        "energy"
+      ],
+      "probability": 0.72,
+      "confidence": 0.7,
+      "evidence": [
+        "[2026-03-14] (cred:0.72) NBC reports Iran threatens to strike Gulf oil infrastructure in retaliation for Kharg strikes. Consistent with Iran's stated doctrine of regional pain-sharing. — NBC News"
+      ],
+      "reasoning": "Iran has explicitly threatened Gulf oil infrastructure. Previous Oman strikes (Day 14) demonstrate willingness to hit bypass routes. Saudi Ras Tanura and UAE Jebel Ali are logical targets.",
+      "node_type": "prediction"
+    },
+    "hormuz_selective_passage": {
+      "id": "hormuz_selective_passage",
+      "label": "霍尔木兹选择性通行(伊朗对土耳其/中国放行)",
+      "domains": [
+        "military",
+        "energy",
+        "diplomacy"
+      ],
+      "probability": 0.8,
+      "confidence": 0.65,
+      "evidence": [
+        "[2026-03-14] (cred:0.8) Turkey got one ship through Hormuz Mar 13 with Iranian approval. IRGC policy: closed only to US/Israel/Western allies. Shadow fleet doing 50% of transits. — Wikipedia/Reuters/Guardian"
+      ],
+      "reasoning": "Iran implementing selective blockade — allies/neutrals can transit, Western-allied vessels blocked. This creates a two-tier energy market and gives Iran leverage over non-aligned nations.",
+      "node_type": "prediction"
     }
   },
   "edges": [
@@ -3062,8 +3111,44 @@
       "target": "conflict_protracted",
       "weight": 0.15,
       "reasoning": "威慑均衡导致僵持而非快速解决"
+    },
+    {
+      "source": "kharg_island_strike",
+      "target": "iran_gulf_oil_retaliation_threat",
+      "weight": 0.75,
+      "reasoning": "Kharg strike triggers Iranian retaliation against Gulf oil infrastructure"
+    },
+    {
+      "source": "iran_gulf_oil_retaliation_threat",
+      "target": "energy_crisis",
+      "weight": 0.85,
+      "reasoning": "Gulf oil infra attacks would trigger catastrophic supply disruption"
+    },
+    {
+      "source": "iran_gulf_oil_retaliation_threat",
+      "target": "uae_targeted",
+      "weight": 0.8,
+      "reasoning": "UAE Jebel Ali prime target in Gulf oil retaliation"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "hormuz_selective_passage",
+      "weight": 0.8,
+      "reasoning": "Blockade evolves into selective passage regime"
+    },
+    {
+      "source": "hormuz_selective_passage",
+      "target": "trade_route_reshuffle",
+      "weight": 0.7,
+      "reasoning": "Selective passage accelerates trade route restructuring"
+    },
+    {
+      "source": "hormuz_selective_passage",
+      "target": "china_energy_diplomacy",
+      "weight": 0.65,
+      "reasoning": "China benefits from selective passage, strengthening energy diplomacy position"
     }
   ],
-  "last_updated": "2026-03-14T10:53:35.598778+00:00",
+  "last_updated": "2026-03-14T23:06:13.710630Z",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
