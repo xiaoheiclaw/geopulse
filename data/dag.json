@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 71,
-  "updated": "2026-03-14T04:47:52.659437+00:00",
+  "version": 72,
+  "updated": "2026-03-14T10:53:36.536753+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -384,7 +384,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.82,
+      "probability": 0.92,
       "confidence": 0.75,
       "evidence": [
         "五角大楼联合声明",
@@ -394,14 +394,16 @@
         "Qatar combat engagement + UK/DE/IT Hormuz escort talks + IEA 30-nation stockpile coordination + multi-power mediation = broadening coalition.",
         "[2026-03-11] Qatar struck Iran after Doha airport attack attempt, shot down 2 Iranian Su-24s; seeks US security partnership (Reuters/JPost/Channel12) (credibility: 0.8)",
         "[2026-03-13] Sirens at NATO facility in Turkey. All Gulf states actively defending. War expanding beyond bilateral",
-        "[2026-03-13 PM] British troops attacked by Iranian drones = NATO directly targeted"
+        "[2026-03-13 PM] British troops attacked by Iranian drones = NATO directly targeted",
+        "Iran threatening Gulf states increases anti-Iran coalition incentive",
+        "Iran threat to UAE increases Gulf states motivation to join anti-Iran coalition"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T19:26:31.848095+00:00",
+      "last_updated": "2026-03-14T10:53:35.598778+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "secondary_sanctions": {
@@ -483,20 +485,22 @@
         "政治",
         "能源"
       ],
-      "probability": 0.58,
+      "probability": 0.68,
       "confidence": 0.58,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
         "经贸合作\"更稳定\"",
         "中国不会因伊朗冒险与美国直接对抗",
-        "[2026-03-14] Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position."
+        "[2026-03-14] Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
+        "USS Tripoli pulled from Taiwan waters creates Indo-Pacific gap + China mediation incentive",
+        "US forces pulled from Taiwan waters, creating China action space + mediation incentive"
       ],
       "reasoning": "Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
       "time_horizon": "W2-12",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-14T10:53:35.598778+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
       "updated": "2026-03-13T22:41:43.076948Z"
     },
@@ -603,19 +607,21 @@
         "军事",
         "政治"
       ],
-      "probability": 0.32,
+      "probability": 0.42,
       "confidence": 0.5,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
         "Trump: virtually unlimited supply of heavy weaponry",
-        "Air campaign preferred"
+        "Air campaign preferred",
+        "2,500 Marines + USS Tripoli ARG ordered to ME from Taiwan waters",
+        "2500 Marines + USS Tripoli ARG ordered to ME"
       ],
       "reasoning": "定义: 美军地面战斗部队(非特种部队/顾问)进入伊朗领土执行作战任务。32%因Trump明确倾向空袭。",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-14T10:53:35.598778+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "europe_energy_crisis": {
@@ -831,7 +837,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T04:47:52.659284+00:00",
+      "last_updated": "2026-03-14T10:53:36.536612+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -1817,6 +1823,119 @@
       "dialectic": null,
       "last_updated": "2026-03-14T04:47:48.243098+00:00",
       "created": "2026-03-14T04:47:48.243098+00:00"
+    },
+    "mutual_oil_infra_deterrence": {
+      "id": "mutual_oil_infra_deterrence",
+      "label": "石油设施相互威慑均衡(MAD-lite)",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "能源",
+        "地缘"
+      ],
+      "probability": 0.75,
+      "confidence": 0.65,
+      "evidence": [
+        "Iran military: any attack on Iran oil infra → immediate destruction of regional oil infra of US-cooperating companies",
+        "Trump: chose NOT to hit oil infra, conditional on Hormuz"
+      ],
+      "reasoning": "双方均以石油设施为筹码建立对等威慑。稳定但脆弱——任何误判可触发螺旋",
+      "time_horizon": "1-4 weeks",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T10:53:28.612554+00:00",
+      "created": "2026-03-14T10:53:28.612554+00:00"
+    },
+    "uae_direct_threat": {
+      "id": "uae_direct_threat",
+      "label": "伊朗直接威胁阿联酋港口/设施",
+      "node_type": "risk",
+      "domains": [
+        "军事",
+        "地缘"
+      ],
+      "probability": 0.72,
+      "confidence": 0.65,
+      "evidence": [
+        "Iran claims US attacks from UAE ports/docks/hideouts",
+        "Iran urges UAE residents to stay away from ports",
+        "Iran asserts right to strike US missiles in UAE"
+      ],
+      "reasoning": "从口头威胁到具体目标指示(港口)，但实际攻击阿联酋会触发海湾集体反击",
+      "time_horizon": "48-72h",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T10:53:28.612554+00:00",
+      "created": "2026-03-14T10:53:28.612554+00:00"
+    },
+    "mutual_oil_deterrence": {
+      "id": "mutual_oil_deterrence",
+      "label": "石油设施相互威慑均衡(MAD-lite)",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "能源",
+        "地缘"
+      ],
+      "probability": 0.75,
+      "confidence": 0.65,
+      "evidence": [
+        "Iran military: attack on our oil infra → immediate destruction of US-cooperating oil companies infra in region",
+        "Trump: chose NOT to hit oil infra, conditional threat if Hormuz continues"
+      ],
+      "reasoning": "双方建立了对等报复原则。美国保留Kharg油田作筹码，伊朗威胁攻击区域美资油田设施。类似核MAD的石油版本",
+      "time_horizon": "1-4 weeks",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T10:53:35.598778+00:00",
+      "created": "2026-03-14T10:53:35.598778+00:00"
+    },
+    "uae_targeted": {
+      "id": "uae_targeted",
+      "label": "阿联酋成为伊朗明确打击目标",
+      "node_type": "risk",
+      "domains": [
+        "军事",
+        "地缘"
+      ],
+      "probability": 0.72,
+      "confidence": 0.65,
+      "evidence": [
+        "Iran claims US attacks from UAE ports/docks/hideouts",
+        "Iran urges UAE residents to stay away from ports",
+        "Iran asserts right to strike US missiles in UAE"
+      ],
+      "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
+      "time_horizon": "1-2 weeks",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T10:53:35.598778+00:00",
+      "created": "2026-03-14T10:53:35.598778+00:00"
+    },
+    "indo_pacific_gap": {
+      "id": "indo_pacific_gap",
+      "label": "印太军力缺口(台海方向)",
+      "node_type": "risk",
+      "domains": [
+        "军事",
+        "地缘"
+      ],
+      "probability": 0.8,
+      "confidence": 0.75,
+      "evidence": [
+        "2500 Marines + USS Tripoli ARG redeployed from Taiwan waters to ME (AP/Fortune/CBC)"
+      ],
+      "reasoning": "中东战争虹吸印太兵力，中国获得更大行动空间",
+      "time_horizon": "2-8 weeks",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T10:53:35.598778+00:00",
+      "created": "2026-03-14T10:53:35.598778+00:00"
     }
   },
   "edges": [
@@ -2883,8 +3002,68 @@
       "target": "iran_internal_crisis",
       "weight": 0.25,
       "reasoning": "军事羞辱加深内部压力"
+    },
+    {
+      "source": "kharg_island_strike",
+      "target": "mutual_oil_infra_deterrence",
+      "weight": 0.6,
+      "reasoning": "Kharg打击触发伊朗对等威慑声明"
+    },
+    {
+      "source": "mutual_oil_infra_deterrence",
+      "target": "ceasefire_backchannel",
+      "weight": 0.15,
+      "reasoning": "相互威慑可能创造谈判窗口"
+    },
+    {
+      "source": "uae_direct_threat",
+      "target": "coalition_forming",
+      "weight": 0.2,
+      "reasoning": "威胁阿联酋推动海湾国家加入反伊联盟"
+    },
+    {
+      "source": "kharg_island_strike",
+      "target": "uae_direct_threat",
+      "weight": 0.4,
+      "reasoning": "Kharg打击触发伊朗对阿联酋报复威胁"
+    },
+    {
+      "source": "kharg_island_strike",
+      "target": "mutual_oil_deterrence",
+      "weight": 0.6,
+      "reasoning": "Kharg打击触发伊朗对等威慑声明"
+    },
+    {
+      "source": "mutual_oil_deterrence",
+      "target": "ceasefire_backchannel",
+      "weight": 0.1,
+      "reasoning": "威慑均衡可能创造谈判窗口"
+    },
+    {
+      "source": "uae_targeted",
+      "target": "coalition_forming",
+      "weight": 0.2,
+      "reasoning": "伊朗威胁推动海湾国家结盟"
+    },
+    {
+      "source": "indo_pacific_gap",
+      "target": "china_energy_diplomacy",
+      "weight": 0.15,
+      "reasoning": "印太缺口给中国更大空间"
+    },
+    {
+      "source": "us_coercive_escalation_ladder",
+      "target": "mutual_oil_deterrence",
+      "weight": 0.4,
+      "reasoning": "升级阶梯触发对等威慑"
+    },
+    {
+      "source": "mutual_oil_deterrence",
+      "target": "conflict_protracted",
+      "weight": 0.15,
+      "reasoning": "威慑均衡导致僵持而非快速解决"
     }
   ],
-  "last_updated": "2026-03-14T04:47:48.243098+00:00",
+  "last_updated": "2026-03-14T10:53:35.598778+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }

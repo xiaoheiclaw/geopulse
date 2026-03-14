@@ -1,0 +1,5 @@
+{
+  "prompt_id": "p3",
+  "timestamp": "20260314T105002Z",
+  "raw": "```json\n{\n  \"evidence_text\": \"Day 15 (Mar 14, 2026 PM): Iran military threatens 'immediate destruction' of oil infra of US-cooperating companies if attacked; claims US attacks from UAE ports, asserts right to strike 'US missiles' in UAE; urges UAE residents avoid ports; 2,500 Marines + USS Tripoli ordered to ME from Taiwan waters; Brent at $128.91 (down from $130.14), OVX at 119\",\n  \"source\": \"Multi-source compilation (BBC/Guardian/Reuters/AP/Fortune/CBC cited)\",\n  \"source_tier\": 2,\n  \"cross_verification_count\": 3,\n  \"bias_assessment\": \"mild\",\n  \"specificity\": \"detailed\",\n  \"hours_old\": 6,\n  \"score_breakdown\": {\n    \"base\": 0.70,\n    \"cross_verify\": 0.15,\n    \"bias\": -0.05,\n    \"specificity\": 0.00,\n    \"timeliness\": 0.00\n  },\n  \"final_score\": 0.80,\n  \"usable\": true,\n  \"reasoning\": \"二手综合报道，关键军事部署和伊朗声明经多家主流媒体交叉验证，伊朗官方声明部分存在轻度宣传偏见但BBC/Reuters等中性来源已确认原文存在，具体细节（舰艇名称、兵力数字、油价精确值）增强可信度\"\n}\n```"
+}
