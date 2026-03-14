@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 70,
-  "updated": "2026-03-13T22:42:29.201560+00:00",
+  "version": 71,
+  "updated": "2026-03-14T04:47:52.659437+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -535,7 +535,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.01,
+      "probability": 0.03,
       "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -548,14 +548,17 @@
         "ToI 2026-03-10: Witkoff says Iran has not shown interest in negotiations since Feb 28",
         "Guardian: Araghchi says unilateral US declaration won't end conflict",
         "[2026-03-11] Iran spurned two Witkoff ceasefire messages; Ghalibaf: 'not seeking ceasefire'; Witkoff: 'no interest from Iran since Feb 28' (Guardian/ToI) (credibility: 0.9)",
-        "[2026-03-12] Iran rejected 2 Witkoff messages. Mojtaba vengeance vow = no diplomatic off-ramp. Witkoff confirms Iran shows no interest in negotiations"
+        "[2026-03-12] Iran rejected 2 Witkoff messages. Mojtaba vengeance vow = no diplomatic off-ramp. Witkoff confirms Iran shows no interest in negotiations",
+        "P1 analysis: oil spared = classic coercive design preserving negotiation space",
+        "Kharg oil infra deliberately spared = coercive bargaining space exists",
+        "Kharg oil sparing = implicit offer of off-ramp in coercive bargaining"
       ],
       "reasoning": "Iran is becoming MORE defiant, not less. Both backchannel attempts rejected. Ghalibaf explicit: \"we aren't seeking a ceasefire\". Near-zero probability of diplomatic track.",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T11:29:06.389530+00:00",
+      "last_updated": "2026-03-14T04:47:48.243098+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "conflict_protracted": {
@@ -581,14 +584,15 @@
         "[2026-03-12] Mojtaba Khamenei first public statement: vowed vengeance, Hormuz stays shut, US bases threat. Iran launched 'most intense operation'",
         "[2026-03-13] No regime change plan + hardline Mojtaba = locked in (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Reuters: Leaders of Iran, Israel AND US all voiced defiance and vowed to fight on",
-        "[2026-03-13 PM] Active mining = blockade persists for months"
+        "[2026-03-13 PM] Active mining = blockade persists for months",
+        "Trump Mar 13: war as long as necessary, demands unconditional surrender"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-09T19:26:31.848095+00:00",
+      "last_updated": "2026-03-14T04:47:29.096283+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "us_ground_war": {
@@ -827,7 +831,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-13T22:42:29.201322+00:00",
+      "last_updated": "2026-03-14T04:47:52.659284+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -838,19 +842,22 @@
         "政治",
         "社会"
       ],
-      "probability": 0.5,
+      "probability": 0.7999999999999999,
       "confidence": 0.5,
       "evidence": [
         "Al Jazeera: Iranian Red Crescent death toll 1,332 since start",
         "Wikipedia: HRANA estimates 7,000 dead",
-        "US engineered dollar shortage → rial freefall → protests"
+        "US engineered dollar shortage → rial freefall → protests",
+        "Quds Day rally under aerial assault, senior officials present, at least 1 killed",
+        "Quds Day rally attacked during active war",
+        "Quds Day rally under aerial assault, senior officials exposed, at least 1 killed"
       ],
       "reasoning": "定义: 伊朗≥3个主要城市爆发持续>1周的大规模抗议(>10万人) 或 IRGC内部出现公开派系分裂。45%。",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-14T04:47:48.243098+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "eu_defense_surge": {
@@ -1718,6 +1725,98 @@
       "dialectic": null,
       "last_updated": "2026-03-13T22:42:03.988336+00:00",
       "created": "2026-03-13T22:42:03.988336+00:00"
+    },
+    "us_coercive_escalation_ladder": {
+      "id": "us_coercive_escalation_ladder",
+      "label": "美国条件式升级阶梯(油田筹码)",
+      "node_type": "risk",
+      "domains": [
+        "军事",
+        "能源",
+        "地缘"
+      ],
+      "probability": 0.9,
+      "confidence": 0.75,
+      "evidence": [
+        "Trump explicit: if Iran interferes with Hormuz, oil infrastructure next",
+        "Iranian parliament warned Kharg strike would provoke new retaliation level"
+      ],
+      "reasoning": "Spiral model风险: 伊朗不报复=屈服, 报复=触发油田打击. 胁迫陷阱正在形成",
+      "time_horizon": "1-2 weeks",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T04:47:48.243098+00:00",
+      "created": "2026-03-14T04:47:48.243098+00:00"
+    },
+    "kharg_oil_infra_threat": {
+      "id": "kharg_oil_infra_threat",
+      "label": "Kharg岛石油设施面临打击(条件触发)",
+      "node_type": "risk",
+      "domains": [
+        "能源",
+        "军事"
+      ],
+      "probability": 0.55,
+      "confidence": 0.5,
+      "evidence": [
+        "Trump: if Iran interferes with Hormuz, oil infrastructure will be targeted",
+        "Kharg: 90% of Iran crude exports, 7mbpd capacity",
+        "Chatham House: → if oil infra hit",
+        "Iranian parliament warned new level of retaliation"
+      ],
+      "reasoning": "胁迫陷阱: 伊朗不报复=屈服, 报复=触发油田打击。spiral model高风险。概率取55%反映不确定性",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T04:47:29.096283+00:00",
+      "created": "2026-03-14T04:47:29.096283+00:00"
+    },
+    "kharg_oil_infra_strike": {
+      "id": "kharg_oil_infra_strike",
+      "label": "美军打击哈尔克岛石油设施",
+      "node_type": "risk",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 0.45,
+      "confidence": 0.55,
+      "evidence": [
+        "Trump conditional threat: oil infra targeted if Hormuz interference continues",
+        "Iranian parliament speaker warned new level of retaliation if Kharg struck",
+        "Chatham House: oil price → if oil infra hit"
+      ],
+      "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
+      "time_horizon": "",
+      "pinned": false,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T04:47:32.373852+00:00",
+      "created": "2026-03-14T04:47:32.373852+00:00"
+    },
+    "kharg_island_strike": {
+      "id": "kharg_island_strike",
+      "label": "美军打击哈尔克岛军事目标(油田保留作筹码)",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "能源"
+      ],
+      "probability": 1.0,
+      "confidence": 0.98,
+      "evidence": [
+        "Reuters/NYT/CNBC/AP Mar 13: US CENTCOM obliterated all military targets on Kharg Island",
+        "Trump Truth Social: chose NOT to destroy oil infrastructure, conditional threat re Hormuz"
+      ],
+      "reasoning": "已发生事件。美国教科书式胁迫外交：展示能力+保留对方让步空间+条件威胁升级",
+      "time_horizon": "",
+      "pinned": true,
+      "time_phases": [],
+      "dialectic": null,
+      "last_updated": "2026-03-14T04:47:48.243098+00:00",
+      "created": "2026-03-14T04:47:48.243098+00:00"
     }
   },
   "edges": [
@@ -2712,8 +2811,80 @@
       "target": "ceasefire_backchannel",
       "weight": 0.15,
       "reasoning": "国内压力可能推动政府寻求停火"
+    },
+    {
+      "source": "us_coercive_escalation_ladder",
+      "target": "kharg_oil_infra_threat",
+      "weight": 0.6,
+      "reasoning": "胁迫策略直接创造条件触发机制"
+    },
+    {
+      "source": "kharg_oil_infra_threat",
+      "target": "oil_price_100",
+      "weight": 0.3,
+      "reasoning": "油田被打击→Brent -150"
+    },
+    {
+      "source": "us_coercive_escalation_ladder",
+      "target": "ceasefire_backchannel",
+      "weight": 0.1,
+      "reasoning": "胁迫策略暗含谈判空间"
+    },
+    {
+      "source": "us_coercive_escalation_ladder",
+      "target": "conflict_protracted",
+      "weight": 0.15,
+      "reasoning": "无条件投降要求延长冲突"
+    },
+    {
+      "source": "iran_retaliation",
+      "target": "kharg_oil_infra_threat",
+      "weight": 0.4,
+      "reasoning": "伊朗报复→触发油田打击(spiral trap)"
+    },
+    {
+      "source": "kharg_oil_infra_threat",
+      "target": "net_supply_gap",
+      "weight": 0.5,
+      "reasoning": "7mbpd产能受损→全球供应缺口扩大"
+    },
+    {
+      "source": "us_coercive_escalation_ladder",
+      "target": "kharg_oil_infra_strike",
+      "weight": 0.4,
+      "reasoning": "升级阶梯直接控制油田打击概率"
+    },
+    {
+      "source": "hormuz_blockade",
+      "target": "kharg_oil_infra_strike",
+      "weight": 0.35,
+      "reasoning": "伊朗继续封锁霍尔木兹是触发油田打击的条件"
+    },
+    {
+      "source": "kharg_oil_infra_strike",
+      "target": "oil_price_100",
+      "weight": 0.3,
+      "reasoning": "油田被打击将推动Brent远超(分析师-150)"
+    },
+    {
+      "source": "kharg_island_strike",
+      "target": "us_coercive_escalation_ladder",
+      "weight": 0.8,
+      "reasoning": "打击哈尔克岛是升级阶梯的第一步"
+    },
+    {
+      "source": "us_coercive_escalation_ladder",
+      "target": "oil_price_100",
+      "weight": 0.3,
+      "reasoning": "油田打击威胁推高油价风险溢价"
+    },
+    {
+      "source": "kharg_island_strike",
+      "target": "iran_internal_crisis",
+      "weight": 0.25,
+      "reasoning": "军事羞辱加深内部压力"
     }
   ],
-  "last_updated": "2026-03-13T22:42:03.988336+00:00",
+  "last_updated": "2026-03-14T04:47:48.243098+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
