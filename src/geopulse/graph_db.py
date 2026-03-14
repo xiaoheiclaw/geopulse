@@ -1,17 +1,18 @@
-"""GeoPulse Graph Database — NetworkX backend.
+"""GeoPulse Graph Database — NetworkX + SQLite backend.
 
-Loads DAG + events into a queryable graph with:
-- Causal path analysis
-- Event-node linking
-- Temporal probability tracking
-- Centrality & bottleneck detection
+Provides:
+1. DAG as a queryable directed graph (path analysis, centrality, cascades)
+2. Events linked to DAG nodes (auto-matching by keyword/entity)
+3. Node probability time series (from history/ snapshots)
+4. Query API for the agent and scripts
 """
 from __future__ import annotations
 
 import json
+import os
 import re
-from collections import defaultdict
-from datetime import datetime
+import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -19,261 +20,404 @@ import networkx as nx
 
 
 class GeoPulseGraph:
-    """In-memory graph database backed by NetworkX."""
+    """Graph database backed by NetworkX (graph ops) + SQLite (events + time series)."""
 
     def __init__(self, data_dir: str = "data"):
         self.data_dir = Path(data_dir)
         self.G = nx.DiGraph()
-        self.events: list[dict] = []
-        self.event_node_links: dict[str, list[int]] = defaultdict(list)  # node_id -> [event_idx]
-        self.node_event_links: dict[int, list[str]] = defaultdict(list)  # event_idx -> [node_id]
+        self.db_path = self.data_dir / "geopulse.db"
+        self._init_db()
 
-    def load(self) -> "GeoPulseGraph":
-        """Load DAG + events from disk."""
-        self._load_dag()
-        self._load_events()
-        self._link_events_to_nodes()
-        return self
+    # ── Setup ──────────────────────────────────────────────
 
-    def _load_dag(self):
-        """Load dag.json into NetworkX DiGraph."""
-        dag_path = self.data_dir / "dag.json"
-        with open(dag_path) as f:
+    def _init_db(self):
+        """Create SQLite tables if they don't exist."""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.executescript("""
+                CREATE TABLE IF NOT EXISTS events (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    headline TEXT NOT NULL,
+                    details TEXT,
+                    source_url TEXT,
+                    source_name TEXT,
+                    domains TEXT,  -- JSON array
+                    significance INTEGER DEFAULT 3,
+                    timestamp TEXT,
+                    logged_at TEXT,
+                    backfilled INTEGER DEFAULT 0
+                );
+
+                CREATE TABLE IF NOT EXISTS event_node_links (
+                    event_id INTEGER REFERENCES events(id),
+                    node_id TEXT,
+                    relevance REAL DEFAULT 0.5,
+                    PRIMARY KEY (event_id, node_id)
+                );
+
+                CREATE TABLE IF NOT EXISTS node_history (
+                    node_id TEXT,
+                    timestamp TEXT,
+                    probability REAL,
+                    confidence REAL,
+                    dag_version INTEGER,
+                    PRIMARY KEY (node_id, timestamp)
+                );
+
+                CREATE INDEX IF NOT EXISTS idx_events_timestamp ON events(timestamp);
+                CREATE INDEX IF NOT EXISTS idx_events_significance ON events(significance);
+                CREATE INDEX IF NOT EXISTS idx_node_history_node ON node_history(node_id);
+                CREATE INDEX IF NOT EXISTS idx_event_links_node ON event_node_links(node_id);
+            """)
+
+    # ── Load ───────────────────────────────────────────────
+
+    def load_dag(self, dag_path: str | None = None):
+        """Load DAG from JSON into NetworkX graph."""
+        path = Path(dag_path) if dag_path else self.data_dir / "dag.json"
+        with open(path) as f:
             dag = json.load(f)
 
-        self.dag_version = dag.get("version", 0)
+        self.G.clear()
 
-        for node_id, node in dag.get("nodes", {}).items():
-            self.G.add_node(
-                node_id,
-                label=node.get("label", node_id),
-                probability=node.get("probability", 0.5),
-                confidence=node.get("confidence", 0.5),
-                domains=node.get("domains", []),
-                evidence=node.get("evidence", []),
-                reasoning=node.get("reasoning", ""),
-                node_type=node.get("node_type", "state"),
-                last_updated=node.get("last_updated", ""),
-            )
+        for nid, node in dag.get("nodes", {}).items():
+            self.G.add_node(nid, **{
+                "label": node.get("label", nid),
+                "probability": node.get("probability", 0.5),
+                "confidence": node.get("confidence", 0.5),
+                "domains": node.get("domains", []),
+                "evidence": node.get("evidence", []),
+                "reasoning": node.get("reasoning", ""),
+            })
 
         for edge in dag.get("edges", []):
             self.G.add_edge(
-                edge["source"],
-                edge["target"],
+                edge["source"], edge["target"],
                 weight=edge.get("weight", 0.5),
                 reasoning=edge.get("reasoning", ""),
             )
 
-    def _load_events(self):
-        """Load events.jsonl."""
-        events_path = self.data_dir / "events.jsonl"
-        if not events_path.exists():
-            return
-        with open(events_path) as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    self.events.append(json.loads(line))
+        return len(self.G.nodes), len(self.G.edges)
 
-    def _link_events_to_nodes(self):
-        """Auto-link events to DAG nodes via keyword matching."""
-        # Build keyword index from node labels + evidence
+    def load_events(self, events_path: str | None = None):
+        """Load events from JSONL into SQLite."""
+        path = Path(events_path) if events_path else self.data_dir / "events.jsonl"
+        if not path.exists():
+            return 0
+
+        with sqlite3.connect(self.db_path) as conn:
+            # Check existing count
+            existing = conn.execute("SELECT COUNT(*) FROM events").fetchone()[0]
+            if existing > 0:
+                return existing  # Already loaded
+
+            count = 0
+            with open(path) as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    e = json.loads(line)
+                    conn.execute(
+                        """INSERT INTO events (headline, details, source_url, source_name,
+                           domains, significance, timestamp, logged_at, backfilled)
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                        (
+                            e.get("headline", ""),
+                            e.get("details", ""),
+                            e.get("source_url", ""),
+                            e.get("source_name", ""),
+                            json.dumps(e.get("domains", []), ensure_ascii=False),
+                            e.get("significance", 3),
+                            e.get("timestamp", ""),
+                            e.get("logged_at", ""),
+                            1 if e.get("backfilled") else 0,
+                        ),
+                    )
+                    count += 1
+            return count
+
+    def load_history(self):
+        """Load node probability history from history/ snapshots."""
+        history_dir = self.data_dir / "history"
+        if not history_dir.exists():
+            return 0
+
+        with sqlite3.connect(self.db_path) as conn:
+            existing = conn.execute("SELECT COUNT(*) FROM node_history").fetchone()[0]
+            if existing > 0:
+                return existing
+
+            count = 0
+            for fp in sorted(history_dir.glob("*.json")):
+                if fp.name.startswith("dag_"):
+                    # Skip non-timestamped snapshots
+                    continue
+                ts = fp.stem.replace("_", ".")  # approximate timestamp from filename
+                try:
+                    with open(fp) as f:
+                        snap = json.load(f)
+                except (json.JSONDecodeError, UnicodeDecodeError):
+                    continue
+
+                version = snap.get("version", 0)
+                for nid, node in snap.get("nodes", {}).items():
+                    prob = node.get("probability")
+                    conf = node.get("confidence")
+                    if prob is not None:
+                        conn.execute(
+                            """INSERT OR IGNORE INTO node_history
+                               (node_id, timestamp, probability, confidence, dag_version)
+                               VALUES (?, ?, ?, ?, ?)""",
+                            (nid, ts, prob, conf, version),
+                        )
+                        count += 1
+            return count
+
+    # ── Auto-link events to nodes ──────────────────────────
+
+    def auto_link_events(self):
+        """Link events to DAG nodes by keyword matching on node labels + evidence."""
+        if not self.G.nodes:
+            return 0
+
+        # Build keyword index: node_id -> set of keywords
         node_keywords: dict[str, set[str]] = {}
-        for node_id, data in self.G.nodes(data=True):
+        for nid, data in self.G.nodes(data=True):
             keywords = set()
-            # From label
             label = data.get("label", "")
-            keywords.update(self._extract_keywords(label))
-            # From node_id
-            keywords.update(node_id.replace("_", " ").lower().split())
-            # From evidence
+            # Split Chinese/English label into tokens
+            keywords.update(w.lower() for w in re.findall(r'[a-zA-Z]+', label) if len(w) > 2)
+            keywords.update(re.findall(r'[\u4e00-\u9fff]+', label))
+            # Add node_id parts
+            keywords.update(w.lower() for w in nid.split("_") if len(w) > 2)
+            # Add evidence keywords
             for ev in data.get("evidence", []):
                 if isinstance(ev, str):
-                    keywords.update(self._extract_keywords(ev))
-            node_keywords[node_id] = keywords
+                    keywords.update(w.lower() for w in re.findall(r'[a-zA-Z]+', ev) if len(w) > 3)
+            node_keywords[nid] = keywords
 
-        # Match events to nodes
-        for idx, event in enumerate(self.events):
-            event_text = (
-                event.get("headline", "") + " " + event.get("details", "")
-            ).lower()
-            event_words = set(event_text.split())
+        linked = 0
+        with sqlite3.connect(self.db_path) as conn:
+            events = conn.execute(
+                "SELECT id, headline, details FROM events"
+            ).fetchall()
 
-            for node_id, keywords in node_keywords.items():
-                # Require at least 2 keyword matches for linking
-                overlap = keywords & event_words
-                if len(overlap) >= 2:
-                    self.event_node_links[node_id].append(idx)
-                    self.node_event_links[idx].append(node_id)
+            for eid, headline, details in events:
+                text = f"{headline} {details}".lower()
+                text_cn = headline + " " + (details or "")
 
-    @staticmethod
-    def _extract_keywords(text: str) -> set[str]:
-        """Extract meaningful keywords from text."""
-        text = text.lower()
-        # Remove common Chinese particles and short words
-        words = re.findall(r"[a-z]{3,}", text)
-        # Add Chinese key terms
-        cn_terms = re.findall(r"[\u4e00-\u9fff]{2,}", text)
-        stopwords = {"the", "and", "for", "that", "this", "with", "from", "are", "was", "has", "have", "been"}
-        return (set(words) - stopwords) | set(cn_terms)
+                for nid, keywords in node_keywords.items():
+                    matches = sum(1 for kw in keywords if kw in text or kw in text_cn)
+                    if matches >= 2:  # At least 2 keyword matches
+                        relevance = min(matches / len(keywords), 1.0) if keywords else 0
+                        try:
+                            conn.execute(
+                                """INSERT OR IGNORE INTO event_node_links
+                                   (event_id, node_id, relevance)
+                                   VALUES (?, ?, ?)""",
+                                (eid, nid, round(relevance, 3)),
+                            )
+                            linked += 1
+                        except sqlite3.IntegrityError:
+                            pass
+        return linked
 
-    # ── Query Methods ──
+    # ── Query: Graph Analysis ──────────────────────────────
 
     def shortest_path(self, source: str, target: str) -> list[dict]:
         """Find shortest causal path between two nodes."""
         try:
             path = nx.shortest_path(self.G, source, target)
+            result = []
+            for i, nid in enumerate(path):
+                entry = {
+                    "node": nid,
+                    "label": self.G.nodes[nid].get("label", nid),
+                    "probability": self.G.nodes[nid].get("probability"),
+                }
+                if i > 0:
+                    edge = self.G.edges[path[i - 1], nid]
+                    entry["edge_weight"] = edge.get("weight")
+                    entry["edge_reasoning"] = edge.get("reasoning", "")
+                result.append(entry)
+            return result
         except nx.NetworkXNoPath:
             return []
         except nx.NodeNotFound:
             return []
 
-        result = []
-        for i, node_id in enumerate(path):
-            data = self.G.nodes[node_id]
-            entry = {
-                "node_id": node_id,
-                "label": data.get("label", ""),
-                "probability": data.get("probability", 0),
-            }
-            if i > 0:
-                edge = self.G.edges[path[i - 1], node_id]
-                entry["edge_weight"] = edge.get("weight", 0)
-                entry["edge_reasoning"] = edge.get("reasoning", "")
-            result.append(entry)
-        return result
-
     def all_paths(self, source: str, target: str, max_length: int = 6) -> list[list[str]]:
-        """Find all simple paths up to max_length."""
+        """Find all simple paths between two nodes."""
         try:
             return list(nx.all_simple_paths(self.G, source, target, cutoff=max_length))
-        except nx.NodeNotFound:
+        except (nx.NetworkXNoPath, nx.NodeNotFound):
             return []
 
-    def influence_chain(self, source: str, max_depth: int = 4) -> dict[str, float]:
-        """Calculate cumulative influence from source node, up to max_depth hops."""
-        visited = {}
-        queue = [(source, 1.0, 0)]
+    def cascade_impact(self, node_id: str, depth: int = 3) -> dict[str, float]:
+        """Calculate cascade impact: what nodes are downstream and how much."""
+        if node_id not in self.G:
+            return {}
 
-        while queue:
-            node, cum_prob, depth = queue.pop(0)
-            if depth > max_depth:
-                continue
-            if node in visited and visited[node] >= cum_prob:
-                continue
-            visited[node] = cum_prob
+        impacts: dict[str, float] = {}
+        visited = {node_id}
+        frontier = [(node_id, 1.0)]
 
-            for successor in self.G.successors(node):
-                edge_w = self.G.edges[node, successor].get("weight", 0.5)
-                new_prob = cum_prob * edge_w
-                if new_prob > 0.01:  # prune negligible
-                    queue.append((successor, new_prob, depth + 1))
+        for _ in range(depth):
+            next_frontier = []
+            for nid, cumulative in frontier:
+                for succ in self.G.successors(nid):
+                    if succ in visited:
+                        continue
+                    weight = self.G.edges[nid, succ].get("weight", 0.5)
+                    impact = cumulative * weight
+                    if impact > 0.01:  # threshold
+                        impacts[succ] = max(impacts.get(succ, 0), impact)
+                        next_frontier.append((succ, impact))
+                        visited.add(succ)
+            frontier = next_frontier
 
-        del visited[source]
-        return dict(sorted(visited.items(), key=lambda x: -x[1]))
+        return dict(sorted(impacts.items(), key=lambda x: -x[1]))
 
     def bottleneck_nodes(self, top_n: int = 10) -> list[dict]:
-        """Find nodes with highest betweenness centrality (bottlenecks)."""
-        bc = nx.betweenness_centrality(self.G, weight="weight")
-        sorted_nodes = sorted(bc.items(), key=lambda x: -x[1])[:top_n]
+        """Find bottleneck nodes by betweenness centrality."""
+        centrality = nx.betweenness_centrality(self.G)
+        sorted_nodes = sorted(centrality.items(), key=lambda x: -x[1])[:top_n]
         return [
             {
-                "node_id": nid,
-                "label": self.G.nodes[nid].get("label", ""),
-                "probability": self.G.nodes[nid].get("probability", 0),
-                "betweenness": score,
+                "node": nid,
+                "label": self.G.nodes[nid].get("label", nid),
+                "centrality": round(c, 4),
+                "probability": self.G.nodes[nid].get("probability"),
                 "in_degree": self.G.in_degree(nid),
                 "out_degree": self.G.out_degree(nid),
             }
-            for nid, score in sorted_nodes
+            for nid, c in sorted_nodes
         ]
 
-    def node_events(self, node_id: str, limit: int = 20) -> list[dict]:
-        """Get events linked to a node, sorted by date."""
-        indices = self.event_node_links.get(node_id, [])
-        events = [self.events[i] for i in indices]
-        events.sort(key=lambda e: e.get("logged_at", e.get("timestamp", "")), reverse=True)
-        return events[:limit]
-
-    def node_event_timeline(self, node_id: str) -> dict[str, int]:
-        """Get event count per day for a node."""
-        indices = self.event_node_links.get(node_id, [])
-        by_date: dict[str, int] = defaultdict(int)
-        for i in indices:
-            ev = self.events[i]
-            date = (ev.get("logged_at") or ev.get("timestamp", ""))[:10]
-            if date:
-                by_date[date] += 1
-        return dict(sorted(by_date.items()))
-
-    def event_impact(self, event_idx: int) -> list[dict]:
-        """Show which DAG nodes an event is linked to."""
-        node_ids = self.node_event_links.get(event_idx, [])
+    def domain_subgraph(self, domain: str) -> list[str]:
+        """Get all nodes in a specific domain."""
         return [
-            {
-                "node_id": nid,
-                "label": self.G.nodes[nid].get("label", ""),
-                "probability": self.G.nodes[nid].get("probability", 0),
-            }
-            for nid in node_ids
-            if nid in self.G.nodes
+            nid for nid, data in self.G.nodes(data=True)
+            if domain in data.get("domains", [])
         ]
 
-    def domain_subgraph(self, domain: str) -> dict:
-        """Extract subgraph for a specific domain."""
-        nodes = [
-            n for n, d in self.G.nodes(data=True)
-            if domain in d.get("domains", [])
-        ]
-        sub = self.G.subgraph(nodes)
+    # ── Query: Events ──────────────────────────────────────
+
+    def events_for_node(self, node_id: str, limit: int = 20) -> list[dict]:
+        """Get events linked to a specific DAG node."""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            rows = conn.execute(
+                """SELECT e.headline, e.details, e.source_url, e.timestamp,
+                          e.significance, l.relevance
+                   FROM events e
+                   JOIN event_node_links l ON e.id = l.event_id
+                   WHERE l.node_id = ?
+                   ORDER BY e.significance DESC, l.relevance DESC
+                   LIMIT ?""",
+                (node_id, limit),
+            ).fetchall()
+            return [dict(r) for r in rows]
+
+    def events_by_date(self, date: str, min_significance: int = 3) -> list[dict]:
+        """Get events for a specific date."""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            rows = conn.execute(
+                """SELECT headline, details, source_url, source_name,
+                          significance, timestamp
+                   FROM events
+                   WHERE timestamp LIKE ? AND significance >= ?
+                   ORDER BY significance DESC""",
+                (f"{date}%", min_significance),
+            ).fetchall()
+            return [dict(r) for r in rows]
+
+    def event_count_by_date(self) -> dict[str, int]:
+        """Get event count per day."""
+        with sqlite3.connect(self.db_path) as conn:
+            rows = conn.execute(
+                """SELECT SUBSTR(COALESCE(timestamp, logged_at), 1, 10) as day,
+                          COUNT(*) as cnt
+                   FROM events
+                   GROUP BY day ORDER BY day"""
+            ).fetchall()
+            return {r[0]: r[1] for r in rows}
+
+    # ── Query: Time Series ─────────────────────────────────
+
+    def node_probability_history(self, node_id: str) -> list[dict]:
+        """Get probability history for a node."""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            rows = conn.execute(
+                """SELECT timestamp, probability, confidence, dag_version
+                   FROM node_history
+                   WHERE node_id = ?
+                   ORDER BY timestamp""",
+                (node_id,),
+            ).fetchall()
+            return [dict(r) for r in rows]
+
+    def biggest_movers(self, last_n_versions: int = 5) -> list[dict]:
+        """Find nodes with largest probability changes in recent versions."""
+        with sqlite3.connect(self.db_path) as conn:
+            rows = conn.execute(
+                """WITH ranked AS (
+                     SELECT node_id, probability, dag_version,
+                            ROW_NUMBER() OVER (PARTITION BY node_id ORDER BY timestamp DESC) as rn
+                     FROM node_history
+                   )
+                   SELECT a.node_id,
+                          a.probability as current_prob,
+                          b.probability as old_prob,
+                          ABS(a.probability - b.probability) as delta
+                   FROM ranked a
+                   JOIN ranked b ON a.node_id = b.node_id
+                   WHERE a.rn = 1 AND b.rn = ?
+                   ORDER BY delta DESC
+                   LIMIT 15""",
+                (last_n_versions,),
+            ).fetchall()
+            return [
+                {
+                    "node": r[0],
+                    "current": round(r[1], 3),
+                    "old": round(r[2], 3),
+                    "delta": round(r[3], 3),
+                }
+                for r in rows
+            ]
+
+    # ── Summary ────────────────────────────────────────────
+
+    def summary(self) -> dict:
+        """Get database summary stats."""
+        with sqlite3.connect(self.db_path) as conn:
+            events_count = conn.execute("SELECT COUNT(*) FROM events").fetchone()[0]
+            links_count = conn.execute("SELECT COUNT(*) FROM event_node_links").fetchone()[0]
+            history_count = conn.execute("SELECT COUNT(*) FROM node_history").fetchone()[0]
+
         return {
-            "domain": domain,
-            "nodes": len(sub.nodes),
-            "edges": len(sub.edges),
-            "avg_probability": (
-                sum(d.get("probability", 0) for _, d in sub.nodes(data=True)) / len(sub.nodes)
-                if sub.nodes else 0
-            ),
-            "top_nodes": sorted(
-                [
-                    {"id": n, "label": d.get("label", ""), "prob": d.get("probability", 0)}
-                    for n, d in sub.nodes(data=True)
-                ],
-                key=lambda x: -x["prob"],
-            )[:10],
-        }
-
-    def search_events(self, query: str, limit: int = 20) -> list[dict]:
-        """Full-text search across events."""
-        query_lower = query.lower()
-        results = []
-        for idx, ev in enumerate(self.events):
-            text = (ev.get("headline", "") + " " + ev.get("details", "")).lower()
-            if query_lower in text:
-                results.append({**ev, "_idx": idx})
-        results.sort(key=lambda e: e.get("logged_at", e.get("timestamp", "")), reverse=True)
-        return results[:limit]
-
-    def stats(self) -> dict:
-        """Overall graph statistics."""
-        probs = [d.get("probability", 0) for _, d in self.G.nodes(data=True)]
-        events_by_date = defaultdict(int)
-        for ev in self.events:
-            d = (ev.get("logged_at") or ev.get("timestamp", ""))[:10]
-            if d:
-                events_by_date[d] += 1
-
-        linked_events = sum(1 for idx in range(len(self.events)) if idx in self.node_event_links)
-
-        return {
-            "dag_version": self.dag_version,
             "nodes": len(self.G.nodes),
             "edges": len(self.G.edges),
-            "events_total": len(self.events),
-            "events_linked": linked_events,
-            "events_by_date": dict(sorted(events_by_date.items())),
-            "avg_probability": sum(probs) / len(probs) if probs else 0,
-            "density": nx.density(self.G),
-            "is_dag": nx.is_directed_acyclic_graph(self.G),
-            "connected_components": nx.number_weakly_connected_components(self.G),
+            "events": events_count,
+            "event_node_links": links_count,
+            "history_snapshots": history_count,
+            "components": nx.number_weakly_connected_components(self.G),
+            "density": round(nx.density(self.G), 4),
+            "avg_clustering": round(
+                nx.average_clustering(self.G.to_undirected()), 4
+            ) if len(self.G) > 0 else 0,
         }
+
+
+def init_graph(data_dir: str = "data") -> GeoPulseGraph:
+    """Initialize and load everything."""
+    g = GeoPulseGraph(data_dir)
+    nodes, edges = g.load_dag()
+    events = g.load_events()
+    history = g.load_history()
+    links = g.auto_link_events()
+    print(f"Graph loaded: {nodes}N/{edges}E, {events} events, {history} history points, {links} links")
+    return g
