@@ -2,7 +2,7 @@
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
   "version": 75,
-  "updated": "2026-03-15T05:15:49.092237+00:00",
+  "updated": "2026-03-15T05:16:03.668127+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -150,7 +150,7 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.68,
+      "probability": 0.7,
       "confidence": 0.68,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
@@ -163,7 +163,8 @@
         "[2026-03-14] (cred:0.77) Day 15: CENTCOM hit missile facilities and mines on Kharg. Further degradation of Iran retaliatory capability. Up from 0.55. — CENTCOM/NBC/NYT/Goldman/MarketData",
         "[2026-03-15] Day 15-16: Israel struck 200+ additional targets in 24h (missile launchers, defense systems, weapons production). Cumulative degradation continues. Up from 0.62. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
+        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
+        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
       ],
       "reasoning": "Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
       "time_horizon": "持续",
@@ -629,7 +630,8 @@
         "2500 Marines + USS Tripoli ARG ordered to ME",
         "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli deploying to ME from Taiwan area, >1 week out. MEUs are multipurpose (embassy security, evac, amphibious). Deployment does not necessarily indicate ground op but increases capability. Marginal up from 0.42. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU can do amphibious landings. WSJ + satellite confirmed. But Tripoli >1 week away, deployment doesnt necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU specializes in amphibious landings. Tripoli >1 week away (near Taiwan). Does not necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
+        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU specializes in amphibious landings. Tripoli >1 week away (near Taiwan). Does not necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
+        "[2026-03-15] Day 15-16: 2500 Marines (31st MEU) + USS Tripoli deploying. MEU has amphibious capability. But Tripoli >1 week away. Deployment doesnt necessarily indicate ground ops. Up from 0.45. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
       ],
       "reasoning": "定义: 美军地面战斗部队(非特种部队/顾问)进入伊朗领土执行作战任务。32%因Trump明确倾向空袭。",
       "time_horizon": "W8-24",
@@ -852,7 +854,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-15T05:15:49.092098+00:00",
+      "last_updated": "2026-03-15T05:16:03.667966+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -1808,8 +1810,8 @@
         "军事",
         "能源"
       ],
-      "probability": 0.72,
-      "confidence": 0.75,
+      "probability": 0.75,
+      "confidence": 0.72,
       "evidence": [
         "Trump conditional threat: oil infra targeted if Hormuz interference continues",
         "Iranian parliament speaker warned new level of retaliation if Kharg struck",
@@ -1818,7 +1820,8 @@
         "[2026-03-14] (cred:0.77) Day 15: US demonstrated precision strike capability on Kharg (90+ mil targets), deliberately spared oil infra. Lowers threshold for future oil infra strike. Up from 0.50. — CENTCOM/NBC/NYT/Goldman/MarketData",
         "[2026-03-15] Day 15-16: Trump explicit public conditional: chose NOT to wipe out oil infra, but will reconsider if Hormuz blocked. IRGC responded Hormuz under full Iranian control — direct defiance. Trump also said may hit again just for fun. Conditional trigger now activated and public. Up from 0.58. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. \"May hit a few more times just for fun.\" IRGC defiant: Hormuz under full control. Conditional trigger looks increasingly likely. Up from 0.68. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. Also \"may hit a few more times just for fun.\" IRGC defiant, Hormuz still blocked. Condition for strike increasingly met. Up from 0.68. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
+        "[2026-03-15] Day 15-16: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. Also \"may hit a few more times just for fun.\" IRGC defiant, Hormuz still blocked. Condition for strike increasingly met. Up from 0.68. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
+        "[2026-03-15] Day 15-16: Trump explicit conditional: will wipe out Kharg oil infra if Hormuz continues. Iran parliament speaker warns new level of retaliation if oil infra hit. Up from 0.68. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
       ],
       "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
       "time_horizon": "",
@@ -1933,7 +1936,7 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.95,
+      "probability": 0.96,
       "confidence": 0.9,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
@@ -1943,7 +1946,8 @@
         "[2026-03-14] (cred:0.77) Day 15: Iran specifically threatening Gulf oil facilities (NBC). UAE as largest Gulf exporter is primary target. Up from 0.78. — CENTCOM/NBC/NYT/Goldman/MarketData",
         "[2026-03-15] Day 15-16: IRGC issued evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). AP confirms Fujairah oil facility fire from intercepted drone debris. Fortune: Iran openly threatens non-US neighbor assets for FIRST TIME. Iranian FM claims US attacked Kharg from UAE territory. Massive escalation in targeting scope. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: IRGC evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). Fujairah oil facility hit by drone debris fire (AP confirmed). First time openly threatening non-US UAE assets. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports (Jebel Ali, Khalifa, Fujairah). Fujairah ALREADY HIT — drone debris fire at oil facility (AP confirmed). Iran FM says US attacked Kharg from Ras Al-Khaimah. Fortune: first time Iran openly threatens non-US neighbor assets. Up from 0.92. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
+        "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports (Jebel Ali, Khalifa, Fujairah). Fujairah ALREADY HIT — drone debris fire at oil facility (AP confirmed). Iran FM says US attacked Kharg from Ras Al-Khaimah. Fortune: first time Iran openly threatens non-US neighbor assets. Up from 0.92. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
+        "[2026-03-15] Day 15-16: Iran evacuated 3 UAE ports. Fujairah oil facility hit by drone debris (AP). Iran FM says US attacked from UAE territory. Up from 0.92. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
       ],
       "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
       "time_horizon": "1-2 weeks",
@@ -2049,6 +2053,51 @@
       "reasoning": "IRGC issued evacuation warning for Jebel Ali, Khalifa, Fujairah. First time Iran openly threatens non-US neighbor assets.",
       "evidence": [
         "[2026-03-15] IRGC warned UAE residents to evacuate ports, docks, and US military shelters (Source: AP/Guardian/Fortune/Al Jazeera, Credibility: 0.9)"
+      ]
+    },
+    "uae_ports_evacuation": {
+      "id": "uae_ports_evacuation",
+      "label": "IRGC警告撤离阿联酋三大港口(Jebel Ali/Khalifa/Fujairah)",
+      "domains": [
+        "military",
+        "energy",
+        "diplomacy"
+      ],
+      "probability": 1.0,
+      "confidence": 0.9,
+      "node_type": "fact",
+      "reasoning": "IRGC issued evacuation warnings for 3 UAE ports. AP confirmed Fujairah oil facility fire from intercepted drone debris. First time Iran openly threatens non-US assets in neighbor state.",
+      "evidence": [
+        "[2026-03-15] AP: IRGC warns evacuate Jebel Ali, Khalifa, Fujairah. Fire at Fujairah oil facility from drone debris (AP images). Fortune: first time Iran threatens non-US neighbor assets. (Source: AP/Fortune/Guardian/AlJazeera, Credibility: 0.9)"
+      ]
+    },
+    "trump_kharg_oil_conditional": {
+      "id": "trump_kharg_oil_conditional",
+      "label": "Trump明确威胁摧毁Kharg油田(条件:霍尔木兹继续封锁)",
+      "domains": [
+        "military",
+        "energy"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "node_type": "fact",
+      "reasoning": "Trump: chose NOT to wipe out oil infra, will immediately reconsider if Hormuz blockade continues. Also: may hit a few more times just for fun.",
+      "evidence": [
+        "[2026-03-14] CNBC/Reuters/NYT: Trump explicit conditional threat on Kharg oil infrastructure tied to Hormuz shipping. (Source: CNBC/Reuters/NYT, Credibility: 0.95)"
+      ]
+    },
+    "us_marine_deployment": {
+      "id": "us_marine_deployment",
+      "label": "2500海军陆战队+两栖攻击舰USS Tripoli部署中东",
+      "domains": [
+        "military"
+      ],
+      "probability": 0.92,
+      "confidence": 0.85,
+      "node_type": "fact",
+      "reasoning": "31st MEU + USS Tripoli deploying. Tripoli spotted near Taiwan (>1 week from ME). MEU can do amphibious landings but also embassy security/evacuation.",
+      "evidence": [
+        "[2026-03-14] WSJ first reported. Anonymous US official confirmed. Satellite spotted Tripoli near Taiwan. (Source: WSJ/AP/satellite, Credibility: 0.88)"
       ]
     }
   },
@@ -3248,8 +3297,32 @@
       "target": "shipping_insurance_collapse",
       "weight": 0.7,
       "reasoning": "Physical damage to UAE port oil facility → further insurance market tightening"
+    },
+    {
+      "source": "uae_ports_evacuation",
+      "target": "uae_targeted",
+      "weight": 0.85,
+      "reasoning": "Direct escalation: evacuation warning → imminent strike risk on UAE"
+    },
+    {
+      "source": "trump_kharg_oil_conditional",
+      "target": "kharg_oil_infra_strike",
+      "weight": 0.8,
+      "reasoning": "Explicit presidential conditional threat tied to Hormuz blockade"
+    },
+    {
+      "source": "us_marine_deployment",
+      "target": "us_ground_war",
+      "weight": 0.45,
+      "reasoning": "MEU amphibious capability but primarily for embassy security/evacuation"
+    },
+    {
+      "source": "uae_ports_evacuation",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.7,
+      "reasoning": "UAE port threats → Gulf shipping risk spike → insurance tightening"
     }
   ],
-  "last_updated": "2026-03-15T05:15:38.259621+00:00",
+  "last_updated": "2026-03-15T05:15:58.791062+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
