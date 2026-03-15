@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 75,
+  "version": 76,
   "updated": "2026-03-15T05:16:03.668127+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -150,8 +150,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.7,
-      "confidence": 0.68,
+      "probability": 0.72,
+      "confidence": 0.7,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
@@ -164,7 +164,8 @@
         "[2026-03-15] Day 15-16: Israel struck 200+ additional targets in 24h (missile launchers, defense systems, weapons production). Cumulative degradation continues. Up from 0.62. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
+        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
+        "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed."
       ],
       "reasoning": "Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
       "time_horizon": "持续",
@@ -620,7 +621,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.5,
+      "probability": 0.52,
       "confidence": 0.55,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
@@ -631,7 +632,8 @@
         "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli deploying to ME from Taiwan area, >1 week out. MEUs are multipurpose (embassy security, evac, amphibious). Deployment does not necessarily indicate ground op but increases capability. Marginal up from 0.42. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU can do amphibious landings. WSJ + satellite confirmed. But Tripoli >1 week away, deployment doesnt necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU specializes in amphibious landings. Tripoli >1 week away (near Taiwan). Does not necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-15] Day 15-16: 2500 Marines (31st MEU) + USS Tripoli deploying. MEU has amphibious capability. But Tripoli >1 week away. Deployment doesnt necessarily indicate ground ops. Up from 0.45. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
+        "[2026-03-15] Day 15-16: 2500 Marines (31st MEU) + USS Tripoli deploying. MEU has amphibious capability. But Tripoli >1 week away. Deployment doesnt necessarily indicate ground ops. Up from 0.45. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
+        "[2026-03-15] Day 16: IRGC attacking US bases in Iraq/Kuwait. Marines deploying. South Korea considering warships."
       ],
       "reasoning": "定义: 美军地面战斗部队(非特种部队/顾问)进入伊朗领土执行作战任务。32%因Trump明确倾向空袭。",
       "time_horizon": "W8-24",
@@ -1810,8 +1812,8 @@
         "军事",
         "能源"
       ],
-      "probability": 0.75,
-      "confidence": 0.72,
+      "probability": 0.78,
+      "confidence": 0.73,
       "evidence": [
         "Trump conditional threat: oil infra targeted if Hormuz interference continues",
         "Iranian parliament speaker warned new level of retaliation if Kharg struck",
@@ -1821,7 +1823,8 @@
         "[2026-03-15] Day 15-16: Trump explicit public conditional: chose NOT to wipe out oil infra, but will reconsider if Hormuz blocked. IRGC responded Hormuz under full Iranian control — direct defiance. Trump also said may hit again just for fun. Conditional trigger now activated and public. Up from 0.58. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. \"May hit a few more times just for fun.\" IRGC defiant: Hormuz under full control. Conditional trigger looks increasingly likely. Up from 0.68. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. Also \"may hit a few more times just for fun.\" IRGC defiant, Hormuz still blocked. Condition for strike increasingly met. Up from 0.68. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-15] Day 15-16: Trump explicit conditional: will wipe out Kharg oil infra if Hormuz continues. Iran parliament speaker warns new level of retaliation if oil infra hit. Up from 0.68. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
+        "[2026-03-15] Day 15-16: Trump explicit conditional: will wipe out Kharg oil infra if Hormuz continues. Iran parliament speaker warns new level of retaliation if oil infra hit. Up from 0.68. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
+        "[2026-03-15] Day 16: Hormuz still blocked, IRGC claims full control. Trump conditional active. Pressure building."
       ],
       "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
       "time_horizon": "",
@@ -1936,8 +1939,8 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.96,
-      "confidence": 0.9,
+      "probability": 0.98,
+      "confidence": 0.95,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
         "Iran urges UAE residents to stay away from ports",
@@ -1947,7 +1950,8 @@
         "[2026-03-15] Day 15-16: IRGC issued evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). AP confirms Fujairah oil facility fire from intercepted drone debris. Fortune: Iran openly threatens non-US neighbor assets for FIRST TIME. Iranian FM claims US attacked Kharg from UAE territory. Massive escalation in targeting scope. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: IRGC evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). Fujairah oil facility hit by drone debris fire (AP confirmed). First time openly threatening non-US UAE assets. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports (Jebel Ali, Khalifa, Fujairah). Fujairah ALREADY HIT — drone debris fire at oil facility (AP confirmed). Iran FM says US attacked Kharg from Ras Al-Khaimah. Fortune: first time Iran openly threatens non-US neighbor assets. Up from 0.92. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-15] Day 15-16: Iran evacuated 3 UAE ports. Fujairah oil facility hit by drone debris (AP). Iran FM says US attacked from UAE territory. Up from 0.92. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)"
+        "[2026-03-15] Day 15-16: Iran evacuated 3 UAE ports. Fujairah oil facility hit by drone debris (AP). Iran FM says US attacked from UAE territory. Up from 0.92. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
+        "[2026-03-15] Day 16: Gulf states actively intercepting Iranian missiles. UAE de facto in conflict. Fujairah hit."
       ],
       "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
       "time_horizon": "1-2 weeks",
@@ -2098,6 +2102,108 @@
       "reasoning": "31st MEU + USS Tripoli deploying. Tripoli spotted near Taiwan (>1 week from ME). MEU can do amphibious landings but also embassy security/evacuation.",
       "evidence": [
         "[2026-03-14] WSJ first reported. Anonymous US official confirmed. Satellite spotted Tripoli near Taiwan. (Source: WSJ/AP/satellite, Credibility: 0.88)"
+      ]
+    },
+    "israel_interceptor_crisis": {
+      "id": "israel_interceptor_crisis",
+      "label": "以色列弹道导弹拦截弹严重不足(Semafor/US officials)",
+      "domains": [
+        "military"
+      ],
+      "probability": 0.88,
+      "confidence": 0.78,
+      "node_type": "prediction",
+      "reasoning": "Semafor exclusive: Israel informed US running critically low on interceptors. Entered war already low. Iran cluster munitions exacerbating. Israel FM denies. 2.6B shekel emergency budget approved. US says they have enough for own bases.",
+      "evidence": [
+        "[2026-03-14] (Semafor/US officials) Israel critically low on ballistic missile interceptors, told US this week",
+        "[2026-03-15] (Haaretz) Israel FM denies shortage, but 2.6B shekel emergency defense budget approved"
+      ]
+    },
+    "iran_7_salvos_israel": {
+      "id": "iran_7_salvos_israel",
+      "label": "伊朗对以色列发射7轮弹道导弹(含集束弹药)",
+      "domains": [
+        "military"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "node_type": "fact",
+      "reasoning": "Times of Israel: 7 ballistic missile salvos since midnight Mar 15. Targets: Tel Aviv, Petah Tikva, Eilat, Netanya. Cluster munitions confirmed by CNN/IDF. 3 wounded south Tel Aviv. 2 killed in Yehud.",
+      "evidence": [
+        "[2026-03-15] (ToI/Haaretz) 7 ballistic missile salvos at Israel since midnight, cluster munitions, 3 wounded Tel Aviv"
+      ]
+    },
+    "hezbollah_active_front": {
+      "id": "hezbollah_active_front",
+      "label": "真主党开辟第二战线(210+导弹/以色列空袭贝鲁特)",
+      "domains": [
+        "military"
+      ],
+      "probability": 1.0,
+      "confidence": 0.92,
+      "node_type": "fact",
+      "reasoning": "UNIFIL: 210+ Hezbollah missiles into Israel since Mar 2. IDF evacuating Dahiya/south Beirut. Israel striking Beirut, Beqaa Valley, southern Lebanon. 826 Lebanon deaths. Hezbollah leader says ready for long confrontation.",
+      "evidence": [
+        "[2026-03-15] (UNIFIL/IDF/Haaretz) Hezbollah 210+ missiles, IDF strikes Beirut/Beqaa, 826 deaths, Dahiya evacuation"
+      ]
+    },
+    "irgc_attacks_iraq_kuwait": {
+      "id": "irgc_attacks_iraq_kuwait",
+      "label": "IRGC攻击伊拉克和科威特美军基地",
+      "domains": [
+        "military"
+      ],
+      "probability": 1.0,
+      "confidence": 0.85,
+      "node_type": "fact",
+      "reasoning": "IRGC claimed attacks on US bases in Iraq and Kuwait. Erbil refinery halted by drone strike. Baghdad US Embassy hit 2nd time.",
+      "evidence": [
+        "[2026-03-15] (Haaretz/IRGC) Attacks on US bases in Iraq/Kuwait, Erbil refinery halted, Baghdad embassy hit"
+      ]
+    },
+    "mojtaba_death_rumor": {
+      "id": "mojtaba_death_rumor",
+      "label": "Trump声称听说莫杰塔巴已死亡(伊朗否认)",
+      "domains": [
+        "military",
+        "diplomacy"
+      ],
+      "probability": 0.3,
+      "confidence": 0.25,
+      "node_type": "prediction",
+      "reasoning": "Trump: hearing new leader is dead. Iran denies, vows to kill Netanyahu. Very low confidence — Trump has history of unverified claims. Iran FM still active and making statements.",
+      "evidence": [
+        "[2026-03-15] (Sky News) Trump says hearing Mojtaba dead. Iran denies, IRGC vows to kill Netanyahu."
+      ]
+    },
+    "russia_shahed_supply": {
+      "id": "russia_shahed_supply",
+      "label": "俄罗斯向伊朗提供Shahed无人机用于攻击美军",
+      "domains": [
+        "military",
+        "diplomacy"
+      ],
+      "probability": 0.65,
+      "confidence": 0.5,
+      "node_type": "prediction",
+      "reasoning": "Ukraine claims Russia supplying Iran with Shahed drones for attacks on US bases. Warns Russian troops could potentially deploy. Ukraine source has bias but strategic logic is sound.",
+      "evidence": [
+        "[2026-03-15] (Haaretz/Ukraine) Russia supplying Iran Shahed drones, warns of possible troop deployment"
+      ]
+    },
+    "gulf_states_intercepting": {
+      "id": "gulf_states_intercepting",
+      "label": "海湾四国(UAE/卡塔尔/巴林/沙特)拦截伊朗导弹",
+      "domains": [
+        "military",
+        "diplomacy"
+      ],
+      "probability": 1.0,
+      "confidence": 0.85,
+      "node_type": "fact",
+      "reasoning": "UAE, Qatar, Bahrain, Saudi Arabia all reporting intercepts of Iranian missiles/drones. Gulf states now de facto belligerents.",
+      "evidence": [
+        "[2026-03-15] (Haaretz) Gulf states including UAE, Qatar, Bahrain, Saudi Arabia intercepting Iranian missiles/drones"
       ]
     }
   },
@@ -3321,8 +3427,50 @@
       "target": "shipping_insurance_collapse",
       "weight": 0.7,
       "reasoning": "UAE port threats → Gulf shipping risk spike → insurance tightening"
+    },
+    {
+      "source": "israel_interceptor_crisis",
+      "target": "conflict_protracted",
+      "weight": 0.6,
+      "reasoning": "Interceptor shortage creates time pressure for escalation or de-escalation"
+    },
+    {
+      "source": "iran_7_salvos_israel",
+      "target": "israel_interceptor_crisis",
+      "weight": 0.85,
+      "reasoning": "Sustained missile salvos depleting interceptor stocks"
+    },
+    {
+      "source": "hezbollah_active_front",
+      "target": "israel_interceptor_crisis",
+      "weight": 0.7,
+      "reasoning": "Two-front missile threat doubles interceptor consumption"
+    },
+    {
+      "source": "russia_shahed_supply",
+      "target": "iran_retaliation",
+      "weight": 0.5,
+      "reasoning": "Russian drone resupply extends Iran retaliation capability"
+    },
+    {
+      "source": "gulf_states_intercepting",
+      "target": "coalition_forming",
+      "weight": 0.8,
+      "reasoning": "Gulf states de facto belligerents, coalition expanding"
+    },
+    {
+      "source": "irgc_attacks_iraq_kuwait",
+      "target": "us_ground_war",
+      "weight": 0.4,
+      "reasoning": "Attacks on US bases increase pressure for ground response"
+    },
+    {
+      "source": "israel_interceptor_crisis",
+      "target": "kharg_oil_infra_strike",
+      "weight": 0.5,
+      "reasoning": "Interceptor shortage pressures Israel to destroy launch sites at source → escalation"
     }
   ],
-  "last_updated": "2026-03-15T05:15:58.791062+00:00",
+  "last_updated": "2026-03-15T11:17:32.102028+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
