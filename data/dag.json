@@ -2,7 +2,7 @@
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
   "version": 75,
-  "updated": "2026-03-15T05:12:45.416200+00:00",
+  "updated": "2026-03-15T05:15:49.092237+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -150,8 +150,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.65,
-      "confidence": 0.65,
+      "probability": 0.68,
+      "confidence": 0.68,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
@@ -161,7 +161,9 @@
         "[2026-03-14] Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
         "Mar 13-14: Iran barrage hit Shoham/Holon in central Israel",
         "[2026-03-14] (cred:0.77) Day 15: CENTCOM hit missile facilities and mines on Kharg. Further degradation of Iran retaliatory capability. Up from 0.55. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-15] Day 15-16: Israel struck 200+ additional targets in 24h (missile launchers, defense systems, weapons production). Cumulative degradation continues. Up from 0.62. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: Israel struck 200+ additional targets in 24h (missile launchers, defense systems, weapons production). Cumulative degradation continues. Up from 0.62. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-15] Day 15: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
       ],
       "reasoning": "Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
       "time_horizon": "持续",
@@ -212,15 +214,16 @@
         "金融",
         "能源"
       ],
-      "probability": 0.94,
-      "confidence": 0.85,
+      "probability": 0.96,
+      "confidence": 0.88,
       "evidence": [
         "Lloyd's战争险报价数据",
         "多家船东声明暂停波斯湾航线",
         "[2026-03-13] Iraq tanker attacks + Oman strikes + Hormuz continuous (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Active mines in Hormuz = war risk insurance effectively impossible. Confirmed minefield",
         "[2026-03-13 PM] Active mines = no insurance coverage possible",
-        "[2026-03-14] (cred:0.77) Day 15: Kharg strike increases Gulf shipping risk perception. Insurance tightening continues. Up from 0.92. — CENTCOM/NBC/NYT/Goldman/MarketData"
+        "[2026-03-14] (cred:0.77) Day 15: Kharg strike increases Gulf shipping risk perception. Insurance tightening continues. Up from 0.92. — CENTCOM/NBC/NYT/Goldman/MarketData",
+        "[2026-03-15] Day 15: Fujairah port hit (drone debris fire), UAE ports under explicit threat. Gulf shipping risk now extreme. Up from 0.94. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)"
       ],
       "reasoning": "定义: 波斯湾航线战争险费率>总保额的5%(正常<0.05%)，导致商业航运经济上不可行。88%。",
       "time_horizon": "持续至冲突结束",
@@ -387,8 +390,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.96,
-      "confidence": 0.8,
+      "probability": 0.97,
+      "confidence": 0.85,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
@@ -401,7 +404,9 @@
         "Iran threatening Gulf states increases anti-Iran coalition incentive",
         "Iran threat to UAE increases Gulf states motivation to join anti-Iran coalition",
         "[2026-03-14] (cred:0.77) UK Parliament briefing: US authorized to use UK military bases for \"specific and limited defensive purpose.\" — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
-        "[2026-03-15] Day 15-16: Trump called for China/France/Japan/SK/UK to send warships to secure Hormuz. UK discussing range of options with allies. Coalition building accelerating. Up from 0.95. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: Trump called for China/France/Japan/SK/UK to send warships to secure Hormuz. UK discussing range of options with allies. Coalition building accelerating. Up from 0.95. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-15] Day 15: Trump calls for warships from China/France/Japan/SK/UK. UK discussing \"range of options\" with allies. Coalition expanding beyond US-Israel. Up from 0.96. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-15] Day 15-16: Trump calls for warships from China, France, Japan, South Korea, UK to secure Hormuz. UK discussing \"range of options\" with allies. Naval coalition forming. Up from 0.96. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
@@ -614,15 +619,17 @@
         "军事",
         "政治"
       ],
-      "probability": 0.45,
-      "confidence": 0.52,
+      "probability": 0.5,
+      "confidence": 0.55,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
         "Trump: virtually unlimited supply of heavy weaponry",
         "Air campaign preferred",
         "2,500 Marines + USS Tripoli ARG ordered to ME from Taiwan waters",
         "2500 Marines + USS Tripoli ARG ordered to ME",
-        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli deploying to ME from Taiwan area, >1 week out. MEUs are multipurpose (embassy security, evac, amphibious). Deployment does not necessarily indicate ground op but increases capability. Marginal up from 0.42. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli deploying to ME from Taiwan area, >1 week out. MEUs are multipurpose (embassy security, evac, amphibious). Deployment does not necessarily indicate ground op but increases capability. Marginal up from 0.42. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-15] Day 15: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU can do amphibious landings. WSJ + satellite confirmed. But Tripoli >1 week away, deployment doesnt necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU specializes in amphibious landings. Tripoli >1 week away (near Taiwan). Does not necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
       ],
       "reasoning": "定义: 美军地面战斗部队(非特种部队/顾问)进入伊朗领土执行作战任务。32%因Trump明确倾向空袭。",
       "time_horizon": "W8-24",
@@ -845,7 +852,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-15T05:12:45.416063+00:00",
+      "last_updated": "2026-03-15T05:15:49.092098+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -1801,15 +1808,17 @@
         "军事",
         "能源"
       ],
-      "probability": 0.68,
-      "confidence": 0.7,
+      "probability": 0.72,
+      "confidence": 0.75,
       "evidence": [
         "Trump conditional threat: oil infra targeted if Hormuz interference continues",
         "Iranian parliament speaker warned new level of retaliation if Kharg struck",
         "Chatham House: oil price → if oil infra hit",
         "[2026-03-14] (cred:0.77) US struck Kharg military targets. Both sides claim oil infra undamaged — classic symmetric disinformation. Satellite needed. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
         "[2026-03-14] (cred:0.77) Day 15: US demonstrated precision strike capability on Kharg (90+ mil targets), deliberately spared oil infra. Lowers threshold for future oil infra strike. Up from 0.50. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-15] Day 15-16: Trump explicit public conditional: chose NOT to wipe out oil infra, but will reconsider if Hormuz blocked. IRGC responded Hormuz under full Iranian control — direct defiance. Trump also said may hit again just for fun. Conditional trigger now activated and public. Up from 0.58. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: Trump explicit public conditional: chose NOT to wipe out oil infra, but will reconsider if Hormuz blocked. IRGC responded Hormuz under full Iranian control — direct defiance. Trump also said may hit again just for fun. Conditional trigger now activated and public. Up from 0.58. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-15] Day 15: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. \"May hit a few more times just for fun.\" IRGC defiant: Hormuz under full control. Conditional trigger looks increasingly likely. Up from 0.68. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-15] Day 15-16: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. Also \"may hit a few more times just for fun.\" IRGC defiant, Hormuz still blocked. Condition for strike increasingly met. Up from 0.68. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
       ],
       "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
       "time_horizon": "",
@@ -1874,14 +1883,15 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.92,
-      "confidence": 0.88,
+      "probability": 0.96,
+      "confidence": 0.9,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
         "Iran urges UAE residents to stay away from ports",
         "Iran asserts right to strike US missiles in UAE",
         "[2026-03-14] (cred:0.77) Iran threat to Gulf oil infra includes UAE ports and facilities. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
-        "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports is explicit threat. Iranian FM names Ras Al-Khaimah and Dubai as launch points. AP confirms Fujairah hit. Threat now includes civilian port infrastructure, not just US assets in UAE. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports is explicit threat. Iranian FM names Ras Al-Khaimah and Dubai as launch points. AP confirms Fujairah hit. Threat now includes civilian port infrastructure, not just US assets in UAE. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-15] Day 15: Iran FM Araghchi says US attacked from Ras Al-Khaimah and near Dubai. IRGC evacuation warnings for 3 ports. Fujairah already hit. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)"
       ],
       "reasoning": "从口头威胁到具体目标指示(港口)，但实际攻击阿联酋会触发海湾集体反击",
       "time_horizon": "48-72h",
@@ -1923,15 +1933,17 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.92,
-      "confidence": 0.85,
+      "probability": 0.95,
+      "confidence": 0.9,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
         "Iran urges UAE residents to stay away from ports",
         "Iran asserts right to strike US missiles in UAE",
         "[2026-03-14] (cred:0.77) NBC: Iran threatens to strike Gulf oil infrastructure in retaliation for Kharg Island strikes. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
         "[2026-03-14] (cred:0.77) Day 15: Iran specifically threatening Gulf oil facilities (NBC). UAE as largest Gulf exporter is primary target. Up from 0.78. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-15] Day 15-16: IRGC issued evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). AP confirms Fujairah oil facility fire from intercepted drone debris. Fortune: Iran openly threatens non-US neighbor assets for FIRST TIME. Iranian FM claims US attacked Kharg from UAE territory. Massive escalation in targeting scope. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: IRGC issued evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). AP confirms Fujairah oil facility fire from intercepted drone debris. Fortune: Iran openly threatens non-US neighbor assets for FIRST TIME. Iranian FM claims US attacked Kharg from UAE territory. Massive escalation in targeting scope. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-15] Day 15: IRGC evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). Fujairah oil facility hit by drone debris fire (AP confirmed). First time openly threatening non-US UAE assets. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports (Jebel Ali, Khalifa, Fujairah). Fujairah ALREADY HIT — drone debris fire at oil facility (AP confirmed). Iran FM says US attacked Kharg from Ras Al-Khaimah. Fortune: first time Iran openly threatens non-US neighbor assets. Up from 0.92. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
       ],
       "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
       "time_horizon": "1-2 weeks",
@@ -1993,6 +2005,51 @@
       ],
       "reasoning": "Iran implementing selective blockade — allies/neutrals can transit, Western-allied vessels blocked. This creates a two-tier energy market and gives Iran leverage over non-aligned nations.",
       "node_type": "prediction"
+    },
+    "fujairah_port_attack": {
+      "id": "fujairah_port_attack",
+      "label": "Fujairah港口遭伊朗无人机碎片袭击(油设施起火)",
+      "domains": [
+        "military",
+        "energy"
+      ],
+      "probability": 1.0,
+      "confidence": 0.9,
+      "node_type": "fact",
+      "reasoning": "AP confirmed: intercepted drone debris caused fire at Fujairah oil facility. Day 15.",
+      "evidence": [
+        "[2026-03-14] AP images showed fire at Fujairah port oil facility caused by intercepted Iranian drone debris (Source: AP/Fortune, Credibility: 0.9)"
+      ]
+    },
+    "fujairah_oil_hit": {
+      "id": "fujairah_oil_hit",
+      "label": "Fujairah港油田设施遭袭(无人机残骸)",
+      "domains": [
+        "military",
+        "energy"
+      ],
+      "probability": 1.0,
+      "confidence": 0.85,
+      "node_type": "fact",
+      "reasoning": "AP confirmed: intercepted Iranian drone debris caused fire at Fujairah oil facility. Visual evidence.",
+      "evidence": [
+        "[2026-03-15] AP images show fire at Fujairah port oil facility from intercepted drone debris (Source: AP, Credibility: 0.85)"
+      ]
+    },
+    "iran_uae_port_evacuation": {
+      "id": "iran_uae_port_evacuation",
+      "label": "IRGC发布阿联酋三大港口撤离警告",
+      "domains": [
+        "military",
+        "diplomacy"
+      ],
+      "probability": 1.0,
+      "confidence": 0.9,
+      "node_type": "fact",
+      "reasoning": "IRGC issued evacuation warning for Jebel Ali, Khalifa, Fujairah. First time Iran openly threatens non-US neighbor assets.",
+      "evidence": [
+        "[2026-03-15] IRGC warned UAE residents to evacuate ports, docks, and US military shelters (Source: AP/Guardian/Fortune/Al Jazeera, Credibility: 0.9)"
+      ]
     }
   },
   "edges": [
@@ -3155,8 +3212,44 @@
       "target": "china_energy_diplomacy",
       "weight": 0.65,
       "reasoning": "China benefits from selective passage, strengthening energy diplomacy position"
+    },
+    {
+      "source": "iran_gulf_attacks",
+      "target": "fujairah_port_attack",
+      "weight": 0.85,
+      "reasoning": "Iran Gulf attacks → direct hit on Fujairah"
+    },
+    {
+      "source": "fujairah_port_attack",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.8,
+      "reasoning": "Physical damage at UAE port → insurance market panic"
+    },
+    {
+      "source": "fujairah_port_attack",
+      "target": "uae_targeted",
+      "weight": 0.9,
+      "reasoning": "Actual hit on UAE port confirms targeting"
+    },
+    {
+      "source": "iran_uae_port_evacuation",
+      "target": "uae_targeted",
+      "weight": 0.85,
+      "reasoning": "IRGC port evacuation warning → direct escalation of UAE threat"
+    },
+    {
+      "source": "iran_uae_port_evacuation",
+      "target": "fujairah_oil_hit",
+      "weight": 0.9,
+      "reasoning": "Evacuation warning preceded/coincided with Fujairah drone debris fire"
+    },
+    {
+      "source": "fujairah_oil_hit",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.7,
+      "reasoning": "Physical damage to UAE port oil facility → further insurance market tightening"
     }
   ],
-  "last_updated": "2026-03-15T05:12:39.800629+00:00",
+  "last_updated": "2026-03-15T05:15:38.259621+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
