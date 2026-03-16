@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 76,
-  "updated": "2026-03-15T05:16:03.668127+00:00",
+  "version": 77,
+  "updated": "2026-03-16T05:25:16.627681+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -216,7 +216,7 @@
         "金融",
         "能源"
       ],
-      "probability": 0.96,
+      "probability": 0.99,
       "confidence": 0.88,
       "evidence": [
         "Lloyd's战争险报价数据",
@@ -225,7 +225,8 @@
         "[2026-03-13] Active mines in Hormuz = war risk insurance effectively impossible. Confirmed minefield",
         "[2026-03-13 PM] Active mines = no insurance coverage possible",
         "[2026-03-14] (cred:0.77) Day 15: Kharg strike increases Gulf shipping risk perception. Insurance tightening continues. Up from 0.92. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-15] Day 15: Fujairah port hit (drone debris fire), UAE ports under explicit threat. Gulf shipping risk now extreme. Up from 0.94. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)"
+        "[2026-03-15] Day 15: Fujairah port hit (drone debris fire), UAE ports under explicit threat. Gulf shipping risk now extreme. Up from 0.94. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-16] Zero Hormuz traffic confirms complete shipping halt"
       ],
       "reasoning": "定义: 波斯湾航线战争险费率>总保额的5%(正常<0.05%)，导致商业航运经济上不可行。88%。",
       "time_horizon": "持续至冲突结束",
@@ -551,7 +552,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.02,
+      "probability": 0.03,
       "confidence": 0.78,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -569,7 +570,8 @@
         "Kharg oil infra deliberately spared = coercive bargaining space exists",
         "Kharg oil sparing = implicit offer of off-ramp in coercive bargaining",
         "[2026-03-14] (cred:0.77) Day 15: NYT no off-ramp visible. Kharg strike makes ceasefire harder for Iran without losing face. Down from 0.03. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-15] Day 15-16: Mixed signals. Trump says Iran appears ready to deal but terms not right. However Kharg strike + IRGC defiance on Hormuz makes face-saving harder. Net unchanged at 0.02. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
+        "[2026-03-15] Day 15-16: Mixed signals. Trump says Iran appears ready to deal but terms not right. However Kharg strike + IRGC defiance on Hormuz makes face-saving harder. Net unchanged at 0.02. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
+        "[2026-03-16] Iran FM offers safe passage talks - first diplomatic signal"
       ],
       "reasoning": "Iran is becoming MORE defiant, not less. Both backchannel attempts rejected. Ghalibaf explicit: \"we aren't seeking a ceasefire\". Near-zero probability of diplomatic track.",
       "time_horizon": "W4-16",
@@ -587,7 +589,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.995,
+      "probability": 1.0,
       "confidence": 0.92,
       "evidence": [
         "Lebanese Health Ministry: 217 killed, ~800 injured in Israeli bombing",
@@ -603,7 +605,8 @@
         "[2026-03-13] No regime change plan + hardline Mojtaba = locked in (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Reuters: Leaders of Iran, Israel AND US all voiced defiance and vowed to fight on",
         "[2026-03-13 PM] Active mining = blockade persists for months",
-        "Trump Mar 13: war as long as necessary, demands unconditional surrender"
+        "Trump Mar 13: war as long as necessary, demands unconditional surrender",
+        "[2026-03-16] Trump admin: \"weeks or sooner\" but no concrete offramp"
       ],
       "reasoning": "定义: 持续军事行动>60天，且无正式停火协议或实质降级。当前Day7，Trump要求无条件投降，双方承诺锁定。82%反映仍有小概率意外事件(政变/核危机)迫使提前结束。",
       "time_horizon": "W8+",
@@ -856,7 +859,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-15T05:16:03.667966+00:00",
+      "last_updated": "2026-03-16T05:25:16.627457+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -1245,7 +1248,7 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.78,
+      "probability": 0.7,
       "confidence": 0.68,
       "evidence": [
         "美国SPR 3.7亿桶(约60天@6mbpd释放)",
@@ -1255,7 +1258,8 @@
         "[2026-03-09] G7正式讨论联合SPR释放(红队降级:SPR有限+OPEC+增产存疑+缺口>3mbpd)",
         "[2026-03-10] Reuters 3源: Trump考虑放松俄油制裁(+1-2mbpd) + G7能源部长周二继续讨论SPR. 但俄油需国会配合且时间滞后",
         "[2026-03-11] 400M bbl SPR at 2mb/d covers only ~10% of Hormuz throughput gap, but provides psychological market buffer (credibility: 0.9)",
-        "[2026-03-14] Day 14: Trump temporarily lifts sanctions on Russian oil at sea; adds ~0.5-1mbpd alternate supply. But insufficient vs 3mbpd+ Hormuz gap."
+        "[2026-03-14] Day 14: Trump temporarily lifts sanctions on Russian oil at sea; adds ~0.5-1mbpd alternate supply. But insufficient vs 3mbpd+ Hormuz gap.",
+        "[2026-03-16] ToI: 400M SPR vs 430M March reduction - months to offset"
       ],
       "reasoning": "Day 14: Trump temporarily lifts sanctions on Russian oil at sea; adds ~0.5-1mbpd alternate supply. But insufficient vs 3mbpd+ Hormuz gap.",
       "time_horizon": "W1-8",
@@ -1637,7 +1641,7 @@
         "energy",
         "economic"
       ],
-      "probability": 0.96,
+      "probability": 1.0,
       "confidence": 0.88,
       "reasoning": "No longer speculative — IEA extraordinary meeting concluded with unanimous 32-member backing. 400M bbl confirmed. Only execution logistics remain uncertain.",
       "evidence": [
@@ -1646,7 +1650,8 @@
         "CNBC 2026-03-11: IEA 32 countries agreed to release 400M barrels",
         "Euronews 2026-03-11: IEA approves largest-ever oil reserve release",
         "[2026-03-11] IEA confirmed largest-ever 400M bbl SPR release, all 32 member countries agreed (Reuters/CNBC) (credibility: 0.95)",
-        "[2026-03-13] IEA coordinated release confirmed executing (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] IEA coordinated release confirmed executing (P1 extraction from Mar 10-13 news)",
+        "[2026-03-16] IEA confirmed 400M bbl release, largest in history. Asia immediate, US/EU end-March"
       ],
       "node_type": "prediction"
     },
@@ -1939,7 +1944,7 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.98,
+      "probability": 0.99,
       "confidence": 0.95,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
@@ -1951,7 +1956,8 @@
         "[2026-03-15] Day 15: IRGC evacuation warning for 3 UAE ports (Jebel Ali/Khalifa/Fujairah). Fujairah oil facility hit by drone debris fire (AP confirmed). First time openly threatening non-US UAE assets. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports (Jebel Ali, Khalifa, Fujairah). Fujairah ALREADY HIT — drone debris fire at oil facility (AP confirmed). Iran FM says US attacked Kharg from Ras Al-Khaimah. Fortune: first time Iran openly threatens non-US neighbor assets. Up from 0.92. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-15] Day 15-16: Iran evacuated 3 UAE ports. Fujairah oil facility hit by drone debris (AP). Iran FM says US attacked from UAE territory. Up from 0.92. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
-        "[2026-03-15] Day 16: Gulf states actively intercepting Iranian missiles. UAE de facto in conflict. Fujairah hit."
+        "[2026-03-15] Day 16: Gulf states actively intercepting Iranian missiles. UAE de facto in conflict. Fujairah hit.",
+        "[2026-03-16] Dubai airport shutdown after drone strike"
       ],
       "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
       "time_horizon": "1-2 weeks",
@@ -2205,6 +2211,105 @@
       "evidence": [
         "[2026-03-15] (Haaretz) Gulf states including UAE, Qatar, Bahrain, Saudi Arabia intercepting Iranian missiles/drones"
       ]
+    },
+    "hormuz_zero_traffic": {
+      "id": "hormuz_zero_traffic",
+      "label": "霍尔木兹零船运(3月15日)",
+      "node_type": "fact",
+      "domains": [
+        "能源",
+        "航运"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] Windward AIS data: zero vessels transiting, first time since Feb 28",
+        "InvestingLive confirmed",
+        "Normal: 77 ships/day → 2.7/day week 2 → 0"
+      ],
+      "reasoning": "AIS数据客观确认零船运，全球能源走廊完全中断"
+    },
+    "dubai_airport_shutdown": {
+      "id": "dubai_airport_shutdown",
+      "label": "迪拜机场停飞(无人机袭击油罐)",
+      "node_type": "fact",
+      "domains": [
+        "军事",
+        "经济"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] Sky News: Dubai airport flights suspended",
+        "Dubai media office confirmed drone hit fuel tank",
+        "Fire ongoing"
+      ],
+      "reasoning": "迪拜官方确认，机场运营中断"
+    },
+    "trump_demands_nato_hormuz": {
+      "id": "trump_demands_nato_hormuz",
+      "label": "Trump要求7国协助开放霍尔木兹/威胁NATO",
+      "node_type": "fact",
+      "domains": [
+        "政治",
+        "军事"
+      ],
+      "probability": 1.0,
+      "confidence": 0.92,
+      "evidence": [
+        "[2026-03-16] Sky News: Trump demands 7 countries help",
+        "FT interview: threatens NATO \"very bad future\"",
+        "AF1 quotes: \"demanding\" not \"hoping\""
+      ],
+      "reasoning": "Trump从\"希望\"升级到\"要求\"，明确威胁盟国关系"
+    },
+    "us_casualties_13_confirmed": {
+      "id": "us_casualties_13_confirmed",
+      "label": "美军13人阵亡(含伊拉克坠机)",
+      "node_type": "fact",
+      "domains": [
+        "军事"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] Guardian: 13 US service members killed",
+        "Pentagon confirmed Tyler Simmons (28) in Iraq tanker crash",
+        "NPR cost analysis"
+      ],
+      "reasoning": "五角大楼确认，含伊拉克加油机坠毁4人"
+    },
+    "iran_fm_safe_passage_talks": {
+      "id": "iran_fm_safe_passage_talks",
+      "label": "伊朗外长提议安全通道谈判",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "外交"
+      ],
+      "probability": 1.0,
+      "confidence": 0.85,
+      "evidence": [
+        "[2026-03-16] Guardian: Iran FM \"open to countries who want to talk about safe passage\""
+      ],
+      "reasoning": "首次公开表示愿意谈判，但条件模糊"
+    },
+    "macron_iran_call": {
+      "id": "macron_iran_call",
+      "label": "Macron致电伊朗总统要求停止攻击",
+      "node_type": "fact",
+      "domains": [
+        "政治",
+        "外交"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] Sky News: Macron spoke with Pezeshkian",
+        "Demanded \"immediately put an end to unacceptable attacks\"",
+        "Proposed new security framework"
+      ],
+      "reasoning": "Macron官方X帖子确认"
     }
   },
   "edges": [
@@ -3469,6 +3574,48 @@
       "target": "kharg_oil_infra_strike",
       "weight": 0.5,
       "reasoning": "Interceptor shortage pressures Israel to destroy launch sites at source → escalation"
+    },
+    {
+      "source": "hormuz_zero_traffic",
+      "target": "shipping_insurance_collapse",
+      "weight": 0.95,
+      "reasoning": "零船运直接导致保险市场彻底崩溃"
+    },
+    {
+      "source": "hormuz_zero_traffic",
+      "target": "energy_crisis",
+      "weight": 0.9,
+      "reasoning": "全球20%油气通道完全中断"
+    },
+    {
+      "source": "dubai_airport_shutdown",
+      "target": "uae_targeted",
+      "weight": 0.85,
+      "reasoning": "迪拜核心基础设施遭袭"
+    },
+    {
+      "source": "trump_demands_nato_hormuz",
+      "target": "coalition_forming",
+      "weight": 0.6,
+      "reasoning": "施压盟国参与但反应消极"
+    },
+    {
+      "source": "iran_fm_safe_passage_talks",
+      "target": "ceasefire_backchannel",
+      "weight": 0.15,
+      "reasoning": "首个外交信号但意图模糊"
+    },
+    {
+      "source": "us_casualties_13_confirmed",
+      "target": "us_ground_war",
+      "weight": 0.3,
+      "reasoning": "伤亡积累增加国内压力"
+    },
+    {
+      "source": "macron_iran_call",
+      "target": "ceasefire_backchannel",
+      "weight": 0.1,
+      "reasoning": "欧洲外交尝试但无实质进展"
     }
   ],
   "last_updated": "2026-03-15T11:17:32.102028+00:00",
