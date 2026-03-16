@@ -3724,8 +3724,8 @@
     {
       "source": "uk_minesweep_hormuz_plan",
       "target": "active_hormuz_mining",
-      "weight": -0.3,
-      "reasoning": "扫雷能力是解除Hormuz封锁的关键"
+      "weight": 0.1,
+      "reasoning": "扫雷能力可部分缓解Hormuz布雷瓶颈(反向影响用低权重表示)"
     },
     {
       "source": "uk_minesweep_hormuz_plan",
