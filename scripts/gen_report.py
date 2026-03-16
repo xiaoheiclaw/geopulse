@@ -79,11 +79,26 @@ def format_chain(chain, nodes):
     return "\n".join(lines)
 
 
+def _load_graph():
+    """Load graph database if available."""
+    try:
+        sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+        from geopulse.graph_db import GeoPulseGraph
+        g = GeoPulseGraph(str(DATA_DIR))
+        g.load_dag()
+        g.load_events()
+        g.load_history()
+        return g
+    except Exception:
+        return None
+
+
 def gen_report(dag, run):
     nodes = dag["nodes"]
     edges = dag["edges"]
     children, parents = build_adjacency(dag)
     now = datetime.now(timezone.utc)
+    graph = _load_graph()
     
     # Stats
     n_nodes = len(nodes)
@@ -193,6 +208,35 @@ def gen_report(dag, run):
             lines.append(f"- {nid}: {nodes[nid]['label'][:40]}")
         if len(no_evidence) > 10:
             lines.append(f"- ...及其他 {len(no_evidence)-10} 个")
+        lines.append("")
+    
+    # === Section 8: Graph Analysis (from graph_db) ===
+    if graph:
+        lines.append("## 八、图分析")
+        lines.append("")
+        
+        # Bottleneck nodes by betweenness centrality
+        lines.append("### 瓶颈节点 (Betweenness Centrality)")
+        lines.append("")
+        lines.append("| 节点 | 中心性 | 概率 | 入度 | 出度 |")
+        lines.append("|------|--------|------|------|------|")
+        for b in graph.bottleneck_nodes(8):
+            lines.append(f"| {b['label'][:35]} | {b['centrality']:.3f} | {b['probability']:.0%} | {b['in_degree']} | {b['out_degree']} |")
+        lines.append("")
+        
+        # Event coverage by date
+        lines.append("### 事件库覆盖")
+        lines.append("")
+        for day, cnt in graph.event_count_by_date().items():
+            lines.append(f"- {day}: {cnt} 条")
+        lines.append("")
+        
+        # Graph summary
+        s = graph.summary()
+        lines.append(f"### 图统计: {s['nodes']}N / {s['edges']}E / {s['events']} events / {s['event_node_links']} links")
+        lines.append(f"- 密度: {s['density']:.4f}")
+        lines.append(f"- 聚类系数: {s['avg_clustering']:.4f}")
+        lines.append(f"- 弱连通分量: {s['components']}")
         lines.append("")
     
     # === Footer ===

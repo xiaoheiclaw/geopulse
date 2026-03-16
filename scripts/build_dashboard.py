@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build v7.4 dashboard HTML by embedding RunOutput + DAG data."""
+"""Build v7.4 dashboard HTML by embedding RunOutput + DAG data + Graph analysis."""
 import json
 import sys
 from pathlib import Path
@@ -36,10 +36,29 @@ def build(data_dir: str = "data", output: str = "docs/index.html"):
     else:
         signals_json = '{"version":0}'
     
+    # Load graph analysis data
+    graph_json = '{}'
+    try:
+        sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+        from geopulse.graph_db import GeoPulseGraph
+        g = GeoPulseGraph(str(data))
+        g.load_dag()
+        g.load_events()
+        graph_data = {
+            "summary": g.summary(),
+            "bottlenecks": g.bottleneck_nodes(10),
+            "event_counts": g.event_count_by_date(),
+        }
+        graph_json = json.dumps(graph_data, ensure_ascii=False)
+        print(f"Graph analysis: {graph_data['summary']['nodes']}N, {graph_data['summary']['events']} events")
+    except Exception as e:
+        print(f"Graph analysis skipped: {e}")
+    
     # Inject data
     html = html.replace("__DAG_DATA__", dag_json)
     html = html.replace("__RUN_OUTPUT__", run_json)
     html = html.replace("__SIGNALS_DATA__", signals_json)
+    html = html.replace("__GRAPH_DATA__", graph_json)
     
     # Write output
     out_path = Path(output)

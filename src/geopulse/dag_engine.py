@@ -323,7 +323,68 @@ class DAGEngine:
                 if not (e.source == src and e.target == tgt)
             ]
 
+        # Sync to graph database
+        self._sync_to_graph_db(result, events)
+
         return result
+
+    def _sync_to_graph_db(self, dag: DAG, events: list[Event]):
+        """Sync DAG updates and events to the graph database."""
+        try:
+            from .graph_db import GeoPulseGraph
+            import sqlite3
+
+            g = GeoPulseGraph(str(self.data_dir))
+            # Reload graph from the updated DAG object (in-memory)
+            g.G.clear()
+            for nid, node in dag.nodes.items():
+                g.G.add_node(nid, **{
+                    "label": node.label,
+                    "probability": node.probability,
+                    "confidence": node.confidence,
+                    "domains": node.domains,
+                    "evidence": node.evidence,
+                    "reasoning": node.reasoning,
+                })
+            for edge in dag.edges:
+                g.G.add_edge(edge.source, edge.target,
+                             weight=edge.weight, reasoning=edge.reasoning)
+
+            # Insert new events
+            now = datetime.now(timezone.utc).isoformat()
+            with sqlite3.connect(g.db_path) as conn:
+                for ev in events:
+                    conn.execute(
+                        """INSERT INTO events (headline, details, source_url, source_name,
+                           domains, significance, timestamp, logged_at, backfilled)
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0)""",
+                        (
+                            ev.headline[:200] if hasattr(ev, 'headline') else str(ev)[:200],
+                            getattr(ev, 'details', ''),
+                            getattr(ev, 'source_url', ''),
+                            getattr(ev, 'source_name', ''),
+                            json.dumps(ev.domains, ensure_ascii=False),
+                            getattr(ev, 'significance', 3),
+                            now[:10],
+                            now,
+                        ),
+                    )
+
+                # Snapshot node probabilities for time series
+                version = dag.version
+                for nid, node in dag.nodes.items():
+                    conn.execute(
+                        """INSERT OR REPLACE INTO node_history
+                           (node_id, timestamp, probability, confidence, dag_version)
+                           VALUES (?, ?, ?, ?, ?)""",
+                        (nid, now, node.probability, node.confidence, version),
+                    )
+
+            # Re-link new events to nodes
+            g.auto_link_events()
+            print(f"    [graph_db] synced {len(events)} events + {len(dag.nodes)} node snapshots")
+        except Exception as e:
+            print(f"    [graph_db] sync failed (non-fatal): {e}")
 
     @staticmethod
     def _parse_json(text: str) -> dict[str, Any]:
