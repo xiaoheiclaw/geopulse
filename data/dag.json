@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 77,
-  "updated": "2026-03-16T05:25:16.627681+00:00",
+  "version": 78,
+  "updated": "2026-03-16T11:29:57.705163+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -393,7 +393,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.97,
+      "probability": 0.92,
       "confidence": 0.85,
       "evidence": [
         "五角大楼联合声明",
@@ -409,7 +409,8 @@
         "[2026-03-14] (cred:0.77) UK Parliament briefing: US authorized to use UK military bases for \"specific and limited defensive purpose.\" — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
         "[2026-03-15] Day 15-16: Trump called for China/France/Japan/SK/UK to send warships to secure Hormuz. UK discussing range of options with allies. Coalition building accelerating. Up from 0.95. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: Trump calls for warships from China/France/Japan/SK/UK. UK discussing \"range of options\" with allies. Coalition expanding beyond US-Israel. Up from 0.96. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: Trump calls for warships from China, France, Japan, South Korea, UK to secure Hormuz. UK discussing \"range of options\" with allies. Naval coalition forming. Up from 0.96. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)"
+        "[2026-03-15] Day 15-16: Trump calls for warships from China, France, Japan, South Korea, UK to secure Hormuz. UK discussing \"range of options\" with allies. Naval coalition forming. Up from 0.96. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
+        "[2026-03-16] UK concrete plan (minesweep drones), but China tepid. Mixed coalition picture."
       ],
       "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
       "time_horizon": "W1-4",
@@ -552,7 +553,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.03,
+      "probability": 0.04,
       "confidence": 0.78,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -571,7 +572,8 @@
         "Kharg oil sparing = implicit offer of off-ramp in coercive bargaining",
         "[2026-03-14] (cred:0.77) Day 15: NYT no off-ramp visible. Kharg strike makes ceasefire harder for Iran without losing face. Down from 0.03. — CENTCOM/NBC/NYT/Goldman/MarketData",
         "[2026-03-15] Day 15-16: Mixed signals. Trump says Iran appears ready to deal but terms not right. However Kharg strike + IRGC defiance on Hormuz makes face-saving harder. Net unchanged at 0.02. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
-        "[2026-03-16] Iran FM offers safe passage talks - first diplomatic signal"
+        "[2026-03-16] Iran FM offers safe passage talks - first diplomatic signal",
+        "[2026-03-16] Pope demands ceasefire + Iran FM safe passage + Macron call = growing diplomatic pressure but no concrete offramp"
       ],
       "reasoning": "Iran is becoming MORE defiant, not less. Both backchannel attempts rejected. Ghalibaf explicit: \"we aren't seeking a ceasefire\". Near-zero probability of diplomatic track.",
       "time_horizon": "W4-16",
@@ -624,7 +626,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.52,
+      "probability": 0.54,
       "confidence": 0.55,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
@@ -636,7 +638,8 @@
         "[2026-03-15] Day 15: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU can do amphibious landings. WSJ + satellite confirmed. But Tripoli >1 week away, deployment doesnt necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU specializes in amphibious landings. Tripoli >1 week away (near Taiwan). Does not necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-15] Day 15-16: 2500 Marines (31st MEU) + USS Tripoli deploying. MEU has amphibious capability. But Tripoli >1 week away. Deployment doesnt necessarily indicate ground ops. Up from 0.45. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
-        "[2026-03-15] Day 16: IRGC attacking US bases in Iraq/Kuwait. Marines deploying. South Korea considering warships."
+        "[2026-03-15] Day 16: IRGC attacking US bases in Iraq/Kuwait. Marines deploying. South Korea considering warships.",
+        "[2026-03-16] Israel ground op in Lebanon raises multi-front ground war precedent"
       ],
       "reasoning": "定义: 美军地面战斗部队(非特种部队/顾问)进入伊朗领土执行作战任务。32%因Trump明确倾向空袭。",
       "time_horizon": "W8-24",
@@ -859,7 +862,7 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-16T05:25:16.627457+00:00",
+      "last_updated": "2026-03-16T11:29:57.705014+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "iran_internal_crisis": {
@@ -1038,14 +1041,15 @@
         "政治",
         "能源"
       ],
-      "probability": 0.005,
+      "probability": 0.01,
       "confidence": 0.92,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
         "[2026-03-11] Zero ceasefire pathway: Iran defiant, Trump demanded unconditional surrender Mar 6, both sides escalating (credibility: 0.9)",
         "[2026-03-12] Supreme leader's vengeance statement + escalation to 'most intense' operations = deescalation essentially eliminated",
-        "[2026-03-13] All three leaders defiant. New wave strikes on Tehran. Active mining = hard to reverse quickly"
+        "[2026-03-13] All three leaders defiant. New wave strikes on Tehran. Active mining = hard to reverse quickly",
+        "[2026-03-16] Israel opens ground front in Lebanon, Abu Dhabi hit, zero Hormuz traffic - no deescalation signals"
       ],
       "reasoning": "定义: 正式停火协议签署 或 双方军事行动强度下降>50%持续>1周。当前: Trump无条件投降要求使此几乎不可能。10%。",
       "time_horizon": "W12-24+",
@@ -1351,14 +1355,15 @@
         "经济",
         "政治"
       ],
-      "probability": 0.8,
+      "probability": 0.85,
       "confidence": 0.72,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
         "若Brent破$100→汽油$4.8-5.2",
         "精炼利润率扩张加速零售端涨幅",
         "[2026-03-12] Brent re-approaching $100 despite SPR. US retail gasoline lag ~2 weeks. $5/gal threshold approaching",
-        "[2026-03-14] (cred:0.77) Day 15: Brent + confirmed for 2nd day, Goldman + March avg. 2-3 week lag to retail. Up from 0.75. — CENTCOM/NBC/NYT/Goldman/MarketData"
+        "[2026-03-14] (cred:0.77) Day 15: Brent + confirmed for 2nd day, Goldman + March avg. 2-3 week lag to retail. Up from 0.75. — CENTCOM/NBC/NYT/Goldman/MarketData",
+        "[2026-03-16] Brent $103+ in Monday Asian session, sustained above $100"
       ],
       "reasoning": "定义: 美国汽油均价突破$5/加仑(AAA口径)。65%因Brent尚未破百，但传导滞后+精炼瓶颈可能加速。",
       "time_horizon": "W2-8",
@@ -1817,7 +1822,7 @@
         "军事",
         "能源"
       ],
-      "probability": 0.78,
+      "probability": 0.8,
       "confidence": 0.73,
       "evidence": [
         "Trump conditional threat: oil infra targeted if Hormuz interference continues",
@@ -1829,7 +1834,8 @@
         "[2026-03-15] Day 15: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. \"May hit a few more times just for fun.\" IRGC defiant: Hormuz under full control. Conditional trigger looks increasingly likely. Up from 0.68. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: Trump explicit conditional: \"chosen NOT to wipe out Oil Infrastructure... will immediately reconsider\" if Hormuz blockade continues. Also \"may hit a few more times just for fun.\" IRGC defiant, Hormuz still blocked. Condition for strike increasingly met. Up from 0.68. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-15] Day 15-16: Trump explicit conditional: will wipe out Kharg oil infra if Hormuz continues. Iran parliament speaker warns new level of retaliation if oil infra hit. Up from 0.68. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
-        "[2026-03-15] Day 16: Hormuz still blocked, IRGC claims full control. Trump conditional active. Pressure building."
+        "[2026-03-15] Day 16: Hormuz still blocked, IRGC claims full control. Trump conditional active. Pressure building.",
+        "[2026-03-16] Multi-front escalation increases pressure for decisive action on Kharg"
       ],
       "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
       "time_horizon": "",
@@ -1894,7 +1900,7 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.96,
+      "probability": 0.99,
       "confidence": 0.9,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
@@ -1902,7 +1908,8 @@
         "Iran asserts right to strike US missiles in UAE",
         "[2026-03-14] (cred:0.77) Iran threat to Gulf oil infra includes UAE ports and facilities. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
         "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports is explicit threat. Iranian FM names Ras Al-Khaimah and Dubai as launch points. AP confirms Fujairah hit. Threat now includes civilian port infrastructure, not just US assets in UAE. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
-        "[2026-03-15] Day 15: Iran FM Araghchi says US attacked from Ras Al-Khaimah and near Dubai. IRGC evacuation warnings for 3 ports. Fujairah already hit. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)"
+        "[2026-03-15] Day 15: Iran FM Araghchi says US attacked from Ras Al-Khaimah and near Dubai. IRGC evacuation warnings for 3 ports. Fujairah already hit. Up from 0.92. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
+        "[2026-03-16] Abu Dhabi (capital) directly hit, not just Fujairah"
       ],
       "reasoning": "从口头威胁到具体目标指示(港口)，但实际攻击阿联酋会触发海湾集体反击",
       "time_horizon": "48-72h",
@@ -1944,8 +1951,8 @@
         "军事",
         "地缘"
       ],
-      "probability": 0.99,
-      "confidence": 0.95,
+      "probability": 1.0,
+      "confidence": 0.99,
       "evidence": [
         "Iran claims US attacks from UAE ports/docks/hideouts",
         "Iran urges UAE residents to stay away from ports",
@@ -1957,7 +1964,8 @@
         "[2026-03-15] Day 15-16: IRGC evacuation warning for 3 UAE ports (Jebel Ali, Khalifa, Fujairah). Fujairah ALREADY HIT — drone debris fire at oil facility (AP confirmed). Iran FM says US attacked Kharg from Ras Al-Khaimah. Fortune: first time Iran openly threatens non-US neighbor assets. Up from 0.92. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-15] Day 15-16: Iran evacuated 3 UAE ports. Fujairah oil facility hit by drone debris (AP). Iran FM says US attacked from UAE territory. Up from 0.92. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
         "[2026-03-15] Day 16: Gulf states actively intercepting Iranian missiles. UAE de facto in conflict. Fujairah hit.",
-        "[2026-03-16] Dubai airport shutdown after drone strike"
+        "[2026-03-16] Dubai airport shutdown after drone strike",
+        "[2026-03-16] Iranian missile kills Palestinian civilian in Abu Dhabi capital - first missile fatality in UAE capital"
       ],
       "reasoning": "伊朗从口头威胁升级到具体目标指示(港口)，但攻击阿联酋会触发海湾集体反击",
       "time_horizon": "1-2 weeks",
@@ -2310,6 +2318,90 @@
         "Proposed new security framework"
       ],
       "reasoning": "Macron官方X帖子确认"
+    },
+    "abu_dhabi_missile_kill": {
+      "id": "abu_dhabi_missile_kill",
+      "label": "伊朗导弹击中阿布扎比平民车辆(1死)",
+      "node_type": "fact",
+      "domains": [
+        "军事",
+        "地缘"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] Abu Dhabi authorities confirmed missile hit civilian vehicle in Al Bahyah",
+        "The National, Gulf News, IranIntl: Palestinian national killed",
+        "NYT live blog confirmed"
+      ],
+      "reasoning": "阿布扎比官方确认，首次导弹(非无人机残骸)直接击中UAE首都"
+    },
+    "israel_lebanon_ground_op": {
+      "id": "israel_lebanon_ground_op",
+      "label": "以色列地面入侵黎巴嫩南部(Day 17)",
+      "node_type": "fact",
+      "domains": [
+        "军事"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] ABC7/NYT: IDF launched \"limited and targeted\" ground operations in southern Lebanon",
+        "Bloomberg: Israel expanding military presence across southern Lebanon",
+        "NYT: Israeli military \"expanding ground assault\""
+      ],
+      "reasoning": "IDF官方确认从空袭升级为地面行动，开辟陆战战线"
+    },
+    "uk_minesweep_hormuz_plan": {
+      "id": "uk_minesweep_hormuz_plan",
+      "label": "UK计划派扫雷无人机协助开放霍尔木兹",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "外交"
+      ],
+      "probability": 0.75,
+      "confidence": 0.7,
+      "evidence": [
+        "[2026-03-16] Guardian: UK plans minesweeping drones for Hormuz",
+        "Reuters: Starmer \"working with allies on collective plan\"",
+        "AP: UK \"will not be drawn into the wider war\"",
+        "Starmer-Trump phone call on Hormuz confirmed"
+      ],
+      "reasoning": "UK首个具体军事贡献承诺，但明确限定不参战。扫雷无人机是解决布雷瓶颈的关键"
+    },
+    "pope_ceasefire_demand": {
+      "id": "pope_ceasefire_demand",
+      "label": "教皇Leo XIV要求立即停火(最强措辞)",
+      "node_type": "fact",
+      "domains": [
+        "政治",
+        "外交"
+      ],
+      "probability": 1.0,
+      "confidence": 0.95,
+      "evidence": [
+        "[2026-03-16] Reuters/AP/Fox/Vatican News: Pope Leo XIV demands ceasefire",
+        "\"atrocious violence\", directly addressed war leaders"
+      ],
+      "reasoning": "教皇公开点名战争发起者，增加国际停火压力"
+    },
+    "china_tepid_hormuz_response": {
+      "id": "china_tepid_hormuz_response",
+      "label": "中国对Trump霍尔木兹号召反应冷淡",
+      "node_type": "event",
+      "domains": [
+        "政治",
+        "外交"
+      ],
+      "probability": 0.9,
+      "confidence": 0.8,
+      "evidence": [
+        "[2026-03-16] NYT: China and other nations reacted tepidly",
+        "Trump may delay Beijing summit (Mar 31-Apr 2)",
+        "Guardian: \"muted response\" from most countries"
+      ],
+      "reasoning": "中国不愿卷入美方军事行动，但Hormuz关闭直接损害中国利益"
     }
   },
   "edges": [
@@ -3616,6 +3708,48 @@
       "target": "ceasefire_backchannel",
       "weight": 0.1,
       "reasoning": "欧洲外交尝试但无实质进展"
+    },
+    {
+      "source": "abu_dhabi_missile_kill",
+      "target": "uae_targeted",
+      "weight": 0.95,
+      "reasoning": "首次导弹直接击中阿布扎比首都"
+    },
+    {
+      "source": "israel_lebanon_ground_op",
+      "target": "israel_interceptor_crisis",
+      "weight": 0.6,
+      "reasoning": "多线地面战加剧资源消耗"
+    },
+    {
+      "source": "uk_minesweep_hormuz_plan",
+      "target": "active_hormuz_mining",
+      "weight": -0.3,
+      "reasoning": "扫雷能力是解除Hormuz封锁的关键"
+    },
+    {
+      "source": "uk_minesweep_hormuz_plan",
+      "target": "coalition_forming",
+      "weight": 0.6,
+      "reasoning": "UK首个具体军事贡献"
+    },
+    {
+      "source": "china_tepid_hormuz_response",
+      "target": "china_energy_diplomacy",
+      "weight": 0.5,
+      "reasoning": "不参与军事但可能加速独立外交"
+    },
+    {
+      "source": "pope_ceasefire_demand",
+      "target": "ceasefire_backchannel",
+      "weight": 0.05,
+      "reasoning": "国际舆论压力微增"
+    },
+    {
+      "source": "israel_lebanon_ground_op",
+      "target": "conflict_protracted",
+      "weight": 0.8,
+      "reasoning": "开辟新地面战线确保冲突长期化"
     }
   ],
   "last_updated": "2026-03-15T11:17:32.102028+00:00",
