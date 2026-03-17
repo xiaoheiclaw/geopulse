@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "framework": "Schelling focal point detection + physical observables",
+  "last_updated": "2026-03-17T00:04:00Z",
+  "design": "两层观测: 物理层(状态)+ 焦点层(转折)",
+
+  "physical_observables": {
+    "description": "每天必须更新的三个物理量。告诉你'现在什么状态'",
+    "q1_attack_frequency": {
+      "label": "IRGC袭击频率(次/天)",
+      "source": "CENTCOM daily statements + UKMTO",
+      "threshold_q2_start": "<2/day triggers minesweep clock",
+      "threshold_decay": "<1/day for 5 consecutive days = fast decay",
+      "history": [
+        {"date": "2026-03-09", "est": "3-5", "note": "Day 10, still high", "source": "multiple reports"},
+        {"date": "2026-03-12", "est": "2-4", "note": "Day 13, IRGC 'most intense operation'", "source": "CENTCOM"},
+        {"date": "2026-03-13", "est": "3+", "note": "Day 14, IRGC fighters direct engagement", "source": "CENTCOM"},
+        {"date": "2026-03-16", "est": null, "note": "Day 17, TBD", "source": "pending"}
+      ]
+    },
+    "q2_strait_transit": {
+      "label": "海峡日通行量(mbd)",
+      "source": "Vortexa/Kpler AIS (paid) or news estimates",
+      "pre_crisis": "17-20 mbd",
+      "current_est": "<2 mbd",
+      "recovery_thresholds": {
+        "partial": ">8 mbd for 3 days",
+        "full": ">12 mbd for 5 days"
+      },
+      "history": [
+        {"date": "2026-03-12", "est": "<2", "note": "only 2 non-Iran/Russia vessels attempted transit", "source": "Reuters"}
+      ]
+    },
+    "q3_spr_release_rate": {
+      "label": "SPR实际释放速率(mbd)",
+      "source": "DOE weekly report (每周三)",
+      "announced": "400M bbl global, 172M bbl US",
+      "delivery_timeline": "120 days per DOE, first barrels end of W3",
+      "max_physical_rate": "4.4 mbd (US SPR pump limit)",
+      "history": [
+        {"date": "2026-03-11", "announced_total": "400M bbl", "source": "IEA"},
+        {"date": "2026-03-14", "note": "DOE offers 86M bbl sour crude for sale. Asia 108.6M bbl available immediately", "source": "DOE/Rigzone"},
+        {"date": "2026-03-16", "note": "IEA says Asia-Pacific stocks available immediately, Americas/Europe from end of March", "source": "IEA update"}
+      ]
+    }
+  },
+
+  "focal_signals": {
+    "description": "焦点层信号。告诉你'什么时候转'。按优先级排序",
+
+    "fp1_china_action": {
+      "priority": "★★★★★",
+      "label": "中国实质行动(唯一可行聚点注入)",
+      "status": "not_detected",
+      "why": "美伊双边无法自发找到停止点。中国是唯一有经济杠杆(伊朗最大客户)+安理会否决权+双方都不反对的第三方",
+      "observe": [
+        "PLAN海军向海湾方向部署(AIS/卫星)",
+        "习近平/王毅对伊朗提出具体框架(不是'呼吁和平'的空话)",
+        "中国特使任命",
+        "中国对伊朗石油进口实际变化(海关数据/tanker tracking)",
+        "中国与美方的秘密接触泄露"
+      ],
+      "false_alarm_filter": "外交部'呼吁克制'= 噪声。需要看到成本行动(调兵/经济杠杆/特使)",
+      "last_check": "2026-03-16",
+      "findings": null
+    },
+
+    "fp2_us_signal_inconsistency": {
+      "priority": "★★★★☆",
+      "label": "美方信号包内部矛盾(承诺解锁前导)",
+      "status": "watching",
+      "why": "前景理论: Trump承诺弹性>IRGC。解锁更可能从美方开始",
+      "observe": [
+        "修辞仍强硬但军事行动转向护航编队(言行分裂)",
+        "Bessent做市场稳定化 vs Pentagon升级(政府内部分裂)",
+        "任命谈判代表(与'不谈判'矛盾)",
+        "军事优先级从打击转向护航(资源分配信号)",
+        "SPR释放令(高成本行动=不只是说说)"
+      ],
+      "current_assessment": "SPR释放是高成本行动(已发生)。但Kharg打击+'just for fun'同时升级。净方向仍是escalation。矛盾存在但升级方向占优",
+      "last_check": "2026-03-16",
+      "findings": "SPR释放 vs Kharg打击 = 矛盾信号，但打击方主导"
+    },
+
+    "fp3_face_saving_framework": {
+      "priority": "★★★★☆",
+      "label": "面子工程原材料出现",
+      "status": "not_detected",
+      "why": "需要让双方都能宣称'赢了'的框架才能退出",
+      "observe": [
+        "UN安理会决议草案(含具体框架,不是空谈)",
+        "'霍尔木兹自由通行协议'类提案",
+        "'相互克制框架'",
+        "任何'条件换条件'的交易结构出现",
+        "阿曼/卡塔尔宣布促成某种安排"
+      ],
+      "current_assessment": "完全不存在。双方都在升级，无人提出退出框架",
+      "last_check": "2026-03-16",
+      "findings": null
+    },
+
+    "fp4_cost_threshold": {
+      "priority": "★★★☆☆",
+      "label": "成本阈值的物理逼近",
+      "status": "approaching",
+      "why": "成本本身不是信号，成本逼近政治不可承受点才是",
+      "observe": {
+        "us_side": [
+          "国会War Powers投票排期(有没有排期?)",
+          "单次伤亡>50人事件",
+          "汽油$5持续2周后的民调数据",
+          "Pentagon累计成本报告($19B/天→国会反弹)",
+          "美军中东基地被迫撤离/加固"
+        ],
+        "iran_side": [
+          "IRGC攻击类型从导弹退化到只有无人机/快艇(能力阈值)",
+          "德黑兰断水/断电/燃料短缺报道",
+          "伊朗内部抗议规模升级",
+          "IRGC某区域完全停止行动(碎片化到失控)"
+        ]
+      },
+      "current_assessment": "美方: 7人阵亡(远未到阈值), $11.3B/6天(在涨但国会还没反弹), 汽油接近$5但未持续2周。伊朗方: 导弹频率确认下降但仍在用，1255+死亡，70万流离失所",
+      "last_check": "2026-03-16",
+      "findings": "两方都在接近但未到达不可承受点"
+    }
+  },
+
+  "noise_filter": {
+    "rule": "按行为类型分类,不按人物分类",
+    "noise": [
+      "Trump推文/社交媒体(言辞)",
+      "IRGC官方声明(言辞)",
+      "巴盖伊等发言人声明(言辞)",
+      "媒体'消息人士'报道(未验证)",
+      "分析师价格预测(意见)"
+    ],
+    "signal": [
+      "Trump签署行政令/军事命令(行动)",
+      "美军实际调兵/部署变化(行动)",
+      "IRGC实际攻击模式变化(行动)",
+      "SPR实际释放/停止(行动)",
+      "中国实际经济/军事动作(行动)"
+    ],
+    "key_distinction": "同一个人的言辞=噪声,行动=信号。Trump说'just for fun'=噪声。Trump命令打Kharg=信号。"
+  },
+
+  "pipeline_daily_checklist": [
+    "1. 物理层: 更新Q1(袭击频率) + Q2(通行量) + Q3(SPR释放)",
+    "2. 焦点层: 扫描fp1(中国动作) + fp2(美方矛盾) + fp3(退出框架) + fp4(成本阈值)",
+    "3. 噪声过滤: 新闻分类为action vs rhetoric",
+    "4. 结构性验证: 跑structural_verify检查盲区+停滞+链断裂",
+    "5. DAG更新: 只有物理层变化或焦点层信号触发才更新概率"
+  ]
+}
