@@ -146,8 +146,16 @@ class DAGEngine:
         if not events:
             return dag
 
-        # Determine which domains are touched by these events
-        active_domains = self._active_domains(events, dag)
+        # v3.1: classify events as action vs rhetoric before processing
+        actions, rhetoric = self._classify_events(events)
+        print(f"  Event filter: {len(actions)} actions, {len(rhetoric)} rhetoric (skipped)")
+
+        if not actions:
+            print("  No action events to process, skipping DAG update")
+            return dag
+
+        # Determine which domains are touched by action events only
+        active_domains = self._active_domains(actions, dag)
         print(f"  Active domains: {', '.join(active_domains)}")
 
         result = dag.model_copy(deep=True)
@@ -186,6 +194,97 @@ class DAGEngine:
         if not touched:
             return ALL_DOMAINS
         return [d for d in ALL_DOMAINS if d in touched]
+
+    def _classify_events(self, events: list[Event]) -> tuple[list[Event], list[Event]]:
+        """Classify events as action (→ DAG update) vs rhetoric (→ log only).
+        
+        v3.1 noise filter: words vs actions, not person-based.
+        Uses LLM for semantic classification since keyword matching can't
+        distinguish "Trump orders strike" from "Trump warns of strike".
+        """
+        if len(events) <= 3:
+            # Small batch: classify inline with a quick LLM call
+            return self._classify_events_llm(events)
+        
+        # Large batch: use heuristic pre-filter then LLM for ambiguous cases
+        actions: list[Event] = []
+        rhetoric: list[Event] = []
+        ambiguous: list[Event] = []
+        
+        # Strong action indicators (high precision)
+        action_patterns = [
+            "struck", "bombed", "launched", "deployed", "ordered",
+            "signed", "released", "intercepted", "killed", "seized",
+            "sank", "shot down", "invaded", "blockaded", "mined",
+            "confirmed", "collapsed", "surged past", "breached",
+            "hit $", "fell below", "evacuated", "closed",
+            "strikes", "shoots down", "releases", "surges past",
+            "rose to", "dropped to", "climbed to", "plunged",
+            "broke through", "topped", "crashed",
+        ]
+        # Strong rhetoric indicators (high precision)
+        rhetoric_patterns = [
+            "says", "warns", "threatens", "vows", "calls for",
+            "predicts", "forecasts", "analysts say", "sources say",
+            "could", "may", "might", "considering", "mulling",
+            "urges", "demands", "condemns", "slams", "blasts",
+            "opinion", "editorial", "analysis:",
+        ]
+        
+        for ev in events:
+            text = (getattr(ev, 'headline', '') or str(ev)).lower()
+            
+            action_score = sum(1 for p in action_patterns if p in text)
+            rhetoric_score = sum(1 for p in rhetoric_patterns if p in text)
+            
+            if action_score > 0 and rhetoric_score == 0:
+                actions.append(ev)
+            elif rhetoric_score > 0 and action_score == 0:
+                rhetoric.append(ev)
+            else:
+                ambiguous.append(ev)
+        
+        # Classify ambiguous events with LLM if any
+        if ambiguous:
+            llm_actions, llm_rhetoric = self._classify_events_llm(ambiguous)
+            actions.extend(llm_actions)
+            rhetoric.extend(llm_rhetoric)
+        
+        return actions, rhetoric
+
+    def _classify_events_llm(self, events: list[Event]) -> tuple[list[Event], list[Event]]:
+        """Use LLM to classify events as action vs rhetoric."""
+        try:
+            headlines = []
+            for i, ev in enumerate(events):
+                h = getattr(ev, 'headline', None) or str(ev)
+                headlines.append(f"{i}: {h[:120]}")
+            
+            prompt = (
+                "对以下新闻事件分类。输出JSON: {\"actions\": [序号], \"rhetoric\": [序号]}\n"
+                "分类规则:\n"
+                "- action: 实际发生的事(打击/部署/签署/释放/价格变动/人员伤亡/设施损毁)\n"
+                "- rhetoric: 言辞/声明/威胁/预测/分析/呼吁(未转化为行动)\n"
+                "- 同一事件含action就算action\n\n"
+                + "\n".join(headlines)
+            )
+            
+            resp = self.client.messages.create(
+                model=self.model,
+                max_tokens=1024,
+                temperature=0,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            text = "".join(b.text for b in resp.content if hasattr(b, "text"))
+            result = self._parse_json(text)
+            
+            action_ids = set(result.get("actions", []))
+            actions = [events[i] for i in range(len(events)) if i in action_ids]
+            rhetoric = [events[i] for i in range(len(events)) if i not in action_ids]
+            return actions, rhetoric
+        except Exception as e:
+            print(f"    [classify] LLM failed ({e}), treating all as actions")
+            return events, []
 
     def _compact_dag_json(self, dag: DAG) -> str:
         """Return an ultra-compact JSON representation of the DAG for smaller prompts."""
