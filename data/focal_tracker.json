@@ -1,7 +1,7 @@
 {
   "version": 1,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-17T15:24:00Z",
+  "last_updated": "2026-03-17T19:22:00Z",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折)",
 
   "physical_observables": {
@@ -17,7 +17,8 @@
         {"date": "2026-03-13", "est": "3+", "note": "Day 14, IRGC fighters direct engagement", "source": "CENTCOM"},
         {"date": "2026-03-16", "est": null, "note": "Day 17, TBD", "source": "pending"},
         {"date": "2026-03-17", "est": "2-4", "note": "Day 18. US struck 5000+ targets total. Kharg Island precision strike (Mar 14) destroyed 90+ targets. Iran navy 'crushed' per CENTCOM. 20+ weapons systems deployed. IRGC still active but degraded capacity. US casualties 13 total (7 by enemy fire, 6 in Kuwait drone strike). Amnesty reports unlawful school strike killing 100+ children (Mar 17). AJE live tracker: 1,444 dead Iran (state media), 2,000+ cross-region.", "source": "CENTCOM/AJE/Reuters/Amnesty/Time"},
-        {"date": "2026-03-17T23", "est": "2-3+proxy", "note": "Day 18 late. Attack pattern QUALITATIVE SHIFT: (1) Iran fired Sejjil ballistic missile at Israel (first time in war — new weapon system); (2) Iraqi militia drones+rockets hit US embassy Baghdad + luxury hotel in Green Zone + Iraqi oil field; (3) ISW: 'Iranian-backed Iraqi militias continue to attack US forces and interests in Iraq'; (4) CENTCOM confirmed 20+ weapon systems across air/sea/land. Pattern: IRGC direct attacks declining in frequency but PROXY attacks escalating (Iraq militia) + STRATEGIC weapons (Sejjil BM) being deployed. Degraded but adapting, not collapsing.", "source": "ISW/Reuters/CNN/NPR/Wikipedia"}
+        {"date": "2026-03-17T23", "est": "2-3+proxy", "note": "Day 18 late. Attack pattern QUALITATIVE SHIFT: (1) Iran fired Sejjil ballistic missile at Israel (first time in war — new weapon system); (2) Iraqi militia drones+rockets hit US embassy Baghdad + luxury hotel in Green Zone + Iraqi oil field; (3) ISW: 'Iranian-backed Iraqi militias continue to attack US forces and interests in Iraq'; (4) CENTCOM confirmed 20+ weapon systems across air/sea/land. Pattern: IRGC direct attacks declining in frequency but PROXY attacks escalating (Iraq militia) + STRATEGIC weapons (Sejjil BM) being deployed. Degraded but adapting, not collapsing.", "source": "ISW/Reuters/CNN/NPR/Wikipedia"},
+        {"date": "2026-03-18", "est": "1-2 direct + proxy", "note": "Day 19. ★ KEY: ISW Mar 16 report confirms 'Iran has not attacked any vessels in the Strait of Hormuz since March 12' — 5+ days without vessel attacks. US F/A-18 engaging targets at extremely low altitude in Chabahar suggests US local air dominance along coast segments. CENTCOM struck multiple Iranian air defense systems (Mar 16 footage). Larijani (SNSC sec-gen) + Basij commander Gholamreza Soleimani killed by Israel. Mojtaba inner circle now dominated by hardline IRGC commanders (Taeb, Vahidi, Jafari, Ghalibaf, Rezaei per NYT). Regime restricting internet further (Starlink crackdown, VPN reduction). IRGC direct vessel attack frequency at war low BUT proxy attacks via Iraq militia continue. Hezbollah planning major rocket fire at Israel per IDF. Pattern: IRGC maritime capability significantly degraded, shifting to proxy + strategic weapons.", "source": "ISW Mar 16/NYT/Guardian/AJE/TimesOfIsrael"}
       ]
     },
     "q2_strait_transit": {
@@ -32,7 +33,8 @@
       "history": [
         {"date": "2026-03-12", "est": "<2", "note": "only 2 non-Iran/Russia vessels attempted transit", "source": "Reuters"},
         {"date": "2026-03-17", "est": "<2", "note": "Day 18. 1000+ cargo ships blocked. 150+ tankers anchored outside. Shadow fleet makes half of transits. Iran says open to all except US/allies. 16 tankers attacked since war started. Trump calls for naval coalition - Japan/Australia refuse, France considering 'purely defensive' escort. US Navy tells shipping: escorts 'not possible for now' (directly contradicts Trump). No allied warships committed.", "source": "Guardian/USNI/Reuters/CNN/CNBC/AJE"},
-        {"date": "2026-03-17T23", "est": "<2", "note": "Day 18 late. No change. Energy Sec Chris Wright confirmed: 'We're simply not ready' for escort operations. CNN analysis calls strait a 'death valley'. Tanker traffic still ~70% below pre-crisis. Key constraint: 5000+ Iranian mines in strait + degraded US minesweep capability. Escorts estimated end-of-March at earliest. Iraq oil field also attacked by militia drones — supply disruption expanding beyond strait.", "source": "Guardian/CNN/USNI/Wikipedia"}
+        {"date": "2026-03-17T23", "est": "<2", "note": "Day 18 late. No change. Energy Sec Chris Wright confirmed: 'We're simply not ready' for escort operations. CNN analysis calls strait a 'death valley'. Tanker traffic still ~70% below pre-crisis. Key constraint: 5000+ Iranian mines in strait + degraded US minesweep capability. Escorts estimated end-of-March at earliest. Iraq oil field also attacked by militia drones — supply disruption expanding beyond strait.", "source": "Guardian/CNN/USNI/Wikipedia"},
+        {"date": "2026-03-18", "est": "<2", "note": "Day 19. No material change. Iran has not attacked vessels since Mar 12 (ISW confirmed), BUT mines remain + insurance paralyzed + no escort capability. Bessent says US allowing Iranian tankers through. Shadow fleet still half of transits (Bloomberg). 1000+ cargo ships still blocked. US Navy refuses daily escort requests from shipping industry (Reuters). Key: the 5-day vessel attack lull does NOT equal reopening — mines + insurance + escort gap = structural blockade persists regardless of attack frequency. CNBC: allies (Japan/Australia) refuse to send warships; France considering 'purely defensive' option only.", "source": "ISW/Reuters/CNBC/Bloomberg/Guardian"}
       ]
     },
     "q3_spr_release_rate": {
@@ -46,7 +48,8 @@
         {"date": "2026-03-14", "note": "DOE offers 86M bbl sour crude for sale. Asia 108.6M bbl available immediately", "source": "DOE/Rigzone"},
         {"date": "2026-03-16", "note": "IEA says Asia-Pacific stocks available immediately, Americas/Europe from end of March", "source": "IEA update"},
         {"date": "2026-03-17", "note": "US SPR 172M bbl announced. DOE arranged 200M bbl replacement within year (20% more than drawdown). Max pump rate 4.4 mbd. SPR release officially began Mar 16 (FinancialContent). First physical barrels expected ~Mar 21. No delivery confirmation yet. Asia-Pacific reserves available immediately per IEA.", "source": "Politico/Bloomberg/Reuters/FinancialContent"},
-        {"date": "2026-03-17T23", "note": "No new data on physical delivery. SPR release D+1 (began Mar 16). CNBC analysis: 400M bbl global release = historic but crude prices still climbing (Brent $103+) because physical delivery takes weeks and market sees strait blockade as potentially longer-lasting. Key metric to watch: DOE Wednesday weekly report (Mar 19) for first drawdown numbers.", "source": "CNBC/Reuters"}
+        {"date": "2026-03-17T23", "note": "No new data on physical delivery. SPR release D+1 (began Mar 16). CNBC analysis: 400M bbl global release = historic but crude prices still climbing (Brent $103+) because physical delivery takes weeks and market sees strait blockade as potentially longer-lasting. Key metric to watch: DOE Wednesday weekly report (Mar 19) for first drawdown numbers.", "source": "CNBC/Reuters"},
+        {"date": "2026-03-18", "note": "SPR release D+2. Still no physical delivery confirmation. First barrels expected ~Mar 21. DOE Wed report (Mar 19) will show first drawdown data. NPR confirms gas up 80¢/month from pre-war, diesel near $5/gal (+$1.34/month). Brent $103/bbl despite 400M bbl release = market pricing in prolonged blockade. Market verdict: SPR release = necessary but insufficient if strait stays closed. Physical rate matters more than announced volume.", "source": "NPR/CNBC/Fortune"}
       ]
     }
   },
@@ -67,8 +70,8 @@
         "中国与美方的秘密接触泄露"
       ],
       "false_alarm_filter": "外交部'呼吁克制'= 噪声。需要看到成本行动(调兵/经济杠杆/特使)",
-      "last_check": "2026-03-17T15:24Z",
-      "findings": "★ 重大升级: (1) 中国中东特使已在区域巡回斡旋(MFA 3/11确认,3/16新闻发布会再确认); (2) 中国与伊朗就允许油轮通过海峡进行谈判(Guardian 3/15); (3) 中国与沙特/阿联酋高层会谈区域安全(3月); (4) 正在撤侨; (5) 分析指出中国有balanced relations+经济杠杆优势(WeeklyBlitz/ModernDiplomacy); (6) 翟隽特使3/8会见沙特外交大臣(ModernDiplomacy确认); (7) 中国UN代表明确: '反对伊朗攻击海湾阿拉伯国家'(People's Daily 3/12) — 罕见公开与伊朗划线; (8) ForeignPolicy分析: 北京有调解潜力但受限于美方拒绝谈判。特使巡回+油轮通行谈判+公开与伊朗划线=持续成本行动。但美方拒绝谈判(Reuters 3/14)限制了中国推动框架的空间。"
+      "last_check": "2026-03-18T03:22+08",
+      "findings": "★ 持续成本行动但窗口受限: (1) 翟隽特使仍在区域巡回斡旋(MFA 3/11+3/16确认); (2) 中国与伊朗就油轮通行谈判中(Guardian 3/15); (3) 中国UN代表明确'反对伊朗攻击海湾阿拉伯国家'(People's Daily 3/12); (4) Wikipedia/情报评估: 北京准备提供金融援助+导弹组件,但避免公开军事介入以保护油轮通道; (5) Oman外长(首席调解人)称核谈判在战前已接近达成; (6) 约束: 美方明确拒绝谈判(Reuters 3/14) + Larijani被杀减少伊方谈判人选 + Mojtaba内圈全是强硬IRGC将领(NYT 3/16) + Trump威胁NATO并称'不需要帮助'(3/17)。中国调解空间进一步收窄。特使巡回=持续但受限。"
     },
 
     "fp2_us_signal_inconsistency": {
@@ -83,9 +86,9 @@
         "军事优先级从打击转向护航(资源分配信号)",
         "SPR释放令(高成本行动=不只是说说)"
       ],
-      "current_assessment": "★★★★ 3/17晚间 — 从'矛盾'到'决裂': (1) Joe Kent辞职(NYT/Politico/Axios确认) — NCTC主任, 首位因战争辞职的Trump高官。辞职信明确: 'Iran posed no imminent threat', 'we started this war due to pressure from Israel and its powerful American lobby'。Gold Star丈夫,MAGA核心人物。这不是民主党反对派,是Trump阵营内部公开叛逃。(2) 四条裂缝并行: 经济(Brent $103+/gas $3.60+) + 军事(Navy无法护航) + 外交(Japan/Australia拒绝加入联盟) + 政治(Kent辞职+War Powers 60天倒计时)。(3) War Powers 60天窗口从3/1起算→4/30到期。Kent辞职改变国会环境: 原本4票差距,现在MAGA反战声音合法化。(4) 同时Israel疯狂升级: 击杀Larijani+Basij指挥官, 地面入侵黎巴嫩, 同步空袭德黑兰/贝鲁特 — 美方信号更加混乱,以色列升级与美方内部裂缝同步发生。",
-      "last_check": "2026-03-17T15:24Z",
-      "findings": "P0: Joe Kent辞职 = 首位Trump政府高官因战争辞职。辞职信直接点名以色列游说集团。fp2从'watching'正式升级为'FRACTURING'。政治成本显性化。同时美国驻巴格达使馆遭无人机+火箭弹袭击(Reuters 3/17) — 伊拉克战场开辟进一步暴露美方战线过长。"
+      "current_assessment": "★★★★★ 3/18 — 从'FRACTURING'升级为'EXIT SIGNALING': (1) Trump 3/17公开声明: 'We're not ready to leave Iran yet, but we will in very near future' — 首次明确设定退出时间表(模糊但公开); (2) 同时威胁NATO盟友: 称不帮助Hormuz护航是'foolish mistake', 暗示重新考虑NATO成员身份 — 甩锅准备; (3) 声称'we don't need any help' — 与Energy Sec 'we're simply not ready'直接矛盾; (4) 声称已'wiped out Iran's military, navy and air force' — 构建'胜利叙事'退出框架; (5) Joe Kent辞职余波继续 — 首位MAGA高官因战争叛逃; (6) Navy仍拒绝每日护航请求(Reuters); (7) 推迟访华行程(Indian Express)。五条裂缝并行: 经济(Brent $103/gas +80¢) + 军事(无法护航) + 外交(盟友拒绝) + 政治(Kent辞职+War Powers) + 叙事('胜利宣言'退出准备)。关键判断: Trump的'very near future'不是修辞噪声 — 配合'wiped out military'胜利叙事+甩锅盟友框架,这是构建退出斜坡的行动信号。",
+      "last_check": "2026-03-18T03:22+08",
+      "findings": "P0升级: Trump首次公开承认退出时间表('very near future') + 构建胜利叙事 + 甩锅盟友 = EXIT SIGNALING三件套。fp2从FRACTURING升级为EXIT_SIGNALING。这不是要谈判,是要单边宣布胜利退出。"
     },
 
     "fp3_face_saving_framework": {
@@ -100,9 +103,9 @@
         "任何'条件换条件'的交易结构出现",
         "阿曼/卡塔尔宣布促成某种安排"
       ],
-      "current_assessment": "退出框架仍不存在，且窗口进一步收窄: (1) Larijani被以色列击杀(NYT/AJE/CNN/NBC 3/17确认 — Israel claims, Iran未确认也未否认) — 他是SNSC秘书长,伊朗最高安全官员之一,前议长,相对务实派,曾是潜在谈判对象。如确认,谈判方阵又少一人; (2) Basij指挥官Gholamreza Soleimani同时被杀; (3) 伊朗权力结构: Mojtaba(未经检验)+IRGC军方 — WaPo: US情报评估'weakened but more hard-line government, backed by IRGC'; (4) Trump明确拒绝谈判: 'terms aren't good enough yet'(NBC 3/14), Reuters独家: Trump政府'rebuffed efforts by Middle Eastern allies to start diplomatic negotiations'(3/14); (5) UN安理会: 通过巴林主导决议谴责伊朗,但驳回俄罗斯停火提案 — 安理会被用于施压而非调解; (6) 中国特使仍在巡回，但现在面对更混乱的伊朗+明确拒绝谈判的美方。退出通道几乎关闭。LA Times分析: 'Trump is searching for an endgame' — 但没有找到。",
-      "last_check": "2026-03-17T15:24Z",
-      "findings": "Larijani被杀(Israel claims)=伊朗谈判方再损失一人。Trump明确拒绝中东盟友的斡旋(Reuters 3/14)。UN安理会被用于施压而非停火。退出框架仍为not_detected但窗口在加速关闭。"
+      "current_assessment": "退出框架从'不存在'转为'单边构建中': (1) ISW Mar 14+15双重确认: 'Neither US nor Iranian officials currently appear to be seeking a ceasefire' — 双边谈判通道关闭; (2) Larijani被杀(Israel claims 3/17) — 伊朗最高安全官员之一, 前议长, 相对务实派, 潜在谈判对象已消失; (3) Basij指挥官Gholamreza Soleimani同时被杀; (4) Mojtaba内圈NYT确认: Taeb+Vahidi+Jafari+Ghalibaf+Rezaei = 全为强硬IRGC将领, 无务实派; (5) 但Trump 'very near future'退出声明 + '胜利叙事' = 美方不寻求协商退出, 而是构建单边'宣布胜利'退出; (6) UN安理会通过谴责伊朗决议但驳回俄罗斯停火提案; (7) 阿曼/埃及斡旋被拒(Reuters 3/14)。关键判断: fp3本预期的'面子工程框架'可能被fp2的'单边胜利宣言'替代 — Trump不需要双边框架,只需要足够的军事战果来宣布'我们赢了'然后撤。",
+      "last_check": "2026-03-18T03:22+08",
+      "findings": "框架转型: 双边停火框架仍为not_detected, 但Trump正构建单边退出叙事。fp3可能被fp2 EXIT_SIGNALING短路 — 美方不需要协商退出,只需要'胜利宣言'。Larijani被杀关闭了伊方最后的温和通道。"
     },
 
     "fp4_cost_threshold": {
@@ -125,9 +128,9 @@
           "IRGC某区域完全停止行动(碎片化到失控)"
         ]
       },
-      "current_assessment": "3/17晚间 — 双方成本加速逼近阈值: 【美方】(1) Joe Kent辞职=首位高官公开叛逃,政治成本显性化; (2) War Powers 60天倒计时(3/1起→4/30到期), Kent辞职合法化MAGA反战声音→国会约束概率↑; (3) US驻巴格达使馆遭无人机+火箭弹袭击(Reuters 3/17) — 伊拉克战线开辟→美军伤亡风险↑; (4) Gas全国均价$3.58-3.63(AAA/Investopedia), CA局部$5.29(NPR), 月涨65¢; (5) Amnesty发布学校轰炸报告(100+儿童死亡) — 国际舆论成本; (6) S&P 6699(-0.4% from pre-war highs), Brent $103+。【伊朗方】(1) Larijani(SNSC秘书长)+Basij指挥官被杀=领导层又遭重创; (2) WaPo: US情报评估'weakened but more hard-line government backed by IRGC' — 政权不会崩溃但会更极端; (3) IRGC部署Sejjil弹道导弹首次攻以(ISW 3/15) — 升级而非屈服; (4) 伊朗代理人(伊拉克militia)开辟新战线(巴格达使馆/油田) — 碎片化扩散。两方成本曲线斜率陡增: 美方→政治裂缝加速; 伊朗→军事损失加速但触发更极端反应而非投降。",
-      "last_check": "2026-03-17T15:24Z",
-      "findings": "P0: Kent辞职+使馆遇袭=美政治成本+军事成本同步升级。Larijani+Basij指挥官被杀=伊朗领导层真空加深但触发更极端化(WaPo)。Gas涨至$3.60+。双方成本曲线斜率增加但方向相反: 美方→内部分裂; 伊朗→外部极端化。金价逼近$5000(避险)。"
+      "current_assessment": "3/18 — 双方成本进入非线性区间: 【美方】(1) Trump首次公开退出时间表('very near future') = 政治成本已越过公开承认阈值; (2) Kent辞职余波 — MAGA反战声音合法化, War Powers 60天4/30到期; (3) Gas +80¢/月(NPR), diesel $5/gal(+$1.34/月), CA局部$5.29; (4) Amnesty学校轰炸报告(100+儿童) — 国际舆论成本; (5) 推迟访华行程 — 外交资源被战争吞噬; (6) 盟友全部拒绝: Japan/Australia/NATO拒绝Hormuz护航, 法国仅考虑'purely defensive'; (7) S&P 6699, Brent $103, Gold $5017 — 避险资产飙升; (8) Reuters: 油价上涨'imperil Trump's Republican majority in Congress'(3/10)。【伊朗方】(1) Larijani+Basij指挥官被杀 = 又一轮斩首; (2) Mojtaba内圈全为IRGC强硬派(NYT) = 政权极端化而非崩溃; (3) IRGC海上攻击5天静默(ISW) BUT Sejjil BM部署+伊拉克代理人开辟新战线 = 碎片化扩散; (4) 互联网进一步封锁(Starlink打击+VPN减少) = 内部管控加剧; (5) 'IRGC将战争视为团结国家+转移经济问题的工具'(Iran Wire引IRGC官员对Pezeshkian总统发言) = 战争对政权有内部功能性价值。关键: 美方成本已越过公开承认阈值(Trump退出声明); 伊方成本虽大但政权反而利用战争强化控制。不对称成本结构 = 美方更可能先动。",
+      "last_check": "2026-03-18T03:22+08",
+      "findings": "P0: 成本非线性区间。美方: Trump退出声明+盟友全拒+gas飙升+Kent辞职 = 政治成本越过可承受线。伊方: 斩首不断但政权用战争强化控制+碎片化扩散(代理人新战线)。不对称: 民主体制对成本更敏感→美方先动概率↑。Gold $5017 = 市场用脚投票避险。"
     }
   },
 
