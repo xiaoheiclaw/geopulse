@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 78,
-  "updated": "2026-03-16T11:29:57.705163+00:00",
+  "version": 79,
+  "updated": "2026-03-17T11:27:49.314297+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -393,8 +393,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.92,
-      "confidence": 0.85,
+      "probability": 0.75,
+      "confidence": 0.8,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
@@ -410,14 +410,15 @@
         "[2026-03-15] Day 15-16: Trump called for China/France/Japan/SK/UK to send warships to secure Hormuz. UK discussing range of options with allies. Coalition building accelerating. Up from 0.95. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-15] Day 15: Trump calls for warships from China/France/Japan/SK/UK. UK discussing \"range of options\" with allies. Coalition expanding beyond US-Israel. Up from 0.96. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: Trump calls for warships from China, France, Japan, South Korea, UK to secure Hormuz. UK discussing \"range of options\" with allies. Naval coalition forming. Up from 0.96. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-16] UK concrete plan (minesweep drones), but China tepid. Mixed coalition picture."
+        "[2026-03-16] UK concrete plan (minesweep drones), but China tepid. Mixed coalition picture.",
+        "[2026-03-17] Japan/Australia refused warship deployment. France only considering purely defensive escort. Trump upset at allied rebuff (Reuters). Distinguish: political coalition (UNSC 80+ sponsors) intact, but military coalition for Hormuz escort not materializing."
       ],
-      "reasoning": "定义: ≥4个国家加入美主导的对伊军事联盟或提供后勤/情报支持。68%反映意愿联盟vs实际参战的差距。",
+      "reasoning": "Political coalition strong (UNSC resolution), but military coalition for Hormuz escort failed to form. Allies want no part of escort missions. Revised down from 0.92.",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T10:53:35.598778+00:00",
+      "last_updated": "2026-03-17T11:27:49.314297+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "secondary_sanctions": {
@@ -779,8 +780,8 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.68,
-      "confidence": 0.7,
+      "probability": 0.92,
+      "confidence": 0.9,
       "evidence": [
         "Gold -1% to ,080",
         "Gold futures ,098",
@@ -789,14 +790,15 @@
         "Signal monitor: Gold $5,183.90, DXY 99.25",
         "10Y yield rising to 4.21% despite war risk (stagflation pricing)",
         "[2026-03-11] Gold $5184, DXY 99.25 (up from 98.82), 10Y yields 4.21% (up) — safe haven + stagflation mix (credibility: 0.9)",
-        "[2026-03-12] Gold >$5K sustained. DXY 99.7 (approaching 100). Classic dual safe haven bid"
+        "[2026-03-12] Gold >$5K sustained. DXY 99.7 (approaching 100). Classic dual safe haven bid",
+        "[2026-03-17] Gold at $4,999.88 (near $5,000 milestone). VIX at 25 (93.8th percentile). Classic war risk-off positioning confirmed."
       ],
-      "reasoning": "Gold sustained above $5K for multiple days. DXY strengthening. Classic safe-haven pattern persists despite SPR announcement.",
+      "reasoning": "Gold approaching $5,000 is definitive safe-haven rally. VIX elevated at 93rd percentile. USD strength. Revised up from 0.68.",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-17T11:27:49.314297+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "treasury_stagflation": {

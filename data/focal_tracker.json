@@ -1,7 +1,7 @@
 {
   "version": 1,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-17T03:24:00Z",
+  "last_updated": "2026-03-17T11:24:00Z",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折)",
 
   "physical_observables": {
@@ -16,7 +16,7 @@
         {"date": "2026-03-12", "est": "2-4", "note": "Day 13, IRGC 'most intense operation'", "source": "CENTCOM"},
         {"date": "2026-03-13", "est": "3+", "note": "Day 14, IRGC fighters direct engagement", "source": "CENTCOM"},
         {"date": "2026-03-16", "est": null, "note": "Day 17, TBD", "source": "pending"},
-        {"date": "2026-03-17", "est": "2-4", "note": "Day 18. US struck 5000+ targets total. Kharg Island precision strike (Mar 14) destroyed 90+ targets. Iran navy 'crushed' per CENTCOM. 20+ weapons systems deployed. IRGC still active but degraded capacity. US casualties 13 total (up from 7).", "source": "CENTCOM/AJE/Reuters"}
+        {"date": "2026-03-17", "est": "2-4", "note": "Day 18. US struck 5000+ targets total. Kharg Island precision strike (Mar 14) destroyed 90+ targets. Iran navy 'crushed' per CENTCOM. 20+ weapons systems deployed. IRGC still active but degraded capacity. US casualties 13 total (7 by enemy fire, 6 in Kuwait drone strike). Amnesty reports unlawful school strike killing 100+ children (Mar 17). AJE live tracker: 1,444 dead Iran (state media), 2,000+ cross-region.", "source": "CENTCOM/AJE/Reuters/Amnesty/Time"}
       ]
     },
     "q2_strait_transit": {
@@ -30,7 +30,7 @@
       },
       "history": [
         {"date": "2026-03-12", "est": "<2", "note": "only 2 non-Iran/Russia vessels attempted transit", "source": "Reuters"},
-        {"date": "2026-03-17", "est": "<2", "note": "Day 18. 1000+ cargo ships blocked. 150+ tankers anchored outside. Shadow fleet makes half of transits. Iran says open to all except US/allies. Trump calls for naval coalition but 'muted response'. US Navy: escorts 'not possible for now'. France considering 'purely defensive' escort mission.", "source": "Guardian/USNI/Reuters/CNN"}
+        {"date": "2026-03-17", "est": "<2", "note": "Day 18. 1000+ cargo ships blocked. 150+ tankers anchored outside. Shadow fleet makes half of transits. Iran says open to all except US/allies. 16 tankers attacked since war started. Trump calls for naval coalition - Japan/Australia refuse, France considering 'purely defensive' escort. US Navy tells shipping: escorts 'not possible for now' (directly contradicts Trump). No allied warships committed.", "source": "Guardian/USNI/Reuters/CNN/CNBC/AJE"}
       ]
     },
     "q3_spr_release_rate": {
@@ -43,7 +43,7 @@
         {"date": "2026-03-11", "announced_total": "400M bbl", "source": "IEA"},
         {"date": "2026-03-14", "note": "DOE offers 86M bbl sour crude for sale. Asia 108.6M bbl available immediately", "source": "DOE/Rigzone"},
         {"date": "2026-03-16", "note": "IEA says Asia-Pacific stocks available immediately, Americas/Europe from end of March", "source": "IEA update"},
-        {"date": "2026-03-17", "note": "US SPR 172M bbl announced. DOE arranged 200M bbl replacement within year (20% more than drawdown). Max pump rate 4.4 mbd. First physical barrels expected ~Mar 21. No delivery confirmation yet.", "source": "Politico/Bloomberg/Reuters"}
+        {"date": "2026-03-17", "note": "US SPR 172M bbl announced. DOE arranged 200M bbl replacement within year (20% more than drawdown). Max pump rate 4.4 mbd. SPR release officially began Mar 16 (FinancialContent). First physical barrels expected ~Mar 21. No delivery confirmation yet. Asia-Pacific reserves available immediately per IEA.", "source": "Politico/Bloomberg/Reuters/FinancialContent"}
       ]
     }
   },
@@ -65,7 +65,7 @@
       ],
       "false_alarm_filter": "外交部'呼吁克制'= 噪声。需要看到成本行动(调兵/经济杠杆/特使)",
       "last_check": "2026-03-17",
-      "findings": "★ 重大升级: (1) 中国中东特使已在区域巡回斡旋(MFA 3/11确认); (2) 中国与伊朗就允许油轮通过海峡进行谈判(Guardian 3/15); (3) 中国与沙特/阿联酋高层会谈区域安全(3月); (4) 正在撤侨。特使巡回+油轮通行谈判=成本行动,不是空话。从not_detected升级为active_engagement。但尚未见到具体框架提案或军事部署。"
+      "findings": "★ 重大升级: (1) 中国中东特使已在区域巡回斡旋(MFA 3/11确认,3/16新闻发布会再确认); (2) 中国与伊朗就允许油轮通过海峡进行谈判(Guardian 3/15); (3) 中国与沙特/阿联酋高层会谈区域安全(3月); (4) 正在撤侨; (5) 分析指出中国有balanced relations+经济杠杆优势(WeeklyBlitz/ModernDiplomacy)。特使巡回+油轮通行谈判=成本行动,不是空话。从not_detected升级为active_engagement。但尚未见到具体框架提案或军事部署。"
     },
 
     "fp2_us_signal_inconsistency": {
@@ -80,9 +80,9 @@
         "军事优先级从打击转向护航(资源分配信号)",
         "SPR释放令(高成本行动=不只是说说)"
       ],
-      "current_assessment": "信号矛盾加剧至极端水平: (1) Trump 3/14说'Iran ready to deal but terms not good enough'=首次公开承认伊朗意愿,同时拒绝谈; (2) Kharg精确打击90+目标(3/14)=最大规模升级之一; (3) SPR 172M bbl释放(高成本去escalation)+Bessent推护航联盟 vs Pentagon持续升级; (4) 海军告诉航运业'escorts not possible for now'直接打脸Trump护航承诺; (5) War Powers 212-219仅差4票=国会制约机制逼近激活。矛盾方向: Bessent/经济线=降温, Pentagon/Trump=升级, 净方向仍是escalation但裂缝在扩大。",
+      "current_assessment": "信号矛盾达到新极端: (1) Trump 3/15说Navy将'soon'开始护航油轮→盟友集体拒绝(日本/澳大利亚明确说No, 仅法国考虑'purely defensive'); (2) US Navy直接告诉航运业'escorts not possible for now'=打脸Trump; (3) 伊朗FM Araqchi否认Iran想谈判,打脸Trump'Iran ready to deal'; (4) SPR释放正式启动(高成本de-escalation) vs Kharg精确打击90+目标(最大升级之一); (5) War Powers 212-219仅差4票; (6) Amnesty 3/17报告学校打击杀100+儿童=国际法压力骤增。矛盾结构: 经济线(Bessent/SPR)=降温, 军事线(Pentagon/Kharg)=升级, 外交线(盟友拒绝/国际法)=孤立化。净方向仍escalation但三个裂缝同时扩大。",
       "last_check": "2026-03-17",
-      "findings": "信号分裂加深: Trump deal rhetoric + Kharg strike + Navy contradicts escort pledge + War Powers 4-vote margin"
+      "findings": "新信号: 盟友集体拒绝escort=军事联盟形成遇挫; Navy contradicts Trump; Amnesty学校报告增加国际孤立风险; 信号矛盾三维扩大(经济/军事/外交)"
     },
 
     "fp3_face_saving_framework": {
@@ -97,7 +97,7 @@
         "任何'条件换条件'的交易结构出现",
         "阿曼/卡塔尔宣布促成某种安排"
       ],
-      "current_assessment": "仍不存在可用框架。UNSC 3/11通过巴林主导决议谴责伊朗,否决俄罗斯停火提案。ISW 3/14: '双方都不准备谈判停火'。Trump明确'terms not good enough'。阿曼/埃及斡旋无果。唯一新变量: 中国特使巡回可能在为框架铺路,但尚无具体提案。",
+      "current_assessment": "仍不存在可用框架。UNSC 3/11通过巴林主导决议谴责伊朗(80+国家联署),否决俄罗斯停火提案。ISW 3/14: '双方都不准备谈判停火'。Trump'terms not good enough'。Iran FM否认想谈判。阿曼/埃及斡旋无果。Amnesty 3/17学校打击报告可能加速国际压力但短期内不构成框架。唯一新变量: 中国特使巡回可能在为框架铺路,但尚无具体提案。",
       "last_check": "2026-03-17",
       "findings": "UNSC否决停火提案。双方都不准备谈。中国特使是唯一潜在框架种子。"
     },
@@ -122,9 +122,9 @@
           "IRGC某区域完全停止行动(碎片化到失控)"
         ]
       },
-      "current_assessment": "美方: 13人阵亡(6人在单次科威特无人机袭击中,up from 7), War Powers投票212-219仅差4票(国会制约逼近激活), 汽油全国均价~$3.72(AAA 3/16 update)但部分地区$5.29(Bellevue WA), 较Feb 28上涨$0.60, S&P三连跌周创年内新低, 消费者信心降1.9%。伊朗方: 1,270-1,444死亡(state media), 2,000+跨区域, 海军被'crushed', IRGC仍在用导弹+无人机但能力明显退化, 5,000+目标被摧毁。两方都在加速逼近但美方4票差距的War Powers是最近的阈值触发点。",
+      "current_assessment": "美方: 13人阵亡(7人敌方火力,6人科威特无人机), War Powers 212-219仅差4票, 汽油全国均价$3.72(AAA/NPR 3/16, 战前$2.98→+$0.74), CA>$5 Bellevue WA $5.29, S&P 6,699(3/16反弹+1%打破三周连跌但3/17再度回调), 前6天战费$11.3B(Pentagon), Amnesty报告学校打击杀100+儿童=国际法/舆论压力骤增。伊朗方: 1,444死亡(state media), 2,000+跨区域(Reuters), 海军被destroyed, 25医院受损/9停摆, 5,000+目标被摧毁, 但IRGC仍用导弹+无人机。双方加速逼近阈值: 美方War Powers 4票+Amnesty学校报告=国内/国际双重压力; 伊朗军事能力退化但抵抗意志不减。",
       "last_check": "2026-03-17",
-      "findings": "US casualties 7→13, War Powers 212-219 (4 votes), gas +$0.60, S&P 3-week losing streak. Iran 1270+ dead, navy destroyed. Both accelerating toward thresholds."
+      "findings": "Gas $3.72(+$0.74 since war start). S&P bounced 1% on 3/16 then pulled back 3/17. Gold near $5,000. Amnesty school report = new international pressure vector. War Powers still 4 votes away. Iran 2,000+ dead cross-region but IRGC still fighting."
     }
   },
 
