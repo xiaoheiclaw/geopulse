@@ -1,7 +1,7 @@
 {
   "version": 1,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-18T03:05:00Z",
+  "last_updated": "2026-03-18T03:24:00Z",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折)",
   "physical_observables": {
     "description": "每天必须更新的三个物理量。告诉你'现在什么状态'",
@@ -64,6 +64,12 @@
           "est": "1-2 direct + renewed Gulf retaliation",
           "note": "Day 19 11:00. P0: Iran CONFIRMED renewed missile+drone attacks on Gulf Arabs+Israel (The Hindu Mar 18). Larijani death CONFIRMED by Iran. IDF vows to hunt Mojtaba. USS Ford pulling into port. CENTCOM bunker busters near Hormuz.",
           "source": "The Hindu/Reuters/Bloomberg/TimesOfIsrael"
+        },
+        {
+          "date": "2026-03-18T11:22",
+          "est": "★ COORDINATED OFFENSIVE",
+          "note": "Day 19 pipeline. P0 ESCALATION: Iran announced COORDINATED offensive by IRGC Navy + Iranian Army + Hezbollah against Israel and US bases. This BREAKS the 6-day vessel attack lull pattern. (1) 58 hospitalized in Israel from missile strike; (2) Hezbollah+Iran cluster munitions on Haifa area; (3) Iran again targeted Gulf countries with missiles+drones; (4) USS Ford pulling into port after fire (laundry area, 2 sailors injured) — reduced US carrier capability; (5) CENTCOM bunker busters near Hormuz (Mar 17). Qualitative shift: from degraded/adapting to COORDINATED MULTI-FRONT OFFENSIVE. Central command still functioning despite tactical decentralization. AJE death toll: 1,444 Iran (state media), 15+ Israel, 13 US, 20+ Gulf states.",
+          "source": "Wikipedia/TheHindu/Reuters/Bloomberg/NPR/AJE/ISW"
         }
       ]
     },
@@ -112,6 +118,12 @@
           "est": "<2",
           "note": "Day 19. Structural blockade persists. CENTCOM bunker busters near Hormuz = possible prep.",
           "source": "The Hindu/NYT/Reuters"
+        },
+        {
+          "date": "2026-03-18T11:22",
+          "est": "<2 mbd (near-zero)",
+          "note": "Day 19 pipeline. Windward Mar 16: transit at near-zero levels. USS Ford heading to port after fire = reduced naval capability. Iran renewed Gulf attacks will FURTHER freeze insurance/shipping. Structural blockade: mines+insurance+no escort+renewed attacks = no recovery vector. 1000+ cargo ships still blocked. No allied warships committed (Japan/Australia/France refused).",
+          "source": "Windward/Reuters/Bloomberg/Guardian"
         }
       ]
     },
@@ -161,6 +173,11 @@
           "date": "2026-03-18T11",
           "note": "SPR D+2.5. No delivery data. DOE Wed report Mar 19 = KEY.",
           "source": "Reuters/NPR"
+        },
+        {
+          "date": "2026-03-18T11:22",
+          "note": "SPR D+2.5. No physical delivery data. Brent .68, WTI .32. Iran renewed attacks will spike oil higher. DOE Wed report Mar 19 = KEY for first drawdown numbers. 172M bbl US + 228M global. Max pump 4.4 mbd. Market verdict: SPR insufficient if renewed attacks continue.",
+          "source": "commodity.com/CNBC/Reuters/NPR"
         }
       ]
     }
@@ -180,8 +197,8 @@
         "中国与美方的秘密接触泄露"
       ],
       "false_alarm_filter": "外交部'呼吁克制'= 噪声。需要看到成本行动(调兵/经济杠杆/特使)",
-      "last_check": "2026-03-18T07:22+08",
-      "findings": "★★ COST ESCALATION: (1) 3/17 NEW — China announced emergency humanitarian aid to Iran, Jordan, Lebanon, Iraq (Xinhua/MFA confirmed) = first direct budget commitment = COST ACTION not just words; (2) Zhai Jun still on regional shuttle — met Bahrain FM Mar 12 (MFA confirmed), met Saudi FM recently (Al Arabiya); (3) China-Iran tanker passage negotiations ongoing (Guardian/AJE); (4) Modern Diplomacy: Zhai Jun aims to 'mediate between Iran, America and Israel to stop the war'; (5) China Daily: hosts 'highly appreciated and welcomed China's mediation efforts'; (6) BUT constraints: US still refuses talks (Reuters 3/14, NBC 3/17), Mojtaba hardliner inner circle, Trump 'we don't need help'. Status upgrade from active_engagement → COST_ESCALATION. Humanitarian aid = real money + logistics = credibility builder, but still below military deployment or economic leverage threshold. Window: if Trump's 'very near future' exit materializes, China's mediation becomes moot for this phase — but positions Beijing as post-conflict broker."
+      "last_check": "2026-03-18T11:22+08",
+      "findings": "★★ COST_ESCALATION (unchanged). (1) China humanitarian aid confirmed (Xinhua/Al Arabiya Mar 17); (2) Zhai Jun shuttle continues — met Saudi FM, Bahrain FM; (3) Chinese scholars note Beijing offering no obvious political support to Mojtaba (NTU/Lianhe Zaobao); (4) BUT: Iran coordinated offensive today makes mediation harder — active war escalation reduces diplomatic space. (5) China tanker passage negotiations ongoing. Status remains COST_ESCALATION but window narrowing as combat intensifies."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
@@ -196,8 +213,8 @@
         "SPR释放令(高成本行动=不只是说说)"
       ],
       "current_assessment": "★★★★★ 3/18 07:22 — EXIT_SIGNALING confirmed multi-source: (1) Trump 3/17 Reuters: 'we'll be leaving in pretty much the very near future' — first explicit exit timeline signal; (2) Trump claims 'wiped out Iran's military, navy and air force' = victory narrative for exit; (3) Blames NATO allies for Hormuz failure = scapegoat construction; (4) Claims 'we don't need any help' — contradicts Energy Sec 'we're simply not ready'; (5) NBC 3/17: Pentagon presenting daily options to end war, Trump hasn't taken any yet — suggesting imminent decision; (6) Araghchi (Fars/NBC): 'We did not request ceasefire but war must end in a way it will not be repeated' — Iran opening door without appearing to beg; (7) Kent resignation still reverberating — MAGA anti-war faction legitimized; (8) $11.3B first 6 days (Pentagon to Congress) = unsustainable burn rate; (9) VIX dropped 13.5% Mar 17 + Brent briefly below $100 = market cautiously pricing exit; (10) Trump postpones China visit (Indian Express). Pattern: five EXIT vectors converging — economic/military/diplomatic/political/narrative. Key: this is NOT a negotiation setup. It's a unilateral 'declare victory and leave' architecture. No ceasefire agreement needed — just a presidential announcement.",
-      "last_check": "2026-03-18T07:22+08",
-      "findings": "P0 CONFIRMED: Trump EXIT_SIGNALING from Reuters/TimesOfIsrael/MoneyControl multi-source. 'Very near future' + 'wiped out military' + blame allies + Pentagon daily options = unilateral exit architecture under active construction. Market reading it correctly (VIX -13.5%). Next watchpoint: actual ceasefire/withdrawal order vs. continued operations despite rhetoric."
+      "last_check": "2026-03-18T11:22+08",
+      "findings": "P0 CONTRADICTION DEEPENS: (1) Trump Mar 17: leaving in very near future; (2) BUT: Iran Mar 18 coordinated offensive (IRGC Navy+Army+Hezbollah) = direct challenge to Trump victory narrative; (3) USS Ford pulling into port = capability gap; (4) 58 hospitalized in Israel from missile strike = ally under fire; (5) Pentagon daily options still on table; (6) Gas +80c/month, diesel near /gal (NPR). CRITICAL: Iran offensive may RESET Trump exit timeline. Hawks will argue exit proves weakness. The exit architecture is under severe stress from Iranian counter-escalation. VIX Mar 17 drop (-13.5%) likely to reverse on Mar 18 open."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
@@ -212,8 +229,8 @@
         "阿曼/卡塔尔宣布促成某种安排"
       ],
       "current_assessment": "退出框架变异: (1) 传统双边停火 = still not_detected; (2) BUT Trump's unilateral 'declare victory and leave' architecture = EMERGING. Reuters 3/14: US rebuffed Mideast allies' ceasefire attempts. NBC: Pentagon daily options presented but none taken. Trump Mar 15 (Guardian): 'not ready to make a deal' but Iran 'keen to negotiate'. Trump Mar 17 (Reuters): 'leaving in very near future'. Araghchi (Fars): 'we did not request ceasefire but war must end'. (3) Larijani killed = moderate channel closed. (4) Mojtaba inner circle = all IRGC hardliners (NYT). (5) UN Security Council: condemned Iran but rejected Russia ceasefire proposal. fp3 being SHORT-CIRCUITED by fp2: Trump doesn't need bilateral framework — only a 'victory moment' to announce withdrawal. Risk: withdrawal without ceasefire = unstable. Mines remain, insurance frozen, proxy attacks continue. 'Ending the war' ≠ 'resolving the crisis'.",
-      "last_check": "2026-03-18T11:05+08",
-      "findings": "fp3 SHORT-CIRCUITED by fp2. Traditional bilateral ceasefire framework: not_detected. But Trump constructing unilateral exit via 'victory declaration'. Araghchi's statement suggests Iran willing to accept implicit ceasefire if US stops bombing — no formal agreement needed. The exit may be messy: no framework, just unilateral cessation + victory speech. Strait reopening timeline decoupled from combat cessation."
+      "last_check": "2026-03-18T11:22+08",
+      "findings": "fp3 FURTHER DEGRADED by Iran coordinated offensive. Bilateral ceasefire: not_detected. Trumps unilateral exit: under stress from Iran counter-escalation. UN UNSC condemned Iran, rejected Russia ceasefire. No new framework proposals. Iranians renewed attacks make face-saving harder for both sides."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
@@ -236,8 +253,8 @@
         ]
       },
       "current_assessment": "3/18 07:22 — 成本非线性加速: 【美方】(1) $11.3B first 6 days (Pentagon→Congress) at ~$1.9B/day → Day 19 extrapolated ~$36B total; (2) Gas +80¢/month (NPR), diesel $5/gal; (3) Axios: gas price shock hitting 2026 Senate battleground states hardest; (4) Reuters: 'rising gas prices imperil Trump's Republican majority'; (5) Trump public exit timeline ('very near future') = COST THRESHOLD CROSSED politically; (6) VIX -13.5% = market pricing in exit probability; (7) Brent briefly <$100 = partial relief signal; (8) Amnesty school strike report (100+ children) = intl reputation cost; (9) Kent resignation = MAGA antiwar legitimized; (10) All allies refused Hormuz escort = no cost-sharing. 【伊方】(1) Larijani+Basij cmdr killed — continued decapitation; (2) Mojtaba inner circle = all IRGC hardliners → regime extremization not collapse; (3) IRGC vessel attacks ceased 6 days but Sejjil BM + Iraq proxy = capability adapting; (4) Internet crackdown + Starlink suppression = internal control; (5) IranWire: IRGC views war as 'unifying tool'. 关键: US political cost threshold CROSSED (Trump publicly signaling exit). Iran using war for internal cohesion. Asymmetric cost structure → US exits first (high confidence 75%+).",
-      "last_check": "2026-03-18T07:22+08",
-      "findings": "P0: US cost threshold CROSSED — Trump's public exit signal is the proof. $36B+ extrapolated costs, gas price midterm threat, zero allied cost-sharing, Amnesty reputational damage. Iran absorbing costs via regime consolidation. VIX -13.5% + Brent<$100 flash = market betting on exit. War Powers 60-day clock = Apr 30 hard deadline."
+      "last_check": "2026-03-18T11:22+08",
+      "findings": "COSTS ACCELERATING BOTH SIDES: US: extrapolated ~B+ (Day 19 at .9B/day), gas +80c, USS Ford needs repair, 13 casualties total. Iran: coordinated offensive = burning remaining strategic reserves (Sejjil BMs + Hezbollah coordination = expensive). Gold ,016/oz. S&P 6,699. VIX dropped 13.5% Mar 17 but Iran offensive will reverse. War Powers 60-day clock: Apr 30 hard deadline unchanged. Key: BOTH sides accelerating burn rate. Iran choosing to spend remaining capability on coordinated offensive rather than slow degradation. This is a war of attrition entering critical phase."
     }
   },
   "noise_filter": {
