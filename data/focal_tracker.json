@@ -1,7 +1,7 @@
 {
   "version": 1,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-18T11:22:00Z",
+  "last_updated": "2026-03-19T03:22+08",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折)",
   "physical_observables": {
     "description": "每天必须更新的三个物理量。告诉你'现在什么状态'",
@@ -76,6 +76,18 @@
           "est": "3+ coordinated multi-front",
           "note": "Day 19 evening pipeline. COORDINATED OFFENSIVE CONFIRMED multi-source: (1) Iran coordinated offensive by IRGC Navy + Army + Hezbollah (Wikipedia); (2) Tel Aviv missile barrage — 2 killed, 58 hospitalized (Dawn/AFP); (3) Cluster munitions on Haifa area (Wikipedia/Lebanon war page); (4) Gulf countries targeted again with missiles/drones, oil prices rising (Wikipedia); (5) Iranian projectile near Australian Al Minhad Air Base UAE (LiveMint); (6) CENTCOM 5000-lb bunker busters on hardened SSM sites along Iran coast near Hormuz (TimesNow/CENTCOM); (7) USS Ford pulling into port = reduced carrier capability; (8) CENTCOM confirmed 20+ weapon systems across air/sea/land; (9) F/A-18 engaging at extremely low altitude near Chabahar. Pattern: 6-day vessel attack lull BROKEN. Iran choosing to spend remaining strategic reserves on coordinated multi-front offensive rather than slow attrition. This is a use-it-or-lose-it calculus.",
           "source": "Dawn/Wikipedia/TimesNow/LiveMint/Reuters/CENTCOM/AJE/ABCNews"
+        },
+        {
+          "date": "2026-03-19T01:28+08",
+          "est": "3+ coordinated + energy war",
+          "note": "Day 19 late. 🔴 ENERGY RUBICON CROSSED: (1) Israel/US coordinated strike on SOUTH PARS gas field (world's largest, shared w/ Qatar) + Asaluyeh oil facilities (Bloomberg/NYT/JPost/AJE/Guardian/Reuters); (2) Israel killed Intelligence Minister Esmail Khatib — 3rd top official in 48hrs (AP/NYT/CNN); (3) Iran IRGC issued SPECIFIC evacuation orders for Gulf energy targets: Saudi Samref+Jubail, UAE Al Hosn, Qatar Mesaieed+Ras Laffan (Reuters); (4) Aramco evacuating Samref personnel (OilPrice); (5) Mojtaba REJECTED de-escalation — demands US/Israel 'brought to their knees' (Reuters/SMH/CNA); (6) Mossad ground op inside Iran (Al Arabiya single source); (7) Iran using Russian-modified Shaheds (ISW). Pattern: WAR PHASE CHANGE — from military-to-military combat to ENERGY INFRASTRUCTURE WAR. The 3-week tacit truce on energy targets is BROKEN. Iran listing specific Saudi/UAE/Qatar facilities = war may expand from US-Iran to REGIONAL ENERGY CONFLICT.",
+          "source": "Bloomberg/NYT/JPost/AP/Reuters/Guardian/AJE/ISW/AlArabiya/OilPrice/SMH/CNA"
+        },
+        {
+          "date": "2026-03-19T03:22+08",
+          "est": "3+ coordinated + energy Rubicon",
+          "note": "Day 20 (entering). ENERGY WAR PHASE CONFIRMED MULTI-SOURCE: (1) Israel/US struck South Pars gas field (world largest, shared w/ Qatar) — Bloomberg/NYT/AP/CNN/AJE/Guardian all confirm; (2) Asaluyeh oil facilities also hit; (3) Intelligence Minister Khatib killed by Israel — 4th top official eliminated; (4) IRGC coordinated offensive by Navy + Army + Hezbollah continues; (5) CENTCOM: 7,000+ targets struck (up from 5,000+); (6) Gulf states (Kuwait/Qatar/Saudi/UAE) intercepting missiles and drones daily; (7) Iran using Russian-modified Shahed drones (ISW); (8) Euronews: barrages targeting Gulf region daily; (9) Amnesty: CENTCOM using AI tools for targeting; (10) Turkish Airlines cancelled all regional flights until Mar 19-20. QUALITATIVE ASSESSMENT: War has entered ENERGY INFRASTRUCTURE PHASE. The 3-week tacit truce on energy targets is broken. Both sides now hitting each other economic lifelines. This is the most significant escalation since the war began.",
+          "source": "Bloomberg/NYT/AP/CNN/AJE/Guardian/Euronews/ISW/Amnesty/Wikipedia"
         }
       ]
     },
@@ -136,6 +148,18 @@
           "est": "<2 mbd (trickle, possible slight uptick)",
           "note": "Day 19 evening. KEY NEW DATA: (1) CNBC Mar 18: only 21 tankers total since war began vs 100+/day pre-crisis; (2) 11 China-linked vessels Mar 1-15 per Lloyd's List (mostly cargo, not mainstream tankers); (3) AJE Mar 18: MarineTraffic recorded 9 transits Sun/Mon vs 5 previous 2 days — SLIGHT UPTICK in selective passage; (4) China shrapnel incident on Mar 12 deterred further Chinese transits (Lloyd's List); (5) Greek Dynacom tankers (Shenlong, Smyrni) tested route with Saudi crude to Mumbai; (6) 400 vessels backlog in Gulf of Oman (Windward); (7) BUT: Iran coordinated offensive + Gulf attacks TODAY will reverse any thaw in selective passage. Iran attacking Gulf states = insurers will further freeze. Structural blockade: mines+insurance+no escort+renewed Gulf attacks = no recovery vector. The slight uptick in trickle traffic is NOISE — the blockade remains functionally total for energy cargo.",
           "source": "CNBC/AJE/LloydsList/Windward/Reuters"
+        },
+        {
+          "date": "2026-03-19T01:28+08",
+          "est": "<2 mbd (WORSENING)",
+          "note": "Day 19 late. ENERGY WAR ESCALATION destroys any recovery path: (1) South Pars struck = Iran's own gas infrastructure being destroyed; (2) Iran threatening Saudi Samref/Jubail, UAE Al Hosn, Qatar Mesaieed/Ras Laffan = if executed, energy disruption far BEYOND Hormuz blockade; (3) Aramco evacuating = market will re-price shipping risk massively upward; (4) CENTCOM GBU-72 bunker busters on Hormuz coastal sites = physical prep for reopening BUT South Pars/Gulf threats make reopening timeline IRRELEVANT if regional energy infrastructure attacked; (5) Insurance market will freeze further. Assessment: strait recovery decoupled from combat cessation — even if bombing stops, mines+insurance+Gulf infrastructure risk = months to recover.",
+          "source": "Bloomberg/Reuters/Guardian/AJE/OilPrice"
+        },
+        {
+          "date": "2026-03-19T03:22+08",
+          "est": "<2 mbd (WORSENING — energy war)",
+          "note": "Day 20. Structural blockade persists AND worsening: (1) Energy war escalation (South Pars + Gulf energy targets threatened) makes recovery even more distant; (2) CENTCOM GBU-72 bunker busters on Hormuz coastal sites (physical prep) BUT irrelevant while energy infrastructure being destroyed regionally; (3) Escort operations \"end of March\" at earliest per Energy Sec — but mine threat qualitatively different from Red Sea (NYT, TWZ); (4) Wikipedia Hormuz crisis: escort readiness still weeks away; (5) Insurance market will freeze FURTHER after South Pars strike + Gulf energy threats. Assessment: strait recovery now DECOUPLED from combat cessation — even post-ceasefire, mines+insurance+infrastructure damage = months to recover.",
+          "source": "NYT/TWZ/USNI/Wikipedia/AJE/Sky"
         }
       ]
     },
@@ -190,6 +214,11 @@
           "date": "2026-03-18T19:22",
           "note": "SPR D+3. Still no physical delivery confirmation. Brent range $98-$103 (commodity.com $98.51, stockmarketwatch $102.82 — divergence due to Iran offensive reaction). WTI $92-$95. DOE Wed report Mar 19 = FIRST drawdown data. CNBC: disruptions could push Brent to $110-$120 in base case (4-6 weeks). Gas $3.79 avg (+27% since war start per AAA). Diesel $5/gal (CNBC Mar 17). California gas >$5/gal. Market verdict: Iran coordinated offensive will pressure oil higher; SPR ramp-up urgency increasing. 172M bbl US + 228M global, max pump 4.4 mbd.",
           "source": "commodity.com/CNBC/AAA/Reuters/stockmarketwatch"
+        },
+        {
+          "date": "2026-03-19T03:22+08",
+          "note": "SPR D+3. DOE Wednesday report Mar 19 = TODAY, first drawdown data expected. No physical delivery confirmed yet. Brent SURGING: .26 (oilpriceapi), .78 (Fortune at 9:15am ET Mar 18) — divergence reflects South Pars strike reaction. Pre-crisis SPR 395.3M bbl (Wikipedia Mar 7) or 415M bbl (TheWorldData). 172M bbl US drawdown announced. Gas .47/gal AAA, .70 EIA mid-March. KEY: South Pars strike will push Brent higher, making SPR urgency even greater. CNBC base case - for 4-6 weeks now looking conservative.",
+          "source": "DOE/AAA/EIA/oilpriceapi/Fortune/CNBC/Wikipedia/TheWorldData"
         }
       ]
     }
@@ -199,7 +228,7 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "ACTIVE_MEDIATION",
+      "status": "ACTIVE_MEDIATION_URGENCY_UP",
       "why": "美伊双边无法自发找到停止点。中国是唯一有经济杠杆(伊朗最大客户)+安理会否决权+双方都不反对的第三方",
       "observe": [
         "PLAN海军向海湾方向部署(AIS/卫星)",
@@ -209,13 +238,13 @@
         "中国与美方的秘密接触泄露"
       ],
       "false_alarm_filter": "外交部'呼吁克制'= 噪声。需要看到成本行动(调兵/经济杠杆/特使)",
-      "last_check": "2026-03-18T19:22+08",
-      "findings": "★★★ UPGRADED TO ACTIVE_MEDIATION. (1) Wang Yi Mar 18: 'Beijing will continue mediating for a ceasefire in the Middle East' (Reuters/LiveMint) — FM-level public commitment is COST ACTION, not empty rhetoric; (2) Zhai Jun shuttle continues; (3) China providing 'spare parts for missiles' to Iran (Wikipedia) — dual track: mediation + material support; (4) 11 China-linked vessels transited Mar 1-15 (Lloyd's List) but shrapnel incident Mar 12 deterred further; (5) Iran coordinated offensive makes mediation HARDER but also MORE NECESSARY — costs accelerating for all parties creates urgency; (6) China now the only major power with channels to both sides AND public mediation commitment. Upgrade from COST_ESCALATION to ACTIVE_MEDIATION based on FM-level public statement + shuttle diplomacy + material leverage."
+      "last_check": "2026-03-19T03:22+08",
+      "findings": "ACTIVE_MEDIATION maintained but UNDER STRESS from escalation: (1) Wang Yi FM-level commitment confirmed (Mar 18); (2) Zhai Jun shuttle continues — met Kuwait FM Mar 15 (CGTN); (3) Fu Cong at UN: \"outbreak of this war lacks justification and legitimacy\" — China condemns indiscriminate attacks but also provides spare parts for missiles to Iran; (4) China dual-track: mediation + material support; (5) South Pars strike (shared field with Qatar) complicates China position — Qatar is key LNG partner; (6) Oman FM noted negotiations were progressing before war broke out (Wikipedia). KEY CONSTRAINT: China has channels to both sides + public mediation commitment BUT (a) no military enforcement capability in Gulf, (b) escalation to energy war makes mediation harder (stakes now existential for Iran), (c) Russia providing satellite imagery + drone tech to Iran (WSJ) = China-Russia competing influences on Iran."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "EXIT_SIGNALING",
+      "status": "EXIT_RHETORIC_CONTRADICTED_BY_ACTION",
       "why": "前景理论: Trump承诺弹性>IRGC。解锁更可能从美方开始",
       "observe": [
         "修辞仍强硬但军事行动转向护航编队(言行分裂)",
@@ -225,8 +254,8 @@
         "SPR释放令(高成本行动=不只是说说)"
       ],
       "current_assessment": "★★★★★ 3/18 07:22 — EXIT_SIGNALING confirmed multi-source: (1) Trump 3/17 Reuters: 'we'll be leaving in pretty much the very near future' — first explicit exit timeline signal; (2) Trump claims 'wiped out Iran's military, navy and air force' = victory narrative for exit; (3) Blames NATO allies for Hormuz failure = scapegoat construction; (4) Claims 'we don't need any help' — contradicts Energy Sec 'we're simply not ready'; (5) NBC 3/17: Pentagon presenting daily options to end war, Trump hasn't taken any yet — suggesting imminent decision; (6) Araghchi (Fars/NBC): 'We did not request ceasefire but war must end in a way it will not be repeated' — Iran opening door without appearing to beg; (7) Kent resignation still reverberating — MAGA anti-war faction legitimized; (8) $11.3B first 6 days (Pentagon to Congress) = unsustainable burn rate; (9) VIX dropped 13.5% Mar 17 + Brent briefly below $100 = market cautiously pricing exit; (10) Trump postpones China visit (Indian Express). Pattern: five EXIT vectors converging — economic/military/diplomatic/political/narrative. Key: this is NOT a negotiation setup. It's a unilateral 'declare victory and leave' architecture. No ceasefire agreement needed — just a presidential announcement.",
-      "last_check": "2026-03-18T19:22+08",
-      "findings": "P0 CONTRADICTION MAXIMUM: (1) Trump Mar 17: 'leaving in very near future'; (2) BUT Iran Mar 18 coordinated multi-front offensive DIRECTLY CHALLENGES Trump victory narrative — you cannot claim 'wiped out Iran military' while Iran launches coordinated strikes killing 2 in Tel Aviv + 58 hospitalized; (3) USS Ford pulling into port = capability gap widening; (4) Pentagon daily options still on table — no decision taken; (5) Gas $3.79 avg (+27%), diesel $5/gal, CA >$5; (6) House of Commons Library report: Trump 'not thrilled' with talks; (7) Cost: ~$36B extrapolated Day 19; (8) CRITICAL ASSESSMENT: Iran offensive creates a FORK — either Trump escalates further (politically costly, militarily risky with Ford out) or accelerates exit (must accept narrative damage). The 'declare victory and leave' architecture REQUIRES Iran to be visibly degraded — today's offensive undermines that. Exit timeline may EXTEND rather than compress. VIX 22.74 pre-market drop likely to reverse."
+      "last_check": "2026-03-19T03:22+08",
+      "findings": "P0 — NO PLAN B CONFIRMED: (1) NYMag Mar 18 analysis: \"Will Trump Be Able to Stop His Own War?\" — core finding: Trump has power but no leverage. Used the stick, threw away the carrot. No Plan B if Iran does not capitulate; (2) Trump says \"we've won\" AND \"no reason to declare victory yet\" — simultaneous contradictions; (3) Araghchi FIRMLY rejects ceasefire (Time Mar 18): \"Iran is not ready to negotiate\" despite Trump claiming they are; (4) Pentagon daily options still presented, none taken (NBC); (5) Trump \"I'll know when I feel it in my bones\" — no criteria for victory; (6) Rubio announced attacks will INCREASE in intensity (Wikipedia); (7) Kent resignation + MAGA anti-war faction vs escalation lobby = internal fracture; (8) NYT exploring Kharg Island GROUND TROOPS option; (9) Mission creep already taking hold (NYMag). CRITICAL: Iran coordinated offensive + South Pars strike = both sides doubling down. Exit timeline EXTENDING not compressing. The \"declare victory and leave\" architecture requires visible Iranian degradation — but Iran keeps mounting coordinated attacks, undermining that narrative."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
@@ -241,13 +270,13 @@
         "阿曼/卡塔尔宣布促成某种安排"
       ],
       "current_assessment": "退出框架变异: (1) 传统双边停火 = still not_detected; (2) BUT Trump's unilateral 'declare victory and leave' architecture = EMERGING. Reuters 3/14: US rebuffed Mideast allies' ceasefire attempts. NBC: Pentagon daily options presented but none taken. Trump Mar 15 (Guardian): 'not ready to make a deal' but Iran 'keen to negotiate'. Trump Mar 17 (Reuters): 'leaving in very near future'. Araghchi (Fars): 'we did not request ceasefire but war must end'. (3) Larijani killed = moderate channel closed. (4) Mojtaba inner circle = all IRGC hardliners (NYT). (5) UN Security Council: condemned Iran but rejected Russia ceasefire proposal. fp3 being SHORT-CIRCUITED by fp2: Trump doesn't need bilateral framework — only a 'victory moment' to announce withdrawal. Risk: withdrawal without ceasefire = unstable. Mines remain, insurance frozen, proxy attacks continue. 'Ending the war' ≠ 'resolving the crisis'.",
-      "last_check": "2026-03-18T19:22+08",
-      "findings": "fp3 DEAD — NO NEW FRAMEWORK. (1) Bilateral ceasefire: not_detected. Both sides rejected Oman/Egypt mediation (ISW Mar 14); (2) Trump unilateral exit: under SEVERE stress — Iran offensive directly undermines 'victory' narrative needed for withdrawal; (3) UN UNSC condemned Iran, rejected Russia ceasefire proposal; (4) Wang Yi mediation commitment (Mar 18) = only new diplomatic vector, but China lacks military enforcement capability; (5) No 'Hormuz freedom of navigation' agreement proposed; (6) No face-saving framework on the table. fp3 status: DEAD_ON_ARRIVAL confirmed. Only viable exit path remains fp2 (unilateral) which is now under stress, or fp1 (China mediation) which is upgrading but insufficient alone."
+      "last_check": "2026-03-19T03:22+08",
+      "findings": "DEAD CONFIRMED — NO FRAMEWORK EXISTS: (1) Bilateral: Araghchi firmly rejects ceasefire (Time Mar 18); (2) UNSC: condemned Iran, rejected Russia ceasefire proposal; (3) Trump: rejected Mideast allies ceasefire attempts (Reuters Mar 14), \"not thrilled\" with pre-war talks (HoC Library); (4) Oman/Egypt mediation: both sides refused (ISW Mar 14); (5) China mediation: only new vector but lacks enforcement; (6) NYMag: Trump has no discernible Plan B for concluding war absent Iran total destruction or capitulation; (7) Energy war phase (South Pars) makes any framework HARDER — Iran won't negotiate while its gas field burns. fp3 is not merely dead — it is becoming structurally impossible. The escalation spiral has moved past the zone where face-saving frameworks operate."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "ACCELERATING",
+      "status": "ACCELERATING_BREAKAWAY",
       "why": "成本本身不是信号，成本逼近政治不可承受点才是",
       "observe": {
         "us_side": [
@@ -265,8 +294,8 @@
         ]
       },
       "current_assessment": "3/18 07:22 — 成本非线性加速: 【美方】(1) $11.3B first 6 days (Pentagon→Congress) at ~$1.9B/day → Day 19 extrapolated ~$36B total; (2) Gas +80¢/month (NPR), diesel $5/gal; (3) Axios: gas price shock hitting 2026 Senate battleground states hardest; (4) Reuters: 'rising gas prices imperil Trump's Republican majority'; (5) Trump public exit timeline ('very near future') = COST THRESHOLD CROSSED politically; (6) VIX -13.5% = market pricing in exit probability; (7) Brent briefly <$100 = partial relief signal; (8) Amnesty school strike report (100+ children) = intl reputation cost; (9) Kent resignation = MAGA antiwar legitimized; (10) All allies refused Hormuz escort = no cost-sharing. 【伊方】(1) Larijani+Basij cmdr killed — continued decapitation; (2) Mojtaba inner circle = all IRGC hardliners → regime extremization not collapse; (3) IRGC vessel attacks ceased 6 days but Sejjil BM + Iraq proxy = capability adapting; (4) Internet crackdown + Starlink suppression = internal control; (5) IranWire: IRGC views war as 'unifying tool'. 关键: US political cost threshold CROSSED (Trump publicly signaling exit). Iran using war for internal cohesion. Asymmetric cost structure → US exits first (high confidence 75%+).",
-      "last_check": "2026-03-18T19:22+08",
-      "findings": "COSTS NON-LINEAR — BOTH SIDES BURNING RESERVES: 【US】(1) ~$36B extrapolated (Day 19 at $1.9B/day); (2) Gas $3.79 avg (+27% since war start per AAA), diesel $5/gal (CNBC), CA >$5/gal; (3) USS Ford needs repair — reduced carrier capability; (4) 13 US casualties total; (5) Reuters: rising gas prices imperil GOP majority — POLITICAL cost threshold crossed; (6) Iran offensive undermines Trump exit narrative — extending war costs; (7) War Powers 60-day clock: Apr 30 hard deadline. 【Iran】(1) Coordinated offensive = burning remaining Sejjil BMs + Hezbollah coordination = strategically expensive; (2) Use-it-or-lose-it calculus: IRGC deploying strategic reserves before further degradation; (3) Larijani + Basij cmdr killed — continued decapitation; (4) Mojtaba inner circle all IRGC hardliners; (5) Iranian projectile near Australian Al Minhad base UAE = widening target set = more enemies. 【Market Signal】VIX 22.74 (pre-market Mar 17 down 3.28%), but Iran offensive will reverse. S&P 6,699. Gold ~$4,994-5,000/oz. Brent $98-$103. Key: BOTH sides accelerating burn rate simultaneously. This is attrition endgame — whoever's costs hit political ceiling first exits."
+      "last_check": "2026-03-19T03:22+08",
+      "findings": "COSTS ENTERING NON-LINEAR ZONE: 【US】(1) ~B+ extrapolated Day 20 at ~.9B/day; (2) Gas .47 AAA / .70 EIA mid-March / CA > / diesel ; (3) NYT: \"This jump in gas prices feels different\" — EIA data shows .90→.70 in one month; (4) S&P down 0.5% Mar 18; Gold ,844-4,874; VIX hit 19.9 tripwire (FinancialContent); (5) Brent - (surging on South Pars); (6) USS Ford needs repair; (7) 13 US casualties; (8) NYMag: mission creep already taking hold, ground troops for Kharg explored; (9) War Powers 60-day clock → Apr 30 hard deadline; (10) Reuters: rising gas imperil GOP majority. 【Iran】(1) Khatib killed — 4th top official eliminated; (2) Coordinated offensive burning remaining strategic reserves (Sejjil BMs + Hezbollah coordination); (3) South Pars + Asaluyeh struck — economic lifeline hit; (4) IRGC using Russian-modified Shaheds = adapting but depleting; (5) Internet crackdown tightening. 【KEY SIGNAL】VIX 19.9 tripwire breached = volatility floor raised. Market now pricing in prolonged uncertainty, not quick resolution."
     }
   },
   "noise_filter": {

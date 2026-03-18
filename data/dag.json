@@ -367,8 +367,8 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.9,
-      "confidence": 0.78,
+      "probability": 0.95,
+      "confidence": 0.88,
       "evidence": [
         "卡塔尔能源部声明",
         "LNG现货价格数据",
@@ -377,12 +377,12 @@
         "[2026-03-13] Active mining of Hormuz = no LNG transit without minesweeping. Qatar completely landlocked for exports",
         "[2026-03-13 PM] Mining extends blockade duration"
       ],
-      "reasoning": "定义: 卡塔尔LNG出口量下降>50%(正常~80mtpa)。当前: 海峡封锁直接影响LNG船通行。72%反映部分长约LNG可能绕行或延迟而非完全中断。",
+      "reasoning": "South Pars (shared field with Qatar) directly struck by Israel/US. Iran IRGC named Mesaieed+Ras Laffan (Qatar) as targets. Qatar actively intercepting missiles and drones. Turkish Airlines cancelled Qatar flights until Mar 19.",
       "time_horizon": "持续至航线恢复",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-19T03:22+08:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "coalition_forming": {
@@ -1358,8 +1358,8 @@
         "经济",
         "政治"
       ],
-      "probability": 0.85,
-      "confidence": 0.72,
+      "probability": 0.9,
+      "confidence": 0.8,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
         "若Brent破$100→汽油$4.8-5.2",
@@ -1368,12 +1368,12 @@
         "[2026-03-14] (cred:0.77) Day 15: Brent + confirmed for 2nd day, Goldman + March avg. 2-3 week lag to retail. Up from 0.75. — CENTCOM/NBC/NYT/Goldman/MarketData",
         "[2026-03-16] Brent $103+ in Monday Asian session, sustained above $100"
       ],
-      "reasoning": "定义: 美国汽油均价突破$5/加仑(AAA口径)。65%因Brent尚未破百，但传导滞后+精炼瓶颈可能加速。",
+      "reasoning": "Gas .47/gal AAA (Mar 18), .70/gal EIA mid-March. CA >/gal. Diesel /gal. Up 27%+ since war start. South Pars strike + Brent -109 will push further. NYT: price jump feels different. 2026 Senate battleground states hit hardest.",
       "time_horizon": "W2-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-07T01:09:27.227473Z",
+      "last_updated": "2026-03-19T03:22+08:00",
       "created": "2026-03-07T01:09:27.227473Z"
     },
     "em_capital_outflow": {
@@ -1826,8 +1826,8 @@
         "军事",
         "能源"
       ],
-      "probability": 0.8,
-      "confidence": 0.73,
+      "probability": 0.95,
+      "confidence": 0.9,
       "evidence": [
         "Trump conditional threat: oil infra targeted if Hormuz interference continues",
         "Iranian parliament speaker warned new level of retaliation if Kharg struck",
@@ -1841,12 +1841,12 @@
         "[2026-03-15] Day 16: Hormuz still blocked, IRGC claims full control. Trump conditional active. Pressure building.",
         "[2026-03-16] Multi-front escalation increases pressure for decisive action on Kharg"
       ],
-      "reasoning": "军事目标已被打击，油田是下一步筹码。概率取决于伊朗是否继续封锁霍尔木兹(当前99.5%概率)",
+      "reasoning": "Kharg struck Mar 14. Now South Pars also struck Mar 18. Energy infrastructure war phase confirmed.",
       "time_horizon": "",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T04:47:32.373852+00:00",
+      "last_updated": "2026-03-19T03:22+08:00",
       "created": "2026-03-14T04:47:32.373852+00:00"
     },
     "kharg_island_strike": {
@@ -1880,20 +1880,20 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.88,
-      "confidence": 0.7,
+      "probability": 0.15,
+      "confidence": 0.85,
       "evidence": [
         "Iran military: any attack on Iran oil infra → immediate destruction of regional oil infra of US-cooperating companies",
         "Trump: chose NOT to hit oil infra, conditional on Hormuz",
         "[2026-03-14] (cred:0.77) US preserved Kharg oil infra as coercive leverage. Iran threatens Gulf oil retaliation but hasn't struck Saudi/UAE oil yet. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
         "[2026-03-14] (cred:0.77) Day 15: US Kharg strike validated credible threat + credible restraint model. Deterrence equilibrium strengthened. Up from 0.85. — CENTCOM/NBC/NYT/Goldman/MarketData"
       ],
-      "reasoning": "双方均以石油设施为筹码建立对等威慑。稳定但脆弱——任何误判可触发螺旋",
+      "reasoning": "DETERRENCE COLLAPSED: South Pars struck (Mar 18) + Iran threatening specific Gulf energy targets (Samref/Jubail/Al Hosn/Mesaieed/Ras Laffan) + Aramco evacuating. The 3-week tacit truce on energy targets is BROKEN. Both sides now hitting energy infrastructure.",
       "time_horizon": "1-4 weeks",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T10:53:28.612554+00:00",
+      "last_updated": "2026-03-19T03:22+08:00",
       "created": "2026-03-14T10:53:28.612554+00:00"
     },
     "uae_direct_threat": {
@@ -1932,19 +1932,19 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.85,
-      "confidence": 0.65,
+      "probability": 0.15,
+      "confidence": 0.85,
       "evidence": [
         "Iran military: attack on our oil infra → immediate destruction of US-cooperating oil companies infra in region",
         "Trump: chose NOT to hit oil infra, conditional threat if Hormuz continues",
         "[2026-03-14] (cred:0.77) Duplicate node tracking same concept. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)"
       ],
-      "reasoning": "双方建立了对等报复原则。美国保留Kharg油田作筹码，伊朗威胁攻击区域美资油田设施。类似核MAD的石油版本",
+      "reasoning": "DETERRENCE COLLAPSED. South Pars struck + Iran IRGC issued specific evacuation orders for Gulf energy targets.",
       "time_horizon": "1-4 weeks",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T10:53:35.598778+00:00",
+      "last_updated": "2026-03-19T03:22+08:00",
       "created": "2026-03-14T10:53:35.598778+00:00"
     },
     "uae_targeted": {
@@ -2007,14 +2007,15 @@
         "military",
         "energy"
       ],
-      "probability": 0.85,
-      "confidence": 0.78,
+      "probability": 0.95,
+      "confidence": 0.9,
       "evidence": [
         "[2026-03-14] (cred:0.72) NBC reports Iran threatens to strike Gulf oil infrastructure in retaliation for Kharg strikes. Consistent with Iran's stated doctrine of regional pain-sharing. — NBC News",
         "[2026-03-15] Day 15-16: Iran joint military command reiterated threat to attack US-linked oil/energy infrastructure. Parliament speaker: oil infra strikes provoke new level of retaliation. Fujairah oil facility already hit (drone debris). Up from 0.72. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)"
       ],
-      "reasoning": "Iran has explicitly threatened Gulf oil infrastructure. Previous Oman strikes (Day 14) demonstrate willingness to hit bypass routes. Saudi Ras Tanura and UAE Jebel Ali are logical targets.",
-      "node_type": "prediction"
+      "reasoning": "IRGC issued SPECIFIC evacuation orders naming facilities: Saudi Samref+Jubail, UAE Al Hosn, Qatar Mesaieed+Ras Laffan (Reuters). Aramco evacuating Samref. Iran already attacking Gulf countries with missiles+drones. ABC7: facilities are now direct and legitimate targets.",
+      "node_type": "prediction",
+      "last_updated": "2026-03-19T03:22+08:00"
     },
     "hormuz_selective_passage": {
       "id": "hormuz_selective_passage",
@@ -2406,6 +2407,25 @@
         "Guardian: \"muted response\" from most countries"
       ],
       "reasoning": "中国不愿卷入美方军事行动，但Hormuz关闭直接损害中国利益"
+    },
+    "south_pars_strike": {
+      "id": "south_pars_strike",
+      "label": "以色列/美国协调打击南帕尔斯气田(全球最大，与卡塔尔共享)",
+      "domains": [
+        "energy",
+        "military"
+      ],
+      "probability": 1.0,
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "text": "Israel struck South Pars offshore gas field with US coordination (Bloomberg/NYT/AP/CNN/AJE/Guardian)",
+          "date": "2026-03-18",
+          "credibility": 0.95
+        }
+      ],
+      "reasoning": "Multi-source confirmed: Bloomberg, NYT, AP, CNN, AJE, Guardian, JPost all report Israel struck South Pars with US coordination. Iranian state media confirmed. AP: shared field with Qatar. This is the single most significant escalation — crosses energy infrastructure Rubicon.",
+      "last_updated": "2026-03-19T03:22+08:00"
     }
   },
   "edges": [
@@ -3754,6 +3774,30 @@
       "target": "conflict_protracted",
       "weight": 0.8,
       "reasoning": "开辟新地面战线确保冲突长期化"
+    },
+    {
+      "source": "south_pars_strike",
+      "target": "qatar_lng_disrupted",
+      "weight": 0.9,
+      "reasoning": "South Pars is shared field with Qatar. Strike directly threatens Qatar LNG."
+    },
+    {
+      "source": "south_pars_strike",
+      "target": "energy_crisis",
+      "weight": 0.85,
+      "reasoning": "Striking world largest gas field deepens energy crisis."
+    },
+    {
+      "source": "south_pars_strike",
+      "target": "iran_gulf_oil_retaliation_threat",
+      "weight": 0.8,
+      "reasoning": "South Pars strike provokes Iran retaliation against Gulf energy targets."
+    },
+    {
+      "source": "south_pars_strike",
+      "target": "oil_price_100",
+      "weight": 0.9,
+      "reasoning": "AJE: oil prices surged after South Pars strike."
     }
   ],
   "last_updated": "2026-03-15T11:17:32.102028+00:00",
