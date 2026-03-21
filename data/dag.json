@@ -2418,11 +2418,7 @@
       "probability": 1.0,
       "confidence": 0.97,
       "evidence": [
-        {
-          "text": "Israel struck South Pars offshore gas field with US coordination (Bloomberg/NYT/AP/CNN/AJE/Guardian)",
-          "date": "2026-03-18",
-          "credibility": 0.95
-        }
+        "Israel struck South Pars offshore gas field with US coordination (Bloomberg/NYT/AP/CNN/AJE/Guardian)"
       ],
       "reasoning": "Multi-source confirmed: Bloomberg, NYT, AP, CNN, AJE, Guardian, JPost all report Israel struck South Pars with US coordination. Iranian state media confirmed. AP: shared field with Qatar. This is the single most significant escalation — crosses energy infrastructure Rubicon.",
       "last_updated": "2026-03-19T03:22+08:00"
