@@ -150,8 +150,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.72,
-      "confidence": 0.7,
+      "probability": 0.85,
+      "confidence": 0.8,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
@@ -165,9 +165,15 @@
         "[2026-03-15] Day 15: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
-        "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed."
+        "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed.",
+        {
+          "text": "Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed.",
+          "date": "2026-03-23",
+          "credibility": 0.9,
+          "impact_direction": "up"
+        }
       ],
-      "reasoning": "Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
+      "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: ISW Mar 19 confirmed combined force destroyed ~85% of Iran SAMs. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. 8000+ targets struck. Quantitative degradation confirmed by CENTCOM commander directly. Old: 0.72",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
@@ -554,8 +560,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.28,
-      "confidence": 0.72,
+      "probability": 0.55,
+      "confidence": 0.65,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -575,9 +581,15 @@
         "[2026-03-15] Day 15-16: Mixed signals. Trump says Iran appears ready to deal but terms not right. However Kharg strike + IRGC defiance on Hormuz makes face-saving harder. Net unchanged at 0.02. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
         "[2026-03-16] Iran FM offers safe passage talks - first diplomatic signal",
         "[2026-03-16] Pope demands ceasefire + Iran FM safe passage + Macron call = growing diplomatic pressure but no concrete offramp",
-        "[2026-03-23 19:33] ★★★★★ REGIME SHIFT: Trump CONFIRMED direct talks with Iran — \"very good and productive conversations regarding complete and total resolution.\" POSTPONED power plant strikes 5 DAYS. First confirmed bilateral engagement since Witkoff rejections. Markets: Brent -8%, stocks surging. This is ACTION not rhetoric. (Reuters/Guardian/AJE/CNBC/NYT)"
+        "[2026-03-23 19:33] ★★★★★ REGIME SHIFT: Trump CONFIRMED direct talks with Iran — \"very good and productive conversations regarding complete and total resolution.\" POSTPONED power plant strikes 5 DAYS. First confirmed bilateral engagement since Witkoff rejections. Markets: Brent -8%, stocks surging. This is ACTION not rhetoric. (Reuters/Guardian/AJE/CNBC/NYT)",
+        {
+          "text": "Mar 23: Trump postponed power plant strikes 5 days, claimed productive conversations with Iran. Iran denies all negotiations. Brent crashed -13% to $96.91. Bloomberg/NYT/CNBC/AP confirmed.",
+          "date": "2026-03-23",
+          "credibility": 0.85,
+          "impact_direction": "up"
+        }
       ],
-      "reasoning": "MASSIVE UPDATE from 0.04: Trump confirmed direct US-Iran talks, postponed strikes 5 days. Previously Iran rejected all Witkoff approaches. Now bilateral engagement confirmed. 5-day window = diplomatic space. But: military ops CONTINUE, no ceasefire terms announced, Israel timeline diverges (IDF: several more weeks). 28% reflects confirmed talks but enormous distance to actual ceasefire.",
+      "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: Trump POSTPONED energy strikes 5 days (ACTION not rhetoric) + claimed productive talks. Iran DENIES but market priced in -13% Brent. Either back-channel exists Iran cannot acknowledge, or Trump unilateral framing. The ACTION (postponement) is signal regardless. Old: 0.28",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
@@ -2284,7 +2296,7 @@
     },
     "us_casualties_13_confirmed": {
       "id": "us_casualties_13_confirmed",
-      "label": "美军13人阵亡(含伊拉克坠机)",
+      "label": "美军14人阵亡(含伊拉克坠机+科威特无人机)",
       "node_type": "fact",
       "domains": [
         "军事"
@@ -2294,7 +2306,13 @@
       "evidence": [
         "[2026-03-16] Guardian: 13 US service members killed",
         "Pentagon confirmed Tyler Simmons (28) in Iraq tanker crash",
-        "NPR cost analysis"
+        "NPR cost analysis",
+        {
+          "text": "Mar 23: Wikipedia confirmed 14 US soldiers killed. AJE tracker: 13 US soldiers (lagging). Time: 13 as of Mar 10 article.",
+          "date": "2026-03-23",
+          "credibility": 0.9,
+          "impact_direction": "neutral"
+        }
       ],
       "reasoning": "五角大楼确认，含伊拉克加油机坠毁4人"
     },
