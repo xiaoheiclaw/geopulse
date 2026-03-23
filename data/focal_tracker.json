@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-23T15:36:05.995657+00:00",
+  "last_updated": "2026-03-23T23:34:17.719686+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -38,6 +38,12 @@
           "date": "2026-03-23",
           "est": "1-2 declining, capability severely degraded",
           "note": "Day 24 23:33. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. ISW: 85% Iran SAMs destroyed. IRGC still targeting Prince Sultan AB + US 5th Fleet + Israel cities but VOLUME collapsed. CENTCOM: 8000+ targets, 130 vessels destroyed. IDF wide-scale wave on Tehran + Qom drone factory destroyed. Trump 5-day postponement = energy infrastructure OFF-LIMITS. PATTERN: Quantitative degradation confirmed by CENTCOM. Scope expanding (Saudi/Bahrain/Israel) but mass salvo capability gone. Source: CENTCOM/ISW/BBC/CNBC/Newsday",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-03-23",
+          "est": "1-2 declining, 9000+ US strikes, 140+ vessels",
+          "note": "Day 25 07:29. CENTCOM: 9000+ strikes, 140+ vessels destroyed. Cooper: fire declining to 1-2 at a time. ISW: 85% SAMs destroyed. Khorramabad/Tabriz/Urmia civilian casualties. Trump 5-day pause active. Source: NYT/CENTCOM/AJE",
           "source": "pipeline"
         }
       ]
@@ -81,6 +87,12 @@
           "est": "~1.5 mbd (2.3 ships/day declining)",
           "note": "Day 24 23:33. Windward AI Mar 22: only 16 AIS-visible crossings in past 7 days = 2.3/day (DOWN from 3-4). Goldman: flows at 5% of normal. NYT Mar 20: avg 3-4/day. BBC: ~100 ships since Mar 1. CNBC Mar 18: 11 China-linked vessels Mar 1-15. Trump postponement REMOVES complete closure trigger for 5 days. Iran selective transit: CN/IN/PK/IQ/MY/JP. Mine threat CRITICAL. USS Boxer 2+ weeks out. DECLINING TREND: 2.3/day vs 3-4/day earlier = transit deteriorating despite no escalation trigger. Source: Windward/NYT/BBC/CNBC/Goldman/Reuters",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-23",
+          "est": "~1.5 mbd (2-3 ships/day declining)",
+          "note": "Day 25. Windward: 2.3/day. Goldman: 5% normal. Trump pause removes closure trigger 4 more days. Source: Windward/Goldman/NYT",
+          "source": "pipeline"
         }
       ]
     },
@@ -120,6 +132,12 @@
           "est": "~0.75 mbd first batch flowing",
           "note": "Day 24 23:33. SPR D+9. Argus confirmed: first shipments began Fri Mar 21. DOE 45.2M bbl to Shell/Marathon/BP/Gunvor (52% of 86M subscribed). Exchange: return 55M bbl (22% premium). Apr-May delivery = ~0.75 mbd. IEA Birol consulting on MORE releases. Goldman raised Brent avg forecast to . MARKET CRASH: Brent -13% to .91, WTI -13% to .66 on Trump talks claim. SPR trickle irrelevant vs /bbl crash from diplomacy signal. Source: Argus/DOE/CNBC/Goldman/IEA/Bloomberg",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-23",
+          "est": "~0.75 mbd first batch",
+          "note": "Day 25 D+10. WTI crashed to 88.39. SPR trickle irrelevant vs diplomacy crash. Source: Argus/LiteFinance",
+          "source": "pipeline"
         }
       ]
     }
@@ -128,30 +146,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "DIPLOMATIC_ACTIVE_NO_COST_ACTION",
+      "status": "DIPLOMATIC_RHETORIC_NO_COST_ACTION",
       "last_check": "2026-03-23",
-      "findings": "Day 24 23:33. CGTN/FMPRC confirmed: Special Envoy Zhai Jun met Iran Ambassador Rahmani Fazli Mar 20. Beijing dispatching envoys + evacuating nationals. BUT Al Jazeera analysis (Mar 19): China offered LITTLE substantive assistance beyond rhetoric — no attempt to confront US, no military aid. UK NSA Powell secretly attended US-Iran nuclear talks in Geneva. China role: DIPLOMATIC PRESSURE not COST ACTION. Still below direct military/economic threshold. Source: CGTN/FMPRC/AJE/Wikipedia"
+      "findings": "Day 25. Zhai Jun concluded ME trip. Xinhua: 6-point statement (ceasefire, dialogue, condemn US/Israel). Reuters: China in communication but no cost action. Still below threshold. Source: Xinhua/Reuters"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "MASSIVE_CONTRADICTION_TRUMP_TALKS_IRAN_DENIES",
+      "status": "CRITICAL_CONTRADICTION_PERSISTS",
       "last_check": "2026-03-23",
-      "findings": "Day 24 23:33. ★★★★★ CRITICAL CONTRADICTION: (1) Trump: 'very good and productive conversations' → postponed energy strikes 5 days; (2) Iran FLATLY DENIES: 'There have been no negotiations and there are none underway' (NYT/CNBC/AP/FARS); (3) Trump: believes Israel would back ceasefire (Newsweek); (4) Iran: 'with this kind of psychological warfare, neither Hormuz will return nor peace in energy markets' (CNBC quoting state media); (5) Military operations CONTINUE both sides: IDF wide-scale Tehran strikes, Iran missiles at Israel; (6) IDF: war 'several more weeks'. PATTERN: Either (A) back-channel exists that Iran cannot publicly acknowledge, or (B) Trump unilateral de-escalation framing for domestic audience. Market chose interpretation A (Brent -13%). Source: NYT/CNBC/AP/Bloomberg/Newsweek/FARS"
+      "findings": "Day 25. Trump: major points of agreement, deal could be done soon. Iran: NO negotiations, fake news, US retreat. Market chose interpretation A (Brent -13%). If B proven: oil rebounds. Source: NYT/CNBC/Bloomberg"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "WINDOW_OPEN_BUT_NO_VISIBLE_COUNTERPART",
+      "status": "5-DAY_WINDOW_OPEN_NO_COUNTERPART",
       "last_check": "2026-03-23",
-      "findings": "Day 24 23:33. Trump 'complete and total resolution' language = desired end-state declared. 5-day window = diplomatic space. UK Powell at Geneva. BUT: Iran DENIES any negotiations → no visible counterpart for framework. If back-channel exists, it's deeply covert. Scaffolding: UNSC 2817 + 22-country coalition + Kushner/Witkoff + China envoy + UK Powell. CENTCOM victory narrative ready (85% SAMs, 130 vessels, Khamenei killed). CRITICAL: 5 days isn't enough for comprehensive deal — ceasefire-first structure most likely IF talks are real. Source: Reuters/Guardian/NYT/Bloomberg"
+      "findings": "Day 25. Trump 5-day pause = diplomatic space. UK Powell at Geneva. BUT Iran denies any talks. Deadline ~Mar 28. Source: Reuters/Guardian/Bloomberg"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "THRESHOLD_CROSSED_MARKET_VALIDATES_PIVOT",
+      "status": "THRESHOLD_VALIDATED_MARKET_CRASH",
       "last_check": "2026-03-23",
-      "findings": "Day 24 23:33. 🔴 MARKET VALIDATED COST THESIS: Brent crashed -13% (→.91), WTI -13% (→.66), S&P surged +2.2% (+143pts), Dow +2.3% (+1025pts), Gold - to ,397. Markets DESPERATE for de-escalation. Gas .94/gal (+32%), CA +, diesel . IEA Birol: crisis worse than 1970s + Ukraine COMBINED. Pentagon B request. US dead: 14. Iran: 3,230+ (HRANA). Republicans telling voters 'bear short-term pain'. Goldman raised Brent avg to . COST PRESSURE = PRIMARY DRIVER of Trump pivot. Source: CNBC/247WallSt/NYT/IEA/Goldman/HRANA/NPR"
+      "findings": "Day 25. Brent -13% to 97, WTI -13% to 88. Dow +2.3%. Market desperate for exit. Gas 3.94/gal. IEA: worse than 1970s+Ukraine. Cost pressure = primary driver of Trump pivot. Source: CNBC/IEA/Goldman"
     }
   },
   "noise_filter": {
