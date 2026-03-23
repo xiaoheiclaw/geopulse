@@ -1,208 +1,15 @@
 {
-  "version": 1,
+  "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-23T15:33+08",
-  "design": "两层观测: 物理层(状态)+ 焦点层(转折)",
+  "last_updated": "2026-03-23T09:25:50.335905+00:00",
+  "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
-    "description": "每天必须更新的三个物理量。告诉你'现在什么状态'",
     "q1_attack_frequency": {
       "label": "IRGC袭击频率(次/天)",
       "source": "CENTCOM daily statements + UKMTO",
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-03-09",
-          "est": "3-5",
-          "note": "Day 10, still high",
-          "source": "multiple reports"
-        },
-        {
-          "date": "2026-03-12",
-          "est": "2-4",
-          "note": "Day 13, IRGC 'most intense operation'",
-          "source": "CENTCOM"
-        },
-        {
-          "date": "2026-03-13",
-          "est": "3+",
-          "note": "Day 14, IRGC fighters direct engagement",
-          "source": "CENTCOM"
-        },
-        {
-          "date": "2026-03-16",
-          "est": null,
-          "note": "Day 17, TBD",
-          "source": "pending"
-        },
-        {
-          "date": "2026-03-17",
-          "est": "2-4",
-          "note": "Day 18. US struck 5000+ targets total. Kharg Island precision strike (Mar 14) destroyed 90+ targets. Iran navy 'crushed' per CENTCOM. 20+ weapons systems deployed. IRGC still active but degraded capacity. US casualties 13 total (7 by enemy fire, 6 in Kuwait drone strike). Amnesty reports unlawful school strike killing 100+ children (Mar 17). AJE live tracker: 1,444 dead Iran (state media), 2,000+ cross-region.",
-          "source": "CENTCOM/AJE/Reuters/Amnesty/Time"
-        },
-        {
-          "date": "2026-03-17T23",
-          "est": "2-3+proxy",
-          "note": "Day 18 late. Attack pattern QUALITATIVE SHIFT: (1) Iran fired Sejjil ballistic missile at Israel (first time in war — new weapon system); (2) Iraqi militia drones+rockets hit US embassy Baghdad + luxury hotel in Green Zone + Iraqi oil field; (3) ISW: 'Iranian-backed Iraqi militias continue to attack US forces and interests in Iraq'; (4) CENTCOM confirmed 20+ weapon systems across air/sea/land. Pattern: IRGC direct attacks declining in frequency but PROXY attacks escalating (Iraq militia) + STRATEGIC weapons (Sejjil BM) being deployed. Degraded but adapting, not collapsing.",
-          "source": "ISW/Reuters/CNN/NPR/Wikipedia"
-        },
-        {
-          "date": "2026-03-18",
-          "est": "1-2 direct + proxy",
-          "note": "Day 19. ★ KEY: ISW Mar 16 report confirms 'Iran has not attacked any vessels in the Strait of Hormuz since March 12' — 5+ days without vessel attacks. US F/A-18 engaging targets at extremely low altitude in Chabahar suggests US local air dominance along coast segments. CENTCOM struck multiple Iranian air defense systems (Mar 16 footage). Larijani (SNSC sec-gen) + Basij commander Gholamreza Soleimani killed by Israel. Mojtaba inner circle now dominated by hardline IRGC commanders (Taeb, Vahidi, Jafari, Ghalibaf, Rezaei per NYT). Regime restricting internet further (Starlink crackdown, VPN reduction). IRGC direct vessel attack frequency at war low BUT proxy attacks via Iraq militia continue. Hezbollah planning major rocket fire at Israel per IDF. Pattern: IRGC maritime capability significantly degraded, shifting to proxy + strategic weapons.",
-          "source": "ISW Mar 16/NYT/Guardian/AJE/TimesOfIsrael"
-        },
-        {
-          "date": "2026-03-18T07",
-          "est": "1-2 direct + proxy",
-          "note": "Day 19 update. No new kinetic data since last check. ISW vessel attack lull now 6 days (since Mar 12). Pentagon presenting Trump daily options to end war — none taken yet (NBC). Araghchi: 'We did not request a ceasefire, but this war must end in a way that it will not be repeated' (NBC/Fars). CENTCOM 5000+ targets struck total. First 6 days cost $11.3B per Pentagon report to Congress. Pattern unchanged: IRGC maritime degraded, proxy vector (Iraq militia) active, strategic weapons (Sejjil BM) deployed.",
-          "source": "NBC/Reuters/NYT/Pentagon"
-        },
-        {
-          "date": "2026-03-18T11",
-          "est": "1-2 direct + renewed Gulf retaliation",
-          "note": "Day 19 11:00. P0: Iran CONFIRMED renewed missile+drone attacks on Gulf Arabs+Israel (The Hindu Mar 18). Larijani death CONFIRMED by Iran. IDF vows to hunt Mojtaba. USS Ford pulling into port. CENTCOM bunker busters near Hormuz.",
-          "source": "The Hindu/Reuters/Bloomberg/TimesOfIsrael"
-        },
-        {
-          "date": "2026-03-18T11:22",
-          "est": "★ COORDINATED OFFENSIVE",
-          "note": "Day 19 pipeline. P0 ESCALATION: Iran announced COORDINATED offensive by IRGC Navy + Iranian Army + Hezbollah against Israel and US bases. This BREAKS the 6-day vessel attack lull pattern. (1) 58 hospitalized in Israel from missile strike; (2) Hezbollah+Iran cluster munitions on Haifa area; (3) Iran again targeted Gulf countries with missiles+drones; (4) USS Ford pulling into port after fire (laundry area, 2 sailors injured) — reduced US carrier capability; (5) CENTCOM bunker busters near Hormuz (Mar 17). Qualitative shift: from degraded/adapting to COORDINATED MULTI-FRONT OFFENSIVE. Central command still functioning despite tactical decentralization. AJE death toll: 1,444 Iran (state media), 15+ Israel, 13 US, 20+ Gulf states.",
-          "source": "Wikipedia/TheHindu/Reuters/Bloomberg/NPR/AJE/ISW"
-        },
-        {
-          "date": "2026-03-18T19:22",
-          "est": "3+ coordinated multi-front",
-          "note": "Day 19 evening pipeline. COORDINATED OFFENSIVE CONFIRMED multi-source: (1) Iran coordinated offensive by IRGC Navy + Army + Hezbollah (Wikipedia); (2) Tel Aviv missile barrage — 2 killed, 58 hospitalized (Dawn/AFP); (3) Cluster munitions on Haifa area (Wikipedia/Lebanon war page); (4) Gulf countries targeted again with missiles/drones, oil prices rising (Wikipedia); (5) Iranian projectile near Australian Al Minhad Air Base UAE (LiveMint); (6) CENTCOM 5000-lb bunker busters on hardened SSM sites along Iran coast near Hormuz (TimesNow/CENTCOM); (7) USS Ford pulling into port = reduced carrier capability; (8) CENTCOM confirmed 20+ weapon systems across air/sea/land; (9) F/A-18 engaging at extremely low altitude near Chabahar. Pattern: 6-day vessel attack lull BROKEN. Iran choosing to spend remaining strategic reserves on coordinated multi-front offensive rather than slow attrition. This is a use-it-or-lose-it calculus.",
-          "source": "Dawn/Wikipedia/TimesNow/LiveMint/Reuters/CENTCOM/AJE/ABCNews"
-        },
-        {
-          "date": "2026-03-19T01:28+08",
-          "est": "3+ coordinated + energy war",
-          "note": "Day 19 late. 🔴 ENERGY RUBICON CROSSED: (1) Israel/US coordinated strike on SOUTH PARS gas field (world's largest, shared w/ Qatar) + Asaluyeh oil facilities (Bloomberg/NYT/JPost/AJE/Guardian/Reuters); (2) Israel killed Intelligence Minister Esmail Khatib — 3rd top official in 48hrs (AP/NYT/CNN); (3) Iran IRGC issued SPECIFIC evacuation orders for Gulf energy targets: Saudi Samref+Jubail, UAE Al Hosn, Qatar Mesaieed+Ras Laffan (Reuters); (4) Aramco evacuating Samref personnel (OilPrice); (5) Mojtaba REJECTED de-escalation — demands US/Israel 'brought to their knees' (Reuters/SMH/CNA); (6) Mossad ground op inside Iran (Al Arabiya single source); (7) Iran using Russian-modified Shaheds (ISW). Pattern: WAR PHASE CHANGE — from military-to-military combat to ENERGY INFRASTRUCTURE WAR. The 3-week tacit truce on energy targets is BROKEN. Iran listing specific Saudi/UAE/Qatar facilities = war may expand from US-Iran to REGIONAL ENERGY CONFLICT.",
-          "source": "Bloomberg/NYT/JPost/AP/Reuters/Guardian/AJE/ISW/AlArabiya/OilPrice/SMH/CNA"
-        },
-        {
-          "date": "2026-03-19T03:22+08",
-          "est": "3+ coordinated + energy Rubicon",
-          "note": "Day 20 (entering). ENERGY WAR PHASE CONFIRMED MULTI-SOURCE: (1) Israel/US struck South Pars gas field (world largest, shared w/ Qatar) — Bloomberg/NYT/AP/CNN/AJE/Guardian all confirm; (2) Asaluyeh oil facilities also hit; (3) Intelligence Minister Khatib killed by Israel — 4th top official eliminated; (4) IRGC coordinated offensive by Navy + Army + Hezbollah continues; (5) CENTCOM: 7,000+ targets struck (up from 5,000+); (6) Gulf states (Kuwait/Qatar/Saudi/UAE) intercepting missiles and drones daily; (7) Iran using Russian-modified Shahed drones (ISW); (8) Euronews: barrages targeting Gulf region daily; (9) Amnesty: CENTCOM using AI tools for targeting; (10) Turkish Airlines cancelled all regional flights until Mar 19-20. QUALITATIVE ASSESSMENT: War has entered ENERGY INFRASTRUCTURE PHASE. The 3-week tacit truce on energy targets is broken. Both sides now hitting each other economic lifelines. This is the most significant escalation since the war began.",
-          "source": "Bloomberg/NYT/AP/CNN/AJE/Guardian/Euronews/ISW/Amnesty/Wikipedia"
-        },
-        {
-          "date": "2026-03-19T11:22+08",
-          "est": "3+ ENERGY WAR FULLY KINETIC",
-          "note": "Day 20. 🔴 P0 — ENERGY WAR RETALIATION EXECUTED: (1) Iran STRUCK Ras Laffan Industrial City (Qatar) with missiles — 'extensive damage' confirmed by QatarEnergy (CNBC/AJE/Reuters). World's LARGEST LNG export hub. No casualties reported but infrastructure damage confirmed; (2) Saudi Arabia intercepted 4 ballistic missiles targeting RIYADH (Guardian); (3) UAE intercepted 13 ballistic missiles + 27 drones from Iran, shut gas facilities (AJE); (4) IRGC statement: enemies should 'await the powerful action' of armed forces after South Pars attack (CNN/Newsweek); (5) CENTCOM: 7,000+ targets struck total (AJE); (6) Pentagon reportedly requesting $200B in war funds (Guardian); (7) Dow -750pts, S&P -1.3% on Mar 18 after Fed decision + war escalation (Yahoo Finance); (8) ISW Mar 18: IRGC Navy ammo depot Bushehr + Bandar-e Jask port struck; (9) Araghchi firmly rejects ceasefire (Time). QUALITATIVE ASSESSMENT: War has crossed from ENERGY INFRASTRUCTURE threats to KINETIC ENERGY WAR across Gulf. Iran's IRGC evacuation warnings (Mar 17) for Saudi/UAE/Qatar targets were NOT rhetoric — they were operational targeting notices. The 3-week tacit truce on energy infrastructure is irrevocably broken on BOTH sides. This is the most dangerous escalation since the war began — a full regional energy war is now underway.",
-          "source": "CNBC/AJE/Reuters/Guardian/CNN/Newsweek/Yahoo Finance/ISW/Time"
-        },
-        {
-          "date": "2026-03-19T23:22+08",
-          "est": "3+ ENERGY INFRASTRUCTURE ANNIHILATION PHASE",
-          "note": "Day 20 late. 🔴 P0 — MUTUAL ENERGY DESTRUCTION ACCELERATING: (1) Bloomberg/Reuters: Iran strike damaged 17% of Qatar LNG capacity — recovery 3-5 YEARS (Bloomberg Mar 19); (2) Iran targeted Saudi refinery, UAE gas forced shut, Kuwait fires at 2 energy sites (Reuters Mar 19 comprehensive); (3) Trump on Truth Social: threatened to 'massively blow up the ENTIRE South Pars Gas Field at an amount and strength and power that Iran has never seen' (NPR Mar 19) — this is NOT rhetoric, it's a MILITARY THREAT given prior South Pars strike was executed; (4) ★ US-ISRAEL COORDINATION DISPUTE: Israeli officials say South Pars attack was 'coordinated with US' — Trump claims he 'knew nothing' (Guardian/Reuters Mar 19); (5) ★ BESSENT DESPERATE MEASURE: floated UNSANCTIONING 130-140M bbl of Iranian oil already on water to lower prices (Bloomberg/NYT/Fox Business Mar 19) — bombing a country AND unsanctioning its oil simultaneously = logical incoherence peak; (6) Pentagon formally requesting $200B supplemental war funds (AP/WashPost/CNBC confirmed Mar 19); Hegseth: figure 'could move', 'takes money to kill bad guys'; (7) Senate voted DOWN War Powers resolution 53-47 on Mar 18 — only Rand Paul (R) crossed, Fetterman (D) voted against; 4 more Dem resolutions eligible in 10 days (NYT/Politico/Guardian); (8) Brent SPIKED to $119/bbl intraday (BBC/Reuters Mar 19) before pulling back to ~$112; UK gas +19% (BBC); (9) India CONDEMNED Gulf energy strikes as 'unacceptable' (Guardian Mar 19); (10) S&P 500 -0.85% more on Mar 19 after -1.36% on Mar 18; Dow new 2026 low, worst month since 2022 (CNBC/Yahoo); (11) AJE live tracker: casualties rising across region; (12) CENTCOM 7,000+ targets struck total. QUALITATIVE ASSESSMENT: War entering MUTUAL ASSURED ENERGY DESTRUCTION phase. Both sides are now systematically destroying each other's energy infrastructure — Iran hitting Gulf allies' LNG/refining, US/Israel hitting Iran's gas/oil. The 17% Qatar LNG damage for 3-5 years means PERMANENT global energy supply reduction regardless of ceasefire timing. Bessent's unsanctioning gambit reveals the administration KNOWS oil prices are politically unsustainable but has NO mechanism to stop the destruction causing them.",
-          "source": "Bloomberg/Reuters/NPR/NYT/Guardian/BBC/AP/WashPost/CNBC/Yahoo/AJE/Politico"
-        },
-        {
-          "date": "2026-03-19T19:22+08",
-          "est": "3+ MULTI-FRONT ENERGY WAR + DIPLOMATIC RUPTURE",
-          "note": "Day 20 evening. 🔴 P0 — ENERGY WAR + DIPLOMATIC BREAK: (1) Iran fired 8+ barrages at Israel since midnight Mar 19 (ToI liveblog); (2) Cluster munitions on Ramat Gan — 2 killed in 70s found outside safe room (Wikipedia/AP); (3) Iran retaliatory offensive continues: IRGC Navy + Army + Hezbollah coordinated; (4) ★ DIPLOMATIC RUPTURE: Qatar EXPELLED Iranian military/security attachés — persona non grata, 24hr to leave (Gulf Times/Al Arabiya/ET). First Gulf state to formally break military ties with Iran during this war; (5) Qatar framed as response to 'repeated and blatant Iranian' attacks on energy facilities; (6) QatarEnergy: Ras Laffan 'extensive damage' confirmed — world's largest LNG hub (CNBC/Reuters/AJE); (7) Qatar had halted LNG production since Mar 2 due to earlier drone strikes (CNBC); (8) Brent SURGED 3.71% to $111.36 (LiveMint) — breaking $110 barrier; (9) India Sensex crashed 2,500 pts, ₹12 lakh crore eroded (LiveMint); (10) European equities -2% (year low), Asian stocks -2.8% (Bloomberg); (11) S&P 500 futures flat after previous -1.36% close at 6,624.70 below 200-DMA; (12) CENTCOM 7,000+ targets; US 13 fatalities confirmed (AJE). QUALITATIVE ASSESSMENT: Qatar's diplomatic break is the most significant POLITICAL development in weeks — it destroys Iran's last Gulf mediator channel and forces China's hand (Qatar = ~20% of China's LNG). The energy war is now SELF-REINFORCING: infrastructure damage → price spikes → political pressure → more strikes. No off-ramp visible.",
-          "source": "Gulf Times/Al Arabiya/ET/ToI/AP/Wikipedia/CNBC/Reuters/AJE/LiveMint/Bloomberg"
-        },
-        {
-          "date": "2026-03-20T03:22+08",
-          "est": "3+ ENERGY WAR + TRUMP PIVOT ON ENERGY STRIKES",
-          "note": "Day 21 early. 🔴 P0 — DUAL PIVOT: (1) ★ ACTION: Trump told Netanyahu \"don't do that\" — halt attacks on Iranian energy infrastructure (News18/CNN Mar 19). \"We're not doing that anymore.\" First direct constraint on Israel targeting since war began; (2) ★ ACTION: Iran INTENSIFIED Gulf energy offensive Mar 19 (Reuters/CBC/AJE): hit Saudi Aramco SAMREF refinery in Yanbu (Red Sea), set Qatari LNG facilities ablaze AGAIN, two Kuwaiti oil refineries set on fire. IRGC executing energy war retaliation despite Trump de-escalation; (3) ★ CLAIM: Netanyahu says Iran \"no longer can enrich uranium or make ballistic missiles\" (AP/Reuters/Yahoo Mar 19) — maximalist victory claim, possible narrative for ceasefire; (4) Iran parliament considering Hormuz transit fees/taxes bill (Reuters Mar 19); (5) 2nd Senate War Powers defeated — 4 more resolutions eligible in 10 days (NYT/Politico); (6) AJE: analysts now seriously considering $150-$200/bbl; (7) Joe Kent (DNI deputy) resigned: \"Iran posed no imminent threat\" — contradicts casus belli (Guardian). ASSESSMENT: TWO CONTRADICTORY PIVOTS — Trump constraining Israel on energy = first real de-escalation ACTION, while Iran ESCALATING energy attacks on Gulf. Netanyahu uranium claim = possible \"mission accomplished\" narrative. If energy targets stop BOTH sides, energy war phase could plateau. But Iran asymmetry: nothing left to lose on energy, Gulf states have everything to lose.",
-          "source": "News18/CNN/Reuters/CBC/AJE/AP/Yahoo/NYT/Politico/Guardian"
-        },
-        {
-          "date": "2026-03-20T07:22+08",
-          "est": "3+ ENERGY WAR + F-35 HIT",
-          "note": "Day 21. 🔴 P0 — FIRST US STEALTH AIRCRAFT DAMAGED + ENERGY OFFENSIVE CONTINUES: (1) ★★★ F-35A struck by Iranian fire during combat mission over Iran — emergency landing at US base, pilot stable (CNN/Air&Space Forces/Aviationist Mar 19). FIRST confirmed hit on US stealth aircraft in this war — demonstrates IRGC retains some air defense capability despite 'rendered useless' claims; (2) Iran INTENSIFIED Gulf energy strikes Mar 19: Qatari LNG ablaze AGAIN, Saudi Aramco SAMREF refinery (Yanbu/Red Sea) hit by drone, 2 Kuwait refineries on fire (AP/Reuters/AJE/Guardian Mar 19 comprehensive); (3) Vessel set ablaze off UAE coast, another damaged off Qatar (AP); (4) ★ ACTION: Netanyahu confirms halting South Pars attacks at Trump's request — 'Israel will hold off on further attacks on South Pars gas field' (AP Mar 19); (5) Israel struck Yazd airport, Bandar Abbas naval vessel, fuel depots, Shiraz (Alma Center daily report Mar 19); (6) CENTCOM 7,000+ targets struck total; 20+ weapon systems; (7) AJE live tracker: 1,444 dead Iran (state media), 18+ Israel, 13 US, 21+ Gulf states; (8) Japan PM Takaichi in DC seeking Trump help on Hormuz (AP/Britannica). QUALITATIVE ASSESSMENT: F-35 hit is STRATEGICALLY significant — shatters 'Iran military rendered useless' narrative (Netanyahu Mar 19). Iran energy retaliation hitting Saudi Red Sea alternative route (Yanbu) = closing the BYPASS as well as the strait. War in MUTUAL ENERGY ANNIHILATION phase with first cracks in US air superiority assumption.",
-          "source": "CNN/Air&Space Forces/Aviationist/AP/Reuters/AJE/Guardian/Alma Center/Britannica"
-        },
-        {
-          "date": "2026-03-20T13:29+08",
-          "est": "3+ TRIDIRECTIONAL ENERGY WAR — IRAN HITTING ISRAEL ENERGY",
-          "note": "Day 21 afternoon. 🔴 P0 — ENERGY WAR NOW TRIDIRECTIONAL: (1) ★★★ Iran struck HAIFA OIL REFINERY (Bazan/ORL) with missile — produces 50% of Israel's domestic fuel supply. Energy Ministry says 'no significant damage' but power briefly disrupted (Reuters/AJE/JPost Mar 19). Energy war now: US/Israel→Iran, Iran→Gulf, AND Iran→Israel; (2) ★★ Iran fired 5 MISSILE SALVOS at Jerusalem + northern Israel within 1 HOUR (ToI Mar 19). Cluster munitions on Haifa. Burning fragment footage. Sustained BM capability demonstrated; (3) ★★ CIA Director Ratcliffe told Senate: war will last 4-6 WEEKS (NYT Mar 19). BBC: 'Pentagon officials said US action could last 4-6 weeks'. FIRST OFFICIAL US DURATION ESTIMATE = 1-3 more weeks from now; (4) Trump says NO ground troops + 'ahead of schedule' (Newsweek/Guardian) — DIRECTLY CONTRADICTS Reuters reinforcement story from same day; (5) IDF hit 130+ targets in western/central Iran in past day (ToI); (6) UAE dismantled Iran/Hezbollah terrorist network (Reuters Mar 20 03:36 UTC); (7) NZ fuel stations 'Out of Stock' (ToI image) — physical fuel shortages reaching OCEANIA; (8) Gabbard testimony: nuclear enrichment 'obliterated', facilities 'buried with cement'; (9) Reuters: fuel cargo prices SMASH RECORD HIGHS — 'largest-ever disruption to global energy supplies'; (10) Netanyahu: Iran 'being decimated', 'unclear who is in charge' (The Hindu). QUALITATIVE ASSESSMENT: Ratcliffe's 4-6 week timeline is the most important FRAMING signal — it means US plans to continue for 1-3 more weeks regardless of exit rhetoric. Haifa refinery hit makes energy war TRIDIRECTIONAL — Iran no longer only hitting Gulf states, now hitting ISRAEL's domestic fuel supply. Trump 'no ground troops' contradicts Reuters reinforcement story = classic ambiguity preservation. Physical fuel shortages (NZ) = energy crisis going from price to AVAILABILITY.",
-          "source": "Reuters/AJE/JPost/ToI/NYT/BBC/Newsweek/Guardian/The Hindu"
-        },
-        {
-          "date": "2026-03-20T19:29+08",
-          "est": "3+ MULTILATERAL FRAMEWORK EMERGING",
-          "note": "Day 21 evening. 🔴🔴 P0 — MULTILATERAL EXIT FRAMEWORK MATERIALIZING: (1) ★★★★ UNSC Resolution 2817 PASSED — explicitly affirms Iran's attacks breach international law. RARE explicit legal determination (ME Council analysis). G7-level joint statement (UK/France/Germany/Italy/Netherlands/Japan/Canada Mar 19) demands Iran cease mines/drones/missiles, comply with UNSC 2817; (2) ★★★ Arab/Islamic FMs met in RIYADH: demanded Iran cease attacks, comply with UNSC 2817, end proxy support, stop blocking Hormuz (Pakistan Today/CNN); (3) ★★★ CIA Ratcliffe: war will last 4-6 WEEKS total (NYT/BBC) = 1-3 more weeks from Day 21. Pentagon officials confirmed same timeline. FIRST OFFICIAL US DURATION ESTIMATE; (4) ★★ Iran struck Haifa oil refinery — produces 50% Israel domestic fuel. Energy war now TRIDIRECTIONAL: US/Israel→Iran, Iran→Gulf, Iran→Israel (Reuters/AJE Mar 19); (5) ★★ Iran fired 5 missile salvos at Jerusalem + northern Israel within 1 HOUR (ToI). Cluster munitions on Haifa. SUSTAINED BM CAPABILITY; (6) Saudi intercepted missile over Al Jouf on Mar 20 (Wikipedia) — Gulf attacks CONTINUE into Day 21; (7) Overnight strikes hit Bahrain/Kuwait/UAE (Independent); (8) Trump says NO ground troops, 'ahead of schedule' — CONTRADICTS Reuters reinforcement story (Sky News); (9) QatarEnergy force majeure on contracts to Belgium/Italy/South Korea/China — 20% global LNG, 17% capacity damaged 3-5 years; (10) NZ fuel stations 'Out of Stock' — physical shortages reaching Oceania; (11) Brent ~$110, S&P heading for longest weekly losing streak since Mar 2025 (Bloomberg). CRITICAL ASSESSMENT: UNSC 2817 + G7 statement + Arab/Islamic FMs = MULTILATERAL EXIT FRAMEWORK emerging. This provides the 'face-saving scaffolding' I was looking for in fp3. Iran now isolated legally (UNSC) + diplomatically (Arab/Islamic states) + economically (force majeure). Ratcliffe 4-6 week timeline = operational ceiling. The exit is no longer unilateral Trump declaration — it's MULTILATERAL LEGAL FRAMEWORK. EXIT PROBABILITY REVISED: 70% within 14 days (up from 50%).",
-          "source": "GOV.UK/ME Council/Pakistan Today/CNN/Reuters/AJE/ToI/NYT/BBC/Wikipedia/Independent/Sky/Bloomberg"
-        },
-        {
-          "date": "2026-03-20T19:30+08",
-          "est": "3+ TRIDIRECTIONAL + A-10 HORMUZ HUNT",
-          "note": "Day 21 evening. DUAL OPERATIONAL SHIFTS: (1) ★★★ ACTION: A-10 Warthogs now HUNTING Iranian fast attack craft in Strait of Hormuz (Gen. Caine JCOS briefing Mar 19, confirmed DailyMail/TWZ/Aviationist/AirForceTimes). 'Targeting fast-attack watercraft' = first dedicated maritime interdiction mission for strait reopening; (2) ★★ Reuters: US weighing deploying troops to Iran's SHORELINE for Hormuz security — 'thousands of troops' contemplated (AJE/Reuters/RFE-RL Mar 19); (3) ★★ DailyMail: 'US opens new front in battle to reopen Strait of Hormuz' — jets obliterate Iranian ships, take down drones; (4) Iran still conducting tridirectional energy war: Haifa refinery (50% Israel fuel), Gulf states, AND continued multi-front offensive; (5) CENTCOM 7,000+ targets; (6) F-35 damage confirmed (CNN); (7) 13 US fatalities + 6 crew in KC-135 crash (AJE). PATTERN: US strategy BIFURCATING — continuing to degrade Iran (7,000+ targets) while SIMULTANEOUSLY shifting assets toward Hormuz reopening (A-10s + MEU + possible troop deployment). Iran's response: double down on energy infrastructure attacks across ALL vectors. Neither side showing signs of operational exhaustion.",
-          "source": "DailyMail/TWZ/Aviationist/AirForceTimes/Reuters/AJE/RFE-RL/CNN"
-        },
-        {
-          "date": "2026-03-21T03:30+08",
-          "est": "3+ ENERGY WAR CONTINUES + UK ENTERS + QUADRUPLE WITCHING CARNAGE",
-          "note": "Day 22. 🔴 P0 — ALLY JOINS + ENERGY WAR PERSISTS + MARINES DEPLOYING: (1) ★★★★ ACTION: UK approved US use of British bases for 'collective self-defence of region' including 'defensive operations' degrading Iranian missile sites targeting Hormuz ships (Reuters/Guardian/BBC/Sky News Mar 20) — FIRST ALLIED KINETIC PARTICIPATION; (2) ★★★ ACTION: USS Boxer group (11th MEU, thousands of Marines) LEFT California for Gulf — 3 weeks transit, plus USS Tripoli (2,000+ Marines) arriving soon from Japan (NPR Mar 20 confirmed) — massive force buildup despite Trump 'no troops'; (3) ★★ ACTION: Iran drones hit Kuwait Mina Al-Ahmadi refinery AGAIN on Mar 20 (day of Nowruz/Eid). UAE air defenses responding to missile+drone threats, explosions echoing across Dubai during Eid (NPR/AJE Mar 20); (4) NYT Mar 20: 'US warplanes and attack helicopters hitting Iranian targets to reopen Hormuz' — escalation of Hormuz clearance ops; (5) IRGC spokesman killed (NPR Mar 20); (6) Israel struck Tehran during Nowruz; (7) Irish Times Mar 20: FT reports 'time not ripe for thin-hulled US ships to pass Hormuz' — mine threat remains critical; (8) Newsweek: 53% disapprove war, 51% support War Powers, 43% less likely to vote GOP 2026, 68% of GOP under-45 prefer candidates reducing Israel support — GENERATIONAL POLITICAL SHIFT; (9) Time Mar 20: bipartisan '$200B reckless' — lawmakers CONDEMNING Pentagon request; (10) AJE death toll: 1,444 Iran, 18+ Israel, 13 US, 21+ Gulf states. QUALITATIVE ASSESSMENT: UK entry = watershed — first allied kinetic participation transforms this from US-Israel operation to Western coalition action. But it's DEFENSIVE (Hormuz protection), not offensive. The contradiction deepens: building coalition for Hormuz reopening while simultaneously destroying Iran's ability to threaten Hormuz requires CONTINUED war. Marines deploying 3 weeks out = Pentagon planning for APRIL operations, not imminent exit.",
-          "source": "Reuters/Guardian/BBC/SkyNews/NPR/NYT/IrishTimes/Newsweek/Time/AJE"
-        },
-        {
-          "date": "2026-03-21T07:30+08",
-          "est": "3+ BUT TRUMP 'WINDING DOWN' SIGNAL",
-          "note": "Day 22 morning. 🔴🔴 P0 — TRUMP EXIT SIGNAL + IRAQ FORCE MAJEURE + MARKETS CARNAGE: (1) ★★★★★ ACTION/RHETORIC HYBRID: Trump Truth Social: 'getting very close to meeting our objectives as we consider winding down our great Military efforts' — STRONGEST EXIT SIGNAL YET; (2) ★★★★★ Trump: 'I don't want to do a ceasefire... you don't do a ceasefire when you're literally obliterating the other side' — unilateral exit WITHOUT ceasefire; (3) ★★★★ Trump: Hormuz 'will have to be guarded and policed by other Nations who use it — The United States does not!' — STRATEGIC ABDICATION of Hormuz responsibility; (4) ★★★ CENTCOM Mar 20 footage: strikes 'deep inside Iran' continue — military ops NOT winding down yet; (5) ★★★ 2,500 more Marines deploying (2nd batch in a week) per multiple outlets — CONTRADICTS 'winding down'; (6) ★★★ Iraq declared FORCE MAJEURE on ALL foreign-operated oilfields (Reuters Mar 20) — cannot ship crude through Hormuz; (7) ★★ Iran developing 'vetting system' for selective Hormuz transit — India/Pakistan/Iraq/Malaysia/China in direct talks with Tehran (AJE Mar 20); (8) ★★ NYT Mar 20: visible Hormuz traffic dropped from 130+/day to avg 3-4 daily; (9) ★ $23B wartime emergency weapons sales bypassing Congress (NYT/Rubio); (10) ★ Trump told MS Now he could end war 'right now' but plans to press on. PATTERN: Trump deploying CLASSIC 'declare victory and leave' architecture — 'I think we've won', 'they don't have a navy/air force/equipment', 'winding down'. BUT simultaneously deploying thousands more Marines + UK bases active + CENTCOM strikes continuing. The signal is for DOMESTIC CONSUMPTION — building narrative for exit within 7-14 days while military maintains tempo. CRITICAL: 'Hormuz for other nations' = US may EXIT WAR WITHOUT SOLVING STRAIT. This creates worst-case scenario: PEACETIME ENERGY CRISIS.",
-          "source": "CNBC/NPR/Guardian/Sky/Axios/Reuters/AJE/NYT/DailyMail"
-        },
-        {
-          "date": "2026-03-21T11:30+08",
-          "est": "3+ COORDINATED — IRGC CLAIMED 55 SITES + ENERGY INFRASTRUCTURE ATTACKS CONTINUE",
-          "note": "Day 22. 🔴 P0 — IRGC 55-SITE OFFENSIVE + SANCTIONS WAIVER + UK KINETIC ENTRY: (1) ★★★★★ ACTION: US Treasury OFFICIALLY waived sanctions on Iranian oil at sea for 30 days (Mar 20→Apr 19) — ~140M bbl floating crude now purchasable (Reuters/NYT/Politico/Guardian). Bombing a country AND unsanctioning its oil is now OFFICIAL POLICY not just Bessent rhetoric; (2) ★★★★ ACTION: IRGC claimed strikes on 55+ American/Israeli-linked sites across region on Mar 20 (NYT 7:05pm ET); (3) ★★★★ ACTION: UK approved British bases for Hormuz defensive strikes — FIRST allied kinetic participation (Reuters/Guardian/BBC/Sky Mar 20); (4) ★★★ ACTION: Israel struck Tehran again during Nowruz (NPR/AJE); IDF hit Iranian naval vessels in CASPIAN SEA — new theater (Gulf News); (5) ★★★ Iran hit Kuwait Al-Ahmadi refinery AGAIN (drones, fire in units, no casualties — KPC/NBC); Saudi shot down 15 drones over Al-Jawf/Eastern regions; UAE intercepted 4 BMs + 26 drones (total since war: 338 BMs + 15 CMs + 1,740 drones); (6) ★★ 37 US sailors casualties reported in latest NYT update; (7) Trump: 'winding down' + no ceasefire + Hormuz for 'other nations'. CENTCOM 7,000+ targets. PATTERN: Iran maintaining coordinated multi-front offensive (IRGC Navy+Army+Hezbollah, 55 sites in one day). Energy infrastructure attacks CONTINUING despite Nowruz. US response: sanctions waiver (desperation) + UK bases (coalition building) + Marines deploying (hedging). The 55-site IRGC claim is the SINGLE LARGEST CLAIMED OPERATION since war began.",
-          "source": "Reuters/NYT/Politico/Guardian/NPR/AJE/GulfNews/NBC/BBC/Sky"
-        },
-        {
-          "date": "2026-03-21T15:30+08",
-          "est": "3+ COORDINATED — KHARG ISLAND OCCUPATION FLOATED + IRAN GLOBAL THREAT",
-          "note": "Day 22 afternoon. 🔴 P0 — MAXIMUM INTERNAL CONTRADICTION: (1) ★★★★★ ACTION: US sending 3 MORE warships + 2,500 Marines to ME (NYT/Guardian/Military.com/CBS Mar 20) — USS Boxer w/ MEU departing 3 weeks early; (2) ★★★★ Guardian: US considering plans to OCCUPY or BLOCKADE Kharg Island (90% Iran oil exports). WH: \"can take out Kharg Island at any time\"; (3) ★★★ Iran armed forces threatened to \"hunt down\" US/Israel officials worldwide at tourist destinations (state TV); (4) ★★★ Mojtaba Khamenei first statement: enemies need \"security\" taken away; (5) ★★★ Kuwait Mina al-Ahmadi refinery hit AGAIN — 2 waves Iranian drones (730k bpd capacity), already damaged previous day; (6) ★★ Dubai explosions during Eid — air defenses intercepting rockets; (7) ★★ US+Israel struck 16 Iranian cargo vessels at Bandar Lengeh/Kong; (8) ★★ Israel attacked Syrian govt positions (days after suggesting Syria disarm Hezbollah); (9) CENTCOM destroyed Iranian drone manufacturing plant (Dawn Mar 21); (10) CENTCOM: 7,000+ targets struck. AJE: 1,444 dead Iran, 18+ Israel, 13 US, 21+ Gulf states; (11) ~40 Iranian officials killed total (Wikipedia). PATTERN: MAXIMUM POLICY INCOHERENCE — Trump says \"winding down\" + \"no ceasefire\" + NATO \"cowards\" while simultaneously sending 2,500 more Marines, floating Kharg Island occupation (GROUND OPERATION on Iranian sovereign territory), and waiving sanctions on Iranian oil. These are 4 CONTRADICTORY vectors in 24 hours.",
-          "source": "Guardian/NYT/Military.com/CBS/Dawn/AJE/Wikipedia"
-        },
-        {
-          "date": "2026-03-21T19:29+08",
-          "est": "3+ COORDINATED — NATANZ STRUCK + DIEGO GARCIA TARGETED",
-          "note": "Day 22 evening. 🔴🔴 P0 — NUCLEAR ESCALATION + GLOBAL REACH DEMONSTRATED: (1) ★★★★★ ACTION: US/Israel struck NATANZ nuclear enrichment facility on Saturday morning (Mar 21) — Iran Atomic Energy Org confirmed, IAEA says no radiation leak (DW/AJE/JPost/IndiaTV/Tasnim). This is the 2nd Natanz strike in this war (first was Week 1). DIRECTLY CONTRADICTS \"winding down\" — nuclear infrastructure destruction being ACCELERATED before exit; (2) ★★★★ ACTION: Iran fired 2 IRBMs at DIEGO GARCIA (4,000km away) — US-UK base in Indian Ocean (WSJ/Reuters/CNBC/ToI). One failed in flight, one intercepted by US warship. Iran's LONGEST-RANGE strike attempt — demonstrates strategic reach beyond Gulf theater; (3) ★★★ ACTION: Israel launched fresh strikes on TEHRAN + BEIRUT Saturday morning — \"regime targets\" in Tehran + Hezbollah in Beirut (Guardian/DW/RTE/Yahoo). Strikes continuing AFTER Trump \"winding down\"; (4) ★★★ ACTION: Iran threatens global TOURIST DESTINATIONS — Gen. Shekarchi: \"parks, recreational areas and tourist destinations worldwide won't be safe\" + insists Iran STILL BUILDING MISSILES (AP/PBS/CBC/Military.com); (5) CENTCOM: 7,800+ targets struck (up from 7,000+ mid-week) — 8,000+ combat sorties; (6) Putin Nowruz message: Russia \"loyal friend and reliable partner\" but Iran sources say little practical help; (7) EU Energy Commissioner urged reducing gas storage target 90%→80% amid price surge (FT via DW). PATTERN: WAR INTENSIFYING on Saturday despite Friday \"winding down\" rhetoric. Natanz + Diego Garcia = both sides ESCALATING strategic targeting. Iran demonstrating global reach (Diego Garcia 4,000km) + threatening civilian targets worldwide (tourism). The \"winding down\" is WORDS; the bombs say ACCELERATION.",
-          "source": "DW/AJE/JPost/Reuters/WSJ/CNBC/AP/PBS/CBC/Guardian/ToI/IndiaTV/Military.com"
-        },
-        {
-          "date": "2026-03-21T23:30+08",
-          "est": "3+ COORDINATED — 70TH WAVE + NUCLEAR FINISH + DUAL ESCALATION",
-          "note": "Day 22 late. 🔴🔴 P0 — WAR ENTERING FINAL DESTRUCTION PHASE: (1) ★★★★★ IRGC launched 70th wave Operation True Promise 4 — Emad + Qiam-1 missiles targeting 55+ US/Israeli-linked sites (CGTN/ET/ANI/HindustanTimes confirmed Mar 21). 70 waves in 22 days = 3.2 waves/day avg; (2) ★★★★★ Natanz nuclear strike CONFIRMED by Iran Atomic Energy Org + IAEA — no radiation leak, IAEA calls for 'military restraint' (Euronews/AP/LeMonde/AJE/DW Mar 21). 2nd Natanz strike this war. Netanyahu's 'can no longer enrich uranium' claim being PHYSICALLY IMPLEMENTED; (3) ★★★★ Diego Garcia IRBM attack confirmed (2 IRBMs, 4,000km, one failed, one intercepted). Iran's LONGEST-RANGE strike = strategic reserves being spent; (4) ★★★★ Israel struck Tehran 'regime targets' + Beirut Hezbollah targets on Saturday (Guardian/Reuters/NYT/BBC). 'Deadliest spillover' for Lebanon since Hezbollah entered Mar 2; (5) ★★★ Gen. Cooper (CENTCOM commander): 'Iran's combat capability on steady decline as offensive strikes ramp up' + dropped 'multiple 5,000-lb bombs' on underground weapons storage on Iran's coast (ABC News Mar 21); (6) ★★★ CENTCOM: 7,800+ targets struck, 8,000+ combat sorties (up from 7,000+ mid-week); (7) ★★ Russia condemned Natanz strike: risk of 'catastrophe' (LeMonde); (8) ★★ Iran armed forces threatened to 'hunt down' US/Israel officials at tourist destinations worldwide (AP/PBS/CBC). PATTERN: DUAL ESCALATION PARADOX — US/Israel ACCELERATING nuclear infrastructure destruction (Natanz) while Trump says 'winding down'. IRGC maintaining 3+ waves/day (70th wave). Diego Garcia attempt + tourist threats = Iran spending remaining strategic capability + asymmetric escalation. This is the 'smash everything before leaving' phase. Exit within 7-14 days remains probable, but the DESTRUCTION before exit is intensifying, not decreasing.",
-          "source": "CGTN/ET/ANI/HindustanTimes/Euronews/AP/LeMonde/AJE/DW/Guardian/Reuters/NYT/BBC/ABC News"
-        },
-        {
-          "date": "2026-03-22T07:30+08",
-          "est": "3+ COORDINATED — DIMONA NUCLEAR RETALIATION + 90 WOUNDED",
-          "note": "Day 23 morning. 🔴🔴🔴 P0 — NUCLEAR RETALIATION CYCLE ACTIVATED: (1) ★★★★★ ACTION: Iran struck DIMONA + ARAD (Israel's nuclear research center vicinity) with ballistic missiles — at least 90 wounded in separate strikes (CBS), 40+ in Dimona (Euronews/AP), 10+ badly injured + dozens in Arad (ToI), evacuees being transferred to central hospitals (Health Ministry); (2) ★★★★★ IRGC claimed Dimona attack as REVENGE for Natanz — 'nuclear-for-nuclear' retaliation logic now EXPLICIT (IndiaTV/Guardian/Euronews). Tasnim: 'enemy has received unforgettable lesson'; (3) ★★★★ CENTCOM: 8,000+ military targets struck, 'longest field artillery strike in Army combat history' (Fox News/CENTCOM Mar 21). Destroyed Iranian intel support + radars used to track ships at Hormuz (Washington Examiner); (4) ★★★ JPost: 'Mojtaba Khamenei alive, but IRGC currently running Iran' — de facto military junta; (5) ★★★ Axios: Kushner + Witkoff 'game planning for potential Iran peace talks' — first diplomatic track activation alongside continued strikes; (6) ★★★ Iran allows Japanese ships to transit Hormuz (AJE/Reuters/Bloomberg Mar 21) — biggest expansion of selective transit regime; (7) Reuters: 'Iranian forces had for the first time fired long-range missiles' expanding risk beyond ME (Diego Garcia reference); (8) NPR: 'Iran war enters fourth week with no clear end in sight'. PATTERN: NUCLEAR RETALIATION CYCLE now active — US/Israel hit Natanz → Iran retaliates at Dimona. This is the most dangerous escalation dynamic since the war began. Dimona hosts Shimon Peres Nuclear Research Center (Israel's nuclear weapons program). Iran is signaling: 'if you hit our nuclear sites, we hit yours.' The 90 wounded is the SINGLE LARGEST CASUALTY EVENT in Israel since the war started.",
-          "source": "CBS/DW/Euronews/Guardian/AP/ToI/JPost/IndiaTV/Fox News/WashingtonExaminer/Axios/AJE/Reuters/Bloomberg/NPR"
-        },
-        {
-          "date": "2026-03-22T03:30+08",
-          "est": "3+ COORDINATED — NATANZ 2ND STRIKE + DIEGO GARCIA IRBM + 8,000+ TARGETS",
-          "note": "Day 23. 🔴🔴 DUAL ESCALATION CONTINUES: (1) ★★★★★ Natanz nuclear facility struck AGAIN Saturday (2nd time this war) — Iran Atomic Energy Org + IAEA confirmed, no radiation leak (DW/AP/ABC News). Nuclear infrastructure destruction ACCELERATED before exit; (2) ★★★★ Diego Garcia IRBM attack (2 missiles, 4,000km, 1 failed, 1 intercepted) — Iran's LONGEST RANGE strike demonstrates strategic reach beyond Gulf; (3) ★★★★ CENTCOM: 8,000+ targets struck, 8,000+ combat sorties, 130 enemy vessels destroyed (Gen. Cooper, ABC News Mar 21). Dropped multiple 5,000-lb bombs on underground weapons storage on Iran coast; (4) ★★★ Israel struck Tehran 'regime targets' + Beirut Hezbollah on Saturday; (5) ★★★ IRGC 70th wave Operation True Promise 4 — Emad + Qiam-1 missiles at 55+ US/Israeli sites; (6) ★★★ 22-COUNTRY JOINT STATEMENT condemning Iran Hormuz closure — UK/France/Germany/Italy/Netherlands/Japan/Canada/Korea/Australia/UAE/Bahrain + 11 others (GOV.UK/Reuters/BusinessToday Mar 21). Signatories 'ready to join appropriate efforts to ensure safe passage'; (7) ★★ Iran armed forces threatened to 'hunt down' US/Israel officials at tourist destinations worldwide (AP/PBS); (8) ★★ CENTCOM declared it 'took out' Iranian bunker housing weapons threatening Hormuz oil shipments (The Hindu Mar 21). PATTERN: WAR INTENSIFYING on Saturday despite Friday 'winding down'. Both sides spending remaining strategic reserves. IRGC 70 waves / 23 days = 3.0 waves/day avg. Exit within 7-14 days still probable but DESTRUCTION before exit ACCELERATING.",
-          "source": "DW/AP/ABC News/Reuters/GOV.UK/BusinessToday/The Hindu/PBS/Guardian"
-        },
-        {
-          "date": "2026-03-22T11:30+08",
-          "est": "3+ COORDINATED — NUCLEAR RETALIATION CYCLE DAY 2",
-          "note": "Day 23 pipeline. LOW-DELTA UPDATE (weekend, no new kinetic shifts since 07:30): (1) Dimona/Arad casualties UPDATED: 100+ wounded (AJE/Guardian Mar 22, up from 90 per CBS). AJE: 'injuring more than 100 people'. Guardian: 'almost 100'. Single largest Israeli casualty event in this war CONFIRMED; (2) BBC/HRANA: total Iran deaths 3,220 (1,165 military + 1,398 civilians incl 210 children) — far exceeds state media 1,444. CNN Red Crescent: 18,000+ civilians injured, 1,330+ killed; (3) Netanyahu threatens 'more attacks' after Arad strike (AJE liveblog title); (4) Kushner/Witkoff peace terms = similar to Geneva pre-war terms (Axios detail). Guardian: Gulf diplomat called them 'Israeli assets that dragged president into war he wants out of'; (5) UK House of Commons Library briefing Mar 22: formally documents UK base authorization for 'specific and limited defensive purpose'; (6) CENTCOM: 8,000+ targets, 130 vessels destroyed (unchanged). No new strike reports overnight. PATTERN UNCHANGED: nuclear retaliation cycle (Natanz→Dimona) remains the dominant dynamic. Weekend = operational pause likely for diplomatic back-channel activity. Key question: does Dimona casualty count pressure Netanyahu toward accepting Kushner/Witkoff framework?",
-          "source": "AJE/Guardian/BBC/HRANA/CNN/Axios/UK Parliament"
-        },
-        {
-          "date": "2026-03-22T15:33+08",
-          "est": "3+ COORDINATED — 48-HOUR POWER PLANT ULTIMATUM + NUCLEAR CYCLE DAY 2",
-          "note": "Day 23 afternoon. 🔴🔴🔴 P0 — TRUMP 48-HOUR ULTIMATUM: (1) ★★★★★ ACTION/ULTIMATUM: Trump Truth Social Saturday: 'If Iran doesn't FULLY OPEN, WITHOUT THREAT, the Strait of Hormuz, within 48 HOURS from this exact point in time, the United States of America will hit and obliterate their various POWER PLANTS, STARTING WITH THE BIGGEST ONE FIRST!' (Reuters/Bloomberg/AJE/BBC/CNN/Fox/TheHill/CBS ALL confirm Mar 22). Deadline: ~Mon Mar 23 evening ET; (2) ★★★★★ DIMONA CONFIRMED: 100+ wounded in Iranian BM strikes on Dimona + Arad (AJE/Guardian/CBS/BBC/NYT/DW all confirmed Mar 21-22). IDF says it was 'not able to intercept' the missiles (CBS). Iran state media: attack was REVENGE for Natanz — nuclear-for-nuclear retaliation logic NOW EXPLICIT; (3) ★★★★ CENTCOM: 8,000+ targets struck (TheHill/CENTCOM Mar 21). Operation Epic Fury deteriorating Iran's ability to threaten Hormuz (WashingtonExaminer); (4) ★★★ Kushner/Witkoff peace talks ongoing — terms = Geneva pre-war (Axios Mar 21). Trump: 'does not oppose talks but not willing to accept ceasefire' (News18/Axios); (5) ★★★ TRT World: Trump advisors trying to determine who in Iran to negotiate with and which country mediator; (6) NYT Mar 21: 'High Gas Prices Loom Over Midterms' — Republicans promising temporary pain; (7) 2nd Senate War Powers defeated (TheHill Mar 19), 4 more eligible. CRITICAL ASSESSMENT: Trump's 48-hour ultimatum creates a BINARY DECISION POINT. Iran CANNOT physically comply — mines take weeks to clear, insurance months to normalize. 'Fully open without threat within 48 hours' is PHYSICALLY IMPOSSIBLE. This means: (A) US strikes power plants Mon/Tue = MASSIVE civilian infrastructure escalation (80M+ people affected), OR (B) Trump backs down/extends = credibility damage. The ultimatum is INCONSISTENT with 'winding down' and Kushner peace talks. Markets (closed weekend) will GAP HARD Monday. This is either the FINAL ESCALATION before exit or the beginning of civilian infrastructure warfare.",
-          "source": "Reuters/Bloomberg/AJE/BBC/CNN/Fox/TheHill/CBS/DW/NYT/Axios/News18/TRT/WashingtonExaminer"
-        },
-        {
-          "date": "2026-03-22T19:33+08",
-          "est": "3+ COORDINATED — IRAN COUNTER-THREAT + DIMONA 200+ WOUNDED + TEL AVIV CLUSTER BOMBS",
-          "note": "Day 23 evening. 🔴🔴🔴 P0 — MUTUAL ASSURED INFRASTRUCTURE DESTRUCTION THREAT: (1) ★★★★★ ACTION/THREAT: Iran Parliament Speaker Qalibaf: 'Immediately after power plants targeted, critical infrastructure, energy infrastructure, and oil facilities throughout the region will be considered legitimate targets and will be destroyed IRREVERSIBLY' (ToI/ABC AU/Guardian Mar 22). This is FORMAL escalation commitment — power plant strikes → total regional energy infrastructure war; (2) ★★★★★ DIMONA/ARAD CASUALTIES UPDATED: At least 200 wounded (Guardian headline), 8 dead + 130 injured (Greek City Times), 64 in Arad alone (CBS), ~80 in Arad (NYT). AJE: 180+. IDF 'not able to intercept' (CBS). LARGEST single Israeli casualty event of the war; (3) ★★★★ Cluster bomb attack around Tel Aviv TODAY (ToI Mar 22 liveblog) — several hurt; (4) ★★★★ Hezbollah rocket kills avocado farmer in northern Israel (ToI); (5) ★★★ Japan OPEN TO MINESWEEPING Hormuz (Guardian liveblog Mar 22) — first progress on critical mine-clearing gap; (6) ★★★ 6 overnight attacks on Baghdad airport/US diplomatic facilities (AFP via Guardian); (7) ★★★ 6 oil ships bound for Australia CANCELLED (Guardian Mar 22) — supply disruption reaching Oceania; (8) ★★★ Sri Lanka raised fuel prices 25% — 2nd increase in 2 weeks (Guardian Mar 22); (9) ★★ Bahrain: intercepted 246 drones + 145 missiles since war started; (10) ★★ Iran internet blackout DAY 23 — 80M+ cut off (NetBlocks); (11) ★★ Mojtaba Khamenei ABSENT from Eid al-Fitr prayers — regime visibility concern; (12) ★★ Netanyahu at Arad: claims Iran missiles can reach 'London, Paris, Berlin', urges Europe to join. UK Housing Sec: 'no assessment' to substantiate claim; (13) ★★ Zelenskyy: 'very bad feeling' about Iran war's impact on Ukraine — trilateral meetings postponed, Putin gaining from sanctions waiver + US resource diversion; (14) ★ Russia sanctions waiver ALSO issued — 30 days to buy Russian oil at sea. PATTERN: Iran has issued the CLEAREST possible counter-threat to Trump's ultimatum. If power plants are struck, Iran COMMITS to destroying ALL regional energy infrastructure 'irreversibly.' This creates MUTUAL ASSURED INFRASTRUCTURE DESTRUCTION — same logic as MAD but for energy. Monday is now the most critical decision point: Trump either escalates to civilian infrastructure war (triggering Iran's counter), backs down, or finds a face-saving extension.",
-          "source": "Guardian/ToI/ABC AU/CBS/NYT/AJE/AFP/NetBlocks/Greek City Times/BBC"
-        },
         {
           "date": "2026-03-23T03:33+08",
           "est": "3+ COORDINATED — IRGC THREATENS COMPLETE HORMUZ CLOSURE",
@@ -234,168 +41,6 @@
       },
       "history": [
         {
-          "date": "2026-03-12",
-          "est": "<2",
-          "note": "only 2 non-Iran/Russia vessels attempted transit",
-          "source": "Reuters"
-        },
-        {
-          "date": "2026-03-17",
-          "est": "<2",
-          "note": "Day 18. 1000+ cargo ships blocked. 150+ tankers anchored outside. Shadow fleet makes half of transits. Iran says open to all except US/allies. 16 tankers attacked since war started. Trump calls for naval coalition - Japan/Australia refuse, France considering 'purely defensive' escort. US Navy tells shipping: escorts 'not possible for now' (directly contradicts Trump). No allied warships committed.",
-          "source": "Guardian/USNI/Reuters/CNN/CNBC/AJE"
-        },
-        {
-          "date": "2026-03-17T23",
-          "est": "<2",
-          "note": "Day 18 late. No change. Energy Sec Chris Wright confirmed: 'We're simply not ready' for escort operations. CNN analysis calls strait a 'death valley'. Tanker traffic still ~70% below pre-crisis. Key constraint: 5000+ Iranian mines in strait + degraded US minesweep capability. Escorts estimated end-of-March at earliest. Iraq oil field also attacked by militia drones — supply disruption expanding beyond strait.",
-          "source": "Guardian/CNN/USNI/Wikipedia"
-        },
-        {
-          "date": "2026-03-18",
-          "est": "<2",
-          "note": "Day 19. No material change. Iran has not attacked vessels since Mar 12 (ISW confirmed), BUT mines remain + insurance paralyzed + no escort capability. Bessent says US allowing Iranian tankers through. Shadow fleet still half of transits (Bloomberg). 1000+ cargo ships still blocked. US Navy refuses daily escort requests from shipping industry (Reuters). Key: the 5-day vessel attack lull does NOT equal reopening — mines + insurance + escort gap = structural blockade persists regardless of attack frequency. CNBC: allies (Japan/Australia) refuse to send warships; France considering 'purely defensive' option only.",
-          "source": "ISW/Reuters/CNBC/Bloomberg/Guardian"
-        },
-        {
-          "date": "2026-03-18T07",
-          "est": "<2",
-          "note": "Day 19 update. NYT: 'Europe Has Helped the US Protect Shipping. The Strait of Hormuz Is Different' — Aspides-template discussed but Hormuz mine threat = qualitatively different from Houthi/Red Sea anti-ship missiles. Bessent confirms Iranian tankers transiting (CNBC Mar 16). Guardian: energy prices soared, mines + strikes prevent ships transiting. AJE: Iran allowing safe passage to select countries (China negotiating). Only a handful of non-Iran vessels attempted transit. Structural blockade unchanged.",
-          "source": "NYT/CNBC/Guardian/AJE"
-        },
-        {
-          "date": "2026-03-18T11",
-          "est": "<2",
-          "note": "Day 19. Structural blockade persists. CENTCOM bunker busters near Hormuz = possible prep.",
-          "source": "The Hindu/NYT/Reuters"
-        },
-        {
-          "date": "2026-03-18T11:22",
-          "est": "<2 mbd (near-zero)",
-          "note": "Day 19 pipeline. Windward Mar 16: transit at near-zero levels. USS Ford heading to port after fire = reduced naval capability. Iran renewed Gulf attacks will FURTHER freeze insurance/shipping. Structural blockade: mines+insurance+no escort+renewed attacks = no recovery vector. 1000+ cargo ships still blocked. No allied warships committed (Japan/Australia/France refused).",
-          "source": "Windward/Reuters/Bloomberg/Guardian"
-        },
-        {
-          "date": "2026-03-18T19:22",
-          "est": "<2 mbd (trickle, possible slight uptick)",
-          "note": "Day 19 evening. KEY NEW DATA: (1) CNBC Mar 18: only 21 tankers total since war began vs 100+/day pre-crisis; (2) 11 China-linked vessels Mar 1-15 per Lloyd's List (mostly cargo, not mainstream tankers); (3) AJE Mar 18: MarineTraffic recorded 9 transits Sun/Mon vs 5 previous 2 days — SLIGHT UPTICK in selective passage; (4) China shrapnel incident on Mar 12 deterred further Chinese transits (Lloyd's List); (5) Greek Dynacom tankers (Shenlong, Smyrni) tested route with Saudi crude to Mumbai; (6) 400 vessels backlog in Gulf of Oman (Windward); (7) BUT: Iran coordinated offensive + Gulf attacks TODAY will reverse any thaw in selective passage. Iran attacking Gulf states = insurers will further freeze. Structural blockade: mines+insurance+no escort+renewed Gulf attacks = no recovery vector. The slight uptick in trickle traffic is NOISE — the blockade remains functionally total for energy cargo.",
-          "source": "CNBC/AJE/LloydsList/Windward/Reuters"
-        },
-        {
-          "date": "2026-03-19T01:28+08",
-          "est": "<2 mbd (WORSENING)",
-          "note": "Day 19 late. ENERGY WAR ESCALATION destroys any recovery path: (1) South Pars struck = Iran's own gas infrastructure being destroyed; (2) Iran threatening Saudi Samref/Jubail, UAE Al Hosn, Qatar Mesaieed/Ras Laffan = if executed, energy disruption far BEYOND Hormuz blockade; (3) Aramco evacuating = market will re-price shipping risk massively upward; (4) CENTCOM GBU-72 bunker busters on Hormuz coastal sites = physical prep for reopening BUT South Pars/Gulf threats make reopening timeline IRRELEVANT if regional energy infrastructure attacked; (5) Insurance market will freeze further. Assessment: strait recovery decoupled from combat cessation — even if bombing stops, mines+insurance+Gulf infrastructure risk = months to recover.",
-          "source": "Bloomberg/Reuters/Guardian/AJE/OilPrice"
-        },
-        {
-          "date": "2026-03-19T03:22+08",
-          "est": "<2 mbd (WORSENING — energy war)",
-          "note": "Day 20. Structural blockade persists AND worsening: (1) Energy war escalation (South Pars + Gulf energy targets threatened) makes recovery even more distant; (2) CENTCOM GBU-72 bunker busters on Hormuz coastal sites (physical prep) BUT irrelevant while energy infrastructure being destroyed regionally; (3) Escort operations \"end of March\" at earliest per Energy Sec — but mine threat qualitatively different from Red Sea (NYT, TWZ); (4) Wikipedia Hormuz crisis: escort readiness still weeks away; (5) Insurance market will freeze FURTHER after South Pars strike + Gulf energy threats. Assessment: strait recovery now DECOUPLED from combat cessation — even post-ceasefire, mines+insurance+infrastructure damage = months to recover.",
-          "source": "NYT/TWZ/USNI/Wikipedia/AJE/Sky"
-        },
-        {
-          "date": "2026-03-19T11:22+08",
-          "est": "<2 mbd (CATASTROPHIC — regional energy infrastructure under fire)",
-          "note": "Day 20. Strait transit now IRRELEVANT as bottleneck — regional energy infrastructure being destroyed on BOTH sides: (1) Ras Laffan (Qatar) struck by Iran missiles, 'extensive damage' — world's largest LNG hub (CNBC/Reuters/AJE); (2) UAE shut gas facilities after intercepting 13 BMs + 27 drones (AJE); (3) Saudi intercepted 4 BMs targeting Riyadh (Guardian); (4) Windward: transit at near-zero, 400+ vessels backlogged in Gulf of Oman; (5) CNBC Mar 18: only 21 tankers total since war started vs 100+/day pre-crisis; (6) AJE: slight uptick (9 transits Sun/Mon) wiped out by Iran's Gulf energy offensive; (7) Insurance market: functionally dead for Gulf region. Assessment: PARADIGM SHIFT — the question is no longer 'when does the strait reopen' but 'how much Gulf energy infrastructure survives'. Even if fighting stops today, Ras Laffan damage + South Pars damage + mines = MONTHS to restore energy flows.",
-          "source": "CNBC/Reuters/AJE/Guardian/Windward"
-        },
-        {
-          "date": "2026-03-19T23:22+08",
-          "est": "<2 mbd (METRIC NOW OBSOLETE — production destruction dominates)",
-          "note": "Day 20 late. Transit metric PERMANENTLY SUPERSEDED: (1) Bloomberg: Iran strike damaged 17% of Qatar LNG capacity for 3-5 YEARS — this is production destruction, not transit disruption; (2) Reuters Mar 19: Iranian aerial attacks caused extensive damage across Gulf — Qatar Ras Laffan, Saudi refinery, UAE gas shut, Kuwait fires; (3) India condemned strikes as 'unacceptable', warning of 'worsening global energy flows' (Guardian); (4) Brent $119 intraday (BBC/Reuters) then back to ~$112 — market pricing in PERMANENT supply loss not temporary blockade; (5) UK gas prices +19% in single day (BBC Mar 19); (6) China still in talks with Iran on selective passage (Guardian/AJE) but irrelevant when production facilities are being destroyed; (7) 400+ vessels still backlogged in Gulf of Oman. Assessment: the correct metric is now GULF PRODUCTION CAPACITY SURVIVAL RATE. Qatar lost 17% LNG for 3-5 years. South Pars damaged. UAE gas offline. Even FULL strait reopening cannot restore destroyed production. The war has shifted from BLOCKING energy flows to DESTROYING energy capacity.",
-          "source": "Bloomberg/Reuters/BBC/Guardian/AJE"
-        },
-        {
-          "date": "2026-03-19T19:22+08",
-          "est": "<2 mbd (IRRELEVANT — production infrastructure being destroyed)",
-          "note": "Day 20 evening. Transit question SUPERSEDED by production destruction: (1) Qatar expelled Iranian military attachés after Ras Laffan 'extensive damage' — LNG production halted since Mar 2 AND now physical infrastructure damaged (CNBC/Gulf Times); (2) Qatar supplies ~20% of world LNG (ToI); (3) UAE shut gas facilities (AJE); (4) Brent $111.36 (+3.71%) reflects BOTH transit blockade + production loss; (5) WTI-Brent spread widest in 11 years (Reuters) = international crude premium for Gulf risk; (6) Insurance market: functionally dead for entire Gulf region, not just strait; (7) Even allies (Japan/Australia/Europe) refused escort operations (Reuters/CNN). Assessment: the transit metric is now a LAGGING indicator. LEADING indicator is Gulf production capacity survival rate. Ras Laffan damage + South Pars damage = net global energy supply permanently reduced until rebuilt (12-18 months for LNG facilities).",
-          "source": "CNBC/Gulf Times/Reuters/AJE/ToI/CNN"
-        },
-        {
-          "date": "2026-03-20T03:22+08",
-          "est": "<2 mbd (IRRELEVANT — production destruction ACCELERATING)",
-          "note": "Day 21. Transit metric FULLY OBSOLETE: (1) Iran intensified Gulf energy strikes Mar 19: Saudi Aramco SAMREF refinery (Yanbu/Red Sea) hit, Qatari LNG ABLAZE again, 2 Kuwait refineries ON FIRE (Reuters/CBC/AJE comprehensive); (2) Bloomberg: 17% Qatar LNG capacity damaged 3-5 years — $20B annual revenue lost (QatarEnergy CEO); (3) Iran parliament considering Hormuz transit fees/tolls bill (Reuters Mar 19) — signaling post-war \"new strait regime\"; (4) Brent $119 intraday before pullback to ~$112 (BNN Bloomberg); (5) Trump admin says escort operations \"could soon begin\" (CBS/ABC) but irrelevant when production infrastructure being destroyed; (6) No allies committed warships (BBC confirms UK/France/China all refused); (7) US 31st MEU deployed for Hormuz security but mine threat qualitatively different. ASSESSMENT: Production destruction > transit blockade. Even full strait reopening cannot restore destroyed LNG/refining capacity.",
-          "source": "Reuters/CBC/AJE/Bloomberg/BNN/BBC/CBS"
-        },
-        {
-          "date": "2026-03-20T07:22+08",
-          "est": "<2 mbd (IRRELEVANT — bypass route now also under fire)",
-          "note": "Day 21. Transit metric FULLY OBSOLETE + BYPASS ATTACKED: (1) AJE Mar 18: 8 non-Iranian vessels detected by Windward, 'nearly double' recent days — minor trickle; (2) CNBC: only 21 tankers since war began vs 100+/day pre-crisis; (3) BUT: Iran drone hit Saudi SAMREF refinery at YANBU (Red Sea) — Saudi Arabia's only crude export outlet bypassing Hormuz (AP/Guardian Mar 19). Iran now attacking the ALTERNATIVE route; (4) Vessel ablaze off UAE coast, another damaged off Qatar (AP); (5) Qatar LNG ablaze AGAIN — production halted since Mar 2, infrastructure being destroyed (AP); (6) US admin says escort ops 'could soon begin' (CBS/TNND) — but mine threat qualitatively different; 31st MEU deployed; (7) Japan PM Takaichi visiting Trump seeking help on Hormuz (AP/Britannica); (8) No allied warships committed (UK/France/China refused, Japan/Australia declined). ASSESSMENT: Iran's Yanbu strike is STRATEGICALLY DEVASTATING — it eliminates Saudi Arabia's Hormuz bypass. Saudi was pumping crude west to Red Sea to avoid strait; Iran hit the endpoint. Now BOTH routes (Hormuz + Red Sea alternative) under fire. Transit metric irrelevant — the correct metric is REGIONAL EXPORT CAPACITY under fire from all vectors.",
-          "source": "AJE/CNBC/AP/Guardian/CBS/Britannica/Windward"
-        },
-        {
-          "date": "2026-03-20T15:30+08",
-          "est": "<2 mbd (METRIC OBSOLETE — regional production+export under systematic attack)",
-          "note": "Day 21 pipeline. (1) Brent settling $105-107 in Asian Friday session (down from Thu $108.65 settle, after $119 intraday spike) — Netanyahu South Pars halt signal causing partial relief; (2) Gulf News: Middle East crude surges to $131 while Brent at $107, WTI $94 — DUAL MARKET pricing emerging (regional vs international benchmark divergence); (3) US crude heading to Asia via Panama Canal as Iran crisis redraws trade flows (Reuters Mar 20); (4) Israel now claims 'helping reopen Hormuz' (CNBC Mar 19 — Netanyahu statement) — unverified, no physical change; (5) CNBC: 21 tankers total since war began; AJE: 8 non-Iranian vessels (Windward); (6) IEA Mar 2026 report: flows fallen from ~20 mbd to 'minimal volumes' (Global Trade Magazine); (7) Iran parliament considering Hormuz transit fees bill (Reuters). ASSESSMENT: Transit metric fully obsolete. The correct measure is now GULF PRODUCTION CAPACITY SURVIVAL RATE. Qatar 17% LNG lost 3-5yr. South Pars damaged. Saudi bypass (Yanbu) attacked. Kuwait refineries on fire. UAE gas offline. DUAL MARKET PRICING ($131 ME crude vs $107 Brent) = most distorted oil market since 1973. Even full strait reopening cannot restore destroyed production.",
-          "source": "GulfNews/Reuters/CNBC/AJE/GlobalTradeMag/IEA"
-        },
-        {
-          "date": "2026-03-20T19:30+08",
-          "est": "<2 mbd (BUT: A-10 HORMUZ DEPLOYMENT = FIRST REOPENING OPERATIONS)",
-          "note": "Day 21 evening. OPERATIONAL SHIFT TOWARD REOPENING but transit still near-zero: (1) ★★★ A-10 Warthogs hunting Iranian fast attack craft in Hormuz (Gen. Caine Mar 19) — first dedicated maritime interdiction for reopening; (2) ★★ US weighing 'thousands of troops' for Hormuz security, including Iran shoreline deployment (Reuters/AJE Mar 19); (3) DailyMail: US 'obliterating' Iranian ships, downing drones at Hormuz; (4) 31st MEU deployed; (5) CNBC: still only 21 tankers total since war began; (6) MarineTraffic: 9 transits on best recent days (AJE Mar 18); (7) Middle East Forum: 300+ ships stranded INSIDE Gulf; (8) Wikipedia: Maersk/CMA CGM/Hapag-Lloyd all suspended transits; (9) BUT mines remain the CRITICAL obstacle — A-10s address surface threats, NOT mines; UK minesweep drones discussed but no deployment confirmed; (10) Brent pullback ($105-107 Friday Asian) partly reflects A-10/reopening optimism. ASSESSMENT: US shifting from 'destroy Iran' to 'reopen Hormuz' as a PARALLEL mission. A-10s + MEU + possible troops = physical prep. But mine threat is QUALITATIVELY different from surface boats — A-10s can kill boats, cannot clear mines. Recovery timeline: weeks at minimum even in best case. Transit metric still secondary to PRODUCTION DESTRUCTION (Qatar LNG 17% lost 3-5yr, Saudi Yanbu hit, Kuwait refineries).",
-          "source": "DailyMail/TWZ/Aviationist/Reuters/AJE/CNBC/MiddleEastForum/Wikipedia"
-        },
-        {
-          "date": "2026-03-21T03:30+08",
-          "est": "<2 mbd (UK ENTERS — REOPENING COALITION FORMING BUT MINES UNSOLVED)",
-          "note": "Day 22. (1) ★★★★ UK approved US use of British bases for Hormuz defensive strikes (Reuters Mar 20) — FIRST ALLIED KINETIC CONTRIBUTION; (2) BBC Verify: ~100 ships total since Mar 1 = ~5/day avg vs 100+/day pre-crisis (~95% reduction); (3) Irish Times/FT Mar 20: US military planners say 'time NOT ripe for thin-hulled ships' — mine threat blocks escorts; (4) USS Boxer (11th MEU) departed California — 3 weeks transit (NPR); USS Tripoli arriving soon from Japan; (5) Iran hitting Kuwait Mina Al-Ahmadi refinery AGAIN on Nowruz (NPR/AJE Mar 20); (6) NYT: US warplanes+helos hitting Iranian targets for reopening. ASSESSMENT: REOPENING COALITION = US air (A-10s) + US amphibious (31st+11th MEU) + UK bases. FATAL GAP: no minesweeping. Mine threat makes escort planning theoretical. Production destruction remains dominant metric.",
-          "source": "Reuters/BBC/CNBC/AJE/IrishTimes/NPR/NYT"
-        },
-        {
-          "date": "2026-03-21T07:30+08",
-          "est": "<2 mbd (3-4 VESSELS/DAY — TRUMP ABDICATES HORMUZ)",
-          "note": "Day 22 morning. (1) ★★★★ NYT Mar 20: visible traffic dropped from 130+/day to AVG 3-4 DAILY — first precise daily average from NYT tracking; (2) ★★★ Iraq declared FORCE MAJEURE on ALL foreign-operated oilfields — cannot ship crude (Reuters Mar 20); (3) ★★★ Iran developing 'vetting system' for selective transit — India/Pakistan/Iraq/Malaysia/China in direct talks with Tehran for passage through Iranian territorial waters (AJE Mar 20); (4) ★★★ Trump: 'Hormuz will have to be guarded by other Nations — US does not use it!' — STRATEGIC ABDICATION of reopening responsibility; (5) BBC Verify: ~100 ships total since Mar 1 (~5/day avg, 97% reduction per Northeastern analysis); (6) NYT Mar 20: US military 'ramping up assaults on Iranian drones and vessels' but experts say ground troops needed for reopening; (7) Pentagon multi-phase Hormuz plan (VoiceOfEmirates): Phase 1 = destroy surface threats, Phase 2 = secure for warships, Phase 3 = escort tankers/commercial; (8) A-10s + attack helos active at strait. CRITICAL NEW DYNAMIC: Iran's 'vetting system' = de facto Iranian sovereignty over Hormuz transit. Countries negotiating bilateral passage with Iran = LEGITIMIZING Iranian control. If US exits without reopening strait, Iran becomes permanent Hormuz gatekeeper. This is the WORST strategic outcome for free navigation.",
-          "source": "NYT/Reuters/AJE/BBC/VoiceOfEmirates/DailyMail/Northeastern"
-        },
-        {
-          "date": "2026-03-21T11:30+08",
-          "est": "<2 mbd (3-4 VESSELS/DAY — 2,000 SHIPS STRANDED + IRAN VETTING SYSTEM)",
-          "note": "Day 22. (1) ★★★ NYT Mar 20 confirmed: visible traffic dropped from 130+/day to AVG 3-4 DAILY — most precise tracking yet; (2) ★★★ NYT: ~2,000 ships + 20,000 seafarers TRAPPED in area (IMO data); (3) ★★★ BBC Verify: ~100 ships total since Mar 1 (~5/day, 97% reduction per Northeastern analysis); (4) BBC Mar 20: 21 confirmed attacks on commercial vessels since Mar 1; (5) ★★ Iran developing 'vetting system' for selective transit — India/Pakistan/Iraq/Malaysia/China negotiating bilateral passage (AJE Mar 20); (6) ★★ A-10 Warthogs + attack helos hunting fast attack craft at Hormuz (CENTCOM/DailyMail); US weighing thousands of troops for shoreline (Reuters); (7) ★★ UK bases approved for Hormuz defensive operations (Reuters Mar 20); (8) USS Boxer (11th MEU) departed California — 3 weeks transit; USS Tripoli from Japan arriving soon; (9) FT/Irish Times: 'time NOT ripe for thin-hulled ships' — mine threat blocks escorts; (10) Iraq force majeure on ALL foreign-operated oilfields — cannot export via Hormuz. ASSESSMENT: REOPENING COALITION forming (US air/amphibious + UK bases) but FATAL GAP persists — no minesweeping capability deployed. Iran's 'vetting system' = de facto sovereignty over transit. Trump abdicating Hormuz responsibility ('other nations guard it'). Even optimistic scenario: weeks to partial reopening. Meanwhile PRODUCTION DESTRUCTION remains the dominant metric — Qatar 17% LNG lost 3-5yr, Kuwait refineries on fire repeatedly, UAE gas forced offline.",
-          "source": "NYT/BBC/AJE/Reuters/DailyMail/FT/IrishTimes/CENTCOM/NPR"
-        },
-        {
-          "date": "2026-03-21T15:30+08",
-          "est": "<2 mbd (3-4/day — KHARG OCCUPATION = NEW ESCALATION VECTOR)",
-          "note": "Day 22 afternoon. (1) NYT Mar 20 confirmed: avg 3-4 vessels/day (down from 130+); (2) BBC Verify: ~100 ships since Mar 1 (~5/day, 97% reduction); (3) ★★★ NEW: US considering Kharg Island OCCUPATION/BLOCKADE (Guardian) — if executed, would block 90% Iran oil exports BUT would put US troops on Iranian soil = massive escalation; (4) 2,500 more Marines + 3 warships heading to ME (NYT/Guardian Mar 20); (5) NYT Mar 20: US warplanes + helos ramping up assaults on Iranian drones/vessels for Hormuz clearance; (6) Business Insider: \"Don't expect a quick miracle from Navy\" — mine threat remains critical; (7) Trump called NATO \"cowards\" for not helping open Hormuz; (8) Iran continuing attacks on Gulf energy infrastructure = insurance market dead; (9) US struck 16 Iranian cargo vessels at port towns. ASSESSMENT: Military buildup ACCELERATING (Marines + Kharg plans) while political messaging says \"winding down.\" The Kharg option represents the MOST AGGRESSIVE Hormuz strategy yet — not clearing the strait but seizing Iran's oil export lifeline. If attempted, would transform from air war to GROUND OCCUPATION of Iranian territory.",
-          "source": "NYT/BBC/Guardian/BusinessInsider/Military.com"
-        },
-        {
-          "date": "2026-03-21T23:30+08",
-          "est": "<2 mbd (3-4/day — REOPENING COALITION vs CONTINUING WAR)",
-          "note": "Day 22 late. (1) NYT Mar 20 confirmed: avg 3-4 vessels/day (vs 130+ pre-crisis); (2) BBC Verify: ~100 ships since Mar 1, ~97% reduction; (3) ~2,000 ships + 20,000 seafarers trapped (IMO/NYT); (4) A-10s + attack helos hunting fast attack craft at Hormuz (CENTCOM/Gen. Cooper); (5) UK approved British bases for Hormuz defensive strikes (Reuters); (6) USS Boxer (11th MEU) + USS Tripoli deploying — WEEKS away; (7) CENTCOM dropped 5,000-lb bombs on underground weapons storage on Iran's coast (ABC News Mar 21); (8) Mine threat STILL the critical gap — no minesweeping capability deployed; (9) Iran vetting system for selective transit (India/Pakistan/China/Iraq/Malaysia negotiating bilateral passage); (10) Trump: 'Hormuz for other nations' = strategic abdication maintained. ASSESSMENT: REOPENING OPERATIONS intensifying (A-10s, bunker busters, UK bases, Marines) but FATAL GAP persists — mines unsolved. Physical reopening timeline: 2-4 weeks minimum even in best case. Meanwhile Iran's 70th wave + continued attacks ensure insurance market remains frozen. Transit metric fully secondary to PRODUCTION DESTRUCTION (Qatar 17% LNG lost 3-5yr, Kuwait refineries repeatedly hit, UAE gas forced offline).",
-          "source": "NYT/BBC/CENTCOM/ABC News/Reuters/Guardian"
-        },
-        {
-          "date": "2026-03-22T07:30+08",
-          "est": "<2 mbd (3-4/day — JAPAN ADDED TO SELECTIVE TRANSIT + HORMUZ RADAR DESTROYED)",
-          "note": "Day 23 morning. (1) ★★★★ NEW: Iran allows JAPANESE ships to transit Hormuz (AJE/Reuters/Bloomberg/Japan Times Mar 21). Araghchi told Kyodo: 'prepared to allow Japanese-related ships'. Japan imports 93% of crude via Hormuz — this is the BIGGEST expansion of Iran's selective transit regime since war began. Now includes: China, India, Pakistan, Iraq, Malaysia, Japan; (2) ★★★ CENTCOM destroyed Iranian intel support + radars used to track ships in Hormuz (Washington Examiner Mar 21) — physical degradation of Iran's ability to enforce selective blockade; (3) NYT Mar 20 confirmed: avg 3-4 vessels/day (vs 130+ pre-crisis, ~97% reduction); (4) 22-country coalition 'ready to join efforts for safe passage' (CBS/Guardian Mar 21); (5) ~2,000 ships + 20,000 seafarers still stranded (IMO/NYT); (6) BBC Verify: ~100 ships total since Mar 1; (7) Euronews Mar 20: 5 European nations + Japan 'signal readiness' to contribute to Hormuz security; (8) Mine threat still CRITICAL GAP — no minesweeping deployed. ASSESSMENT: Iran's selective transit is EXPANDING bilaterally (Japan = major new addition). This creates a DE FACTO IRANIAN-CONTROLLED TOLL ROAD through Hormuz. CENTCOM destroying radar/intel means Iran's ENFORCEMENT capability degrading while its DIPLOMATIC transit framework expands. These are contradictory vectors: Iran losing physical control but gaining political legitimacy over transit. Key question: does Japan bilateral deal undercut 22-country coalition pressure?",
-          "source": "AJE/Reuters/Bloomberg/JapanTimes/Kyodo/WashingtonExaminer/NYT/BBC/CBS/Guardian/Euronews"
-        },
-        {
-          "date": "2026-03-22T03:30+08",
-          "est": "<2 mbd (3-4/day — 22-COUNTRY COALITION STATEMENT + CENTCOM BUNKER DESTROYED)",
-          "note": "Day 23. (1) ★★★★ 22-COUNTRY JOINT STATEMENT on Hormuz: UK/France/Germany/Italy/Netherlands/Japan/Canada/Korea/Australia/UAE/Bahrain + 11 others condemn Iran closure, 'ready to join efforts to ensure safe passage' (GOV.UK/Reuters Mar 19-21); (2) ★★★★ CENTCOM declared 'took out' Iranian bunker housing weapons threatening Hormuz (The Hindu Mar 21) — physical Hormuz clearance ops continuing; (3) NYT Mar 20: avg 3-4 vessels/day (vs 130+ pre-crisis), ~97% reduction; (4) ~2,000 ships + 20,000 seafarers stranded (IMO/NYT); (5) A-10s + attack helos active at strait; UK bases approved for defensive ops; (6) USS Boxer + USS Tripoli deploying (WEEKS away); (7) Mine threat still CRITICAL GAP — no minesweeping confirmed; (8) Iran 'vetting system' for selective transit (India/Pakistan/China/Iraq/Malaysia negotiating bilateral passage); (9) FT/Irish Times: 'time NOT ripe for thin-hulled ships' — mines block escorts. ASSESSMENT: 22-country coalition = DIPLOMATIC ARCHITECTURE for Hormuz reopening but still no PHYSICAL CAPABILITY (minesweeping). Coalition statement moves from G7→22 nations = growing pressure on Iran. CENTCOM bunker destruction = tactical progress on surface threat. But STRUCTURAL blockade persists: mines + insurance frozen + no escort capability. Physical reopening: 2-4 weeks MINIMUM.",
-          "source": "GOV.UK/Reuters/BusinessToday/The Hindu/NYT/BBC/CENTCOM/FT"
-        },
-        {
-          "date": "2026-03-22T11:30+08",
-          "est": "<2 mbd (3-4/day — NO CHANGE, WEEKEND)",
-          "note": "Day 23 pipeline. NO NEW SHIPPING DATA (weekend). (1) NYT Mar 20 remains latest: avg 3-4 vessels/day (vs 130+ pre-crisis, ~97% reduction); (2) ~2,000 ships + 20,000 seafarers stranded (IMO/NYT); (3) Iran selective transit now includes: China, India, Pakistan, Iraq, Malaysia, Japan; (4) 22-country coalition statement active; (5) CENTCOM destroyed Hormuz radar/intel (Washington Examiner Mar 21); (6) Mine threat STILL critical gap — no minesweeping deployed; (7) A-10s + UK bases active for surface threat; (8) USS Boxer + USS Tripoli en route (weeks). ASSESSMENT UNCHANGED: structural blockade persists. Transit metric remains secondary to production destruction. Next data: Monday shipping reports.",
-          "source": "NYT/BBC/CENTCOM/IMO"
-        },
-        {
-          "date": "2026-03-22T15:33+08",
-          "est": "<2 mbd (3-4/day — 48-HOUR ULTIMATUM = IMPOSSIBLE COMPLIANCE)",
-          "note": "Day 23 pipeline. 🔴🔴🔴 TRUMP 48-HOUR POWER PLANT ULTIMATUM: Trump demands Iran 'FULLY OPEN, WITHOUT THREAT' Hormuz within 48 hours or US will 'obliterate' power plants (Reuters/Bloomberg/AJE/BBC/CNN Mar 22). This is PHYSICALLY IMPOSSIBLE — (1) 5,000+ mines in strait (US estimates); (2) Mine clearance = weeks minimum with MCM ships not yet deployed; (3) Insurance market frozen — reinstatement takes months; (4) 'Without threat' requires Iran to stand down IRGC Navy entirely; (5) 2,000+ ships + 20,000 seafarers stranded (IMO/NYT); (6) NYT Mar 20: avg 3-4 vessels/day (latest data); (7) Iran selective transit: China/India/Pakistan/Iraq/Malaysia/Japan; (8) 22-country coalition statement active but no physical minesweeping deployed; (9) A-10s + UK bases active for surface threats only. ASSESSMENT: The ultimatum creates a CREDIBILITY TRAP for Trump. Iran cannot comply physically. Either US escalates to power plant strikes (civilian infrastructure, 80M+ affected) or backs down. Markets will GAP Monday on this binary risk.",
-          "source": "Reuters/Bloomberg/AJE/BBC/CNN/NYT/IMO"
-        },
-        {
-          "date": "2026-03-22T19:33+08",
-          "est": "<2 mbd (3-4/day — JAPAN MINESWEEPING OFFER + IRAN COUNTER-THREAT)",
-          "note": "Day 23 evening. (1) ★★★★ NEW: Japan OPEN TO MINESWEEPING Hormuz (Guardian liveblog Mar 22) — first offer to address the CRITICAL GAP (mine clearance) that has blocked all reopening plans. Japan imports 93% of crude via Hormuz — existential interest; (2) Iran Parliament Speaker Qalibaf: if power plants hit, ALL regional energy infrastructure will be 'irreversibly destroyed' — this would make strait transit PERMANENTLY irrelevant; (3) 6 oil ships bound for Australia CANCELLED (Guardian Mar 22) — supply disruption spreading to Oceania; (4) Sri Lanka fuel prices +25% (2nd increase in 2 weeks); (5) NYT Mar 20 remains latest transit data: avg 3-4 vessels/day (vs 130+ pre-crisis); (6) Bahrain: 246 drones + 145 missiles intercepted since war began; (7) 22-country coalition active; (8) USS Boxer (11th MEU) in transit (weeks away); (9) Iran internet blackout Day 23 — 80M+ cut off. ASSESSMENT: Japan minesweeping offer is the most OPERATIONALLY SIGNIFICANT development for Hormuz reopening — first nation to address the mine gap that A-10s/MEUs cannot solve. BUT: Iran's counter-threat makes this academic if power plants are struck. Monday binary: power plant strikes → total regional energy destruction vs. de-escalation → eventual mine clearing + reopening (months). Transit metric remains secondary to PRODUCTION SURVIVAL.",
-          "source": "Guardian/ToI/NYT/IMO/AFP"
-        },
-        {
           "date": "2026-03-23T03:33+08",
           "est": "<2 mbd (3-4/day — IRGC THREATENS COMPLETE CLOSURE IF POWER PLANTS HIT)",
           "note": "Day 23→24. (1) ★★★★★ IRGC: Hormuz will be 'COMPLETELY CLOSED' if power plants hit (Guardian/CBS/Independent/CNN) — escalation from current partial blockade to TOTAL closure; (2) NYT Mar 20 remains latest transit data: avg 3-4 vessels/day (vs 130+ pre-crisis, ~97% reduction); (3) Iran selective transit now includes: China, India, Pakistan, Iraq, Malaysia, Japan; (4) 22-country coalition statement active; CENTCOM 'largest elimination of navy since WWII' — 130 vessels destroyed; (5) Japan open to minesweeping (Guardian Mar 22) — first mine-clearing offer; (6) Reuters Mar 22: oil set to rise Monday as US/Iran threaten energy infrastructure. ASSESSMENT: BINARY OUTCOME. If power plants struck: IRGC complete closure = transit drops from 3-4/day to ZERO + selective transit regime revoked. If ultimatum folds: current partial blockade persists. Either way, physical reopening remains weeks to months away. Japan minesweeping offer = first progress on critical gap but no deployment timeline.",
@@ -423,141 +68,6 @@
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
         {
-          "date": "2026-03-11",
-          "announced_total": "400M bbl",
-          "source": "IEA"
-        },
-        {
-          "date": "2026-03-14",
-          "note": "DOE offers 86M bbl sour crude for sale. Asia 108.6M bbl available immediately",
-          "source": "DOE/Rigzone"
-        },
-        {
-          "date": "2026-03-16",
-          "note": "IEA says Asia-Pacific stocks available immediately, Americas/Europe from end of March",
-          "source": "IEA update"
-        },
-        {
-          "date": "2026-03-17",
-          "note": "US SPR 172M bbl announced. DOE arranged 200M bbl replacement within year (20% more than drawdown). Max pump rate 4.4 mbd. SPR release officially began Mar 16 (FinancialContent). First physical barrels expected ~Mar 21. No delivery confirmation yet. Asia-Pacific reserves available immediately per IEA.",
-          "source": "Politico/Bloomberg/Reuters/FinancialContent"
-        },
-        {
-          "date": "2026-03-17T23",
-          "note": "No new data on physical delivery. SPR release D+1 (began Mar 16). CNBC analysis: 400M bbl global release = historic but crude prices still climbing (Brent $103+) because physical delivery takes weeks and market sees strait blockade as potentially longer-lasting. Key metric to watch: DOE Wednesday weekly report (Mar 19) for first drawdown numbers.",
-          "source": "CNBC/Reuters"
-        },
-        {
-          "date": "2026-03-18",
-          "note": "SPR release D+2. Still no physical delivery confirmation. First barrels expected ~Mar 21. DOE Wed report (Mar 19) will show first drawdown data. NPR confirms gas up 80¢/month from pre-war, diesel near $5/gal (+$1.34/month). Brent $103/bbl despite 400M bbl release = market pricing in prolonged blockade. Market verdict: SPR release = necessary but insufficient if strait stays closed. Physical rate matters more than announced volume.",
-          "source": "NPR/CNBC/Fortune"
-        },
-        {
-          "date": "2026-03-18T07",
-          "note": "SPR D+2.5. No new delivery data. Brent dipped below $100 briefly (Mar 17 Oninvest) then bounced to ~$100-103 range. Market cautiously optimistic — VIX dropped 13.5% on Mar 17. DOE Wed report (Mar 19) = KEY data point for physical drawdown rate. 172M bbl US + 228M global. DOE arranged 200M bbl replacement within year. Max physical pump rate 4.4 mbd. Asia-Pacific reserves available immediately per IEA.",
-          "source": "Oninvest/Reuters/Politico/Bloomberg"
-        },
-        {
-          "date": "2026-03-18T11",
-          "note": "SPR D+2.5. No delivery data. DOE Wed report Mar 19 = KEY.",
-          "source": "Reuters/NPR"
-        },
-        {
-          "date": "2026-03-18T19:22",
-          "note": "SPR D+3. Still no physical delivery confirmation. Brent range $98-$103 (commodity.com $98.51, stockmarketwatch $102.82 — divergence due to Iran offensive reaction). WTI $92-$95. DOE Wed report Mar 19 = FIRST drawdown data. CNBC: disruptions could push Brent to $110-$120 in base case (4-6 weeks). Gas $3.79 avg (+27% since war start per AAA). Diesel $5/gal (CNBC Mar 17). California gas >$5/gal. Market verdict: Iran coordinated offensive will pressure oil higher; SPR ramp-up urgency increasing. 172M bbl US + 228M global, max pump 4.4 mbd.",
-          "source": "commodity.com/CNBC/AAA/Reuters/stockmarketwatch"
-        },
-        {
-          "date": "2026-03-19T03:22+08",
-          "note": "SPR D+3. DOE Wednesday report Mar 19 = TODAY, first drawdown data expected. No physical delivery confirmed yet. Brent SURGING: .26 (oilpriceapi), .78 (Fortune at 9:15am ET Mar 18) — divergence reflects South Pars strike reaction. Pre-crisis SPR 395.3M bbl (Wikipedia Mar 7) or 415M bbl (TheWorldData). 172M bbl US drawdown announced. Gas .47/gal AAA, .70 EIA mid-March. KEY: South Pars strike will push Brent higher, making SPR urgency even greater. CNBC base case - for 4-6 weeks now looking conservative.",
-          "source": "DOE/AAA/EIA/oilpriceapi/Fortune/CNBC/Wikipedia/TheWorldData"
-        },
-        {
-          "date": "2026-03-19T11:22+08",
-          "note": "SPR D+3.5. DOE Wednesday report Mar 19 = TODAY. Brent $107-108 (commodity.com $107.12, ET $108/bbl). WTI $97-98 (oilpriceapi $98.10, commodity.com $98.16). Gas $3.84 national avg AAA (Fortune Mar 18, new high since 2023). Diesel ~$5/gal. CA >$5/gal. SPR 172M bbl release began Mar 16, first physical barrels expected ~Mar 21. Axios: Gallego pressing DOE on reserve adequacy. DOE arranged 200M bbl replacement within year (Politico). 🔴 CRITICAL: Ras Laffan extensive damage + Gulf energy infrastructure under fire = SPR release becoming STRUCTURALLY INSUFFICIENT. Even at max pump rate (4.4 mbd), cannot compensate for loss of Qatar LNG exports + potential Saudi/UAE production disruption. Market will reprice dramatically — CNBC $110-120 base case now CONSERVATIVE. $120-140 range if Gulf production materially disrupted.",
-          "source": "commodity.com/oilpriceapi/Fortune/AAA/Axios/Politico/CNBC/ET"
-        },
-        {
-          "date": "2026-03-19T23:22+08",
-          "note": "SPR D+4 late. 🔴 DESPERATE PIVOTS: (1) ★ Bessent on Fox Business: US 'may unsanction Iranian oil' on water — ~130-140M barrels floating (Bloomberg/NYT/Newsweek/Investing.com Mar 19). This is UNPRECEDENTED: unsanctioning oil from the country you're actively bombing; (2) Bessent also said US could release MORE from SPR beyond 172M bbl already announced; (3) Bessent emphasized US 'not attacking Iranian energy infrastructure, allowing oil to continue flowing' — directly contradicts Trump's Truth Social threat to 'massively blow up entire South Pars'; (4) DOE Wednesday report Mar 19 — no specific drawdown numbers published yet in evening searches; first physical barrels expected ~Mar 21; (5) Brent SPIKED to $119 intraday (BBC/Reuters) before pulling back to ~$112 — BREACHED the $110-120 band from CNBC base case; (6) UK gas prices +19% in single day (BBC); (7) RBN Energy analysis: SPR drawdown of 172M bbl over 120 days = ~1.4 mbd avg, FAR below max 4.4 mbd pump rate; (8) Market in 'pronounced backwardation' = traders fear ACUTE near-term scarcity (FinancialContent/ChronicleJournal); (9) IER/IBTimes: Trump admin eliminated energy modeling experts before war — reduced DOE's ability to forecast market impacts; (10) India's SPR system not yet online for crisis release (APN News). CRITICAL ASSESSMENT: The Bessent unsanctioning gambit is a SIGNAL OF DESPERATION. It reveals: (a) SPR release is STRUCTURALLY INSUFFICIENT to contain prices; (b) the administration has NO good options — destroy Iran's energy = prices spike, unsanction Iran's oil = admit the war is self-defeating; (c) the internal contradiction is now PUBLIC: Trump threatens South Pars destruction while Bessent tries to flood market with Iranian oil. This is the clearest signal yet that COST THRESHOLD HAS BEEN CROSSED at the policy level.",
-          "source": "Bloomberg/NYT/Newsweek/Investing.com/BBC/Reuters/RBN Energy/FinancialContent/APN/IER/IBTimes"
-        },
-        {
-          "date": "2026-03-19T19:22+08",
-          "note": "SPR D+4. DOE Wed report Mar 19 = TODAY (no drawdown data confirmed in evening searches yet). Brent BROKE $110: $108.93 (commodity.com) to $111.36 (LiveMint, +3.71%). WTI $96.42-$98. WTI-Brent spread widest in 11 YEARS (Reuters) = international crude premium for Gulf risk surging. Gas $3.84 national avg AAA (new 2023+ high). India Sensex crashed 2,500 pts (LiveMint). European equities -2% to year low (Bloomberg). Asian stocks -2.8% (Bloomberg). S&P 500 6,624.70 (-1.36%), below 200-DMA. Dow worst month since 2022. 🔴 CRITICAL: SPR release now STRUCTURALLY OVERWHELMED. CNBC $110-120 base case has been BREACHED in <24 hours (Brent $111.36). Next band: $120-140 if Gulf production disruption persists. 172M bbl US release = drops in the bucket when Qatar LNG offline + South Pars damaged + UAE gas shut + insurance dead. Even at max pump rate (4.4 mbd), SPR addresses CRUDE supply only — LNG/gas has NO strategic reserve equivalent. Europe gets 12-14% of LNG from Qatar (Wikipedia Hormuz crisis page).",
-          "source": "commodity.com/LiveMint/Reuters/AAA/Bloomberg/CNBC/Wikipedia"
-        },
-        {
-          "date": "2026-03-20T03:22+08",
-          "note": "SPR D+4 late → D+5. 🔴 STRUCTURALLY OVERWHELMED: (1) Brent SPIKED $119/bbl intraday (BBC/Reuters/BNN) before pullback to ~$112 — BREACHED $110-120 band; (2) Bessent unsanctioning 130-140M bbl Iranian oil (Bloomberg/NYT Mar 19) = DESPERATION — bombing country AND unsanctioning its oil; (3) Bessent: may release MORE SPR beyond 172M bbl; (4) US oil loan from SPR depends on \"stiff premiums\" — DOE took bids (BOE Report Mar 18); (5) RBN Energy: 172M bbl over 120 days = ~1.4 mbd avg, FAR below max 4.4 mbd; (6) Gas $3.84 national avg AAA (Fortune/AP Mar 18) — highest since 2023; (7) WTI $95.50-$97.30 (commodity.com/247WallSt); (8) Gold $4,536-$4,605 range (Fortune/LiteFinance); (9) S&P 500 below 200-DMA for first time since May 2025 (Forbes); Dow worst month since 2022; (10) Market in pronounced backwardation = acute scarcity; (11) AJE: $150-$200/bbl now seriously discussed by analysts. CRITICAL: SPR release STRUCTURALLY INSUFFICIENT — addresses crude only, NO strategic reserve for LNG/gas. Qatar 17% LNG capacity lost 3-5 years, Kuwait refineries on fire, UAE gas offline = SPR cannot compensate for multi-fuel production destruction.",
-          "source": "BBC/Reuters/BNN/Bloomberg/NYT/BOE Report/RBN/AAA/Fortune/AP/Forbes/AJE/commodity.com"
-        },
-        {
-          "date": "2026-03-20T07:22+08",
-          "note": "SPR D+5. MARKET CLOSE Mar 19: Brent settled $108.65 (+1.18%) after intraday spike to $119.13 — wildest intraday swing of the war (Reuters). WTI settled $96.14 (slight loss). Market PARED gains after Netanyahu agreed to halt South Pars strikes. (1) S&P 500 closed 6,606.49 (-0.27%), pared from much steeper intraday losses (CNBC); (2) Gold DOWN ~4% to $4,569-4,650 range — liquidation sell-off (Investopedia); (3) VIX surged to 25.09 — 2-year high (FinancialContent); (4) Gas $3.84/gal AAA national avg — highest since 2023; (5) No DOE Wednesday drawdown numbers confirmed in searches — first physical barrels expected ~Mar 21; (6) Bessent unsanctioning gambit still in play: 130-140M bbl Iranian oil floating (Bloomberg/NYT); (7) Pentagon $200B supplemental request (AP/WashPost confirmed); (8) RBN: 172M bbl / 120 days = ~1.4 mbd actual rate, far below 4.4 mbd max. CRITICAL: The $119→$108.65 intraday reversal was triggered by Netanyahu South Pars halt. If energy de-escalation holds, Brent may stabilize $105-115 range. But Iran's continued Gulf attacks (Yanbu/Qatar/Kuwait) mean supply destruction ongoing — SPR structurally insufficient for multi-fuel, multi-country production losses.",
-          "source": "Reuters/CNBC/Investopedia/FinancialContent/AAA/Bloomberg/NYT/AP/RBN"
-        },
-        {
-          "date": "2026-03-20T15:30+08",
-          "note": "SPR D+5 pipeline. FRIDAY ASIAN SESSION: (1) Brent ~$105-107 in early Friday Asian trade (Upstox: $105 zone; Gulf News: $107.1, -1.45%; FXStreet WTI: ~$93.50); (2) ME crude SURGING to $131 vs Brent $107 — $24 spread = DUAL MARKET (Gulf News Mar 20); (3) S&P 500 futures gaining after Thu -0.27% close (LiveMint); (4) India Sensex rebounding +1%, Nifty +1.13% on crude decline (Business Standard/LiveMint); (5) MSCI Asia Pacific +0.3% after -2.6% (LiveMint); (6) Gas: $3.81/gal national avg (Finder Mar 19, slight pullback from $3.84); (7) Gold: $4,569-$4,650 (down ~4% from war high, liquidation); (8) VIX: ~22 (LA Times Mar 19, retreated from 35 peak on Mar 9, but was 25.09 intraday Thu); (9) DOE Wed report — still no confirmed drawdown volume published. First physical barrels expected Mar 21 (tomorrow). CRITICAL: Friday Asian session showing RELIEF RALLY on Netanyahu South Pars halt + de-escalation signals. BUT: ME crude at $131 vs Brent $107 = $24 regional premium = market pricing in PERMANENT Gulf supply risk even while international benchmarks moderate. SPR remains structurally insufficient — addresses crude only, no LNG/gas reserve. Qatar 17% LNG capacity lost 3-5yr cannot be compensated.",
-          "source": "Upstox/GulfNews/FXStreet/LiveMint/BusinessStandard/Finder/LATimes"
-        },
-        {
-          "date": "2026-03-20T19:30+08",
-          "note": "SPR D+5 evening. (1) First physical barrels expected TOMORROW Mar 21; (2) CBS: release over 120 days brings US reserves to 243M bbl — LOWEST IN 44 YEARS (down 41% from 415M); (3) Brent settled $108.65 Thu (after $119.13 intraday high), Friday Asian ~$105-107; (4) ★★ GOLD CRASHING: worst week since Feb 1983, down ~10% WTD (CNBC). COMEX gold $4,536-4,681 range. Liquidation sell-off, NOT safe-haven buying = inflation/liquidity fears overtaking geopolitical premium; (5) S&P 500: 6,606.49 (-0.27% Thu), below 200-DMA. Dow worst month since 2022; (6) VIX: 25.09 intraday (2-year high, FinancialContent); (7) $200B Pentagon supplemental formally requested — Politico: 'Congress braces', CNN: 'cracks emerge in GOP'; (8) NPR: 'Congress has NOT voted to approve the war'; (9) Bessent unsanctioning 130-140M bbl Iranian oil still in play; (10) ME crude $131 vs Brent $107 = $24 DUAL MARKET premium persists (Gulf News). CRITICAL: Gold crash is a REGIME SIGNAL — market no longer treating war as simple risk-off (gold up) but as INFLATIONARY SUPPLY DESTRUCTION (gold liquidated for margin/liquidity). This is what happened in March 2020 but for the OPPOSITE reason.",
-          "source": "CBS/CNBC/Reuters/FinancialContent/Politico/CNN/NPR/GulfNews"
-        },
-        {
-          "date": "2026-03-21T03:30+08",
-          "note": "SPR D+6. QUADRUPLE WITCHING CARNAGE + ZERO PHYSICAL DRAWDOWN CONFIRMED: (1) ★★ EIA weekly (thru Mar 13): SPR STILL 415.4M bbl — NO DRAWDOWN VISIBLE despite 'release began Mar 16' (Rigzone/OilPrice Mar 20). First physical barrels still pending; (2) US crude inventories UP 6MM bbl WoW (Rigzone) — SPR not yet contributing to supply; (3) ★★ QUADRUPLE WITCHING: S&P 500 -0.84% to ~6,551 (StockMarketWatch). Nasdaq -1.16%. Russell 2000 -1.37%. Dow -0.4% to ~46,021. 4th consecutive weekly decline — LONGEST in over 1 year; (4) Brent $110+ intraday (StockMarketWatch), $108.60 (247WallSt), $107.40 at 8:30am ET (Fortune); (5) VIX surged to 25.80 morning (FinancialContent) = high-vol regime. Settling ~24; (6) Energy ONLY positive sector (+1.52%). Real Estate -1.99%, Tech -1.42%, Consumer Disc -2.6%; (7) Nvidia -1.5% despite record Q4 ($68.13B rev, +73% YoY); SMCI -25% on DOJ charges; (8) Time Mar 20: bipartisan 'reckless' — lawmakers condemning $200B request. 80¢/gal higher gas since war started; (9) Newsweek: 53% disapprove war, 51% support War Powers resolution, 43% less likely to vote GOP. 68% GOP under-45 prefer candidates reducing Israel support = GENERATIONAL SHIFT; (10) Fed held 3.5-3.75%, Powell cited 'elevated uncertainty'. CRITICAL: EIA data CONFIRMS zero physical SPR drawdown through Mar 13. Release authorized Mar 11, 'began' Mar 16, but no barrels have left storage. Market is trading on ANNOUNCEMENT not physical supply. When market realizes SPR is vaporware so far, repricing likely. Bessent's 130-140M bbl unsanctioning gambit = desperation multiplied by delivery failure.",
-          "source": "Rigzone/OilPrice/StockMarketWatch/247WallSt/Fortune/FinancialContent/Time/Newsweek/Fed"
-        },
-        {
-          "date": "2026-03-21T07:30+08",
-          "note": "SPR D+6 morning. MARKET CLOSE Mar 20 CARNAGE + IRAQ FORCE MAJEURE: (1) ★★★ Brent CLOSED $112.19 (+3.26%, +$3.54) — HIGHEST close since war began (CNBC Mar 20). Iraq force majeure on ALL foreign-operated oilfields triggered rally; (2) ★★★ WTI settled $98.32 (+2.27%, +$2.18) — approaching $100 psychological level; (3) ★★★ S&P 500 -1.51%, Dow -444pts (-0.96%), Nasdaq -2.01% — 4th consecutive weekly decline (CNN Mar 20); (4) ★★★ VIX +11% on day, 25.80 intraday; (5) Gold + bonds ALSO slumping — 'stocks, bonds and gold slump while Iran war rages' (CNN) — NO safe haven working; (6) SPR still at 415.4M bbl (EIA thru Mar 13) — ZERO drawdown. PriceGroup Mar 20: 'starting deliveries NEXT WEEK'; (7) Bessent unsanctioning 140M bbl Iranian oil still in play — 'in coming days' (Fox Business); (8) ★★ Saudi Arabia projects $180/bbl if disruptions last through late April (WSJ Mar 20); (9) ★★ Citi raised Brent forecast: $120 base case (1-3 months), $150 bull case; base case assumes de-escalation 4-6 weeks → $70-80 by year-end; (10) Dallas Fed report: Hormuz closure removing ~20% global supply should raise oil to ~$100 (but market already at $112 = exceeding model); (11) Fed officials: war 'obscuring outlook', traders pricing in rate HIKE (Reuters Mar 20); (12) $23B wartime emergency weapons sales bypassing Congress. CRITICAL ASSESSMENT: Market is now in CRISIS PRICING MODE. All three asset classes down simultaneously (stocks/bonds/gold) = LIQUIDITY CRISIS dynamics, not normal risk-off. Saudi $180/bbl projection + Citi $120-150 range + Iraq force majeure = supply destruction ACCELERATING faster than SPR can compensate. Physical SPR delivery next week will be a DROP compared to Iraq's 4.5 mbd production going offline via force majeure.",
-          "source": "CNBC/CNN/Reuters/WSJ/Citi/DallasFed/PriceGroup/Fox Business"
-        },
-        {
-          "date": "2026-03-21T11:30+08",
-          "note": "SPR D+6 → D+7. 🔴🔴 DUAL DESPERATION MEASURES: (1) ★★★★★ ACTION: US Treasury OFFICIALLY waived sanctions on ~140M bbl Iranian oil at sea for 30 days (Mar 20→Apr 19) — Reuters/NYT/Politico confirmed. This IS the Bessent gambit now executed; (2) ★★★ EIA weekly (thru Mar 13): SPR STILL 415.4M bbl — ZERO physical drawdown visible (Rigzone/OilPrice Mar 20). First physical barrels reportedly 'next week' (PriceGroup); (3) ★★★ Brent CLOSED $112.19 (+3.26%) on Mar 20 — WAR HIGH, triggered by Iraq force majeure (CNBC); WTI settled $98.32 approaching $100; (4) ★★ S&P 500 -1.51%, Dow -444pts, Nasdaq -2.01% — 4th consecutive weekly decline (CNN Mar 20). Stocks+bonds+gold ALL down = LIQUIDITY CRISIS; (5) ★★ Gold worst week since Feb 1983 (CNBC); VIX 25.80 intraday; (6) Saudi projects $180/bbl if disruptions last through late April (WSJ); Citi: $120 base, $150 bull (1-3mo); (7) Gas ~$3.84/gal national avg — up 80¢+ since war start; (8) CBS: SPR release would drop US reserves to 243M bbl = LOWEST in 44 YEARS; (9) RBN: 172M bbl / 120 days = ~1.4 mbd avg, far below 4.4 mbd max pump rate. CRITICAL: The sanctions waiver is UNPRECEDENTED — the US is now SIMULTANEOUSLY bombing Iran AND unsanctioning its oil. The logical incoherence is now OFFICIAL POLICY. Market response will test whether ~140M bbl floating crude (30-day window) can offset $112 Brent + Iraq force majeure + Gulf production destruction. Likely answer: insufficient. The waiver is a PRICE SIGNAL, not a SUPPLY SOLUTION.",
-          "source": "Reuters/NYT/Politico/EIA/Rigzone/CNBC/CNN/WSJ/Citi/CBS/RBN/AAA"
-        },
-        {
-          "date": "2026-03-21T15:30+08",
-          "note": "SPR D+6 afternoon (Saturday). ★★★ NEW: DOE awarded contracts for 45.2M bbl in FIRST BATCH (BOE Report Mar 20). Recipients: BP Products North America, Gunvor, others. This is the first CONTRACTUAL evidence of SPR deployment — but physical drawdown still pending. (1) EIA weekly (thru Mar 13): SPR still 415.4M bbl — ZERO physical drawdown visible; (2) PriceGroup: first physical deliveries \"next week\" (week of Mar 23); (3) 45.2M bbl = 26% of 172M total authorized; (4) ★★ Treasury waived sanctions on ~140M bbl Iranian oil for 30 days (Mar 20→Apr 19); (5) Brent CLOSED .19 (+3.26%) on Mar 20 — WAR HIGH; WTI .32 approaching ; (6) S&P 500 -1.51%, Dow -443pts (-0.96%), Nasdaq -2.01% — 4th consecutive weekly decline; (7) VIX 26.78 (+11.31%); Gold ,574.90 (-0.67%); (8) Russell 2000 -2.26%; (9) Saudi projects /bbl if disruptions to late April (WSJ); Citi:  base,  bull; (10) Gas ~.84/gal (+80¢+ since war). CRITICAL: SPR contracts awarded but ZERO barrels have physically left storage. Market trading on ANNOUNCEMENTS (sanctions waiver + SPR contracts) not PHYSICAL supply. When physical barrels start flowing next week (~1.4 mbd avg rate), still structurally insufficient vs Gulf production destruction + Iraq force majeure.",
-          "source": "BOE Report/EIA/Rigzone/CNBC/Reuters/WSJ/Citi/Yahoo Finance"
-        },
-        {
-          "date": "2026-03-21T23:30+08",
-          "note": "SPR D+6 late (Saturday). NO NEW EIA DATA (weekly report Wed). (1) SPR still 415.4M bbl (thru Mar 13) — ZERO physical drawdown; (2) DOE awarded 45.2M bbl first batch contracts (BP, Gunvor); (3) First physical deliveries 'next week' (Mar 23+); (4) Treasury 30-day sanctions waiver on ~140M bbl Iranian oil at sea now ACTIVE; (5) Brent CLOSED $112.19 on Mar 20 — WAR HIGH, +8.8% for the week (Reuters); (6) WTI settled $98.32 (-0.4% weekly but approaching $100); (7) Gas $3.91-$4.00/gal national avg (CBS/Reuters — up >$1 since war start); (8) Goldman Sachs: oil could stay triple digits 'for years' (CNN Mar 20); (9) S&P 500: 6,506.48 (-1.51%), 4th consecutive weekly decline; Dow 45,577 (-0.96%); Nasdaq -2.01%; (10) Gold: WORST WEEK since Feb 1983 — LIQUIDATION not safe-haven (CNBC); (11) VIX 26.78 (+11.31%); (12) Stocks+bonds+gold ALL down simultaneously = LIQUIDITY CRISIS dynamics. CRITICAL: Physical SPR delivery begins next week but at ~1.4 mbd avg rate = DROP IN THE BUCKET vs $112 Brent + Iraq force majeure + Gulf production destruction. The 30-day sanctions waiver is a PRICE SIGNAL attempting to create psychological ceiling, but ~140M bbl floating crude cannot physically offset 20 mbd Hormuz throughput loss. Goldman 'triple digits for years' = market pricing in STRUCTURAL not temporary disruption.",
-          "source": "EIA/BOE Report/Reuters/CBS/CNN/Goldman/CNBC"
-        },
-        {
-          "date": "2026-03-22T07:30+08",
-          "note": "SPR D+7 morning. WEEKEND — NO NEW EIA DATA. (1) SPR still 415.4M bbl (thru Mar 13 EIA) — ZERO physical drawdown; (2) DOE awarded 45.2M bbl first batch contracts (BP, Gunvor) — Bloomberg confirms first physical barrels 'next week' (Mar 23+); (3) Treasury 30-day sanctions waiver on ~140M bbl Iranian oil ACTIVE; (4) Brent settled $112.19 on Mar 20 — WAR HIGH (+8.8% weekly, +50% since war start per Bloomberg); (5) Gas $3.91-$4.00/gal national avg (Politico/Reuters), CA $5.22 (Yahoo). Reuters/Ipsos: 'rising gas prices hitting US household finances'; (6) Goldman: 'triple digits for years'. Citi: $120 base, $150 bull (1-3mo); (7) S&P 500: 6,506 (-1.51%, 4th consecutive weekly decline); Gold worst week since Feb 1983; VIX 26.78; (8) JP Morgan reset S&P 500 target citing 'steep oil increases pave way for tighter financial conditions' (TheStreet Mar 21); (9) Bloomberg Mar 20: 'The Oil Prices You See Don't Tell the Market's Real Story' — real-world cargo costs FAR exceed benchmark. CRITICAL: Physical SPR delivery begins next week (Mar 23) but at ~1.4 mbd avg = DROP IN THE BUCKET. The 45.2M bbl first batch over weeks/months vs $112 Brent + Gulf production destruction + Iraq force majeure. Sanctions waiver (140M bbl floating) = price signal not supply solution. Next EIA report Wed Mar 25 = first potential drawdown confirmation.",
-          "source": "Bloomberg/EIA/BOE Report/Politico/Reuters/Yahoo/Goldman/Citi/TheStreet/JP Morgan"
-        },
-        {
-          "date": "2026-03-22T03:30+08",
-          "note": "SPR D+7. WEEKEND — NO NEW EIA DATA. (1) SPR still 415.4M bbl (thru Mar 13 EIA) — ZERO physical drawdown confirmed; (2) DOE awarded 45.2M bbl first batch contracts (BP, Gunvor) — first CONTRACTUAL evidence but no physical flow; (3) Bloomberg Mar 20: 'First US Oil Barrels From Emergency Release To Hit Market' — physical delivery expected next week (Mar 23+); (4) Treasury 30-day sanctions waiver on ~140M bbl Iranian oil ACTIVE (Mar 20→Apr 19); (5) Brent CLOSED $112.19 on Mar 20 — WAR HIGH (+8.8% weekly); WTI $98.32 approaching $100; (6) Gas: $4.00/gal national avg (Reuters Mar 21, up >$1 since war start); (7) Goldman Sachs: 'triple digits for years' (CNN Mar 20); Citi: $120 base, $150 bull (1-3mo); Saudi projects $180/bbl if through late April; (8) S&P 500: 6,506 (-1.51%), 4th consecutive weekly decline; Dow 45,577; Nasdaq -2.01%; (9) Gold: worst week since Feb 1983 — LIQUIDATION; VIX 26.78; (10) Stocks+bonds+gold ALL down = LIQUIDITY CRISIS dynamics. CRITICAL: Physical SPR delivery begins next week but at ~1.4 mbd avg = structurally insufficient. Sanctions waiver is PRICE SIGNAL not supply solution. $4/gal gas + $112 Brent + Goldman 'years' = market pricing STRUCTURAL not temporary disruption. Next EIA report Wed Mar 25 = first potential drawdown confirmation.",
-          "source": "Bloomberg/EIA/Reuters/Goldman/CNN/CNBC/Citi/WSJ"
-        },
-        {
-          "date": "2026-03-22T11:30+08",
-          "note": "SPR D+7 pipeline. WEEKEND — NO NEW EIA DATA. (1) SPR still 415.4M bbl (thru Mar 13 EIA) — ZERO physical drawdown; (2) OPIS Mar 20: HALF of 172M bbl release will be LOANED to buyers (not sold outright) — borrowers must return crude + premium; (3) DOE 45.2M bbl first batch contracts (BP, Gunvor) awarded; (4) Bloomberg: first physical barrels expected TOMORROW Mon Mar 23; (5) Treasury 30-day sanctions waiver on ~140M bbl Iranian oil ACTIVE; (6) LAST MARKET CLOSE (Fri Mar 20): Brent $112.19 WAR HIGH (+8.8% weekly); WTI $98.32; S&P 6,506 (-1.51%); VIX 26.78; Gold $4,575 (worst week since Feb 1983); Gas $4.00/gal national avg; (7) Goldman: 'triple digits for years'; Citi: $120 base, $150 bull; Saudi: $180 if through late April. CRITICAL: TOMORROW is pivotal — first physical SPR barrels expected + markets reopen after nuclear retaliation cycle (Dimona 100+ wounded). Expect Monday gap. Next EIA report Wed Mar 25.",
-          "source": "OPIS/Bloomberg/EIA/Reuters/Goldman/Citi"
-        },
-        {
-          "date": "2026-03-22T15:33+08",
-          "note": "SPR D+7 afternoon. WEEKEND — NO NEW EIA DATA. (1) SPR still 415.4M bbl (thru Mar 13 EIA) — ZERO physical drawdown confirmed; (2) Bloomberg: first physical barrels expected TOMORROW Mon Mar 23; (3) DOE 45.2M bbl first batch contracts (BP, Gunvor) — first contractual evidence; (4) OPIS: HALF of 172M bbl will be LOANED not sold — borrowers return crude + premium; (5) Treasury 30-day sanctions waiver ~140M bbl Iranian oil ACTIVE; (6) LAST MARKET CLOSE (Fri Mar 20): Brent $112.19 WAR HIGH; WTI $98.32; Gas $4.00/gal; (7) Goldman: 'triple digits for years'; Citi: $120 base, $150 bull; Saudi: $180 if through late April; (8) JP Morgan cut S&P target to 7,200 from 7,500, sees 6,000 downside (TheStreet Mar 21). 🔴 CRITICAL: Trump 48-hour Hormuz ultimatum + first SPR physical delivery BOTH hit Monday. Markets will react to ultimatum FIRST — if power plant strikes materialize, Brent could breach $120-130 as civilian energy infrastructure destruction = Iran retaliates against Gulf energy (again). SPR delivery becomes noise in that scenario. Next EIA report Wed Mar 25.",
-          "source": "Bloomberg/OPIS/EIA/Goldman/Citi/TheStreet/JP Morgan/Reuters"
-        },
-        {
-          "date": "2026-03-22T19:33+08",
-          "note": "SPR D+7 evening. 🔴 IRAN COUNTER-THREAT REDEFINES SPR CALCULUS: (1) SPR still 415.4M bbl — ZERO physical drawdown; (2) First physical barrels expected TOMORROW Mon Mar 23; (3) ★★★★★ NEW VARIABLE: Iran Parliament Speaker Qalibaf threatens 'irreversible' destruction of ALL regional energy infrastructure if power plants hit. This would make SPR structurally irrelevant — 172M bbl over 120 days cannot compensate for PERMANENT Gulf production destruction; (4) Russia sanctions waiver ALSO issued for 30 days — buying Russian oil at sea (Guardian/BBC Mar 22). Zelenskyy: Putin gaining from this; (5) Sri Lanka +25% fuel prices, 6 Australian oil ships cancelled — global cascade accelerating; (6) LAST CLOSE: Brent $112.19; WTI $98.32; Gas $4+/gal; (7) Goldman 'triple digits for years'; Citi $120/$150; Saudi $180; (8) JP Morgan S&P target cut to 7,200, downside 6,000. CRITICAL: Monday is TRIPLE CONVERGENCE — (A) first SPR physical barrels, (B) Trump ultimatum deadline, (C) markets reopen after nuclear retaliation + ultimatum + counter-threat. If power plants struck → Brent $130+ easily, SPR irrelevant. If ultimatum folds → Brent may moderate to $105-110 on de-escalation hope. SPR physical delivery is NOISE compared to ultimatum binary.",
-          "source": "Guardian/BBC/Bloomberg/EIA/Goldman/Citi/NYT/Reuters"
-        },
-        {
           "date": "2026-03-23T03:33+08",
           "est": "D+8 — FIRST PHYSICAL BARRELS EXPECTED TODAY",
           "note": "SPR D+8. 🔴 PHYSICAL DELIVERY DAY: (1) Bloomberg: first US SPR barrels expected to hit market TODAY Mon Mar 23; (2) SPR still 415.4M bbl (EIA thru Mar 13) — ZERO physical drawdown confirmed in data; (3) DOE 45.2M bbl first batch contracts (BP, Gunvor) awarded; (4) OPIS: HALF of 172M bbl will be LOANED not sold; (5) Treasury 30-day sanctions waiver on ~140M bbl Iranian oil ACTIVE; (6) Gas: $3.94/gal national avg (USAToday Mar 22), up 30%+ in some states (NYT Mar 22). $2.98 pre-war. NBC: gas spending up 14% YoY; (7) LAST CLOSE: Brent $112.19 (WAR HIGH), WTI $98.32; (8) Reuters Mar 22: oil set to rise further Monday; (9) Goldman 'triple digits for years'; Citi $120/$150; Saudi $180; (10) JP Morgan cut S&P target to 7,200, downside 6,000. CRITICAL: TODAY is TRIPLE CONVERGENCE: (A) first SPR physical barrels, (B) Trump 48-hour ultimatum running, (C) markets reopen after weekend of nuclear retaliation + ultimatum + IRGC counter-threat. If power plants struck → IRGC complete Hormuz closure → Brent $130-150 → SPR irrelevant. If ultimatum folds → Brent may settle $108-115 on relief. SPR physical delivery at ~1.4 mbd avg is NOISE vs ultimatum binary.",
@@ -579,78 +89,33 @@
     }
   },
   "focal_signals": {
-    "description": "焦点层信号。告诉你'什么时候转'。按优先级排序",
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "ACTIVE_MEDIATION_URGENCY_CRITICAL",
-      "why": "美伊双边无法自发找到停止点。中国是唯一有经济杠杆(伊朗最大客户)+安理会否决权+双方都不反对的第三方",
-      "observe": [
-        "PLAN海军向海湾方向部署(AIS/卫星)",
-        "习近平/王毅对伊朗提出具体框架(不是'呼吁和平'的空话)",
-        "中国特使任命",
-        "中国对伊朗石油进口实际变化(海关数据/tanker tracking)",
-        "中国与美方的秘密接触泄露"
-      ],
-      "false_alarm_filter": "外交部'呼吁克制'= 噪声。需要看到成本行动(调兵/经济杠杆/特使)",
       "last_check": "2026-03-23T15:33+08",
-      "findings": "🟡 ENVOY + INTEL COOPERATION — STILL BELOW COST-ACTION THRESHOLD: (1) China ME envoy appointed (Ekhbary Mar 22); (2) Beijing dispatched envoys for mediation + evacuating nationals (Wikipedia); (3) China-Iran intel cooperation deepening — radar/navigation/Shaheds (SWJ Mar 20); (4) China NOT signing 22-country Hormuz coalition; (5) China still negotiating bilateral passage with Iran; (6) NO naval deployment, no economic leverage, no concrete framework. CRITICAL: Trump ultimatum execution would FORCE China hand — complete Hormuz closure = existential for China energy imports. If fold, China continues positioning."
+      "findings": "🟡 ENVOY + INTEL COOPERATION — STILL BELOW COST-ACTION THRESHOLD: (1) China ME envoy appointed (Ekhbary Mar 22); (2) Beijing dispatched envoys for mediation + evacuating nationals (Wikipedia); (3) Chin"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "DECLARE_VICTORY_AND_LEAVE_ARCHITECTURE_ACTIVATED",
-      "why": "前景理论: Trump承诺弹性>IRGC。解锁更可能从美方开始",
-      "observe": [
-        "修辞仍强硬但军事行动转向护航编队(言行分裂)",
-        "Bessent做市场稳定化 vs Pentagon升级(政府内部分裂)",
-        "任命谈判代表(与'不谈判'矛盾)",
-        "军事优先级从打击转向护航(资源分配信号)",
-        "SPR释放令(高成本行动=不只是说说)"
-      ],
-      "current_assessment": "★★★★★ 3/18 07:22 — EXIT_SIGNALING confirmed multi-source: (1) Trump 3/17 Reuters: 'we'll be leaving in pretty much the very near future' — first explicit exit timeline signal; (2) Trump claims 'wiped out Iran's military, navy and air force' = victory narrative for exit; (3) Blames NATO allies for Hormuz failure = scapegoat construction; (4) Claims 'we don't need any help' — contradicts Energy Sec 'we're simply not ready'; (5) NBC 3/17: Pentagon presenting daily options to end war, Trump hasn't taken any yet — suggesting imminent decision; (6) Araghchi (Fars/NBC): 'We did not request ceasefire but war must end in a way it will not be repeated' — Iran opening door without appearing to beg; (7) Kent resignation still reverberating — MAGA anti-war faction legitimized; (8) $11.3B first 6 days (Pentagon to Congress) = unsustainable burn rate; (9) VIX dropped 13.5% Mar 17 + Brent briefly below $100 = market cautiously pricing exit; (10) Trump postpones China visit (Indian Express). Pattern: five EXIT vectors converging — economic/military/diplomatic/political/narrative. Key: this is NOT a negotiation setup. It's a unilateral 'declare victory and leave' architecture. No ceasefire agreement needed — just a presidential announcement.",
       "last_check": "2026-03-23T15:33+08",
-      "findings": "🔴🔴🔴🔴🔴 ULTIMATUM D-DAY — 7-VECTOR CONTRADICTION: (1) 48hr ultimatum ACTIVE (deadline Mon ~23:44 GMT). NSA Waltz reinforced; (2) IRGC: complete closure + desalination + Barakah nuclear plant targets; (3) IDF: \"wide-scale wave\" on Tehran TODAY (CNN/ABC Mar 23); (4) CENTCOM Adm. Cooper: \"ahead or on plan\" + Iran \"operating in desperation\" (Newsday); (5) Cooper CONFIRMED Iran fire declining to 1-2 at a time; (6) Kushner/Witkoff peace talks; (7) 2,500 Marines deploying. SEVEN CONTRADICTORY VECTORS: (A) Ultimatum; (B) Peace talks; (C) \"Winding down\"; (D) IDF wide-scale strikes; (E) Marine deployment; (F) Cooper \"desperation\" narrative; (G) Gas .94 + S&P -0.4% futures. EXIT PROBABILITY: 55% within 14 days."
+      "findings": "🔴🔴🔴🔴🔴 ULTIMATUM D-DAY — 7-VECTOR CONTRADICTION: (1) 48hr ultimatum ACTIVE (deadline Mon ~23:44 GMT). NSA Waltz reinforced; (2) IRGC: complete closure + desalination + Barakah nuclear plant targets; (3"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "UNILATERAL_EXIT_FRAMEWORK_ACTIVATED",
-      "why": "需要让双方都能宣称'赢了'的框架才能退出",
-      "observe": [
-        "UN安理会决议草案(含具体框架,不是空谈)",
-        "'霍尔木兹自由通行协议'类提案",
-        "'相互克制框架'",
-        "任何'条件换条件'的交易结构出现",
-        "阿曼/卡塔尔宣布促成某种安排"
-      ],
-      "current_assessment": "退出框架变异: (1) 传统双边停火 = still not_detected; (2) BUT Trump's unilateral 'declare victory and leave' architecture = EMERGING. Reuters 3/14: US rebuffed Mideast allies' ceasefire attempts. NBC: Pentagon daily options presented but none taken. Trump Mar 15 (Guardian): 'not ready to make a deal' but Iran 'keen to negotiate'. Trump Mar 17 (Reuters): 'leaving in very near future'. Araghchi (Fars): 'we did not request ceasefire but war must end'. (3) Larijani killed = moderate channel closed. (4) Mojtaba inner circle = all IRGC hardliners (NYT). (5) UN Security Council: condemned Iran but rejected Russia ceasefire proposal. fp3 being SHORT-CIRCUITED by fp2: Trump doesn't need bilateral framework — only a 'victory moment' to announce withdrawal. Risk: withdrawal without ceasefire = unstable. Mines remain, insurance frozen, proxy attacks continue. 'Ending the war' ≠ 'resolving the crisis'.",
       "last_check": "2026-03-23T15:33+08",
-      "findings": "★★★★ MULTILATERAL SCAFFOLDING EXISTS — ULTIMATUM BINARY DOMINATES: (1) LEGAL: UNSC 2817 + 22-country coalition; (2) DIPLOMATIC: Kushner/Witkoff + China envoy; (3) MILITARY NARRATIVE: CENTCOM \"largest navy elimination since WWII\" + \"ahead or on plan\" + Iran \"operating in desperation\" — STRONG mission accomplished material; (4) IDF wide-scale strikes TODAY = Israel NOT ready for exit; (5) Goldman raised Brent 2026 avg to  (assumes resolution); (6) CNBC: \"Two-week deadline for economy\". EXIT RAMP EXISTS. But ultimatum corner: fold = weakness, execute = mutual destruction."
+      "findings": "★★★★ MULTILATERAL SCAFFOLDING EXISTS — ULTIMATUM BINARY DOMINATES: (1) LEGAL: UNSC 2817 + 22-country coalition; (2) DIPLOMATIC: Kushner/Witkoff + China envoy; (3) MILITARY NARRATIVE: CENTCOM \"largest "
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "THRESHOLD_CROSSED_POLICY_ACTION_TAKEN",
-      "why": "成本本身不是信号，成本逼近政治不可承受点才是",
-      "observe": {
-        "us_side": [
-          "国会War Powers投票排期(有没有排期?)",
-          "单次伤亡>50人事件",
-          "汽油$5持续2周后的民调数据",
-          "Pentagon累计成本报告($19B/天→国会反弹)",
-          "美军中东基地被迫撤离/加固"
-        ],
-        "iran_side": [
-          "IRGC攻击类型从导弹退化到只有无人机/快艇(能力阈值)",
-          "德黑兰断水/断电/燃料短缺报道",
-          "伊朗内部抗议规模升级",
-          "IRGC某区域完全停止行动(碎片化到失控)"
-        ]
-      },
-      "current_assessment": "3/18 07:22 — 成本非线性加速: 【美方】(1) $11.3B first 6 days (Pentagon→Congress) at ~$1.9B/day → Day 19 extrapolated ~$36B total; (2) Gas +80¢/month (NPR), diesel $5/gal; (3) Axios: gas price shock hitting 2026 Senate battleground states hardest; (4) Reuters: 'rising gas prices imperil Trump's Republican majority'; (5) Trump public exit timeline ('very near future') = COST THRESHOLD CROSSED politically; (6) VIX -13.5% = market pricing in exit probability; (7) Brent briefly <$100 = partial relief signal; (8) Amnesty school strike report (100+ children) = intl reputation cost; (9) Kent resignation = MAGA antiwar legitimized; (10) All allies refused Hormuz escort = no cost-sharing. 【伊方】(1) Larijani+Basij cmdr killed — continued decapitation; (2) Mojtaba inner circle = all IRGC hardliners → regime extremization not collapse; (3) IRGC vessel attacks ceased 6 days but Sejjil BM + Iraq proxy = capability adapting; (4) Internet crackdown + Starlink suppression = internal control; (5) IranWire: IRGC views war as 'unifying tool'. 关键: US political cost threshold CROSSED (Trump publicly signaling exit). Iran using war for internal cohesion. Asymmetric cost structure → US exits first (high confidence 75%+).",
       "last_check": "2026-03-23T15:33+08",
-      "findings": "🔴🔴🔴🔴🔴 COST THRESHOLD — ALL SIDES: US: Gas .94/gal (+32%). Gasoline spending +14% YoY (NBC/BofA). Bottom 10% spend 4% income on gas vs 1.5% top 10% (AP). B \"reckless\". S&P futures -0.4%. India Sensex -1,900pts, VIX +11%. Goldman raised Brent to  avg. CNBC: 2-week economic deadline. IRAN: 1,500+ dead. Cooper: fire declining to 1-2 at a time = CAPABILITY DEGRADATION confirmed. Qom drone factory destroyed. ISRAEL: Dimona 200+ wounded. IDF launching wide-scale strikes = not ready to stop. GULF: Fars published hit list (power+desalination+Barakah nuclear). UAE Fujairah oil hit. Saudi Prince Sultan Air Base targeted. GLOBAL: India PM Modi to address Lok Sabha on crisis. Sri Lanka +25% fuel. NZ out of stock. Guardian: \"prolonged war could shock global economy\"."
+      "findings": "🔴🔴🔴🔴🔴 COST THRESHOLD — ALL SIDES: US: Gas .94/gal (+32%). Gasoline spending +14% YoY (NBC/BofA). Bottom 10% spend 4% income on gas vs 1.5% top 10% (AP). B \"reckless\". S&P futures -0.4%. India Sensex -"
     }
   },
   "noise_filter": {
