@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 82,
-  "updated": "2026-03-24T03:33:00+00:00",
+  "version": 83,
+  "updated": "2026-03-24T23:52:39.833492+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -273,19 +273,20 @@
         "政治",
         "经济"
       ],
-      "probability": 0.98,
-      "confidence": 0.9,
+      "probability": 0.99,
+      "confidence": 0.95,
       "evidence": [
         "国会预算办公室报告",
         "[2026-03-13] Pentagon: $11.3B for first 6 days = $1.9B/day (was $5B estimate earlier)",
-        "[2026-03-13 PM] $11.3B in first 6 days - cost exploding"
+        "[2026-03-13 PM] $11.3B in first 6 days - cost exploding",
+        "[2026-03-25] Pentagon requesting B supplemental (UPI/WSJ). CAP: war cost B in 4 weeks. Budget-level confirmation."
       ],
       "reasoning": "确认的财政支出数据",
       "time_horizon": "",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-06T14:31:59.393633Z",
+      "last_updated": "2026-03-24T23:52:39.833492+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "energy_crisis": {
@@ -399,8 +400,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.75,
-      "confidence": 0.8,
+      "probability": 0.8,
+      "confidence": 0.75,
       "evidence": [
         "五角大楼联合声明",
         "英法舰队部署确认",
@@ -417,14 +418,15 @@
         "[2026-03-15] Day 15: Trump calls for warships from China/France/Japan/SK/UK. UK discussing \"range of options\" with allies. Coalition expanding beyond US-Israel. Up from 0.96. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
         "[2026-03-15] Day 15-16: Trump calls for warships from China, France, Japan, South Korea, UK to secure Hormuz. UK discussing \"range of options\" with allies. Naval coalition forming. Up from 0.96. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-16] UK concrete plan (minesweep drones), but China tepid. Mixed coalition picture.",
-        "[2026-03-17] Japan/Australia refused warship deployment. France only considering purely defensive escort. Trump upset at allied rebuff (Reuters). Distinguish: political coalition (UNSC 80+ sponsors) intact, but military coalition for Hormuz escort not materializing."
+        "[2026-03-17] Japan/Australia refused warship deployment. France only considering purely defensive escort. Trump upset at allied rebuff (Reuters). Distinguish: political coalition (UNSC 80+ sponsors) intact, but military coalition for Hormuz escort not materializing.",
+        "[2026-03-25] Bahrain proposed UNSC resolution authorizing \"all necessary means\" to protect Hormuz shipping. France tabled rival text (Reuters)."
       ],
-      "reasoning": "Political coalition strong (UNSC resolution), but military coalition for Hormuz escort failed to form. Allies want no part of escort missions. Revised down from 0.92.",
+      "reasoning": "UPGRADED: UNSC level engagement. Bahrain (Chapter VII language) vs France (softer text). Two competing frameworks = multilateral consensus building even if no single resolution passes.",
       "time_horizon": "W1-4",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-17T11:27:49.314297+00:00",
+      "last_updated": "2026-03-24T23:52:39.833492+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "secondary_sanctions": {
@@ -560,8 +562,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.65,
-      "confidence": 0.6,
+      "probability": 0.75,
+      "confidence": 0.65,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -588,14 +590,15 @@
           "credibility": 0.85,
           "impact_direction": "up"
         },
-        "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive."
+        "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive.",
+        "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian)."
       ],
-      "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: Trump POSTPONED energy strikes 5 days (ACTION not rhetoric) + claimed productive talks. Iran DENIES but market priced in -13% Brent. Either back-channel exists Iran cannot acknowledge, or Trump unilateral framing. The ACTION (postponement) is signal regardless. Old: 0.28",
+      "reasoning": "UPGRADED: First structured exit framework. Written proposal + named intermediary + proposed venue (Islamabad). Quality still low (Iran denies contact, 15 points not public, no ceasefire mechanism) but structure > none.",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-24T03:33:00+00:00",
+      "last_updated": "2026-03-24T23:52:39.833492+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "conflict_protracted": {
@@ -641,8 +644,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.42,
-      "confidence": 0.5,
+      "probability": 0.48,
+      "confidence": 0.55,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
         "Trump: virtually unlimited supply of heavy weaponry",
@@ -655,14 +658,15 @@
         "[2026-03-15] Day 15-16: 2500 Marines (31st MEU) + USS Tripoli deploying. MEU has amphibious capability. But Tripoli >1 week away. Deployment doesnt necessarily indicate ground ops. Up from 0.45. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
         "[2026-03-15] Day 16: IRGC attacking US bases in Iraq/Kuwait. Marines deploying. South Korea considering warships.",
         "[2026-03-16] Israel ground op in Lebanon raises multi-front ground war precedent",
-        "[2026-03-23 19:33] Trump pivot to \"productive talks\" + 5-day postponement = de-escalation signal. Ground war requires escalation commitment that this move contradicts. Cost threshold (.94 gas, 14 dead, IEA worst-since-1970s) creating domestic pressure against escalation. DOWN from 0.54."
+        "[2026-03-23 19:33] Trump pivot to \"productive talks\" + 5-day postponement = de-escalation signal. Ground war requires escalation commitment that this move contradicts. Cost threshold (.94 gas, 14 dead, IEA worst-since-1970s) creating domestic pressure against escalation. DOWN from 0.54.",
+        "[2026-03-25] WSJ: Pentagon readying 3000 soldiers from 82nd Airborne for ME deployment. Pentagon requesting B supplemental (UPI)."
       ],
-      "reasoning": "Trump chose talks over escalation at the critical fork. Ground war probability reduced but remains substantial — 5-day window could fail, Israel has independent timeline (IDF: several more weeks).",
+      "reasoning": "UPGRADED: 82nd Airborne deployment = ground force preparation. Combined with 2500 Marines + USS Tripoli already deploying. Trend toward ground escalation option even as talks proceed.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-23T11:38:35.673282+00:00",
+      "last_updated": "2026-03-24T23:52:39.833492+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "europe_energy_crisis": {
@@ -1058,7 +1062,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.25,
+      "probability": 0.33,
       "confidence": 0.55,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1069,14 +1073,15 @@
         "[2026-03-16] Israel opens ground front in Lebanon, Abu Dhabi hit, zero Hormuz traffic - no deescalation signals",
         "[2026-03-18] Iran coordinated offensive against Israel+Gulf+US bases = deescalation firmly off table",
         "[2026-03-23 19:33] Trump postponed power plant strikes 5 days after \"productive\" Iran talks. Energy infrastructure explicitly OFF-LIMITS. Brent -8%. FIRST de-escalation signal of the war. BUT: CENTCOM still striking military targets, Israel wide-scale Tehran wave, Iran still firing missiles at Israel. De-escalation is PARTIAL and CONDITIONAL.",
-        "[2026-03-24] Trump 5-day power plant strike postponement = FIRST de-escalation ACTION in 25 days. But strikes continue on both sides. IRGC still firing 1-2/day. IDF wide-scale wave on Tehran. Structural conditions for de-escalation not met."
+        "[2026-03-24] Trump 5-day power plant strike postponement = FIRST de-escalation ACTION in 25 days. But strikes continue on both sides. IRGC still firing 1-2/day. IDF wide-scale wave on Tehran. Structural conditions for de-escalation not met.",
+        "[2026-03-25] 15-point plan via Pakistan + 5-day power plant pause + Iran IMO transit offer. But 82nd Airborne deploying + B Pentagon request = hedging both ways."
       ],
-      "reasoning": "UP from 0.01: First genuine de-escalation signal — energy infrastructure strikes paused, bilateral talks confirmed. But military operations continue unabated on both sides. 15% reflects narrow window; could collapse if 5-day talks fail.",
+      "reasoning": "UPGRADED: First structural exit path. But both sides still firing (Jerusalem struck, IDF all-front strikes). Probability reflects: diplomatic mechanism exists (new) vs no ceasefire (unchanged).",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-24T03:33:00+00:00",
+      "last_updated": "2026-03-24T23:52:39.833492+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "turkey_intervention": {
@@ -2048,13 +2053,15 @@
         "energy",
         "diplomacy"
       ],
-      "probability": 0.8,
-      "confidence": 0.65,
+      "probability": 0.88,
+      "confidence": 0.75,
       "evidence": [
-        "[2026-03-14] (cred:0.8) Turkey got one ship through Hormuz Mar 13 with Iranian approval. IRGC policy: closed only to US/Israel/Western allies. Shadow fleet doing 50% of transits. — Wikipedia/Reuters/Guardian"
+        "[2026-03-14] (cred:0.8) Turkey got one ship through Hormuz Mar 13 with Iranian approval. IRGC policy: closed only to US/Israel/Western allies. Shadow fleet doing 50% of transits. — Wikipedia/Reuters/Guardian",
+        "[2026-03-25] Iran told IMO \"non-hostile vessels\" may transit Hormuz if coordinated with Iranian authorities (Reuters). First formal institutional framework for transit."
       ],
-      "reasoning": "Iran implementing selective blockade — allies/neutrals can transit, Western-allied vessels blocked. This creates a two-tier energy market and gives Iran leverage over non-aligned nations.",
-      "node_type": "prediction"
+      "reasoning": "UPGRADED: Iran formalizing selective transit at IMO = institutional path from ad-hoc to structured regime. Combined with Bahrain UNSC draft = two competing frameworks emerging.",
+      "node_type": "prediction",
+      "last_updated": "2026-03-24T23:52:39.833492+00:00"
     },
     "fujairah_port_attack": {
       "id": "fujairah_port_attack",
