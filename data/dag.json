@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 81,
-  "updated": "2026-03-23T11:38:35.673282+00:00",
+  "version": 82,
+  "updated": "2026-03-24T03:33:00+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -560,8 +560,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.55,
-      "confidence": 0.65,
+      "probability": 0.65,
+      "confidence": 0.6,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -587,14 +587,15 @@
           "date": "2026-03-23",
           "credibility": 0.85,
           "impact_direction": "up"
-        }
+        },
+        "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive."
       ],
       "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: Trump POSTPONED energy strikes 5 days (ACTION not rhetoric) + claimed productive talks. Iran DENIES but market priced in -13% Brent. Either back-channel exists Iran cannot acknowledge, or Trump unilateral framing. The ACTION (postponement) is signal regardless. Old: 0.28",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-23T11:38:35.673282+00:00",
+      "last_updated": "2026-03-24T03:33:00+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "conflict_protracted": {
@@ -1057,8 +1058,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.15,
-      "confidence": 0.65,
+      "probability": 0.25,
+      "confidence": 0.55,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1067,14 +1068,15 @@
         "[2026-03-13] All three leaders defiant. New wave strikes on Tehran. Active mining = hard to reverse quickly",
         "[2026-03-16] Israel opens ground front in Lebanon, Abu Dhabi hit, zero Hormuz traffic - no deescalation signals",
         "[2026-03-18] Iran coordinated offensive against Israel+Gulf+US bases = deescalation firmly off table",
-        "[2026-03-23 19:33] Trump postponed power plant strikes 5 days after \"productive\" Iran talks. Energy infrastructure explicitly OFF-LIMITS. Brent -8%. FIRST de-escalation signal of the war. BUT: CENTCOM still striking military targets, Israel wide-scale Tehran wave, Iran still firing missiles at Israel. De-escalation is PARTIAL and CONDITIONAL."
+        "[2026-03-23 19:33] Trump postponed power plant strikes 5 days after \"productive\" Iran talks. Energy infrastructure explicitly OFF-LIMITS. Brent -8%. FIRST de-escalation signal of the war. BUT: CENTCOM still striking military targets, Israel wide-scale Tehran wave, Iran still firing missiles at Israel. De-escalation is PARTIAL and CONDITIONAL.",
+        "[2026-03-24] Trump 5-day power plant strike postponement = FIRST de-escalation ACTION in 25 days. But strikes continue on both sides. IRGC still firing 1-2/day. IDF wide-scale wave on Tehran. Structural conditions for de-escalation not met."
       ],
       "reasoning": "UP from 0.01: First genuine de-escalation signal — energy infrastructure strikes paused, bilateral talks confirmed. But military operations continue unabated on both sides. 15% reflects narrow window; could collapse if 5-day talks fail.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-23T11:38:35.673282+00:00",
+      "last_updated": "2026-03-24T03:33:00+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "turkey_intervention": {
@@ -1162,8 +1164,8 @@
         "能源",
         "金融"
       ],
-      "probability": 0.42,
-      "confidence": 0.5,
+      "probability": 0.5,
+      "confidence": 0.45,
       "evidence": [
         "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
         "Brent: spiked $120 → crashed to $85 → rebounded to $90",
@@ -1171,14 +1173,15 @@
         "But OVX 121 = market still not equilibrated",
         "[2026-03-11] Brent rebounded $85→$90 despite 400M bbl SPR announcement; market pricing structural Hormuz closure; OVX 121 (extreme vol) (credibility: 0.9)",
         "[2026-03-12] Brent $90→$101.59→$97 in 18h DESPITE 400M bbl SPR announcement. Equilibrium breaking, not forming. Price whipsawing $85-101",
-        "[2026-03-23 19:33] Brent crashed -8% to ~$104, WTI -8% to ~$90 on Trump postponement. Market pricing in de-escalation. If 5-day talks yield framework, $85-100 equilibrium becomes achievable. But still above pre-war $75 and depends on Hormuz reopening which is weeks/months away."
+        "[2026-03-23 19:33] Brent crashed -8% to ~$104, WTI -8% to ~$90 on Trump postponement. Market pricing in de-escalation. If 5-day talks yield framework, $85-100 equilibrium becomes achievable. But still above pre-war $75 and depends on Hormuz reopening which is weeks/months away.",
+        "[2026-03-24] Brent crashed -13% from  to ~-100 on Trump talks claim. WTI -13% to ~. Goldman: 2026 avg  Brent,  WTI. CNBC: WTI -100 trading range. If talks fail → rebounds to +. If succeed → settles -90."
       ],
       "reasoning": "Market reaction shows strong pull toward equilibrium. But structural factors (mines, insurance collapse, 97% transit reduction) prevent rapid normalization. 42% reflects improved trajectory but enormous physical barriers.",
       "time_horizon": "W8-16",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-23T11:38:35.673282+00:00",
+      "last_updated": "2026-03-24T03:33:00+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "europe_right_wing": {
@@ -1896,21 +1899,22 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.45,
-      "confidence": 0.7,
+      "probability": 0.55,
+      "confidence": 0.65,
       "evidence": [
         "Iran military: any attack on Iran oil infra → immediate destruction of regional oil infra of US-cooperating companies",
         "Trump: chose NOT to hit oil infra, conditional on Hormuz",
         "[2026-03-14] (cred:0.77) US preserved Kharg oil infra as coercive leverage. Iran threatens Gulf oil retaliation but hasn't struck Saudi/UAE oil yet. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
         "[2026-03-14] (cred:0.77) Day 15: US Kharg strike validated credible threat + credible restraint model. Deterrence equilibrium strengthened. Up from 0.85. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-23 19:33] MAD-LITE CONFIRMED IN PRACTICE: Trump threatened to \"obliterate\" Iran power plants → IRGC counter-threatened complete Hormuz closure + desalination plants + Barakah nuclear → Trump BLINKED first, postponed strikes. This IS the deterrence equilibrium materializing. Both sides have escalation dominance in different domains and chose not to use it."
+        "[2026-03-23 19:33] MAD-LITE CONFIRMED IN PRACTICE: Trump threatened to \"obliterate\" Iran power plants → IRGC counter-threatened complete Hormuz closure + desalination plants + Barakah nuclear → Trump BLINKED first, postponed strikes. This IS the deterrence equilibrium materializing. Both sides have escalation dominance in different domains and chose not to use it.",
+        "[2026-03-24] Synced with mutual_oil_deterrence. MAD-lite validated by 5-day pause."
       ],
       "reasoning": "UP from 0.15: The 48hr ultimatum cycle proved the MAD-lite thesis. Trump had the capability to hit power plants but the IRGC counter-threat (complete Hormuz closure + desalination + Barakah) was credible enough to deter. 45% reflects demonstrated but fragile equilibrium — could break in 5 days.",
       "time_horizon": "1-4 weeks",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-23T11:38:35.673282+00:00",
+      "last_updated": "2026-03-24T03:33:00+00:00",
       "created": "2026-03-14T10:53:28.612554+00:00"
     },
     "uae_direct_threat": {
@@ -1949,20 +1953,21 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.45,
-      "confidence": 0.7,
+      "probability": 0.55,
+      "confidence": 0.65,
       "evidence": [
         "Iran military: attack on our oil infra → immediate destruction of US-cooperating oil companies infra in region",
         "Trump: chose NOT to hit oil infra, conditional threat if Hormuz continues",
         "[2026-03-14] (cred:0.77) Duplicate node tracking same concept. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
-        "[2026-03-23 19:33] MAD-LITE CONFIRMED: Trump ultimatum → IRGC counter-threat → Trump postponed. Deterrence equilibrium demonstrated."
+        "[2026-03-23 19:33] MAD-LITE CONFIRMED: Trump ultimatum → IRGC counter-threat → Trump postponed. Deterrence equilibrium demonstrated.",
+        "[2026-03-24] MAD-lite VALIDATED: Trump paused power plant strikes → IRGC complete closure threat paused. Both sides stepped back from energy infrastructure escalation. BUT: 5-day window = temporary. If deadline expires without framework → deterrence collapses."
       ],
       "reasoning": "DETERRENCE COLLAPSED. South Pars struck + Iran IRGC issued specific evacuation orders for Gulf energy targets.",
       "time_horizon": "1-4 weeks",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-23T11:38:35.673282+00:00",
+      "last_updated": "2026-03-24T03:33:00+00:00",
       "created": "2026-03-14T10:53:35.598778+00:00"
     },
     "uae_targeted": {
