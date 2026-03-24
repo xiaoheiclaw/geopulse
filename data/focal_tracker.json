@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-24T05:31:25.958630+00:00",
+  "last_updated": "2026-03-24T07:35:42.627968+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -56,6 +56,12 @@
           "date": "2026-03-24",
           "est": "1-2 declining BUT JERUSALEM HIT",
           "note": "Day 25 13:29. ★★★★ JERUSALEM STRUCK: Iranian missile hit building in Jerusalem early Tue, search+rescue deployed (AFP/HT). Sirens in Tel Aviv + central Israel. CENTCOM: 9000+ strikes, 140+ vessels. Iran still launching despite degraded capability. Netanyahu: Israel continues strikes on ALL fronts. IDF strikes Tehran continue. Source: AFP/HT/Haaretz/ToI/CNBC",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-03-24",
+          "est": "1-2 declining, IRGC firing at Tel Aviv/Jerusalem",
+          "note": "Day 25 15:33 CST. CENTCOM: 9000+ strikes, 140+ vessels destroyed. Cooper: fire declining to 1-2 at a time. ISW: 85% SAMs destroyed. BUT: (1) Iranian missile struck JERUSALEM Tue early morning (AFP); (2) Tel Aviv hit — 6 lightly wounded (ToI Mar 24); (3) Missile debris fell in West Bank; (4) Sirens in Tel Aviv + central Israel AGAIN; (5) IDF continues wide-scale wave on Tehran; (6) CENTCOM video: Arash-2 + Shahed-136 + mobile launch destroyed; (7) Iran death toll 1500+ (AJE) / 3230+ (HRANA); US: 14 dead. PATTERN: IRGC volume collapse CONFIRMED but targeting UPGRADED — Jerusalem + Tel Aviv precision strikes = demonstrating residual capability during 5-day talks window. Political signaling not military breakthrough. Source: AFP/ToI/Haaretz/JPost/CENTCOM/ISW/AJE/HRANA",
           "source": "pipeline"
         }
       ]
@@ -117,6 +123,12 @@
           "est": "~1.5 mbd (2-3 ships/day)",
           "note": "Day 25. No new transit data. Trump pause still active (4 days remain). Source: unchanged",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-24",
+          "est": "~1.5 mbd (2-3 ships/day, zombie ships)",
+          "note": "Day 25. ABC AU Mar 24: 'zombie ships' with AIS off transiting Hormuz — actual flow may be slightly higher than AIS data shows. Windward: 2.3/day visible. NYT Mar 20: 3-4/day. Trump 5-day pause still active (3 days remaining, deadline ~Mar 28). IRGC safe corridor for CN/IN/PK/IQ/MY/JP. Iran imposing M transit fee (Mathrubhumi). SCMP: China priority is economics not politics in Gulf. Mine threat CRITICAL gap. USS Boxer 2+ weeks out. PATTERN: Transit in holding pattern with slight dark-fleet activity. Insurance barrier + mine threat = physical constraints beyond IRGC intent. Source: ABC AU/Windward/NYT/SCMP/Mathrubhumi",
+          "source": "pipeline"
         }
       ]
     },
@@ -174,6 +186,12 @@
           "est": "~0.75 mbd, oil REBOUNDING",
           "note": "Day 25 13:29. Brent REBOUNDING +3.5% to .7, WTI +4% to .72. Market skepticism: Iran denied talks. Interactive Brokers Torres: risk of extended war top of mind. Capacity/transport disruptions may keep costs high even WITH deal. Source: CNBC",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-24",
+          "est": "~0.75 mbd first batch, oil REBOUNDING Tue",
+          "note": "Day 25 D+10. First SPR shipments began Fri Mar 21 (Argus). DOE 45.2M bbl to Shell/Marathon/BP/Gunvor. Apr-May delivery = ~0.75 mbd. Mon close: Brent .94 (-11%), WTI .52 (-9.9%) on Trump talks claim. BUT Tue rebound: Brent +3.5% to ~, WTI +4% to ~ as Iran denies talks + Jerusalem missile hit. Market WHIPSAWING between diplomacy hope and war reality. SPR trickle IRRELEVANT vs /bbl daily swings from geopolitical signals. Gas: .96/gal national avg (+33% from .98 pre-war). Source: Argus/CNBC/Guardian/NYT/Fortune/Investopedia",
+          "source": "pipeline"
         }
       ]
     }
@@ -184,28 +202,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "DIPLOMATIC_RHETORIC_NO_COST_ACTION",
       "last_check": "2026-03-24",
-      "findings": "Day 25. Zhai Jun met Iran ambassador Mar 20 (FMPRC). Concluded ME trip with 6-point statement: ceasefire, dialogue, condemn US/Israel (Xinhua). Beijing evacuating nationals from Iran. Intel assessments: China prepared financial aid + missile components BUT refrained from overt military action to safeguard own oil imports (Wikipedia/Al Monitor). Still BELOW threshold: no cost action (no naval deployment, no sanctions busting escort, no UNSC veto threat). ASSESSMENT: China playing both sides — support Iran rhetorically while protecting own energy supply chain. Threshold = naval deployment or UNSC veto or sanctions-busting escort. Source: FMPRC/Xinhua/CGTN/Wikipedia/Al Monitor"
+      "findings": "Day 25. SCMP Mar 24 op-ed: China's top priority is ECONOMICS not politics in Gulf. Zhai Jun visited SA/UAE/Bahrain/Kuwait/Egypt + met GCC/Arab League SGs (ChinaDaily Mar 24). 6-point statement: ceasefire, dialogue, condemn US/Israel. NO naval deployment. NO sanctions-busting escort. NO UNSC veto threat. Intel: China prepared financial aid + missile components but REFRAINED from overt action to safeguard own oil imports. Still BELOW threshold — rhetoric only, no cost action. Selective transit channel for Chinese ships = China's actual move (protect own oil, not mediate). Source: SCMP/ChinaDaily/Xinhua/Wikipedia/Al Monitor"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTION_DEEPENING_MARKET_DOUBTS",
+      "status": "CONTRADICTION_DEEPENING_IRAN_DENIES_TALKS",
       "last_check": "2026-03-24",
-      "findings": "Day 25 13:29. Oil rebound = market starting to doubt Trump talks claim. Netanyahu says Trump sees deal chance but Israel CONTINUES strikes all fronts. Iran denies talks. Brent back above . Reuters exclusive: Trump approved Iran op after Netanyahu argued for joint Khamenei killing — reveals war origin dynamics. Source: CNBC/ToI/Reuters"
+      "findings": "Day 25. ★★★★★ CRITICAL CONTRADICTION: (1) Trump claims 'productive' 2-day talks, ordered Hegseth to hold power plant strikes 5 days (Bloomberg/AJE/Fox); (2) Iran FM spokesperson: NO talks since bombing began 24 days ago (Guardian Mar 24); (3) Netanyahu embraces deal language but IDF 'continues strikes on ALL fronts' (ToI); (4) Oil WHIPSAW: Mon -11% on talks → Tue +3.5% as Iran denies → market can't price binary; (5) Reuters exclusive: Trump approved Iran op after Netanyahu argued for joint Khamenei killing — war origin reveals Trump followed Bibi, not US strategic interest; (6) CNN Mar 22: Trump 'looking at' navy escort convoys but military says mine threat blocks. PATTERN: Signal incoherence MAXIMUM. Trump talks claim may be (a) real backchannel via Oman/Qatar, (b) face-saving for de-escalation, or (c) market manipulation. Iran denial could be genuine OR preserving domestic stance. The 5-day window is REAL regardless of whether talks exist. Source: Bloomberg/Guardian/AJE/Fox/ToI/CNBC/Reuters/CNN"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "WINDOW_OPEN_BUT_CONTRADICTORY_SIGNALS",
+      "status": "WINDOW_OPEN_5DAY_PAUSE_BUT_WAR_CONTINUES",
       "last_check": "2026-03-24",
-      "findings": "Day 25 13:29. Netanyahu embraces deal language but 'continues strikes on all fronts'. ICRC warns nuclear facilities at risk of irreversible consequences. Jerusalem struck = Iran demonstrating capability despite talks narrative. 4 days remain on 5-day pause. Source: ToI/NYT/ICRC/AFP"
+      "findings": "Day 25. (1) Trump 5-day pause = first structured de-escalation window (3 days remain, deadline ~Mar 28); (2) Netanyahu: 'Trump sees opportunity to achieve war objectives through agreement' (Haaretz); (3) BUT IDF strikes Tehran + CENTCOM continues 9000+ target campaign; (4) Iran fires missiles at Jerusalem + Tel Aviv DURING pause = demonstrating capability/leverage; (5) ICRC warns nuclear facilities at risk of irreversible consequences; (6) No formal UN/UNSC framework proposed yet; (7) IDF: war to continue 'several more weeks' (ToI Mar 22). PATTERN: 5-day window is NECESSARY but NOT SUFFICIENT. Both sides continuing kinetic operations during 'pause' = neither committed to ceasefire, only to avoiding ONE escalation trigger (power plants). Exit framework requires: (a) mutual ceasefire, (b) Hormuz reopening mechanism, (c) nuclear deal replacement. None exist yet. Source: Bloomberg/Haaretz/ToI/ICRC/AFP/NYT"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "THRESHOLD_VALIDATED_DRIVING_PIVOT",
+      "status": "COST_THRESHOLD_DRIVING_POLICY_BUT_NOT_YET_BINDING",
       "last_check": "2026-03-24",
-      "findings": "Day 25. ★★★★★ COST THRESHOLD NOW PRIMARY DRIVER OF TRUMP PIVOT: (1) Gas /gal national avg (+32% from .98), CA > (Reuters/USAToday/Wikipedia); (2) IEA Birol: crisis worse than 1970s + Ukraine COMBINED (NPR); (3) Brent crashed -13% to ~-100 on ANY hint of exit = market DESPERATE; (4) Dow surged +600pts (+2.3%) = relief rally on talks claim; (5) Gold worst week in 43 years (-10%, below ,400) = inflation fears; (6) Senate Thune: Pentagon B war funding request (NYT); (7) NYT: Republicans promising 'short-term pain for long-term gains' on gas prices; (8) 14 US soldiers dead, 200+ wounded (Time/Wikipedia); (9) VIX topped 30 for first time since Mar 2025. ASSESSMENT: Economic/political cost is the SINGLE BIGGEST FACTOR driving Trump's 5-day pause. Not military failure (campaign 'ahead of plan'), not humanitarian concern, but DOMESTIC POLITICAL COST. Source: Reuters/IEA/CNBC/NYT/USAToday/Time/Wikipedia"
+      "findings": "Day 25. (1) Gas .96/gal national (+33% from .98, +/bin/zsh.98 in March alone — Investopedia); (2) Brent whipsaw: →.94→ in 48hrs; (3) S&P rallied +1.4% on talks, Dow +1.65%, but VIX still elevated 23.89; (4) Gold crashed -3.2% to ~,340 (worst week in 43 years); (5) US dead: 14, 200+ wounded (Time/Wikipedia); (6) War Powers resolution S.J.Res.104 voted Mar 4 — did not pass; (7) Senate Thune: Pentagon  war funding request (NYT); (8) IEA Birol: crisis worse than 1970s+Ukraine COMBINED; (9) Cost IS driving Trump's pivot (5-day pause came from domestic pressure not military failure — campaign 'ahead of plan'). BUT: (a) no Congressional binding action yet, (b) public opinion still split, (c) Trump controls narrative ('productive talks'). ASSESSMENT: Cost threshold VALIDATED as driver but not yet BINDING constraint. Gas at .50+ or US casualties >50 would likely trigger binding action. Source: Investopedia/CNBC/NYT/Time/Wikipedia/IEA/NPR"
     }
   },
   "noise_filter": {
