@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-24T23:51:44.031078+00:00",
+  "last_updated": "2026-03-25T13:06:59.312359+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -68,6 +68,12 @@
           "date": "2026-03-24",
           "est": "1-2 declining, 15-point plan delivered",
           "note": "Day 26. CENTCOM: 9000+ targets struck, 140+ vessels destroyed. Cooper: fire declining to 1-2 at a time. ISW: 85% SAMs destroyed. BUT: (1) Iranian missile struck JERUSALEM Tue AM (AFP); (2) Tel Aviv hit - 6 wounded (ToI); (3) CENTCOM video Mar 23: Arash-2 + Shahed-136 destroyed; (4) 82nd Airborne deploying 3000 soldiers (WSJ); (5) US dead: 14 confirmed (AJE/Time); (6) ★★★★★ 15-POINT PEACE PLAN delivered to Iran via Pakistan Army Chief Asim Munir (NYT Mar 24). Trump: 'in negotiations right now'. Iran publicly denies. JD Vance may attend Islamabad talks next week (Guardian). PATTERN: Volume collapse continues. 82nd Airborne deployment = ground escalation option. But 15-point plan + Pakistan mediation = FIRST STRUCTURED EXIT PATH. Source: CENTCOM/NYT/WSJ/CNBC/Guardian/AFP/ToI/AJE",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-03-25",
+          "est": "1-2 declining, coordinated offensive announced",
+          "note": "Day 26. ★★★★ IRGC announced COORDINATED OFFENSIVE by IRGC Navy + Army + Hezbollah against Israel + US bases (Wikipedia/AJE). 58 hospitalized in Israel from missile strike. Iran targeted Gulf countries with missiles+drones AGAIN (oil prices rose). BUT CENTCOM: fire still 1-2 at a time, volume collapsed. 9000+ targets struck, 140+ vessels destroyed. US dead: 14 confirmed (13 combat + 1 health) + 6 refueling aircraft crash. AJE: Pakistan shared US ceasefire demands with Iran, awaiting response. 82nd Airborne 1000+ additional soldiers approved by Trump (NBC). PATTERN: IRGC attempting to demonstrate capability via 'coordinated offensive' label but physical volume remains degraded. Scope expanding (Gulf states hit again, 58 hospitalized Israel) but mass salvo era over. Source: AJE/NBC/CBS/Wikipedia/AP",
           "source": "pipeline"
         }
       ]
@@ -141,6 +147,12 @@
           "est": "~1.5 mbd (2-3 ships/day, Iran IMO offer)",
           "note": "Day 26. (1) ★★★ Iran told IMO 'non-hostile vessels' may transit if they coordinate with Iranian authorities (Reuters Mar 24) — FIRST FORMAL TRANSIT FRAMEWORK; (2) ★★★ Bahrain proposed UNSC resolution authorizing 'all necessary means' to protect Hormuz shipping; France tabled rival text (Reuters Mar 24); (3) Zombie ships with AIS off transiting (ABC AU); (4) Windward: 2.3/day visible, declining; (5) Kalshi: <25% odds of normal transit before Apr 15, 67% by Jun 1; (6) Trump 5-day pause still active (2 days remain, deadline ~Mar 28); (7) CNBC: tanker traffic won't return for months. PATTERN: Iran formalizing transit regime at IMO = institutional path to partial reopening. Bahrain UNSC draft = military enforcement path. Two competing frameworks emerging. Source: Reuters/CNBC/ABC AU/Windward/Kalshi/IMO",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-25",
+          "est": "~1.5 mbd (2-3 ships/day, IMO framework + UNSC drafts)",
+          "note": "Day 26. (1) Iran told IMO 'non-hostile vessels' may transit if they coordinate with Iranian authorities (Reuters Mar 24) — ships with no ties to Israel/US allowed (NYT); (2) Bahrain proposed UNSC resolution 'all necessary means' for Hormuz; France tabled rival text (Reuters); (3) Windward: 2.3/day visible, zombie ships with AIS off also transiting; (4) Brent CRASHED below $100 on ceasefire hopes — $98.28 (-6%) Wed Asian; (5) Kalshi: <25% normal transit before Apr 15, 67% by Jun 1; (6) Trump 5-day pause still active (1 day remaining, deadline ~Mar 28); (7) CNBC: tanker traffic won't return for months. PATTERN: TWO competing transit frameworks emerging — Iran's unilateral IMO regime vs Bahrain's UNSC military enforcement. Oil price crash suggests market pricing in diplomatic resolution despite zero physical change in transit volume. Source: Reuters/NYT/CNBC/Windward/Kalshi",
+          "source": "pipeline"
         }
       ]
     },
@@ -210,6 +222,12 @@
           "est": "~0.75 mbd first batch, SPR NOISE vs diplomacy",
           "note": "Day 26 D+11. SPR first shipments began Fri Mar 21 (Argus). DOE 45.2M bbl to Shell/Marathon/BP/Gunvor. Apr-May delivery = ~0.75 mbd. 412M bbl total global coordinated release (32 countries). Mon close: Brent 99.94 (-11%), WTI 88.52 (-9.9%) on Trump talks. Tue rebound: Brent ~101-103 (+4%), WTI ~91-92 (+4%). Market whipsawing on diplomacy signals not supply. Gas: ~.96/gal (+33% from .98 pre-war). Pentagon requesting B supplemental (UPI). CAP: war already cost B in 4 weeks. IEA Birol: crisis worse than 1970s+Ukraine COMBINED. SPR trickle IRRELEVANT vs /bbl daily geopolitical swings. Source: Argus/CNBC/NYT/CAP/UPI/IEA/Fortune",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-25",
+          "est": "~0.75 mbd first batch, DOE 'record speed'",
+          "note": "Day 26 D+11. SPR first shipments began Fri Mar 21 (Argus). DOE: deliveries at 'record speeds' (BIC Magazine). 45.2M bbl first batch to Shell/Marathon/BP/Gunvor, Apr-May delivery = ~0.75 mbd. Exchange: return 55M bbl (22% premium). 172M bbl US total, 400M bbl global coordinated (32 countries). NTU: 172M = 40% of SPR inventory, draws to 34% capacity. OPIS: half will be loaned not sold. Market: Brent $98.28 Wed (-6%), WTI $87.68 (-5.1%) — oil crashing on DIPLOMACY not SPR. SPR trickle irrelevant vs $15/bbl geopolitical swings. Gas: ~$3.98/gal national (+33%). CAP: war cost $25B by end of week. Source: Argus/BIC/DOE/NTU/OPIS/CAP/ToI/CNBC",
+          "source": "pipeline"
         }
       ]
     }
@@ -218,30 +236,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "DIPLOMATIC_RHETORIC_NO_COST_ACTION",
-      "last_check": "2026-03-24",
-      "findings": "Day 26. China NOT the key mediator — PAKISTAN has emerged as primary interlocutor. Pak Army Chief Asim Munir delivered US 15-point plan to Iran (NYT). PM Sharif offered to host US-Iran talks in Islamabad (X post). Trump reposted on Truth Social = acceptance signal. SCMP: China priority is economics not politics in Gulf. Zhai Jun toured Gulf states but NO naval deployment, NO sanctions-busting, NO UNSC veto threat. China's actual move = selective transit corridor for Chinese ships (self-interest). Pakistan replaced China as focal point broker. Still BELOW threshold for China cost action. Source: NYT/Guardian/SCMP/ChinaDaily/Xinhua"
+      "status": "PAKISTAN_REPLACED_CHINA_AS_BROKER",
+      "last_check": "2026-03-25",
+      "findings": "Day 26. China NOT key mediator. Pakistan Army Chief Asim Munir delivered US 15-point plan (NYT). PM Sharif offered Islamabad as venue. Trump reposted = acceptance. China envoy Zhai Jun called for no attacks on nonmilitary targets (NBC) but NO naval deployment, NO UNSC veto, NO sanctions-busting. China supports 'all efforts to de-escalate' (FOX8/AP) = boilerplate. SCMP: China priority economics not politics. China actual action = selective transit corridor for Chinese ships (self-interest). Pakistan formally shared US demands with Iran, awaiting response (AJE confirmed). Still BELOW threshold for China cost action. Source: NYT/AJE/NBC/AP/SCMP"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTION_MAXIMUM_BUT_15PT_PLAN_IS_ACTION",
-      "last_check": "2026-03-24",
-      "findings": "Day 26. ★★★★★ SIGNAL SHIFT: (1) Trump: 'in negotiations right now', names Vance + Rubio as negotiators (CNBC Oval Office Tue); (2) 15-point plan delivered via Pakistan (NYT) — this is ACTION not rhetoric; (3) Iran FM denies any talks since bombing began (Guardian); (4) BUT: 82nd Airborne 3000 soldiers deploying (WSJ) = escalation preparation DURING talks; (5) Pentagon requesting B supplemental (UPI) = scaling for long war WHILE claiming talks; (6) IDF continues 'all fronts' strikes; (7) Oil WHIPSAW: Mon -11% → Tue +4% = market can't price binary; (8) Bahrain UNSC resolution for 'all necessary means' at Hormuz (Reuters). PATTERN: Contradiction DEEPENED but 15-point plan + Pakistan channel = FIRST STRUCTURED DIPLOMATIC MECHANISM. Previous rounds were pure rhetoric. This has paper trail + intermediary + venue (Islamabad). Credibility: 40-50% real talks, 50-60% face-saving. Source: CNBC/NYT/WSJ/UPI/Guardian/Reuters"
+      "status": "15PT_PLAN_ACTION_BUT_ESCALATION_SIMULTANEOUS",
+      "last_check": "2026-03-25",
+      "findings": "Day 26. ★★★★★ MAXIMUM CONTRADICTION: (1) 15-point plan delivered via Pakistan = ACTION not just rhetoric; (2) Trump: 'in negotiations right now', names Vance + Rubio (CNBC); (3) Guardian: 15-point plan is REHASHED proposal from nuclear talks a year ago — not new; (4) BUT SIMULTANEOUSLY: 1000+ 82nd Airborne approved for deployment (NBC); Pentagon $25B supplemental (UPI/CAP); Iran struck Jerusalem + Tel Aviv; IRGC coordinated offensive announced; (5) Iran FM denies any talks (Guardian/DW); Tehran says US 'negotiating with itself'; (6) Jalili mocked US shifting positions: open strait → escort → joint management; (7) S&P futures +0.89% Wed on peace hope. PATTERN: Diplomatic ACTION exists (15-point paper + intermediary + venue) but military escalation ACCELERATING in parallel. Market pricing binary diplomacy bet. Source: Guardian/NBC/AP/DW/CNBC/UPI"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "15PT_PLAN_FIRST_EXIT_FRAMEWORK",
-      "last_check": "2026-03-24",
-      "findings": "Day 26. ★★★★★ REGIME SHIFT IN FP3: (1) US 15-point plan delivered to Iran via Pakistan (NYT) — FIRST STRUCTURED EXIT FRAMEWORK of the war; (2) Pakistan Army Chief Asim Munir = key interlocutor (NYT); (3) PM Sharif offers Islamabad as venue (X); (4) JD Vance may attend — seen as war skeptic by Iran (Guardian); (5) Trump: nuclear weapon prevention is 'No 1, 2 and 3' on list; 'they agreed they will never have nuclear weapon'; (6) Netanyahu: 'Trump sees opportunity to achieve war objectives through agreement' (Haaretz); (7) BUT: IDF continues all-front strikes, 82nd Airborne deploying, Pentagon B request; (8) No ceasefire yet — both sides still firing; (9) No UNSC framework yet (Bahrain + France have competing drafts). ASSESSMENT: fp3 STATUS UPGRADED. For first time, a SPECIFIC written proposal exists with a named intermediary and potential venue. Quality of exit framework: LOW — 15 points not public, Iran denies contact, no ceasefire mechanism. But structure > none. Source: NYT/CNBC/Guardian/Haaretz/Reuters/WSJ"
+      "status": "15PT_PLAN_VIA_PAKISTAN_FIRST_STRUCTURED_EXIT",
+      "last_check": "2026-03-25",
+      "findings": "Day 26. ★★★★★ 15-POINT PLAN = FIRST STRUCTURED EXIT FRAMEWORK: (1) US sent 15-point ceasefire proposal via Pakistan Army Chief Asim Munir (NYT/AP confirmed); (2) Pakistan shared demands with Iran, awaiting response (AJE); (3) Covers: sanctions relief, nuclear rollback, ballistic missile restrictions, Hormuz shipping access (Guardian); (4) Guardian analysis: plan is REHASHED from nuclear talks ~1yr ago — unlikely to appease Tehran; (5) Iran publicly denies talks — 'negotiating with itself' (DW); (6) JD Vance may attend Islamabad talks (Guardian) — seen as war skeptic; (7) Bahrain UNSC draft + France rival text = multilateral track emerging; (8) Omani FM claimed 'significant progress' previously but Trump 'not thrilled'. ASSESSMENT: fp3 CONFIRMED — first written proposal + named intermediary + potential venue + multilateral track. Quality MODERATE: covers key issues but rehashed content + Iranian rejection rhetoric = 30-40% probability of leading to ceasefire. Source: AP/NYT/Guardian/DW/AJE/Reuters"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "COST_DRIVING_POLICY_VALIDATED",
-      "last_check": "2026-03-24",
-      "findings": "Day 26. (1) Gas ~.96/gal national (+33% from .98 pre-war), CA >; (2) CAP: war cost B in 4 weeks; (3) Pentagon requesting B supplemental (UPI/WSJ); (4) US dead: 14 confirmed, 200+ wounded; (5) War Powers S.J.Res.104 failed Mar 4 — no binding Congressional constraint yet; (6) Retail investors net SOLD stocks for first time since Nov 2023 (VandaTrack via CNBC Tue); (7) IEA: crisis worse than 1970s + Ukraine COMBINED; (8) CNBC: lawmakers warning of price gouging as gas + airfares spike; (9) Trump's pivot to 'talks' came FROM cost pressure not military failure (campaign 'ahead of plan' per Cooper). ASSESSMENT: Cost threshold VALIDATED as primary driver of 5-day pause + 15-point plan. But not yet BINDING: no Congressional override, public opinion split, Trump controls narrative. Binding threshold likely at: gas >.50 or US casualties >50 or S&P <6000. Source: CAP/UPI/CNBC/VandaTrack/IEA/NYT"
+      "status": "COST_THRESHOLD_DRIVING_DIPLOMACY_CONFIRMED",
+      "last_check": "2026-03-25",
+      "findings": "Day 26. (1) Gas ~$3.98/gal national (+33% from $2.98 pre-war); CA >$5; (2) CAP: war cost $25B by end of week 4; Pentagon requesting $25B supplemental (UPI/WSJ); (3) US dead: 14 confirmed + 6 in Iraq crash = 20 total; 200+ wounded; (4) S&P 500 closed -0.4% Tue after recovering from slide; 4th consecutive weekly decline; (5) VIX ~25.8-27 elevated but moderating from 29; (6) Retail investors net SOLD stocks first time since Nov 2023 (VandaTrack); (7) IEA: crisis worse than 1970s + Ukraine COMBINED; (8) NYT: high oil+gas prices could OUTLAST war; (9) Lawmakers warning of price gouging (CNBC); (10) War Powers S.J.Res.104 failed — no Congressional binding constraint. ASSESSMENT: Cost pressure VALIDATED as primary driver of 15-point plan + 5-day pause. Binding threshold NOT yet reached: gas <$4.50, casualties <50, S&P >6000. But trajectory → threshold within 2-3 weeks if war continues. Source: CAP/UPI/CNBC/NYT/VandaTrack/IEA"
     }
   },
   "noise_filter": {

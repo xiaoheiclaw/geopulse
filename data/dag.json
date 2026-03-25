@@ -562,8 +562,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.75,
-      "confidence": 0.65,
+      "probability": 0.82,
+      "confidence": 0.7,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -591,9 +591,10 @@
           "impact_direction": "up"
         },
         "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive.",
-        "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian)."
+        "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian).",
+        "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks."
       ],
-      "reasoning": "UPGRADED: First structured exit framework. Written proposal + named intermediary + proposed venue (Islamabad). Quality still low (Iran denies contact, 15 points not public, no ceasefire mechanism) but structure > none.",
+      "reasoning": "UPGRADED: First structured written proposal with named intermediary + venue. Previous was informal backchannels. Guardian: plan rehashed from nuclear talks = medium novelty. Iran publicly denies but CBS confirms received via mediators.",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
@@ -644,8 +645,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.48,
-      "confidence": 0.55,
+      "probability": 0.5,
+      "confidence": 0.5,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
         "Trump: virtually unlimited supply of heavy weaponry",
@@ -659,7 +660,8 @@
         "[2026-03-15] Day 16: IRGC attacking US bases in Iraq/Kuwait. Marines deploying. South Korea considering warships.",
         "[2026-03-16] Israel ground op in Lebanon raises multi-front ground war precedent",
         "[2026-03-23 19:33] Trump pivot to \"productive talks\" + 5-day postponement = de-escalation signal. Ground war requires escalation commitment that this move contradicts. Cost threshold (.94 gas, 14 dead, IEA worst-since-1970s) creating domestic pressure against escalation. DOWN from 0.54.",
-        "[2026-03-25] WSJ: Pentagon readying 3000 soldiers from 82nd Airborne for ME deployment. Pentagon requesting B supplemental (UPI)."
+        "[2026-03-25] WSJ: Pentagon readying 3000 soldiers from 82nd Airborne for ME deployment. Pentagon requesting B supplemental (UPI).",
+        "[2026-03-25] Trump approved 1000+ 82nd Airborne deployment (NBC). Pentagon $25B supplemental. BUT could be negotiation leverage not invasion prep."
       ],
       "reasoning": "UPGRADED: 82nd Airborne deployment = ground force preparation. Combined with 2500 Marines + USS Tripoli already deploying. Trend toward ground escalation option even as talks proceed.",
       "time_horizon": "W8-24",
@@ -1062,8 +1064,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.33,
-      "confidence": 0.55,
+      "probability": 0.38,
+      "confidence": 0.45,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1074,9 +1076,10 @@
         "[2026-03-18] Iran coordinated offensive against Israel+Gulf+US bases = deescalation firmly off table",
         "[2026-03-23 19:33] Trump postponed power plant strikes 5 days after \"productive\" Iran talks. Energy infrastructure explicitly OFF-LIMITS. Brent -8%. FIRST de-escalation signal of the war. BUT: CENTCOM still striking military targets, Israel wide-scale Tehran wave, Iran still firing missiles at Israel. De-escalation is PARTIAL and CONDITIONAL.",
         "[2026-03-24] Trump 5-day power plant strike postponement = FIRST de-escalation ACTION in 25 days. But strikes continue on both sides. IRGC still firing 1-2/day. IDF wide-scale wave on Tehran. Structural conditions for de-escalation not met.",
-        "[2026-03-25] 15-point plan via Pakistan + 5-day power plant pause + Iran IMO transit offer. But 82nd Airborne deploying + B Pentagon request = hedging both ways."
+        "[2026-03-25] 15-point plan via Pakistan + 5-day power plant pause + Iran IMO transit offer. But 82nd Airborne deploying + B Pentagon request = hedging both ways.",
+        "[2026-03-25] 15-point plan = first exit framework. BUT: 82nd Airborne +1000 troops, IRGC coordinated offensive, Iran denies talks, Pentagon $25B supplemental. Military escalation ACCELERATING during diplomatic track."
       ],
-      "reasoning": "UPGRADED: First structural exit path. But both sides still firing (Jerusalem struck, IDF all-front strikes). Probability reflects: diplomatic mechanism exists (new) vs no ceasefire (unchanged).",
+      "reasoning": "Slight increase: structured diplomacy exists for first time. But both sides escalating militarily in parallel. De-escalation requires MUTUAL action, not just paper proposals. 38% reflects paper trail without behavioral change.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
@@ -1169,8 +1172,8 @@
         "能源",
         "金融"
       ],
-      "probability": 0.5,
-      "confidence": 0.45,
+      "probability": 0.55,
+      "confidence": 0.5,
       "evidence": [
         "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
         "Brent: spiked $120 → crashed to $85 → rebounded to $90",
@@ -1179,7 +1182,8 @@
         "[2026-03-11] Brent rebounded $85→$90 despite 400M bbl SPR announcement; market pricing structural Hormuz closure; OVX 121 (extreme vol) (credibility: 0.9)",
         "[2026-03-12] Brent $90→$101.59→$97 in 18h DESPITE 400M bbl SPR announcement. Equilibrium breaking, not forming. Price whipsawing $85-101",
         "[2026-03-23 19:33] Brent crashed -8% to ~$104, WTI -8% to ~$90 on Trump postponement. Market pricing in de-escalation. If 5-day talks yield framework, $85-100 equilibrium becomes achievable. But still above pre-war $75 and depends on Hormuz reopening which is weeks/months away.",
-        "[2026-03-24] Brent crashed -13% from  to ~-100 on Trump talks claim. WTI -13% to ~. Goldman: 2026 avg  Brent,  WTI. CNBC: WTI -100 trading range. If talks fail → rebounds to +. If succeed → settles -90."
+        "[2026-03-24] Brent crashed -13% from  to ~-100 on Trump talks claim. WTI -13% to ~. Goldman: 2026 avg  Brent,  WTI. CNBC: WTI -100 trading range. If talks fail → rebounds to +. If succeed → settles -90.",
+        "[2026-03-25] Brent crashed from $114 war-high to $98.28 (-14%) in 48hrs on diplomacy. WTI $87.90. Market pricing ceasefire probability. But CNBC: prices could outlast war."
       ],
       "reasoning": "Market reaction shows strong pull toward equilibrium. But structural factors (mines, insurance collapse, 97% transit reduction) prevent rapid normalization. 42% reflects improved trajectory but enormous physical barriers.",
       "time_horizon": "W8-16",
@@ -3832,6 +3836,6 @@
       "reasoning": "AJE: oil prices surged after South Pars strike."
     }
   ],
-  "last_updated": "2026-03-15T11:17:32.102028+00:00",
+  "last_updated": "2026-03-25T13:08:40.740115+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
