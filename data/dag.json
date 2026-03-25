@@ -279,7 +279,8 @@
         "国会预算办公室报告",
         "[2026-03-13] Pentagon: $11.3B for first 6 days = $1.9B/day (was $5B estimate earlier)",
         "[2026-03-13 PM] $11.3B in first 6 days - cost exploding",
-        "[2026-03-25] Pentagon requesting B supplemental (UPI/WSJ). CAP: war cost B in 4 weeks. Budget-level confirmation."
+        "[2026-03-25] Pentagon requesting B supplemental (UPI/WSJ). CAP: war cost B in 4 weeks. Budget-level confirmation.",
+        "[2026-03-26T01:10:13+08:00] CAP: war cost $25B+ by end week 4. Pentagon $25B supplemental requested (UPI/WSJ). 82nd Airborne 2-3K receiving written deployment orders (NPR)."
       ],
       "reasoning": "确认的财政支出数据",
       "time_horizon": "",
@@ -562,8 +563,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.82,
-      "confidence": 0.7,
+      "probability": 0.9,
+      "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -592,9 +593,10 @@
         },
         "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive.",
         "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian).",
-        "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks."
+        "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks.",
+        "[2026-03-26T01:10:13+08:00] BILATERAL PROPOSALS: US 15-point plan via Pakistan CONFIRMED received by Iran (AP/Reuters). Iran issued 5-condition counterproposal: reparations + Hormuz sovereignty (NPR/AP/NYT). US+Israel rejected counterproposal (Fox). Pakistan/Turkey offered as venue. Mutual written proposals = Schelling bargaining range established."
       ],
-      "reasoning": "UPGRADED: First structured written proposal with named intermediary + venue. Previous was informal backchannels. Guardian: plan rehashed from nuclear talks = medium novelty. Iran publicly denies but CBS confirms received via mediators.",
+      "reasoning": "Updated 2026-03-26T01:10:13+08:00: Both sides now have written proposals = structured negotiation framework. Iran counterproposal (despite public rejection) = SIGNAL of willingness to negotiate. Previous: 82% → 90%.",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
@@ -1782,13 +1784,14 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.65,
-      "confidence": 0.6,
+      "probability": 0.78,
+      "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
-        "Senate chairman planning first public oversight hearing on war"
+        "Senate chairman planning first public oversight hearing on war",
+        "[2026-03-26T01:10:13+08:00] Trump approval CRASHES to 36% new low (Reuters/Ipsos Mar 25). Gas ~$3.98/gal (+33% from $2.98 pre-war). US dead: 21 total. CAP: war cost $25B by week 4. Pentagon $25B supplemental. Retail investors net sold first time since Nov 2023."
       ],
-      "reasoning": "五角大楼against-interest承认误判+国会启动监督听证，政治约束开始收紧",
+      "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%.",
       "time_horizon": "",
       "pinned": false,
       "time_phases": [],
@@ -3836,6 +3839,6 @@
       "reasoning": "AJE: oil prices surged after South Pars strike."
     }
   ],
-  "last_updated": "2026-03-25T13:08:40.740115+00:00",
+  "last_updated": "2026-03-26T01:10:13+08:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00"
 }
