@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 83,
-  "updated": "2026-03-24T23:52:39.833492+00:00",
+  "version": 84,
+  "updated": "2026-03-26T17:07:35.845481+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -150,8 +150,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.85,
-      "confidence": 0.8,
+      "probability": 0.9,
+      "confidence": 0.85,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
         "ISW: IDF expects Iranian ballistic fire to stop soon",
@@ -169,6 +169,12 @@
         {
           "text": "Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed.",
           "date": "2026-03-23",
+          "credibility": 0.9,
+          "impact_direction": "up"
+        },
+        {
+          "text": "Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time.",
+          "date": "2026-03-26",
           "credibility": 0.9,
           "impact_direction": "up"
         }
@@ -569,7 +575,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.9,
+      "probability": 0.93,
       "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -600,7 +606,13 @@
         "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive.",
         "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian).",
         "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks.",
-        "[2026-03-26T01:10:13+08:00] BILATERAL PROPOSALS: US 15-point plan via Pakistan CONFIRMED received by Iran (AP/Reuters). Iran issued 5-condition counterproposal: reparations + Hormuz sovereignty (NPR/AP/NYT). US+Israel rejected counterproposal (Fox). Pakistan/Turkey offered as venue. Mutual written proposals = Schelling bargaining range established."
+        "[2026-03-26T01:10:13+08:00] BILATERAL PROPOSALS: US 15-point plan via Pakistan CONFIRMED received by Iran (AP/Reuters). Iran issued 5-condition counterproposal: reparations + Hormuz sovereignty (NPR/AP/NYT). US+Israel rejected counterproposal (Fox). Pakistan/Turkey offered as venue. Mutual written proposals = Schelling bargaining range established.",
+        {
+          "text": "Mar 26: Iran rejected 15-point plan verbally but sent tanker present (behavioral signal > verbal). Reuters: Iran reviewing proposal, passed to senior authorities. Trump: Iran desperate for deal. Formal counterproposals exchanged.",
+          "date": "2026-03-26",
+          "credibility": 0.82,
+          "impact_direction": "up"
+        }
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: Both sides now have written proposals = structured negotiation framework. Iran counterproposal (despite public rejection) = SIGNAL of willingness to negotiate. Previous: 82% → 90%.",
       "time_horizon": "W4-16",
@@ -1072,7 +1084,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.38,
+      "probability": 0.45,
       "confidence": 0.45,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1085,7 +1097,13 @@
         "[2026-03-23 19:33] Trump postponed power plant strikes 5 days after \"productive\" Iran talks. Energy infrastructure explicitly OFF-LIMITS. Brent -8%. FIRST de-escalation signal of the war. BUT: CENTCOM still striking military targets, Israel wide-scale Tehran wave, Iran still firing missiles at Israel. De-escalation is PARTIAL and CONDITIONAL.",
         "[2026-03-24] Trump 5-day power plant strike postponement = FIRST de-escalation ACTION in 25 days. But strikes continue on both sides. IRGC still firing 1-2/day. IDF wide-scale wave on Tehran. Structural conditions for de-escalation not met.",
         "[2026-03-25] 15-point plan via Pakistan + 5-day power plant pause + Iran IMO transit offer. But 82nd Airborne deploying + B Pentagon request = hedging both ways.",
-        "[2026-03-25] 15-point plan = first exit framework. BUT: 82nd Airborne +1000 troops, IRGC coordinated offensive, Iran denies talks, Pentagon $25B supplemental. Military escalation ACCELERATING during diplomatic track."
+        "[2026-03-25] 15-point plan = first exit framework. BUT: 82nd Airborne +1000 troops, IRGC coordinated offensive, Iran denies talks, Pentagon $25B supplemental. Military escalation ACCELERATING during diplomatic track.",
+        {
+          "text": "Mar 26: Iran sent 8-10 tankers through Hormuz as present to Trump (Fox confirmed). First concrete behavioral de-escalation signal contradicting verbal rejection. Pakistan mediating. Iran reviewing 15-point plan despite public rejection.",
+          "date": "2026-03-26",
+          "credibility": 0.8,
+          "impact_direction": "up"
+        }
       ],
       "reasoning": "Slight increase: structured diplomacy exists for first time. But both sides escalating militarily in parallel. De-escalation requires MUTUAL action, not just paper proposals. 38% reflects paper trail without behavioral change.",
       "time_horizon": "W12-24+",
@@ -1660,7 +1678,7 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.68,
+      "probability": 0.75,
       "confidence": 0.65,
       "evidence": [
         "FM阿拉格齐: 军事单位已转入去中心化模式,31个自治省级单位",
@@ -1669,7 +1687,13 @@
         "Carnegie/Sadjadpour: 佩泽什基安无关紧要,不决定伊朗未来",
         "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command.",
         "[2026-03-13] Iran fighting on multiple fronts simultaneously (Hormuz mining, Gulf drones, Riyadh, Israel missiles, Lebanon). Mosaic defense pattern",
-        "[2026-03-18] Iran announced coordinated IRGC Navy+Army+Hezbollah offensive = central command still functioning, contradicts fragmentation thesis"
+        "[2026-03-18] Iran announced coordinated IRGC Navy+Army+Hezbollah offensive = central command still functioning, contradicts fragmentation thesis",
+        {
+          "text": "Mar 26: Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). Plus hardliner Zolghadr appointed as SNSC secretary (ISW). Leadership disruption accelerating.",
+          "date": "2026-03-26",
+          "credibility": 0.85,
+          "impact_direction": "up"
+        }
       ],
       "reasoning": "DOWNGRADED: Mar 18 coordinated multi-front offensive (IRGC Navy+Army+Hezbollah) demonstrates central command capability. Fragmentation is real at tactical level (proxy decentralization) but strategic coordination persists.",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
@@ -2072,7 +2096,7 @@
         "energy",
         "diplomacy"
       ],
-      "probability": 0.95,
+      "probability": 0.97,
       "confidence": 0.92,
       "evidence": [
         "[2026-03-14] (cred:0.8) Turkey got one ship through Hormuz Mar 13 with Iranian approval. IRGC policy: closed only to US/Israel/Western allies. Shadow fleet doing 50% of transits. — Wikipedia/Reuters/Guardian",
@@ -2082,6 +2106,12 @@
           "text": "Iran FM confirms 5 friendly nations (CN/IN/RU/PK/IQ) open passage. Chinese ships Newvoyager + Lucky Gas confirmed transit via Larak. Lloyd s List 20+ vessels via Tehran-approved route at $2M/ship fee.",
           "source": "CSMonitor/SCMP/India Today/Lloyd s List/ISW",
           "impact": "+0.07"
+        },
+        {
+          "text": "Mar 26: Trump confirmed Iran allowed 8-10 oil tankers as present. Pakistani-flagged. Iran then apologized and sent 2 more. Araghchi: 5 friendly nations get open passage. Two-tier transit regime formalized.",
+          "date": "2026-03-26",
+          "credibility": 0.85,
+          "impact_direction": "up"
         }
       ],
       "reasoning": "UPGRADED: Iran formalizing selective transit at IMO = institutional path from ad-hoc to structured regime. Combined with Bahrain UNSC draft = two competing frameworks emerging.",
