@@ -509,15 +509,21 @@
         "政治",
         "能源"
       ],
-      "probability": 0.68,
-      "confidence": 0.58,
+      "probability": 0.78,
+      "confidence": 0.72,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
         "经贸合作\"更稳定\"",
         "中国不会因伊朗冒险与美国直接对抗",
         "[2026-03-14] Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
         "USS Tripoli pulled from Taiwan waters creates Indo-Pacific gap + China mediation incentive",
-        "US forces pulled from Taiwan waters, creating China action space + mediation incentive"
+        "US forces pulled from Taiwan waters, creating China action space + mediation incentive",
+        {
+          "date": "2026-03-26",
+          "text": "China as Hormuz anchor customer: 2 confirmed Chinese vessel transits, state-owned tanker paid $2M fee, Wang Yi called Araghchi Mar 24. Economic action confirmed but no political mediation.",
+          "source": "CSMonitor/SCMP/Lloyd s List/Reuters",
+          "impact": "+0.10"
+        }
       ],
       "reasoning": "Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
       "time_horizon": "W2-12",
@@ -1784,12 +1790,18 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.78,
-      "confidence": 0.75,
+      "probability": 0.72,
+      "confidence": 0.7,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
         "Senate chairman planning first public oversight hearing on war",
-        "[2026-03-26T01:10:13+08:00] Trump approval CRASHES to 36% new low (Reuters/Ipsos Mar 25). Gas ~$3.98/gal (+33% from $2.98 pre-war). US dead: 21 total. CAP: war cost $25B by week 4. Pentagon $25B supplemental. Retail investors net sold first time since Nov 2023."
+        "[2026-03-26T01:10:13+08:00] Trump approval CRASHES to 36% new low (Reuters/Ipsos Mar 25). Gas ~$3.98/gal (+33% from $2.98 pre-war). US dead: 21 total. CAP: war cost $25B by week 4. Pentagon $25B supplemental. Retail investors net sold first time since Nov 2023.",
+        {
+          "date": "2026-03-26",
+          "text": "Senate REJECTED War Powers resolution 47-53. Rand Paul lone R yes vote. Congressional check mechanism REMOVED. Domestic opposition exists but has NO political lever to force action.",
+          "source": "Time/Politico",
+          "impact": "-0.06"
+        }
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%.",
       "time_horizon": "",
@@ -2060,11 +2072,17 @@
         "energy",
         "diplomacy"
       ],
-      "probability": 0.88,
-      "confidence": 0.75,
+      "probability": 0.95,
+      "confidence": 0.92,
       "evidence": [
         "[2026-03-14] (cred:0.8) Turkey got one ship through Hormuz Mar 13 with Iranian approval. IRGC policy: closed only to US/Israel/Western allies. Shadow fleet doing 50% of transits. — Wikipedia/Reuters/Guardian",
-        "[2026-03-25] Iran told IMO \"non-hostile vessels\" may transit Hormuz if coordinated with Iranian authorities (Reuters). First formal institutional framework for transit."
+        "[2026-03-25] Iran told IMO \"non-hostile vessels\" may transit Hormuz if coordinated with Iranian authorities (Reuters). First formal institutional framework for transit.",
+        {
+          "date": "2026-03-26",
+          "text": "Iran FM confirms 5 friendly nations (CN/IN/RU/PK/IQ) open passage. Chinese ships Newvoyager + Lucky Gas confirmed transit via Larak. Lloyd s List 20+ vessels via Tehran-approved route at $2M/ship fee.",
+          "source": "CSMonitor/SCMP/India Today/Lloyd s List/ISW",
+          "impact": "+0.07"
+        }
       ],
       "reasoning": "UPGRADED: Iran formalizing selective transit at IMO = institutional path from ad-hoc to structured regime. Combined with Bahrain UNSC draft = two competing frameworks emerging.",
       "node_type": "prediction",
