@@ -665,7 +665,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.5,
+      "probability": 0.42,
       "confidence": 0.5,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
@@ -681,9 +681,10 @@
         "[2026-03-16] Israel ground op in Lebanon raises multi-front ground war precedent",
         "[2026-03-23 19:33] Trump pivot to \"productive talks\" + 5-day postponement = de-escalation signal. Ground war requires escalation commitment that this move contradicts. Cost threshold (.94 gas, 14 dead, IEA worst-since-1970s) creating domestic pressure against escalation. DOWN from 0.54.",
         "[2026-03-25] WSJ: Pentagon readying 3000 soldiers from 82nd Airborne for ME deployment. Pentagon requesting B supplemental (UPI).",
-        "[2026-03-25] Trump approved 1000+ 82nd Airborne deployment (NBC). Pentagon $25B supplemental. BUT could be negotiation leverage not invasion prep."
+        "[2026-03-25] Trump approved 1000+ 82nd Airborne deployment (NBC). Pentagon $25B supplemental. BUT could be negotiation leverage not invasion prep.",
+        "[2026-03-27] 82nd Airborne 2-3K deploying BUT CNBC analysis: coercive diplomacy not ground invasion prep. Trump 10-day extension reduces urgency. RUSI: US burned 11000+ munitions in 16 days — weapons shortage concerns (Telegraph)."
       ],
-      "reasoning": "UPGRADED: 82nd Airborne deployment = ground force preparation. Combined with 2500 Marines + USS Tripoli already deploying. Trend toward ground escalation option even as talks proceed.",
+      "reasoning": "82nd Airborne deployment + weapons shortage + 10-day extension = troops as leverage not invasion. Probability reduced from 50% to 42%. Key trigger: if April 6 deadline passes without progress, re-evaluate.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
@@ -1084,8 +1085,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.45,
-      "confidence": 0.45,
+      "probability": 0.52,
+      "confidence": 0.55,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1103,9 +1104,10 @@
           "date": "2026-03-26",
           "credibility": 0.8,
           "impact_direction": "up"
-        }
+        },
+        "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection."
       ],
-      "reasoning": "Slight increase: structured diplomacy exists for first time. But both sides escalating militarily in parallel. De-escalation requires MUTUAL action, not just paper proposals. 38% reflects paper trail without behavioral change.",
+      "reasoning": "10-day extension = STRONGEST de-escalation signal since war began. Both sides creating diplomatic space. Tanker present = first concrete Iranian goodwill gesture. Still NOT ceasefire — fighting continues. 52% reflects widened but uncertain window.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
@@ -1285,14 +1287,15 @@
       "domains": [
         "能源"
       ],
-      "probability": 0.97,
-      "confidence": 0.85,
+      "probability": 0.94,
+      "confidence": 0.8,
       "evidence": [
         "霍尔木兹日均通行17mbpd石油",
         "全球25%LNG经此通过",
         "OPEC+波斯湾产能~20mbpd",
         "[2026-03-09] E10: 伊拉克-70%+Hormuz动能打击 (LR=4.0)",
-        "[2026-03-13] Oil surged 10% despite Russia waiver. Active mining makes Hormuz reopening timeline longer"
+        "[2026-03-13] Oil surged 10% despite Russia waiver. Active mining makes Hormuz reopening timeline longer",
+        "[2026-03-27] Transit improving: Kpler 138 ships March = 5-6/day. Thailand tanker approved. Guardian: slight uptick Thursday. Still 95% below pre-crisis but directional improvement."
       ],
       "reasoning": "定义: 因封锁导致的波斯湾石油/LNG出口减少量。当前封锁程度~90%→受影响量约15-17mbpd石油+大部分卡塔尔LNG。",
       "time_horizon": "持续至封锁缓解",
@@ -3888,5 +3891,13 @@
     }
   ],
   "last_updated": "2026-03-26T01:10:13+08:00",
-  "updated_at": "2026-03-11T21:31:59.788167+00:00"
+  "updated_at": "2026-03-11T21:31:59.788167+00:00",
+  "meta": {
+    "last_updated": "2026-03-26T21:07:44.996267Z",
+    "last_changes": [
+      "conflict_deescalation: 45% → 52% (+7pp)",
+      "us_ground_war: 50% → 42% (-8pp)",
+      "supply_disruption_volume: 97% → 94% (-3pp)"
+    ]
+  }
 }

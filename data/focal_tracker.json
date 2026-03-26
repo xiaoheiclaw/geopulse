@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-26T17:06:35.409023+00:00",
+  "last_updated": "2026-03-26T21:06:29.447626+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -62,6 +62,12 @@
           "date": "2026-03-26",
           "est": "1-2 declining, CENTCOM destroyed 2/3 arms mfg, Israel killed IRGC Navy commander",
           "note": "Day 29. ★★★★ NEW: (1) Israel killed IRGC Navy commander who ordered Hormuz closure (Fox Mar 26); (2) Trump: Iran sent 8-10 tankers through Hormuz as 'present'/good faith gesture; (3) Trump confirms 4-6 week war timeline still holds; (4) CENTCOM: destroyed 2/3 Iran arms manufacturing (ToI); (5) IDF: 600+ ballistic missile sites struck; (6) ISW: CENTCOM struck 9th Artesh AF Tactical AB Bandar Abbas; (7) 13 US bases nearly uninhabitable (NYT); (8) USS Lincoln continues flight ops; (9) Fire STILL 1-2 at a time — mass salvo era confirmed OVER; (10) Trump declined to say if Iran still has enriched uranium, hints at possible action; (11) 82nd Airborne 2-3K deploying. PATTERN: IRGC volume collapse CONFIRMED + leadership decapitation (Navy commander). Source: Fox/CENTCOM/ISW/NYT/ToI",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-03-26",
+          "est": "1-2 declining, IRGC claims 220 'coordinated' but volume still collapsed",
+          "note": "Day 29. ★★★★★ BREAKING: Trump EXTENDED energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — 'per Iranian Government request' (NPR/CNBC/Bloomberg/CBS/NYT/Guardian). IRGC claims 220 'coordinated' attacks with regional allies (IRNA/Express Tribune) but fire STILL 1-2 at a time (Cooper confirmed). CENTCOM: 9000+ targets struck, 140+ vessels destroyed, 2/3 arms manufacturing destroyed. IDF: 600+ ballistic sites struck. ISW: 85% SAMs gone. ISW: CENTCOM struck 9th Artesh AF Tactical AB Bandar Abbas. Combined force struck Abu Musa Island. Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). US dead: 21 total (14 KIA + 6 crash + 1 health), 290+ wounded. Iran dead: 1937 killed + 24800 injured (AJE tracker). 13 US bases nearly uninhabitable (NYT). 82nd Airborne 2-3K deploying. Senate blocked War Powers 53-47. S&P 500 -1.72% to 6478 on Mar 26. PATTERN: IRGC 220 coordinated attacks = LABEL not VOLUME — physical fire rate UNCHANGED at 1-2. Trump 10-day extension = MAJOR DE-ESCALATION window. Source: NPR/CNBC/Bloomberg/CBS/NYT/Guardian/IRNA/ExpressTribune/CENTCOM/ISW/AJE/Fox",
           "source": "pipeline"
         }
       ]
@@ -129,6 +135,12 @@
           "est": "~3-4 mbd (5-6 ships/day + Trump '8-10 tankers' present)",
           "note": "Day 29. ★★★★★ MAJOR: (1) Trump CONFIRMED Iran allowed 8-10 oil tankers through Hormuz as 'present' = good faith signal (Fox Mar 26); (2) Pakistani-flagged tankers likely; (3) Iran apologized for something + sent 2 more boats; (4) CSMonitor: Chinese 'Newvoyager' sailed OUT of Hormuz; (5) SCMP: Chinese 'Lucky Gas' via Larak route to Oman; (6) Araghchi: 5 'friendly nations' (CN/IN/RU/PK/IQ) get OPEN passage; (7) Kpler: 138 ships March = 5-6/day; (8) Lloyd's: 20+ vessels via Tehran-approved Larak route, ~M fee; (9) Iran FM: 'We are in state of war...remains open to others'. TWO-TIER TRANSIT solidifying + DIPLOMATIC TRANSIT SIGNAL via tanker 'present'. Uptick from ~2.5 to ~3-4 mbd est. Source: Fox/CSMonitor/SCMP/Kpler/Lloyd's/India Today",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-26",
+          "est": "~3-4 mbd (5-6 ships/day + slight Thursday uptick + 8-10 tanker 'present')",
+          "note": "Day 29. ★★★ TRANSIT UPDATE: (1) Guardian Mar 26: 'slight uptick in transits registered on Thursday' but normal navigation NOT resumed; (2) Kpler: 138 ships March = 5-6/day (87 oil/gas tankers), still 95% below pre-crisis; (3) Euronews: Thailand tanker (Bangchak Corp) passed through after Iranian approval, second vessel WAITING; (4) Lloyd's: 20+ vessels via Tehran-approved Larak Island route, ~M fee each; (5) Iran FM Araghchi: 5 'friendly nations' (CN/IN/RU/PK/IQ) open passage; (6) Chinese 'Newvoyager' + 'Lucky Gas' confirmed transit; (7) Trump: Iran sent 8-10 tankers as 'present'; (8) UNSC Res 2817 demands Iran cease attacks on neighbors (Fox). PATTERN: Two-tier transit regime SOLIDIFYING. Thailand expansion = beyond initial 5 friendly nations. Insurance barriers persist. Source: Guardian/Kpler/Euronews/Lloyd's/India Today/CSMonitor/SCMP/Fox",
+          "source": "pipeline"
         }
       ]
     },
@@ -192,6 +204,12 @@
           "est": "~0.75 mbd first batch, D+15, Brent rebounding ",
           "note": "Day 29 D+15. First batch still flowing (began Mar 21). DOE 'record speed'. 45.2M bbl to Shell/Marathon/BP/Gunvor. 172M bbl US total, 412M bbl global (32 countries). NTU: draws to 243M bbl = lowest since 1982. MARKET TODAY: Brent .12 (+3.8% REBOUND on Iran rejecting direct talks), WTI ~. Oil whipsawing → in 24h. Trump floated suspending gas tax. Gas ~.98/gal national. SPR trickle IRRELEVANT vs /bbl daily diplomacy swings. Source: CNBC/Bloomberg/DOE/AAA/Fox",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-26",
+          "est": "~0.75 mbd first batch, D+15, SPR NOISE",
+          "note": "Day 29 D+15. First batch flowing since Mar 21. DOE 'record speed'. 45.2M bbl to Shell/Marathon/BP/Gunvor. 172M bbl US total, 412M bbl global (32 countries). SPR 415-416M bbl pre-release (Grokipedia). NTU: draws to 243M bbl = lowest since 1982. MARKET: Brent .99-108 (+5.66% SURGED on Iran rejecting direct talks), WTI .41-94.80. BUT THEN Trump 10-day extension → expect significant pullback tomorrow. SPR trickle IRRELEVANT vs +/bbl daily geopolitical swings. Gas ~.98/gal national. Source: Argus/DOE/Grokipedia/CNBC/OilPriceAPI/Bloomberg",
+          "source": "pipeline"
         }
       ]
     }
@@ -200,30 +218,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "RHETORIC_ACTIVE_TRANSIT_ANCHOR — Zhai Jun GCC meeting, Chinese ships transiting",
+      "status": "RHETORIC_ACTIVE_TRANSIT_ANCHOR — Zhai Jun GCC ambassadors + Chinese ships transiting",
       "last_check": "2026-03-26",
-      "findings": "Day 29. ★★★ UPGRADE from rhetoric to TRANSIT_ANCHOR: (1) Zhai Jun (China ME envoy) met GCC ambassadors in Beijing Mar 26 — urged 'renewed dialogue', spoke of 'glimmer of hope' (ChinaDaily/CGTN); (2) Zhai met Iran Ambassador Fazli Mar 20 (AsiaTimes); (3) Wang Yi: 'glimmer of hope' rhetoric; (4) Chinese vessels CONFIRMED transiting — 'Newvoyager' (CSMonitor) + 'Lucky Gas' (SCMP) via Larak route; (5) China one of 5 'friendly nations' with open passage; (6) SmallWarsJournal: China-Iran intel cooperation ongoing; (7) Beijing evacuating nationals. NOISE FILTER: Zhai Jun GCC meeting + active transit = China embedding in Iran's two-tier Hormuz order. NOT mediation but ANCHOR CUSTOMER solidification. fp1 threshold still NOT met (would require Xi-level envoy/summit/naval deployment). Source: ChinaDaily/CGTN/AsiaTimes/CSMonitor/SCMP/SWJ"
+      "findings": "Day 29. Zhai Jun met GCC ambassadors in Beijing Mar 26 — urged 'renewed dialogue', 'glimmer of hope' (ChinaDaily/CGTN). Chinese vessels CONFIRMED transiting (Newvoyager/Lucky Gas). SmallWarsJournal: China-Iran intel cooperation ongoing. China one of 5 'friendly nations' with open passage. Beijing evacuating nationals. NOISE FILTER: Zhai Jun meetings + active transit = China embedding in Iran's two-tier Hormuz order. NOT mediation but ANCHOR CUSTOMER. fp1 threshold NOT met (requires Xi-level envoy/summit/naval deployment). Source: ChinaDaily/CGTN/CSMonitor/SCMP/SWJ"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "MAXIMUM_CONTRADICTION_DEADLINE_48H",
+      "status": "DEADLINE_RESET_10_DAYS — Trump extended to April 6",
       "last_check": "2026-03-26",
-      "findings": "Day 29. ★★★★★ DEADLINE CRITICAL: (1) Trump 5-day pause on energy infrastructure strikes EXPIRES SAT Mar 28-29 — ~48h remaining (Axios confirmed); (2) Trump today: 'Iran desperate for deal' + confirmed 4-6 week war timeline; (3) Iran 'reviewing' US 15-point plan but says 'one-sided, unfair' (Reuters TODAY); (4) Iran sent 8-10 tankers through Hormuz as 'present' — FIRST CONCRETE GOODWILL GESTURE; (5) Trump declined to say if Iran still has uranium, hints at possible action; (6) 82nd Airborne deploying; (7) Senate blocked War Powers 53-47; (8) 13 bases uninhabitable. PATTERN: Tanker 'present' = de-escalation micro-signal INSIDE escalation macro-trend. Either energy infrastructure strike or ANOTHER face-saving extension by Sat. Source: Fox/Reuters/Axios/NYT/CNBC"
+      "findings": "Day 29. ★★★★★ MASSIVE SHIFT: Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — 'per Iranian Government request' (NPR/CNBC/Bloomberg/CBS/NYT/Guardian ALL confirm). Previous deadline was ~Mar 28 (48h). Iran 'reviewing' 15-point plan but calls it 'one-sided' (Reuters). Iran sent 8-10 tankers as 'present' + apologized for something. 82nd Airborne still deploying. CNBC analysis: troop buildup = coercive diplomacy not ground invasion prep. ASSESSMENT: Contradiction PERSISTS (troops + extension) but TEMPORAL PRESSURE removed for 10 days. Window for backchannels widened significantly. Source: NPR/CNBC/Bloomberg/NYT/Guardian/Reuters"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "FORMAL_COUNTERPROPOSALS+GOODWILL_GESTURE",
+      "status": "FORMAL_COUNTERPROPOSALS+GOODWILL+DEADLINE_EXTENSION",
       "last_check": "2026-03-26",
-      "findings": "Day 29. ★★★★★ HIGHEST FP3 SIGNAL: (1) Iran rejected US 15-point plan formally but says 'reviewing, passed to senior authorities' (Reuters TODAY); (2) Iran countered with own 5-point demands (reparations/sovereignty/Lebanon); (3) Trump: Iran 'desperate for deal', 'begging'; (4) ★★★★★ Iran sent 8-10 tankers as 'present' then 2 more after 'apologizing' = BEHAVIORAL SIGNAL contradicting verbal rejection; (5) Pakistan mediating: Munir delivered plan, offered to host talks; (6) Gulf states want war to continue (Fox) but also 'existential threat' (ABC AU); (7) UNSC: Bahrain draft vs France text pending. ASSESSMENT: BEHAVIORAL DE-ESCALATION (tanker present) > VERBAL ESCALATION (rejection). First concrete goodwill gesture = fp3 ABOVE threshold. 50-55% ceasefire framework within 2 weeks (UP from 40-45%). Source: Fox/Reuters/Guardian/AP/NYT"
+      "findings": "Day 29. ★★★★★ fp3 STRENGTHENED: (1) Trump 10-day extension = BOTH sides creating space for talks; (2) Iran 'reviewing' 15-point plan via Pakistan mediation; (3) Iran sent 8-10 tankers as goodwill 'present'; (4) Thailand getting transit approval = regime expanding beyond 5 nations; (5) UNSC Res 2817 demands Iran cease attacks on neighbors; (6) UN Human Rights Council: GCC+Jordan resolution condemning Tehran's Hormuz actions PASSED; (7) Witkoff floating 15-point plan publicly. ASSESSMENT: BEHAVIORAL DE-ESCALATION > VERBAL REJECTION pattern continues. 10-day extension = STRONGEST exit framework signal yet. 55-60% ceasefire framework within 2 weeks (UP from 50-55%). Source: NPR/CNBC/Fox/Guardian/Reuters/ABC AU"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "COST_RISING_POLITICAL_BRAKE_REMOVED_GAS_TAX_FLOATED",
+      "status": "COST_RISING_BUT_POLITICAL_PRESSURE_DEFERRED",
       "last_check": "2026-03-26",
-      "findings": "Day 29. (1) Senate BLOCKED War Powers 53-47 — brake REMOVED (Time); (2) War cost B+ (Time) to B+ (CAP); (3) Gas ~.98/gal national (+33%), CA .83 (AAA); (4) Trump FLOATED SUSPENDING GAS TAX today (Fox) = admin acknowledging price pressure; (5) S&P 500 below 200-day MA for first time since last spring (TheStreet); (6) VIX 25.33 (FRED Mar 25); (7) US dead: 21 total; 290+ wounded; (8) 13 bases uninhabitable; (9) Trump approval 36% (Reuters/Ipsos). PATTERN: Cost vectors ALL rising but political mechanism absent. Gas tax suspension float = FIRST DOMESTIC PRICE INTERVENTION SIGNAL. Source: Time/Fox/AAA/TheStreet/FRED/Reuters"
+      "findings": "Day 29. (1) S&P 500 -1.72% to 6,478.41 (below 200-day MA, TheStreet); (2) Nasdaq -2.38% to 21,408 (StockMarketWatch); (3) VIX 25.63 (FRED); (4) Brent  (+5.66%), WTI .41; (5) Gold ,418-4,428/oz (CBS); (6) Gas ~.98/gal (+33%); (7) War cost B+ (Time/Rand Paul); (8) RUSI: US burned 11000+ munitions in 16 days at B cost (Telegraph); (9) US running SHORT of offensive/defensive weapons (Telegraph/RUSI). BUT: Senate blocked War Powers. Trump floated gas tax suspension. 10-day extension DEFERS immediate cost pressure. Source: StockMarketWatch/FRED/CBS/Time/Telegraph/RUSI"
     }
   },
   "noise_filter": {
