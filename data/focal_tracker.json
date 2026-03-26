@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-26T09:06:04.021526+00:00",
+  "last_updated": "2026-03-26T13:10:21.336624+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,48 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-03-23T15:33+08",
-          "est": "2-3 coordinated BUT DECLINING VOLUME — 1-2 at a time",
-          "note": "Day 24. 🔴 CENTCOM Adm. Cooper: Iran fire declining — \"beginning saw dozens of drones/missiles, now only 1-2 at a time\" = QUANTITATIVE DEGRADATION. BUT: (1) IRGC claimed strikes on Prince Sultan Air Base (Saudi) + US Fifth Fleet Bahrain with missiles+drones (CNBC18/TimesNow Mar 23); (2) Israel launched \"wide-scale wave\" strikes on Tehran infrastructure (IDF/CNN/ABC AU/Moneycontrol Mar 23); (3) CENTCOM destroyed Qom Turbine Engine Production Plant (drone engine factory) on Mar 23 (ANI/ET); (4) CENTCOM Adm. Cooper: campaign \"ahead or on plan\" (Newsday Mar 23); (5) 8,000+ targets struck, 130 vessels destroyed; (6) Iran fired missiles at Israel overnight (cluster munitions on Petah Tikva, fire in Nir Am); (7) Fars/Mizan published TARGET LIST of Gulf power+desalination+UAE Barakah nuclear plant — INDIRECT THREAT; (8) Death toll: 1,500+ Iran, 1,000+ Lebanon, 15 Israel, 13 US. PATTERN: IRGC attack VOLUME declining (Cooper confirmed) but SCOPE expanding (Saudi air base, US 5th Fleet, Israel cities). Shifting from mass salvos to targeted precision strikes = capability degradation but not collapse.",
-          "source": "CENTCOM/Newsday/ANI/CNBCTV18/TimesNow/CNN/ABC AU/Fars/Moneycontrol"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "1-2 declining BUT SCOPE EXPANDING",
-          "note": "Day 24 19:33. ★★★★★ REGIME SHIFT: Trump POSTPONED power plant strikes 5 DAYS after 'very good and productive' talks with Iran (Reuters/Guardian/AJE/CNBC ~19:15 CST). CENTCOM Adm. Cooper: fire declining from dozens to 1-2 at a time. BUT: IRGC struck Prince Sultan Air Base + US 5th Fleet; Israel wide-scale wave on Tehran; CENTCOM destroyed Qom drone factory; 8000+ targets, 130 vessels destroyed; Iran missiles at Israel (cluster munitions); Fars published target list of Gulf desalination+Barakah nuclear. US dead: 14. Iran dead: 3230+ (HRANA). PATTERN: Volume declining, scope expanding, Trump pivot = potential inflection. Sources: Reuters/Guardian/AJE/CNBC/CENTCOM/Newsday/ANI/HRANA",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "1-2 declining, capability severely degraded",
-          "note": "Day 24 23:33. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. ISW: 85% Iran SAMs destroyed. IRGC still targeting Prince Sultan AB + US 5th Fleet + Israel cities but VOLUME collapsed. CENTCOM: 8000+ targets, 130 vessels destroyed. IDF wide-scale wave on Tehran + Qom drone factory destroyed. Trump 5-day postponement = energy infrastructure OFF-LIMITS. PATTERN: Quantitative degradation confirmed by CENTCOM. Scope expanding (Saudi/Bahrain/Israel) but mass salvo capability gone. Source: CENTCOM/ISW/BBC/CNBC/Newsday",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "1-2 declining, 9000+ US strikes, 140+ vessels",
-          "note": "Day 25 07:29. CENTCOM: 9000+ strikes, 140+ vessels destroyed. Cooper: fire declining to 1-2 at a time. ISW: 85% SAMs destroyed. Khorramabad/Tabriz/Urmia civilian casualties. Trump 5-day pause active. Source: NYT/CENTCOM/AJE",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "1-2 declining, CENTCOM 9000+ targets",
-          "note": "Day 25 11:33 CST. CENTCOM Cooper: fire declining to 1-2 at a time (confirmed). ISW: 85% SAMs destroyed. CENTCOM video Mar 23: strikes on Arash-2 drone + Shahed-136 + mobile launch platform. 9000+ targets struck, 140+ vessels destroyed. IDF wide-scale wave on Tehran infrastructure. IRGC still firing at Israel (cluster munitions Petah Tikva) + Prince Sultan AB + 5th Fleet, but mass salvo capability GONE. Iran dead: 1500+ (AJE) / 3230+ (HRANA). US dead: 14. PATTERN: Volume collapse confirmed, scope still expanding. Quantitative degradation irreversible. Source: CENTCOM/ISW/AJE/Time/Reuters/HRANA",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "1-2 declining BUT JERUSALEM HIT",
-          "note": "Day 25 13:29. ★★★★ JERUSALEM STRUCK: Iranian missile hit building in Jerusalem early Tue, search+rescue deployed (AFP/HT). Sirens in Tel Aviv + central Israel. CENTCOM: 9000+ strikes, 140+ vessels. Iran still launching despite degraded capability. Netanyahu: Israel continues strikes on ALL fronts. IDF strikes Tehran continue. Source: AFP/HT/Haaretz/ToI/CNBC",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "1-2 declining, IRGC firing at Tel Aviv/Jerusalem",
-          "note": "Day 25 15:33 CST. CENTCOM: 9000+ strikes, 140+ vessels destroyed. Cooper: fire declining to 1-2 at a time. ISW: 85% SAMs destroyed. BUT: (1) Iranian missile struck JERUSALEM Tue early morning (AFP); (2) Tel Aviv hit — 6 lightly wounded (ToI Mar 24); (3) Missile debris fell in West Bank; (4) Sirens in Tel Aviv + central Israel AGAIN; (5) IDF continues wide-scale wave on Tehran; (6) CENTCOM video: Arash-2 + Shahed-136 + mobile launch destroyed; (7) Iran death toll 1500+ (AJE) / 3230+ (HRANA); US: 14 dead. PATTERN: IRGC volume collapse CONFIRMED but targeting UPGRADED — Jerusalem + Tel Aviv precision strikes = demonstrating residual capability during 5-day talks window. Political signaling not military breakthrough. Source: AFP/ToI/Haaretz/JPost/CENTCOM/ISW/AJE/HRANA",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-24",
           "est": "1-2 declining, 15-point plan delivered",
@@ -93,6 +51,12 @@
           "est": "1-2 declining, 13 US bases uninhabitable, USS Lincoln ops continue",
           "note": "Day 28. ★★★★ NEW: NYT/DefSecAsia: 13 US bases in ME nearly UNINHABITABLE from IRGC sustained strikes — troops dispersed to hotels/offices (NYT Mar 25). CENTCOM: 9000+ targets struck, 140+ vessels destroyed. USS Abraham Lincoln continues flight ops against Iran targets (CENTCOM Mar 26). IDF: 600+ ballistic sites struck. IRGC fire STILL 1-2 at a time (mass salvo era over). BUT: (1) IRGC 'precision-guided' missiles+drones at Israel+Kuwait airport+Jordan+Bahrain (Euronews/AP); (2) 82nd Airborne 2000 soldiers deploying with written orders (NYT/CNN/USAToday); (3) Senate REJECTED War Powers 47-53; (4) Iran fired 9 waves at Israel (cluster munitions continuing); (5) US dead: 21 total, 290+ wounded; (6) Iran dead: ~3500+. PATTERN: IRGC volume collapsed but BASE DEGRADATION is real operational cost — 13 bases uninhabitable = most significant infrastructure damage since Desert Storm. Source: NYT/DefSecAsia/CENTCOM/CNN/USAToday/AP",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-26",
+          "est": "1-2 declining, CENTCOM destroyed 2/3 arms manufacturing",
+          "note": "Day 28 21:00. CENTCOM chief: destroyed 2/3 of Iran arms manufacturing (ToI Mar 25). CENTCOM struck 9th Artesh Air Force Tactical Airbase Bandar Abbas Mar 25 (ISW). AJE live tracker: 1,937 killed + 24,800 injured Iran total. 6 US crew killed in refueling crash Iraq Mar 13. Fire STILL 1-2 at a time (Cooper confirmed). ISW: 85% SAMs destroyed. Combined force struck Abu Musa Island ports. US dead: 14 confirmed KIA (Wikipedia) + 6 crash + 1 health = 21. PATTERN: IRGC volume collapse accelerating — arms manufacturing destruction removes regeneration capacity. Residual precision strikes (Jerusalem/Tel Aviv/Gulf) = demonstrating political will not military capability. Source: ToI/ISW/AJE/CENTCOM/Wikipedia",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,48 +70,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-03-23T15:33+08",
-          "est": "<2 mbd (3-4/day — ULTIMATUM D-DAY BINARY)",
-          "note": "Day 24. NYT Mar 20 remains latest data: avg 3-4 vessels/day (vs 130+ pre-crisis, ~97% reduction). BBC Verify: ~100 ships since Mar 1. IRGC: COMPLETE CLOSURE if power plants hit (Guardian/CBS/CNN). Iran selective transit: China/India/Pakistan/Iraq/Malaysia/Japan. CENTCOM destroyed Hormuz radars + Qom drone factory. A-10s + UK bases active. USS Boxer 2+ weeks out. Mine threat still CRITICAL gap. Trump ultimatum deadline: Mon ~23:44 GMT. BINARY: execute → complete closure (0 transits), fold → current trickle persists.",
-          "source": "NYT/BBC/Guardian/CBS/CNN/CENTCOM/Reuters"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "<2 mbd (3-4 ships/day — 5-DAY WINDOW, COMPLETE CLOSURE PAUSED)",
-          "note": "Day 24 19:33. Trump postponement REMOVES 'complete closure' trigger for 5 days. NYT Mar 20: 3-4 vessels/day (97% reduction). BBC: ~100 ships since Mar 1. Selective transit: CN/IN/PK/IQ/MY/JP. 2000+ ships stranded. Mine threat CRITICAL. USS Boxer 2+ weeks out. Japan offered minesweeping, no deploy. KEY: Power plant strikes paused = IRGC complete closure counter-threat PAUSED. Current trickle persists >=5 days. Sources: NYT/BBC/CNBC/Guardian/Reuters/CENTCOM/IMO",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "~1.5 mbd (2.3 ships/day declining)",
-          "note": "Day 24 23:33. Windward AI Mar 22: only 16 AIS-visible crossings in past 7 days = 2.3/day (DOWN from 3-4). Goldman: flows at 5% of normal. NYT Mar 20: avg 3-4/day. BBC: ~100 ships since Mar 1. CNBC Mar 18: 11 China-linked vessels Mar 1-15. Trump postponement REMOVES complete closure trigger for 5 days. Iran selective transit: CN/IN/PK/IQ/MY/JP. Mine threat CRITICAL. USS Boxer 2+ weeks out. DECLINING TREND: 2.3/day vs 3-4/day earlier = transit deteriorating despite no escalation trigger. Source: Windward/NYT/BBC/CNBC/Goldman/Reuters",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "~1.5 mbd (2-3 ships/day declining)",
-          "note": "Day 25. Windward: 2.3/day. Goldman: 5% normal. Trump pause removes closure trigger 4 more days. Source: Windward/Goldman/NYT",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "~1.5 mbd (2-3 ships/day, 5-DAY PAUSE WINDOW)",
-          "note": "Day 25. NYT Mar 20: 3-4 vessels/day. Windward: 2.3/day (declining). BBC: ~100 ships since Mar 1. CNBC: 11 China-linked Mar 1-15. Trump 5-day pause REMOVES complete closure trigger (4 days remaining, deadline ~Mar 28). Iran selective transit: CN/IN/PK/IQ/MY/JP. Araghchi: insurance barrier not Iran. 2000+ ships stranded. Mine threat CRITICAL gap. Japan offered minesweeping no deploy. PATTERN: Transit in holding pattern. Slight decline (3-4→2.3/day) may reflect insurance tightening not new blockade action. Source: NYT/Windward/BBC/CNBC/Guardian/IMO",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "~1.5 mbd (2-3 ships/day)",
-          "note": "Day 25. No new transit data. Trump pause still active (4 days remain). Source: unchanged",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "~1.5 mbd (2-3 ships/day, zombie ships)",
-          "note": "Day 25. ABC AU Mar 24: 'zombie ships' with AIS off transiting Hormuz — actual flow may be slightly higher than AIS data shows. Windward: 2.3/day visible. NYT Mar 20: 3-4/day. Trump 5-day pause still active (3 days remaining, deadline ~Mar 28). IRGC safe corridor for CN/IN/PK/IQ/MY/JP. Iran imposing M transit fee (Mathrubhumi). SCMP: China priority is economics not politics in Gulf. Mine threat CRITICAL gap. USS Boxer 2+ weeks out. PATTERN: Transit in holding pattern with slight dark-fleet activity. Insurance barrier + mine threat = physical constraints beyond IRGC intent. Source: ABC AU/Windward/NYT/SCMP/Mathrubhumi",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-24",
           "est": "~1.5 mbd (2-3 ships/day, Iran IMO offer)",
@@ -189,6 +111,12 @@
           "est": "~2.5-3 mbd (5-6 ships/day, CHINA TRANSIT CONFIRMED)",
           "note": "Day 28. ★★★★ CHINA TRANSIT CONFIRMED: (1) CSMonitor Mar 25: Chinese-owned 'Newvoyager' container ship sailed OUT of Hormuz skirting mines — FIRST confirmed Chinese vessel; (2) SCMP Mar 25: Chinese-owned 'Lucky Gas' transited via Larak Island route to Oman's Sohar; (3) Iran FM Araghchi: 5 'friendly nations' (China/India/Russia/Pakistan/Iraq) get OPEN passage; US/Israel/Gulf allies BLOCKED (India Today Mar 26); (4) Kpler: 138 ships March = 5-6/day, 87 oil/gas tankers; (5) Lloyd's List: 20+ vessels took Tehran-approved Larak Island route, ~$2M fee each; (6) ISW: IRGC verifies vessel details at Larak Island checkpoint; (7) Araghchi: 'We are in a state of war...it remains open to others'; (8) NYT: Iran told IMO 'non-hostile' ships may transit. PATTERN: Iran FORMALIZING two-tier transit regime — allies get passage, enemies blocked. China becoming ANCHOR CUSTOMER of Iran's new Hormuz order. Source: CSMonitor/SCMP/India Today/Kpler/Lloyd's List/ISW/NYT/Reuters",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-26",
+          "est": "~2.5-3 mbd (5-6 ships/day, two-tier regime solidifying)",
+          "note": "Day 28 21:00. BBC: ~100 ships since Mar 1. Windward Mar 22: 16 AIS-visible in 7 days = near collapse, BUT Kpler: 138 ships in March = 5-6/day (improvement). Iran told UN/IMO: 'non-hostile' vessels may transit if coordinated (Reuters Mar 24). Lloyd's List: 20+ vessels via Larak Island route, ~$2M fee each. Saudi/UAE bypassing via pipelines (East-West to Yanbu, ADCOP to Fujairah). India/Pakistan sent destroyers to Gulf of Oman escort. TWO-TIER regime solidifying: 5 friendly nations (CN/IN/RU/PK/IQ) get passage, US/Israel/Gulf allies BLOCKED. PATTERN: Physical transit improving slightly (2.3→5-6/day) as Iran monetizes access. Still 95% below pre-crisis (17-20 mbd). Source: BBC/Windward/Kpler/Reuters/Lloyd's List",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,48 +127,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-03-23T15:33+08",
-          "est": "D+8 — FIRST PHYSICAL BARRELS SHIPPED FRIDAY",
-          "note": "SPR D+8. ★★★ ARGUS MEDIA CONFIRMED: First SPR shipments began FRIDAY Mar 21 (Argus Mar 21). DOE awarded contracts to 8 companies for 45.2M bbl from 3 storage sites (TX+LA). Recipients include Shell, Marathon Petroleum, BP. Deliveries scheduled Apr 1-May 31 with possible early deliveries. EXCHANGE CONTRACTS (loans): companies return 55M bbl (22% more than borrowed) — backwardation makes this work ( Apr vs  2028). Only 45.2M of 86M offered was subscribed (52%). Goldman raised 2026 Brent avg forecast to  (from ), Reuters Mar 23. Brent -112 Monday Asian. WTI ~ (tested ). S&P futures -0.4%. Gold ,609 (-0.7%). Gas .94/gal (+32% from .98 pre-war). CRITICAL: First physical barrels are flowing but at TRICKLE rate — 45.2M bbl over Apr-May = ~0.75 mbd, far below 4.4 mbd max. Structurally insufficient vs  Brent + Gulf production destruction.",
-          "source": "Argus Media/DOE/Goldman/Reuters/CNBCTV18/FNArena/oilpriceapi"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "D+8 — FIRST SHIPMENTS BEGAN FRI, ~0.75 mbd BATCH",
-          "note": "Day 24 19:33. Argus confirmed: first SPR shipments Fri Mar 21. DOE 45.2M bbl to Shell/Marathon/BP/Gunvor (52% of 86M subscribed). EXCHANGE: return 55M bbl. Apr-May delivery = ~0.75 mbd. MARKET CRASH: Brent -8% to ~, WTI -8% to ~ on Trump postponement. IEA Birol: crisis worse than 1970s+Ukraine COMBINED. Gas .94/gal (+32%). Goldman raised Brent avg to +. 172M bbl coordinated with 32 countries. Sources: Argus/DOE/Bloomberg/CNBC/Goldman/IEA/NPR",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "~0.75 mbd first batch flowing",
-          "note": "Day 24 23:33. SPR D+9. Argus confirmed: first shipments began Fri Mar 21. DOE 45.2M bbl to Shell/Marathon/BP/Gunvor (52% of 86M subscribed). Exchange: return 55M bbl (22% premium). Apr-May delivery = ~0.75 mbd. IEA Birol consulting on MORE releases. Goldman raised Brent avg forecast to . MARKET CRASH: Brent -13% to .91, WTI -13% to .66 on Trump talks claim. SPR trickle irrelevant vs /bbl crash from diplomacy signal. Source: Argus/DOE/CNBC/Goldman/IEA/Bloomberg",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-23",
-          "est": "~0.75 mbd first batch",
-          "note": "Day 25 D+10. WTI crashed to 88.39. SPR trickle irrelevant vs diplomacy crash. Source: Argus/LiteFinance",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "~0.75 mbd first batch flowing, SPR IRRELEVANT VS DIPLOMACY",
-          "note": "Day 25 D+10. SPR first shipments began Fri Mar 21 (Argus confirmed). DOE 45.2M bbl to Shell/Marathon/BP/Gunvor (52% of 86M offered subscribed). Exchange: return 55M bbl (22% premium). Apr-May delivery = ~0.75 mbd. IEA Birol consulting MORE releases. Goldman raised Brent avg forecast to . MARKET: Brent crashed -13% to ~-100, WTI -13% to ~ on Trump talks claim. SPR trickle IRRELEVANT vs /bbl diplomacy crash. 172M bbl coordinated with 32 countries. Gas /gal national (+32% from .98 pre-war), CA >. Source: Argus/DOE/Bloomberg/Goldman/Fortune/Reuters/CNBC",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "~0.75 mbd, oil REBOUNDING",
-          "note": "Day 25 13:29. Brent REBOUNDING +3.5% to .7, WTI +4% to .72. Market skepticism: Iran denied talks. Interactive Brokers Torres: risk of extended war top of mind. Capacity/transport disruptions may keep costs high even WITH deal. Source: CNBC",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-03-24",
-          "est": "~0.75 mbd first batch, oil REBOUNDING Tue",
-          "note": "Day 25 D+10. First SPR shipments began Fri Mar 21 (Argus). DOE 45.2M bbl to Shell/Marathon/BP/Gunvor. Apr-May delivery = ~0.75 mbd. Mon close: Brent .94 (-11%), WTI .52 (-9.9%) on Trump talks claim. BUT Tue rebound: Brent +3.5% to ~, WTI +4% to ~ as Iran denies talks + Jerusalem missile hit. Market WHIPSAWING between diplomacy hope and war reality. SPR trickle IRRELEVANT vs /bbl daily swings from geopolitical signals. Gas: .96/gal national avg (+33% from .98 pre-war). Source: Argus/CNBC/Guardian/NYT/Fortune/Investopedia",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-24",
           "est": "~0.75 mbd first batch, SPR NOISE vs diplomacy",
@@ -282,6 +168,12 @@
           "est": "~0.75 mbd first batch, D+14, SPR NOISE",
           "note": "Day 28 D+14. First batch still flowing since Mar 21. DOE 'record speed'. 45.2M bbl to Shell/Marathon/BP/Gunvor (52% subscribed). Apr-May delivery = ~0.75 mbd. 412M bbl global (32 countries). NTU: draws SPR to 243M bbl = lowest since 1982. MARKET: Brent $104.21 (+2%), WTI $92.17 (+2%) Thu — REBOUNDING on Iran rejecting direct talks (CNBC Mar 26). Oil whipsawing: $112→$98→$104. SPR trickle IRRELEVANT vs $15/bbl geopolitical swings. Gas ~$3.98/gal (+33%). TD Securities: Fed will 'look through' energy shock. Source: Argus/DOE/CNBC/TD Securities/NTU",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-26",
+          "est": "~0.75 mbd first batch, D+14, Brent REBOUNDING ",
+          "note": "Day 28 D+14. Bloomberg: 45M bbl release from SPR. DOE: deliveries at 'record speed'. 415M bbl SPR as of Mar 13 = 64 days (FlaglerLive). IEA members: 400M bbl collective. NPR: 150M+ bbl from TX/LA salt caverns. MARKET TODAY: Brent $104.04 (+rebound from $94.78 diplomacy dip), WTI $91.84. Gas: national avg ~$3.93 (AAA Mar 21), CA $5.83, TX $3.61, up $1 in March (Investopedia). SPR trickle IRRELEVANT vs $15/bbl geopolitical swings. Source: Bloomberg/DOE/FlaglerLive/NPR/Fortune/AAA/Investopedia",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +182,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "CHINA_TRANSIT_ANCHOR_BUT_NO_MEDIATION_ACTION",
+      "status": "RHETORIC_UPGRADE_NO_ACTION — Wang Yi 'glimmer of hope'",
       "last_check": "2026-03-26",
-      "findings": "Day 28. ★★★★ CHINA AS HORMUZ ANCHOR CUSTOMER: (1) CSMonitor: Chinese 'Newvoyager' sailed through Hormuz — first confirmed; (2) SCMP: 'Lucky Gas' transited via Larak Island to Oman; (3) Araghchi: China among 5 'friendly nations' with OPEN passage; (4) Lloyd's List: Chinese state-owned tanker paid ~$2M fee for safe passage; (5) China dispatched envoys + Wang Yi called Araghchi Mar 24 urging peace (Reuters); (6) Wikipedia: China-Iran intel cooperation ongoing (SWJ). BUT: China action is ECONOMIC (securing own supply) not GEOPOLITICAL (mediation/pressure). No substantive mediation push. Pakistan STILL primary broker (15-point plan via Army Chief Munir). ASSESSMENT: China crossing fp1 threshold for ECONOMIC action but NOT for political mediation. Source: CSMonitor/SCMP/Lloyd's List/Reuters/India Today/ISW"
+      "findings": "Day 28 21:00. ★★★ WANG YI RHETORIC UPGRADE: (1) China FM Wang Yi: 'glimmer of hope' in Iran war diplomacy (ChinaDaily/MilliChronicle Mar 26 TODAY); (2) Wang spoke with Iranian FM + regional counterparts, urged renewed dialogue; (3) Signals from both US and Iran suggesting willingness to re-engage diplomatically; (4) BUT Tehran publicly insists will NOT negotiate (Reuters Mar 26); (5) White House warned 'unleash hell' if Iran doesn't accept peace plan; (6) Wikipedia/JINSA: China providing limited material assistance (missile spare parts) + intel cooperation; (7) Chinese vessels CONTINUE using Larak Island route (Kpler/SCMP confirmed). NOISE FILTER: Wang Yi statement = RHETORIC not ACTION. No envoy deployed, no new mediation initiative, no naval presence change. China remains ANCHOR CUSTOMER of Iran's two-tier Hormuz regime, not MEDIATOR. ASSESSMENT: fp1 still below threshold. Wang Yi rhetoric ≠ Xi Jinping envoy/summit/naval deployment. Source: ChinaDaily/MilliChronicle/Reuters/JINSA/SCMP"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "MAXIMUM_CONTRADICTION_PLUS_BASE_DAMAGE",
+      "status": "MAXIMUM_CONTRADICTION_DEADLINE_APPROACHING",
       "last_check": "2026-03-26",
-      "findings": "Day 28. ★★★★★ CONTRADICTION DEEPENS: (1) 13 US bases nearly UNINHABITABLE — troops dispersed to hotels/offices (NYT Mar 25); (2) 82nd Airborne 2000 deploying with written orders (NYT/CNN/USAToday); (3) USS Abraham Lincoln continues flight ops (CENTCOM Mar 26); (4) Senate REJECTED War Powers 47-53 (Time/Politico); (5) Trump: 4 MORE DAYS before energy infrastructure (deadline ~Mar 29); (6) BUT: Trump says 'in negotiations right now', backed off energy strikes 'based on fact we're negotiating' (CNBC); (7) Iran FM: 'no intention of negotiating for now' but 'passed on to senior authorities' (Guardian/Reuters Mar 26); (8) Bloomberg: WH insists talks ongoing even as Tehran publicly rejects. PATTERN: PHYSICAL DAMAGE escalating (bases uninhabitable) while diplomatic RHETORIC intensifies. Ground prep (82nd) + carrier ops + base damage = war intensifying. Talks window narrowing to Mar 29 deadline. Source: NYT/DefSecAsia/CNN/USAToday/CENTCOM/Guardian/Reuters/Bloomberg"
+      "findings": "Day 28 21:00. ★★★★★ CONTRADICTION AT PEAK: (1) Trump Mar 3: escort 'as soon as possible' — STILL NOT HAPPENING (FP Mar 24: 'Empty Words'); (2) Trump Mar 23: postponed power plant strikes 5 days citing 'productive talks'; (3) NOW DEADLINE ~Mar 28-29 — 2-3 DAYS remaining; (4) Pentagon: 2,000 82nd Airborne troops deploying (NYT Mar 24); (5) Jalili: Trump shifted from 'escort' to 'insure' to 'manage jointly' = PROGRESSIVE WALK-BACK; (6) Iran DENIES talks entirely (NPR/Reuters Mar 26); (7) Trump today: Iran 'desperate for a deal' (Reuters); (8) Senate REJECTED War Powers 53-47 — Rand Paul LONE R YES (Time Mar 25); (9) 13 bases nearly uninhabitable (NYT Mar 25); (10) USS Lincoln continues flight ops (CENTCOM Mar 26). PATTERN: Military escalation + diplomatic rhetoric + approaching deadline = MAXIMUM TENSION. Either escalation to energy infrastructure or another face-saving extension by Mar 29. Source: FP/NPR/Reuters/NYT/Time/CENTCOM"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "THREE_FRAMEWORKS_IRAN_REJECTS_BUT_ENGAGES",
+      "status": "FORMAL_COUNTERPROPOSALS_EXCHANGED",
       "last_check": "2026-03-26",
-      "findings": "Day 28. ★★★★ STRUCTURED ENGAGEMENT DESPITE REJECTION: (1) Iran FORMALLY REJECTED 15-point plan (AP/Guardian Mar 25); (2) Iran issued OWN counterproposal: reparations + Hormuz sovereignty + Lebanon in ceasefire (NPR/Guardian); (3) Araghchi: 'no intention of negotiating for now' but proposal 'passed to senior authorities' (Guardian/Reuters Mar 26); (4) Bloomberg: WH insists talks ongoing; (5) Guardian analysis: 15-point plan is REHASH of pre-war nuclear talks (Guardian Mar 24); (6) UNSC: Bahrain draft 'all necessary means' + France rival text — vote pending, Russia/China likely VETO; (7) Iran IMO 'non-hostile vessels' framework ACTIVE — de facto unilateral transit regime. THREE frameworks competing: Iran bilateral counterproposal / Bahrain UNSC military / Iran unilateral IMO. ASSESSMENT: Formal rejection = negotiating posture. Counterproposal + 'passed to senior authorities' = engagement signal. 35-40% ceasefire framework within 2 weeks. Source: AP/Guardian/Reuters/Bloomberg/NPR/CNBC/Fox"
+      "findings": "Day 28 21:00. ★★★★★ HIGHEST FP3 SIGNAL YET: (1) Iran rejected US 15-point ceasefire plan (Guardian/AP Mar 25); (2) Iran countered with OWN 5-point 'non-negotiable' demands: reparations + Hormuz sovereignty + Lebanon in ceasefire (NPR/Guardian/OANN); (3) Reuters TODAY Mar 26: Iran says 'reviewing' US proposal, no intention of talks, but proposal 'passed to senior authorities'; (4) Trump: Iran 'desperate for a deal' (Reuters Mar 26); (5) Pakistan offering to mediate/host talks; (6) Gulf states: war poses 'existential threat' (ABC AU); (7) UN Human Rights Council condemned Iran; (8) UNSC: Bahrain draft vs France text pending vote; (9) ABC AU: some Iranian figures considering proposal despite public rejection. ASSESSMENT: FORMAL COUNTERPROPOSAL = ENGAGEMENT. Rejection is negotiating posture, not final position. Two structured proposals on table = first real fp3 materials. 40-45% ceasefire framework within 2 weeks (UP from 35-40%). Source: Guardian/AP/Reuters/NPR/OANN/ABC AU"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "COST_THRESHOLD_RISING_BASE_DAMAGE_NEW_VECTOR",
+      "status": "COST_RISING_NO_POLITICAL_BRAKE",
       "last_check": "2026-03-26",
-      "findings": "Day 28. ★★★★ BASE DAMAGE = NEW COST VECTOR: (1) 13 US bases nearly uninhabitable — troops in hotels/offices (NYT); (2) Gas ~$3.98/gal (+33%); (3) Brent $104, WTI $92 — REBOUNDING after ceasefire dip; (4) US dead: 21 total, 290+ wounded; (5) War cost $25B+ by week 4 (CAP); Pentagon requesting $200B supplemental (LAT); (6) Trump approval 36% (Reuters/Ipsos); (7) Senate BLOCKED War Powers 47-53; (8) TD Securities: Fed will 'look through' energy shock; (9) $500M suspicious trades before Trump delay (Reuters). NEW: Base uninhabitability = infrastructure replacement cost + force posture degradation. Not just casualties — operational capability being eroded. BUT political constraint (War Powers) REMOVED. ASSESSMENT: Cost accumulating on multiple vectors (fiscal/infrastructure/casualties) but NO domestic political mechanism to force stop. Source: NYT/AAA/CNBC/CAP/LAT/Reuters/Ipsos/TD Securities"
+      "findings": "Day 28 21:00. (1) Senate BLOCKED War Powers 53-47 — political brake REMOVED (Time/NYT Mar 24-25); (2) Rand Paul lone R yes vote; (3) House Dems 'clamping down on defections' for new vote (Axios Mar 24); (4) Alternative resolution: March 30 deadline to wind down (Cuellar); (5) US dead: 14 KIA confirmed + 6 crash + 1 health = 21 total (Wikipedia); (6) Gas up $1 in March: national ~$3.93, CA $5.83 (AAA/ET Mar 25); (7) War cost $25B+ in 4 weeks (CAP); Pentagon requesting $200B supplemental; (8) Trump approval 36% (Reuters/Ipsos); (9) 13 US bases uninhabitable (NYT). BUT: Republican bloc holds, no political mechanism to force stop. Cost accumulating on fiscal/infrastructure/casualty vectors but Congress NOT constraining. ASSESSMENT: fp4 SLOW BURN — costs rising but political threshold NOT breached. Would need major US casualties event or gas > national to trigger political inflection. Source: Time/NYT/Axios/AAA/ET/Wikipedia/CAP/Reuters/Ipsos"
     }
   },
   "noise_filter": {
