@@ -150,7 +150,7 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.9,
+      "probability": 0.93,
       "confidence": 0.85,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
@@ -167,7 +167,8 @@
         "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
         "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed.",
         "2026-03-23 Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed. (impact: up)",
-        "2026-03-26 Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time. (impact: up)"
+        "2026-03-26 Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time. (impact: up)",
+        "[2026-03-28] ISW: IRGC lowered recruitment age to 12 = manpower crisis. CENTCOM 10K+ targets struck. IDF expanded to Mashhad (NE-most). Tangsiri killed."
       ],
       "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: ISW Mar 19 confirmed combined force destroyed ~85% of Iran SAMs. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. 8000+ targets struck. Quantitative degradation confirmed by CENTCOM commander directly. Old: 0.72",
       "time_horizon": "持续",
@@ -560,7 +561,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.93,
+      "probability": 0.95,
       "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -587,7 +588,8 @@
         "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian).",
         "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks.",
         "[2026-03-26T01:10:13+08:00] BILATERAL PROPOSALS: US 15-point plan via Pakistan CONFIRMED received by Iran (AP/Reuters). Iran issued 5-condition counterproposal: reparations + Hormuz sovereignty (NPR/AP/NYT). US+Israel rejected counterproposal (Fox). Pakistan/Turkey offered as venue. Mutual written proposals = Schelling bargaining range established.",
-        "2026-03-26 Mar 26: Iran rejected 15-point plan verbally but sent tanker present (behavioral signal > verbal). Reuters: Iran reviewing proposal, passed to senior authorities. Trump: Iran desperate for deal. Formal counterproposals exchanged. (impact: up)"
+        "2026-03-26 Mar 26: Iran rejected 15-point plan verbally but sent tanker present (behavioral signal > verbal). Reuters: Iran reviewing proposal, passed to senior authorities. Trump: Iran desperate for deal. Formal counterproposals exchanged. (impact: up)",
+        "[2026-03-28] Guardian: UK NSA Powell secretly at Geneva. ISW: Iran rejected 15-pt but issued counterproposal + awaiting US response = structured exchange. UNSC 2817 adopted."
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: Both sides now have written proposals = structured negotiation framework. Iran counterproposal (despite public rejection) = SIGNAL of willingness to negotiate. Previous: 82% → 90%.",
       "time_horizon": "W4-16",
@@ -769,8 +771,8 @@
       "domains": [
         "金融"
       ],
-      "probability": 0.9,
-      "confidence": 0.8,
+      "probability": 0.98,
+      "confidence": 0.95,
       "evidence": [
         "Yahoo Finance: S&P -1.3% Friday, -2% weekly, NEGATIVE for the year",
         "ABC: Dow -453 points (-0.9%)",
@@ -780,7 +782,8 @@
         "[2026-03-11] S&P 6776 (drawdown -2.9%), VIX 24.23 — market absorbing shock better than expected, SPR provides psychological floor (credibility: 0.85)",
         "[2026-03-12] S&P -4.1% (approaching -5% threshold). VIX term structure inverted 27.2>26.8 = acute crisis pricing. Goldman revising forecasts",
         "[2026-03-13] S&P -4.4% cumulative, approaching -5% threshold (P1 extraction from Mar 10-13 news)",
-        "[2026-03-13] VIX 28.0 (up from 27.3 this AM). S&P -4.4% and war escalating with no off-ramp"
+        "[2026-03-13] VIX 28.0 (up from 27.3 this AM). S&P -4.4% and war escalating with no off-ramp",
+        "[2026-03-28] CNBC: Dow -800 entered correction territory. S&P 5th straight losing week. VIX 27.44."
       ],
       "reasoning": "定义: S&P 500从冲突前高点回撤>5%。当前: Dow -800, Russell -2.7%。80%因回撤可能已部分price-in且有技术性反弹风险。",
       "time_horizon": "W1-4",

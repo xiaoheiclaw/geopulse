@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-27T05:06:34.733374+00:00",
+  "last_updated": "2026-03-27T21:18:51.872612+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -80,6 +80,12 @@
           "date": "2026-03-27",
           "est": "1-2 declining, CENTCOM 10000+ targets, mass salvo era CONFIRMED over",
           "note": "Day 30. CENTCOM hit 10,000+ targets (NewsNation). 2/3 arms manufacturing destroyed (ToI). Israel killed IRGC Navy commander (Fox). IRGC volume STILL 1-2 at a time (Cooper confirmed). US dead: 21 total, 290+ wounded. Iran dead: 1,937+24,800 injured (AJE). 82nd Airborne 2-3K deploying. Trump April 6 deadline extended. PATTERN: Volume collapse + arms regeneration destroyed + leadership decapitation = IRGC residual-only. Source: CENTCOM/Fox/NewsNation/AJE",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-03-27",
+          "est": "1-2 declining, CENTCOM 10000+ targets, IDF sweeping EAST to Mashhad, IRGC Navy commander killed",
+          "note": "Day 31. ★★★★ NEW: (1) ISW Mar 26: Combined force struck MASHHAD (northeastern-most strikes) — Khorasan Razavi Province, 14th Artesh AF + 5th GF Aviation Base at Mashhad Int'l Airport; (2) CENTCOM hit 10,000+ targets (NewsNation); (3) IDF killed IRGC Navy Commander Rear Admiral Tangsiri in Bandar Abbas — ordered Hormuz closure (Fox/ISW); (4) ★ IRGC lowered minimum recruitment age to 12 (ISW) = MANPOWER CRISIS signal; (5) Hezbollah claimed 73 attacks in 24h on Israel; (6) 2/3 arms manufacturing destroyed (ToI); (7) IDF 600+ ballistic sites struck; (8) IRGC volume STILL 1-2 at a time — mass salvo era CONFIRMED over; (9) US dead: 14 KIA + 6 crash + 1 health = 21 total, 290+ wounded; (10) WashPost: ~1,500 Iranian CIVILIANS killed; (11) Brent SURGED to .57 close (+4.22%); (12) Dow -800 entered CORRECTION. PATTERN: IRGC military degradation accelerating — recruitment age 12 = desperate. Combined force expanding strike envelope east. Source: ISW/CENTCOM/Fox/NewsNation/WashPost/CNBC",
           "source": "pipeline"
         }
       ]
@@ -165,6 +171,12 @@
           "est": "~3-4 mbd (5-6 ships/day + Guardian 'trickle' + Iran 2-tier regime)",
           "note": "Day 30. Guardian Mar 26: only 4 ships spotted (1 Panama tanker inbound, 2 cargo, 1 LPG outbound) — 'Tehran tollbooth'. BBC Verify: ~100 ships Mar 1-20. Kpler: 138 ships March = 5-6/day. Iran's 2-tier regime: 5 friendly nations (CN/IN/RU/PK/IQ) open, US/Israel/Gulf BLOCKED. Trump confirmed Iran sent 8-10 tankers as 'present'. Thailand expanding beyond initial 5. CENTCOM planning F-16/F-18 + minesweep for strait clearing. Still 95% below pre-crisis (17-20 mbd). Source: Guardian/BBC/Kpler/Reuters/Atlantic",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-27",
+          "est": "~3-4 mbd (5-6 ships/day, NYT: 3000 vessels waiting)",
+          "note": "Day 31. ★★★ NYT Mar 26: ~3,000 vessels WAITING to pass — historic backlog. Kpler: 138 ships March = 5-6/day. Guardian: 'Tehran tollbooth' only 4 ships spotted on Mar 24. BBC: ~100 ships Mar 1-20. Iran two-tier regime: 5 friendly nations (CN/IN/RU/PK/IQ) open passage, US/Israel/Gulf BLOCKED. Trump confirmed 8-10 tanker 'present'. Thailand expanding beyond initial 5. CENTCOM planning F-16/F-18 + minesweep for strait clearing. Atlantic: CENTCOM to clear remaining attack craft. Still 95% below pre-crisis (17-20 mbd). Brent closed .57 — HIGHEST since 2022 on negotiation failure fears. Source: NYT/Guardian/BBC/Kpler/CNBC/Atlantic",
+          "source": "pipeline"
         }
       ]
     },
@@ -246,6 +258,12 @@
           "est": "~0.75 mbd first batch, D+16, further release 'highly unlikely'",
           "note": "Day 30 D+16. First batch flowing since Mar 21. 45.2M bbl to Shell/Marathon/BP/Gunvor. Energy Sec Chris Wright: further SPR release 'highly unlikely' (Reuters Mar 23). 172M bbl US total, 412M bbl global (32 countries). NTU: draws to 243M bbl = lowest since 1982. AJE: 172M = 4 months. MARKET: Brent ~108, WTI ~94.48, Gas ~3.98/gal. SPR trickle IRRELEVANT vs diplomacy-driven price swings. Source: Bloomberg/Reuters/DOE/NTU/AJE",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-27",
+          "est": "~0.75 mbd first batch, D+17, further release 'highly unlikely'",
+          "note": "Day 31 D+17. First batch still flowing since Mar 21. DOE 'record speed'. 45.2M bbl to Shell/Marathon/BP/Gunvor. Energy Sec Wright: further SPR release 'highly unlikely' (Reuters). 172M bbl US total, 412M bbl global (32 countries). NTU: draws to 243M bbl = lowest since 1982. Northern Trust: '400M bbl replaces only ~20 days of 20M bbl/day disruption'. GasBuddy: 'release won't have much impact at all'. MARKET: Brent .57 close (+4.22%), WTI .64 close (+5.46%). Gas .98/gal national (+33%). SPR trickle IRRELEVANT vs /bbl daily diplomacy swings. Source: Reuters/DOE/Northern Trust/GasBuddy/CNBC",
+          "source": "pipeline"
         }
       ]
     }
@@ -254,30 +272,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "RHETORIC_ACTIVE_NO_ACTION — China urging talks + envoy tours but no Xi-level engagement",
+      "status": "INTELLIGENCE_ACTION_NO_MEDIATION — JINSA: China deployed tracking vessels + targeting data for Iran",
       "last_check": "2026-03-27",
-      "findings": "Day 30. Reuters Mar 26: China urged 'meaningful and sincere peace talks'. Wang Yi spoke with Iran FM Araghchi. MFA: 'mediation efforts will not stop'. Zhai Jun GCC tour (Saudi/UAE/Bahrain/Kuwait/Egypt). Chinese vessels confirmed transiting (Newvoyager/Lucky Gas). Newsweek: China in dilemma — Iran lifeline vs Gulf oil dependency. BUT: STILL no Xi-level summit, no naval deployment, no sanctions threat. fp1 threshold NOT met. Source: Reuters/MFA/ChinaDaily/Newsweek/CSMonitor/SCMP"
+      "findings": "Day 31. ★★★★ JINSA Mar 26: China deployed vessels capable of tracking US fleet + providing targeting data for Iranian operations during US buildup. Wang Yi spoke with Iran FM Araghchi. MFA: 'mediation efforts will not stop'. Zhai Jun GCC tour continuing. Chinese vessels (Newvoyager/Lucky Gas) confirmed transiting. NYT: Trump is 'beseeching China to send naval expeditionary force to ME to help secure Hormuz' — IRONY noted. BUT: Still no Xi-level summit, no naval enforcement deployment, no sanctions threat. China ACTING as intelligence enabler for Iran while verbally mediating — DUAL ROLE confirmed. fp1 mediation threshold NOT met but INTELLIGENCE threshold crossed. Source: JINSA/NYT/Reuters/MFA"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTION_DEEPENING — April 6 extension + 82nd deploying + House vote delayed to mid-April",
+      "status": "CONTRADICTION_DEEPEST — April 6 deadline + 82nd deploying + Dow correction + 36% approval",
       "last_check": "2026-03-27",
-      "findings": "Day 30. ★★★★★ (1) Trump extended energy strike deadline 10 DAYS to April 6 'per Iranian Government request' (Reuters/NPR/CNBC); (2) Trump Mar 26: 'better get serious soon before too late' (CNBC); (3) 82nd Airborne 2-3K deploying; (4) Murkowski (R) drafting AUMF; (5) Senate blocked War Powers 53-47; (6) ★ NEW: House Democrats DELAYING war powers vote to MID-APRIL (Axios); (7) UK NSA Jonathan Powell secretly attended Geneva nuclear talks (Guardian); (8) Trump approval 36% NEW LOW. ASSESSMENT: Contradiction DEEPEST YET — extending deadline + deploying troops + approval cratering + Congressional constraint fragmenting. Source: Reuters/NPR/CNBC/Axios/Guardian/Time"
+      "findings": "Day 31. ★★★★★ (1) Trump extended energy strike deadline 10 DAYS to April 6 'per Iranian Government request'; (2) 82nd Airborne 2-3K deploying (written orders); (3) Senate blocked War Powers 53-47; (4) House Dems delayed vote to mid-April recess (Axios/DemocracyNow); (5) Murkowski (R) drafting AUMF — first R constraint; (6) Trump approval 36% NEW LOW (Reuters/Ipsos); (7) Dow -800 ENTERED CORRECTION, S&P 5th straight losing week; (8) CNBC: troops designed as 'coercive diplomacy' not ground offensive; (9) ISW: IRGC lowered recruitment to age 12 = mutual exhaustion signals. ASSESSMENT: Contradiction DEEPEST — extending deadline (de-escalation) while deploying troops (escalation) while market crashes + approval craters. April 6 + mid-April Congressional return = TWO pressure windows. Source: Reuters/NPR/CNBC/Axios/DemocracyNow/Time"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "BEHAVIORAL_DE-ESCALATION > VERBAL_REJECTION — 10-day extension + tanker present + UK at Geneva",
+      "status": "BEHAVIORAL_DE-ESCALATION >> VERBAL_REJECTION — 10-day extension + tanker present + UK Geneva + UNSC 2817",
       "last_check": "2026-03-27",
-      "findings": "Day 30. ★★★★★ fp3 STRONGEST: (1) Trump 10-day extension = both sides buying time; (2) Iran 8-10 tanker 'present'; (3) Iran 'reviewing' but calls plan 'maximalist unreasonable' (AP/AJE); (4) Iran counterproposal: Hormuz sovereignty + reparations; (5) ★ NEW: UK NSA Powell secretly attended US-Iran Geneva nuclear talks with Cabinet Office team (Guardian) = THIRD PARTY in room; (6) UNSC Res 2817 adopted; (7) France ceasefire text at UNSC; (8) Pakistan Army Chief Asim Munir = key interlocutor. ASSESSMENT: Behavioral signals > verbal rejection. 10-day extension + UK secret participation + tanker goodwill = 65% ceasefire framework within 2 weeks. Source: Reuters/AP/Guardian/NYT/JPost"
+      "findings": "Day 31. ★★★★★ fp3 STRONGEST: (1) Trump 10-day extension to April 6 = both sides buying time; (2) Iran 8-10 tanker 'present' = goodwill gesture; (3) UK NSA Jonathan Powell secretly attended US-Iran Geneva nuclear talks (Guardian); (4) UNSC Res 2817 adopted — demands Iran cease attacks on neighbors; (5) France ceasefire text at UNSC; (6) Pakistan Army Chief Asim Munir = key interlocutor; (7) Iran rejected 15-point plan but issued 5-condition counterproposal = ENGAGEMENT not refusal; (8) Iran 'reviewing' US proposals via Pakistan; (9) ISW: Iran officially sent rejection + awaiting US response = STRUCTURED BACK-AND-FORTH. ASSESSMENT: Behavioral signals overwhelmingly exceed verbal rejection. ~65-70% ceasefire framework within 2 weeks. April 6 deadline = forcing function. Source: Reuters/Guardian/NPR/ISW/Fox/NYT"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "COST_ACCELERATING + POLITICAL_CONSTRAINT_FRAGMENTING — munitions shortage + 36% approval + mid-April vote delay",
+      "status": "COST_ACCELERATING + MARKET_CORRECTION — munitions short + Dow correction +  Brent + 36% approval",
       "last_check": "2026-03-27",
-      "findings": "Day 30. (1) RUSI: 11,000+ munitions in 16 days at $26B, running SHORT (Telegraph); (2) Trump approval 36% NEW LOW (Reuters/Ipsos); (3) Gas $3.98/gal (+34% in month); (4) ★ NEW: House Democrats delaying war powers vote to mid-April = political constraint DELAYED not defeated (Axios); (5) Murkowski (R) drafting AUMF = first R constraint; (6) Senate blocked War Powers 53-47; (7) S&P 500 6,591.90 (+0.54% Mar 26 rebound); (8) Gold $4,418/oz; (9) VIX ~25-28; (10) 13 US bases uninhabitable. ASSESSMENT: Costs rising but political constraint fragmenting — Senate blocked, House delayed. April 6 + mid-April = TWO near-term pressure points. Source: RUSI/Telegraph/Reuters/Axios/AAA/CNBC"
+      "findings": "Day 31. (1) RUSI: 11,000+ munitions at B, running SHORT; (2) Trump approval 36% NEW LOW; (3) Gas .98/gal (+34%); (4) Brent closed .57 — HIGHEST since 2022; (5) WTI .64 — nearing  psychological barrier; (6) Dow -800 ENTERED CORRECTION; (7) S&P 5th straight losing week; (8) VIX 27.44; (9) Gold ,433/oz; (10) House war powers delayed to mid-April; (11) Murkowski AUMF = first R constraint; (12) WashPost: ~1,500 Iranian civilians killed; (13) 13 US bases uninhabitable (NYT); (14) ★ ISW: IRGC recruitment age lowered to 12 = BOTH sides showing exhaustion. ASSESSMENT: ECONOMIC COST THRESHOLD approaching — Dow correction + + Brent +  gas + 36% approval = political sustainability eroding. April 6 energy strike deadline = potential inflection. Source: RUSI/CNBC/Reuters/WashPost/ISW/AAA"
     }
   },
   "noise_filter": {
