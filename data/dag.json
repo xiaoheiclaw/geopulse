@@ -166,18 +166,8 @@
         "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
         "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
         "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed.",
-        {
-          "text": "Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed.",
-          "date": "2026-03-23",
-          "credibility": 0.9,
-          "impact_direction": "up"
-        },
-        {
-          "text": "Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time.",
-          "date": "2026-03-26",
-          "credibility": 0.9,
-          "impact_direction": "up"
-        }
+        "2026-03-23 Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed. (impact: up)",
+        "2026-03-26 Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time. (impact: up)"
       ],
       "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: ISW Mar 19 confirmed combined force destroyed ~85% of Iran SAMs. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. 8000+ targets struck. Quantitative degradation confirmed by CENTCOM commander directly. Old: 0.72",
       "time_horizon": "持续",
@@ -524,12 +514,7 @@
         "[2026-03-14] Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
         "USS Tripoli pulled from Taiwan waters creates Indo-Pacific gap + China mediation incentive",
         "US forces pulled from Taiwan waters, creating China action space + mediation incentive",
-        {
-          "date": "2026-03-26",
-          "text": "China as Hormuz anchor customer: 2 confirmed Chinese vessel transits, state-owned tanker paid $2M fee, Wang Yi called Araghchi Mar 24. Economic action confirmed but no political mediation.",
-          "source": "CSMonitor/SCMP/Lloyd s List/Reuters",
-          "impact": "+0.10"
-        }
+        "2026-03-26 China as Hormuz anchor customer: 2 confirmed Chinese vessel transits, state-owned tanker paid $2M fee, Wang Yi called Araghchi Mar 24. Economic action confirmed but no political mediation. [CSMonitor/SCMP/Lloyd s List/Reuters] (impact: +0.10)"
       ],
       "reasoning": "Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
       "time_horizon": "W2-12",
@@ -597,22 +582,12 @@
         "[2026-03-16] Iran FM offers safe passage talks - first diplomatic signal",
         "[2026-03-16] Pope demands ceasefire + Iran FM safe passage + Macron call = growing diplomatic pressure but no concrete offramp",
         "[2026-03-23 19:33] ★★★★★ REGIME SHIFT: Trump CONFIRMED direct talks with Iran — \"very good and productive conversations regarding complete and total resolution.\" POSTPONED power plant strikes 5 DAYS. First confirmed bilateral engagement since Witkoff rejections. Markets: Brent -8%, stocks surging. This is ACTION not rhetoric. (Reuters/Guardian/AJE/CNBC/NYT)",
-        {
-          "text": "Mar 23: Trump postponed power plant strikes 5 days, claimed productive conversations with Iran. Iran denies all negotiations. Brent crashed -13% to $96.91. Bloomberg/NYT/CNBC/AP confirmed.",
-          "date": "2026-03-23",
-          "credibility": 0.85,
-          "impact_direction": "up"
-        },
+        "2026-03-23 Mar 23: Trump postponed power plant strikes 5 days, claimed productive conversations with Iran. Iran denies all negotiations. Brent crashed -13% to $96.91. Bloomberg/NYT/CNBC/AP confirmed. (impact: up)",
         "[2026-03-24] UK NSA Powell secretly in Geneva (Guardian). Oman FM mediating, reports significant progress. Trump 5-day pause = diplomatic space. BUT Iran denies all talks. NYT: early stage, not substantive.",
         "[2026-03-25] US 15-point peace plan delivered to Iran via Pakistan Army Chief Asim Munir (NYT). Pakistan PM offers Islamabad venue. JD Vance may attend (Guardian).",
         "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks.",
         "[2026-03-26T01:10:13+08:00] BILATERAL PROPOSALS: US 15-point plan via Pakistan CONFIRMED received by Iran (AP/Reuters). Iran issued 5-condition counterproposal: reparations + Hormuz sovereignty (NPR/AP/NYT). US+Israel rejected counterproposal (Fox). Pakistan/Turkey offered as venue. Mutual written proposals = Schelling bargaining range established.",
-        {
-          "text": "Mar 26: Iran rejected 15-point plan verbally but sent tanker present (behavioral signal > verbal). Reuters: Iran reviewing proposal, passed to senior authorities. Trump: Iran desperate for deal. Formal counterproposals exchanged.",
-          "date": "2026-03-26",
-          "credibility": 0.82,
-          "impact_direction": "up"
-        }
+        "2026-03-26 Mar 26: Iran rejected 15-point plan verbally but sent tanker present (behavioral signal > verbal). Reuters: Iran reviewing proposal, passed to senior authorities. Trump: Iran desperate for deal. Formal counterproposals exchanged. (impact: up)"
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: Both sides now have written proposals = structured negotiation framework. Iran counterproposal (despite public rejection) = SIGNAL of willingness to negotiate. Previous: 82% → 90%.",
       "time_horizon": "W4-16",
@@ -1099,12 +1074,7 @@
         "[2026-03-24] Trump 5-day power plant strike postponement = FIRST de-escalation ACTION in 25 days. But strikes continue on both sides. IRGC still firing 1-2/day. IDF wide-scale wave on Tehran. Structural conditions for de-escalation not met.",
         "[2026-03-25] 15-point plan via Pakistan + 5-day power plant pause + Iran IMO transit offer. But 82nd Airborne deploying + B Pentagon request = hedging both ways.",
         "[2026-03-25] 15-point plan = first exit framework. BUT: 82nd Airborne +1000 troops, IRGC coordinated offensive, Iran denies talks, Pentagon $25B supplemental. Military escalation ACCELERATING during diplomatic track.",
-        {
-          "text": "Mar 26: Iran sent 8-10 tankers through Hormuz as present to Trump (Fox confirmed). First concrete behavioral de-escalation signal contradicting verbal rejection. Pakistan mediating. Iran reviewing 15-point plan despite public rejection.",
-          "date": "2026-03-26",
-          "credibility": 0.8,
-          "impact_direction": "up"
-        },
+        "2026-03-26 Mar 26: Iran sent 8-10 tankers through Hormuz as present to Trump (Fox confirmed). First concrete behavioral de-escalation signal contradicting verbal rejection. Pakistan mediating. Iran reviewing 15-point plan despite public rejection. (impact: up)",
         "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection."
       ],
       "reasoning": "10-day extension = STRONGEST de-escalation signal since war began. Both sides creating diplomatic space. Tanker present = first concrete Iranian goodwill gesture. Still NOT ceasefire — fighting continues. 52% reflects widened but uncertain window.",
@@ -1691,12 +1661,7 @@
         "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command.",
         "[2026-03-13] Iran fighting on multiple fronts simultaneously (Hormuz mining, Gulf drones, Riyadh, Israel missiles, Lebanon). Mosaic defense pattern",
         "[2026-03-18] Iran announced coordinated IRGC Navy+Army+Hezbollah offensive = central command still functioning, contradicts fragmentation thesis",
-        {
-          "text": "Mar 26: Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). Plus hardliner Zolghadr appointed as SNSC secretary (ISW). Leadership disruption accelerating.",
-          "date": "2026-03-26",
-          "credibility": 0.85,
-          "impact_direction": "up"
-        }
+        "2026-03-26 Mar 26: Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). Plus hardliner Zolghadr appointed as SNSC secretary (ISW). Leadership disruption accelerating. (impact: up)"
       ],
       "reasoning": "DOWNGRADED: Mar 18 coordinated multi-front offensive (IRGC Navy+Army+Hezbollah) demonstrates central command capability. Fragmentation is real at tactical level (proxy decentralization) but strategic coordination persists.",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
@@ -1823,12 +1788,7 @@
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
         "Senate chairman planning first public oversight hearing on war",
         "[2026-03-26T01:10:13+08:00] Trump approval CRASHES to 36% new low (Reuters/Ipsos Mar 25). Gas ~$3.98/gal (+33% from $2.98 pre-war). US dead: 21 total. CAP: war cost $25B by week 4. Pentagon $25B supplemental. Retail investors net sold first time since Nov 2023.",
-        {
-          "date": "2026-03-26",
-          "text": "Senate REJECTED War Powers resolution 47-53. Rand Paul lone R yes vote. Congressional check mechanism REMOVED. Domestic opposition exists but has NO political lever to force action.",
-          "source": "Time/Politico",
-          "impact": "-0.06"
-        }
+        "2026-03-26 Senate REJECTED War Powers resolution 47-53. Rand Paul lone R yes vote. Congressional check mechanism REMOVED. Domestic opposition exists but has NO political lever to force action. [Time/Politico] (impact: -0.06)"
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%.",
       "time_horizon": "",
@@ -2104,18 +2064,8 @@
       "evidence": [
         "[2026-03-14] (cred:0.8) Turkey got one ship through Hormuz Mar 13 with Iranian approval. IRGC policy: closed only to US/Israel/Western allies. Shadow fleet doing 50% of transits. — Wikipedia/Reuters/Guardian",
         "[2026-03-25] Iran told IMO \"non-hostile vessels\" may transit Hormuz if coordinated with Iranian authorities (Reuters). First formal institutional framework for transit.",
-        {
-          "date": "2026-03-26",
-          "text": "Iran FM confirms 5 friendly nations (CN/IN/RU/PK/IQ) open passage. Chinese ships Newvoyager + Lucky Gas confirmed transit via Larak. Lloyd s List 20+ vessels via Tehran-approved route at $2M/ship fee.",
-          "source": "CSMonitor/SCMP/India Today/Lloyd s List/ISW",
-          "impact": "+0.07"
-        },
-        {
-          "text": "Mar 26: Trump confirmed Iran allowed 8-10 oil tankers as present. Pakistani-flagged. Iran then apologized and sent 2 more. Araghchi: 5 friendly nations get open passage. Two-tier transit regime formalized.",
-          "date": "2026-03-26",
-          "credibility": 0.85,
-          "impact_direction": "up"
-        }
+        "2026-03-26 Iran FM confirms 5 friendly nations (CN/IN/RU/PK/IQ) open passage. Chinese ships Newvoyager + Lucky Gas confirmed transit via Larak. Lloyd s List 20+ vessels via Tehran-approved route at $2M/ship fee. [CSMonitor/SCMP/India Today/Lloyd s List/ISW] (impact: +0.07)",
+        "2026-03-26 Mar 26: Trump confirmed Iran allowed 8-10 oil tankers as present. Pakistani-flagged. Iran then apologized and sent 2 more. Araghchi: 5 friendly nations get open passage. Two-tier transit regime formalized. (impact: up)"
       ],
       "reasoning": "UPGRADED: Iran formalizing selective transit at IMO = institutional path from ad-hoc to structured regime. Combined with Bahrain UNSC draft = two competing frameworks emerging.",
       "node_type": "prediction",
@@ -2377,12 +2327,7 @@
         "[2026-03-16] Guardian: 13 US service members killed",
         "Pentagon confirmed Tyler Simmons (28) in Iraq tanker crash",
         "NPR cost analysis",
-        {
-          "text": "Mar 23: Wikipedia confirmed 14 US soldiers killed. AJE tracker: 13 US soldiers (lagging). Time: 13 as of Mar 10 article.",
-          "date": "2026-03-23",
-          "credibility": 0.9,
-          "impact_direction": "neutral"
-        }
+        "2026-03-23 Mar 23: Wikipedia confirmed 14 US soldiers killed. AJE tracker: 13 US soldiers (lagging). Time: 13 as of Mar 10 article. (impact: neutral)"
       ],
       "reasoning": "五角大楼确认，含伊拉克加油机坠毁4人"
     },
