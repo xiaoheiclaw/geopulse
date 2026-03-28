@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 86,
+  "version": 87,
   "updated": "2026-03-28T11:26:55.508001+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -1065,8 +1065,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.38,
-      "confidence": 0.55,
+      "probability": 0.33,
+      "confidence": 0.5,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1082,9 +1082,10 @@
         "2026-03-26 Mar 26: Iran sent 8-10 tankers through Hormuz as present to Trump (Fox confirmed). First concrete behavioral de-escalation signal contradicting verbal rejection. Pakistan mediating. Iran reviewing 15-point plan despite public rejection. (impact: up)",
         "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection.",
         "[2026-03-28] Houthis joined war + IDF nuclear strikes = deescalation more difficult",
-        "[2026-03-28] Houthi entry + IDF nuclear strikes (Arak/Bushehr) + Prince Sultan AB breach = ceasefire scope massively expanded. In-person talks imminent but framework increasingly fragile."
+        "[2026-03-28] Houthi entry + IDF nuclear strikes (Arak/Bushehr) + Prince Sultan AB breach = ceasefire scope massively expanded. In-person talks imminent but framework increasingly fragile.",
+        "Multi-front expansion: Houthis 2 salvos + Hezbollah 600+/24h + nuclear strikes on Arak/Bushehr DURING Pakistan talks"
       ],
-      "reasoning": "10-day extension = STRONGEST de-escalation signal since war began. Both sides creating diplomatic space. Tanker present = first concrete Iranian goodwill gesture. Still NOT ceasefire — fighting continues. 52% reflects widened but uncertain window.",
+      "reasoning": "巴基斯坦2天部长级会谈=最强外交信号,但多战线扩展(胡塞+真主党飙升+核设施打击)使停火范围更广更难。38%→33%。",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
@@ -2535,7 +2536,8 @@
         "红海航运战18个月经验(2024-2025 Houthi campaign)",
         "弹道导弹库存未受美伊战争消耗",
         "也门地形提供天然隐蔽，美军难以根除",
-        "[2026-03-28] Houthis launched barrage of ballistic missiles at Israel from Yemen — first attack since war began (CNN/Reuters/AJE/AP). INDEPENDENT capability confirmed."
+        "[2026-03-28] Houthis launched barrage of ballistic missiles at Israel from Yemen — first attack since war began (CNN/Reuters/AJE/AP). INDEPENDENT capability confirmed.",
+        "Reuters/CNN Mar 28: 2 salvos at Israel — first attack since war began, IDF intercepted. CNN: 2nd missile hours after first."
       ],
       "reasoning": "胡塞是新鲜战力，不是IRGC衰减的延伸。独立评估：红海经验+弹道导弹库存完整+地形优势=中高能力。限制因素：精度较IRGC低、供应链依赖伊朗(已受阻)",
       "last_updated": "2026-03-28T11:26:55.508001+00:00",
@@ -2548,15 +2550,16 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.45,
-      "confidence": 0.6,
+      "probability": 0.72,
+      "confidence": 0.75,
       "evidence": [
         "以色列持续打击南黎巴嫩",
         "火箭弹仍在射向以色列北部",
         "IDF地面入侵黎巴嫩夺取战略阵地",
-        "指挥层此前遭大规模斩首(2024寻呼机行动)"
+        "指挥层此前遭大规模斩首(2024寻呼机行动)",
+        "JPost Mar 28: 600+ attacks on Israel in 24h, DOUBLING prior peak — likely coercion for ceasefire"
       ],
-      "reasoning": "中度衰减。2024寻呼机行动+持续轰炸已削弱指挥链，但仍保有大量短程火箭和地面部队。能力在IRGC和胡塞之间",
+      "reasoning": "600+次/24h攻击=翻倍历史峰值,不可持续但展示残余能力远高于预期。独立评估,不继承IRGC衰减。",
       "last_updated": "2026-03-28T09:24:04.741688+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     },
@@ -3960,7 +3963,7 @@
     {
       "source": "houthi_joins_war",
       "target": "conflict_deescalation",
-      "weight": -0.15,
+      "weight": 0.15,
       "reasoning": "新战线使降级更困难,停火需覆盖更多方"
     },
     {
@@ -3972,7 +3975,7 @@
     {
       "source": "idf_nuclear_facility_strikes",
       "target": "ceasefire_backchannel",
-      "weight": -0.1,
+      "weight": 0.1,
       "reasoning": "核设施打击使停火谈判更复杂,伊朗可能以此为筹码拒绝"
     },
     {
