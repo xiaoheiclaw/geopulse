@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 85,
-  "updated": "2026-03-26T17:07:35.845481+00:00",
+  "version": 86,
+  "updated": "2026-03-28T11:26:55.508001+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -1065,7 +1065,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.45,
+      "probability": 0.38,
       "confidence": 0.55,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1081,14 +1081,15 @@
         "[2026-03-25] 15-point plan = first exit framework. BUT: 82nd Airborne +1000 troops, IRGC coordinated offensive, Iran denies talks, Pentagon $25B supplemental. Military escalation ACCELERATING during diplomatic track.",
         "2026-03-26 Mar 26: Iran sent 8-10 tankers through Hormuz as present to Trump (Fox confirmed). First concrete behavioral de-escalation signal contradicting verbal rejection. Pakistan mediating. Iran reviewing 15-point plan despite public rejection. (impact: up)",
         "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection.",
-        "[2026-03-28] Houthis joined war + IDF nuclear strikes = deescalation more difficult"
+        "[2026-03-28] Houthis joined war + IDF nuclear strikes = deescalation more difficult",
+        "[2026-03-28] Houthi entry + IDF nuclear strikes (Arak/Bushehr) + Prince Sultan AB breach = ceasefire scope massively expanded. In-person talks imminent but framework increasingly fragile."
       ],
       "reasoning": "10-day extension = STRONGEST de-escalation signal since war began. Both sides creating diplomatic space. Tanker present = first concrete Iranian goodwill gesture. Still NOT ceasefire — fighting continues. 52% reflects widened but uncertain window.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-24T23:52:39.833492+00:00",
+      "last_updated": "2026-03-28T11:26:55.508001+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "turkey_intervention": {
@@ -1391,7 +1392,7 @@
         "经济",
         "政治"
       ],
-      "probability": 0.9,
+      "probability": 0.92,
       "confidence": 0.8,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
@@ -1399,14 +1400,15 @@
         "精炼利润率扩张加速零售端涨幅",
         "[2026-03-12] Brent re-approaching $100 despite SPR. US retail gasoline lag ~2 weeks. $5/gal threshold approaching",
         "[2026-03-14] (cred:0.77) Day 15: Brent + confirmed for 2nd day, Goldman + March avg. 2-3 week lag to retail. Up from 0.75. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-16] Brent $103+ in Monday Asian session, sustained above $100"
+        "[2026-03-16] Brent $103+ in Monday Asian session, sustained above $100",
+        "[2026-03-28] Brent .57 (+4.22%), WTI .64 (+5.46%) touched  intraday. 5th straight losing week for S&P 500. Dow entered correction."
       ],
       "reasoning": "Gas .47/gal AAA (Mar 18), .70/gal EIA mid-March. CA >/gal. Diesel /gal. Up 27%+ since war start. South Pars strike + Brent -109 will push further. NYT: price jump feels different. 2026 Senate battleground states hit hardest.",
       "time_horizon": "W2-8",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-19T03:22+08:00",
+      "last_updated": "2026-03-28T11:26:55.508001+00:00",
       "created": "2026-03-07T01:09:27.227473Z"
     },
     "em_capital_outflow": {
@@ -2482,9 +2484,11 @@
       "confidence": 0.99,
       "evidence": [
         "[2026-03-28] Wikipedia: Houthis joined war Mar 28, ballistic missile toward Israel, Beersheba sirens",
-        "[2026-03-28] Houthi leader gave speech before attack"
+        "[2026-03-28] Houthi leader gave speech before attack",
+        "[2026-03-28] CONFIRMED: Houthis claimed responsibility for barrage of ballistic missiles at Israel — first attack from Yemen since war began (CNN/NYT/Reuters/AP/AJE Mar 28)."
       ],
-      "reasoning": "胡塞武装Mar 28正式加入战争,向以色列发射弹道导弹,触发贝尔谢巴警报。开辟新战线,增加美以多线作战压力。与真主党开辟的第二战线形成南北呼应。"
+      "reasoning": "胡塞武装Mar 28正式加入战争,向以色列发射弹道导弹,触发贝尔谢巴警报。开辟新战线,增加美以多线作战压力。与真主党开辟的第二战线形成南北呼应。",
+      "last_updated": "2026-03-28T11:26:55.508001+00:00"
     },
     "idf_nuclear_facility_strikes": {
       "id": "idf_nuclear_facility_strikes",
@@ -2524,16 +2528,17 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.75,
-      "confidence": 0.6,
+      "probability": 0.82,
+      "confidence": 0.75,
       "evidence": [
         "Mar 28: 胡塞弹道导弹攻击以色列Beersheba(首次参战)",
         "红海航运战18个月经验(2024-2025 Houthi campaign)",
         "弹道导弹库存未受美伊战争消耗",
-        "也门地形提供天然隐蔽，美军难以根除"
+        "也门地形提供天然隐蔽，美军难以根除",
+        "[2026-03-28] Houthis launched barrage of ballistic missiles at Israel from Yemen — first attack since war began (CNN/Reuters/AJE/AP). INDEPENDENT capability confirmed."
       ],
       "reasoning": "胡塞是新鲜战力，不是IRGC衰减的延伸。独立评估：红海经验+弹道导弹库存完整+地形优势=中高能力。限制因素：精度较IRGC低、供应链依赖伊朗(已受阻)",
-      "last_updated": "2026-03-28T09:24:04.741688+00:00",
+      "last_updated": "2026-03-28T11:26:55.508001+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     },
     "hezbollah_capability": {
