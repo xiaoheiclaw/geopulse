@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 84,
+  "version": 85,
   "updated": "2026-03-26T17:07:35.845481+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -2516,6 +2516,63 @@
         "[2026-03-28] NYT: 12 US troops injured at Prince Sultan Air Base Saudi Arabia, 2 seriously — most serious breach since war began"
       ],
       "reasoning": "Prince Sultan空军基地位于沙特,12名美军受伤(2人重伤)是战争以来最严重的基地突破事件。此前NYT已报道13个美军基地几乎不适合居住。沙特盟友领土上的美军伤亡加重政治压力。"
+    },
+    "houthi_capability": {
+      "id": "houthi_capability",
+      "label": "胡塞武装作战能力(弹道导弹+红海经验)",
+      "node_type": "state",
+      "domains": [
+        "军事"
+      ],
+      "probability": 0.75,
+      "confidence": 0.6,
+      "evidence": [
+        "Mar 28: 胡塞弹道导弹攻击以色列Beersheba(首次参战)",
+        "红海航运战18个月经验(2024-2025 Houthi campaign)",
+        "弹道导弹库存未受美伊战争消耗",
+        "也门地形提供天然隐蔽，美军难以根除"
+      ],
+      "reasoning": "胡塞是新鲜战力，不是IRGC衰减的延伸。独立评估：红海经验+弹道导弹库存完整+地形优势=中高能力。限制因素：精度较IRGC低、供应链依赖伊朗(已受阻)",
+      "last_updated": "2026-03-28T09:24:04.741688+00:00",
+      "created": "2026-03-28T09:24:04.741688+00:00"
+    },
+    "hezbollah_capability": {
+      "id": "hezbollah_capability",
+      "label": "真主党作战能力(火箭+地面)",
+      "node_type": "state",
+      "domains": [
+        "军事"
+      ],
+      "probability": 0.45,
+      "confidence": 0.6,
+      "evidence": [
+        "以色列持续打击南黎巴嫩",
+        "火箭弹仍在射向以色列北部",
+        "IDF地面入侵黎巴嫩夺取战略阵地",
+        "指挥层此前遭大规模斩首(2024寻呼机行动)"
+      ],
+      "reasoning": "中度衰减。2024寻呼机行动+持续轰炸已削弱指挥链，但仍保有大量短程火箭和地面部队。能力在IRGC和胡塞之间",
+      "last_updated": "2026-03-28T09:24:04.741688+00:00",
+      "created": "2026-03-28T09:24:04.741688+00:00"
+    },
+    "axis_combined_pressure": {
+      "id": "axis_combined_pressure",
+      "label": "抵抗轴心综合压力(三线联合)",
+      "node_type": "state",
+      "domains": [
+        "军事",
+        "政治"
+      ],
+      "probability": 0.7,
+      "confidence": 0.55,
+      "evidence": [
+        "IRGC正面(衰减中)+真主党北线(中度衰减)+胡塞南线(新鲜)",
+        "三线同时施压分散美以防御资源",
+        "但各线独立作战能力差异大，不能等同视之"
+      ],
+      "reasoning": "三线压力之和>任一单线。即使IRGC在衰减，胡塞新入场+真主党维持=综合压力不一定在下降。需独立评估每条线后再综合",
+      "last_updated": "2026-03-28T09:24:04.741688+00:00",
+      "created": "2026-03-28T09:24:04.741688+00:00"
     }
   },
   "edges": [
@@ -3918,6 +3975,36 @@
       "target": "us_military_casualties",
       "weight": 0.15,
       "reasoning": "沙特基地突破显示美军基地脆弱性持续"
+    },
+    {
+      "source": "houthi_capability",
+      "target": "axis_combined_pressure",
+      "weight": 0.7,
+      "reasoning": "胡塞新鲜战力贡献综合压力。弹道导弹威胁以色列南部+红海航运"
+    },
+    {
+      "source": "hezbollah_capability",
+      "target": "axis_combined_pressure",
+      "weight": 0.6,
+      "reasoning": "真主党北线火箭+地面威胁。中度衰减但仍有效"
+    },
+    {
+      "source": "irgc_command_fragmentation",
+      "target": "axis_combined_pressure",
+      "weight": 0.5,
+      "reasoning": "IRGC主力严重衰减(82%碎片化)但仍是协调中心"
+    },
+    {
+      "source": "axis_combined_pressure",
+      "target": "conflict_protracted",
+      "weight": 0.75,
+      "reasoning": "三线联合压力延长冲突。美以需要同时应对三个方向"
+    },
+    {
+      "source": "houthi_capability",
+      "target": "regional_spillover",
+      "weight": 0.6,
+      "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
   "last_updated": "2026-03-28T07:27:06.672280Z",
