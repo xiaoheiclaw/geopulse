@@ -459,14 +459,16 @@
         "军事",
         "政治"
       ],
-      "probability": 0.65,
+      "probability": 0.72,
       "confidence": 0.65,
       "evidence": [
         "[2026-03-13] Isfahan uranium retrievable + Iran claims 11 bombs capability (P1 extraction from Mar 10-13 news)",
         "[2026-03-13] Netanyahu claims Israeli strikes killed top nuclear scientists. Reduces near-term breakout capability. Counter: may increase desperation",
         "[2026-03-13 PM] Nuclear scientists killed by Israel - program capability degraded",
         "[2026-03-13] (NYT, cred:0.85) Isfahan buried uranium recoverable per US intelligence",
-        "[2026-03-13] (Iran state media, cred:0.6) Iran claims 460kg 60% enriched uranium, enough for 11 weapons"
+        "[2026-03-13] (Iran state media, cred:0.6) Iran claims 460kg 60% enriched uranium, enough for 11 weapons",
+        "[2026-03-26] Reuters: Iranian hardliners intensified calls to develop nuclear weapon",
+        "[2026-03-27] IDF struck Arak heavy water reactor + Bushehr 3rd time — physical capability degraded but political will increased"
       ],
       "reasoning": "定义: 伊朗浓缩铀纯度突破60%→90%(武器级)或IAEA报告显著偏离。当前: 常规威慑丧失增加核补偿动机。45%因技术障碍+以色列精准打击核设施。",
       "time_horizon": "W8-24",
@@ -1063,7 +1065,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.52,
+      "probability": 0.45,
       "confidence": 0.55,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1078,7 +1080,8 @@
         "[2026-03-25] 15-point plan via Pakistan + 5-day power plant pause + Iran IMO transit offer. But 82nd Airborne deploying + B Pentagon request = hedging both ways.",
         "[2026-03-25] 15-point plan = first exit framework. BUT: 82nd Airborne +1000 troops, IRGC coordinated offensive, Iran denies talks, Pentagon $25B supplemental. Military escalation ACCELERATING during diplomatic track.",
         "2026-03-26 Mar 26: Iran sent 8-10 tankers through Hormuz as present to Trump (Fox confirmed). First concrete behavioral de-escalation signal contradicting verbal rejection. Pakistan mediating. Iran reviewing 15-point plan despite public rejection. (impact: up)",
-        "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection."
+        "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection.",
+        "[2026-03-28] Houthis joined war + IDF nuclear strikes = deescalation more difficult"
       ],
       "reasoning": "10-day extension = STRONGEST de-escalation signal since war began. Both sides creating diplomatic space. Tanker present = first concrete Iranian goodwill gesture. Still NOT ceasefire — fighting continues. 52% reflects widened but uncertain window.",
       "time_horizon": "W12-24+",
@@ -1654,7 +1657,7 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.75,
+      "probability": 0.82,
       "confidence": 0.65,
       "evidence": [
         "FM阿拉格齐: 军事单位已转入去中心化模式,31个自治省级单位",
@@ -1664,7 +1667,9 @@
         "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command.",
         "[2026-03-13] Iran fighting on multiple fronts simultaneously (Hormuz mining, Gulf drones, Riyadh, Israel missiles, Lebanon). Mosaic defense pattern",
         "[2026-03-18] Iran announced coordinated IRGC Navy+Army+Hezbollah offensive = central command still functioning, contradicts fragmentation thesis",
-        "2026-03-26 Mar 26: Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). Plus hardliner Zolghadr appointed as SNSC secretary (ISW). Leadership disruption accelerating. (impact: up)"
+        "2026-03-26 Mar 26: Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). Plus hardliner Zolghadr appointed as SNSC secretary (ISW). Leadership disruption accelerating. (impact: up)",
+        "[2026-03-26] IDF killed IRGC Navy Commander Tangsiri + Intel Deputy Rezaei in Bandar Abbas",
+        "[2026-03-26] ISW: IRGC lowered recruitment age to 12 — manpower crisis signal"
       ],
       "reasoning": "DOWNGRADED: Mar 18 coordinated multi-front offensive (IRGC Navy+Army+Hezbollah) demonstrates central command capability. Fragmentation is real at tactical level (proxy decentralization) but strategic coordination persists.",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
@@ -2464,6 +2469,53 @@
       ],
       "reasoning": "Multi-source confirmed: Bloomberg, NYT, AP, CNN, AJE, Guardian, JPost all report Israel struck South Pars with US coordination. Iranian state media confirmed. AP: shared field with Qatar. This is the single most significant escalation — crosses energy infrastructure Rubicon.",
       "last_updated": "2026-03-19T03:22+08:00"
+    },
+    "houthi_joins_war": {
+      "id": "houthi_joins_war",
+      "label": "胡塞武装加入战争(弹道导弹攻击以色列)",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "地缘"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "[2026-03-28] Wikipedia: Houthis joined war Mar 28, ballistic missile toward Israel, Beersheba sirens",
+        "[2026-03-28] Houthi leader gave speech before attack"
+      ],
+      "reasoning": "胡塞武装Mar 28正式加入战争,向以色列发射弹道导弹,触发贝尔谢巴警报。开辟新战线,增加美以多线作战压力。与真主党开辟的第二战线形成南北呼应。"
+    },
+    "idf_nuclear_facility_strikes": {
+      "id": "idf_nuclear_facility_strikes",
+      "label": "IDF打击伊朗核设施(阿拉克+布什尔)",
+      "node_type": "event",
+      "domains": [
+        "军事",
+        "核"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "[2026-03-27] ToI: IDF confirmed bombing Arak heavy water reactor — 'key plutonium infrastructure'",
+        "[2026-03-28] CNN: Bushehr nuclear plant struck THIRD TIME Friday night",
+        "[2026-03-26] ISW: IDF used 60+ fighter jets, 150+ munitions against weapons production infrastructure at Parchin"
+      ],
+      "reasoning": "IDF对阿拉克重水反应堆和布什尔核电站的打击标志着核升级新阶段。Parchin武器生产设施也被60+战斗机、150+弹药打击。可能加速伊朗核武化决心(硬liner calls for nuclear weapon - Reuters),也可能降低其核能力。"
+    },
+    "prince_sultan_base_breach": {
+      "id": "prince_sultan_base_breach",
+      "label": "Prince Sultan AB遭袭(12美军受伤,沙特最严重基地突破)",
+      "node_type": "event",
+      "domains": [
+        "军事"
+      ],
+      "probability": 1.0,
+      "confidence": 0.99,
+      "evidence": [
+        "[2026-03-28] NYT: 12 US troops injured at Prince Sultan Air Base Saudi Arabia, 2 seriously — most serious breach since war began"
+      ],
+      "reasoning": "Prince Sultan空军基地位于沙特,12名美军受伤(2人重伤)是战争以来最严重的基地突破事件。此前NYT已报道13个美军基地几乎不适合居住。沙特盟友领土上的美军伤亡加重政治压力。"
     }
   },
   "edges": [
@@ -3836,9 +3888,39 @@
       "target": "oil_price_100",
       "weight": 0.9,
       "reasoning": "AJE: oil prices surged after South Pars strike."
+    },
+    {
+      "source": "houthi_joins_war",
+      "target": "us_coercive_escalation_ladder",
+      "weight": 0.3,
+      "reasoning": "胡塞新战线增加美以多线作战成本,提升升级阶梯压力"
+    },
+    {
+      "source": "houthi_joins_war",
+      "target": "conflict_deescalation",
+      "weight": -0.15,
+      "reasoning": "新战线使降级更困难,停火需覆盖更多方"
+    },
+    {
+      "source": "idf_nuclear_facility_strikes",
+      "target": "irgc_nuclear",
+      "weight": 0.2,
+      "reasoning": "核设施被打击可能加速硬liner核武化决心,也降低物理能力"
+    },
+    {
+      "source": "idf_nuclear_facility_strikes",
+      "target": "ceasefire_backchannel",
+      "weight": -0.1,
+      "reasoning": "核设施打击使停火谈判更复杂,伊朗可能以此为筹码拒绝"
+    },
+    {
+      "source": "prince_sultan_base_breach",
+      "target": "us_military_casualties",
+      "weight": 0.15,
+      "reasoning": "沙特基地突破显示美军基地脆弱性持续"
     }
   ],
-  "last_updated": "2026-03-26T01:10:13+08:00",
+  "last_updated": "2026-03-28T07:27:06.672280Z",
   "updated_at": "2026-03-11T21:31:59.788167+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
