@@ -644,8 +644,8 @@
         "军事",
         "政治"
       ],
-      "probability": 0.42,
-      "confidence": 0.5,
+      "probability": 0.48,
+      "confidence": 0.55,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
         "Trump: virtually unlimited supply of heavy weaponry",
@@ -663,7 +663,7 @@
         "[2026-03-25] Trump approved 1000+ 82nd Airborne deployment (NBC). Pentagon $25B supplemental. BUT could be negotiation leverage not invasion prep.",
         "[2026-03-27] 82nd Airborne 2-3K deploying BUT CNBC analysis: coercive diplomacy not ground invasion prep. Trump 10-day extension reduces urgency. RUSI: US burned 11000+ munitions in 16 days — weapons shortage concerns (Telegraph)."
       ],
-      "reasoning": "82nd Airborne deployment + weapons shortage + 10-day extension = troops as leverage not invasion. Probability reduced from 50% to 42%. Key trigger: if April 6 deadline passes without progress, re-evaluate.",
+      "reasoning": "2,500 Marines ARRIVED (AP Mar 29). Pentagon considering 10,000 MORE ground troops (WSJ). Iran parliament: waiting for US troops on ground. Total potential 17K ground force. Significant escalation from deployment to presence.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
@@ -1065,7 +1065,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.33,
+      "probability": 0.28,
       "confidence": 0.5,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1085,7 +1085,7 @@
         "[2026-03-28] Houthi entry + IDF nuclear strikes (Arak/Bushehr) + Prince Sultan AB breach = ceasefire scope massively expanded. In-person talks imminent but framework increasingly fragile.",
         "Multi-front expansion: Houthis 2 salvos + Hezbollah 600+/24h + nuclear strikes on Arak/Bushehr DURING Pakistan talks"
       ],
-      "reasoning": "巴基斯坦2天部长级会谈=最强外交信号,但多战线扩展(胡塞+真主党飙升+核设施打击)使停火范围更广更难。38%→33%。",
+      "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
@@ -2164,10 +2164,10 @@
       "domains": [
         "military"
       ],
-      "probability": 0.92,
-      "confidence": 0.85,
+      "probability": 0.97,
+      "confidence": 0.92,
       "node_type": "fact",
-      "reasoning": "31st MEU + USS Tripoli deploying. Tripoli spotted near Taiwan (>1 week from ME). MEU can do amphibious landings but also embassy security/evacuation.",
+      "reasoning": "2,500 Marines confirmed ARRIVED in region (AP Mar 29). USS Tripoli deployed. 82nd Airborne 2-3K en route. Pentagon 10K more under consideration (WSJ).",
       "evidence": [
         "[2026-03-14] WSJ first reported. Anonymous US official confirmed. Satellite spotted Tripoli near Taiwan. (Source: WSJ/AP/satellite, Credibility: 0.88)"
       ]
@@ -2529,8 +2529,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.82,
-      "confidence": 0.75,
+      "probability": 0.88,
+      "confidence": 0.8,
       "evidence": [
         "Mar 28: 胡塞弹道导弹攻击以色列Beersheba(首次参战)",
         "红海航运战18个月经验(2024-2025 Houthi campaign)",
@@ -2539,7 +2539,7 @@
         "[2026-03-28] Houthis launched barrage of ballistic missiles at Israel from Yemen — first attack since war began (CNN/Reuters/AJE/AP). INDEPENDENT capability confirmed.",
         "Reuters/CNN Mar 28: 2 salvos at Israel — first attack since war began, IDF intercepted. CNN: 2nd missile hours after first."
       ],
-      "reasoning": "胡塞是新鲜战力，不是IRGC衰减的延伸。独立评估：红海经验+弹道导弹库存完整+地形优势=中高能力。限制因素：精度较IRGC低、供应链依赖伊朗(已受阻)",
+      "reasoning": "Houthis sustained 2nd wave cruise+drones at Israel Mar 28 — CONFIRMED INDEPENDENT + SUSTAINED. First attack since war began. INDEPENDENT capability node, NOT inheriting IRGC degradation.",
       "last_updated": "2026-03-28T11:26:55.508001+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     },
@@ -2571,14 +2571,14 @@
         "军事",
         "政治"
       ],
-      "probability": 0.7,
-      "confidence": 0.55,
+      "probability": 0.8,
+      "confidence": 0.65,
       "evidence": [
         "IRGC正面(衰减中)+真主党北线(中度衰减)+胡塞南线(新鲜)",
         "三线同时施压分散美以防御资源",
         "但各线独立作战能力差异大，不能等同视之"
       ],
-      "reasoning": "三线压力之和>任一单线。即使IRGC在衰减，胡塞新入场+真主党维持=综合压力不一定在下降。需独立评估每条线后再综合",
+      "reasoning": "3 INDEPENDENT fronts now active: IRGC residual (1-2/day) + Houthis sustained (2 waves) + Hezbollah surge (600+/24h). Economic infrastructure targeting (Bahrain/UAE smelters) = new dimension. War WIDENING across all axes.",
       "last_updated": "2026-03-28T09:24:04.741688+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     }
