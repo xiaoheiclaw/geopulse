@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-28T23:25:47.892114+00:00",
+  "last_updated": "2026-03-29T14:47:02.024671+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -93,6 +93,12 @@
           "est": "1-2 declining (IRGC), Houthis 2 salvos at Israel (INDEPENDENT), Hezbollah 600+/24h",
           "note": "Day 34. ★★★★★ ISW Mar 26: IDF 60+ jets, 150+ munitions on Parchin (Tehran Province). CENTCOM Mar 27: struck Iranian radar + bulldozers clearing tunnel entrances. IDF struck Mashhad (NE-most). 15 US KIA confirmed (Wikipedia). Houthis ENTERED WAR Mar 28 — barrage of ballistic missiles at Israel (WashPost/Reuters/CNN Mar 28). Hezbollah 600+ attacks/24h DOUBLING peak (JPost). CENTCOM 10,000+ targets. 2/3 arms manufacturing destroyed. IRGC Navy Commander Tangsiri killed (Fox/ISW). IRGC lowered recruitment age to 12 (ISW). Prince Sultan AB hit — 12 US injured, 2 seriously (NYT). Reuters: US can only confirm ~1/3 missile arsenal destroyed (not 85%). PATTERN: IRGC volume collapse CONFIRMED but 2 INDEPENDENT fronts activated — Houthis + Hezbollah surge. Each assessed as INDEPENDENT capability node. Source: ISW/CENTCOM/WashPost/Reuters/CNN/JPost/Fox/NYT",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-29",
+          "est": "1-2 declining (IRGC), Houthis 2ND WAVE cruise+drones at Israel, Iran new wave missiles Sunday",
+          "note": "Day 34 PM. ★★★★★ MULTI-FRONT SUSTAINED: (1) Houthis SECOND WAVE — cruise missiles + drones at Israel targeting military sites (NYT/Guardian/HindustanTimes). Confirms INDEPENDENT SUSTAINED capability, not one-off; (2) Iran fired NEW WAVE of missiles at Israel on Sunday (The Hindu); (3) IRGC attacked aluminium smelters in Bahrain (ALBA, 2 wounded) + UAE (EGA) — ECONOMIC INFRASTRUCTURE targeting = NEW escalation dimension (AJE); (4) UAE air defenses ACTIVELY ENGAGING missiles+drones, sounds across country; (5) Kuwait intercepting attacks early Sunday; (6) Saudi intercepted 10 drones; (7) IRGC threatened US university campuses in Gulf (NYU Abu Dhabi, Texas A&M Qatar); (8) US/Israeli strikes hit Iran port city near Hormuz (ArabNews); (9) Iran found 120+ unexploded cluster bombs in southern province; (10) IDF soldier killed in southern Lebanon; (11) US Marines arriving in region; (12) Pentagon considering 10,000 MORE ground troops (WSJ) on top of 7,000 already en route = potential 17K ground force. IRGC volume STILL 1-2 at a time but Houthis 2nd wave + economic targeting + Gulf-wide strikes = WAR WIDENING across all dimensions. Source: NYT/Guardian/AJE/HindustanTimes/CBS/ArabNews/TheHindu/Reuters",
+          "source": "heartbeat"
         }
       ]
     },
@@ -189,6 +195,12 @@
           "est": "~3-4 mbd (4-6 ships/day, CBS: IRGC reiterated CLOSURE, Houthi Red Sea threat RENEWED)",
           "note": "Day 34. ★★★ CBS Mar 28: Lloyd's tracked 33 transits via Larak in 2nd half March, ZERO via common southern route. CNN: 'almost all traffic stopped'. IRGC Navy REITERATED Hormuz CLOSED (CBS). WashPost Mar 28: Houthi missile attack stokes fears of RENEWED Red Sea shipping strikes — dual chokepoint threat (Hormuz + Bab el-Mandeb). Pakistan hosting 2-day ministerial talks starting Sunday Mar 29 (SA/Turkey/Egypt FMs). Oxford: impassable until May. ~3,000 vessels waiting (NYT). Iran blocked 2 Chinese ships Mar 27. Thailand PM confirmed agreement. USNI: 142 transits Mar 1-25 vs 2,652 same period 2025 = 94.6% decline. Source: CBS/CNN/WashPost/Oxford/NYT/USNI/Reuters",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-29",
+          "est": "~3-4 mbd (4-6 ships/day, 2 LPG carriers to India, Pakistan 20 ships deal, Hormuz port city struck)",
+          "note": "Day 34 PM. ★★★ TRANSIT: (1) Two LPG carriers (BW TYR + BW ELM) safely transited — 94,000 MT cooking gas en route to India (TimesNow); (2) Pakistan FM Dar: Iran allowing 20 Pakistan-flagged ships (2/day) through Hormuz (ArabNews); (3) BUT US/Israeli strikes hit Iran port city NEAR Hormuz (Bandar Abbas area) — escalation near waterway; (4) IRGC Navy REITERATED Hormuz CLOSED (CBS); (5) USNI/Lloyds: 142 transits Mar 1-25 vs 2,652 in 2025 = 94.6% decline still; (6) Reuters: Pakistan talks focused on Hormuz reopening proposals as priority. PATTERN: Micro-improvements (India LPG, Pakistan deal) but macro picture unchanged — 95% decline, IRGC doubling down, strikes near strait. Source: TimesNow/ArabNews/CBS/USNI/Reuters",
+          "source": "heartbeat"
         }
       ]
     },
@@ -291,29 +303,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "VERBAL_MEDIATION + MATERIAL_SUPPORT — no paradigm shift, Iran blocked 2 Chinese ships",
-      "last_check": "2026-03-28",
-      "findings": "Day 34. China MFA Mar 25: 'diplomatic mediation efforts will not stop'. CSMonitor Mar 25: first Chinese container ship 'Newvoyager' transited Hormuz. Iran FM Araghchi: 5 'friendly nations' (CN/IN/RU/PK/IQ) open passage. BUT: (1) Iran blocked 2 Chinese ships Mar 27 (Wikipedia) — FRICTION in friendly-nation framework; (2) Trump asked China to send naval force — DECLINED (NYT); (3) Atlantic Council Mar 25: China/Russia supplying Iran with drones/anti-ship missiles/SAMs. ASSESSMENT: China verbal mediation + material support to Iran. fp1 threshold NOT met — no paradigm-shifting action. Source: China MFA/CSMonitor/Atlantic Council/NYT/Wikipedia"
+      "last_check": "2026-03-29",
+      "findings": "Day 34 PM. No new China action today. China not present at Pakistan Quad (SA/Turkey/Egypt/Pakistan). Two Chinese ships blocked Mar 27 remains latest friction point. fp1 threshold NOT met. Source: Reuters/Guardian"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTION_MAXIMUM — Trump paused energy strikes Apr 6 + Pakistan talks Sunday WHILE IDF bombs nuclear sites + Houthis enter + Hezbollah 600+/24h",
-      "last_check": "2026-03-28",
-      "findings": "Day 34. ★★★★★ fp2 PEAK SUSTAINED: (1) Trump PAUSED energy plant strikes to Apr 6 'per Iranian request' (Reuters Mar 26); (2) Iran REJECTED 15-point plan, counter-proposed sovereignty/reparations/Lebanon; (3) Pakistan 2-day ministerial talks Sun Mar 29 (SA/Turkey/Egypt); (4) BUT IDF struck Arak + Bushehr 3rd time = NUCLEAR ESCALATION during peace talks; (5) Houthis launched 2 salvos at Israel = NEW FRONT; (6) Hezbollah 600+ attacks/24h; (7) Senate blocked War Powers 53-47 (3rd time), House delayed to mid-April; (8) Trump won't call it 'war' to avoid War Powers (Axios); (9) 15 US KIA + 300+ wounded; (10) WashPost: Houthi missiles stoke Red Sea shipping fears. ASSESSMENT: Diplomacy track + nuclear escalation + 2 new fronts = MAXIMUM contradiction. Source: Reuters/Guardian/Axios/JPost/WashPost/NYT"
+      "status": "CONTRADICTION PEAK — Pakistan talks STARTED + Vance \"accomplished objectives\" WHILE 10K more troops + aluminium strikes + Hormuz port city struck",
+      "last_check": "2026-03-29",
+      "findings": "Day 34 PM. ★★★★★ fp2 AT ABSOLUTE PEAK: (1) Pakistan Quad talks STARTED today (Reuters confirmed 30 min ago) — focus on Hormuz reopening; (2) Vance: \"accomplished most or all military objectives\" (Benny Show podcast); (3) BUT Pentagon weighing 10,000 MORE ground troops (WSJ); (4) US Marines already arriving; (5) IDF struck Iran port city NEAR Hormuz; (6) IRGC attacked aluminium in Bahrain/UAE = economic infra targeting; (7) IRGC threatened US university campuses; (8) Guardian: Pakistan suggested Vance represent US in talks — Iran refused Witkoff/Kushner; (9) Iran refuses face-to-face = shuttle diplomacy only; (10) Guardian: \"Pakistani officials believe biggest risk is Israel as spoiler.\" ASSESSMENT: Diplomacy FORMALLY launched but military escalation ACCELERATING simultaneously. 17K ground force buildup + economic targeting = two parallel tracks running at max speed in opposite directions. Source: Reuters/Guardian/WSJ/CBS/AJE"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "PAKISTAN_2DAY_MINISTERIAL — SA+Turkey+Egypt FMs, Sunday Mar 29, Apr 6 deadline = 8 days forcing function",
-      "last_check": "2026-03-28",
-      "findings": "Day 34. ★★★★★ fp3 STRONGEST FRAMEWORK: (1) Pakistan hosting 2-day talks starting Sunday Mar 29 — Prince Faisal (SA) + Fidan (Turkey) + Abdelatty (Egypt) in Islamabad (Reuters Mar 28); (2) Trump Apr 6 deadline = 8-day forcing function; (3) Witkoff: 15-point deal on table; (4) Iran rejected US proposal via Pakistan Mar 24, counterproposed sovereignty/reparations/Lebanon (ISW); (5) BUT: Arak/Bushehr nuclear strikes during talks + Houthis entering expands scope to Yemen + IRGC reiterated Hormuz CLOSED. RISK: Multi-front expansion could COLLAPSE framework. ~45-50% ceasefire framework within 2 weeks (DOWN from 50-55% due to Houthi entry + nuclear escalation). Source: Reuters/ISW/CBS/Guardian"
+      "status": "PAKISTAN QUAD TALKS DAY 1 — SA+Turkey+Egypt FMs in Islamabad, focus: Hormuz reopening proposals, Vance requested as US rep",
+      "last_check": "2026-03-29",
+      "findings": "Day 34 PM. ★★★★★ fp3 ACTIVE — TALKS STARTED: (1) Reuters confirmed talks began today — focus on Hormuz reopening proposals; (2) Pakistan/SA/Turkey/Egypt FMs meeting Sun-Mon; (3) Pakistan suggested JD Vance as US rep — Iran agreed, distrusts Witkoff/Kushner (Guardian); (4) Iran refuses face-to-face = indirect shuttle diplomacy; (5) Iran PM Dar: 20 Pakistan-flagged ships allowed; (6) Guardian: Pakistan motivated by defense pact with Saudi + border with Iran + 2nd largest Shia population; (7) RISK: IDF strikes on civilian/economic targets during talks = spoiler potential (Pakistani officials). Apr 6 deadline = 8 DAYS. ASSESSMENT: Most concrete framework yet but massive contradictions — aluminium attacks + university threats + 10K troops DURING talks. ~40-45% ceasefire framework within 2 weeks (DOWN from 45-50% due to widening fronts). Source: Reuters/Guardian/ArabNews/NPR"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "BREACHED_ALL_FRONTS — Brent_112+WTI_100+Gas_3.98+VIX_30+Gold_4430+15KIA+300wound+36%approval+Dow_correction+Houthi_escalation",
-      "last_check": "2026-03-28",
-      "findings": "Day 34. ★★★★★ fp4 ALL THRESHOLDS BREACHED + NEW: (1) Brent .57 HIGHEST since 2022; (2) WTI .64 touched ; (3) VIX >30 (Motley Fool); (4) S&P 500 6,477; (5) Gold ,411-4,430/oz (Wells Fargo/Sunday Guardian); (6) Gas .976/gal (AAA) —  IMMINENT; (7) 15 US KIA confirmed + 300+ wounded; (8) Trump approval 36% (Reuters/Ipsos); (9) 69% independents oppose (Forbes/CBS); (10) Dow in correction (-10%); (11) Senate blocked War Powers 53-47 (3rd time), House delayed mid-April (Axios/DemocracyNow); (12) Rand Paul lone R voting for limit; (13) Houthi entry = MORE cost; (14) Hezbollah 600+/24h = MORE cost; (15) Murkowski drafting AUMF. ASSESSMENT: Political sustainability window NARROWING.  gas + Houthi/Hezbollah fronts = accelerating cost curve. Source: CNBC/AAA/Reuters/Wikipedia/Motley Fool/Wells Fargo/Axios"
+      "last_check": "2026-03-29",
+      "findings": "Day 34 PM. ★★★★★ fp4 WIDENING: (1) IRGC threatened US university campuses in Gulf — NEW cost vector for Gulf allies + US civilian exposure; (2) Aluminium Bahrain + EGA attacked — economic infrastructure damage to Gulf states; (3) UAE air defenses actively engaging, sounds across country; (4) 10K more troops considered = deepening commitment; (5) Brent .57 / WTI .64 (weekend close); (6) Vance acknowledges military objectives met but war continues = cost for WHAT?; (7) All prior thresholds still breached. ASSESSMENT: Cost expanding from energy/financial to economic infrastructure + civilian/academic targets. Political sustainability window continues narrowing. Source: AJE/Guardian/WSJ/CBS/Reuters"
     }
   },
   "noise_filter": {
