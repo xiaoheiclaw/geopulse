@@ -150,7 +150,7 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.93,
+      "probability": 0.78,
       "confidence": 0.85,
       "evidence": [
         "Al Jazeera: IRGC announced 23rd wave of strikes",
@@ -168,7 +168,13 @@
         "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed.",
         "2026-03-23 Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed. (impact: up)",
         "2026-03-26 Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time. (impact: up)",
-        "[2026-03-28] ISW: IRGC lowered recruitment age to 12 = manpower crisis. CENTCOM 10K+ targets struck. IDF expanded to Mashhad (NE-most). Tangsiri killed."
+        "[2026-03-28] ISW: IRGC lowered recruitment age to 12 = manpower crisis. CENTCOM 10K+ targets struck. IDF expanded to Mashhad (NE-most). Tangsiri killed.",
+        {
+          "date": "2026-03-30",
+          "text": "Reuters: US can only confirm ~1/3 of Iran missile arsenal destroyed, not 85% as claimed. Iran parliament: missiles in place. Iran fired new wave Sunday",
+          "source": "Reuters/AP",
+          "impact": "-0.15"
+        }
       ],
       "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: ISW Mar 19 confirmed combined force destroyed ~85% of Iran SAMs. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. 8000+ targets struck. Quantitative degradation confirmed by CENTCOM commander directly. Old: 0.72",
       "time_horizon": "持续",
@@ -563,7 +569,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.95,
+      "probability": 0.97,
       "confidence": 0.8,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
@@ -591,7 +597,13 @@
         "[2026-03-25] 15-point plan delivered via Pakistan Army Chief Asim Munir (NYT/AP). Pakistan shared demands with Iran (AJE). Covers sanctions relief, nuclear rollback, ballistic missiles, Hormuz. Vance may attend Islamabad talks.",
         "[2026-03-26T01:10:13+08:00] BILATERAL PROPOSALS: US 15-point plan via Pakistan CONFIRMED received by Iran (AP/Reuters). Iran issued 5-condition counterproposal: reparations + Hormuz sovereignty (NPR/AP/NYT). US+Israel rejected counterproposal (Fox). Pakistan/Turkey offered as venue. Mutual written proposals = Schelling bargaining range established.",
         "2026-03-26 Mar 26: Iran rejected 15-point plan verbally but sent tanker present (behavioral signal > verbal). Reuters: Iran reviewing proposal, passed to senior authorities. Trump: Iran desperate for deal. Formal counterproposals exchanged. (impact: up)",
-        "[2026-03-28] Guardian: UK NSA Powell secretly at Geneva. ISW: Iran rejected 15-pt but issued counterproposal + awaiting US response = structured exchange. UNSC 2817 adopted."
+        "[2026-03-28] Guardian: UK NSA Powell secretly at Geneva. ISW: Iran rejected 15-pt but issued counterproposal + awaiting US response = structured exchange. UNSC 2817 adopted.",
+        {
+          "date": "2026-03-30",
+          "text": "Pakistan Quad talks opened Day 1 (SA/Turkey/Egypt FMs). Pakistan preparing meaningful talks (Reuters). 15-point plan delivered via Pakistan",
+          "source": "AP/Reuters",
+          "impact": "+0.02"
+        }
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: Both sides now have written proposals = structured negotiation framework. Iran counterproposal (despite public rejection) = SIGNAL of willingness to negotiate. Previous: 82% → 90%.",
       "time_horizon": "W4-16",
@@ -644,7 +656,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.48,
+      "probability": 0.55,
       "confidence": 0.55,
       "evidence": [
         "Wikipedia: US expressed reluctance to deploy ground troops",
@@ -661,7 +673,13 @@
         "[2026-03-23 19:33] Trump pivot to \"productive talks\" + 5-day postponement = de-escalation signal. Ground war requires escalation commitment that this move contradicts. Cost threshold (.94 gas, 14 dead, IEA worst-since-1970s) creating domestic pressure against escalation. DOWN from 0.54.",
         "[2026-03-25] WSJ: Pentagon readying 3000 soldiers from 82nd Airborne for ME deployment. Pentagon requesting B supplemental (UPI).",
         "[2026-03-25] Trump approved 1000+ 82nd Airborne deployment (NBC). Pentagon $25B supplemental. BUT could be negotiation leverage not invasion prep.",
-        "[2026-03-27] 82nd Airborne 2-3K deploying BUT CNBC analysis: coercive diplomacy not ground invasion prep. Trump 10-day extension reduces urgency. RUSI: US burned 11000+ munitions in 16 days — weapons shortage concerns (Telegraph)."
+        "[2026-03-27] 82nd Airborne 2-3K deploying BUT CNBC analysis: coercive diplomacy not ground invasion prep. Trump 10-day extension reduces urgency. RUSI: US burned 11000+ munitions in 16 days — weapons shortage concerns (Telegraph).",
+        {
+          "date": "2026-03-30",
+          "text": "2,500 US Marines arrived in region (AP Mar 29). Pentagon considering 10,000 MORE ground troops (WSJ) = potential 17K force",
+          "source": "AP/WSJ",
+          "impact": "+0.07"
+        }
       ],
       "reasoning": "2,500 Marines ARRIVED (AP Mar 29). Pentagon considering 10,000 MORE ground troops (WSJ). Iran parliament: waiting for US troops on ground. Total potential 17K ground force. Significant escalation from deployment to presence.",
       "time_horizon": "W8-24",
@@ -1370,12 +1388,18 @@
         "金融",
         "经济"
       ],
-      "probability": 0.58,
+      "probability": 0.65,
       "confidence": 0.55,
       "evidence": [
         "能源成本占S&P企业成本~5-8%",
         "航空/化工/运输直接受冲击",
-        "但能源/军工板块受益对冲"
+        "但能源/军工板块受益对冲",
+        {
+          "date": "2026-03-30",
+          "text": "Dow entered CORRECTION (-10%). Goldman recession odds 25%. Gas approaching $4. S&P 5th straight losing week",
+          "source": "CNBC/Goldman/Motley Fool",
+          "impact": "+0.07"
+        }
       ],
       "reasoning": "定义: 华尔街对S&P 500未来12个月EPS预期下修>5%。72%因能源冲击确定但板块分化(能源/军工受益)。",
       "time_horizon": "W4-12",
@@ -2529,7 +2553,7 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.88,
+      "probability": 0.93,
       "confidence": 0.8,
       "evidence": [
         "Mar 28: 胡塞弹道导弹攻击以色列Beersheba(首次参战)",
@@ -2537,7 +2561,13 @@
         "弹道导弹库存未受美伊战争消耗",
         "也门地形提供天然隐蔽，美军难以根除",
         "[2026-03-28] Houthis launched barrage of ballistic missiles at Israel from Yemen — first attack since war began (CNN/Reuters/AJE/AP). INDEPENDENT capability confirmed.",
-        "Reuters/CNN Mar 28: 2 salvos at Israel — first attack since war began, IDF intercepted. CNN: 2nd missile hours after first."
+        "Reuters/CNN Mar 28: 2 salvos at Israel — first attack since war began, IDF intercepted. CNN: 2nd missile hours after first.",
+        {
+          "date": "2026-03-30",
+          "text": "Houthis fired 2+ sustained waves cruise missiles + drones at Israel Mar 28-29, confirming independent sustained capability",
+          "source": "Guardian/NYT/Reuters",
+          "impact": "+0.05"
+        }
       ],
       "reasoning": "Houthis sustained 2nd wave cruise+drones at Israel Mar 28 — CONFIRMED INDEPENDENT + SUSTAINED. First attack since war began. INDEPENDENT capability node, NOT inheriting IRGC degradation.",
       "last_updated": "2026-03-28T11:26:55.508001+00:00",
@@ -2550,14 +2580,20 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.72,
+      "probability": 0.8,
       "confidence": 0.75,
       "evidence": [
         "以色列持续打击南黎巴嫩",
         "火箭弹仍在射向以色列北部",
         "IDF地面入侵黎巴嫩夺取战略阵地",
         "指挥层此前遭大规模斩首(2024寻呼机行动)",
-        "JPost Mar 28: 600+ attacks on Israel in 24h, DOUBLING prior peak — likely coercion for ceasefire"
+        "JPost Mar 28: 600+ attacks on Israel in 24h, DOUBLING prior peak — likely coercion for ceasefire",
+        {
+          "date": "2026-03-30",
+          "text": "Hezbollah unleashed 600+ attacks/24h on Israel, DOUBLING prior peak — coercion for ceasefire",
+          "source": "JPost",
+          "impact": "+0.08"
+        }
       ],
       "reasoning": "600+次/24h攻击=翻倍历史峰值,不可持续但展示残余能力远高于预期。独立评估,不继承IRGC衰减。",
       "last_updated": "2026-03-28T09:24:04.741688+00:00",
@@ -4015,7 +4051,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-03-28T07:27:06.672280Z",
+  "last_updated": "2026-03-29T23:27:40.300217+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
