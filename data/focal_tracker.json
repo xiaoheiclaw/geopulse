@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-30T03:26:53.602434+00:00",
+  "last_updated": "2026-03-30T07:26:18.177358+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-03-27",
-          "est": "1-2 declining, CENTCOM 10000+ targets, mass salvo era OVER",
-          "note": "Day 30. ★★★★ CENTCOM hit 10,000+ targets (NewsNation). Destroyed 19 ships + 1 submarine + ~2,000 targets (Wikipedia). 2/3 arms manufacturing destroyed (ToI). Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). IRGC claims '220 coordinated attacks' but fire STILL 1-2 at a time (Cooper confirmed). Atlantic: 'massively asymmetrical war' — CENTCOM planning F-16/F-18 to clear remaining attack craft + minesweeping for strait. US dead: 21 total (13 KIA + 1 health + 6 crash), 290 wounded. Iran dead: 1,937 killed + 24,800 injured (AJE). Murkowski (R) drafting AUMF to force Congress vote. Trump approval 36% new low (Reuters/Ipsos). PATTERN: Volume collapse CONFIRMED + arms regeneration capacity destroyed + leadership decapitation. Source: NewsNation/CENTCOM/Atlantic/Reuters/AJE/Fox/Time/NYT",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-27",
           "est": "1-2 declining, CENTCOM 10000+ targets, mass salvo era CONFIRMED over",
@@ -93,6 +87,12 @@
           "est": "1-2 declining (IRGC), Houthis 2+ waves SUSTAINED, Hezbollah continuing, 3-front war",
           "note": "Day 37. ★★★★★ MULTI-FRONT SUSTAINED: (1) IRGC fire STILL 1-2 at a time — mass salvo era CONFIRMED over; (2) Houthis SUSTAINED 2+ waves cruise+drones at Israel (Guardian/WashPost/AJE Mar 28-29) — CONFIRMED INDEPENDENT + ONGOING; (3) Hezbollah CONTINUING — Netanyahu ordered EXPANSION of southern Lebanon operations Sunday (Reuters Mar 29); IDF soldier killed in south Lebanon Sunday; (4) 3,500 Marines+sailors arrived via USS Tripoli (31st MEU) — CENTCOM confirmed (AJE/AP/NYT Mar 29); (5) Pentagon preparing for 'weeks' of ground ops (Indian Express/WSJ); (6) Iran new wave missiles at Israel Sunday — fragment hit Beersheba factory; (7) UAE intercepted 16 missiles + 42 drones/24h; (8) CENTCOM 10,000+ targets struck; (9) Pakistan FM Dar: 'will host US-Iran talks in coming days' (AP Mar 30); (10) Trump Sunday: negotiations 'ongoing directly and indirectly', can 'see a deal soon' (ABC). PATTERN: IRGC volume collapsed BUT 3 INDEPENDENT fronts active (IRGC residual + Houthis sustained + Hezbollah) + ground force buildup = war WIDENING while diplomacy intensifying simultaneously. Source: AJE/AP/Reuters/Guardian/WashPost/ABC/NYT/CNBC",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-30",
+          "est": "1-2 declining (IRGC), Houthis SUSTAINED 2+ waves, IDF 120+ munitions Tehran Sunday, 3-front war Day 37",
+          "note": "Day 37. ★★★★★ MULTI-FRONT SUSTAINED: (1) IRGC fire STILL 1-2 at a time — mass salvo era CONFIRMED over; (2) ISW Mar 28: Iran launched 6 small missile barrages at Israel — psychological cost strategy with limited capacity; (3) IDF dropped 120+ munitions on Tehran Sunday night targeting weapons R&D sites (IDF/AP); (4) Houthis SUSTAINED — 2+ waves at Israel, IDF intercepted 2 Yemen drones early Monday (IDF); (5) Hezbollah CONTINUING — Netanyahu ordered EXPANSION southern Lebanon invasion Sunday (AP); (6) 3,500 Marines+sailors arrived USS Tripoli (CENTCOM); (7) More than 3,000 killed in war total (AP Mar 30); (8) US KIA: 15 confirmed + 332 wounded; (9) Iran casualties: 2,076+ killed (Health Ministry), HRANA 3,461, Hengaw 6,900; (10) Trump FT interview: preferred option 'take the oil', likened to Venezuela; (11) Iran threatened strikes on US/Israeli commanders homes + universities in Gulf; (12) Qalibaf: 'waiting for US troops on ground to set them on fire'. PATTERN: IRGC volume collapsed BUT 3 INDEPENDENT fronts active (IRGC residual small salvos + Houthis sustained + Hezbollah expanding). Trump 'take the oil' = new escalatory rhetoric. Source: AP/IDF/ISW/CENTCOM/FT/Reuters/CNBC",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-03-27",
-          "est": "~3-4 mbd (5-6 ships/day + slight uptick + 8-10 tanker 'present')",
-          "note": "Day 30. ★★★ TRANSIT UPDATE: (1) BBC Verify: ~100 ships Mar 1-20, daily traffic down ~95%; (2) Kpler: 138 ships March = 5-6/day; (3) Guardian Mar 26: 'slight uptick Thursday' but normal navigation NOT resumed; (4) Lloyd's: 'Tehran tollbooth' — ships paying ~$2M via Larak Island; (5) Iran FM Araghchi: 5 nations (CN/IN/RU/PK/IQ) open passage; (6) Trump: Iran sent 8-10 tankers as 'present'; (7) Thailand expanding beyond initial 5; (8) Atlantic: CENTCOM planning F-16/F-18 + minesweep ops for strait clearing; (9) US Energy Sec: Navy may escort by end March; (10) UNSC Res 2817 demands Iran cease attacks on neighbors. TWO-TIER transit regime solidifying. PATTERN: Physical transit improving (2.3→5-6/day) but still 95% below pre-crisis (17-20 mbd). Source: BBC/Kpler/Guardian/Lloyd's/Atlantic/Fox/India Today",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-27",
           "est": "~3-4 mbd (5-6 ships/day + Guardian 'trickle' + Iran 2-tier regime)",
@@ -189,6 +183,12 @@
           "est": "~3-4 mbd (4-6 ships/day, USNI 142 transits Mar 1-25 = 94.6% decline, Pakistan 20 ships deal)",
           "note": "Day 37. ★★★ TRANSIT: (1) USNI/Lloyd's: 142 transits Mar 1-25 vs 2,652 same period 2025 = 94.6% decline; (2) ABC: ~150 ships Mar 1-26 inc 46 tankers vs 50/DAY pre-war; (3) Pakistan FM: Iran allowing 20 Pakistan-flagged ships (2/day) — trust/mediation signal (AP/AlArabiya); (4) 2 LPG carriers to India safely transited; (5) TheConversation Mar 30: securing Hormuz requires 1-2 naval ships per escort, convoy too large = attack risk; (6) CBS Mar 30: unclear if military escorts materialize before conflict ends; (7) Polymarket: US escort by Mar 31 — market still open; (8) IRGC yuan-denominated toll via Larak (~USD2M/transit); (9) ~3,000 vessels waiting (NYT); (10) Oxford: impassable until May. Still 95% below pre-crisis. Source: USNI/ABC/AP/CBS/TheConversation/Polymarket/Oxford",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-30",
+          "est": "~3-4 mbd (4-6 ships/day, Trump: Iran agreed 20 ships starting Monday, USNI 142 transits = 94.6% decline)",
+          "note": "Day 37. ★★★ TRANSIT: (1) USNI/Lloyd's: 142 transits Mar 1-25 vs 2,652 same period 2025 = 94.6% decline; (2) Trump aboard AF1: Iran agreed to allow 20 ships carrying oil through Hormuz starting Monday 'out of sign of respect' (AP Mar 29); (3) Pakistan FM: Iran allowing 20 Pakistan-flagged ships (2/day); (4) IRGC yuan-denominated toll via Larak (~USD2M/transit); (5) ~3,000 vessels waiting (NYT); (6) Oxford Economics: impassable until May; (7) CBS: unclear if military escorts materialize before conflict ends; (8) Brent soared 55%+ in March = record monthly surge (CNBC). If Trump's 20-ship claim materializes, marginal improvement but still 95% below pre-crisis (17-20 mbd). Source: AP/USNI/Lloyd's/CNBC/CBS/Oxford/NYT",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-03-26",
-          "est": "~0.75 mbd first batch, D+15, SPR NOISE",
-          "note": "Day 29 D+15. First batch flowing since Mar 21. DOE 'record speed'. 45.2M bbl to Shell/Marathon/BP/Gunvor. 172M bbl US total, 412M bbl global (32 countries). SPR 415-416M bbl pre-release (Grokipedia). NTU: draws to 243M bbl = lowest since 1982. MARKET: Brent .99-108 (+5.66% SURGED on Iran rejecting direct talks), WTI .41-94.80. BUT THEN Trump 10-day extension → expect significant pullback tomorrow. SPR trickle IRRELEVANT vs +/bbl daily geopolitical swings. Gas ~.98/gal national. Source: Argus/DOE/Grokipedia/CNBC/OilPriceAPI/Bloomberg",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-27",
           "est": "~0.75 mbd first batch, D+16, SPR NOISE",
@@ -282,6 +276,12 @@
           "est": "~1-1.5 mbd confirmed (Wright/S&P Global), D+22, 172M bbl US / 412M bbl global, further release 'highly unlikely'",
           "note": "Day 37 D+22. SPR release rate CONFIRMED 1-1.5 mbd (Wright/CERAWeek/S&P Global). 172M bbl US total, 412M bbl global (IEA 32 countries, 4 months). Further release 'highly unlikely' (Reuters Mar 23). IndexBox Mar 26 confirmed: 1-1.5 mbd rate. AJE Mar 23: 172M = covers ~4 months. FlaglerLive: US SPR at 415M bbl pre-release, draws to 243M = lowest since 1982. TheConversation: plans to add 200M bbl BACK later 2026 — return to pre-war level only. Brent SURGED to USD116/bbl Monday Mar 30 (+3.2%), WTI USD103 (+3.4%) — record monthly jump (CNBC). Gas USD3.96/gal national (EIA Mar 23), LA nearing USD6/gal (MyNewsLA). SPR trickle IRRELEVANT vs USD15+/bbl geopolitical swings. Source: S&P Global/Reuters/IndexBox/AJE/FlaglerLive/TheConversation/CNBC/EIA/MyNewsLA",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-03-30",
+          "est": "~1-1.5 mbd confirmed (Wright/S&P Global), D+22, 172M bbl US / 412M bbl global, further release 'highly unlikely'",
+          "note": "Day 37 D+22. SPR release rate CONFIRMED 1-1.5 mbd (Wright/CERAWeek/S&P Global). 172M bbl US total, 412M bbl global (IEA 32 countries, 4 months). Further release 'highly unlikely' (Reuters Mar 23). TheConversation: plans to add 200M bbl BACK later 2026 — return to pre-war level only. Brent .27 Monday (+2.4%), WTI .89 (+1.3%) — Brent 55%+ monthly surge = RECORD (CNBC). Gas ~.96-4.00/gal national approaching  psychological barrier, LA approaching . SPR trickle IRRELEVANT vs geopolitical swings — Brent + while SPR displaces only fraction of 17-20 mbd Hormuz loss. Source: S&P Global/Reuters/CNBC/TheConversation/EIA",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "VERBAL_MEDIATION + ENVOY_TOUR + COMMERCIAL + ABSENT_FROM_QUAD — Zhai Jun toured, China backing Pakistan mediation behind scenes, but no direct seat at table",
+      "status": "VERBAL_MEDIATION + WANG_YI_CALLS + ENVOY_TOUR + BEHIND-SCENES — China backing Pakistan mediation but absent from table, NO direct action",
       "last_check": "2026-03-30",
-      "findings": "Day 37. China envoy Zhai Jun completed Gulf tour (SA/UAE/Bahrain/Kuwait/Egypt). CGTN Mar 27: 'shuttle mission across region from early to mid-March'. ChinaDaily Mar 26: 'takes Gulf security concerns seriously'. Wikipedia: Beijing dispatched envoys, evacuating nationals from Iran. China ABSENT from Pakistan Quad (SA/Turkey/Egypt only) BUT AJE Mar 29: 'China conveyed support to Tehran for Pakistan's mediation efforts and encouraged Iran to engage with diplomatic process' — global powers lining up behind regional initiative. China positioning as POST-CONFLICT stabilizer, not active mediator. fp1 threshold STILL NOT MET — verbal + commercial + behind-scenes encouragement only. Source: CGTN/ChinaDaily/Wikipedia/AJE"
+      "findings": "Day 37. CGTN Mar 27: Wang Yi phone calls since Mar 24 with Iran, Egypt, Turkey, Pakistan, Canada — 'seize every window of opportunity for peace'. Zhai Jun completed Gulf tour (SA/UAE/Bahrain/Kuwait/Egypt). Wikipedia: China evacuating nationals from Iran. AJE: 'China conveyed support to Tehran for Pakistan mediation'. China ABSENT from Pakistan Quad (SA/Turkey/Egypt only). China positioning as POST-CONFLICT stabilizer, not active mediator. NO naval deployment, NO economic sanctions/threats, NO direct mediation seat. fp1 threshold STILL NOT MET — verbal + commercial + behind-scenes encouragement only. Source: CGTN/Wikipedia/AJE"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTION AT ALL-TIME PEAK — Pakistan to HOST US-Iran direct talks + 3500 Marines arrived + Pentagon ground ops + nuclear strikes + Houthis + Netanyahu expanding Lebanon ops",
+      "status": "CONTRADICTION AT ALL-TIME PEAK — Pakistan to host DIRECT talks + Trump 'doing extremely well' BUT 3500 Marines + 120+ munitions Tehran + Lebanon expansion + Houthis + 'take the oil'",
       "last_check": "2026-03-30",
-      "findings": "Day 37. ★★★★★ fp2 PEAK SURPASSED: (1) Pakistan FM Dar: 'will host and facilitate meaningful US-Iran talks in coming days' (AP Mar 30); (2) Trump Sunday: negotiations 'ongoing directly and indirectly', can 'see a deal soon' (ABC); (3) BUT 3,500 Marines arrived USS Tripoli (CENTCOM Mar 29); (4) Pentagon preparing 'weeks' ground ops (WSJ/IndianExpress); (5) IDF struck Arak+Bushehr nuclear sites; (6) Houthis SUSTAINED 2+ waves at Israel (WashPost/Guardian); (7) Netanyahu ORDERED EXPANSION southern Lebanon ops Sunday (Reuters); (8) IDF soldier killed south Lebanon; (9) Qalibaf: 'missiles in place, waiting for US troops on ground'; (10) Iran insists halt strikes BEFORE negotiations. TWO TRACKS AT MAXIMUM DIVERGENCE: imminent direct talks via Pakistan vs largest military buildup since war began + 3-front expansion. Source: AP/ABC/Reuters/CENTCOM/WSJ/WashPost/Guardian"
+      "findings": "Day 37. ★★★★★ fp2 PEAK CONTINUES: (1) Pakistan FM: 'will host and facilitate meaningful US-Iran talks in coming days' (AP Mar 30); (2) Trump AF1: 'doing extremely well in that negotiation', Iran 'gave us most of the points' (AP); (3) BUT IDF dropped 120+ munitions on Tehran Sunday night (IDF/AP); (4) 3,500 Marines arrived USS Tripoli (CENTCOM); (5) Netanyahu ordered EXPANSION southern Lebanon invasion (AP); (6) Houthis SUSTAINED 2+ waves at Israel, IDF intercepted 2 Yemen drones Monday (IDF); (7) Trump FT: preferred option 'take the oil' — likened to Venezuela Maduro capture; (8) Iran threatened US/Israeli commanders homes + universities; (9) Qalibaf: 'waiting for US troops on ground'; (10) Iran's own 5-point counter-proposal (halt targeting officials, guarantees, reparations, Hormuz sovereignty). TWO TRACKS AT MAXIMUM DIVERGENCE: imminent direct talks in Pakistan vs largest military buildup + 3-front expansion + 'take the oil' rhetoric. Source: AP/IDF/CENTCOM/FT/Reuters"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "PAKISTAN QUAD DAY 2 + DIRECT TALKS ANNOUNCED — Apr 6 deadline 7 days, Iran insists halt first, ForeignAffairs urging ceasefire",
+      "status": "PAKISTAN QUAD CONCLUDED + DIRECT TALKS ANNOUNCED — Iran counter-proposed, Trump claims 'most of the points', Apr 6 deadline 7 days",
       "last_check": "2026-03-30",
-      "findings": "Day 37. ★★★★★ fp3 MOST ACTIVE: (1) Pakistan FM Dar ANNOUNCED will host US-Iran direct talks 'in coming days' (AP Mar 30); (2) Quad Day 2 — SA/Turkey/Egypt FMs in Islamabad; (3) AJE: talks 'not designed to produce ceasefire itself' but build framework; (4) ForeignAffairs piece urging 'seriously negotiated ceasefire'; (5) Trump: 'see a deal soon'; (6) Iran rejected 15-point US plan but submitted OWN conditions; (7) Iran INSISTS: halt strikes BEFORE talks; (8) Apr 6 deadline = 7 DAYS; (9) Time: Pakistan announcement came as FMs met; (10) IDF CONTINUING nuclear+Lebanon strikes during talks = bad faith signal to Iran. ~35% ceasefire framework within 2 weeks (UP from 30-35% — Pakistan direct talks announcement is strongest diplomatic signal yet, offset by multi-front military expansion). Source: AP/AJE/Time/Reuters/ForeignAffairs"
+      "findings": "Day 37. ★★★★★ fp3 MOST ACTIVE: (1) Pakistan Quad CONCLUDED — SA/Turkey/Egypt FMs departed Sunday night (AP); (2) Pakistan FM Dar: 'will host direct US-Iran talks in coming days' (AP Mar 30); (3) Egypt FM: meetings aim for 'direct dialogue' between US and Iran (AP); (4) Trump: Iran 'gave us most of the points' on 15-point plan (AP AF1); (5) Iran REJECTED 15-point US plan but submitted OWN 5-point proposal: halt targeting officials, guarantees against future attacks, reparations, Hormuz sovereignty (Iran state TV); (6) Apr 6 deadline = 7 DAYS; (7) BUT Quad concluded earlier than scheduled (originally 2 days, FMs departed after 1); (8) IDF CONTINUING 120+ munitions on Tehran + Lebanon expansion during talks = complicates; (9) Trump 'take the oil' FT interview = bad faith signal to Iran. ~35-40% ceasefire framework within 2 weeks — Pakistan direct talks announcement strongest signal yet, but military escalation + 'take the oil' rhetoric partially offset. Source: AP/Reuters/FT/Iran state TV"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "ALL THRESHOLDS BREACHED + SURGING — Brent116/WTI103/VIX27-31/Gold~4500/Gas3.96-6.00/DowCORRECTION/15KIA/332wound/36%approval",
+      "status": "ALL THRESHOLDS SURGING — Brent/WTI/VIX31/Gold/Gas/S&P-1.67%/Dow-1.73%/Brent55%monthly=RECORD/15KIA/332wound/3000+killed/36%approval",
       "last_check": "2026-03-30",
-      "findings": "Day 37. ★★★★★ fp4 EVERY DIMENSION SURGING: (1) Brent USD116.12 (+3.2% Monday) — record monthly jump 59% (ToI), nearing early-war high USD119; WTI USD103.1 (+3.45%); (2) VIX 27-31 (93rd percentile, Yahoo); (3) Gold near USD4,500 safe haven; (4) S&P 500 ~5,580 down 4% YTD, Dow in CORRECTION; (5) Gas USD3.96/gal national (EIA), LA approaching USD6/gal (MyNewsLA), up 33%+ in 1 month, West Coast >USD5.25; (6) US KIA: 15 confirmed + 332 wounded; (7) Trump approval 36% new low; (8) War cost ~USD25B (CAP); (9) Senate blocked War Powers 53-47, House delayed til mid-April (Axios/DemocracyNow); (10) Rand Paul: Americans 'robbed of public debate', war already cost USD12B+ (Time Mar 25); (11) Houthis joining = cost ACCELERATING. Political sustainability CRITICAL — Brent 59% monthly jump = exceeds 1990 Gulf War gains (CNBC), gas approaching USD4 national psychological barrier. Source: CNBC/ToI/Yahoo/MyNewsLA/EIA/CAP/Time/Axios"
+      "findings": "Day 37. ★★★★★ fp4 EVERY DIMENSION AT PEAK: (1) Brent USD115.27 Monday (+2.4% European hours) — 55%+ monthly surge = STEEPEST ON RECORD (CNBC); (2) WTI USD100.89 (+1.3%); (3) VIX 31.05 (+13.16% Friday) — above 30 = extreme anxiety; (4) Gold USD4,462-4,488 (Asian Monday); (5) S&P 6,368 (-1.67%), Dow 45,166 (-1.73%), Nasdaq 20,948 (-2.15%) — Friday bloodbath; (6) Gas USD3.96-4.00/gal national approaching USD4 barrier, LA approaching USD6 (Fortune: lawmakers pushing federal gas tax suspension); (7) War cost ~USD25B (CAP); (8) Total killed: 3,000+ (AP); US KIA: 15 + 332 wounded; (9) Trump approval 36% new low; (10) Yardeni Research: 'higher-for-longer oil+rates' scenario, recession risk deepening; (11) Moody's recession probability 49% — 1 tick from 50% threshold; (12) Goldman 30%, EY 40%, HSBC 35% recession odds. POLITICAL SUSTAINABILITY CRITICAL — record oil surge + approaching recession + gas nearing  + casualties mounting. Source: CNBC/AP/Fortune/CAP/Yardeni/Moody's/Goldman"
     }
   },
   "noise_filter": {

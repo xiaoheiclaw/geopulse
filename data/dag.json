@@ -569,8 +569,8 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.97,
-      "confidence": 0.8,
+      "probability": 0.98,
+      "confidence": 0.85,
       "evidence": [
         "Reuters: Trump \"no deal except UNCONDITIONAL SURRENDER\"",
         "Sky News: rules out diplomatic deal",
@@ -605,7 +605,7 @@
           "impact": "+0.02"
         }
       ],
-      "reasoning": "Updated 2026-03-26T01:10:13+08:00: Both sides now have written proposals = structured negotiation framework. Iran counterproposal (despite public rejection) = SIGNAL of willingness to negotiate. Previous: 82% → 90%.",
+      "reasoning": "Day 37: Pakistan FM announced will host direct US-Iran talks. Quad concluded (SA/Turkey/Egypt). Egypt FM: aim for direct dialogue. Trump: Iran gave us most of the points. Iran submitted own 5-point counter-proposal. Backchannel now OVERT.",
       "time_horizon": "W4-16",
       "pinned": true,
       "time_phases": [],
@@ -720,8 +720,8 @@
         "经济",
         "金融"
       ],
-      "probability": 0.8,
-      "confidence": 0.72,
+      "probability": 0.85,
+      "confidence": 0.78,
       "evidence": [
         "Oil $88 still ~30% above pre-war. Aramco \"catastrophic\" for supply chains. S&P drawdown -2.82%. BUT VIX dropping + equity rebound suggest market not pricing full stagflation yet.",
         "Oil rebounding to $90 despite 400M bbl SPR",
@@ -733,7 +733,7 @@
         "[2026-03-13] (CNBC/Reuters, cred:0.85) Brent > for 2nd consecutive day; 1973 stagflation parallels in media",
         "[2026-03-14] Day 14: Brent at $103.86 for 2nd day above $100. S&P -4.9%. Russian oil release provides marginal relief but structural supply shock persists."
       ],
-      "reasoning": "Day 14: Brent at $103.86 for 2nd day above $100. S&P -4.9%. Russian oil release provides marginal relief but structural supply shock persists.",
+      "reasoning": "Day 37: Moody's AI recession model 49% — 1 tick from 50% threshold. Goldman 30%, EY 40%, HSBC 35%. Brent 55%+ monthly surge = STEEPEST ON RECORD. VIX 31.05. Consumer sentiment 53.3. S&P -1.67%. Oil shock + tariffs + disrupted trade routes = stagflationary setup.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
@@ -2188,10 +2188,10 @@
       "domains": [
         "military"
       ],
-      "probability": 0.97,
-      "confidence": 0.92,
+      "probability": 0.99,
+      "confidence": 0.95,
       "node_type": "fact",
-      "reasoning": "2,500 Marines confirmed ARRIVED in region (AP Mar 29). USS Tripoli deployed. 82nd Airborne 2-3K en route. Pentagon 10K more under consideration (WSJ).",
+      "reasoning": "Day 37: CENTCOM confirmed 3,500 Marines+sailors arrived via USS Tripoli (31st MEU). Pentagon preparing weeks ground ops. AP/AJE/CENTCOM confirmed.",
       "evidence": [
         "[2026-03-14] WSJ first reported. Anonymous US official confirmed. Satellite spotted Tripoli near Taiwan. (Source: WSJ/AP/satellite, Credibility: 0.88)"
       ]
@@ -2553,8 +2553,8 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.93,
-      "confidence": 0.8,
+      "probability": 0.95,
+      "confidence": 0.85,
       "evidence": [
         "Mar 28: 胡塞弹道导弹攻击以色列Beersheba(首次参战)",
         "红海航运战18个月经验(2024-2025 Houthi campaign)",
@@ -2569,7 +2569,7 @@
           "impact": "+0.05"
         }
       ],
-      "reasoning": "Houthis sustained 2nd wave cruise+drones at Israel Mar 28 — CONFIRMED INDEPENDENT + SUSTAINED. First attack since war began. INDEPENDENT capability node, NOT inheriting IRGC degradation.",
+      "reasoning": "Day 37: Houthis SUSTAINED 2+ waves — ballistic missiles + cruise missiles + drones at Israel. IDF intercepted 2 Yemen drones early Monday. First attack Mar 28, sustained into Mar 29-30. INDEPENDENT capability CONFIRMED, not one-off. Red Sea experience = proven logistics chain.",
       "last_updated": "2026-03-28T11:26:55.508001+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     },
@@ -2607,14 +2607,14 @@
         "军事",
         "政治"
       ],
-      "probability": 0.8,
-      "confidence": 0.65,
+      "probability": 0.88,
+      "confidence": 0.78,
       "evidence": [
         "IRGC正面(衰减中)+真主党北线(中度衰减)+胡塞南线(新鲜)",
         "三线同时施压分散美以防御资源",
         "但各线独立作战能力差异大，不能等同视之"
       ],
-      "reasoning": "3 INDEPENDENT fronts now active: IRGC residual (1-2/day) + Houthis sustained (2 waves) + Hezbollah surge (600+/24h). Economic infrastructure targeting (Bahrain/UAE smelters) = new dimension. War WIDENING across all axes.",
+      "reasoning": "Day 37: 3 INDEPENDENT fronts now active — IRGC residual (1-2/day small salvos), Houthis SUSTAINED (2+ waves cruise+ballistic at Israel), Hezbollah 600+/24h + Netanyahu expanding Lebanon invasion. Each front assessed independently per forced rule.",
       "last_updated": "2026-03-28T09:24:04.741688+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     }
@@ -4051,7 +4051,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-03-29T23:27:40.300217+00:00",
+  "last_updated": "2026-03-30T07:28:01.954373+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
