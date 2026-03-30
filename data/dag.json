@@ -55,12 +55,17 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.75,
-      "confidence": 0.7,
+      "probability": 0.78,
+      "confidence": 0.72,
       "evidence": [
         "白宫声明",
         "众院219-212/参院47-52授权",
-        "[2026-03-13] Guardian: Israeli sources say no regime change plan (P1 extraction from Mar 10-13 news)"
+        "[2026-03-13] Guardian: Israeli sources say no regime change plan (P1 extraction from Mar 10-13 news)",
+        {
+          "date": "2026-03-30",
+          "text": "Day 37: Trump TruthSocial: discussing with NEW AND MORE REASONABLE REGIME (NYT/Sky/Fox/NBC). Classified as NOISE per filter (social media rhetoric) but signals US diplomatic posture targeting factional splits. Consistent with ISW Pezeshkian-IRGC Vahidi rift reporting. Not verifiable but intentional framing.",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "白宫和国会多次表态支持伊朗政权更替",
       "time_horizon": "",
@@ -495,8 +500,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.78,
-      "confidence": 0.72,
+      "probability": 0.82,
+      "confidence": 0.75,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
         "经贸合作\"更稳定\"",
@@ -504,7 +509,12 @@
         "[2026-03-14] Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
         "USS Tripoli pulled from Taiwan waters creates Indo-Pacific gap + China mediation incentive",
         "US forces pulled from Taiwan waters, creating China action space + mediation incentive",
-        "2026-03-26 China as Hormuz anchor customer: 2 confirmed Chinese vessel transits, state-owned tanker paid $2M fee, Wang Yi called Araghchi Mar 24. Economic action confirmed but no political mediation. [CSMonitor/SCMP/Lloyd s List/Reuters] (impact: +0.10)"
+        "2026-03-26 China as Hormuz anchor customer: 2 confirmed Chinese vessel transits, state-owned tanker paid $2M fee, Wang Yi called Araghchi Mar 24. Economic action confirmed but no political mediation. [CSMonitor/SCMP/Lloyd s List/Reuters] (impact: +0.10)",
+        {
+          "date": "2026-03-30",
+          "text": "Day 37: TWO COSCO Shipping Corp (state-backed) ships transited Hormuz (Bloomberg Mar 30) — first major Chinese state company vessels. Upgrades from verbal mediation to ECONOMIC ACTION. Envoy Zhai Jun shuttle. MFA verbal support for Pakistan.",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "Day 14: US forced to relax Russia sanctions creates diplomatic space for China mediation. Energy crisis strengthens China bargaining position.",
       "time_horizon": "W2-12",
@@ -637,13 +647,18 @@
         "军事",
         "政治"
       ],
-      "probability": 0.65,
-      "confidence": 0.65,
+      "probability": 0.68,
+      "confidence": 0.68,
       "evidence": [
         "NYT Mar 29: SOF Rangers+SEALs arrived",
         "WashPost: Pentagon preparing weeks ground ops",
         "AP: 2500 Marines+Tripoli arrived",
-        "ISW: Iran Janfada recruitment campaign"
+        "ISW: Iran Janfada recruitment campaign",
+        {
+          "date": "2026-03-30",
+          "text": "Day 37: SOF (Rangers/SEALs) arrived (NYT). Rubio: Pentagon preparing optionality. 3500 Marines arrived via USS Tripoli. Pentagon preparing weeks of ground ops (WashPost). BUT direct talks announced — dual track.",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "SOF (Rangers, SEALs) hundreds arrived (NYT Mar 29). Pentagon preparing weeks of ground ops (WashPost). 2,500 Marines+Tripoli already in region. Iran launched Janfada recruitment for volunteers. Probability UP from 55% to 65%.",
       "time_horizon": "W8-24",
@@ -1047,8 +1062,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.28,
-      "confidence": 0.5,
+      "probability": 0.32,
+      "confidence": 0.52,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1065,7 +1080,12 @@
         "[2026-03-27] Trump extended energy infrastructure strike deadline 10 DAYS to April 6 8PM ET — \"per Iranian Government request\" (NPR/CNBC/Bloomberg/NYT). Iran sent 8-10 tankers as goodwill \"present\". Pakistan mediation active. BEHAVIORAL de-escalation > verbal rejection.",
         "[2026-03-28] Houthis joined war + IDF nuclear strikes = deescalation more difficult",
         "[2026-03-28] Houthi entry + IDF nuclear strikes (Arak/Bushehr) + Prince Sultan AB breach = ceasefire scope massively expanded. In-person talks imminent but framework increasingly fragile.",
-        "Multi-front expansion: Houthis 2 salvos + Hezbollah 600+/24h + nuclear strikes on Arak/Bushehr DURING Pakistan talks"
+        "Multi-front expansion: Houthis 2 salvos + Hezbollah 600+/24h + nuclear strikes on Arak/Bushehr DURING Pakistan talks",
+        {
+          "date": "2026-03-30",
+          "text": "Day 37: Pakistan FM announces direct US-Iran talks coming days. Trump: great progress with new regime. Iran submitted 5-point counter to US 15-point plan. BUT Trump threatens Kharg obliteration in same post. Foreign Affairs: US making mistake tying ceasefire to grand bargain. Apr 6 deadline 7 days. Marginal increase from 28%.",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely.",
       "time_horizon": "W12-24+",
@@ -1083,10 +1103,15 @@
         "军事",
         "政治"
       ],
-      "probability": 0.4,
-      "confidence": 0.4,
+      "probability": 0.45,
+      "confidence": 0.48,
       "evidence": [
-        "[2026-03-09] 土/卡塔尔拦截伊朗弹道导弹+美撤离阿达纳+伊土边境关闭(红队降级:防御≠进攻,维持40%)"
+        "[2026-03-09] 土/卡塔尔拦截伊朗弹道导弹+美撤离阿达纳+伊土边境关闭(红队降级:防御≠进攻,维持40%)",
+        {
+          "date": "2026-03-30",
+          "text": "Day 37: 4th Iranian missile entered Turkish airspace, shot down by NATO defenses (Turkey MoD). Pattern of airspace violations ACCELERATING. NATO Article 5 discussion risk rising.",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "定义: 土耳其以保护土库曼/库尔德为由对伊拉克北部或伊朗边境采取军事行动。28%。",
       "time_horizon": "W8-24",
@@ -1775,13 +1800,18 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.72,
-      "confidence": 0.7,
+      "probability": 0.78,
+      "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
         "Senate chairman planning first public oversight hearing on war",
         "[2026-03-26T01:10:13+08:00] Trump approval CRASHES to 36% new low (Reuters/Ipsos Mar 25). Gas ~$3.98/gal (+33% from $2.98 pre-war). US dead: 21 total. CAP: war cost $25B by week 4. Pentagon $25B supplemental. Retail investors net sold first time since Nov 2023.",
-        "2026-03-26 Senate REJECTED War Powers resolution 47-53. Rand Paul lone R yes vote. Congressional check mechanism REMOVED. Domestic opposition exists but has NO political lever to force action. [Time/Politico] (impact: -0.06)"
+        "2026-03-26 Senate REJECTED War Powers resolution 47-53. Rand Paul lone R yes vote. Congressional check mechanism REMOVED. Domestic opposition exists but has NO political lever to force action. [Time/Politico] (impact: -0.06)",
+        {
+          "date": "2026-03-30",
+          "text": "Day 37: Democrats weaponizing gas prices in campaign ads + pump stickers (Philadelphia Inquirer). POLITICO: GOP battleground states struggling to brush off consequences. Gas USD3.98/gal (+USD1/month). War Powers votes failed but political cost RISING.",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%.",
       "time_horizon": "",
@@ -4004,7 +4034,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-03-30T07:28:01.954373+00:00",
+  "last_updated": "2026-03-30T15:29:34.288868+00:00",
   "updated_at": "2026-03-11T21:31:59.788167+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
