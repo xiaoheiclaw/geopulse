@@ -150,38 +150,19 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.78,
+      "probability": 0.88,
       "confidence": 0.85,
       "evidence": [
-        "Al Jazeera: IRGC announced 23rd wave of strikes",
-        "ISW: IDF expects Iranian ballistic fire to stop soon",
-        "Cluster warhead missiles still being launched",
-        "But: Iran tracking ability weakened, relies on Russian intel",
-        "IRGC claims \"firing in greater numbers with >1 tonne warheads\" — propaganda-discounted but non-zero info. Previous ISW evidence still supports degradation. Confidence LOWERED due to conflicting signals.",
-        "[2026-03-14] Day 14: Iran still launching missile barrages hitting central Israel (Shoham, Holon). Cluster munitions confirmed. Capability less degraded than US claims of 90%.",
-        "Mar 13-14: Iran barrage hit Shoham/Holon in central Israel",
-        "[2026-03-14] (cred:0.77) Day 15: CENTCOM hit missile facilities and mines on Kharg. Further degradation of Iran retaliatory capability. Up from 0.55. — CENTCOM/NBC/NYT/Goldman/MarketData",
-        "[2026-03-15] Day 15-16: Israel struck 200+ additional targets in 24h (missile launchers, defense systems, weapons production). Cumulative degradation continues. Up from 0.62. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
-        "[2026-03-15] Day 15: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including missile launchers, defense systems, weapons production. Cumulative degradation continues. Up from 0.65. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-15] Day 15-16: Israel hit 200+ targets in 24h including weapons production. Plus Kharg missile facilities. Up from 0.65. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
-        "[2026-03-15] Day 16: IDF 200+ targets in 24h, 400 waves since war began. But Iran still firing 7 salvos → degradation slower than claimed.",
-        "2026-03-23 Mar 19-23: ISW: 85% Iran SAMs destroyed. CENTCOM Cooper: fire declining from dozens to 1-2. 8000+ targets, 130 vessels destroyed. (impact: up)",
-        "2026-03-26 Mar 26: CENTCOM chief confirmed destroyed 2/3 Iran arms manufacturing (ToI). IDF 600+ ballistic sites struck. ISW: 9th Artesh AF TAB Bandar Abbas struck. Fire confirmed 1-2 at a time. (impact: up)",
-        "[2026-03-28] ISW: IRGC lowered recruitment age to 12 = manpower crisis. CENTCOM 10K+ targets struck. IDF expanded to Mashhad (NE-most). Tangsiri killed.",
-        {
-          "date": "2026-03-30",
-          "text": "Reuters: US can only confirm ~1/3 of Iran missile arsenal destroyed, not 85% as claimed. Iran parliament: missiles in place. Iran fired new wave Sunday",
-          "source": "Reuters/AP",
-          "impact": "-0.15"
-        }
+        "WashPost/ISW Mar 29: 4 production facilities struck",
+        "Experts: production HALTED until rebuilt",
+        "CENTCOM 10000+ targets, 2/3 arms mfg destroyed"
       ],
-      "reasoning": "Updated 2026-03-23T15:37:24.105489+00:00: ISW Mar 19 confirmed combined force destroyed ~85% of Iran SAMs. CENTCOM Cooper: fire declining from dozens to 1-2 at a time. 8000+ targets struck. Quantitative degradation confirmed by CENTCOM commander directly. Old: 0.72",
+      "reasoning": "ISW/WashPost Mar 29: Combined force struck 4 key ballistic missile PRODUCTION facilities (Khojir 88 structures destroyed, Shahroud 28, Parchin 12, Hakimiyeh 19) + 29 launch bases. 4 experts: 'most likely HALTED Iran ability to produce short/medium-range ballistic missiles until rebuilt'. IRGC fire STILL 1-2 at a time confirms operational degradation. UP from 78% to 88%.",
       "time_horizon": "持续",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-13T22:42:03.988336+00:00",
+      "last_updated": "2026-03-30T11:29:22.803846+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
       "updated": "2026-03-13T22:41:43.076948Z"
     },
@@ -656,37 +637,20 @@
         "军事",
         "政治"
       ],
-      "probability": 0.55,
-      "confidence": 0.55,
+      "probability": 0.65,
+      "confidence": 0.65,
       "evidence": [
-        "Wikipedia: US expressed reluctance to deploy ground troops",
-        "Trump: virtually unlimited supply of heavy weaponry",
-        "Air campaign preferred",
-        "2,500 Marines + USS Tripoli ARG ordered to ME from Taiwan waters",
-        "2500 Marines + USS Tripoli ARG ordered to ME",
-        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli deploying to ME from Taiwan area, >1 week out. MEUs are multipurpose (embassy security, evac, amphibious). Deployment does not necessarily indicate ground op but increases capability. Marginal up from 0.42. (src: AP/IRGC/Trump/Reuters/Guardian/Fortune)",
-        "[2026-03-15] Day 15: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU can do amphibious landings. WSJ + satellite confirmed. But Tripoli >1 week away, deployment doesnt necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/NYT/Guardian, Credibility: 0.85)",
-        "[2026-03-15] Day 15-16: 2,500 Marines (31st MEU) + USS Tripoli amphibious assault ship deploying. MEU specializes in amphibious landings. Tripoli >1 week away (near Taiwan). Does not necessarily indicate ground op. Up from 0.45. (Source: AP/Fortune/Reuters/CNBC/Guardian/NYT, Credibility: 0.77)",
-        "[2026-03-15] Day 15-16: 2500 Marines (31st MEU) + USS Tripoli deploying. MEU has amphibious capability. But Tripoli >1 week away. Deployment doesnt necessarily indicate ground ops. Up from 0.45. (Source: AP/Fortune/Reuters/NYT, Credibility: 0.82)",
-        "[2026-03-15] Day 16: IRGC attacking US bases in Iraq/Kuwait. Marines deploying. South Korea considering warships.",
-        "[2026-03-16] Israel ground op in Lebanon raises multi-front ground war precedent",
-        "[2026-03-23 19:33] Trump pivot to \"productive talks\" + 5-day postponement = de-escalation signal. Ground war requires escalation commitment that this move contradicts. Cost threshold (.94 gas, 14 dead, IEA worst-since-1970s) creating domestic pressure against escalation. DOWN from 0.54.",
-        "[2026-03-25] WSJ: Pentagon readying 3000 soldiers from 82nd Airborne for ME deployment. Pentagon requesting B supplemental (UPI).",
-        "[2026-03-25] Trump approved 1000+ 82nd Airborne deployment (NBC). Pentagon $25B supplemental. BUT could be negotiation leverage not invasion prep.",
-        "[2026-03-27] 82nd Airborne 2-3K deploying BUT CNBC analysis: coercive diplomacy not ground invasion prep. Trump 10-day extension reduces urgency. RUSI: US burned 11000+ munitions in 16 days — weapons shortage concerns (Telegraph).",
-        {
-          "date": "2026-03-30",
-          "text": "2,500 US Marines arrived in region (AP Mar 29). Pentagon considering 10,000 MORE ground troops (WSJ) = potential 17K force",
-          "source": "AP/WSJ",
-          "impact": "+0.07"
-        }
+        "NYT Mar 29: SOF Rangers+SEALs arrived",
+        "WashPost: Pentagon preparing weeks ground ops",
+        "AP: 2500 Marines+Tripoli arrived",
+        "ISW: Iran Janfada recruitment campaign"
       ],
-      "reasoning": "2,500 Marines ARRIVED (AP Mar 29). Pentagon considering 10,000 MORE ground troops (WSJ). Iran parliament: waiting for US troops on ground. Total potential 17K ground force. Significant escalation from deployment to presence.",
+      "reasoning": "SOF (Rangers, SEALs) hundreds arrived (NYT Mar 29). Pentagon preparing weeks of ground ops (WashPost). 2,500 Marines+Tripoli already in region. Iran launched Janfada recruitment for volunteers. Probability UP from 55% to 65%.",
       "time_horizon": "W8-24",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-24T23:52:39.833492+00:00",
+      "last_updated": "2026-03-30T11:29:22.803846+00:00",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "europe_energy_crisis": {
@@ -1684,26 +1648,20 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.82,
-      "confidence": 0.65,
+      "probability": 0.87,
+      "confidence": 0.72,
       "evidence": [
-        "FM阿拉格齐: 军事单位已转入去中心化模式,31个自治省级单位",
-        "Chertoff Group: 被斩首政权在谈判前先升级",
-        "Lloyd's List: 中国航运高管确认IRGC与政府双轨指挥",
-        "Carnegie/Sadjadpour: 佩泽什基安无关紧要,不决定伊朗未来",
-        "IRGC unified messaging under Mojtaba + \"greater numbers\" claim suggests coordinated ops. Quick succession showed organizational coherence. ISW \"mosaic defense\" still supports distributed command.",
-        "[2026-03-13] Iran fighting on multiple fronts simultaneously (Hormuz mining, Gulf drones, Riyadh, Israel missiles, Lebanon). Mosaic defense pattern",
-        "[2026-03-18] Iran announced coordinated IRGC Navy+Army+Hezbollah offensive = central command still functioning, contradicts fragmentation thesis",
-        "2026-03-26 Mar 26: Israel killed IRGC Navy commander who ordered Hormuz closure (Fox). Plus hardliner Zolghadr appointed as SNSC secretary (ISW). Leadership disruption accelerating. (impact: up)",
-        "[2026-03-26] IDF killed IRGC Navy Commander Tangsiri + Intel Deputy Rezaei in Bandar Abbas",
-        "[2026-03-26] ISW: IRGC lowered recruitment age to 12 — manpower crisis signal"
+        "ISW: Pezeshkian-Vahidi rift deepening",
+        "ISW: recruitment age lowered to 12",
+        "ISW: Janfada recruitment campaign",
+        "IRGC Navy Commander Tangsiri killed"
       ],
-      "reasoning": "DOWNGRADED: Mar 18 coordinated multi-front offensive (IRGC Navy+Army+Hezbollah) demonstrates central command capability. Fragmentation is real at tactical level (proxy decentralization) but strategic coordination persists.",
+      "reasoning": "ISW Mar 29: deepening RIFT between Pezeshkian and IRGC Commander Vahidi over war costs. IRGC lowered recruitment age to 12 = desperation signal. Janfada volunteer campaign = institutional strain. Navy Commander Tangsiri killed. UP from 82% to 87%.",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-18T03:26:19.940030Z",
+      "last_updated": "2026-03-30T11:29:22.803846+00:00",
       "created": "2026-03-09T11:29:06.389530+00:00"
     },
     "spr_coordinated_release": {
@@ -2275,13 +2233,16 @@
         "military",
         "diplomacy"
       ],
-      "probability": 0.65,
-      "confidence": 0.5,
+      "probability": 0.78,
+      "confidence": 0.65,
       "node_type": "prediction",
-      "reasoning": "Ukraine claims Russia supplying Iran with Shahed drones for attacks on US bases. Warns Russian troops could potentially deploy. Ukraine source has bias but strategic logic is sound.",
+      "reasoning": "ISW Mar 29: Russia providing satellite imagery of US assets (Diego Garcia, Incirlik, Al Udeid, Shaybah) to Iran per Zelensky. 'Very active' discussions on upgraded drone transfer (AP/ISW Mar 28). UK intel: Russia already provided drone training+EW support. UP from 65% to 78%.",
       "evidence": [
-        "[2026-03-15] (Haaretz/Ukraine) Russia supplying Iran Shahed drones, warns of possible troop deployment"
-      ]
+        "ISW Mar 29: Russia sat imagery to Iran",
+        "AP: very active drone transfer discussions",
+        "UK intel: drone training + EW support already provided"
+      ],
+      "last_updated": "2026-03-30T11:29:22.803846+00:00"
     },
     "gulf_states_intercepting": {
       "id": "gulf_states_intercepting",
@@ -2580,23 +2541,15 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.8,
-      "confidence": 0.75,
+      "probability": 0.85,
+      "confidence": 0.78,
       "evidence": [
-        "以色列持续打击南黎巴嫩",
-        "火箭弹仍在射向以色列北部",
-        "IDF地面入侵黎巴嫩夺取战略阵地",
-        "指挥层此前遭大规模斩首(2024寻呼机行动)",
-        "JPost Mar 28: 600+ attacks on Israel in 24h, DOUBLING prior peak — likely coercion for ceasefire",
-        {
-          "date": "2026-03-30",
-          "text": "Hezbollah unleashed 600+ attacks/24h on Israel, DOUBLING prior peak — coercion for ceasefire",
-          "source": "JPost",
-          "impact": "+0.08"
-        }
+        "JPost: 600+ attacks/24h",
+        "AP: Netanyahu expanded Lebanon invasion",
+        "IDF: 800+ Hezbollah operatives killed"
       ],
-      "reasoning": "600+次/24h攻击=翻倍历史峰值,不可持续但展示残余能力远高于预期。独立评估,不继承IRGC衰减。",
-      "last_updated": "2026-03-28T09:24:04.741688+00:00",
+      "reasoning": "Hezbollah sustained 600+ attacks/24h DOUBLING prior peak. Netanyahu ordered EXPANSION of southern Lebanon invasion Sunday (AP/Reuters Mar 29). IDF killed 800+ operatives but Hezbollah tempo INCREASING not decreasing. UP from 80% to 85%.",
+      "last_updated": "2026-03-30T11:29:22.803846+00:00",
       "created": "2026-03-28T09:24:04.741688+00:00"
     },
     "axis_combined_pressure": {
