@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-03-31T23:56:38.514721+00:00",
+  "last_updated": "2026-04-01T02:34:00.129703+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -93,6 +93,12 @@
           "est": "1-2 declining (IRGC), Houthis SUSTAINED 2+ waves, new salvo at Israel Tue (Jerusalem sirens), Kuwaiti tanker struck Dubai",
           "note": "Day 40. ★★★★★ MULTI-FRONT SUSTAINED: (1) IRGC fire STILL 1-2 at a time — mass salvo era CONFIRMED over; (2) Houthis SUSTAINED 2+ waves cruise+drones at Israel — INDEPENDENT; (3) Iran fired NEW missile salvo at Israel Tuesday — IDF intercepting, sirens in Jerusalem (CBS Mar 31); (4) Kuwaiti VLCC Al-Salmi STRUCK by Iran drone at Dubai port — fully laden, fire, hull damage (Bloomberg Mar 31) = most significant vessel attack; (5) Hezbollah 5,000+ missiles/rockets/drones at Israel since Mar 2 (ISW); (6) US destroyed 150 Iranian vessels incl 92% largest (Leavitt Mar 30), 10,000+ targets struck; (7) Hegseth CONCEDED Iran retains ability to retaliate despite monthlong bombing (NYT Mar 31); (8) US KIA: 13 (Pentagon/NYT) to 15 (Wikipedia) + 300+ wounded; (9) Iran: HRANA 3,486+ killed; (10) China-Pakistan 5-POINT PEACE PLAN formally presented Tuesday (Axios/Reuters Mar 31) = most concrete diplomatic framework yet. PATTERN: IRGC volume collapsed BUT 3 INDEPENDENT fronts active (IRGC residual + Houthis sustained + Hezbollah 5K+). Air campaign FAILING to eliminate Iran strike capability. Source: CBS/Bloomberg/NYT/ISW/Axios/Reuters/Wikipedia",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-01",
+          "est": "1-2 declining (IRGC), 3 INDEPENDENT fronts sustained, IRGC Apr 1 20:00 deadline for 18 US companies",
+          "note": "Day 33/Day 40. ★★★★★ CRITICAL NEW ESCALATION: (1) IRGC NAMED 18 US companies (Apple/Google/Microsoft/Tesla/Boeing/IBM/Intel etc) — threatens \"destruction of relevant units\" starting Apr 1 20:00 Tehran time = TODAY ~16:30 UTC (Fars/Reuters/WIRED/IndiaToday); (2) White House: military \"ready to curtail attacks\" after IRGC threats (Reuters Mar 31); (3) Hegseth: US can see \"finish line\" in Iran war (Reuters Apr 1); (4) Trump: could end war in 2-3 weeks (Reuters Apr 1); (5) IRGC fire STILL 1-2/day declining; (6) Houthis SUSTAINED 2+ waves; (7) Hezbollah 5000+ since Mar 2; (8) Iran deployed Khorramshahr-4 BM + doctrine shift \"defensive to offensive\" (Wikipedia); (9) Bushehr nuclear plant struck multiple times (CNN). ★★★ IRGC Apr 1 deadline = ACTION OR BLUFF will be tested IN HOURS. Source: Reuters/WIRED/CNN/IndiaToday/Fars/Wikipedia",
+          "source": "heartbeat"
         }
       ]
     },
@@ -189,6 +195,12 @@
           "est": "~3-4 mbd (4-6 ships/day, COSCO 2 ships confirmed Mon, Kuwaiti tanker STRUCK at Dubai — trickle recovery THREATENED, NO US escort)",
           "note": "Day 40. ★★★★★ TRANSIT + TANKER ATTACK: (1) Kuwaiti VLCC Al-Salmi STRUCK by Iran drone at Dubai port — fully laden, fire, hull damage (Bloomberg Mar 31) = most significant vessel attack to date; (2) COSCO 2 state-backed container ships transited Hormuz Monday (Reuters); (3) NO US Navy-escorted tanker transited under DFC program yet (InsuranceJournal Mar 31); (4) USNI/Lloyd's: 142 transits Mar 1-25 vs 2,652 same period 2025 = 94.6% decline; (5) Bessent: 'US will retake straits through escorts or multinational escort' (Bloomberg Mar 30); (6) Iran parliament pursuing formal Hormuz sovereignty codification + toll collection (NPR); (7) ~3,000 vessels waiting (NYT); (8) Dual chokepoint: Hormuz + Bab el-Mandeb (Houthis); (9) China-Pakistan 5-point plan calls for 'restoration of normal navigation in Hormuz' (Reuters Mar 31). Tanker attack DIRECTLY THREATENS trickle recovery. NO escort = blockade continues. Still 95% below pre-crisis. Source: Bloomberg/Reuters/InsuranceJournal/USNI/NPR/NYT",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-01",
+          "est": "~3-4 mbd (4-6 ships/day), Kuwaiti tanker aftermath — dozens of tankers fleeing Dubai, Brent near ",
+          "note": "Day 40. ★★★★★ POST-TANKER ATTACK FALLOUT: (1) Guardian: dozens of tankers LEAVING Dubai area to avoid further Iranian attacks after Al-Salmi struck; (2) CNBC: Brent nears USD120/bbl after tanker attack off UAE; (3) USNI: 142 transits Mar 1-25 vs 2,652 in 2025 = 94.6% decline UNCHANGED; (4) NO US Navy escort completed; (5) COSCO 2 ships transited Mon — only confirmed state-backed passage; (6) Iran: \"non-hostile vessels\" may transit if coordinated with Iranian authorities (Reuters Mar 24); (7) IRGC tolled passage via Larak Island still operating. Tanker attack causing REVERSE flow — ships LEAVING ports, not entering strait. Source: Guardian/CNBC/USNI/Reuters",
+          "source": "heartbeat"
         }
       ]
     },
@@ -282,6 +294,12 @@
           "est": "~1-1.5 mbd confirmed (Wright/S&P Global), D+25, 172M bbl US / 412M bbl global",
           "note": "Day 40 D+25. SPR release rate CONFIRMED 1-1.5 mbd (Wright/CERAWeek/S&P Global). 172M bbl US total, 412M bbl global (IEA 32 countries, 4 months). Further release highly unlikely (Reuters). Gas BREACHED USD4.018/gal national (Axios/Reuters Mar 31), CA USD5.87/gal (Time), up USD1.06 in March = steepest monthly increase (Reuters/GasBuddy). Brent USD118.35 close (+5% Tue), 60%+ March surge = biggest since 1988 (CNBC). WTI USD103+. Argus: first batch 45.2M bbl contracted, return Nov 2026-Sep 2028. OPEC+ production unwind deadline Apr 1. SPR trickle IRRELEVANT — Hormuz soft blockade removes 15-17 mbd vs 1.5 mbd SPR release. Source: S&P Global/Reuters/Axios/Time/CNBC/Argus",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-01",
+          "est": "~1-1.5 mbd confirmed, D+25/26, SPR deliveries OFFICIALLY BEGIN today Apr 1",
+          "note": "Day 40 D+25. ★★★ SPR DELIVERY START: (1) Argus/DOE: crude deliveries SCHEDULED Apr 1 to May 31, first batch 45.2M bbl (Argus Mar 25); (2) 8 companies contracted: Shell/Marathon/BP/Gunvor etc; (3) 172M bbl US / 412M bbl global; (4) Gas USD4.018/gal national — BREACHED (Axios/Reuters Mar 31); (5) CA USD5.87/gal (Time); (6) Brent spiked near USD120 after tanker attack (CNBC Apr 1); (7) SPR trickle STILL IRRELEVANT — 1.5 mbd vs 15-17 mbd Hormuz disruption = 10% replacement. Source: Argus/DOE/CNBC/Axios/Reuters",
+          "source": "heartbeat"
         }
       ]
     }
@@ -290,30 +308,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "ESCALATED — China-Pakistan 5-POINT PEACE PLAN formally presented Tue (ceasefire + Hormuz reopening)",
-      "last_check": "2026-03-31",
-      "findings": "Day 40. ★★★★★ MAJOR ESCALATION: (1) China-Pakistan JOINTLY presented 5-point peace plan Tuesday Mar 31 (Axios/Reuters/IndiaToday/JustTheNews): includes IMMEDIATE CEASEFIRE in Gulf+Middle East, swift launch of peace talks, restoration of normal navigation in Hormuz; (2) Wang Yi met Dar in Beijing — agreed to 'strengthen strategic communication and coordination on Iran situation'; (3) China MFA Mao Ning: supports Pakistan mediation, urges US-Iran talks 'as soon as possible' (ExpressTribune); (4) AJE: 'Will China join Pakistan-led efforts to mediate US-Iran peace?' — China UPGRADING from verbal support to co-sponsoring formal framework; (5) COSCO 2 state-backed ships transited Monday = economic action backing diplomatic action; (6) No Chinese NAVAL deployment yet but formal peace plan = QUALITATIVE LEAP from verbal mediation. ★★★ fp1 threshold APPROACHING — formal plan with ceasefire + Hormuz mentions is closest to fp1 trigger yet. Need: acceptance by both sides or UN endorsement to fully trigger. Source: Axios/Reuters/IndiaToday/ExpressTribune/AJE/NewIndianExpress"
+      "status": "STALLED — China-Pakistan 5pt plan presented but Iran REJECTED China mediation",
+      "last_check": "2026-04-01",
+      "findings": "Day 40. ★★★★ SETBACK: (1) VOR News Mar 31: Iran REJECTED China mediation offer — \"open to mediation in broad terms\" but \"actions show very little room for compromise\"; (2) Zhai Jun still active behind scenes (VOR); (3) China-Pakistan 5pt plan formally presented Tue (Axios/Reuters) but no acceptance; (4) CGTN Mar 27: Wang Yi met UK NSA + called France + urged Pakistan/Egypt/Turkey/Iran to \"seize every window\"; (5) COSCO 2 ships transited = economic backing; (6) No Chinese NAVAL deployment. fp1 NOT TRIGGERED — formal plan exists but Iran rejection = dead letter without leverage. Source: VOR/Axios/Reuters/CGTN"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "MAXIMUM CONTRADICTION — Hegseth concedes Iran retains strike ability WHILE Dow surges 1100pts on 'deal hopes'",
-      "last_check": "2026-03-31",
-      "findings": "Day 40. ★★★★★ PEAK CONTRADICTION: (1) Hegseth CONCEDED Iran retains ability to retaliate despite monthlong bombing (NYT Mar 31); (2) BUT Dow surged 1,100pts, S&P +184.80 to 6,528.52, Nasdaq +392.51 on 'hopes for end of Iran war' (CNBC/Yahoo Mar 31); (3) Trump 'great progress' + Iran agreed to 'most of' 15-point plan (CNBC) BUT Iran FM says 'no negotiations since war began'; (4) Gas USD4.018/gal nationally — USD4 BREACHED (Axios/Reuters); (5) Energy destruction deadline Apr 6 = 5 DAYS; (6) No DFC escort completed (InsuranceJournal); (7) Brent USD118.35 close (+5% Tue); (8) China-Pakistan 5-point plan ADDS NEW DIPLOMATIC TRACK competing with US framing; (9) Marines + 82nd Airborne deployed as leverage but no ground war decision. Signal package MAXIMUM INCOHERENT — markets pricing deal while military concedes air campaign failing. Source: NYT/CNBC/Yahoo/Axios/Reuters/InsuranceJournal"
+      "status": "PEAK INCOHERENCE — \"finish line\" + \"2-3 weeks\" vs IRGC targets 18 US companies TODAY",
+      "last_check": "2026-04-01",
+      "findings": "Day 40. ★★★★★ MAXIMUM PARADOX: (1) Trump Apr 1: \"could end war in 2-3 weeks\" (Reuters); (2) Hegseth: can see \"finish line\" (Reuters); (3) BUT IRGC named 18 US companies (Apple/Google/Microsoft/Tesla/Boeing/IBM/Intel) — threatens attacks starting Apr 1 20:00 Tehran (WIRED/Reuters/IndiaToday); (4) White House: military \"ready to curtail\" IRGC attacks on US firms; (5) Apr 6 energy destruction deadline = 5 DAYS; (6) Iran denied any negotiations, called Trump \"deceitful\"; (7) No DFC escort completed; (8) Brent near USD120 after tanker attack; (9) Gas USD4+; (10) Hegseth previously CONCEDED Iran retains strike ability. Signal: US declaring victory while Iran ESCALATING target set from military to civilian corporate infrastructure. Source: Reuters/WIRED/CNBC/IndiaToday"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "UPGRADED — China-Pakistan 5-point plan = first formal ceasefire framework with Hormuz reopening, competing with Pakistan Quad + Iran 5-point counter",
-      "last_check": "2026-03-31",
+      "status": "DEADLOCKED — Multiple frameworks (US 15pt, China-Pak 5pt, Iran 5pt counter) but ALL rejected, NO talks scheduled",
+      "last_check": "2026-04-01",
       "findings": "Day 40. ★★★★★ FRAMEWORK PROLIFERATION: (1) China-Pakistan 5-point peace plan formally presented Tue (Axios/Reuters): IMMEDIATE ceasefire + swift peace talks + Hormuz reopening = most comprehensive framework yet; (2) Pakistan Quad (SA/Turkey/Egypt) met Sunday — Guardian calls embryo of 'new order'; (3) Iran's own 5-point counter demands reparations + Hormuz sovereignty; (4) US 15-point plan rejected by Iran as excessive; (5) NYT Mar 31: 'no negotiations yet scheduled between major combatants'; (6) Iran FM Araghchi insists ceasefire BEFORE talks; (7) Trump insists talks BEFORE ceasefire; (8) Senate War Powers blocked 53-47, House delayed mid-April; (9) Apr 6 energy destruction deadline = 5 DAYS. fp3 NOW PARTIALLY ACTIVE — multiple competing frameworks exist (China-Pak 5pt, Pak Quad, Iran 5pt, US 15pt) but NO convergence. Need: direct talks or mutual acceptance of any framework. Source: Axios/Reuters/Guardian/NYT/ForeignPolicy"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "ALL THRESHOLDS AT NEW HIGHS — Gas USD4.018/gal breached, Brent USD118.35, 13-15 US KIA, ground war decision looming, Dow +1100 volatility",
-      "last_check": "2026-03-31",
-      "findings": "Day 40. ★★★★★ COST BARRIERS BREACHED: (1) Gas USD4.018/gal national = first time since 2022, up USD1.06/+36% in March = steepest monthly increase (Reuters/CNBC/Axios Mar 31); (2) CA USD5.87/gal (Time); (3) Brent USD118.35 close (+5% Tue = 60%+ March surge, biggest monthly since 1988); (4) WTI USD103+, first settle >100 since Jul 2022; (5) Gold USD4,720.30 (+0.89%); (6) S&P 6,528.52 (+184.80/+2.9%) — Dow surged 1,100pts on deal hopes; (7) VIX 25.25 (-5.36/-17.5%) = fear gauge DECLINING on deal hopes; (8) US KIA: 13-15 confirmed + 300+ wounded; (9) Iran: HRANA 3,486+ killed; (10) Hegseth concedes air campaign not eliminating Iran strike capability; (11) JetBlue/airlines raising fees; (12) CPI rose 2.4% (Wikipedia); (13) Moody's recession probability 49%. Political cost AT PEAK but market EUPHORIA on deal hopes creates paradox — costs screaming while optimism surging. Ground war = exponential cost escalation. Source: Reuters/CNBC/Axios/Time/Yahoo/NYT"
+      "status": "ALL BARRIERS BREACHED + NEW DIMENSION: IRGC targeting US corporate infrastructure in Gulf",
+      "last_check": "2026-04-01",
+      "findings": "Day 40. ★★★★★ NEW COST DIMENSION: (1) IRGC threatens 18 US companies operations in Gulf — Apple/Google/Microsoft/Tesla/Boeing/IBM/Intel showrooms/offices/Superchargers (WIRED/Electrek); (2) Gas USD4.018/gal nationally = 2022 high (Axios/Reuters); (3) Brent near USD120 after tanker attack (CNBC); (4) US KIA: 13-15 + 300+ wounded; (5) Iran HRANA 3,486+ killed; (6) Apr 6 energy deadline = 5 DAYS; (7) Moody recession probability 49%; (8) Dow +1100 then volatility; (9) CORPORATE COST NOW DIRECT — companies evacuating Gulf staff = NEW political pressure channel on US administration. Source: WIRED/Electrek/Reuters/CNBC/Axios"
     }
   },
   "noise_filter": {
