@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-01T23:25:41.469538+00:00",
+  "last_updated": "2026-04-02T03:26:09.062792+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-03-29",
-          "est": "1-2 declining (IRGC), Houthis SUSTAINED 3rd wave, Hezbollah 600+/24h, Iran new salvo Sunday",
-          "note": "Day 36. ★★★★★ MULTI-FRONT SUSTAINED: (1) IRGC fire STILL 1-2 at a time — mass salvo era CONFIRMED over; (2) Houthis SUSTAINED — 2+ waves cruise+drones at Israel, confirmed INDEPENDENT ongoing capability; (3) Iran fired NEW wave missiles at Israel Sunday Mar 29 — fragment hit Beersheba factory (AP/IDF); (4) Hezbollah 600+ attacks/24h; (5) UAE intercepted 16 missiles + 42 drones/24h (MoD); (6) IRGC attacked ALBA (Bahrain) + EGA (UAE) aluminium smelters = ECONOMIC infrastructure targeting; (7) Iran struck Prince Sultan AB Saudi — 15 US troops wounded Mar 28 (AJE); (8) US KIA: 15 confirmed + 332 wounded; (9) CENTCOM: 10,000+ targets, 2/3 arms mfg destroyed; (10) IDF struck Arak heavy water + Bushehr 3rd time = nuclear escalation; (11) IDF 60+ jets 150+ munitions on Parchin; (12) IRGC recruitment age lowered to 12 (ISW). PATTERN: IRGC volume collapsed BUT 3 INDEPENDENT fronts active (IRGC residual + Houthis sustained + Hezbollah surge) + economic infrastructure targeting = war WIDENING. Source: AP/IDF/AJE/ISW/UAE MoD/Reuters/Guardian/NYT",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-30",
           "est": "1-2 declining (IRGC), Houthis 2+ waves SUSTAINED, Hezbollah continuing, 3-front war",
@@ -93,6 +87,12 @@
           "est": "1-2 declining (IRGC baseline) BUT 100+ missile joint salvo Apr 1 with Houthis+Hezbollah",
           "note": "Day 42. ★★★★★ PATTERN BREAK — JOINT SALVO: (1) IRGC launched NEW coordinated wave: 100+ heavy missiles + attack drones + 200+ rockets — JOINT with Houthis + Hezbollah (Moneycontrol/TheHindu Apr 1); (2) Houthis '3rd military operation targeting sensitive Israeli targets with ballistic missiles' — jointly with Iran + Hezbollah (Yahya Saree statement); (3) This is SIGNIFICANT REVERSAL from 1-2/day declining pattern — suggests coordinated multi-front salvo capability REMAINS; (4) Trump claims Pezeshkian asked for ceasefire (TruthSocial Apr 1) — Iran calls it 'false, baseless'; (5) IRGC 18-company deadline at 20:00 Tehran Apr 1 — UNTESTED at pipeline time; (6) A-10 Warthogs deploying to Hormuz as ground operation option emerges (ArmyRecognition Apr 1); (7) Argentina designated IRGC terrorist org (Mar 31); (8) US KIA: 15+ confirmed + 300+ wounded; (9) IDF continuing Tehran strikes; (10) Iran: HRANA 3,486+ killed. CRITICAL: Joint salvo BREAKS the 1-2/day pattern — must monitor if this is one-off coordinated show-of-force or return to mass salvos. 3 INDEPENDENT fronts CONFIRMED ACTIVE simultaneously. Source: Moneycontrol/TheHindu/ArmyRecognition/Reuters/CNBC/Axios",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-02",
+          "est": "1-2 declining (IRGC baseline) BUT Apr 1 joint salvo 100+ missiles confirmed, 3 INDEPENDENT fronts sustained",
+          "note": "Day 43. ★★★★★ TRUMP ADDRESS + PARADOX: (1) Trump primetime address Apr 1: 'core strategic objectives nearing completion', 'leaving very soon', 2-3 week timeframe to deal or bombard infrastructure (CNBC/NYT/AP/Politico/LAT); (2) BUT Iran FM denies ALL negotiations — 'false and baseless' re ceasefire claim (AJE/USAToday); (3) IRGC Apr 1 joint salvo 100+ heavy missiles + drones WITH Houthis+Hezbollah CONFIRMED (Moneycontrol/TheHindu); (4) IRGC 18-company deadline Apr 1 20:00 Tehran PASSED — no confirmed corporate attacks YET, monitoring; (5) Houthis SUSTAINED — launched ballistic missiles at 'sensitive' Israeli targets, intercepted (Wikipedia Apr 2); (6) Hezbollah 5,000+ since Mar 2 — INDEPENDENT; (7) US KIA: 13 (NYT/Pentagon) to 15 (Wikipedia) + 300+ wounded (PBS); (8) Intercept Apr 1: Pentagon covering up Iran war casualties — 15 US troops wounded Friday Saudi base attack alone; (9) CENTCOM 10,000+ targets, 2/3 arms mfg destroyed; (10) Hegseth CONCEDED Iran retains strike capability. PATTERN: Trump declaring near-victory WHILE 3 independent fronts active + joint 100+ salvo CONTRADICTS wind-down. Apr 6 energy deadline 4 days. Source: CNBC/NYT/AP/Politico/LAT/AJE/USAToday/Moneycontrol/PBS/Wikipedia",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-03-29",
-          "est": "~3-4 mbd (4-6 ships/day, USNI: 142 transits Mar 1-25 = 94.6% decline, IRGC yuan toll via Larak)",
-          "note": "Day 36. ★★★ TRANSIT: (1) USNI/Lloyd's: 142 transits Mar 1-25 vs 2,652 same period 2025 = 94.6% decline; (2) ABC: ~150 ships Mar 1-26 inc 46 tankers vs 50/DAY pre-war; (3) IRGC yuan-denominated toll system via Larak Island (~USD2M/transit); (4) Pakistan FM: Iran allowing 20 Pakistan-flagged ships (2/day) — trust signal; (5) IRGC Navy REITERATED Hormuz CLOSED (CBS); (6) Oxford Economics: impassable until May; (7) ~3,000 vessels waiting (NYT); (8) Pakistan Quad talks Day 1 (SA/Turkey/Egypt) opened — Hormuz reopening priority; (9) Houthi Red Sea entry RENEWS dual chokepoint threat (Hormuz + Bab el-Mandeb). Still 95% below pre-crisis (17-20 mbd). Source: USNI/ABC/CBS/Oxford/NYT/AP/Reuters",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-30",
           "est": "~3-4 mbd (4-6 ships/day, USNI 142 transits Mar 1-25 = 94.6% decline, Pakistan 20 ships deal)",
@@ -189,6 +183,12 @@
           "est": "~3-4 mbd (4-6 ships/day), tankers fleeing Dubai, NO US escort, Guardian: trickle via Iranian waters",
           "note": "Day 42. ★★★ TRANSIT UNCHANGED — POST-TANKER FALLOUT CONTINUES: (1) Guardian Mar 26: trickle of ships via alternative route through Iranian waters — 'Tehran's tollbooth'; (2) USNI Apr confirms: 142 transits Mar 1-25 vs 2,652 in 2025 = 94.6% decline; (3) NO US Navy escort completed — USNI April issue confirms; (4) Tankers FLEEING Dubai post-Al-Salmi attack (Guardian); (5) Iran FM Araghchi Apr 1: safe passage for 'friendly countries' vessels only; (6) Trump: ceasefire ONLY when Hormuz open (Reuters Apr 1) — makes strait THE precondition; (7) IRGC tolled passage via Larak Island (~USD2M/transit, yuan-denominated); (8) ~3,000 vessels still waiting; (9) COSCO 2 ships = only confirmed major transit; (10) Bessent: 'retake Hormuz' — rhetoric only, no action materialized. Still 95% below pre-crisis (17-20 mbd). Source: Guardian/USNI/Reuters/Axios/Bloomberg",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-02",
+          "est": "~3-4 mbd (4-6 ships/day), 5-nation friendly transit (CN/RU/IN/IQ/PK), yuan/crypto tolls, NO US escort, tankers fleeing Dubai",
+          "note": "Day 43. ★★★★★ SELECTIVE REOPENING + TOLL REGIME: (1) Iran FM Araghchi Mar 26: 5 'friendly nations' (China/Russia/India/Iraq/Pakistan) allowed to transit Hormuz (TheHindu/ToI/Wikipedia); (2) Bloomberg Apr 1: ships paying YUAN AND CRYPTO tolls for safe passage — 'Tehran's tollbooth' institutionalized; (3) USNI/Lloyd's: 142 transits Mar 1-25 vs 2,652 same period 2025 = 94.6% decline UNCHANGED; (4) COSCO 2 state-backed ships = only confirmed major transit; (5) Tankers STILL fleeing Dubai post-Al-Salmi VLCC attack (Guardian); (6) NO US Navy escort completed — USNI April issue confirms; (7) BreakingDefense Apr 1: Hormuz disruption changing trade+defense at other chokepoints globally; (8) Brent FELL to ~ after Trump address from  peak — market pricing wind-down; (9) ~3,000 vessels waiting; (10) Iran parliament codifying Hormuz sovereignty+tolls (NPR). ★★★ CRITICAL: Two-tier Hormuz emerging — friendly nations transit with tolls vs Western shipping blocked. Still 95% below pre-crisis. Source: Bloomberg/TheHindu/Wikipedia/USNI/BreakingDefense/Guardian/NPR",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-03-29",
-          "est": "~1-1.5 mbd confirmed (Wright/S&P Global), D+21, 172M bbl US / 412M bbl global",
-          "note": "Day 36 D+21. SPR release rate CONFIRMED 1-1.5 mbd (Wright/S&P Global CERAWeek). First batch 45.2M bbl flowing since Mar 21. 172M bbl US total, 412M bbl global (32 countries, 4 months). Further release 'highly unlikely' (Reuters Mar 23). Brent USD112.57 HIGHEST since 2022. WTI USD99.64 touched 100. Gas USD3.93-3.98/gal national approaching USD4 psychological barrier. SPR trickle IRRELEVANT vs geopolitical swings. Source: S&P Global/Reuters/AAA",
-          "source": "pipeline"
-        },
         {
           "date": "2026-03-30",
           "est": "~1-1.5 mbd confirmed (Wright/S&P Global), D+22, 172M bbl US / 412M bbl global, further release 'highly unlikely'",
@@ -282,6 +276,12 @@
           "est": "~1-1.5 mbd confirmed + NEW 10M bbl Bryan Mound RFP Apr 1, D+26, SPR deliveries BEGIN today",
           "note": "Day 42 D+26. ★★★★ NEW SPR ACTION: (1) DOE issued NEW RFP for 10M bbl emergency exchange from Bryan Mound site (Reuters/DOE Apr 1) — ADDITIONAL to existing 45.2M first batch; (2) Rate confirmed 1-1.5 mbd (Wright/S&P Global CERAWeek); (3) SPR crude deliveries OFFICIALLY BEGIN today Apr 1 to Shell/Marathon/BP/Gunvor (Argus); (4) 172M bbl US / 412M bbl global (IEA 32 countries); (5) Gas BREACHED USD4.018/gal national (CNBC/Axios/Reuters Mar 31), CA USD5.87/gal; (6) Brent USD104-115 range; WTI USD102-103; (7) S&P 500 surged 2.9% to 6,528 on de-escalation hopes Apr 1; (8) Argus: crude return Nov 2026-Sep 2028; (9) OPEC+ production unwind Apr 1. ★ Bryan Mound 10M RFP = signal DOE preparing to ACCELERATE draws beyond initial plan. SPR trickle still IRRELEVANT — 1.5 mbd vs 15-17 mbd Hormuz loss. Source: Reuters/DOE/Argus/CNBC/S&P Global",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-02",
+          "est": "~1-1.5 mbd confirmed, D+27, SPR deliveries BEGAN Apr 1, NEW 10M bbl Bryan Mound RFP",
+          "note": "Day 43 D+27. ★★★★ SPR DELIVERIES UNDERWAY + ACCELERATION SIGNAL: (1) SPR crude deliveries OFFICIALLY BEGAN Apr 1 — Shell/Marathon/BP/Gunvor receiving first barrels (Argus/IndexBox); (2) DOE issued NEW 10M bbl emergency exchange RFP from Bryan Mound site Apr 1 (Reuters/DOE) — ADDITIONAL to existing 45.2M first batch; (3) Rate confirmed 1-1.5 mbd (Wright/S&P Global CERAWeek); (4) 172M bbl US / 412M bbl global (IEA 32 countries); (5) Gas now .064/gal national average Apr 2 (EconomicTimes/CNBC), CA .87+ (Time); (6) Brent FELL to ~ after Trump address (NYT Apr 1) from  peak — biggest single-event drop since war began; (7) OPEC+ production unwind Apr 1; (8) Bryan Mound 10M RFP = DOE ACCELERATING draws beyond initial plan. SPR trickle still IRRELEVANT — 1.5 mbd vs 15-17 mbd Hormuz disruption. Source: Reuters/DOE/Argus/IndexBox/CNBC/NYT/EconomicTimes",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "STALLED — China-Pakistan 5pt plan published but Iran REJECTED mediation, CNN: China may step back to let Pakistan lead, NO naval deployment",
-      "last_check": "2026-04-01",
-      "findings": "Day 42. ★★★★ DIPLOMATIC BUT NO TRACTION: (1) China-Pakistan 5-point peace plan formally published Apr 1 (Guardian/Breitbart/IndiaToday/CNN): ceasefire + peace talks + civilian protection + Hormuz reopening + regional stability; (2) CNN Apr 1: China may NOT take direct mediator role since Pakistan already occupying that position — STEPPING BACK; (3) Iran REJECTED China mediation (VOR Mar 31); (4) Iran FM Araghchi Apr 1: 'complete end to war, not ceasefire' + compensation + guarantees; (5) COSCO 2 ships = only economic action; (6) NO Chinese naval deployment; (7) DailyParliamentTimes: 5pt plan puts pressure on Iran but no mechanism. fp1 NOT TRIGGERED — China retreating from direct mediation to supporting Pakistan role. No material action beyond COSCO transit. Source: CNN/Guardian/Breitbart/IndiaToday/VOR"
+      "status": "ACTIVE — China-Pakistan 5pt peace plan published, BUT China STEPPING BACK to let Pakistan lead, Iran REJECTED Chinese mediation, NO Chinese naval deployment",
+      "last_check": "2026-04-02",
+      "findings": "Day 43. ★★★★ CHINA DIPLOMATIC PUSH BUT RETREATING FROM LEAD: (1) China-Pakistan 5-point peace plan formally published Mar 31 (Reuters/Guardian/CNN/ArabNews): ceasefire + peace talks + civilian protection + Hormuz reopening + regional stability; (2) Wang Yi + Pakistan FM Dar joint statement in Beijing Mar 31; (3) CNN Apr 1: China 'positioning itself as peace broker' BUT may STEP BACK since Pakistan already leading mediation — China retreating to supporting role; (4) Iran FM Araghchi Apr 1: ships of 5 friendly nations (including China) allowed Hormuz transit — economic leverage for China; (5) Zhai Jun (China ME envoy): 'one who tied the bell must untie it' — veiled reference to US/Israel responsibility; (6) Iran REJECTED Chinese mediation (VOR Mar 31); (7) NO Chinese naval deployment. fp1 PARTIALLY ACTIVE — most concrete diplomatic framework yet BUT China pulling back from direct mediator to SUPPORTER of Pakistan-led process. Source: CNN/Reuters/Guardian/ArabNews/VOR"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "PEAK PARADOX — Trump: Pezeshkian asked ceasefire + 'war ending' + national address TONIGHT vs IRGC 100+ missile joint salvo + 18-company deadline + Apr 6 energy deadline 5 DAYS",
-      "last_check": "2026-04-01",
-      "findings": "Day 42. ★★★★★ MAXIMUM INCOHERENCE: (1) Trump Apr 1 TruthSocial: Pezeshkian asked for ceasefire — 'We will consider when Hormuz Strait is open, free, and clear' (Reuters/CNBC/Axios); (2) Trump to deliver NATIONAL ADDRESS tonight (NYT Apr 1) on war winding down; (3) BUT Iran calls ceasefire claim 'false, baseless' (TheHindu); (4) Iran FM Araghchi: 'no negotiations exist — only exchange of messages' (CNBC); (5) IRGC launched 100+ heavy missile joint salvo WITH Houthis + Hezbollah Apr 1 (Moneycontrol) — escalation WHILE ceasefire claims; (6) IRGC 18-company deadline Apr 1 20:00 Tehran = TONIGHT; (7) Trump Apr 6 energy destruction deadline = 5 days; (8) Pezeshkian: 'actions are measured self-defense' (NYT); (9) S&P surged 2.9% on 'de-escalation hopes' while IRGC launching salvos = markets misreading. fp2 PEAK — Trump declaring victory + ceasefire progress while Iran simultaneously denying all talks + launching joint mass salvo. DUAL DEADLINES converge this week. Source: Reuters/CNBC/Axios/NYT/Moneycontrol/TheHindu"
+      "status": "PEAK PARADOX — Trump primetime address: 'objectives nearing completion' + 'leaving very soon' + 2-3 weeks WHILE Iran denies ALL talks + IRGC 100+ salvo + Apr 6 energy deadline 4 days",
+      "last_check": "2026-04-02",
+      "findings": "Day 43. ★★★★★ MAXIMUM INCOHERENCE AFTER ADDRESS: (1) Trump Apr 1 primetime address: 'core strategic objectives nearing completion', 'we will be leaving very soon', floated 2-3 week timeline to deal or bombard infrastructure (CNBC/NYT/AP/LAT/Politico); (2) 'I came, I saw, I conquered' framing (Politico headline); (3) BUT Iran FM spokesperson: ceasefire claim 'false and baseless' (AJE/USAToday/NBC); (4) Pezeshkian spokesperson: Iran 'determined to fight on' (NBC); (5) IRGC 100+ missile joint salvo Apr 1 WITH Houthis+Hezbollah — ESCALATION during 'wind-down'; (6) Markets RALLIED on address — S&P +2.9%, Brent fell  — pricing ceasefire WHILE Iran launching; (7) IRGC 18-company deadline PASSED Apr 1 20:00 Tehran — outcome unclear; (8) Trump Apr 6 energy destruction deadline = 4 DAYS; (9) Trump threatens NATO withdrawal same day (USAToday). fp2 PEAK — Trump declaring near-victory to domestic audience WHILE Iran simultaneously denying all talks, launching joint salvos, and threatening Fortune 500. Source: CNBC/NYT/AP/Politico/LAT/AJE/NBC/USAToday"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "DEADLOCKED + FRAMEWORK PROLIFERATION — 4 competing plans ALL rejected, Trump preconditions Hormuz-first, Iran preconditions war-end-first, UN Security Council DIVIDED",
-      "last_check": "2026-04-01",
-      "findings": "Day 42. ★★★★★ FRAMEWORK PROLIFERATION BUT ZERO CONVERGENCE: (1) China-Pakistan 5pt plan published (Guardian/CNN Apr 1); (2) Iran 5pt counter: war end + reparations + Hormuz sovereignty + guarantees; (3) US 15pt plan — received via intermediaries, Iran calls it not negotiations; (4) Pakistan Quad (SA/Turkey/Egypt); (5) UNSC: Russian ceasefire draft FAILED, Western draft on Hormuz/Iran retaliation passed but UNBALANCED per China/Russia (SecurityCouncilReport Apr); (6) No UNSC resolution endorsing strikes (UK Commons Library); (7) Trump precondition: Hormuz open BEFORE ceasefire considered; (8) Iran precondition: US stops ALL attacks BEFORE any talks; (9) Iran links Lebanon inclusion to any deal (Wikipedia). fp3 PARTIALLY ACTIVE — frameworks proliferating but FUNDAMENTAL DEADLOCK: who stops first? Trump says Iran opens Hormuz; Iran says US stops bombing. No mechanism to break sequence dilemma. Apr 6 deadline may force. Source: SecurityCouncilReport/UK Parliament/Reuters/CNN/Guardian"
+      "status": "DEADLOCKED + FRAMEWORK PROLIFERATION — 4+ competing plans, Trump Hormuz-first precondition, Iran war-end-first, UNSC divided, Apr 6 deadline may force",
+      "last_check": "2026-04-02",
+      "findings": "Day 43. ★★★★★ DEADLOCK DEEPENS DESPITE ADDRESS: (1) China-Pakistan 5pt plan published (Reuters/Guardian Mar 31); (2) Iran 5pt counter: war end + reparations + sovereignty + guarantees; (3) US 15pt plan — Iran says received via intermediaries only, 'not negotiations'; (4) Pakistan Quad (SA/Turkey/Egypt) track; (5) UNSC: Russian ceasefire draft FAILED, Western draft passed but UNBALANCED per China/Russia; (6) Senate War Powers blocked 53-47 (Mar 25); House delayed to mid-April recess return (Axios/DemocracyNow/Politico); (7) Trump precondition: Hormuz open BEFORE ceasefire; (8) Iran precondition: US stops ALL attacks BEFORE any talks; (9) Trump address: NO CLEAR TIMELINE despite 'nearing completion' claim (NYT/LAT). fp3 STALLED — who stops first? Fundamental sequence dilemma unresolved. Apr 6 energy deadline + mid-April House War Powers vote = two forcing functions approaching. Source: NYT/LAT/Axios/DemocracyNow/Politico/Reuters"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "ALL COST BARRIERS BREACHED + CORPORATE THREAT DEADLINE TODAY: IRGC 18 companies, gas +, Brent +, 15+ KIA, S&P rebounding on hopes",
-      "last_check": "2026-04-01",
-      "findings": "Day 42. ★★★★★ CORPORATE VECTOR DEADLINE: (1) IRGC 18-company deadline Apr 1 20:00 Tehran = 16:30 UTC TODAY (Time/WIRED/HindustanTimes); (2) Gas USD4.018+ national (CNBC/Reuters Mar 31), CA USD5.87 — sharpest monthly rise in decades; (3) Brent USD104.86 (Fortune Apr 1) / USD105.27 (MiddleEastInsider) — eased from USD118 peak; (4) WTI USD102.92; (5) S&P 500 SURGED 2.9% to 6,528 on de-escalation hopes (ad-hoc-news Apr 1); (6) Gold USD4,749.51 (USAToday Apr 1) — still safe-haven elevated; (7) US KIA: 15+ confirmed + 300+ wounded; (8) Iran HRANA: 3,486+ killed; (9) Senate War Powers blocked 53-47; House mid-April; (10) JetBlue raised bag fees — downstream costs materializing; (11) CAP: war raising fuel + utility + grocery costs. NEW: If IRGC executes corporate attacks = unprecedented economic warfare on Fortune 500 companies in Gulf = MASSIVE political pressure. Source: Time/WIRED/Fortune/USAToday/CNBC/Reuters/CAP"
+      "status": "ALL BARRIERS BREACHED — gas .064, Brent ~ (down from ), 15+ KIA, 300+ wounded, IRGC 18-company deadline PASSED, S&P rebounded on hopes",
+      "last_check": "2026-04-02",
+      "findings": "Day 43. ★★★★★ COST BARRIERS ALL BREACHED + MARKET CONFUSION: (1) Gas .064/gal national average Apr 2 (EconomicTimes) — 30%+ increase since war began (CNBC); CA .87+ (Time); (2) Brent FELL to ~ after Trump address (NYT) from  peak — biggest single-event drop of war on 'wind-down' rhetoric; (3) WTI ~; (4) S&P 500 surged 2.9% to 6,528 Apr 1 then fell 0.89% to 6,517 Apr 2 (TradingEconomics) — market whipsaw; (5) Gold ,758 (LiteFinance Apr 2) — safe-haven ELEVATED; (6) US KIA: 13-15 confirmed + 300+ wounded (NYT/Wikipedia/PBS); (7) Intercept Apr 1: Pentagon COVERING UP casualty numbers — actual wounded likely higher; (8) Iran HRANA: 3,486+ killed; (9) Senate War Powers blocked 53-47; House mid-April; (10) JetBlue/airlines raising fees — downstream costs cascading. fp4 APPROACHING — gas barrier BREACHED, casualties mounting, Pentagon cover-up allegations, but Congressional action stalled until mid-April. Apr 6 energy deadline = 4 days. Source: EconomicTimes/CNBC/NYT/TradingEconomics/LiteFinance/PBS/Intercept"
     }
   },
   "noise_filter": {
