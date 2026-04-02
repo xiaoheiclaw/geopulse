@@ -146,7 +146,8 @@
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-13T22:42:03.988336+00:00",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "prob": 1.0
     },
     "iran_missile_degraded": {
       "id": "iran_missile_degraded",
@@ -169,7 +170,8 @@
       "dialectic": null,
       "last_updated": "2026-03-30T11:29:22.803846+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
-      "updated": "2026-03-13T22:41:43.076948Z"
+      "updated": "2026-03-13T22:41:43.076948Z",
+      "prob": 0.75
     },
     "regional_spillover": {
       "id": "regional_spillover",
@@ -523,7 +525,8 @@
       "dialectic": null,
       "last_updated": "2026-03-14T10:53:35.598778+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
-      "updated": "2026-03-13T22:41:43.076948Z"
+      "updated": "2026-03-13T22:41:43.076948Z",
+      "prob": 0.88
     },
     "russia_energy_leverage": {
       "id": "russia_energy_leverage",
@@ -602,7 +605,8 @@
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-24T23:52:39.833492+00:00",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "prob": 0.85
     },
     "conflict_protracted": {
       "id": "conflict_protracted",
@@ -790,7 +794,8 @@
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-09T15:26:36.522330+00:00",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "prob": 0.92
     },
     "safe_haven_rally": {
       "id": "safe_haven_rally",
@@ -4034,8 +4039,8 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-03-30T15:29:34.288868+00:00",
-  "updated_at": "2026-03-11T21:31:59.788167+00:00",
+  "last_updated": "2026-04-02T11:27:56.599004+00:00",
+  "updated_at": "2026-04-02 11:27 UTC",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
