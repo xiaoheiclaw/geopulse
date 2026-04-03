@@ -156,12 +156,13 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.88,
+      "probability": 0.82,
       "confidence": 0.85,
       "evidence": [
         "WashPost/ISW Mar 29: 4 production facilities struck",
         "Experts: production HALTED until rebuilt",
-        "CENTCOM 10000+ targets, 2/3 arms mfg destroyed"
+        "CENTCOM 10000+ targets, 2/3 arms mfg destroyed",
+        "Apr 3: F-15E shot down over Iran = Iran AD NOT eliminated despite 12,300+ sites Wk5."
       ],
       "reasoning": "ISW/WashPost Mar 29: Combined force struck 4 key ballistic missile PRODUCTION facilities (Khojir 88 structures destroyed, Shahroud 28, Parchin 12, Hakimiyeh 19) + 29 launch bases. 4 experts: 'most likely HALTED Iran ability to produce short/medium-range ballistic missiles until rebuilt'. IRGC fire STILL 1-2 at a time confirms operational degradation. UP from 78% to 88%.",
       "time_horizon": "持续",
@@ -597,7 +598,8 @@
           "text": "Pakistan Quad talks opened Day 1 (SA/Turkey/Egypt FMs). Pakistan preparing meaningful talks (Reuters). 15-point plan delivered via Pakistan",
           "source": "AP/Reuters",
           "impact": "+0.02"
-        }
+        },
+        "Apr 3: Zarif formula adds substance. Gap narrowing but still wide."
       ],
       "reasoning": "Day 37: Pakistan FM announced will host direct US-Iran talks. Quad concluded (SA/Turkey/Egypt). Egypt FM: aim for direct dialogue. Trump: Iran gave us most of the points. Iran submitted own 5-point counter-proposal. Backchannel now OVERT.",
       "time_horizon": "W4-16",
@@ -963,7 +965,7 @@
         "政治",
         "金融"
       ],
-      "probability": 0.9,
+      "probability": 0.93,
       "confidence": 0.8,
       "evidence": [
         "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
@@ -972,7 +974,8 @@
         "[2026-03-11] NYT: Military investigation confirmed US responsible for Iranian elementary school strike; Trump asked about it leaving White House (credibility: 0.9)",
         "[2026-03-12] Military confirmed school strike. Mojtaba weaponizing it. Oil $100. 17 US sites damaged. Cost asymmetry of interceptors vs projectiles",
         "[2026-03-14] Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13.",
-        "[2026-03-14] (cred:0.77) Day 15: Oil at +, no ceasefire, entering 3rd week. Consumer/political pressure accumulating. Up from 0.88. — CENTCOM/NBC/NYT/Goldman/MarketData"
+        "[2026-03-14] (cred:0.77) Day 15: Oil at +, no ceasefire, entering 3rd week. Consumer/political pressure accumulating. Up from 0.88. — CENTCOM/NBC/NYT/Goldman/MarketData",
+        "Apr 3: quadruple convergence — F-15E loss, 4.08 gas, War Powers mid-April, 15 KIA."
       ],
       "reasoning": "Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13.",
       "time_horizon": "W4-12",
@@ -1067,7 +1070,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.32,
+      "probability": 0.35,
       "confidence": 0.52,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1090,7 +1093,8 @@
           "date": "2026-03-30",
           "text": "Day 37: Pakistan FM announces direct US-Iran talks coming days. Trump: great progress with new regime. Iran submitted 5-point counter to US 15-point plan. BUT Trump threatens Kharg obliteration in same post. Foreign Affairs: US making mistake tying ceasefire to grand bargain. Apr 6 deadline 7 days. Marginal increase from 28%.",
           "pipeline": "v3.1"
-        }
+        },
+        "Apr 3: Zarif proposes nuclear+Hormuz-for-sanctions. Iran-Oman protocol. VOO +1.5%. Still distant."
       ],
       "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely.",
       "time_horizon": "W12-24+",
@@ -1507,7 +1511,7 @@
         "军事",
         "政治"
       ],
-      "probability": 0.88,
+      "probability": 0.92,
       "confidence": 0.75,
       "evidence": [
         "50K部队+2航母部署在打击范围内",
@@ -1519,7 +1523,8 @@
         "[2026-03-13 PM] KC-135 crash with 5 crew (non-hostile) + British troops targeted",
         "[2026-03-14] (Al Jazeera, cred:0.85) 11 US soldiers killed total across 14 days; no single mass-casualty event yet",
         "[2026-03-14] Day 14: KC-135 midair collision crash in Iraq kills 6, total US deaths=13. Operational attrition accelerating even without hostile fire.",
-        "KC-135 crash Mar 13: 6 crew dead, US total now 13"
+        "KC-135 crash Mar 13: 6 crew dead, US total now 13",
+        "Apr 3: F-15E shot down, 1 rescued 1 MIA. 15 KIA + 520+ wounded. First US aircraft combat loss."
       ],
       "reasoning": "Day 14: KC-135 midair collision crash in Iraq kills 6, total US deaths=13. Operational attrition accelerating even without hostile fire.",
       "time_horizon": "W1-8",
@@ -1678,13 +1683,14 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.87,
+      "probability": 0.85,
       "confidence": 0.72,
       "evidence": [
         "ISW: Pezeshkian-Vahidi rift deepening",
         "ISW: recruitment age lowered to 12",
         "ISW: Janfada recruitment campaign",
-        "IRGC Navy Commander Tangsiri killed"
+        "IRGC Navy Commander Tangsiri killed",
+        "Apr 3: F-15E shootdown shows IRGC AD units still operationally capable."
       ],
       "reasoning": "ISW Mar 29: deepening RIFT between Pezeshkian and IRGC Commander Vahidi over war costs. IRGC lowered recruitment age to 12 = desperation signal. Janfada volunteer campaign = institutional strain. Navy Commander Tangsiri killed. UP from 82% to 87%.",
       "time_horizon": "持续至IRGC C2重建或弹药耗尽",
@@ -1805,7 +1811,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.78,
+      "probability": 0.82,
       "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
@@ -1816,7 +1822,8 @@
           "date": "2026-03-30",
           "text": "Day 37: Democrats weaponizing gas prices in campaign ads + pump stickers (Philadelphia Inquirer). POLITICO: GOP battleground states struggling to brush off consequences. Gas USD3.98/gal (+USD1/month). War Powers votes failed but political cost RISING.",
           "pipeline": "v3.1"
-        }
+        },
+        "Apr 3: F-15E loss + gas 4.08 + War Powers mid-April + Dems confident post-recess."
       ],
       "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%.",
       "time_horizon": "",
