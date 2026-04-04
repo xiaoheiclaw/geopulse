@@ -156,13 +156,14 @@
       "domains": [
         "军事"
       ],
-      "probability": 0.82,
-      "confidence": 0.85,
+      "probability": 0.72,
+      "confidence": 0.7,
       "evidence": [
         "WashPost/ISW Mar 29: 4 production facilities struck",
         "Experts: production HALTED until rebuilt",
         "CENTCOM 10000+ targets, 2/3 arms mfg destroyed",
-        "Apr 3: F-15E shot down over Iran = Iran AD NOT eliminated despite 12,300+ sites Wk5."
+        "Apr 3: F-15E shot down over Iran = Iran AD NOT eliminated despite 12,300+ sites Wk5.",
+        "[2026-04-04] A-10 Warthog ALSO shot down near Hormuz Apr 3 = SECOND aircraft loss same day; Iran AD proven NOT eliminated after 5+ weeks; IRGC+Army AD systems still functional (TWZ/WaPo/CBS)"
       ],
       "reasoning": "ISW/WashPost Mar 29: Combined force struck 4 key ballistic missile PRODUCTION facilities (Khojir 88 structures destroyed, Shahroud 28, Parchin 12, Hakimiyeh 19) + 29 launch bases. 4 experts: 'most likely HALTED Iran ability to produce short/medium-range ballistic missiles until rebuilt'. IRGC fire STILL 1-2 at a time confirms operational degradation. UP from 78% to 88%.",
       "time_horizon": "持续",
@@ -1070,8 +1071,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.35,
-      "confidence": 0.52,
+      "probability": 0.25,
+      "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1094,7 +1095,8 @@
           "text": "Day 37: Pakistan FM announces direct US-Iran talks coming days. Trump: great progress with new regime. Iran submitted 5-point counter to US 15-point plan. BUT Trump threatens Kharg obliteration in same post. Foreign Affairs: US making mistake tying ceasefire to grand bargain. Apr 6 deadline 7 days. Marginal increase from 28%.",
           "pipeline": "v3.1"
         },
-        "Apr 3: Zarif proposes nuclear+Hormuz-for-sanctions. Iran-Oman protocol. VOO +1.5%. Still distant."
+        "Apr 3: Zarif proposes nuclear+Hormuz-for-sanctions. Iran-Oman protocol. VOO +1.5%. Still distant.",
+        "[2026-04-04] WSJ/DW: ceasefire efforts reached DEAD END; Bushehr perimeter struck; Mahshahr petrochemical struck; Iran rejects 48hr ceasefire; Iran conditions: Lebanon must be included = probability DOWN. (cred:0.85)"
       ],
       "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely.",
       "time_horizon": "W12-24+",
@@ -1842,12 +1844,13 @@
         "能源",
         "地缘"
       ],
-      "probability": 0.95,
-      "confidence": 0.75,
+      "probability": 0.97,
+      "confidence": 0.85,
       "evidence": [
         "Trump explicit: if Iran interferes with Hormuz, oil infrastructure next",
         "Iranian parliament warned Kharg strike would provoke new retaliation level",
-        "[2026-03-14] (cred:0.77) US escalation ladder confirmed: Kharg military → oil infra would be next step if Iran doesn't comply. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)"
+        "[2026-03-14] (cred:0.77) US escalation ladder confirmed: Kharg military → oil infra would be next step if Iran doesn't comply. — Day 15 multi-source (WaPo/NYT/NBC/AJ/Reuters/Goldman)",
+        "[2026-04-04] Bushehr nuclear perimeter + Mahshahr petrochemical zone STRUCK Apr 4 = energy infrastructure targeting HAS BEGUN BEFORE Apr 6 deadline; IAEA confirmed no radiation increase (NYT/AJE/IAEA)"
       ],
       "reasoning": "Spiral model风险: 伊朗不报复=屈服, 报复=触发油田打击. 胁迫陷阱正在形成",
       "time_horizon": "1-2 weeks",
@@ -4046,8 +4049,8 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-04-02T11:27:56.599004+00:00",
-  "updated_at": "2026-04-02 11:27 UTC",
+  "last_updated": "2026-04-04T15:28:50.167693+00:00",
+  "updated_at": "2026-04-04T15:28:50.167693+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
