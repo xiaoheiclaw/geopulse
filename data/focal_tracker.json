@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-05T23:28:57.283985+00:00",
+  "last_updated": "2026-04-05T23:29:47.337652+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -313,7 +313,7 @@
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-05",
-      "findings": "Action-only: War Powers legislative friction, cumulative US casualty reporting, and ~US.10/gal gasoline keep domestic cost pressure rising but not yet forcing a policy break."
+      "findings": "Action-only: War Powers legislative friction, cumulative US casualty reporting, and roughly 4.10 USD/gal gasoline keep domestic cost pressure rising but not yet forcing a policy break."
     }
   },
   "noise_filter": {
