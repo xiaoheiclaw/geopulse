@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-05T15:29:53.466566+00:00",
+  "last_updated": "2026-04-05T19:30:00.173695+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -86,6 +86,12 @@
           "date": "2026-04-05",
           "est": "1-2/day",
           "note": "CENTCOM/major media continue to describe sustained strikes with no verified shift to zero activity; treat IRGC attack tempo as low-but-persistent baseline (action only).",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-05",
+          "est": "1-2/day",
+          "note": "Action-only: CENTCOM/major wires still report recurring strikes and exchanges; no verified zero-attack window, so IRGC attack tempo remains low-but-persistent.",
           "source": "pipeline"
         }
       ]
@@ -177,6 +183,12 @@
           "est": "~3 mbd (~3-5 ships/day)",
           "note": "BBC/CBNC/Guardian-style shipping coverage still indicates trickle traffic through Hormuz with selective passage and no full normalization (action signal: transit volume remains severely depressed).",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-05",
+          "est": "~3 mbd (~3-5 ships/day)",
+          "note": "Action-only: Reuters/BBC shipping coverage still shows selective Hormuz transits at trickle pace with no full normalization; US military escort mission still not launched.",
+          "source": "pipeline"
         }
       ]
     },
@@ -264,6 +276,12 @@
           "est": "~1-1.5 mbd",
           "note": "DOE emergency exchange flow remains active; no clear evidence of a new release-rate step-up in latest weekly references, so keep steady release estimate.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-05",
+          "est": "~1-1.5 mbd",
+          "note": "Action-only: DOE emergency exchange flow remains active (including Bryan Mound tranche) with no clear evidence of a fresh release-rate acceleration in latest weekly references.",
+          "source": "pipeline"
         }
       ]
     }
@@ -274,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "watching",
       "last_check": "2026-04-05",
-      "findings": "China diplomacy remains active (envoy calls/proposals) but no verified hard-power intervention/deployment; keep as monitored, not triggered."
+      "findings": "Action-only: China diplomacy (envoy calls/five-point discussion) remains active, but no verified hard-power deployment/escort action in Gulf theater."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "active",
       "last_check": "2026-04-05",
-      "findings": "US signaling remains internally inconsistent: escort rhetoric appears without confirmed escort mission, while negotiation messaging coexists with military escalation steps."
+      "findings": "Action-only: Escort signaling persists while Reuters/official statements indicate no operational US escort mission; negotiation messaging coexists with continued strike operations."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "stalled",
       "last_check": "2026-04-05",
-      "findings": "Multiple ceasefire/framework tracks are discussed, but no confirmed executable framework with enforceable buy-in observed in current action-grade reporting."
+      "findings": "Action-only: UNSC/framework proposals are circulating, but no executable ceasefire architecture with enforceable acceptance by core belligerents is visible yet."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-05",
-      "findings": "Cost pressure continues to build via sustained US casualty reporting + national gasoline around $4.10/gal; threshold pressure is rising but not yet definitive forcing break."
+      "findings": "Action-only: Congressional war-powers friction + cumulative US casualties reporting + ~.10/gal gasoline continue to raise domestic cost pressure, but not yet forcing a policy break."
     }
   },
   "noise_filter": {
