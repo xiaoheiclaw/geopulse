@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-05T15:28:12.403532+00:00",
+  "last_updated": "2026-04-05T15:29:53.466566+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -295,7 +295,7 @@
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-05",
-      "findings": "Cost pressure continues to build via sustained US casualty reporting + national gasoline around .10/gal; threshold pressure is rising but not yet definitive forcing break."
+      "findings": "Cost pressure continues to build via sustained US casualty reporting + national gasoline around $4.10/gal; threshold pressure is rising but not yet definitive forcing break."
     }
   },
   "noise_filter": {
