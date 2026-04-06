@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-06T03:30:51.628389+00:00",
+  "last_updated": "2026-04-06T07:30:58.052823+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-03",
-          "est": "1-2/day declining (IRGC baseline) BUT IRGC claims 2nd F-35 shot down over central Tehran Apr 3 2:50AM; multi-front fire exchange SUSTAINED; explosions Tehran+Isfahan",
-          "note": "Day 35/Day 45. ★★★★★ IRGC 2ND F-35 CLAIM + MULTI-FRONT SUSTAINED: (1) IRGC claims SHOT DOWN 2nd US F-35 over central Tehran at 2:50AM Apr 3 — 'advanced modern aerospace defense system' (24NewsHD/News18/HindustanTimes); (2) Wikipedia: Raad AD system or adapted air-to-air missile (Chinese analysts via SCMP); (3) Pentagon has NOT confirmed — first F-35 claim also disputed; (4) US intel warns Iran STILL has 'significant missile-launching capability' and can 'wreak absolute havoc' (Moneycontrol Apr 3); (5) Iran+allies TRADED FIRE with Israel/US Apr 3 — Washington-linked assets across West Asia targeted incl energy+civilian infrastructure (TheHindu/Outlook Apr 3); (6) Attacks increasingly focusing on economic/industrial sites (Outlook); (7) US/Israel struck century-old medical research centre Tehran + steel plants + bridge (Moneycontrol Apr 3); (8) Explosions in Tehran + Isfahan Friday (HindustanTimes); (9) Iran fired missiles at Israel + Gulf nations (HindustanTimes); (10) CENTCOM Wk5: 12,300+ sites struck, Cooper: 'substantial portion neutralized' BUT Hegseth concedes Iran retains strike ability; (11) Houthis SUSTAINED — independent BM launches; (12) Hezbollah 5,000+ since Mar 2 — INDEPENDENT. ★★★ CRITICAL: IRGC F-35 claim (if verified) = Iran AD NOT eliminated after 5 weeks bombing. 3 INDEPENDENT fronts confirmed active. Multi-front fire exchange ESCALATING. Source: 24NewsHD/News18/HindustanTimes/Moneycontrol/TheHindu/Outlook/Wikipedia/SCMP",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-03",
           "est": "1-2/day declining (IRGC baseline), IRGC claims 2nd F-35 shot down Apr 3, 3 INDEPENDENT fronts sustained, CENTCOM Wk5 12,300+ sites",
@@ -93,6 +87,12 @@
           "est": "1-2/day (low persistent)",
           "note": "Action-only: CENTCOM and major outlets still report recurring strike activity (e.g., week-5 strike footage, continued exchanges); no verified zero-attack window.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-06",
+          "est": "1-2 incidents/day",
+          "note": "Action-filtered: CENTCOM continues daily strike releases (latest ~14h), Reuters reports near-daily escort requests amid recurring ship attacks/harassment; tempo remains sustained rather than spiking.",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-03",
-          "est": "~3-4 mbd (4-5 ships/day), Bloomberg: 3 Omani tankers enter via NEW Oman coast route BYPASSING Iranian corridor, Iran warns vs UN Hormuz force vote",
-          "note": "Day 45. ★★★★★ OMAN BYPASS ROUTE EMERGES + UN HORMUZ VOTE: (1) ★★★ Bloomberg Apr 2: 3 Omani-owned tankers entered Hormuz via NEW ROUTE hugging Oman coastline — NOT using Iranian corridor/Larak checkpoint = FIRST crack in Iran's toll monopoly; (2) Iran warns against 'provocative action' ahead of UN vote on Hormuz force (TheHindu Apr 3); (3) Polymarket still 98%+ for 0-10 ships/day; (4) HinduBusinessLine: transit collapsed from 150/day to 4-5/day — confirmed; (5) Iran Larak checkpoint FORMALIZED — IRGC vets each ship, USD2M toll, yuan+crypto; (6) Friendly-nation list EXPANDING: Philippines added Apr 2 (after CN/RU/IN/IQ/PK/MY/TH); (7) Iran-Oman PERMANENT Hormuz oversight protocol in drafting (NYT Apr 2); (8) USNI Proceedings Apr: 'US has NOT undertaken naval escorts' — 5+ weeks unfulfilled; (9) Russian crude Urals surged to USD123.45 as Gulf flows curtailed (GulfNews Apr 3); (10) ~2,190 vessels with transponders waiting west of Hormuz (Bloomberg). ★★★ TWO DEVELOPMENTS: (A) Oman coastal bypass = potential alternative to Iranian corridor; (B) UN Hormuz force vote approaching = multilateral pressure. But still 95%+ below pre-crisis. Source: Bloomberg/TheHindu/HinduBusinessLine/Polymarket/USNI/GulfNews/NYT",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-03",
           "est": "~3-4 mbd (4-5 ships/day), Iran-Oman drafting PERMANENT Hormuz 'monitoring' protocol, Windward Apr 1: ~11 ships (1T+4C in / 1T+5C out), NO US escort Wk5+",
@@ -189,6 +183,12 @@
           "est": "~3 mbd (~3-5 ships/day)",
           "note": "Action-only: BBC Verify indicates just under 100 transits since early March and Reuters/USNI-style reporting still points to trickle traffic with selective passage, far below pre-crisis.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-06",
+          "est": "~4-7 transits/day",
+          "note": "Action-filtered shipping data: BBC Verify 'just under 100 transits since start of March' and Argus '20 crossings since Mar 28' imply low single-digit daily flow, still far below pre-war ~130+/day.",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-03",
-          "est": "~1-1.5 mbd confirmed (DOE/Wright), D+30, deliveries ACTIVE since Apr 1, 10M bbl Bryan Mound RFP due Apr 6, DOE denies further releases, SPR ~243M bbl projected",
-          "note": "Day 45 D+30. ★★★★ SPR ACTIVE BUT IRRELEVANT VS SUPPLY GAP: (1) SPR deliveries UNDERWAY since Apr 1 — Shell/Marathon/BP/Gunvor receiving (Argus/IndexBox); (2) DOE NEW 10M bbl Bryan Mound emergency exchange RFP due Apr 6 (Reuters/DOE) — proposals close same day as energy strike deadline; (3) Rate confirmed 1-1.5 mbd (Wright/S&P Global); (4) SPR projected to decline from ~415M to ~243M bbl = near 40-year low (Grokipedia); (5) DOE FIRMLY DENIED further releases beyond current plan (WebProNews); (6) G7 coordinated 412M bbl release (US 172M = bulk); (7) IEA Birol warns supply crunch WORSENING in April (CNBC); (8) ★★★ Brent spot cargo hit USD141.36 = highest since 2008 (CNBC Apr 2); (9) Gas USD4.06/gal national (SmartAsset/AAA), CA over USD5 (NYT); (10) Exchange structure: companies repay 20% more barrels Nov 2026-Sep 2028; (11) Russian Urals crude surged to USD123.45 as alternative supplier (GulfNews Apr 3). SPR trickle IRRELEVANT — 1.5 mbd vs 15-17 mbd Hormuz disruption = 10% replacement. Spot market pricing EXTREME scarcity. Source: Reuters/DOE/Argus/IndexBox/CNBC/GulfNews/SmartAsset/WebProNews/IEA",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-03",
           "est": "~1-1.5 mbd confirmed (DOE/Wright), D+30, deliveries ACTIVE since Apr 1, NEW 10M bbl Bryan Mound exchange RFP due Apr 6, SPR declining to ~243M bbl (40yr low)",
@@ -282,6 +276,12 @@
           "est": "~1-1.5 mbd",
           "note": "Action-only: DOE emergency SPR exchange flow remains active (Bryan Mound tranche); no clear evidence in latest weekly references of a fresh rate acceleration.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-06",
+          "est": "~1.4 mbd (~10 mb/week)",
+          "note": "DOE statement: 172M bbl SPR release over ~120 days => ~1.43 mbd draw (~10M bbl/week); implementation ongoing via coordinated IEA release.",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "watching",
+      "status": "watch",
       "last_check": "2026-04-06",
-      "findings": "Action-only: China diplomatic activity remains intensive (envoy tour, five-point messaging), but no verified Chinese naval escort/deployment action in Gulf lanes."
+      "findings": "China shows diplomatic action (envoy shuttle + five-point consultations) but no high-confidence, independently confirmed PLA Navy operational move in Hormuz; substantive hard-power shift not yet confirmed."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "active",
+      "status": "triggered",
       "last_check": "2026-04-06",
-      "findings": "Action-only contradiction persists: US escort/convoy signaling and negotiation messaging coexist with reports that operational Hormuz escort remains unlaunched while combat strikes continue."
+      "findings": "Contradiction persists in action set: US explores/announces escort concepts while Navy reporting escort limits and warfighting risk; parallel White House negotiation signaling continues."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "stalled",
+      "status": "watch",
       "last_check": "2026-04-06",
-      "findings": "Action-only: UN/Gulf ceasefire or protection frameworks continue to circulate, but no executed, enforceable and mutually accepted off-ramp is visible."
+      "findings": "Framework signals exist (UNSC Resolution 2817, competing ceasefire proposals) but no accepted, operational deconfliction architecture yet."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching",
+      "status": "watch",
       "last_check": "2026-04-06",
-      "findings": "Action-only: War Powers legislative friction, cumulative US casualty reporting (~13-15 KIA range), and AAA gasoline near .10/gal keep domestic-cost pressure elevated but below hard policy-break threshold."
+      "findings": "Cost pressure rising (AAA gasoline ~4.10/gal, reported US casualties in low-teens, active War Powers filings) but no decisive congressional constraint or strategic rollback action yet."
     }
   },
   "noise_filter": {
