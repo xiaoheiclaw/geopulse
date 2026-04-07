@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-06T23:29:54.613159+00:00",
+  "last_updated": "2026-04-07T03:30:53.282660+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-03",
-          "est": "1-2/day declining (IRGC baseline), ★★★ F-15E CONFIRMED shot down Apr 3 = first US aircraft loss; one pilot rescued, one missing; CENTCOM Wk5 12,300+ sites; Apr 2 IRGC intercepted 26 drones+9 BM (UAE) + 13 drones+2 CM (Kuwait) + more (Bahrain); 3 INDEPENDENT fronts sustained",
-          "note": "Day 46. ★★★★★ F-15E LOSS + MULTI-FRONT SUSTAINED: (1) ★★★ BREAKING: US F-15E shot down over Iran Apr 3 — NYT confirms one pilot rescued, other missing; IRGC claimed F-35 but analysts ID F-15E (TWZ); (2) ISW Apr 2: Emirati MoD intercepted 26 drones+9 BM; Kuwait 13 drones+2 CM; Bahrain intercepted drones+BM — coordinated IRGC multi-front salvo vs Gulf bases Apr 2; (3) CENTCOM Wk5: 12,300+ sites struck, Cooper: 'substantial portion neutralized' BUT F-15E loss contradicts; (4) IRGC baseline 1-2/day RESIDUAL but coordinated salvos PERSIST; (5) Houthis SUSTAINED — independent BM launches at Israel; (6) Hezbollah 5,000+ since Mar 2 — INDEPENDENT; (7) US KIA: 13-15 confirmed + hundreds wounded (NYT/Wikipedia/Intercept); (8) Iran: HRANA 7,007+ deaths documented; (9) Trump: '2-3 more extremely hard weeks'; (10) Iran AD NOT eliminated — F-15E shootdown proves capability retained. PATTERN: 3 INDEPENDENT fronts (IRGC residual+coordinated salvos, Houthis sustained, Hezbollah 5K+). F-15E loss = biggest US military shock since war start. Source: NYT/Reuters/CBS/Guardian/ISW/TWZ/Wikipedia/Intercept",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-03",
           "est": "1-2/day declining (IRGC baseline), ★★★ TWO US AIRCRAFT LOST Apr 3: F-15E shot down over western Iran (494th FS) + A-10 Warthog shot down near Hormuz (Persian Gulf); 2 CSAR helicopters also hit; F-15E pilot rescued, WSO MISSING — IRGC/Army AD claims; Israel SUSPENDED airstrikes for rescue ops; Iran REJECTED US 48-hour ceasefire proposal via third country; CENTCOM Wk5 12,300+ sites struck but Iran AD proven NOT eliminated",
@@ -93,6 +87,12 @@
           "est": "1-2 incidents/day (persistent)",
           "note": "Action-only: CENTCOM continues daily strike reporting; Reuters/major wires still describe recurring Iran-linked harassment/attack risk (near-daily escort requests), with no verified zero-attack window.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-07",
+          "est": "1-2 incidents/day (persistent)",
+          "note": "Action-only: ISW Apr 1 and Apr 5 continue to log Iranian attacks on shipping and Gulf-linked targets, with no verified zero-attack window; keep low-but-persistent IRGC tempo.",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-03",
-          "est": "~3-4 mbd (4-5 ships/day), UNSC Hormuz vote DELAYED to Sat, Bahrain resolution watered down to 'defensive only', Iran-Oman permanent Hormuz protocol drafting, NO US escort Wk5+",
-          "note": "Day 46. ★★★★★ HORMUZ VOTE DELAYED + IRAN-OMAN PROTOCOL: (1) DW: UNSC vote DELAYED to Saturday — Bahrain resolution WATERED DOWN from 'all necessary means' to 'all defensive means' (AP Apr 3); Russia/China/France opposed force; France may accept defensive version; (2) Iran-Oman drafting PERMANENT 'monitoring' protocol for Hormuz transit = peacetime sovereignty bid (CNBC/IRNA); (3) Gulf Business/Lloyd's: 181 vessels total Mar 1-30 vs ~4,500 same period 2025 = 96% collapse; (4) USNI: 142 transits Mar 1-25 vs 2,652 same period 2025; (5) Friendly-nation list expanding: PH/MY/TH added (after CN/RU/IN/IQ/PK); (6) Iran Larak checkpoint FORMALIZED — IRGC vets+escorts, USD2M toll; (7) Oman coast bypass route emerged (Bloomberg); (8) Iran-Oman protocol + UNSC vote Sat = competing frameworks; (9) USNI: 'US has NOT undertaken naval escorts' — 5+ weeks; (10) S&P VOO closed +1.5% on Iran-Oman Hormuz shipping protocol news. Still 95%+ below pre-crisis. Source: AP/DW/GulfBusiness/Lloyd's/USNI/CNBC/IRNA/Bloomberg/TipRanks",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-03",
           "est": "~3-5 mbd (5-8 ships/day INCREASING), ★★★ FIRST WESTERN TRANSITS: French CMA CGM Kribi + Japanese-owned tanker crossed Hormuz Apr 3 = first Western European transit since war; 3 Omani tankers via NEW coast bypass route; friendly-nation list expanding (PH/MY/TH); Iran Larak checkpoint + USD2M toll STILL enforced; UNSC vote delayed to next week",
@@ -189,6 +183,12 @@
           "est": "~15-20 transits/day (partial reopening)",
           "note": "Action-only: Seatrade/Fars + Windward reporting showed ~15 ships allowed and ~20 total Hormuz transits in last 24h (Apr 5), above prior trickle but far below pre-crisis ~100+ per day.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-07",
+          "est": "~15-20 transits/day (partial reopening)",
+          "note": "Action-only: Seatrade/Windward reporting cited 15 ships cleared and about 20 total Hormuz transits in the prior 24h as of Apr 5; still far below pre-crisis flow.",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-03",
-          "est": "~1-1.5 mbd confirmed (DOE/Wright), D+31, deliveries ACTIVE since Apr 1, NEW 10M bbl Bryan Mound exchange RFP proposals due Apr 6, Gas USD4.06-4.08/gal national (+30%+ since war start)",
-          "note": "Day 46 D+31. ★★★★ SPR ACTIVE BUT OVERWHELMED BY SPOT MARKET: (1) DOE Apr 1: NEW 10M bbl emergency EXCHANGE from Bryan Mound — proposals due Apr 6 (Reuters/DOE/Benzinga); EXCHANGE not sale — companies repay 20% more barrels; (2) Rate confirmed 1-1.5 mbd (Wright/S&P Global); (3) SPR deliveries UNDERWAY since Apr 1 — Shell/Marathon/BP/Gunvor receiving; (4) Gas USD4.06/gal national (SmartAsset/CNBC), +30%+ since war start; (5) WTI SPIKED to USD111.29, Brent USD107.57 — WTI INVERTED above Brent = unprecedented accessible-supply repricing (OilPrice Apr 3); (6) SPR ~243M bbl projected = near 40-year low; (7) DOE DENIES further releases; (8) G7 coordinated 412M bbl (US 172M); (9) IEA Birol warns supply crunch WORSENING April; (10) Good Friday markets closed Apr 3 but oil futures active. SPR 1.5 mbd vs 15-17 mbd Hormuz disruption = 10% replacement. Source: Reuters/DOE/Benzinga/EnergiasMedia/CNBC/SmartAsset/OilPrice/IEA",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-03",
           "est": "~1-1.5 mbd confirmed (DOE/Wright), D+32, deliveries ACTIVE since Apr 1, NEW 10M bbl Bryan Mound exchange RFP due Apr 6, Fox Business: critics warn drawdown 'could fuel vulnerabilities', Gas USD4.08/gal national (AAA Apr 2)",
@@ -282,6 +276,12 @@
           "est": "~0.05 mbd net draw (~0.38 mb/week)",
           "note": "EIA weekly SPR stocks (WCSSTUS1) fell from 415,442 kb (2026-03-20) to 415,064 kb (2026-03-27): -378 kb w/w, implying low realized net draw pace in latest report.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-07",
+          "est": "~0.05 mbd net draw (~0.38 mb/week)",
+          "note": "Official EIA weekly SPR stocks page released Apr 1 shows 415.064m bbl for week ending Mar 27, down 378 kb w/w from 415.442m; no new Apr 8 report yet.",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "watch",
-      "last_check": "2026-04-06",
-      "findings": "China diplomatic activity remains high (envoy shuttle + five-point messaging), but no verified hard-power move (escort deployment, security guarantee, or enforcement action) yet."
+      "last_check": "2026-04-07",
+      "findings": "China remains in mediation mode only: envoy Zhai Jun shuttle diplomacy and a five-point plan are visible, but no verified naval escort, security guarantee, or Gulf enforcement action."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
-      "last_check": "2026-04-06",
-      "findings": "US signal contradiction persists: public/political escort and negotiation talk continues, while Reuters-level reporting indicates Hormuz escort mission still not operational/available."
+      "last_check": "2026-04-07",
+      "findings": "US signal contradiction persists: Reuters says Hormuz escorts are still not operational / allies remain reluctant, while Trump continues public deadline, negotiation, and escort messaging."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "watch",
-      "last_check": "2026-04-06",
-      "findings": "Exit-framework elements are circulating (45-day and 10-clause ceasefire drafts), but no accepted UN Security Council-backed framework has been adopted."
+      "last_check": "2026-04-07",
+      "findings": "Exit-framework material is circulating, including a reported 45-day ceasefire idea and a Reuters-reported 10-clause Iranian response, but no accepted UN Security Council-backed framework exists yet."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
-      "last_check": "2026-04-06",
-      "findings": "Cost pressure continues rising on action metrics: US gasoline around .12/gal (AAA), reported US casualties in low teens, and ongoing War Powers friction in Congress (including vote activity)."
+      "last_check": "2026-04-07",
+      "findings": "Cost pressure keeps rising on action metrics: AAA national gasoline is 4.119 dollars/gal today, reported US casualties remain material, and War Powers friction in Congress is still live though not decisive."
     }
   },
   "noise_filter": {
