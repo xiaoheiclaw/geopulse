@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-07T23:48:41.786272+00:00",
+  "last_updated": "2026-04-08T03:48:57.441693+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-04",
-          "est": "1-2/day declining (IRGC baseline), Apr 2 joint Iran/Houthi/Hezbollah salvo at Israel (5 wounded); CENTCOM Wk5+ 12,300+ sites; F-15E+A-10 shot down Apr 3 = first US aircraft losses; WSO STILL MISSING; IRGC commander killed Khorramabad (Fars); 3 INDEPENDENT fronts sustained",
-          "note": "Day 48. ★★★★★ MULTI-FRONT SUSTAINED + CHINA 5-POINT PLAN: (1) CENTCOM Wk5+: 12,300+ sites struck; Cooper: 'substantial portion neutralized' BUT F-15E+A-10 losses CONTRADICT; (2) IRGC baseline STILL 1-2/day declining; Apr 2 joint Iran+Houthi+Hezbollah salvo at Israel — 5 wounded (Haaretz Apr 2); (3) F-15E Strike Eagle (494th FS) + A-10 Warthog BOTH shot down Apr 3 = FIRST US aircraft losses; one pilot rescued, WSO MISSING; 2 CSAR helos hit (NYT/WaPo/CBS); (4) IRGC commander killed in Khorramabad strike (Fars Apr 3); (5) Iran REJECTED US 48-hr ceasefire via third country (Reuters/Fars Apr 3); (6) Trump Apr 1: claims Iran asked for ceasefire, precondition = Hormuz open (Reuters); Iran FM: 'no negotiation' (CNBC); (7) Houthis SUSTAINED — joint BM+drones at Israel since Mar 28, warned of Bab el-Mandeb closure (Wikipedia); (8) Hezbollah 5,000+ since Mar 2 — INDEPENDENT; (9) ★★★ China 5-point proposal with Pakistan ACTIVE — envoy Zhai Jun 20+ calls with regional FMs, special envoy visiting region; US 'appears uninterested' (AP/CNN Apr 3-4); (10) War Powers resolution gaining House support — Dems say enough votes to pass (TheHill Apr 2). Source: Reuters/Haaretz/NYT/WaPo/CBS/Fars/CNBC/AP/CNN/TheHill/Wikipedia",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-04",
           "est": "1-2/day declining (IRGC baseline), ★★★ BUSHEHR NUCLEAR PERIMETER HIT Apr 4 (1 killed, IAEA confirmed no radiation rise); Mahshahr Petrochemical Zone STRUCK Apr 4 = energy infrastructure targeting NOW ACTIVE; F-15E+A-10 shot down Apr 3 CONFIRMED; WSO STILL MISSING; Trump '48 hours before all hell'; 3 INDEPENDENT fronts sustained",
@@ -93,6 +87,12 @@
           "est": "1-2 incidents/day (persistent)",
           "note": "Action-only: CENTCOM daily strike releases; ISW/UKMTO still report recurring Iran-linked attacks; no verified zero-attack window.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-08",
+          "est": "1-2 incidents/day (persistent)",
+          "note": "Action-only: CENTCOM daily strike releases; ISW/major wires report recurring Iran-linked attacks; no verified zero-attack window",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-04",
-          "est": "~3-5 mbd (5-8 ships/day INCREMENTALLY INCREASING), FIRST WESTERN TRANSITS Apr 3: French CMA CGM Kribi + Japanese tanker; 3 Omani tankers via NEW coast bypass; Hegseth downplays risk; Lloyd's: <10% of average; UNSC Hormuz vote delayed to next week; Iran Larak checkpoint+USD2M toll enforced",
-          "note": "Day 48. ★★★★★ WESTERN CRACKS + HEGSETH DOWNPLAYS + UNSC DELAYED: (1) USNI Mar 31: Hegseth downplays risk of sailing through Hormuz as traffic 'slightly up'; Lloyd's: recent transits STILL <10% of average traffic; (2) French CMA CGM Kribi (Maltese-flagged) transited Hormuz EASTBOUND Apr 3 = FIRST Western European vessel since war (Bloomberg/Reuters/Guardian); (3) Japanese-owned tanker also crossed (Bloomberg); (4) 3 Omani tankers via NEW Oman coast bypass route (Bloomberg); (5) Guardian Mar 26: many vessels taking alternative route through Iranian waters — 'Tehran's tollbooth'; (6) UNSC vote DELAYED to next week — Bahrain resolution watered down to 'defensive only' (AP/DW Apr 3); China opposes force; (7) Iran Larak checkpoint operating — IRGC vets each ship, USD2M toll, yuan+crypto; (8) Friendly-nation list EXPANDED: PH/MY/TH (after CN/RU/IN/IQ/PK); (9) Iran-Oman permanent monitoring protocol drafting (NYT/CNBC); (10) ~2,190+ vessels waiting west of Hormuz; 181 total Mar 1-30 vs ~4,500 same period 2025 = 96% collapse (Lloyd's). Still 95%+ below pre-crisis but trend INCREMENTALLY expanding with Western cracks. Source: USNI/Bloomberg/Reuters/Guardian/AP/DW/NYT/CNBC/Lloyd's",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-04",
           "est": "~3-5 mbd (5-8 ships/day INCREMENTALLY INCREASING), ★★★ FIRST WESTERN TRANSITS Apr 3: French CMA CGM Kribi + Japanese tanker; 3 Omani tankers via NEW coast bypass; Iran grants 'essential goods' passage (CNN Apr 4); UNSC Hormuz vote delayed next week; Iran Larak checkpoint+USD2M toll enforced; still 95%+ below pre-crisis",
@@ -189,6 +183,12 @@
           "est": "~20 transits/day (partial reopening)",
           "note": "Action-only: Seatrade/Windward ~20 transits prior 24h; partial reopening but still far below pre-crisis ~100+/day.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-08",
+          "est": "~20 transits/day (partial reopening)",
+          "note": "Action-only: Seatrade/Windward ~20 transits prior 24h; partial reopening but still far below pre-crisis ~100+/day",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-04",
-          "est": "~1-1.5 mbd (DOE/Wright), D+33, deliveries ACTIVE since Apr 1, NEW 10M bbl Bryan Mound exchange RFP proposals due Apr 6 (TOMORROW), Fox: critics warn drawdown fuels vulnerabilities, Gas USD4.08/gal national (AAA Apr 2), SPR declining to ~243M bbl (40yr low)",
-          "note": "Day 48 D+33. ★★★★ SPR ACTIVE BUT APR 6 DEADLINE CONVERGENCE: (1) DOE Apr 1: 10M bbl emergency EXCHANGE from Bryan Mound — proposals due TOMORROW Apr 6 = SAME DAY as energy strike deadline (Reuters/DOE/FoxBusiness); (2) FoxBusiness Apr 3: critics warn drawdown 'could fuel vulnerabilities' — 172M bbl total plan; (3) Rate confirmed 1-1.5 mbd (Wright/S&P Global); (4) IEA 32-nation coordinated 400M bbl release Mar 11 — 2x previous record (AJE); (5) Gas USD4.08/gal national (AAA Apr 2) = highest since Aug 2022, +USD1.08 in one month; CA USD5.89 (ChooseEnergy); (6) SPR projected to decline to ~243M bbl = near 40-year low; (7) DOE DENIES further releases beyond current plan; (8) Brent USD107-112, WTI USD111.29 — INVERTED above Brent (OilPrice/Fortune); (9) Spot cargo USD141.36 = 2008 high (CNBC); (10) SPR 1.5 mbd vs 15-17 mbd Hormuz disruption = 10% replacement. Apr 6 = Bryan Mound RFP close + energy infrastructure strike deadline. Source: DOE/Reuters/FoxBusiness/AAA/ChooseEnergy/OilPrice/Fortune/CNBC/AJE",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-04",
           "est": "~1-1.5 mbd (DOE/Wright), D+34, deliveries ACTIVE since Apr 1, 10M bbl Bryan Mound exchange RFP proposals due TOMORROW Apr 6, Gas USD4.08/gal national (AAA), CA USD5+; SPR declining to ~243M bbl (40yr low); DOE denies further releases",
@@ -282,6 +276,12 @@
           "est": "~0.05 mbd net draw (~0.38 mb/week)",
           "note": "Official EIA weekly: 415.064m bbl week ending Mar 27, down 378kb w/w; no newer report yet.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-08",
+          "est": "~1.4 mbd (DOE release rate) / ~0.05 mbd (EIA net draw)",
+          "note": "DOE: 172M bbl / 120 days = ~1.4 mbd; EIA weekly: 415.064m bbl week ending Mar 27 (-378kb w/w) = ~0.05 mbd net draw; discrepancy due to exchange vs drawdown structure",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "watch",
-      "last_check": "2026-04-07",
-      "findings": "Action-only: China still in diplomatic shuttle mode with 5-point plan; no verified naval escort or Gulf enforcement move."
+      "last_check": "2026-04-08",
+      "findings": "Action-only: China in diplomatic shuttle; Wang Yi 26 calls; special envoy traveling; still no verified naval escort or Gulf enforcement move"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
-      "last_check": "2026-04-07",
-      "findings": "Action-only contradiction persists: no operational US escort convoy visible; Trump still pairs coercive deadlines with negotiation signals."
+      "last_check": "2026-04-08",
+      "findings": "Action-only: No operational US escort convoy visible in news; Trump continues pairing coercive deadlines with negotiation signals; contradiction persists"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "triggered",
-      "last_check": "2026-04-07",
-      "findings": "Action-only: Iran submitted 10-clause framework; Trump announced 2-week 'double-sided ceasefire'; mediators active but no UNSC adoption yet."
+      "last_check": "2026-04-08",
+      "findings": "Action-only: Iran 10-point proposal submitted; Trump announced 2-week double-sided ceasefire; Israel assented to temporary ceasefire; UNSC adoption still pending"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
-      "last_check": "2026-04-07",
-      "findings": "Action-only: Gas .08-4.12/gal national; US casualties material (15+ KIA); War Powers resolution pressure active but not decisive."
+      "last_check": "2026-04-08",
+      "findings": "Action-only: Gas USD4.08-4.12/gal; US casualties 15+ KIA; War Powers resolution gaining House support but not yet decisive"
     }
   },
   "noise_filter": {
