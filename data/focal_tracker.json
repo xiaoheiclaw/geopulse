@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-09T15:48:34.519528+00:00",
+  "last_updated": "2026-04-10T22:03:07.927009+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-04",
-          "est": "1-2/day declining (IRGC baseline), ★★★ Bushehr nuclear perimeter+Mahshahr petrochemical STRUCK Apr 4; explosions reported Apr 4 at auxiliary Bushehr building+Mahshahr Special Petrochemical Zone; CENTCOM Wk5+ ~6,000 targets in Op Epic Fury; F-15E+A-10 shot down Apr 3 CONFIRMED; WSO STILL MISSING; 3 INDEPENDENT fronts sustained (IRGC residual+Houthis+Hezbollah)",
-          "note": "Day 50. ★★★★★ NUCLEAR PERIMETER + PETROCHEMICAL INFRASTRUCTURE TARGETED: (1) Apr 4: Explosions at Bushehr Nuclear Power Plant auxiliary building + Mahshahr Special Petrochemical Zone (Wikipedia/AJE/NYT); 1 worker killed at Bushehr perimeter; IAEA confirmed no radiation increase; (2) CENTCOM Wk5+: ~6,000 targets struck in Op Epic Fury (AJE/CENTCOM); (3) IRGC baseline STILL 1-2/day declining; Apr 2 joint Iran+Houthi+Hezbollah salvo at Israel = coordinated show-of-force; (4) F-15E Strike Eagle (494th FS) + A-10 Warthog BOTH shot down Apr 3 = FIRST US aircraft losses; pilot rescued, WSO MISSING; Iran offered $60K reward for WSO; (5) Houthis SUSTAINED — 4+ attacks on Israel since entering war Mar 28, joint BM+drones; warned of Bab el-Mandeb closure; (6) Hezbollah 5,000+ attacks since Mar 2 — 71 attacks targeting Israel Mar 31-Apr 1 alone; shot down IAF drone; INDEPENDENT front; (7) US KIA: 15 confirmed + hundreds wounded; Pentagon accused of coverup (Intercept); (8) Iran: 7,007+ deaths (HRANA); (9) Trump '48 hours before all hell' WHILE postponing power plant strikes 5 days; (10) ★★★ CRITICAL: Energy/nuclear infrastructure targeting NOW ACTIVE before official Apr 6 deadline. 3 INDEPENDENT fronts (IRGC residual, Houthis sustained, Hezbollah 5K+). Iran AD PROVEN NOT eliminated (F-15E+A-10 losses). Source: Wikipedia/AJE/CENTCOM/NYT/Intercept/IAEA/Bloomberg",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-05",
           "est": "1-2/day",
@@ -93,6 +87,12 @@
           "est": "1-2 incidents/day (persistent)",
           "note": "Action-only: No verified zero-attack window in CENTCOM/ISW reporting; IRGC baseline persists",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-10",
+          "est": "~0/day (停火D3, 4/8起两周停火)",
+          "note": "4/8停火生效, CENTCOM暂停打击; 但停火紧张—伊朗指控美/以黎巴嫩行动违约; 4/6 B-2轰炸IRGC地下总部(行动); 4/7 IRGC情报总长Khademi被击毙; 'hundreds'无人机仍在Op Epic Fury部署中",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-04",
-          "est": "~4-6 mbd (8-12 ships/day INCREASING), Bloomberg Apr 4: weekly transits at HIGHEST since war began; FIRST WESTERN TRANSITS: French CMA CGM Kribi + Japanese tanker crossed Apr 3; 3 Omani tankers via NEW coast bypass; Philippines+France+Japan added to passage list; Iran grants 'essential goods' passage; UNSC Hormuz vote delayed next week; Iran Larak checkpoint+USD2M toll STILL enforced; still ~93% below pre-crisis",
-          "note": "Day 50. ★★★★★ TRANSIT INCREMENTALLY RISING — BLOOMBERG: HIGHEST SINCE WAR: (1) ★★★ Bloomberg Apr 4: Weekly transits reach HIGHEST since war began — more vessels crossing including those with no clear links to Iran or China (Bloomberg); (2) French CMA CGM Kribi (Maltese-flagged) transited EASTBOUND Apr 3 = FIRST Western European vessel since war (Bloomberg/Reuters/UPI/Guardian); (3) Japanese-owned tanker also crossed (Bloomberg); (4) Philippines added Apr 2 (UPI Apr 3); France+Japan de facto allowed; (5) 3 Omani tankers via NEW Oman coast bypass route BYPASSING Iranian corridor (Bloomberg); (6) UNSC Hormuz vote DELAYED to next week — Bahrain resolution watered down to 'defensive only' (AP/DW); China opposes force; (7) Iran Larak checkpoint operating — IRGC vets+escorts each ship, USD2M toll, yuan/crypto; (8) Iran-Oman drafting PERMANENT Hormuz 'monitoring' protocol = peacetime sovereignty bid (NYT/CNBC); (9) USNI Proceedings: US has NOT undertaken naval escorts — 5+ weeks; (10) Pre-crisis ~120 ships/day, current ~8-12/day = ~93% below pre-crisis BUT trend IMPROVING. PATTERN: Two-tier Hormuz regime EXPANDING — friendly nations+Western cracks+essential goods = incremental opening. Still far below pre-crisis. Source: Bloomberg/Reuters/UPI/Guardian/AP/DW/NYT/CNBC/USNI",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-05",
           "est": "~3 mbd (~3-5 ships/day)",
@@ -189,6 +183,12 @@
           "est": "~1-2 ships/24h (near shutdown)",
           "note": "Apr 9: WTI report - only ONE oil products tanker transited Hormuz in first 24h of ceasefire; Strait effectively closed; Tehran requires military approval for passage",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-10",
+          "est": "~1-5艘/天 (停火后仍受阻)",
+          "note": "Al Jazeera 4/10: 停火后海峡仍近停滞; 伊朗未兑现开放承诺; 600+船只(含325油轮)滞港; 若停火维持预计最多10-15艘/天; 停火前战时累计仅21艘通过(vs平时100+/天)",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-04",
-          "est": "~1-1.5 mbd (DOE/Wright), D+35, deliveries ACTIVE since Apr 1, 10M bbl Bryan Mound exchange RFP proposals due TOMORROW Apr 6, Gas USD4.08/gal national (AAA), CA USD5.89 (ChooseEnergy); SPR declining to ~243M bbl (40yr low); DOE denies further releases; Goldman warns 400M bbl 'may be insufficient'",
-          "note": "Day 50 D+35. ★★★★ SPR ACTIVE BUT OVERWHELMED — APR 6 DOUBLE CONVERGENCE: (1) DOE Apr 1: 10M bbl emergency EXCHANGE from Bryan Mound — proposals due TOMORROW Apr 6 = SAME DAY as energy strike deadline (Reuters/DOE); (2) FoxBusiness Apr 3: US releases 10M bbl as oil tops USD112 — critics warn drawdown 'could fuel vulnerabilities'; Goldman Sachs warns 400M bbl release 'may be insufficient' to cover Hormuz disruption (FoxBusiness); (3) Rate confirmed 1-1.5 mbd (Wright/S&P Global); (4) SPR deliveries UNDERWAY since Apr 1 — Shell/Marathon/BP/Gunvor receiving; (5) Gas USD4.08/gal national (AAA/USAToday Apr 2) = highest since Aug 2022; CA USD5.89 (ChooseEnergy Apr 1); (6) SPR projected to decline to ~243M bbl = near 40-year low; (7) DOE DENIES further releases beyond current plan; (8) G7 coordinated 412M bbl (US 172M); (9) Brent USD112.42 (Fortune Apr 3); WTI USD111.29 — INVERTED above Brent (OilPrice); (10) Exchange structure: companies repay 20% more barrels Nov 2026-Sep 2028. SPR 1.5 mbd vs 15-17 mbd Hormuz disruption = 10% replacement. Source: Reuters/DOE/FoxBusiness/AAA/USAToday/ChooseEnergy/Fortune/OilPrice",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-05",
           "est": "~1-1.5 mbd",
@@ -282,6 +276,12 @@
           "est": "~1.4 mbd (DOE rate) / ~0.05 mbd (EIA net draw)",
           "note": "DOE: 172M/120d = ~1.4 mbd; EIA weekly (Mar 27): 415.064m bbl (-378kb w/w) = ~0.05 mbd net; exchange vs drawdown structure explains discrepancy",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-10",
+          "est": "~1.4 mbd (172M/120天; 45M首批已签约交付)",
+          "note": "DOE: 172M bbl/120天=~1.43 mbd; 45M bbl首批合同已签+交付启动; EIA周报(3/27): 415.064M bbl净库存(-378kb w/w); 交换结构(不是直接抽储)解释净提取偏低; IEA协调G7 400M+ bbl",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "watch",
-      "last_check": "2026-04-09",
-      "findings": "Action-only: No verified Chinese naval escort or Gulf enforcement in latest news; Wang Yi diplomatic shuttle continues but no operational military deployment"
+      "status": "active",
+      "last_check": "2026-04-10",
+      "findings": "★升级watch→active: 中国特别使员实际赴中东+海湾斡旋(行动); 王毅26通电话(外交行动); 中巴联合发布5点倡议; 联合国安理会否决霍尔木兹决议(行动); 欢迎停火+支持巴基斯坦调解; 但无军事/海军实际部署; 美方对中国调解'disinterested'"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
-      "last_check": "2026-04-09",
-      "findings": "Action-only: No operational US escort convoy visible; Trump continues contradictory signals (coercive deadlines paired with negotiation hints)"
+      "last_check": "2026-04-10",
+      "findings": "停火签署(行动)+万斯代表团赴伊斯兰堡(行动)=实质谈判; 但停火合规存争议(伊朗指控美/以黎巴嫩违约); 万斯称伊朗10点计划'已改变'被伊方否认; 美海军仍未实施护航任务; Trump称'optimistic'(言辞); 矛盾持续"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "triggered",
-      "last_check": "2026-04-09",
-      "findings": "Action-only: Iran 10-point proposal submitted; Trump announced 2-week ceasefire; Israel assented; UNSC adoption pending"
+      "status": "active",
+      "last_check": "2026-04-10",
+      "findings": "★显著升级triggered→active: 4/10伊斯兰堡谈判开启(行动); 万斯领衔美方代表团(行动); 伊朗10点计划已提交=退出框架原材料齐备; 两周停火框架生效(4/8-4/22); 巴基斯坦调解成功落地; 但停火合规争议+伊朗要求从黎巴嫩到制裁全面打包"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
-      "last_check": "2026-04-09",
-      "findings": "Action-only: Gas USD4.16/gal national (Apr 8); US casualties 15+ KIA; War Powers resolution gaining House support but not yet decisive"
+      "last_check": "2026-04-10",
+      "findings": "油价/加仑(AAA 3/31 CNBC); 美军阵亡13人(4/4数据)+数百伤; 战费B+(前6天.3B); 国会预算请求-100B; Pew调查: 气价为美国人#1关切(4/7); Bloomberg警告中期选举影响; War Powers决议获众院支持但未通过; 停火降低成本积聚速度但未消除"
     }
   },
   "noise_filter": {
