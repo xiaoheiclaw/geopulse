@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-11T22:02:01.786189+00:00",
+  "last_updated": "2026-04-12T02:02:03.067090+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-06",
-          "est": "1-2 incidents/day",
-          "note": "Action-filtered: CENTCOM continues daily strike releases (latest ~14h), Reuters reports near-daily escort requests amid recurring ship attacks/harassment; tempo remains sustained rather than spiking.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-06",
           "est": "1-2 incidents/day",
@@ -93,6 +87,12 @@
           "est": "~0/day (停火D5)",
           "note": "停火D5(4/8起); CENTCOM暂停对伊打击; 13美军阵亡373+伤; 4/7 Trump同意停火两周(行动); 停火条件:伊朗开放海峡; 但伊朗称黎巴嫩停火+资产解冻为先决条件; 以色列4/8停火当天轰炸黎巴嫩300+死(行动); Vance率团伊斯兰堡谈判进行中; 停火窗口4/22到期",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-12",
+          "est": "~0/day (停火D5-6)",
+          "note": "停火D5-6(4/8起); CENTCOM暂停对伊打击; USS Peterson+Murphy 4/11-12穿越海峡执行扫雷(行动); CENTCOM: establishing new passage; 伊朗否认美舰通过+威胁'unauthorized ships'; 13美军KIA+373伤; 以色列继续轰炸黎巴嫩(4/8 303死+4/11-12持续); 停火窗口4/22到期",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-06",
-          "est": "~4-7 transits/day",
-          "note": "Action-filtered shipping data: BBC Verify 'just under 100 transits since start of March' and Argus '20 crossings since Mar 28' imply low single-digit daily flow, still far below pre-war ~130+/day.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-06",
           "est": "~8-15 transits/day",
@@ -189,6 +183,12 @@
           "est": "~10艘/天 (1000船滞留, 海峡仍effectively closed)",
           "note": "Bloomberg/NBC/CBS: 停火以来日均~10艘(某日9艘,某日3艘); 1000船滞留(800内+200外); 伊朗收M+过境费+军方审批; CNN: ships still not going through; 远低于战前135艘/天; 停火核心条件(开放海峡)仍未兑现; 保险公司仍拒绝覆盖Hormuz航线",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-12",
+          "est": "~10艘/天 (扫雷启动但仍封锁)",
+          "note": "Bloomberg/NBC: 停火以来日均~10艘(vs战前135); 1000船滞留(800内+200外); USS Peterson+Murphy 4/11-12开始扫雷(行动); CENTCOM称将建safe pathway; 但伊朗否认美舰通过+坚持过境审批权; 保险公司仍拒覆盖; 水下无人机数日内加入; 扫雷是开放海峡第一步但需时数周",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-06",
-          "est": "~1.4 mbd (~10 mb/week)",
-          "note": "DOE statement: 172M bbl SPR release over ~120 days => ~1.43 mbd draw (~10M bbl/week); implementation ongoing via coordinated IEA release.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-06",
           "est": "~1.4 mbd (~10 mb/week)",
@@ -282,6 +276,12 @@
           "est": "~0.25 mbd净提取 (EIA 4/8数据, 下次报告4/15)",
           "note": "EIA(4/8,截至4/3): SPR~413.3M bbl(-1.739M w/w=~0.25mbd); DOE目标1.4mbd(172M/120天); 半数为exchange非直接抽储; 新30M bbl甜质原油RFP截止4/13; DOE称record speeds交付; 下次EIA报告4/15; IEA协调全球400M+ bbl释放",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-12",
+          "est": "~0.25 mbd净提取 (无新EIA数据, 下次4/15)",
+          "note": "EIA(4/8,截至4/3): SPR~413.3M bbl(-1.739M w/w=~0.25mbd); 无新周报(下次4/15); DOE目标1.4mbd(172M/120天); 新30M bbl甜质原油RFP截止4/13; 交换结构解释净值偏低; IEA协调全球400M+ bbl",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "active",
-      "last_check": "2026-04-11",
-      "findings": "王毅26通电话+中东特使穿梭斡旋; 中俄4/8否决UNSC海峡决议(行动); 中巴5点倡议; 伊斯兰堡谈判由巴方主持(中国不在桌但幕后影响力); 仍无海军/军事部署; Fortune: China steps into world leadership role; 外交影响力持续但未转化为军事承诺"
+      "last_check": "2026-04-12",
+      "findings": "中俄4/7否决UNSC海峡决议(行动); NYT: 中国关键推动伊朗接受巴方停火; 王毅26通电话+中东特使穿梭; 中巴5点倡议; 伊斯兰堡谈判巴方主持(中国幕后); Fortune: China steps into world leadership role; 仍无海军/军事部署; 外交影响力持续上升但未转化军事承诺"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
-      "last_check": "2026-04-11",
-      "findings": "Vance率团伊斯兰堡谈判(行动); 伊朗代表团已抵达(行动); 但: 以色列4/8停火当天轰炸黎巴嫩357死(行动)直接威胁停火; 海峡仍封锁(核心条件未兑现); 伊朗称2项前提未满足(黎巴嫩停火+资产解冻); Wright误发Navy护航推文(信号混乱); 停火窗口4/22到期; 谈判与军事行动并行=典型信号矛盾"
+      "last_check": "2026-04-12",
+      "findings": "伊斯兰堡谈判14小时无协议(4/11), 周日继续; Vance对Qalibaf; '总体积极'但海峡控制权僵局; USS Peterson/Murphy停火期间执行扫雷=谈判期间单边军事行动(典型信号矛盾); 伊朗否认美舰通过+威胁unauthorized ships; 以色列拒绝黎巴嫩停火+继续轰炸(4/8 303死,4/11-12持续); 黎以谈判下周State Dept; 伊朗四不可谈: 海峡主权+战损赔偿+资产解冻+全区停火; 停火4/22到期"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "triggered",
-      "last_check": "2026-04-11",
-      "findings": "伊斯兰堡面对面谈判进行中(行动); 伊朗10点方案: 制裁全免+美军撤出+战损赔偿+UNSC决议+IAEA撤销+资产解冻; 巴方45天两阶段方案被伊拒绝; Trump称workable basis但Vance指伊朗改变条件; 以色列黎巴嫩行动为最大变量; 框架已提出但双方差距极大; 停火窗口4/22到期"
+      "last_check": "2026-04-12",
+      "findings": "伊斯兰堡面对面谈判14小时无协议(4/11), 周日4/13继续; 伊朗10点方案仍为基础: 制裁全免+美军撤出+战损赔偿+UNSC决议+IAEA撤销+资产解冻+全区停火; 双方差距极大但继续谈; 黎以谈判下周State Dept(独立轨道); Netanyahu拒绝黎巴嫩纳入停火+Trump确认; 框架存在但可执行性极低; 停火窗口4/22到期"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
-      "last_check": "2026-04-11",
-      "findings": "汽油.06-4.25/gal(AAA, 2022年8月以来首次破); 13美军阵亡+373伤(5人重伤); War Powers: House+Senate均沿党线否决(行动); 60天时限~4/28; Murphy参议员强推再投; Schumer宣布下周再推Senate投票; 1000船滞留推高航运保险成本; 停火暂缓成本积聚但未消除; 国内反对情绪上升但GOP仍挡住立法约束"
+      "last_check": "2026-04-12",
+      "findings": "汽油.06-4.25/gal(AAA, 2022年8月以来首破); 13美军KIA+373伤(5重伤); War Powers: House GOP封杀; Schumer推下周Senate再投; 60天时限~4/28; Murphy参议员强推; 1000船滞留推高航运保险成本; 油价Brent.7/WTI.6; 成本持续积聚但GOP仍挡住立法约束; 停火暂缓升级但经济压力不减"
     }
   },
   "noise_filter": {
