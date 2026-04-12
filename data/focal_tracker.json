@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-12T10:01:51.920655+00:00",
+  "last_updated": "2026-04-12T22:01:54.634233+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-07",
-          "est": "1-2 incidents/day (persistent)",
-          "note": "Action-only: ISW Apr 1 and Apr 5 continue to log Iranian attacks on shipping and Gulf-linked targets, with no verified zero-attack window; keep low-but-persistent IRGC tempo.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-07",
           "est": "1-2 incidents/day (persistent)",
@@ -93,6 +87,12 @@
           "est": "~0/day (停火D5)",
           "note": "停火D5(4/8起); Vance离开Islamabad无协议; 4/13继续谈判; USS Peterson/Murphy扫雷中; CENTCOM暂停打击; 13 KIA+381 WIA(官方)/15+520+(Intercept); 停火窗口4/22到期; 伊朗坚持铀浓缩权+全面解除制裁",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-12",
+          "est": "~0/day (停火D6)",
+          "note": "停火D6(4/8起); Islamabad谈判21h后破裂无协议(行动); Trump宣布将blockade海峡(言辞→待验证); CENTCOM暂停对伊打击; 停火窗口4/22到期; 伊朗称'不应期望一次会谈达成协议'; Vance称核浓缩为red line",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-07",
-          "est": "~15-20 transits/day (partial reopening)",
-          "note": "Action-only: Seatrade/Windward reporting cited 15 ships cleared and about 20 total Hormuz transits in the prior 24h as of Apr 5; still far below pre-crisis flow.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-07",
           "est": "~15-20 transits/day (partial reopening)",
@@ -189,6 +183,12 @@
           "est": "~10艘/天 (扫雷进行中,海峡仍封锁)",
           "note": "Bloomberg/Polymarket: 4/6-12周共50-59艘(共识); 日均~10(某日11,某日14); 1000船滞留; USS Peterson/Murphy扫雷(需数周); 伊朗坚持过境审批权+收费; 保险公司拒覆盖; vs战前135艘/天; Vance无协议离开=短期开放无望",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-12",
+          "est": "~10艘/天 (Trump宣布blockade)",
+          "note": "Bloomberg/Polymarket: 日均~10艘(vs战前135); USS Peterson/Murphy扫雷进行中(需数周); Trump 4/12宣布naval blockade(WaPo/NPR/CNN); IRGC坚称海峡开放; 1000船滞留; 保险拒覆盖; 扫雷→blockade转向=升级信号; 停火核心条件仍未兑现",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-07",
-          "est": "~0.05 mbd net draw (~0.38 mb/week)",
-          "note": "Official EIA weekly SPR stocks page released Apr 1 shows 415.064m bbl for week ending Mar 27, down 378 kb w/w from 415.442m; no new Apr 8 report yet.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-07",
           "est": "~0.05 mbd net draw (~0.38 mb/week)",
@@ -282,6 +276,12 @@
           "est": "~0.25 mbd净提取 (无新数据,下次EIA 4/15)",
           "note": "无新EIA数据(下次4/15); 上期(4/8,截至4/3): SPR~413.3M bbl(-1.739M w/w=~0.25mbd); DOE 30M bbl甜质原油RFP截止4/13(明日); 172M/120天目标1.4mbd; WTI .57(-12% w/w); 交换结构解释净值偏低",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-12",
+          "est": "~0.25 mbd净提取 (无新数据)",
+          "note": "无新EIA数据(下次4/15); 上期(4/8,截至4/3): SPR~413.3M bbl(-1.739M w/w=~0.25mbd); DOE 30M bbl甜质原油RFP今日4/13截止; 172M/120天目标1.4mbd; 谈判破裂后释放压力可能加大",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active",
+      "status": "watching",
       "last_check": "2026-04-12",
-      "findings": "王毅26通电话+中东特使穿梭; 中俄否决UNSC海峡决议(行动); 中国关键推动伊朗接受巴方停火; Fortune:world leadership role; Islamabad谈判巴方主持中国幕后; 仍无海军/军事部署; 外交影响力持续上升但未转化军事承诺"
+      "findings": "中国推动伊朗接受停火(行动); 王毅26通电话+中东特使穿梭; 中俄否决UNSC海峡护航决议(行动); 但Islamabad谈判破裂后中国未发新声明; 仍无海军/军事部署; Fortune:world leadership role; 关注中国是否在谈判破裂+blockade升级后采取新动作"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-04-12",
-      "findings": "Vance离开Islamabad无协议(行动); Trump 15点vs伊朗10点差距极大; 核心分歧:铀浓缩+制裁全免+UNSC决议+资产解冻+黎巴嫩; USS Peterson/Murphy停火期间扫雷=谈判中单边军事行动(信号矛盾); 以色列拒纳黎巴嫩+继续轰炸; 停火4/22到期; 4/13周日谈判继续"
+      "findings": "CRITICAL: Islamabad 21h谈判破裂(行动); Trump宣布naval blockade海峡(WaPo/CNN/NPR)=停火期间宣布封锁=最大信号矛盾; 同时USS Peterson/Murphy停火期间扫雷=单边军事行动; Trump:'We win regardless'; Vance称伊朗拒绝核red line; 伊朗称不期望一次达成=留门; 停火4/22到期但blockade升级可能提前打破"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "triggered",
+      "status": "degraded",
       "last_check": "2026-04-12",
-      "findings": "伊朗10点vs Trump 15点差距极大; Islamabad 14h马拉松无协议Vance离开; 核心分歧:铀浓缩权+制裁全免+UNSC决议+资产解冻; 黎以独立轨道(下周State Dept); Netanyahu拒纳黎巴嫩; 4/13继续; 框架存在但可执行性极低; 停火窗口4/22到期"
+      "findings": "Islamabad 21h马拉松谈判破裂(行动); 核心分歧不可调和: 美要求完全停止铀浓缩+拆设施+移交高浓缩铀 vs 伊朗坚持核权利; 伊朗10点vs美方red lines差距极大; 伊朗称'不应期望一次达成'=修辞留门但实质无进展; 黎巴嫩不在框架内(Netanyahu拒纳); 框架名存实亡; 停火4/22到期"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-12",
-      "findings": "汽油.08-4.25/gal(AAA,2022年8月以来首破); 13 KIA+381 WIA官方(Intercept:15死520+伤低估); House GOP 4/10封杀第4次War Powers投票; Schumer推下周Senate投票; 60天时限~4/28; 1000船滞留+保险拒覆盖; WTI -12% w/w; 成本积聚但GOP挡住立法约束"
+      "findings": "汽油+/gal(AAA 3/31破, GasBuddy 4/6报.87); 战争成本~B(CSIS); 13-15 KIA+381-520+ WIA; House GOP封杀War Powers投票(4/10); Dems下周继续推; 国会休假后下周回归=新一轮政治压力; 60天时限~4/28; Bloomberg:高油价将困扰GOP中期选举; 成本持续积聚但尚未突破政治阈值"
     }
   },
   "noise_filter": {
