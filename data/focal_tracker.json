@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-12T22:01:54.634233+00:00",
+  "last_updated": "2026-04-13T02:01:30.982120+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-07",
-          "est": "1-2 incidents/day (persistent)",
-          "note": "Action-only: ISW Apr 5 and continuing CENTCOM strike activity show no verified zero-attack window; maintain low persistent IRGC tempo.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-07",
           "est": "1-2 incidents/day (persistent)",
@@ -93,6 +87,12 @@
           "est": "~0/day (停火D6)",
           "note": "停火D6(4/8起); Islamabad谈判21h后破裂无协议(行动); Trump宣布将blockade海峡(言辞→待验证); CENTCOM暂停对伊打击; 停火窗口4/22到期; 伊朗称'不应期望一次会谈达成协议'; Vance称核浓缩为red line",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-13",
+          "est": "~0/day (停火D6)",
+          "note": "停火D6(4/8起); CENTCOM暂停对伊打击; Islamabad 21h谈判破裂(行动); Trump宣布naval blockade(行动); House 219-212否决War Powers(4/12); 停火窗口4/22到期; IRGC直接攻击频率仍为零但blockade宣布=升级; 下周国会回归+Senate Dems将推War Powers",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-07",
-          "est": "~15-20 transits/day (partial reopening)",
-          "note": "Action-only: Seatrade Apr 6 citing Fars and Windward said 15 ships were cleared and about 20 total Hormuz transits occurred in the prior 24 hours; still far below pre-crisis flow.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-07",
           "est": "~20 transits/day (partial reopening)",
@@ -189,6 +183,12 @@
           "est": "~10艘/天 (Trump宣布blockade)",
           "note": "Bloomberg/Polymarket: 日均~10艘(vs战前135); USS Peterson/Murphy扫雷进行中(需数周); Trump 4/12宣布naval blockade(WaPo/NPR/CNN); IRGC坚称海峡开放; 1000船滞留; 保险拒覆盖; 扫雷→blockade转向=升级信号; 停火核心条件仍未兑现",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-13",
+          "est": "~10艘/天 (blockade宣布,海峡仍封锁)",
+          "note": "Bloomberg/USNI: 日均~10艘(vs战前135); Trump 4/12宣布full naval blockade(行动); USS Peterson/Murphy扫雷继续(需数周); 1000+船滞留; 保险拒覆盖; 伊朗坚持过境审批权; blockade宣布=从扫雷开放转向主动封锁; USNI: 两艘美舰4/11穿越海峡建立新航道; CNN: reopening won't be enough to solve shipping woes",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-07",
-          "est": "~0.05 mbd net draw (~0.38 mb/week)",
-          "note": "Official EIA Table 1 for week ending Mar 27 shows SPR stocks at 415.064m bbl, down 0.378m w/w from 415.442m; no newer Apr 8 report yet.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-07",
           "est": "~0.05 mbd net draw (~0.38 mb/week)",
@@ -282,6 +276,12 @@
           "est": "~0.25 mbd净提取 (无新数据)",
           "note": "无新EIA数据(下次4/15); 上期(4/8,截至4/3): SPR~413.3M bbl(-1.739M w/w=~0.25mbd); DOE 30M bbl甜质原油RFP今日4/13截止; 172M/120天目标1.4mbd; 谈判破裂后释放压力可能加大",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-13",
+          "est": "~0.25 mbd净提取 (DOE第二批8.5M bbl, RFP今日截止)",
+          "note": "DOE 4/10发放第二批8.5M bbl(Gunvor/Phillips66/Trafigura/Macquarie)(行动); 30M bbl甜质原油RFP今日4/13截止; SPR~413M bbl; 下次EIA报告4/15; 172M/120天目标1.4mbd; 谈判破裂+blockade后释放压力加大; IEA协调全球400M+ bbl",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "watching",
-      "last_check": "2026-04-12",
-      "findings": "中国推动伊朗接受停火(行动); 王毅26通电话+中东特使穿梭; 中俄否决UNSC海峡护航决议(行动); 但Islamabad谈判破裂后中国未发新声明; 仍无海军/军事部署; Fortune:world leadership role; 关注中国是否在谈判破裂+blockade升级后采取新动作"
+      "last_check": "2026-04-13",
+      "findings": "中国推动伊朗接受停火(行动); 王毅26通电话+中东特使穿梭; 中俄否决UNSC海峡护航决议(行动); Islamabad谈判破裂后中国未发新公开声明; 仍无海军/军事部署; 关注中国是否在blockade升级后采取新调解动作; Fortune:world leadership role"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
-      "last_check": "2026-04-12",
-      "findings": "CRITICAL: Islamabad 21h谈判破裂(行动); Trump宣布naval blockade海峡(WaPo/CNN/NPR)=停火期间宣布封锁=最大信号矛盾; 同时USS Peterson/Murphy停火期间扫雷=单边军事行动; Trump:'We win regardless'; Vance称伊朗拒绝核red line; 伊朗称不期望一次达成=留门; 停火4/22到期但blockade升级可能提前打破"
+      "last_check": "2026-04-13",
+      "findings": "CRITICAL升级: Islamabad 21h谈判破裂(行动)+Trump同日宣布naval blockade(行动)=停火期间宣布封锁=最大信号矛盾; USS Peterson/Murphy停火期间扫雷=单边军事行动; House 219-212否决War Powers(4/12)(行动); Vance离场+核enrichment red line; Trump:'We win regardless'; 下周Senate Dems推War Powers; 停火4/22到期但blockade可能提前打破"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "degraded",
-      "last_check": "2026-04-12",
-      "findings": "Islamabad 21h马拉松谈判破裂(行动); 核心分歧不可调和: 美要求完全停止铀浓缩+拆设施+移交高浓缩铀 vs 伊朗坚持核权利; 伊朗10点vs美方red lines差距极大; 伊朗称'不应期望一次达成'=修辞留门但实质无进展; 黎巴嫩不在框架内(Netanyahu拒纳); 框架名存实亡; 停火4/22到期"
+      "last_check": "2026-04-13",
+      "findings": "框架名存实亡: Islamabad 21h马拉松谈判破裂(行动); 核心分歧不可调和—美要求完全停止铀浓缩+拆设施 vs 伊朗坚持核权利+全面解除制裁; 伊朗10点vs美方15点red lines差距极大; 黎巴嫩不在框架内; 伊朗'不应期望一次达成'=修辞留门但实质无进展; blockade宣布进一步侵蚀框架基础; 停火4/22到期"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
-      "last_check": "2026-04-12",
-      "findings": "汽油+/gal(AAA 3/31破, GasBuddy 4/6报.87); 战争成本~B(CSIS); 13-15 KIA+381-520+ WIA; House GOP封杀War Powers投票(4/10); Dems下周继续推; 国会休假后下周回归=新一轮政治压力; 60天时限~4/28; Bloomberg:高油价将困扰GOP中期选举; 成本持续积聚但尚未突破政治阈值"
+      "last_check": "2026-04-13",
+      "findings": "汽油.06-.25/gal(AAA/EIA 4/9); 13-15 KIA+373-520+ WIA(官方vs Intercept); House 219-212否决War Powers(4/12)(行动); 但Rand Paul等GOP参议员co-sponsor Dem措施; 下周国会回归+Senate Dems推War Powers投票; 60天时限~4/28; 成本持续积聚+blockade将推高油价; 政治阈值接近但尚未突破"
     }
   },
   "noise_filter": {
