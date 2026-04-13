@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-13T10:02:55.797168+00:00",
+  "last_updated": "2026-04-13T22:02:02.843795+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -62,6 +62,12 @@
           "date": "2026-04-13",
           "est": "~0/day (停火D6, blockade D-1)",
           "note": "停火D6(4/8起); CENTCOM暂停对伊打击; blockade明日4/14 10am ET生效; IRGC直接攻击仍为零; 停火4/22到期; 但blockade=停火期间新军事行动; Senate下周推War Powers; 60天时限~4/28",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-13",
+          "est": "~0/day (停火D7, blockade生效)",
+          "note": "停火D7(4/8起); CENTCOM暂停对伊打击; blockade今日4/14 10am ET正式生效(行动); 封锁所有进出伊朗港口船只; IRGC直接攻击仍为零; 但blockade=停火期间新军事行动=重大升级; 13 KIA+381+ WIA(官方); 停火4/22到期; Trump威胁'eliminate'接近封锁线伊朗船只(言辞); 内部讨论可能第二轮谈判; Senate Dems本周推War Powers",
           "source": "pipeline"
         }
       ]
@@ -129,6 +135,12 @@
           "est": "~0-5艘/天 (traffic halting pre-blockade)",
           "note": "WSLS/AP: blockade前船舶交通几近停滞(行动); 此前日均~10艘(vs战前135); CENTCOM 4/14 10am ET起封锁all maritime traffic进出伊朗港口; 仅不阻碍非伊朗港口通行; 1000+船滞留; Brent .82(+12% 2天)突破; 保险仍拒覆盖; blockade生效后Q2可能降至~0",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-13",
+          "est": "~0-5艘/天 (blockade生效,伊朗港口完全封锁)",
+          "note": "CENTCOM blockade 4/14 10am ET生效(行动); 封锁all maritime traffic进出伊朗港口+沿海; 仅不阻碍非伊朗港口经海峡自由通行; Brent .38(+8%突破)(行动); WTI ~-105; 此前日均~10艘(vs战前135); 1000+船滞留; USS Peterson/Murphy继续扫雷; 保险仍拒覆盖; blockade生效后进出伊朗港口通行量预计降至~0; 伊朗M/日经济损失",
+          "source": "pipeline"
         }
       ]
     },
@@ -192,6 +204,12 @@
           "est": "~0.25 mbd净提取 (Brent破, 释放压力剧增)",
           "note": "无新EIA数据(下次4/15); SPR~413M bbl; DOE第二批8.5M bbl已发放; 30M bbl RFP昨日截止; Brent .82(破) WTI .57; blockade推动油价暴涨; 172M/120天目标1.4mbd实际仅0.25mbd; 释放速率严重滞后于目标; 政治压力要求加速",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-13",
+          "est": "~0.25 mbd净提取 (无新数据,blockade推高油价)",
+          "note": "无新EIA数据(下次4/15明日); 上期(4/8,截至4/3): SPR~413M bbl(-1.739M w/w=~0.25mbd); DOE第二批8.5M bbl已发放(4/10); 30M bbl甜质原油RFP 4/13已截止; Brent +(破); 172M/120天目标1.4mbd实际仅0.25mbd; blockade推油价暴涨→释放压力进一步加剧; 政治要求加速释放",
+          "source": "pipeline"
         }
       ]
     }
@@ -202,28 +220,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "watching",
       "last_check": "2026-04-13",
-      "findings": "blockade升级+Brent破后中国仍无新公开行动或声明; 此前: 王毅26通电话+中东特使穿梭+推动伊朗接受停火+中俄否决UNSC护航决议; 仍无海军部署; 关键观察: 油价+blockade是否触发中国新一轮调解或更强硬反应(如护航/经济反制)"
+      "findings": "blockade生效后中国仍无新公开行动或声明(截至4/14); 此前: 王毅26通电话+中东特使穿梭+推动伊朗接受停火+中俄否决UNSC护航决议(4/7); 仍无海军部署; 中巴五点倡议(停止敌对/启动和谈/保护非军事目标/保障航运/联合国宪章); 关键观察: blockade+Brent破是否触发中国新一轮调解或更强硬反应(如护航/经济反制)"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-04-13",
-      "findings": "CRITICAL持续: blockade明日10am ET生效=停火期间启动主动封锁(最大信号矛盾); Brent破(行动后果); Islamabad 21h谈判破裂; House 219-212否决War Powers; USS Peterson/Murphy扫雷→blockade转向; 停火4/22到期但blockade可能提前引爆; Senate Dems+Rand Paul下周推War Powers; 60天时限~4/28; 矛盾信号: 一边停火一边blockade"
+      "findings": "CRITICAL升级: blockade今日10am ET生效=停火(4/8-4/22)期间启动主动封锁伊朗港口(最大信号矛盾)(行动); Islamabad 21h谈判破裂(行动); Brent +(破); House 219-212否决War Powers(4/12); 但Senate 6名新Dem参议员(Merkley/Gillibrand/Van Hollen/Kelly/Warnock/Kim)本周filing War Powers决议(行动); 可10天后强制投票; 60天时限~4/28; 核心矛盾: 一边停火一边blockade+Trump威胁eliminate伊朗船只"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "degraded",
       "last_check": "2026-04-13",
-      "findings": "框架持续侵蚀: 无新谈判安排(行动缺失); blockade+Brent 进一步掏空谈判基础; 核心分歧不变—美要求完全停止铀浓缩 vs 伊朗坚持核权利+全面解除制裁; 伊朗10点vs美方15点差距极大; blockade将谈判窗口从'停火期间协商'转向'军事施压'; 停火4/22到期; 下一轮谈判时间未定"
+      "findings": "框架持续侵蚀: 无新谈判安排(行动缺失); blockade+Brent破进一步掏空谈判基础; 核心分歧不变—美要求完全停止铀浓缩 vs 伊朗坚持核权利+全面解除制裁+战争赔偿+资产解冻; 伊朗10点vs美方15点差距极大; 但Trump内部讨论可能第二轮会面(early signal); 停火4/22到期; blockade将谈判环境从'协商'转为'施压'"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-13",
-      "findings": "成本加速积聚: Brent .82(破,+12% 2天)(行动); WTI .57; 汽油.16/gal(AAA,2022年8月以来首破); CA .89; 13-15 KIA+381-520+ WIA; House 219-212否决War Powers但Senate下周推; 60天时限~4/28; VIX 19.23; S&P 6816; Gold ; blockade将进一步推高油价→汽油; 政治压力窗口因油价+国会回归全面打开"
+      "findings": "成本全面加速: Brent .38(+8%今日,破)(行动); WTI ~-105; 汽油.16+/gal(AAA)(行动); CA .89; 13 KIA+381+ WIA(官方)/15+520+(Intercept); 6名新Dem参议员filing War Powers(行动); 可10天后强制Senate投票; 60天时限~4/28; VIX 20.84(+8%); S&P 6816; Gold ~,750; blockade将进一步推高油价→汽油; 政治成本窗口因油价破+国会回归本周全面打开"
     }
   },
   "noise_filter": {
