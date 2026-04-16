@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-16T02:04:43.879765+00:00",
+  "last_updated": "2026-04-16T10:02:20.438345+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-12",
-          "est": "~0/day (停火D6)",
-          "note": "停火D6(4/8起); Islamabad谈判21h后破裂无协议(行动); Trump宣布将blockade海峡(言辞→待验证); CENTCOM暂停对伊打击; 停火窗口4/22到期; 伊朗称'不应期望一次会谈达成协议'; Vance称核浓缩为red line",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-13",
           "est": "~0/day (停火D6)",
@@ -93,6 +87,12 @@
           "est": "~0/day (停火D9, blockade D3)",
           "note": "停火D9(4/8起); blockade D3运行中; CENTCOM暂停对伊空袭; IRGC直接攻击仍为零; Senate 47-52否决WPR第4次(4/15)(行动); 第二轮Islamabad谈判据报今日4/16(行动); WH称'good about prospects of a deal'(行动:政策定调); Pakistan陆军参谋长Munir 4/15赴Tehran推动(行动); France+40+国escort mission筹备中(行动:国际化); Iran军方Abdollahi威胁封锁Red Sea/Sea of Oman/波斯湾(行动:升级信号); 13 KIA+381 WIA(官方); 停火4/22到期(6天); 60天WPR时限4/29(13天)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-16",
+          "est": "~0/day (停火D9, blockade D3)",
+          "note": "停火D9(4/8起); blockade D3运行中; CENTCOM暂停对伊空袭; IRGC直接攻击仍为零; 13 KIA+381 WIA(官方,停火期间无新伤亡); WH称正讨论第二轮Islamabad谈判(行动:政策讨论); Leavitt称'feel good about prospects of a deal'(行动:定调); Atlantic此前报4/16第二轮但WH尚未确认时间/地点(日内瓦也在考虑); Pakistan Army chief Munir 4/15赴Tehran斡旋后返回(行动); 停火4/22到期(6天); 60天WPR时限~4/29-5/1(13-15天)",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-12",
-          "est": "~10艘/天 (Trump宣布blockade)",
-          "note": "Bloomberg/Polymarket: 日均~10艘(vs战前135); USS Peterson/Murphy扫雷进行中(需数周); Trump 4/12宣布naval blockade(WaPo/NPR/CNN); IRGC坚称海峡开放; 1000船滞留; 保险拒覆盖; 扫雷→blockade转向=升级信号; 停火核心条件仍未兑现",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-13",
           "est": "~10艘/天 (blockade宣布,海峡仍封锁)",
@@ -189,6 +183,12 @@
           "est": "~6-17艘/天 (blockade D3, Pentagon称完全封锁)",
           "note": "blockade D3: Pentagon称'completely halted economic trade by sea'(行动); 首24h拦截2油轮+6艘调头(行动); sanctioned tankers仍穿越(enforcement gap持续); Kpler 6艘vs其他来源17艘(数据不一); vs战前100-138艘/天; 600+船(含325油轮)滞留; France+40+国(UK牵头)独立escort mission筹备(行动:非美主导); Iran军方威胁封锁Red Sea/Sea of Oman/波斯湾(行动:Abdollahi); 保险仍拒覆盖; 油价: Brent~95.62 WTI~97.07; 停火后45艘过境(4/8-15)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-16",
+          "est": "~6-19艘/天 (blockade D3, 通行量仍极低)",
+          "note": "blockade D3: USNI 4/14报19艘过境(5入14出); 首日6艘; 数据源差异持续(Kpler低vs USNI/MarineTraffic高); vs战前100-138艘/天(仍减90%+); 600+船(含325油轮)滞留; Pentagon称'completely halted economic trade by sea'(行动); sanctioned tankers仍穿越(enforcement gap持续); France+40+国escort mission筹备中(UK牵头,非美主导)(行动); 保险仍拒覆盖; 油价继续回落: Brent~94.89 WTI~90.72(市场定价de-escalation)",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-12",
-          "est": "~0.25 mbd净提取 (无新数据)",
-          "note": "无新EIA数据(下次4/15); 上期(4/8,截至4/3): SPR~413.3M bbl(-1.739M w/w=~0.25mbd); DOE 30M bbl甜质原油RFP今日4/13截止; 172M/120天目标1.4mbd; 谈判破裂后释放压力可能加大",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-13",
           "est": "~0.25 mbd净提取 (DOE第二批8.5M bbl, RFP今日截止)",
@@ -282,6 +276,12 @@
           "est": "~0.25 mbd净提取 (EIA 4/15已发布,下次4/22)",
           "note": "EIA 4/15发布(截至4/10): crude inventories -0.913M bbl; SPR~413M bbl维持; DOE第二批8.48M bbl已发放(Gunvor/Phillips66/Trafigura/Macquarie); 30M bbl甜原油RFP 4/13截止(结果待公布); 172M/120天目标1.4mbd实际仅~0.25mbd; SPR~413M为1980s以来最低; 汽油均价$4.108(AAA 4/16,较峰值$4.25回落); 释放速率严重滞后; 下次EIA报告4/22",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-16",
+          "est": "~0.25 mbd净提取 (EIA 4/15已发布,下次4/22)",
+          "note": "EIA 4/15发布(截至4/10): crude inventories -0.913M bbl; SPR~413M bbl维持(1980s最低); DOE第二批8.48M bbl已发放; 30M bbl甜原油RFP 4/13截止(结果待公布); 172M/120天目标1.4mbd实际仅~0.25mbd(释放严重滞后); 汽油均价.108(AAA,较峰值.25回落3.3%); 油价回落: Brent~94.89(-/bin/zsh.73) WTI~90.72; 下次EIA报告4/22",
+          "source": "pipeline"
         }
       ]
     }
@@ -292,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "marginalized-pakistan-leads",
       "last_check": "2026-04-16",
-      "findings": "中国角色进一步边缘化; Pakistan陆军参谋长Munir 4/15抵Tehran推动US-Iran第二轮谈判(行动:巴方主导); 王毅26通电话但无重大新实质行动; 中巴五点倡议仍存但未被采纳为谈判框架; France+40+国联军(UK牵头)筹备独立escort mission=绕过中国方案(行动); 以色列-黎巴嫩华盛顿直接谈判4/14(行动:美国主导+Hezbollah解耦); State Dept称'productive discussions'; 第二轮Islamabad据报今日4/16(行动:巴基斯坦主持); 中国在UN安理会与俄罗斯4/7否决巴林护航决议→自我限制"
+      "findings": "中国角色持续边缘化; Pakistan主导: Army chief Munir 4/15访Tehran斡旋+WH 4/16确认正讨论第二轮Islamabad谈判(行动); 王毅26通电话但无新实质行动; 中巴五点倡议未被采纳; France+40+国escort mission(UK牵头)=绕过中国方案(行动); 以色列-黎巴嫩华盛顿直接谈判4/14(行动:美主导Hezbollah解耦); 中国UN安理会与俄4/7否决护航决议→自我限制; WH称谈判地点可能Islamabad或Geneva(非北京)"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "extreme-contradiction-blockade-plus-talks-plus-intl-escort",
       "last_check": "2026-04-16",
-      "findings": "矛盾三重化: (1)blockade D3 fully implemented+拦截行动(行动); (2)第二轮Islamabad据报今日4/16+WH称deal prospects 'good'(行动); (3)France+40+国独立escort mission(UK牵头)(行动:第三力量介入); Senate 47-52否决WPR第4次(行动); 但Collins(R)称'总统权力不是无限的'+60天后需国会授权(行动:GOP条件性); 60天WPR时限4/29(13天); Iran军方威胁封锁Red Sea/Sea of Oman(行动:升级); Trump: war 'very close to over'(言辞); 以色列-黎巴嫩直接谈判4/14(行动:1983年以来首次); 矛盾结构: maximum pressure(blockade)+diplomatic exit(talks)+international bypass(escort coalition)"
+      "findings": "矛盾三重化持续: (1)blockade D3 fully operational+拦截行动(行动); (2)WH 4/16称discussing 2nd round+feel good about deal(行动:政策定调); (3)France+40+国独立escort mission(UK牵头)(行动:第三力量); Senate 47-52否决WPR第4次(4/15)(行动); Collins(R):'总统权力不是无限的'+60天后需授权(GOP条件性); 60天WPR时限4/29-5/1(13-15天); Trump: war 'very close to over'(言辞); 以色列-黎巴嫩直接谈判4/14(行动); 油价持续回落定价de-escalation; 结构: maximum pressure(blockade)+diplomatic exit(talks)+international bypass(escort)"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "talks-underway",
+      "status": "talks-discussing-round2",
       "last_check": "2026-04-16",
-      "findings": "框架从talks-imminent升级为talks-underway: 第二轮Islamabad谈判据报今日4/16(Atlantic)(行动); Pakistan陆军参谋长Munir 4/15赴Tehran斡旋(行动); Vance预计领衔(行动:决策层参与); WH称deal prospects 'good'(4/15)(行动:政策定调); 伊朗核让步: 5年铀浓缩暂停(vs美方20年)(差距收窄but仍大); 以色列-黎巴嫩4/14华盛顿直接谈判(1983年以来首次)(行动:Hezbollah解耦进行中); State Dept: 'productive discussions'; 停火4/22到期(6天); blockade用作谈判杠杆; France+40+国escort计划=额外压力; 双方均未关闭外交通道; 油价回落定价de-escalation: Brent~95.62(-1.2%)"
+      "findings": "从talks-underway微调为talks-discussing-round2: WH 4/16正式确认discussing第二轮谈判(行动:Leavitt新闻发布会); Atlantic此前报4/16但WH未确认具体日期/地点(Islamabad或Geneva); Pakistan Army chief Munir 4/15赴Tehran后(行动); Vance预计领衔; 伊朗核让步: 5年暂停vs美方20年(差距收窄but仍大); 以色列-黎巴嫩4/14华盛顿直接谈判(行动:Hezbollah解耦进行中); 停火4/22到期(6天); blockade用作谈判杠杆; 油价回落定价协议预期: Brent~94.89; 双方均未关闭外交通道"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "rising-political-clock-ticking",
       "last_check": "2026-04-16",
-      "findings": "成本三线+政治时钟逼近: 军事: 13 KIA+381 WIA(官方),停火期间无新伤亡; 经济: 汽油$4.108(AAA 4/16,较峰值$4.25回落3.3%); Brent~95.62 WTI~97.07(回落中); 但Iran威胁Red Sea/Sea of Oman封锁=若兑现油价再冲高; 政治: Senate 47-52否决WPR第4次(行动); Collins(R):'总统权力不是无限的'+60天后需授权(GOP条件性); 60天WPR时限4/29(13天); House 219-212否决(4/12); 6新Dem参议员加入; Schumer称已提约10项新WPR; 短期WPR通过仍无望; 中期4/29硬期限+GOP松动趋势明确"
+      "findings": "成本三线+政治时钟: 军事: 13 KIA+381 WIA(官方,停火期间无新伤亡); 经济: 汽油.108(AAA 4/16,较峰值.25回落3.3%); Brent~94.89 WTI~90.72(油价持续回落); 政治: Senate 47-52否决WPR第4次(行动); Collins(R)+部分GOP眼望未来投票(松动信号); 60天WPR时限4/29-5/1(13-15天硬期限); House 219-212否决(4/12); 短期WPR通过仍无望但4/29后局面转变; Iran军方Red Sea/Sea of Oman威胁若兑现=油价再冲+成本跳升; 汽油价格回落暂时缓解政治压力"
     }
   },
   "noise_filter": {
