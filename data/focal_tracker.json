@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-19T02:02:52.181161+00:00",
+  "last_updated": "2026-04-19T06:02:41.451407+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -50,6 +50,12 @@
           "date": "2026-04-19",
           "est": "~0/day (停火D15, blockade D9)",
           "note": "停火D15(4/8起); blockade D9运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; 但IRGC 4/18向商船开火(行动:重大升级); IRGC 4/19宣布海峡今晚起关闭直至美方解除blockade(行动:全面升级!); 13 KIA+373 WIA(官方,停火期间无新美军伤亡); 停火4/21-22到期(2-3天); 第二轮Islamabad谈判预计4/21但日期未确认(Middle East Monitor 4/18); 核分歧5yr/20yr仍存; 60天WPR时限5/1(12天)",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-19",
+          "est": "~0/day (停火D15, blockade D9)",
+          "note": "停火D15(4/8起); blockade D9运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; 但IRGC 4/19向2艘印度油轮(Sanmar Herald+Jag Arnav)开火迫其掉头(行动:首次对非交战国商船动武!); IRGC 4/19重申海峡关闭+警告'靠近海峡视为与敌合作,违规船只将被打击'(行动:operational threat); 印度MEA召见伊朗大使Fathali抗议(行动:新国家被卷入); 13 KIA+373 WIA(官方,停火期间无新美军伤亡); Iran SNSC确认收到美方新提案via Pakistan正在审议(行动:谈判通道仍活); 停火4/21-22到期(2-3天); 60天WPR时限5/1(12天)",
           "source": "pipeline"
         }
       ]
@@ -105,6 +111,12 @@
           "est": "~2-20艘/天 (IRGC宣布今晚起全面关闭海峡)",
           "note": "blockade D9: IRGC 4/19宣布海峡今晚起关闭直至美方解除blockade(行动:全面升级!逆转FM 4/17 completely open); IRGC 4/18已向商船开火(CNN/The National)(行动); IMF Portwatch: 2-20艘/天; vs战前100-138艘/天(减90%+); 600+船仍滞留; 油价4/18暴跌: WTI .83 Brent ~(FM开放信号); 但IRGC关闭=周一开盘将反弹; Maersk/IMO仍观望; 保险仍拒覆盖; Northwood军事规划峰会下周(行动:制度化); Polymarket美军4/30前护航仅18%",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-19",
+          "est": "~0-5艘/天 (IRGC重申关闭+向印度船开火)",
+          "note": "blockade D9: IRGC 4/19重申海峡关闭直至美方解除blockade(行动:FM 4/17 completely open彻底作废); IRGC 4/19向2艘印度油轮开火(Sanmar Herald+Jag Arnav)(行动:首次对第三国商船动武!); IRGC警告所有船只不得靠近海峡(行动:封锁执行升级); India MEA召见伊朗大使(行动:新利益相关方); 油价4/18暴跌10%+(WTI 83.83 Brent~89)(FM开放假信号); 但IRGC周末关闭+开火=周一开盘油价将暴涨反转; vs战前100-138艘/天; 600+船仍滞留; 保险更不可能覆盖(开火事件); Maersk/IMO继续观望; Northwood军事规划峰会下周(行动:制度化)",
+          "source": "pipeline"
         }
       ]
     },
@@ -156,6 +168,12 @@
           "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
           "note": "无新EIA数据(下次4/22周二); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); DOE称delivering at record speeds; 172M/120天目标1.4mbd实际0.59mbd(仍滞后但加速); SPR~409M为1980s以来最低; 汽油零售.254(AAA week 4/13); 油价暴跌WTI .83(4/18收盘); 但IRGC关闭海峡=供应风险重新飙升→下周释放加速压力可能回升",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-19",
+          "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
+          "note": "无新EIA数据(下次4/22周二); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); DOE称delivering at record speeds; 172M/120天目标1.4mbd实际0.59mbd(仍滞后但加速); SPR~409M为1980s以来最低; 汽油零售4.11-4.254(AAA mid-April); 油价暴跌WTI 83.83(4/18收盘); 但IRGC关闭海峡+向商船开火=供应风险骤升→下周释放加速压力回升; 30M bbl甜原油RFP结果待公布",
+          "source": "pipeline"
         }
       ]
     }
@@ -164,30 +182,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "marginalized-no-action-rhetoric-only-pakistan-mediator",
+      "status": "marginalized-no-action-diplomacy-only",
       "last_check": "2026-04-19",
-      "findings": "中国持续边缘化: CGTN/人民日报4/17辩护否决权(言辞:自我辩护); 王毅26+通电话+Zhai Jun 5国斡旋无突破; 巴黎49国escort完全不含中国(行动:制度性排除); Pakistan仍为事实调停人; 4/19无新中国实质行动; 结构: 外交活跃但零军事/经济实质行动,巴黎机制永久绕过中国"
+      "findings": "中国持续边缘化: CGTN/人民日报继续辩护否决权(言辞:自我辩护); 王毅26+通电话+翟隽5国斡旋无突破; 巴黎49国escort完全不含中国(行动:制度性排除); 新发展: Iran SNSC确认收到美方新提案via Pakistan(行动:Pakistan仍为事实调停人); 中国在新一轮提案中无角色; IRGC向印度船开火→India被卷入但中国未介入; 结构: 外交活跃但零军事/经济实质行动, 调停权完全在Pakistan"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "extreme-contradiction-irgc-full-closure-vs-ceasefire",
+      "status": "extreme-contradiction-irgc-fires-on-third-country-ships",
       "last_check": "2026-04-19",
-      "findings": "矛盾再升级: (1)IRGC 4/19宣布今晚起海峡全面关闭(行动:FM 4/17 completely open彻底失效); (2)IRGC称因美方未解除blockade违反停火条件(行动:IRGC定义停火违约); (3)停火4/21-22到期仅2-3天; (4)第二轮Islamabad预计4/21但日期未确认(MEMO 4/18); (5)Rubio促欧洲重施制裁(行动:鹰派); (6)Senate 47-52+House 213-214(差1票); (7)60天WPR 5/1(12天); 结构: IRGC完全压制外交派+主动定义ceasefire violation=谈判基础动摇"
+      "findings": "矛盾达到新峰值: (1)IRGC 4/19向2艘印度油轮开火(行动:首次对非交战国商船动武=ceasefire实质性违反!); (2)IRGC重申海峡关闭+威胁打击靠近船只(行动:FM完全失控); (3)India召见伊朗大使(行动:新front); (4)Iran SNSC审议美方新提案via Pakistan(行动:外交线仍活); (5)FM vs IRGC公开分裂升级:FM 4/17 completely open→IRGC 4/18关闭→IRGC 4/19开火(行动序列:IRGC完全压制外交派); (6)停火4/21-22到期(2-3天); (7)Senate 47-52+House 213-214(差1票); (8)60天WPR 5/1(12天); 结构: IRGC对外国商船动武=ceasefire从名义维持变为实质崩溃"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "critical-final-weekend-ceasefire-expiring-irgc-escalation",
+      "status": "critical-ceasefire-collapsing-irgc-fires-on-ships",
       "last_check": "2026-04-19",
-      "findings": "退出框架最后周末: (1)停火4/21-22到期(2-3天!); (2)IRGC 4/19宣布全面关闭海峡=鹰派完全控局; (3)FM vs IRGC公开分裂(FM开放→IRGC关闭→IRGC再关闭); (4)第二轮Islamabad预计4/21但日期未确认(行动:窗口极窄); (5)核分歧5yr/20yr是最大障碍; (6)巴黎49国escort+Northwood下周军事规划=ceasefire破裂备案已制度化(行动); (7)Lebanon 10天停火进行中(侧面减压); 结构: IRGC连续升级+ceasefire倒计时=退出框架从危险转为濒临失败"
+      "findings": "退出框架濒临崩溃: (1)停火4/21-22到期仅2-3天; (2)IRGC向印度商船开火=ceasefire实质违反(虽非直接US-Iran军事冲突); (3)IRGC威胁打击所有靠近船只(行动:升级); (4)Iran SNSC审议美方新提案(行动:外交窗口极窄); (5)第二轮Islamabad日期仍未确认(4/21?); (6)核分歧5yr/20yr最大障碍; (7)巴黎49国escort+Northwood下周军事规划=ceasefire破裂备案制度化(行动); (8)India被卷入=新利益相关方/复杂度增加; 结构: IRGC连续escalation+ceasefire倒计时+新提案审议中=最后48小时决定战/和"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "cost-easing-oil-plunge-but-irgc-closure-resets-risk",
+      "status": "extreme-market-disconnect-record-highs-vs-irgc-escalation",
       "last_check": "2026-04-19",
-      "findings": "成本压力剧烈波动: 油价4/18暴跌WTI .83 Brent~(FM开放信号+谈判乐观); VIX 17.48(-2.56%恐慌回落); S&P 7126(+1.20%); Gold (+1.48%避险仍在); 汽油零售.254(AAA); 但IRGC 4/19全面关闭海峡=周一开盘油价将反弹; 军事13 KIA+373 WIA; 政治WPR 5/1硬期限(12天)+House差1票(213-214); 结构: 周五市场定价de-escalation但IRGC周末escalation=周一将重定价; 5/1后无授权Trump须终止"
+      "findings": "市场与现实严重脱节: 4/18收盘: S&P 7126(+1.20%连续3日新高!); VIX 17.48(-2.56%恐慌回落); Gold 4879(+1.48%避险仍在); WTI 83.83(暴跌10%+); Brent~89(暴跌10%+); 市场定价FM开放+ceasefire延长; 但IRGC 4/19向印度船开火+重申关闭=周一开盘将暴力反转(oil涨/equity跌); 汽油零售4.11-4.254; 军事13 KIA+373 WIA; 政治WPR 5/1硬期限(12天)+House差1票(213-214); 结构: 周五市场定价de-escalation vs 周末IRGC actual escalation=周一将是最大single-day repricing之一"
     }
   },
   "noise_filter": {
