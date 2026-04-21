@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-21T02:03:16.347730+00:00",
+  "last_updated": "2026-04-21T06:02:54.322051+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -56,6 +56,12 @@
           "date": "2026-04-21",
           "est": "~0/day (停火D18, blockade D12)",
           "note": "停火D18(4/8起); blockade D12运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; 但IRGC持续向商船开火执法(行动); USS Spruance 4/19扣Touska(行动:ceasefire期间升级); Iran宣布报复+退出第二轮Islamabad谈判(行动:外交通道断裂); Iran FM称'暂无计划'重返谈判(行动:拒绝外交); 停火4/22(Wed evening)到期(明天!); Trump称延期highly unlikely(行动:明确不延期); Vance团队周二赴Pakistan但Iran未确认出席; 13 KIA+381 WIA; 60天WPR 5/1(10天); Houthis独立恢复Red Sea攻击(行动:独立能力节点); Hezbollah被以色列大幅削弱但仍为独立节点; IRGC hardliners完全主导军事/外交",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-21",
+          "est": "~0/day (停火D18, blockade D12)",
+          "note": "停火D18(4/8起); blockade D12运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); USS Spruance 4/19扣Touska(行动); Vance今天赴Islamabad Round 2(行动:外交通道可能重启!); Iran私下sources称delegation可能今天抵达(行动:与公开'no plans'矛盾!); Trump称停火Wed evening结束+不延期(行动); Trump同时威胁'whole country blown up'+称deal still possible(鹰鸽矛盾); Iran FM正式称'no plans'重返谈判但私下可能派人(行动vs言辞矛盾); 13 KIA+381 WIA; 停火明天4/22到期; 60天WPR 5/1(10天)",
           "source": "pipeline"
         }
       ]
@@ -117,6 +123,12 @@
           "est": "~7-16艘/天 (周一小幅回升但仍减85-90%)",
           "note": "blockade D12: 周一CNN报16艘过境(较周末0-5小幅回升); vs战前100-138艘/天(减85-90%); IRGC维持海峡关闭执法+向商船开火; USS Spruance扣Touska(行动:美方也在升级); 600+船仍滞留; Brent期货93.80-95.14(行动:市场定价持续供应中断); 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; Northwood军事规划峰会本周(行动:制度化); Paris 49国escort框架就位; 停火明天到期=海峡通行将进一步恶化",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-21",
+          "est": "~3艘/天 (Bloomberg: 仅3艘尝试过境,近乎空置)",
+          "note": "blockade D12: Bloomberg 4/21报仅3艘尝试过境(2货+1油轮)(行动:历史低位附近); 伊朗船Shoja 2过境后停止AIS信号(行动:隐蔽航行); IRGC维持海峡关闭执法+向商船开火; USS Spruance扣Touska; vs战前100-138艘/天(减97%+); 600+船仍滞留; 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; 停火明天到期=海峡将进一步恶化; Brent 93.80-95.14(市场定价供应中断持续)",
+          "source": "pipeline"
         }
       ]
     },
@@ -174,6 +186,12 @@
           "est": "~0.59 mbd净提取 (EIA 4/22周二发布新数据)",
           "note": "EIA 4/22(明天周二)发布新weekly数据; 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie); 第三批30M bbl sweet crude solicitation中; 172M/120天目标1.4mbd实际0.59mbd(仍滞后); 汽油AAA全国均价.076(4/21); Brent 93.80-95.14 WTI 86.01-86.35; 停火到期+IRGC关闭海峡=释放加速压力极大",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-21",
+          "est": "~0.59 mbd净提取 (EIA明天4/22周二发布新数据)",
+          "note": "EIA明天4/22(周二)发布新weekly数据; 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie); 第三批30M bbl sweet crude solicitation中(West Hackberry); 172M/120天目标1.4mbd实际0.59mbd(仍滞后); 汽油AAA全国均价$4.11-4.25(mid-April); Brent 93.80-95.14 WTI 86.01-86.35; 停火到期+海峡近乎关闭=释放加速压力极大",
+          "source": "pipeline"
         }
       ]
     }
@@ -184,28 +202,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "diplomatic_only",
       "last_check": "2026-04-21",
-      "findings": "中国仍停留在外交框架; 王毅26通电话斡旋(行动:外交活跃); 中俄4/7联合否决UNSC Hormuz护航决议(行动:阻止多边方案); Zhai Jun特使中东穿梭但未取得突破; 中巴联合五点倡议(框架提案); 中国帮助说服Iran接受停火但无法阻止谈判崩溃; 无海军部署/经济实质行动; CGTN: 中方VETO是'帮助降级'(言辞包装行动); 评估:中国VETO客观上阻碍多边方案同时未提供替代实质行动,停留在diplomatic层"
+      "findings": "中国仍停留在外交框架; 王毅26通电话斡旋(行动:外交活跃); 中俄4/7联合否决UNSC Hormuz护航决议(行动:阻止多边方案); Zhai Jun特使中东穿梭但未取得突破; 中巴联合五点倡议(框架提案); 中国帮助说服Iran接受停火但无法阻止谈判崩溃; 无海军部署/经济实质行动; 评估:中国角色仍限于diplomatic层,VETO客观阻碍多边方案但无替代实质行动"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "active",
       "last_check": "2026-04-21",
-      "findings": "信号矛盾极端激化! Trump 4/20: 停火Wed结束+延期highly unlikely(鹰派行动信号) vs 4/21称deal still possible+派Vance团队周二赴Pakistan(鸽派信号); USS Spruance ceasefire期间扣Touska并开火(行动:军事升级与停火矛盾!); Iran FM称'no plans'重返谈判(行动:鹰派行动的后果); 美海军blockade D12持续但仍未启动tanker escort(选择性执行); House war powers 214-213一票否决(行动:国会约束极弱); 60天WPR 5/1仅10天(制度约束迫近); 评估:鹰派行动(Touska)+鸽派言辞(谈判团队)矛盾已达ceasefire以来最高点"
+      "findings": "信号矛盾达新高峰! Vance今天赴Islamabad Round 2(行动:外交升级!) vs Trump称停火Wed结束+不延期+威胁'whole country blown up'(行动:军事威胁升级); USS Spruance ceasefire期间扣Touska并开火(行动:军事与停火直接矛盾); Iran私下可能派delegation(Axios/CNN sources)(行动:与公开'no plans'矛盾); House WP 214-213一票否决(行动:国会约束极弱); Senate 47-52第四次否决(行动:参院也无法约束); 60天WPR 5/1仅10天(制度约束迫近); 评估:鹰派行动(Touska/威胁)+鸽派行动(Vance赴谈)同时升级,矛盾达ceasefire以来最高"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "near_collapse",
+      "status": "fragile_reopening",
       "last_check": "2026-04-21",
-      "findings": "退出框架濒临崩溃! Iran因Touska事件退出第二轮Islamabad谈判(行动:外交通道断裂!); Iran FM 4/21称'暂无计划'重返谈判+指责美方'childish demands'(行动:拒绝外交); Iran 10点方案vs美方15点方案差距'insurmountable'(分析共识); 核分歧核心: 5yr vs 20yr enrichment timeline不可调和; 停火明天4/22 Wed evening到期+Trump称不延期; Ghalibaf: 距最终协议仍然很远; 评估:从stalled恶化至near_collapse,外交窗口实质关闭"
+      "findings": "关键转折! Iran公开称'no plans'重返谈判(行动:拒绝外交); BUT Iran私下sources称delegation可能今天(4/21)抵达Islamabad(Axios/CNN)(行动:暗中重启!); Vance/Witkoff/Kushner今天赴Pakistan(行动:美方全力推进Round 2); Iran代表团由Ghalibaf+Araghchi领衔(如果出席); 停火明天4/22到期; Iran 10点vs美方方案差距仍大(enrichment 5yr/20yr核心分歧); Touska事件+报复宣言是谈判最大障碍; 评估:从near_collapse微调至fragile_reopening——公开拒绝+私下派人的分裂信号意味着外交窗口裂缝式重启,但极脆弱"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-21",
-      "findings": "成本阈值持续逼近! 13 KIA+381 WIA(Intercept称Pentagon undercount+Ford号200+烟雾伤亡未计); 汽油AAA .076全国均价(vs .69上月); House war powers 214-213仅1票差(行动:政治空间极窄); 60天WPR 5/1仅10天(制度性deadline!); 战争已花费B+(CAP估算); 共和党内部Iran war funding争议加剧(NPR 4/10); Brent 93.80-95.14 WTI 86.01-86.35; VIX 18.87(+7.95%); Gold ,810-4,816(避险需求); 停火到期后油价/汽油价将进一步飙升; Houthi独立恢复Red Sea攻击=全球航运成本叠加; 评估:政治/法律成本approaching threshold,经济成本被SPR暂时压制但停火到期后将突破"
+      "findings": "成本阈值持续逼近! 13 KIA+381 WIA(Intercept称Pentagon undercount); 汽油AAA $4.11-4.25全国均价(持续高位); House WP 214-213仅1票差(行动:政治空间极窄); Senate 47-52第四次否决; 60天WPR 5/1仅10天(制度性deadline!); 战争花费$18B+(CAP估算); Brent 93.80-95.14 WTI 86.01-86.35; VIX 18.87(+7.95%); Gold $4,810-4,816(避险需求); S&P 7109(-0.24%); Houthis主要打击以色列+威胁Bab al-Mandeb但暂未大规模攻击商船(修正:之前报告称独立恢复Red Sea攻击,实际以打击以色列为主); 停火到期后油价/汽油将进一步飙升; 评估:approaching threshold,政治/法律约束(WPR 10天)是最刚性约束"
     }
   },
   "noise_filter": {
