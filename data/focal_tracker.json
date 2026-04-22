@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-22T10:02:52.156984+00:00",
+  "last_updated": "2026-04-22T22:03:59.318201+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -86,6 +86,12 @@
           "date": "2026-04-22",
           "est": "~0/day (停火延期D2, blockade D15)",
           "note": "停火延期D2(Trump 4/21延期indefinitely at Pakistan请求); blockade D15继续(Trump明确continue the Blockade); CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); Araghchi 4/21-22定性blockade为'act of war'+'know how to neutralize restrictions'(言辞升级); Iran正式不派delegation赴Islamabad(Tasnim)(行动:Round 2确认未发生); Vance行程取消(行动:外交撤回); 13 KIA+381 WIA(官方停火期间无新美军伤亡); 60天WPR 5/1仅9天(刚性制度deadline!); Trump称Iran政府'seriously fractured'(解读:defer而非deal)",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-22",
+          "est": "~0/day (停火D16, 延期不定)",
+          "note": "4/21停火延期(不定期,待伊朗'1-3天内'给方案); blockade D13运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军为零; 4/18-19曾向商船开火(行动)但停火延期后暂停; 13 KIA+373 WIA; WPR 5/1(8天)",
           "source": "pipeline"
         }
       ]
@@ -177,6 +183,12 @@
           "est": "~0-3艘/天 (Bloomberg 4/22:strait largely devoid of commercial traffic)",
           "note": "blockade D15: Bloomberg 4/22报strait'remained largely devoid of commercial traffic on Tuesday'(行动:仅trickle of小船Iran-aligned过境); 800+船滞留gulf(Bloomberg 4/22,较4/21的600+再增); 战前Kpler基准~135艘/天; IRGC维持海峡关闭执法+持续向商船开火(行动); USS Spruance扣Touska余波未消; 保险拒覆盖(开火+扣船双重风险); Maersk/IMO继续观望; Paris 49国escort框架就位但未启动; Northwood军事规划峰会本周(行动:制度化准备); 279艘总通过22艘被袭since 2/28战争开始(Al Jazeera+Kpler); Polymarket: Hormuz 5月底前恢复正常概率极低",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-22",
+          "est": "~35船/天 (~5%正常水平)",
+          "note": "Apr 18:35船(8进/27出); 伊朗4/19宣布关闭海峡直至美解除blockade; 4/21美方未解blockade故海峡仍实质关闭; 870船困于湾内; 22艘被袭; 500-700艘>10000 DWT被困波斯湾; 正常约20M桶/天",
+          "source": "pipeline"
         }
       ]
     },
@@ -264,6 +276,12 @@
           "est": "~0.59 mbd净提取 (EIA 4/22新周度数据今日发布待确认)",
           "note": "EIA 4/22(今日周二)应发布新weekly数据(截至4/17详细待确认); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd释放加速); 172M/120天目标1.4mbd实际0.59mbd仍滞后; SPR 409M为1980s以来最低; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie 4/10); 第三批30M bbl sweet crude solicitation处理中(West Hackberry); AAA全国汽油均价USD4.10(4/15)(年初至今+49%!); 战争累计家庭支出~USD92/户(Pielke/AEI估); Brent ~USD97.91(4/22) WTI ~USD89.33(4/22); 停火延期但blockade继续=供应压力持续=释放压力维持高位",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-22",
+          "est": "~1.4M桶/天",
+          "note": "DOE 172M总量计划120天交付≈1.43M/天; 第二批8.48M(Gunvor/Phillips/Trafigura/Macquarie 4/10); IEA协调400M全球总释放; SPR存量~415M桶; DOE最新周报覆盖至4/17",
+          "source": "pipeline"
         }
       ]
     }
@@ -272,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "diplomatic_only",
+      "status": "active_escalating",
       "last_check": "2026-04-22",
-      "findings": "中国仍停留外交框架且4/22焦点分散: Wang Yi 4/22-26访问Cambodia/Thailand/Myanmar(行动:转向东南亚议程非Iran焦点!); Wang Yi 26通电话+Chinese特使穿梭(中止); 中俄4/7联合否决UNSC Hormuz护航决议; Wang Yi呼吁保障海峡通行自由(言辞)但无实际执行; 4/22评估: 停火延期主因Pakistan mediator(Munir+Sharif请求Trump)+China不是聚点驱动者; China'让美国流血同时扮演和平缔造者'结构性旁观(Al-Monitor); 无海军部署+无经济实质行动+无介入blockade调解; 不是有效聚点,无法解套blockade僵局"
+      "findings": "特使翟隽持续斡旋(3月起); 王毅完成26轮通话; 4/17中俄联合否决UNSC霍尔木兹草案(避免授权武力); CNN 4/11报中国准备秘密向伊朗运MANPAD(中方否认); 中巴5点计划; 美拒绝中国调解; 谈判失败后中方外交活跃度仍高"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "active",
+      "status": "contradicting",
       "last_check": "2026-04-22",
-      "findings": "美方信号极度矛盾持续: Trump 4/21延期ceasefire indefinitely at Pakistan请求(NPR/Axios/Al Jazeera)(行动:鸽派让步) vs Trump明确'continue the Blockade'维持军事压力(行动:鹰派); Vance行程4/21取消(行动:外交撤回); Trump称'deal will come quickly'(言辞:鸽派)vs Iran政府'seriously fractured'(解读:defer而非deal); House WP 214-213一票差第二次否决(4/16)(政治约束极弱但未破); Senate 47-52第四次否决(Rand Paul唯一R加入D); 60天WPR 5/1仅9天(刚性制度deadline逼近!); Fitzpatrick R引入WP决议(R内部裂痕); 4/22评估: 'endless ceasefire + endless blockade'成为新默认状态=双方都不承担破局成本=僵持矛盾"
+      "findings": "4/21停火延期(不定期)+同时维持blockade矛盾; 美给伊3-5天谈判期限(4/22); Vance伊斯兰堡之行取消; 伊朗拒在'威胁阴影'下谈判; 核心矛盾:停火延期(鸽)vs blockade+短期ultimatum(鹰); WPR 5/1(8天)形成反向国内压力"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "stalled_framework",
+      "status": "fragile",
       "last_check": "2026-04-22",
-      "findings": "框架形式存活但谈判通道失效: Round 2(原定4/21-22)确认未发生; Iran正式不派delegation(Tasnim 4/21-22); Vance行程取消; Araghchi 4/21-22定性blockade为'act of war'=前置条件未解决=无法进谈判室(行动升级); Trump称等Iran'unified proposal'(前置条件反转:Iran需先内部统一); 三大不可调和: Iran 10-point(海峡控制+制裁解除+UN/IAEA决议撤销+战争赔款+美军撤离+right to enrich) vs Trump 15-point; Pakistan mediator作用仍维持(促成4/21延期)但无实质; 中俄否决UNSC多边方案; 4/22评估: 框架未死但nothing moving, 等待催化剂(a)Iran政权分裂显化(b)军事意外升级(c)经济痛点到阈值迫使某方让步"
+      "findings": "伊朗10点vs美国15点框架竞争中; 4/8停火协议(巴基斯坦斡旋); 4/21特朗普延期停火; 但伊朗通知不出席第二轮谈判; 核心争议:enrichment权利vs美方零容忍; 伊方指'矛盾信息'为理由; 巴基斯坦仍为唯一活跃调解渠道; 美给伊3-5天响应窗口"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching",
+      "status": "rising",
       "last_check": "2026-04-22",
-      "findings": "成本阈值持续逼近但尚未爆发: 13 KIA+381 WIA unchanged(停火期间无新美军伤亡); 汽油AAA USD4.10(4/15)(+49% YTD!); 家庭战争支出~USD92/户(Pielke/AEI); 战争累计USD18-30B; House WP 214-213仅1票差(政治空间极窄未破); Senate 47-52第四次否决(Rand Paul唯一R加入); 60天WPR 5/1仅9天(刚性deadline! 最关键制度触发点); Brent ~USD97.91 WTI ~USD89.33(4/22); VIX 18.87(4/21收盘)(risk priced in); Gold USD4752-4833(避险); S&P 7126(+1.2%创新高,抗跌显著); 停火延期短期缓解伤亡成本,但blockade继续=燃料/供应危机未解决=成本累积持续; 4/22评估: WPR 5/1是最刚性物理节点,若Iran内部分裂延续到5/1,Trump WPR compliance动作将是下一个关键触发点"
+      "findings": "WPR 5/1时限8天; 参议院第4次否决战争授权(47-52, Rand Paul+民主党); 众议院险过214-213(仅差1票); 油价.18/加仑(+29.5% YoY, 近4年新高); 加州.88; 6 KIA/18 WIA; 共和党内部压力上升(Collins/Curtis公开表态)"
     }
   },
   "noise_filter": {
