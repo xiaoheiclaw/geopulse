@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-22T06:03:07.651191+00:00",
+  "last_updated": "2026-04-22T10:02:52.156984+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -80,6 +80,12 @@
           "date": "2026-04-22",
           "est": "~0/day (停火延期D1, blockade D14)",
           "note": "停火Trump 4/21延期indefinitely直至Iran提交unified proposal(NPR/Axios); blockade D14继续(Trump明确continue the Blockade); CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); USS Spruance扣Touska余波; Araghchi 4/21-22定性blockade为'act of war'+'know how to neutralize restrictions'(言辞升级+拒绝屈服); Iran正式不派delegation赴Islamabad(Tasnim)(行动:外交通道断裂); Vance行程取消(行动); Iran senior adviser称延期'means nothing'应军事回应(言辞); 13 KIA+381 WIA(停火期间无新美军伤亡); 60天WPR 5/1仅9天(制度约束迫近!); Trump称Iran政府'seriously fractured'(defer不是deal); 核心僵局: US blockade vs Iran开放=双方要求对方先让步",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-22",
+          "est": "~0/day (停火延期D2, blockade D15)",
+          "note": "停火延期D2(Trump 4/21延期indefinitely at Pakistan请求); blockade D15继续(Trump明确continue the Blockade); CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); Araghchi 4/21-22定性blockade为'act of war'+'know how to neutralize restrictions'(言辞升级); Iran正式不派delegation赴Islamabad(Tasnim)(行动:Round 2确认未发生); Vance行程取消(行动:外交撤回); 13 KIA+381 WIA(官方停火期间无新美军伤亡); 60天WPR 5/1仅9天(刚性制度deadline!); Trump称Iran政府'seriously fractured'(解读:defer而非deal)",
           "source": "pipeline"
         }
       ]
@@ -165,6 +171,12 @@
           "est": "~3-14艘/天 (Kpler周日14艘/Bloomberg周一3艘,大幅震荡但仍减85-95%)",
           "note": "blockade D14: Kpler 4/19(周日)14艘过境(CNBC); Bloomberg 4/21仅3艘尝试过境(2货+1油轮)(行动:近乎空置); 周一回升后再度halt(Bloomberg 4/22观察transits halted after brief weekend surge); vs战前138艘/天(Kpler基准)(减85-95%); IRGC维持海峡关闭执法+持续向商船开火(行动); USS Spruance扣Touska余波(行动); 600+船仍滞留; 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; 停火延期但blockade继续=核心僵局未解=海峡仍关闭; Paris 49国escort框架就位但未启动; Northwood军事规划峰会本周; Polymarket Hormuz 5月底前恢复正常概率极低",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-22",
+          "est": "~0-3艘/天 (Bloomberg 4/22:strait largely devoid of commercial traffic)",
+          "note": "blockade D15: Bloomberg 4/22报strait'remained largely devoid of commercial traffic on Tuesday'(行动:仅trickle of小船Iran-aligned过境); 800+船滞留gulf(Bloomberg 4/22,较4/21的600+再增); 战前Kpler基准~135艘/天; IRGC维持海峡关闭执法+持续向商船开火(行动); USS Spruance扣Touska余波未消; 保险拒覆盖(开火+扣船双重风险); Maersk/IMO继续观望; Paris 49国escort框架就位但未启动; Northwood军事规划峰会本周(行动:制度化准备); 279艘总通过22艘被袭since 2/28战争开始(Al Jazeera+Kpler); Polymarket: Hormuz 5月底前恢复正常概率极低",
+          "source": "pipeline"
         }
       ]
     },
@@ -246,6 +258,12 @@
           "est": "~0.59 mbd净提取 (EIA今日4/22发布新weekly数据,详细待确认)",
           "note": "EIA 4/22(今日周二)应发布新weekly数据(截至4/17,详细数据待确认); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd释放加速); 172M/120天目标1.4mbd实际0.59mbd仍滞后但加速; SPR 409M为1980s以来最低; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie 4/10); 第三批30M bbl sweet crude solicitation处理中(West Hackberry); AAA全国汽油均价 USD4.04(4/20)/4.09(4/16)(从mid-April峰值4.17小幅回落); Brent ~95 WTI ~89.33(4/22); 停火延期但blockade继续=供应压力持续=释放压力维持高位",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-22",
+          "est": "~0.59 mbd净提取 (EIA 4/22新周度数据今日发布待确认)",
+          "note": "EIA 4/22(今日周二)应发布新weekly数据(截至4/17详细待确认); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd释放加速); 172M/120天目标1.4mbd实际0.59mbd仍滞后; SPR 409M为1980s以来最低; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie 4/10); 第三批30M bbl sweet crude solicitation处理中(West Hackberry); AAA全国汽油均价USD4.10(4/15)(年初至今+49%!); 战争累计家庭支出~USD92/户(Pielke/AEI估); Brent ~USD97.91(4/22) WTI ~USD89.33(4/22); 停火延期但blockade继续=供应压力持续=释放压力维持高位",
+          "source": "pipeline"
         }
       ]
     }
@@ -256,28 +274,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "diplomatic_only",
       "last_check": "2026-04-22",
-      "findings": "中国仍停留外交框架: 王毅26通电话+Zhai Jun特使穿梭(行动:外交活跃但无突破); 中俄4/7联合否决UNSC Hormuz护航决议(行动:阻止多边方案); 中巴五点倡议(框架); 4/15 Wang Yi-Araghchi通话supports sustaining ceasefire momentum(行动:表态支持); 4/22评估: 停火延期主因是Pakistan(Munir+Sharif直接向Trump请求)不是China; 中国继续diplomatic only+无海军部署+无经济实质行动+无介入blockade调解; Al-Monitor'China lets US bleed while playing peacemaker'结构性旁观; Wang Yi呼吁保障海峡通行自由(言辞)但无实际执行动作; 不是有效聚点, 无法解套blockade僵局"
+      "findings": "中国仍停留外交框架且4/22焦点分散: Wang Yi 4/22-26访问Cambodia/Thailand/Myanmar(行动:转向东南亚议程非Iran焦点!); Wang Yi 26通电话+Chinese特使穿梭(中止); 中俄4/7联合否决UNSC Hormuz护航决议; Wang Yi呼吁保障海峡通行自由(言辞)但无实际执行; 4/22评估: 停火延期主因Pakistan mediator(Munir+Sharif请求Trump)+China不是聚点驱动者; China'让美国流血同时扮演和平缔造者'结构性旁观(Al-Monitor); 无海军部署+无经济实质行动+无介入blockade调解; 不是有效聚点,无法解套blockade僵局"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "active",
       "last_check": "2026-04-22",
-      "findings": "美方信号极度矛盾持续: Trump 4/21延期ceasefire indefinitely at Pakistan请求(NPR/Axios/Al Jazeera)(行动:鸽派让步) vs Trump明确'continue the Blockade'维持军事压力(行动:鹰派); Trump称'deal will come quickly'(言辞:鸽派)vs Iran政府'seriously fractured'(解读:defer而非deal); Vance行程取消(行动:外交撤回); House WP 214-213一票差第二次否决(4/16)(政治约束极弱但未破); Senate 47-52第四次否决(4/15-16)(Rand Paul唯一R加入D); 60天WPR 5/1仅9天(制度约束迫近); Fitzpatrick R引入WP决议(R内部裂痕); 4/22评估: 'endless ceasefire+endless blockade'是新默认状态, 双方都不承担破局成本, 从4/21极端矛盾转向僵持矛盾"
+      "findings": "美方信号极度矛盾持续: Trump 4/21延期ceasefire indefinitely at Pakistan请求(NPR/Axios/Al Jazeera)(行动:鸽派让步) vs Trump明确'continue the Blockade'维持军事压力(行动:鹰派); Vance行程4/21取消(行动:外交撤回); Trump称'deal will come quickly'(言辞:鸽派)vs Iran政府'seriously fractured'(解读:defer而非deal); House WP 214-213一票差第二次否决(4/16)(政治约束极弱但未破); Senate 47-52第四次否决(Rand Paul唯一R加入D); 60天WPR 5/1仅9天(刚性制度deadline逼近!); Fitzpatrick R引入WP决议(R内部裂痕); 4/22评估: 'endless ceasefire + endless blockade'成为新默认状态=双方都不承担破局成本=僵持矛盾"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "stalled_framework",
       "last_check": "2026-04-22",
-      "findings": "框架形式存活但谈判通道失效: Round 2(原定4/21-22)确认未发生; Iran正式不派delegation(Tasnim 4/21-22); Vance行程取消; Araghchi 4/21-22定性blockade为'act of war'=前置条件未解决=无法进谈判室(行动升级); Trump称等Iran'unified proposal'(前置条件反转:Iran需先内部统一); 三大不可调和: Iran 10-point(海峡控制+制裁解除+UN/IAEA决议撤销+战争赔款+美军撤离) vs Trump 15-point; Pakistan mediator作用被压缩(Trump绕过Pakistan直接对Iran政府发话); 中国+俄罗斯否决UNSC多边方案; 4/22评估: 框架未死但nothing moving, 等待催化剂: (a) Iran内部政权分裂显化 (b) 军事意外升级 (c) 经济痛点到阈值迫使某方让步"
+      "findings": "框架形式存活但谈判通道失效: Round 2(原定4/21-22)确认未发生; Iran正式不派delegation(Tasnim 4/21-22); Vance行程取消; Araghchi 4/21-22定性blockade为'act of war'=前置条件未解决=无法进谈判室(行动升级); Trump称等Iran'unified proposal'(前置条件反转:Iran需先内部统一); 三大不可调和: Iran 10-point(海峡控制+制裁解除+UN/IAEA决议撤销+战争赔款+美军撤离+right to enrich) vs Trump 15-point; Pakistan mediator作用仍维持(促成4/21延期)但无实质; 中俄否决UNSC多边方案; 4/22评估: 框架未死但nothing moving, 等待催化剂(a)Iran政权分裂显化(b)军事意外升级(c)经济痛点到阈值迫使某方让步"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-22",
-      "findings": "成本阈值持续逼近但尚未爆发: 13 KIA+381 WIA unchanged(停火期间无新美军伤亡); 汽油AAA USD4.04(4/20)/4.09(4/16)(从4.17峰值回落但仍远高于战前.98); House WP 214-213仅1票差(政治空间极窄未破); Senate 47-52第四次否决(Rand Paul唯一R加入); 60天WPR 5/1仅9天(刚性deadline! 最关键制度触发点); 战争累计花费USD18-30B; Brent ~95 WTI ~89.33(4/22); VIX 18.87(4/21)(risk priced in); Gold USD4764.90(-1.32%)(避险小幅回落); S&P 7064.01(4/21)(抗跌); 停火延期短期缓解伤亡成本,但blockade继续=燃料/供应危机未解决=成本累积持续; 4/22评估: WPR 5/1是最刚性物理节点,若Iran内部分裂延续到5/1,Trump WPR compliance动作将是下一个关键触发点"
+      "findings": "成本阈值持续逼近但尚未爆发: 13 KIA+381 WIA unchanged(停火期间无新美军伤亡); 汽油AAA USD4.10(4/15)(+49% YTD!); 家庭战争支出~USD92/户(Pielke/AEI); 战争累计USD18-30B; House WP 214-213仅1票差(政治空间极窄未破); Senate 47-52第四次否决(Rand Paul唯一R加入); 60天WPR 5/1仅9天(刚性deadline! 最关键制度触发点); Brent ~USD97.91 WTI ~USD89.33(4/22); VIX 18.87(4/21收盘)(risk priced in); Gold USD4752-4833(避险); S&P 7126(+1.2%创新高,抗跌显著); 停火延期短期缓解伤亡成本,但blockade继续=燃料/供应危机未解决=成本累积持续; 4/22评估: WPR 5/1是最刚性物理节点,若Iran内部分裂延续到5/1,Trump WPR compliance动作将是下一个关键触发点"
     }
   },
   "noise_filter": {
