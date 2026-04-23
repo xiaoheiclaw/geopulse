@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-22T22:03:59.318201+00:00",
+  "last_updated": "2026-04-23T02:03:12.209286+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-18",
-          "est": "~0/day (停火D14, blockade D8)",
-          "note": "停火D14(4/8起); blockade D8运行中; CENTCOM暂停对伊空袭; IRGC直接攻击仍为零; 13 KIA+373 WIA(官方,停火期间无新伤亡); IRGC 4/18宣布关闭海峡+据报向船只开火(CNN live/Wikipedia 4/18)(行动:重大升级!); 停火4/21到期(2天!); 第二轮Islamabad谈判预计4/21(Pakistan FM未确认具体日期); 核分歧5yr/20yr仍存; 60天WPR时限5/1(12天)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-19",
           "est": "~0/day (停火D15, blockade D9)",
@@ -93,6 +87,12 @@
           "est": "~0/day (停火D16, 延期不定)",
           "note": "4/21停火延期(不定期,待伊朗'1-3天内'给方案); blockade D13运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军为零; 4/18-19曾向商船开火(行动)但停火延期后暂停; 13 KIA+373 WIA; WPR 5/1(8天)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-23",
+          "est": "~0/day (停火延期D17, 无限期)",
+          "note": "停火4/21 Trump无限期延期; 但给伊3-5天谈判期限(4/22→deadline 4/25-27); IRGC对美军直接攻击=0; 4/19 IRGC向印度油轮开火(Sanmar Herald+Jag Arnav); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字)",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-18",
-          "est": "~6-10艘/天 (IRGC关闭海峡,通行量持续极低)",
-          "note": "blockade D8: IRGC 4/18宣布Hormuz returned to previous state+据报向船只开火(行动:逆转FM开放!); 通行量仍减90%+vs战前100-138艘/天; 600+船仍滞留; US blockade remains in full force; 保险仍拒覆盖; 美海军仍未启动tanker escort; 巴黎49国escort: 12+国承诺when conditions allow(行动:制度化); Northwood下周军事规划峰会(行动); Maersk观望; IMO未背书; Polymarket美军4/30前护航仅18%",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-19",
           "est": "~2-20艘/天 (IRGC宣布今晚起全面关闭海峡)",
@@ -189,6 +183,12 @@
           "est": "~35船/天 (~5%正常水平)",
           "note": "Apr 18:35船(8进/27出); 伊朗4/19宣布关闭海峡直至美解除blockade; 4/21美方未解blockade故海峡仍实质关闭; 870船困于湾内; 22艘被袭; 500-700艘>10000 DWT被困波斯湾; 正常约20M桶/天",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-23",
+          "est": "~35船/天 (~5%正常水平)",
+          "note": "伊朗4/18宣布海峡关闭(回应美拒解除blockade); 4/17短暂开放13艘油轮通过后反转; 870艘船只滞留波斯湾; 停火延期后未见明显恢复; Brent ~98$/bbl; 美封锁持续",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-18",
-          "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22)",
-          "note": "无新EIA数据(下次4/22周二); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); DOE称delivering at record speeds; 172M/120天目标1.4mbd实际0.59mbd(仍滞后但加速); SPR~409M为1980s以来最低; 汽油零售$4.254(AAA week 4/13); 油价: Brent~96 WTI~92-94(4/18收盘)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-19",
           "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
@@ -282,6 +276,12 @@
           "est": "~1.4M桶/天",
           "note": "DOE 172M总量计划120天交付≈1.43M/天; 第二批8.48M(Gunvor/Phillips/Trafigura/Macquarie 4/10); IEA协调400M全球总释放; SPR存量~415M桶; DOE最新周报覆盖至4/17",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-23",
+          "est": "~1.4M桶/天 (第二批8.48M已交付)",
+          "note": "DOE第二批: Gunvor/Phillips66/Trafigura/Macquarie共8.48M桶(4/10); DOE另发RFP征集30M桶(4/9); 172M总计划120天=1.43M/天; IEA协调释放400M桶全球",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "active_escalating",
-      "last_check": "2026-04-22",
-      "findings": "特使翟隽持续斡旋(3月起); 王毅完成26轮通话; 4/17中俄联合否决UNSC霍尔木兹草案(避免授权武力); CNN 4/11报中国准备秘密向伊朗运MANPAD(中方否认); 中巴5点计划; 美拒绝中国调解; 谈判失败后中方外交活跃度仍高"
+      "last_check": "2026-04-23",
+      "findings": "翟隽持续斡旋; 王毅完成26+轮通话; 4/17中俄联合否决UNSC霍尔木兹草案; CNN 4/11中国准备秘密向伊朗运MANPAD(中方否认); 中巴5点计划已提交; 美明确拒绝中国调解; 中方定性: 外交实质行动✓ 但伊核协议谈判美方不让位; 4/22后Iran未派代表团赴Islamabad中方斡旋陷僵局"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "contradicting",
-      "last_check": "2026-04-22",
-      "findings": "4/21停火延期(不定期)+同时维持blockade矛盾; 美给伊3-5天谈判期限(4/22); Vance伊斯兰堡之行取消; 伊朗拒在'威胁阴影'下谈判; 核心矛盾:停火延期(鸽)vs blockade+短期ultimatum(鹰); WPR 5/1(8天)形成反向国内压力"
+      "status": "contradicting_elevated",
+      "last_check": "2026-04-23",
+      "findings": "停火延期(无限期,鸽)+blockade维持(鹰)+3-5天ultimatum(4/22→4/25-27)(鹰); Trump社媒谈判被CIA/State抱怨破坏谈判; Vance取消Islamabad行程(外交撤回); Iran FM正式拒绝谈判但私下可能考虑; WPR 5/1仅8天(国会约束); 矛盾度:历史最高"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "fragile",
-      "last_check": "2026-04-22",
-      "findings": "伊朗10点vs美国15点框架竞争中; 4/8停火协议(巴基斯坦斡旋); 4/21特朗普延期停火; 但伊朗通知不出席第二轮谈判; 核心争议:enrichment权利vs美方零容忍; 伊方指'矛盾信息'为理由; 巴基斯坦仍为唯一活跃调解渠道; 美给伊3-5天响应窗口"
+      "status": "partial_deadlocked",
+      "last_check": "2026-04-23",
+      "findings": "Iran 10点计划vs US 15点计划; 中巴5点倡议; 停火框架存在但建立在全面停火而非核协议上; 核心gap: 铀浓缩(Iran要求保留权利 vs US要求清零), 封锁(Iran要求先解除 vs US要求先谈判), Hezbollah资金; Iran已退出Round 2; 谈判窗口3-5天(4/25-27 deadline)"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "rising",
-      "last_check": "2026-04-22",
-      "findings": "WPR 5/1时限8天; 参议院第4次否决战争授权(47-52, Rand Paul+民主党); 众议院险过214-213(仅差1票); 油价.18/加仑(+29.5% YoY, 近4年新高); 加州.88; 6 KIA/18 WIA; 共和党内部压力上升(Collins/Curtis公开表态)"
+      "status": "approaching_threshold",
+      "last_check": "2026-04-23",
+      "findings": "美方: 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字→真实值更高); 汽油.17/加仑(+30% YoY); WPR 5/1(8天)国会制度约束; War Powers Resolution两院均失败; 92%美国人希望尽快结束; 65%认为Trump会发动地面战但仅7%支持; 国内政治压力快速积累"
     }
   },
   "noise_filter": {
