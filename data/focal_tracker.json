@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-23T02:03:12.209286+00:00",
+  "last_updated": "2026-04-23T06:05:17.213269+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-19",
-          "est": "~0/day (停火D15, blockade D9)",
-          "note": "停火D15(4/8起); blockade D9运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; 但IRGC 4/18向商船开火(行动:重大升级); IRGC 4/19宣布海峡今晚起关闭直至美方解除blockade(行动:全面升级!); 13 KIA+373 WIA(官方,停火期间无新美军伤亡); 停火4/21-22到期(2-3天); 第二轮Islamabad谈判预计4/21但日期未确认(Middle East Monitor 4/18); 核分歧5yr/20yr仍存; 60天WPR时限5/1(12天)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-19",
           "est": "~0/day (停火D15, blockade D9)",
@@ -93,6 +87,12 @@
           "est": "~0/day (停火延期D17, 无限期)",
           "note": "停火4/21 Trump无限期延期; 但给伊3-5天谈判期限(4/22→deadline 4/25-27); IRGC对美军直接攻击=0; 4/19 IRGC向印度油轮开火(Sanmar Herald+Jag Arnav); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-23",
+          "est": "~0/day (停火延期D3, blockade D16)",
+          "note": "停火D17(4/7起)无限期延期(Trump 4/21 at Pakistan请求); blockade D16继续; CENTCOM暂停对伊空袭; IRGC对美军直接攻击=0; 但IRGC 4/23向利比里亚旗货船开火(gunboat)(行动:今日新事件,Brent反弹); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字→真实值更高); 谈判: Iran 3-5天期限(4/22→deadline 4/25-27); WPR 5/1=8天; Houthis独立恢复Red Sea攻击(独立能力节点); IRGC/真主党/胡塞各为独立能力节点",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-19",
-          "est": "~2-20艘/天 (IRGC宣布今晚起全面关闭海峡)",
-          "note": "blockade D9: IRGC 4/19宣布海峡今晚起关闭直至美方解除blockade(行动:全面升级!逆转FM 4/17 completely open); IRGC 4/18已向商船开火(CNN/The National)(行动); IMF Portwatch: 2-20艘/天; vs战前100-138艘/天(减90%+); 600+船仍滞留; 油价4/18暴跌: WTI .83 Brent ~(FM开放信号); 但IRGC关闭=周一开盘将反弹; Maersk/IMO仍观望; 保险仍拒覆盖; Northwood军事规划峰会下周(行动:制度化); Polymarket美军4/30前护航仅18%",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-19",
           "est": "~0-5艘/天 (IRGC重申关闭+向印度船开火)",
@@ -189,6 +183,12 @@
           "est": "~35船/天 (~5%正常水平)",
           "note": "伊朗4/18宣布海峡关闭(回应美拒解除blockade); 4/17短暂开放13艘油轮通过后反转; 870艘船只滞留波斯湾; 停火延期后未见明显恢复; Brent ~98$/bbl; 美封锁持续",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-23",
+          "est": "~3艘/天 (~3%正常水平)",
+          "note": "blockade D16; 通行量~3艘/天(减97%+vs战前135艘/天); 870+船只滞留波斯湾; IRGC 4/23向利比里亚旗货船开火(Brent反弹.38); 停火延期但blockade继续=海峡实质关闭; 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; Paris 49国escort框架就位但未启动; 战争开始279艘总过境22艘被袭(Al Jazeera+Kpler)",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-19",
-          "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
-          "note": "无新EIA数据(下次4/22周二); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); DOE称delivering at record speeds; 172M/120天目标1.4mbd实际0.59mbd(仍滞后但加速); SPR~409M为1980s以来最低; 汽油零售.254(AAA week 4/13); 油价暴跌WTI .83(4/18收盘); 但IRGC关闭海峡=供应风险重新飙升→下周释放加速压力可能回升",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-19",
           "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
@@ -282,6 +276,12 @@
           "est": "~1.4M桶/天 (第二批8.48M已交付)",
           "note": "DOE第二批: Gunvor/Phillips66/Trafigura/Macquarie共8.48M桶(4/10); DOE另发RFP征集30M桶(4/9); 172M总计划120天=1.43M/天; IEA协调释放400M桶全球",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-23",
+          "est": "~1.4M桶/天",
+          "note": "DOE 172M/120天=1.43M/天计划; EIA 4/22新周报(截至4/17)已发布; 上期SPR~409.2M bbl(-4.1M w/w≈0.59mbd); 第三批30M bbl RFP处理中(West Hackberry 4/9); IEA协调400M全球总释放; Brent .38高位=释放加速压力持续; 汽油全国均价.11-4.16(+30% YoY); gasoline futures +61% YoY",
+          "source": "pipeline"
         }
       ]
     }
@@ -292,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "active_escalating",
       "last_check": "2026-04-23",
-      "findings": "翟隽持续斡旋; 王毅完成26+轮通话; 4/17中俄联合否决UNSC霍尔木兹草案; CNN 4/11中国准备秘密向伊朗运MANPAD(中方否认); 中巴5点计划已提交; 美明确拒绝中国调解; 中方定性: 外交实质行动✓ 但伊核协议谈判美方不让位; 4/22后Iran未派代表团赴Islamabad中方斡旋陷僵局"
+      "findings": "翟隽持续斡旋; 王毅完成26+轮通话; 4/17中俄联合否决UNSC霍尔木兹草案; MV Touska事件暴露北京对德黑兰后勤支持; 中巴5点倡议提交; Iran已退出Round 2=中方斡旋陷僵局; 中方外交实质行动✓但无法打破blockade/ceasefire核心死结; Al Jazeera 4/22:中方正以'区别于美'形象获战略红利"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "contradicting_elevated",
       "last_check": "2026-04-23",
-      "findings": "停火延期(无限期,鸽)+blockade维持(鹰)+3-5天ultimatum(4/22→4/25-27)(鹰); Trump社媒谈判被CIA/State抱怨破坏谈判; Vance取消Islamabad行程(外交撤回); Iran FM正式拒绝谈判但私下可能考虑; WPR 5/1仅8天(国会约束); 矛盾度:历史最高"
+      "findings": "停火无限期延期(鸽)+blockade维持(鹰)+3-5天ultimatum→4/25-27(鹰)+IRGC 4/23向商船开火Brent反弹(行动升级); Trump社媒被CIA/State抱怨破坏谈判; Vance取消Islamabad行程(外交撤回); Iran FM正式拒绝谈判; WPR 5/1=8天(国会约束临近); 矛盾度:历史最高峰值"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "partial_deadlocked",
       "last_check": "2026-04-23",
-      "findings": "Iran 10点计划vs US 15点计划; 中巴5点倡议; 停火框架存在但建立在全面停火而非核协议上; 核心gap: 铀浓缩(Iran要求保留权利 vs US要求清零), 封锁(Iran要求先解除 vs US要求先谈判), Hezbollah资金; Iran已退出Round 2; 谈判窗口3-5天(4/25-27 deadline)"
+      "findings": "Iran 10点vs US 15点计划; 中巴5点倡议; 停火框架存在但谈判窗口3-5天(deadline→4/25-27); Iran已退出Round 2(无计划重返); 核心gap: 铀浓缩/blockade/Hezbollah三大不可调和; Araghchi 4/22定性blockade为'act of war'; UNSC Res2817通过(13:0 中俄弃权)谴责伊朗袭击邻国"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching_threshold",
       "last_check": "2026-04-23",
-      "findings": "美方: 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字→真实值更高); 汽油.17/加仑(+30% YoY); WPR 5/1(8天)国会制度约束; War Powers Resolution两院均失败; 92%美国人希望尽快结束; 65%认为Trump会发动地面战但仅7%支持; 国内政治压力快速积累"
+      "findings": "13 KIA+428 WIA(官方,Pentagon 4/22被曝删除数字→真实值更高); 汽油.11-4.16(+30% YoY, futures +61% YoY); WPR 5/1仅8天(制度死线!Congress approaching 60-day mark); War Powers Resolution两院均失败; 92%美国人希望尽快结束; IRGC 4/23向商船开火=Brent (成本传导加速); S&P 7137.90 VIX 18.92(市场相对平静但油价高位)"
     }
   },
   "noise_filter": {
