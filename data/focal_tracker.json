@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-23T22:05:11.675511+00:00",
+  "last_updated": "2026-04-24T02:02:25.492853+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,54 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-20",
-          "est": "~0/day (停火D16, blockade D10)",
-          "note": "停火D16(4/8起); blockade D10运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC hardliners接管军事/外交权(Tribune/Defense News 4/19)(行动:结构性权力转移!); IRGC继续向商船执法开火(行动); USS Spruance扣伊朗船Touska并开火(行动); WH确认谈判团队将赴Pakistan(Euronews 4/19引WH官员)(行动vs Iran未确认出席); Trump:'may start dropping bombs again'但也称deal could happen(言辞矛盾); 13 KIA+381 WIA(官方,停火期间无新美军伤亡); 停火明天4/21到期; 60天WPR 5/1(11天)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-20",
-          "est": "~0/day (停火D16, blockade D10)",
-          "note": "停火D16(4/8起); blockade D10运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; USS Spruance 4/19扣伊朗货船Touska并向机舱开火(行动:ceasefire期间重大升级!); Iran宣布将对美方'采取必要行动'报复(CNN 4/20 live)(行动:报复宣言); Iran因Touska事件退出第二轮Islamabad谈判(行动:外交通道断裂!); IRGC继续向商船开火执法(行动); 13 KIA+381 WIA(官方,停火期间无新美军伤亡); 停火4/22(周三)到期(2天); 60天WPR 5/1(11天)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-20",
-          "est": "~0/day (停火D17, blockade D11)",
-          "note": "停火D17(4/8起); blockade D11运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; USS Spruance 4/19扣伊朗货船Touska并开火(行动:ceasefire期间重大升级!); Iran宣布将对美方'采取必要行动'报复(行动:报复宣言); Iran因Touska事件退出第二轮Islamabad谈判(行动:外交通道断裂!); Trump 4/20称停火Wed evening结束+延期highly unlikely(行动:明确不延期信号!); 13 KIA+381 WIA(官方,停火期间无新美军伤亡); 停火4/22(周三)到期(明天!); 60天WPR 5/1(10天)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~0/day (停火D18, blockade D12)",
-          "note": "停火D18(4/8起); blockade D12运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; 但IRGC持续向商船开火执法(行动); USS Spruance 4/19扣Touska(行动:ceasefire期间升级); Iran宣布报复+退出第二轮Islamabad谈判(行动:外交通道断裂); Iran FM称'暂无计划'重返谈判(行动:拒绝外交); 停火4/22(Wed evening)到期(明天!); Trump称延期highly unlikely(行动:明确不延期); Vance团队周二赴Pakistan但Iran未确认出席; 13 KIA+381 WIA; 60天WPR 5/1(10天); Houthis独立恢复Red Sea攻击(行动:独立能力节点); Hezbollah被以色列大幅削弱但仍为独立节点; IRGC hardliners完全主导军事/外交",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~0/day (停火D18, blockade D12)",
-          "note": "停火D18(4/8起); blockade D12运行中; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); USS Spruance 4/19扣Touska(行动); Vance今天赴Islamabad Round 2(行动:外交通道可能重启!); Iran私下sources称delegation可能今天抵达(行动:与公开'no plans'矛盾!); Trump称停火Wed evening结束+不延期(行动); Trump同时威胁'whole country blown up'+称deal still possible(鹰鸽矛盾); Iran FM正式称'no plans'重返谈判但私下可能派人(行动vs言辞矛盾); 13 KIA+381 WIA; 停火明天4/22到期; 60天WPR 5/1(10天)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~0/day (停火被延期D1, blockade D13)",
-          "note": "停火被Trump 4/21延期at Pakistan请求(NPR); Iran 4/20退出Round 2称US demands childish(BusinessToday); Vance取消Islamabad行程(The Levant Files); 停火4/22原定到期但已延期; Round 1(4/11-12)已无协议结束; CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; USS Spruance扣Touska事件后Iran报复宣言未落地kinetic; 13 KIA+381 WIA(官方停火期间无新美军伤亡); US blockade继续运行(Trump: remain ready and able); 60天WPR 5/1(9天); 核分歧enrichment 5yr/20yr+Hezbollah资金+海峡控制三大不可调和议题",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-22",
-          "est": "~0/day (停火延期D1, blockade D14)",
-          "note": "停火被Trump 4/21延期indefinitely直至Iran提交unified proposal(NPR/Axios/Al Jazeera); blockade D14继续运行(Trump明确:continue the Blockade); CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); Araghchi 4/22定性blockade为'act of war'+称'know how to neutralize restrictions'(言辞升级+拒绝屈服); Iran正式不派delegation赴Islamabad(Tasnim)(行动:外交通道断裂); Vance行程取消(行动); 13 KIA+381 WIA(停火期间无新美军伤亡); 60天WPR 5/1仅8天(制度约束迫近!); Trump称Iran政府'seriously fractured'(解读:等Iran内部统一立场); 核心僵局: US blockade vs Iran开放=双方各自要求对方先让步",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-22",
-          "est": "~0/day (停火延期D1, blockade D14)",
-          "note": "停火Trump 4/21延期indefinitely直至Iran提交unified proposal(NPR/Axios); blockade D14继续(Trump明确continue the Blockade); CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); USS Spruance扣Touska余波; Araghchi 4/21-22定性blockade为'act of war'+'know how to neutralize restrictions'(言辞升级+拒绝屈服); Iran正式不派delegation赴Islamabad(Tasnim)(行动:外交通道断裂); Vance行程取消(行动); Iran senior adviser称延期'means nothing'应军事回应(言辞); 13 KIA+381 WIA(停火期间无新美军伤亡); 60天WPR 5/1仅9天(制度约束迫近!); Trump称Iran政府'seriously fractured'(defer不是deal); 核心僵局: US blockade vs Iran开放=双方要求对方先让步",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-22",
           "est": "~0/day (停火延期D2, blockade D15)",
@@ -93,6 +45,12 @@
           "est": "~1次/day (停火延期D20, IRGC商船执法持续)",
           "note": "停火无限期延期(Trump 4/21 at Pakistan请求); blockade D17继续; CENTCOM暂停对伊空袭; IRGC对美军直接攻击=0; 但IRGC 4/23向利比里亚旗货船开火(gunboat)(行动:停火期间再升级); Trump 4/23命令海军摧毁任何布雷伊朗船只(行动:规则升级,新规则!); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字→真实更高); 谈判deadline 4/25-27; WPR 5/1=7天; Houthis独立恢复Red Sea攻击; IRGC/真主党/胡塞各为独立能力节点",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-24",
+          "est": "~0/day",
+          "note": "Ceasefire since Apr 8, extended Apr 21; pre-ceasefire peaked at ~0.5 attacks/day on merchants; ballistic missiles degraded 90%; Trump ordered Navy destroy mine-laying boats Apr 23",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,54 +64,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-20",
-          "est": "~0-5艘/天 (IRGC执行关闭+US扣船,Brent期货反弹)",
-          "note": "blockade D10: IRGC 4/19重申海峡关闭+向商船开火执法(行动); 通行量~0-5艘/天vs战前100-138(减95%+); Brent期货4/20升至95.42(+5.58%)(行动:市场repricing IRGC关闭); 600+船仍滞留; 保险不覆盖(开火+扣船风险); IRGC hardliners接管=FM 4/17开放宣言彻底作废; Maersk/IMO继续观望; Northwood军事规划峰会本周(行动:制度化); 巴黎49国escort准备中(行动)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-20",
-          "est": "~0-5艘/天 (海峡连续3天近乎空置, IRGC执行关闭+Touska报复升级)",
-          "note": "blockade D10: 海峡连续3天virtually empty(CNBC/CNN 4/20)(行动:通行量历史最低); IRGC维持关闭+向商船开火执法; USS Spruance扣Touska+开火(行动); Iran宣布报复(CNN 4/20 live)(行动:进一步恶化通行预期); Brent期货95.42(+5.58%)(行动:市场repricing); WTI期货~89(+6%)(行动); vs战前100-138艘/天(减95%+); 600+船仍滞留; 保险更不可能覆盖(开火+扣船+报复三重风险); Maersk/IMO继续观望; Northwood军事规划峰会本周(行动:制度化); Paris 49国escort框架就位; 停火4/22到期(2天)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-20",
-          "est": "~0-5艘/天 (IRGC关闭海峡+向商船开火)",
-          "note": "blockade D11: IRGC 4/18重新关闭海峡(逆转FM 4/17 completely open); IRGC 4/19向2艘印度油轮开火(行动:首次对第三国商船动武); USS Spruance 4/19扣伊朗货船Touska(行动:美方ceasefire期间升级); 通行量仍减90%+vs战前100-138艘/天; 600+船仍滞留; 保险拒覆盖(开火事件加剧); Maersk/IMO继续观望; Northwood军事规划峰会本周(行动:制度化); 停火明天到期=海峡局势将进一步恶化",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~7-16艘/天 (周一小幅回升但仍减85-90%)",
-          "note": "blockade D12: 周一CNN报16艘过境(较周末0-5小幅回升); vs战前100-138艘/天(减85-90%); IRGC维持海峡关闭执法+向商船开火; USS Spruance扣Touska(行动:美方也在升级); 600+船仍滞留; Brent期货93.80-95.14(行动:市场定价持续供应中断); 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; Northwood军事规划峰会本周(行动:制度化); Paris 49国escort框架就位; 停火明天到期=海峡通行将进一步恶化",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~3艘/天 (Bloomberg: 仅3艘尝试过境,近乎空置)",
-          "note": "blockade D12: Bloomberg 4/21报仅3艘尝试过境(2货+1油轮)(行动:历史低位附近); 伊朗船Shoja 2过境后停止AIS信号(行动:隐蔽航行); IRGC维持海峡关闭执法+向商船开火; USS Spruance扣Touska; vs战前100-138艘/天(减97%+); 600+船仍滞留; 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; 停火明天到期=海峡将进一步恶化; Brent 93.80-95.14(市场定价供应中断持续)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~3艘/天 (Bloomberg 4/21: 仅3艘尝试过境,近乎空置)",
-          "note": "blockade D13: Bloomberg 4/21报仅3艘过境(2货+1油轮)(行动:历史低位); vs战前100-138艘/天(减97%+); IRGC维持关闭执法+向商船开火; USS Spruance扣Touska(行动); 600+船仍滞留; 保险拒覆盖; Maersk/IMO继续观望; 停火被延期但blockade继续=海峡仍关闭; Northwood军事规划峰会本周; Paris 49国escort框架就位但未启动",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-22",
-          "est": "~3-10艘/天 (Bloomberg: 周日0过境+周一小幅回升后再度halt)",
-          "note": "blockade D14: Bloomberg 4/20-22观察到transits halted after brief weekend surge+周日0过境(行动:通行量历史低位); IRGC维持海峡关闭执法+持续向商船开火(行动); USS Spruance扣Touska余波; vs战前100-138艘/天(减95%+); 600+船仍滞留; 保险拒覆盖; Maersk/IMO继续观望; 停火延期但blockade继续=核心僵局未解=海峡供应风险极端持续; Paris 49国escort框架就位但未启动; Northwood军事规划峰会本周; Polymarket: Hormuz 5月底前恢复正常概率极低",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-22",
-          "est": "~3-14艘/天 (Kpler周日14艘/Bloomberg周一3艘,大幅震荡但仍减85-95%)",
-          "note": "blockade D14: Kpler 4/19(周日)14艘过境(CNBC); Bloomberg 4/21仅3艘尝试过境(2货+1油轮)(行动:近乎空置); 周一回升后再度halt(Bloomberg 4/22观察transits halted after brief weekend surge); vs战前138艘/天(Kpler基准)(减85-95%); IRGC维持海峡关闭执法+持续向商船开火(行动); USS Spruance扣Touska余波(行动); 600+船仍滞留; 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; 停火延期但blockade继续=核心僵局未解=海峡仍关闭; Paris 49国escort框架就位但未启动; Northwood军事规划峰会本周; Polymarket Hormuz 5月底前恢复正常概率极低",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-22",
           "est": "~0-3艘/天 (Bloomberg 4/22:strait largely devoid of commercial traffic)",
@@ -189,6 +99,12 @@
           "est": "~3艘/day (~3%正常水平, 870艘滞留)",
           "note": "blockade D17; Iran 4/18二度宣布关闭海峡(回应美拒解除blockade); 870艘船滞留波斯湾; IRGC 4/23向利比里亚旗货船开火(行动:再升级); Trump 4/23命令海军摧毁布雷伊朗船只(行动:战术规则升级); 停火延期但blockade继续=Catch-22海峡实质关闭; 保险拒覆盖(开火+扣船风险); 战争开始279艘总过境22艘被袭(Al Jazeera+Kpler); Paris 49国escort框架就位但未启动",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-24",
+          "est": "~3-10/day",
+          "note": "Apr 20 hit 3 vessels (historic low); Iran reopened Apr 17 (13 tankers through) then closed again Apr 18; 870 vessels stranded in Gulf; baseline was 138/day",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,54 +115,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-20",
-          "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
-          "note": "无新EIA数据(下次4/22周二); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); 172M/120天目标1.4mbd实际0.59mbd(仍滞后但加速); SPR~409M为1980s以来最低; 汽油零售4.11-4.16(AAA mid-April); Brent期货反弹至95.42(+5.58%)→释放加速压力重新飙升; 30M bbl甜原油RFP结果待公布; IRGC关闭海峡+停火到期=下周供应风险骤升",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-20",
-          "est": "~0.59 mbd净提取 (无新EIA数据,下次4/22周二)",
-          "note": "无新EIA数据(下次4/22周二); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); 172M/120天目标1.4mbd实际0.59mbd(仍滞后但加速); SPR~409M为1980s以来最低; 汽油零售4.11-4.25(AAA mid-April); Brent反弹至95.42+WTI~89→释放加速压力再次飙升; IRGC关闭海峡+Iran退出谈判+停火到期=供应风险极端; 30M bbl甜原油RFP结果待公布",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-20",
-          "est": "~8.5M bbl/批, 第三批30M bbl solicitation中",
-          "note": "SPR第二批8.48M bbl已贷出(4/10)(Gunvor/Phillips66/Trafigura/Macquarie)(行动); 第三批30M bbl sweet crude从West Hackberry solicitation(4/13)(行动); 总计划172M bbl贷出throughout 2026-2027; IEA 32国协调释放400M bbl; 汽油价EIA 4/17报2.89 USD/gal(3月以来最低); 但IRGC关闭海峡+停火到期=油价反弹中(Brent 95.42 4/20 +5.58%)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~0.59 mbd净提取 (EIA 4/22周二发布新数据)",
-          "note": "EIA 4/22(明天周二)发布新weekly数据; 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie); 第三批30M bbl sweet crude solicitation中; 172M/120天目标1.4mbd实际0.59mbd(仍滞后); 汽油AAA全国均价.076(4/21); Brent 93.80-95.14 WTI 86.01-86.35; 停火到期+IRGC关闭海峡=释放加速压力极大",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~0.59 mbd净提取 (EIA明天4/22周二发布新数据)",
-          "note": "EIA明天4/22(周二)发布新weekly数据; 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd)(行动:释放加速); 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie); 第三批30M bbl sweet crude solicitation中(West Hackberry); 172M/120天目标1.4mbd实际0.59mbd(仍滞后); 汽油AAA全国均价$4.11-4.25(mid-April); Brent 93.80-95.14 WTI 86.01-86.35; 停火到期+海峡近乎关闭=释放加速压力极大",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-21",
-          "est": "~0.59 mbd净提取 (EIA 4/22新数据待确认)",
-          "note": "EIA 4/22应发布新weekly数据; 上期EIA 4/15(截至4/10): SPR 409.2M bbl(-4.1M w/w约0.59mbd)释放加速; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie 4/10); 第三批30M bbl sweet crude solicitation(West Hackberry 4/13截止); 总计172M bbl/120天目标1.4mbd实际0.59mbd仍滞后; SPR 409M为1980s以来最低; AAA汽油均价 USD4.11-4.25持续高位; 停火延期缓解但blockade continues=供应风险仍高; Brent 95-98 WTI 86 VIX 18.87",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-22",
-          "est": "~0.59 mbd净提取 (EIA今日4/22发布新weekly数据)",
-          "note": "EIA 4/22(今日周二)发布新weekly数据(截至4/17); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd释放加速); 3月SPR一度升至415M bbl峰值后启动协调释放; 172M/120天目标1.4mbd实际0.59mbd仍滞后; SPR 409M为1980s以来最低; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie); 第三批30M bbl sweet crude solicitation处理中(West Hackberry); AAA全国汽油均价 USD4.02-4.12(从mid-April峰值4.17小幅回落); Brent ~98(4/22盘中) WTI ~86; 停火延期但blockade继续=供应压力持续=释放压力维持高位",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-22",
-          "est": "~0.59 mbd净提取 (EIA今日4/22发布新weekly数据,详细待确认)",
-          "note": "EIA 4/22(今日周二)应发布新weekly数据(截至4/17,详细数据待确认); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd释放加速); 172M/120天目标1.4mbd实际0.59mbd仍滞后但加速; SPR 409M为1980s以来最低; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie 4/10); 第三批30M bbl sweet crude solicitation处理中(West Hackberry); AAA全国汽油均价 USD4.04(4/20)/4.09(4/16)(从mid-April峰值4.17小幅回落); Brent ~95 WTI ~89.33(4/22); 停火延期但blockade继续=供应压力持续=释放压力维持高位",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-22",
           "est": "~0.59 mbd净提取 (EIA 4/22新周度数据今日发布待确认)",
@@ -282,6 +150,12 @@
           "est": "~1.4M bbl/day (第三批30M bbl RFP处理中)",
           "note": "EIA 4/22新周报(截至4/17)发布; 汽油库存连降10周-4.6M桶/周; 汽油全国均价$4.178/加仑(+29.5% YoY); 第三批30M bbl sweet crude RFP处理中(West Hackberry 4/9); 172M/120天计划=1.43M/天; Brent ~$103反弹=释放加速压力持续; SPR~409M为1980s以来最低; IEA协调400M全球总释放; gasoline futures +61% YoY",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-24",
+          "est": "~1.43M bbl/day",
+          "note": "172M barrel IEA coordinated release over 120 days; first 45.2M bbl exchange contracts awarded Mar 20; SPR at ~415M bbl (58% capacity); exchange/loan structure",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +164,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "ACTIVE",
-      "last_check": "2026-04-23",
-      "findings": "翟隽特使持续斡旋; 王毅26通电话(2/28-4/8); China-Pakistan 5点方案(3/31)含霍尔木兹恢复条款; Apr7联合国否决霍尔木兹护航决议(China+Russia); Apr19美军扣押MV Touska(含中国双用途货物); CIA称中国准备向伊朗输送MANPADs(4/11); Al Jazeera 4/22报中国借'与美不同'形象获益; 仍为外交游说+间接技术支持而非决定性介入; 无中国海军实质动作"
+      "status": "active",
+      "last_check": "2026-04-24",
+      "findings": "Envoy Zhai Jun shuttle diplomacy since early Mar; Wang Yi 26 calls; China-Pakistan 5-point proposal Mar 31; vetoed UNSC Hormuz escort resolution Apr 7; denied MANPAD shipments to Iran; positioning as neutral mediator while facing dual-use tech accusations"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTING",
-      "last_check": "2026-04-23",
-      "findings": "Trump护航承诺vs海军'数周内无力执行'; 停火延期(de-escalation) vs blockade继续(escalation) vs Apr23命令摧毁布雷船(escalation); 3-5天最后通牒无明确截止日; Iran FM: blockade是'act of war'+'no final decision'出席谈判(矛盾); 鹰鸽信号同步输出: Trump'seriously fractured'(等待) vs '3-5天'(最后通牒) vs 停火延期(缓和); 美方信号包内部矛盾持续"
+      "status": "active",
+      "last_check": "2026-04-24",
+      "findings": "Contradictory: Trump extended ceasefire Apr 21 but maintained naval blockade; told Iran 3-5 days to unify; US destroyers entered Hormuz Apr 11; convoy escort plan (Op Epic Escort) not launched (insufficient destroyers); social media negotiations derailed talks Apr 20"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "STALLED",
-      "last_check": "2026-04-23",
-      "findings": "巴基斯坦框架无限期延期; Iran 10点vs美15点方案; Islamabad Round 2确认未发生(Iran不出席); Iran坚持blockade解除前不谈判; Trump给出3-5天期限(deadline 4/25-27→今日到期边缘!); Catch-22僵局: US blockade vs Iran海峡开放=双方要求对方先行动; Iran FM称'no final decision'(言辞); 谈判渠道实质断裂; 结构不可调和分歧: enrichment权+海峡控制+Hezbollah资金"
+      "status": "active",
+      "last_check": "2026-04-24",
+      "findings": "Ceasefire Apr 8 extended Apr 21; US 15-point vs Iran 10-point; Iran internally fractured (IRGC vs civilian negotiators, Larijani assassination disrupted chain of command); Supreme Leader Khamenei barely communicating; Pakistan mediating; no final deal"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "APPROACHING",
-      "last_check": "2026-04-23",
-      "findings": "WPR 5/1=7天(极端迫近!); 参议院第5次否决战争权力决议(46-51, Rand Paul唯一跨党); 众院失败213-214; 国会55天零公开听证; 汽油$4.178/加仑+29.5% YoY; 汽油库存连降10周-4.6M桶; 13 KIA+428 WIA(官方,Pentagon隐瞒真实数字→实际更高); 共和党内费用分歧+Collins/Curtis表态需国会授权; 更多议员在WPR前夕呼吁结束战争; Republican领袖称听证'5月某时'=WPR到期后才审查"
+      "status": "approaching",
+      "last_check": "2026-04-24",
+      "findings": "WPR 60-day deadline May 1 (critical); Senate blocked war powers 5 times (47-52); gas .17/gal (+29.5% YoY); 428+ US casualties (13 killed); Congress no public hearings yet; Collins/Curtis dissent signals possible GOP crack"
     }
   },
   "noise_filter": {
