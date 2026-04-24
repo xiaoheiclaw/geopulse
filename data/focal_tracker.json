@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-24T06:03:18.227846+00:00",
+  "last_updated": "2026-04-24T10:12:46.803112+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -56,6 +56,12 @@
           "date": "2026-04-24",
           "est": "~0 (ceasefire)",
           "note": "Ceasefire extended Apr 22 by Trump (+3-5 days); 3-5 day window expires ~Apr 25-27; during active phase (Mar) Iran launched 89 waves/24h",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-24",
+          "est": "~1-2次/周",
+          "note": "停火期间(4/8起)IRGC袭击显著下降；战前5周累计21次商船攻击≈4次/周；4/22-23美拦截M/T Majestic X，IRGC扣押行为零星延续",
           "source": "pipeline"
         }
       ]
@@ -117,6 +123,12 @@
           "est": "3/day",
           "note": "Apr 20 low: 3 vessels (lowest since blockade began); Apr 14: 14 transits; 870 ships stranded in Gulf; pre-war baseline 138/day; shadow fleet >80% of transits",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-24",
+          "est": "~5-10艘/日(正常138/日的~5%)",
+          "note": "4/20最低降至3艘；4/21约12艘；4/22约8艘含3艘油轮；4/18伊朗宣布再次封锁霍尔木兹，870艘船滞留波斯湾",
+          "source": "pipeline"
         }
       ]
     },
@@ -174,6 +186,12 @@
           "est": "~1.4M bbl/day",
           "note": "172M bbl IEA exchange plan over 120 days; first batch 45.2M (Mar 20); second batch 8.5M (Apr 10); EIA weekly report Apr 17 released Apr 22; 30M bbl solicitation Apr 9",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-24",
+          "est": "~143万桶/日",
+          "note": "美国172M桶/120天计划(IEA协调400M桶)；3/20首批合同45.2M桶；DOE称半数以贷款形式；初始SPR库存415.4M桶",
+          "source": "pipeline"
         }
       ]
     }
@@ -182,30 +200,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "watching",
+      "status": "ACTIVE",
       "last_check": "2026-04-24",
-      "findings": "Active: envoy Zhai Jun 24+ meetings + Wang Yi 26 calls + China-Pakistan 5-pt proposal (Mar 31) + UNSC veto (Apr 7); CNN: alleged MANPAD prep (denied); US seized Iran ship MV Touska from China (Apr 19 dual-use cargo); no naval/military cost action yet"
+      "findings": "翟隽穿梭外交+王毅26次通话+中巴5点倡议；4/17与俄否决联合国霍尔木兹决议；情报称准备经第三国运MANPAD(中方否认)；战略驱动，非军事实质介入"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "triggered",
+      "status": "ACTIVE",
       "last_check": "2026-04-24",
-      "findings": "Multiple contradictions: naval blockade (Apr 13) WHILE extending ceasefire (Apr 22); pledged tanker escorts but navy unavailable; Trump social-media posts disrupted Islamabad talks; US 15-pt demands (zero enrichment) incompatible with ceasefire extension"
+      "findings": "Operation Epic Escort规划中但五角大楼承认护航能力不足(需8-10艘驱逐舰)；特朗普4/11宣称正清理海峡；4/13海上封锁伊朗港口与重开海峡目标矛盾；停火延长但封锁持续"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "approaching",
+      "status": "FRAGILE_ACTIVE",
       "last_check": "2026-04-24",
-      "findings": "Pakistan-brokered ceasefire Apr 8; Iran 10-pt vs US 15-pt frameworks on table; ceasefire extended Apr 22 (+3-5 days) for Iran to unify; IRGC vs diplomat fracture blocking unified proposal; core sticking: enrichment + Strait control"
+      "findings": "停火4/8起已延长(额外3-5天)；伊10点vs美15点方案关键分歧：铀浓缩权+制裁解除；伊内部IRGC vs外交官公开撕裂；英波文本分歧(浓缩权措辞)；巴基斯坦斡旋维系"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "triggered",
+      "status": "APPROACHING",
       "last_check": "2026-04-24",
-      "findings": "Gas $4.11/gal (+38%), diesel $5.62/gal (+49%); 13 US KIA; ~$30B war cost (CSIS); bipartisan War Powers: Collins, Rand Paul + Senate Dems (Baldwin 5th vote); 69% Americans worried about gas prices; 64% not confident in Trump Iran policy"
+      "findings": "授权兵权法5/1截止(仅剩7天)；参院5次否决WP决议(47-52，Rand Paul倒戈)；Collins/Curtis等共和党人松动；阵亡15人+/伤428+；油价.18/加仑(+29.5%YoY)；停火若破裂国会压力骤升"
     }
   },
   "noise_filter": {
