@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-25T10:02:04.004212+00:00",
+  "last_updated": "2026-04-25T22:03:38.040426+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -86,6 +86,12 @@
           "date": "2026-04-25",
           "est": "~0/day",
           "note": "停火自Apr 7起生效；Apr 21延长；IRGC将领vs文职谈判者分裂，无显著袭击",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-25",
+          "est": "1-2/day",
+          "note": "IRGC enforcing strait closure: vessel seizures + mine-laying ongoing; strait functionally closed",
           "source": "pipeline"
         }
       ]
@@ -177,6 +183,12 @@
           "est": "5 vessels/24h",
           "note": "较危机前~100+/天下降95%；500-700艘船滞留波斯湾；美伊双重封锁",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-25",
+          "est": "3-5 ships/day",
+          "note": "Apr 25: 3-5 ships/day vs normal 60-140; Apr 23 all 5 transits 'dark' AIS; 870 vessels trapped in Gulf; <5% of normal",
+          "source": "pipeline"
         }
       ]
     },
@@ -264,6 +276,12 @@
           "est": "~1.43M bbl/day",
           "note": "172M桶/120天释放计划；IEA全球协调400M桶；Apr17当周库存意外增加193万桶",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-25",
+          "est": "~1.4M bbl/day",
+          "note": "172M bbl IEA emergency exchange over ~120 days from late March; 45.2M initial contracts awarded; DOE soliciting additional 30M bbl Apr 9",
+          "source": "pipeline"
         }
       ]
     }
@@ -272,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "PARTIAL",
+      "status": "partial",
       "last_check": "2026-04-25",
-      "findings": "中国外交活跃：特使翟隽巡访、王毅26次电话、中巴5点倡议(Mar31)；但Apr17否决联合国护航决议；MANPAD供伊情报(Apr11)被否认；外交主导无军事行动"
+      "findings": "Wang Yi 26 calls + Chinese envoy shuttled region + China-Pakistan 5-point initiative + VETOED Bahrain UNSC resolution on Hormuz force; no military/economic coercion deployed; allowing Chinese ships selective transit"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "ACTIVE",
+      "status": "active",
       "last_check": "2026-04-25",
-      "findings": "矛盾显著：延长停火+谈判窗口 vs 军事选项威胁；两艘驱逐舰Apr11首次进入海峡但无护航作战；伊朗FM称无会谈计划"
+      "findings": "High contradiction: declared naval blockade Apr 12 + simultaneously extended ceasefire + Witkoff/Kushner to Pakistan; Trump claims Iran agreed uranium handover but Iran denies; 'clearing' strait statement Apr 11 vs blockade Apr 12"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "WEAK",
+      "status": "emerging",
       "last_check": "2026-04-25",
-      "findings": "停火延长至5月1日前；伊朗10点vs美国15点方案严重不兼容；伊朗内部IRGC-文职分裂；谈判无框架共识；WPR60天期限Apr27到期"
+      "findings": "Ceasefire extended by Trump; Iran's 10-point vs US 15-point active negotiations; Iran FM Araghchi in Pakistan Apr 25 but Iran denying any US meeting; no UNSC framework (China/Russia vetoed); enrichment/missiles remain core sticking points"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "BUILDING",
+      "status": "approaching",
       "last_check": "2026-04-25",
-      "findings": "WPR60天期限Apr28临近(6天)；油价.18/gal(+29.5%YoY)；15阵亡428伤(含争议)；第5次WPR投票被否52-47；五角大楼被指压低伤亡数"
+      "findings": "Day 56: 60-day War Powers clock nearly expired; 13 US KIA/400 wounded; gas .06/gal (+); $30B war cost; 5 Senate War Powers votes killed; Collins/Curtis signal 60-day threshold; $200B additional funding request"
     }
   },
   "noise_filter": {
