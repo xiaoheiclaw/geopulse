@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-24T22:04:39.948516+00:00",
+  "last_updated": "2026-04-25T02:02:16.727516+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -68,6 +68,12 @@
           "date": "2026-04-24",
           "est": "~0-1次/day",
           "note": "停火延期D18(4/8起,Trump 4/21无限期延期at巴方请求); IRGC对美军直接攻击=0; 但IRGC 4/23向利比里亚旗货船开火(action); 4/24 Witkoff/Kushner飞往巴基斯坦参加Round2谈判; Trump命令海军摧毁布雷船只(规则升级4/23); 弹道导弹能力被CENTCOM评估削减90%; 胡塞Red Sea独立恢复攻击(独立能力节点)",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-25",
+          "est": "0.5次/天(停火期)",
+          "note": "停火期IRGC仍有海峡袭扰：扣押2艘船、炮击1艘；导弹攻击较峰值降90%；停火延长3-5天",
           "source": "pipeline"
         }
       ]
@@ -141,6 +147,12 @@
           "est": "~3艘/day",
           "note": "双重封锁D19继续(美封锁伊港+伊封锁海峡); 4/20低至3艘(历史最低); 870艘>10000DWT滞留波斯湾; 正常138艘/天,当前~2%水平; 279艘总过境22艘被袭(since 2/28); China/Russia/India优先过境但数量极少; 伊朗称'海峡完全开放'与实际3艘/day严重背离",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-25",
+          "est": "~5%正常水平(3艘/24h)",
+          "note": "双重封锁：美国封锁伊朗港口+IRGC控制海峡；4/21仅3艘通行/24h；中俄印等白名单国家船只部分可通行；伊方声称完全开放但IRGC不配合",
+          "source": "pipeline"
         }
       ]
     },
@@ -210,6 +222,12 @@
           "est": "~1.4M bbl/day",
           "note": "172M/120天IEA协调计划=1.43M/day目标; EIA周报4/22(截至4/17): SPR~409.2M bbl; 第二批8.48M(4/10交付); 第三批30M sweet crude RFP处理中(West Hackberry 4/9); 汽油全国均价$4.178/加仑(+29.5% YoY,4/20周); SPR为1980s以来最低; 释放vs汽油库存连降10周压力持续",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-25",
+          "est": "~1.4Mb/天",
+          "note": "172Mb IEA协调释放计划，120天交付期；首批45.2Mb合同3月20日签约已开始交付；4/9再发30Mb征询；EIA 4/17当周库存持续消耗",
+          "source": "pipeline"
         }
       ]
     }
@@ -219,29 +237,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "ACTIVE",
-      "last_check": "2026-04-24",
-      "findings": "翟隽穿梭外交持续+王毅26次通话+中巴5点倡议(3/31); 4/17与俄否决UN霍尔木兹决议; 情报称准备经第三国运MANPAD(中方否认4/11); 4/19美扣押MV Touska(中国返航伊朗货船); 中国船只仍允许优先过境; 4/24 Witkoff/Kushner赴巴基斯坦外交通道由巴维持中国幕后; 战略驱动非直接军事介入; 中国从战争中外交获益(Al Jazeera 4/22)"
+      "last_check": "2026-04-25",
+      "findings": "王毅26次通话+翟隽穿梭外交；4/17否决安理会决议；4/19美扣押中伊双用途设备船MV Touska；CNN报道疑向伊提供MANPAD(中方否认)；中巴5点倡议"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "ACTIVE",
-      "last_check": "2026-04-24",
-      "findings": "停火无限期延期(4/21)+封锁同步维持=最高级别矛盾; Trump明确'not lifting blockade until final deal'(CNBC 4/21); 但同时派Witkoff/Kushner赴巴(4/24,行动:外交接触); Iran拒直接会面但Araghchi人在巴基斯坦; 5/1 WPR截止增加外交压力; Epic Escort规划中但五角大楼承认护航能力不足(8-10驱逐舰)"
+      "last_check": "2026-04-25",
+      "findings": "特朗普Truth Social谈判 vs 伊朗外长否认；维特科夫/库什纳赴巴基斯坦(4/26)但伊朗外交部否认有谈判安排；同时维持海峡封锁；扬言停火结束恢复轰炸"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "FRAGILE_ACTIVE",
-      "last_check": "2026-04-24",
-      "findings": "谈判框架仍存(伊10点vs美15点); 4/24 Witkoff/Kushner飞往巴基斯坦; Araghchi人在巴基斯坦等待; 但伊外交部否认直接会面计划(信号矛盾); IRGC vs外交官内部公开撕裂(Trump称'seriously fractured'); 核心障碍: 铀浓缩权+制裁解除+封锁先解条件; 5/1 WPR截止为框架存续外压"
+      "status": "PARTIAL",
+      "last_check": "2026-04-25",
+      "findings": "美15点vs伊10点方案；4/8巴基斯坦调停停火；停火延长但IRGC拒绝执行外长开放海峡声明；伊朗内部军民对峙：革命卫队将领vs平民谈判代表"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "APPROACHING",
-      "last_check": "2026-04-24",
-      "findings": "WPR 5/1截止仅6天(最紧迫物理deadline!); 参院第5次否决WPR 46-51(4/23,Rand Paul唯一共和党倒戈); 众院失败213-214(1票差!); Collins/Curtis等共和党人开始松动; 阵亡官方13KIA+428WIA(五角大楼4/22被曝删除数字→真实更高); 汽油全国均价$4.178/加仑(+29.5% YoY,4/20周,EIA预测4月达$4.30); 停火若破裂国会压力骤升; Collins/Curtis等共和党人松动=政治成本正在积累"
+      "status": "ELEVATED",
+      "last_check": "2026-04-25",
+      "findings": "美国油价.18/加仑(+29.5% YoY，4年来首超)；13 KIA/400+伤(五角大楼被指低报)；国会5次战争授权决议均失败；首6天战费亿；汽油库存连续10周下降"
     }
   },
   "noise_filter": {
