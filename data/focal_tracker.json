@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-25T22:03:38.040426+00:00",
+  "last_updated": "2026-04-26T02:02:09.763292+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-22",
-          "est": "~0/day (停火延期D2, blockade D15)",
-          "note": "停火延期D2(Trump 4/21延期indefinitely at Pakistan请求); blockade D15继续(Trump明确continue the Blockade); CENTCOM暂停对伊空袭; IRGC直接攻击美军仍为零; IRGC持续向商船开火执法(行动); Araghchi 4/21-22定性blockade为'act of war'+'know how to neutralize restrictions'(言辞升级); Iran正式不派delegation赴Islamabad(Tasnim)(行动:Round 2确认未发生); Vance行程取消(行动:外交撤回); 13 KIA+381 WIA(官方停火期间无新美军伤亡); 60天WPR 5/1仅9天(刚性制度deadline!); Trump称Iran政府'seriously fractured'(解读:defer而非deal)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-22",
           "est": "~0/day (停火D16, 延期不定)",
@@ -93,6 +87,12 @@
           "est": "1-2/day",
           "note": "IRGC enforcing strait closure: vessel seizures + mine-laying ongoing; strait functionally closed",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-26",
+          "est": "0-2次/天",
+          "note": "停火期内IRGC大规模攻击暂停; 停火4月8日达成、4月21日延长; 战前攻击已下降90%(CENTCOM)",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-22",
-          "est": "~0-3艘/天 (Bloomberg 4/22:strait largely devoid of commercial traffic)",
-          "note": "blockade D15: Bloomberg 4/22报strait'remained largely devoid of commercial traffic on Tuesday'(行动:仅trickle of小船Iran-aligned过境); 800+船滞留gulf(Bloomberg 4/22,较4/21的600+再增); 战前Kpler基准~135艘/天; IRGC维持海峡关闭执法+持续向商船开火(行动); USS Spruance扣Touska余波未消; 保险拒覆盖(开火+扣船双重风险); Maersk/IMO继续观望; Paris 49国escort框架就位但未启动; Northwood军事规划峰会本周(行动:制度化准备); 279艘总通过22艘被袭since 2/28战争开始(Al Jazeera+Kpler); Polymarket: Hormuz 5月底前恢复正常概率极低",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-22",
           "est": "~35船/天 (~5%正常水平)",
@@ -189,6 +183,12 @@
           "est": "3-5 ships/day",
           "note": "Apr 25: 3-5 ships/day vs normal 60-140; Apr 23 all 5 transits 'dark' AIS; 870 vessels trapped in Gulf; <5% of normal",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-26",
+          "est": "3-5艘/天(正常60-140)",
+          "note": "4月25日仅5艘过境; 双重封锁持续; 700+艘>10000DWT货船滞留波斯湾; AIS信号全暗",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-22",
-          "est": "~0.59 mbd净提取 (EIA 4/22新周度数据今日发布待确认)",
-          "note": "EIA 4/22(今日周二)应发布新weekly数据(截至4/17详细待确认); 上期EIA 4/15(截至4/10): SPR~409.2M bbl(-4.1M w/w≈0.59mbd释放加速); 172M/120天目标1.4mbd实际0.59mbd仍滞后; SPR 409M为1980s以来最低; 第二批8.48M bbl已贷出(Gunvor/Phillips66/Trafigura/Macquarie 4/10); 第三批30M bbl sweet crude solicitation处理中(West Hackberry); AAA全国汽油均价USD4.10(4/15)(年初至今+49%!); 战争累计家庭支出~USD92/户(Pielke/AEI估); Brent ~USD97.91(4/22) WTI ~USD89.33(4/22); 停火延期但blockade继续=供应压力持续=释放压力维持高位",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-22",
           "est": "~1.4M桶/天",
@@ -282,6 +276,12 @@
           "est": "~1.4M bbl/day",
           "note": "172M bbl IEA emergency exchange over ~120 days from late March; 45.2M initial contracts awarded; DOE soliciting additional 30M bbl Apr 9",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-26",
+          "est": "~143万桶/天(172M桶/120天)",
+          "note": "IEA协调400M桶全球释放; 4月17日当周EIA报告显示汽油库存连续10周下降; 半量为借贷形式",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "partial",
-      "last_check": "2026-04-25",
-      "findings": "Wang Yi 26 calls + Chinese envoy shuttled region + China-Pakistan 5-point initiative + VETOED Bahrain UNSC resolution on Hormuz force; no military/economic coercion deployed; allowing Chinese ships selective transit"
+      "status": "active-diplomatic",
+      "last_check": "2026-04-26",
+      "findings": "特使翟隽持续穿梭斡旋; 王毅完成26轮电话; 中巴5点倡议; 否决联合国安理会霍尔木兹护航决议; 传MANPADs转运指控遭否认; 无海军实质行动"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "active",
-      "last_check": "2026-04-25",
-      "findings": "High contradiction: declared naval blockade Apr 12 + simultaneously extended ceasefire + Witkoff/Kushner to Pakistan; Trump claims Iran agreed uranium handover but Iran denies; 'clearing' strait statement Apr 11 vs blockade Apr 12"
+      "last_check": "2026-04-26",
+      "findings": "特朗普宣布护航但海军承认无力; 双重封锁维持; 特朗普社媒发帖干扰谈判(CNN); 停火延长同时军事选项在桌上; Witkoff+库什纳本周末赴巴谈判"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging",
-      "last_check": "2026-04-25",
-      "findings": "Ceasefire extended by Trump; Iran's 10-point vs US 15-point active negotiations; Iran FM Araghchi in Pakistan Apr 25 but Iran denying any US meeting; no UNSC framework (China/Russia vetoed); enrichment/missiles remain core sticking points"
+      "status": "active-fragile",
+      "last_check": "2026-04-26",
+      "findings": "停火4月8日生效、4月21日延长; 伊朗10点计划作为框架; IRGC拒绝落实外长阿拉格奇宣布的开放海峡; 内部分裂: 文官谈判派vs IRGC强硬派; 特朗普给出3-5天窗口"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching",
-      "last_check": "2026-04-25",
-      "findings": "Day 56: 60-day War Powers clock nearly expired; 13 US KIA/400 wounded; gas .06/gal (+); $30B war cost; 5 Senate War Powers votes killed; Collins/Curtis signal 60-day threshold; $200B additional funding request"
+      "status": "approaching-critical",
+      "last_check": "2026-04-26",
+      "findings": "战争授权法5月1日截止; 油价.16/加仑(同比+29.5%); 美军13死381+伤; 参议院第四次否决战争授权决议; 共和党内Curtis/Collins松动; 国会尚未举行任何公开听证"
     }
   },
   "noise_filter": {
