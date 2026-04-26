@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 87,
+  "version": 88,
   "updated": "2026-03-28T11:26:55.508001+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -1071,7 +1071,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.25,
+      "probability": 0.18,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1096,14 +1096,19 @@
           "pipeline": "v3.1"
         },
         "Apr 3: Zarif proposes nuclear+Hormuz-for-sanctions. Iran-Oman protocol. VOO +1.5%. Still distant.",
-        "[2026-04-04] WSJ/DW: ceasefire efforts reached DEAD END; Bushehr perimeter struck; Mahshahr petrochemical struck; Iran rejects 48hr ceasefire; Iran conditions: Lebanon must be included = probability DOWN. (cred:0.85)"
+        "[2026-04-04] WSJ/DW: ceasefire efforts reached DEAD END; Bushehr perimeter struck; Mahshahr petrochemical struck; Iran rejects 48hr ceasefire; Iran conditions: Lebanon must be included = probability DOWN. (cred:0.85)",
+        {
+          "date": "2026-04-27",
+          "text": "fp3 stalled: 谈判Apr25彻底破裂(伊朗外长离巴、美取消Witkoff/Kushner访问)；IRGC与文职谈判团队内部公开撕裂；Trump 4月22日给伊朗3-5天期限今日到期；双重封锁持续",
+          "pipeline": "v3.1"
+        }
       ],
       "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-28T11:26:55.508001+00:00",
+      "last_updated": "2026-04-27T00:00:00Z",
       "created": "2026-03-06T14:31:59.393633Z"
     },
     "turkey_intervention": {
@@ -4050,7 +4055,7 @@
     }
   ],
   "last_updated": "2026-04-04T15:28:50.167693+00:00",
-  "updated_at": "2026-04-04T15:28:50.167693+00:00",
+  "updated_at": "2026-04-26T22:05:29.547176Z",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
