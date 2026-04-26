@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-26T06:02:06.647834+00:00",
+  "last_updated": "2026-04-26T10:02:21.104534+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,54 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-23",
-          "est": "~0/day (停火延期D17, 无限期)",
-          "note": "停火4/21 Trump无限期延期; 但给伊3-5天谈判期限(4/22→deadline 4/25-27); IRGC对美军直接攻击=0; 4/19 IRGC向印度油轮开火(Sanmar Herald+Jag Arnav); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~0/day (停火延期D3, blockade D16)",
-          "note": "停火D17(4/7起)无限期延期(Trump 4/21 at Pakistan请求); blockade D16继续; CENTCOM暂停对伊空袭; IRGC对美军直接攻击=0; 但IRGC 4/23向利比里亚旗货船开火(gunboat)(行动:今日新事件,Brent反弹); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字→真实值更高); 谈判: Iran 3-5天期限(4/22→deadline 4/25-27); WPR 5/1=8天; Houthis独立恢复Red Sea攻击(独立能力节点); IRGC/真主党/胡塞各为独立能力节点",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~1次/day",
-          "note": "停火延续Apr21；IRGC Apr23仍攻击利比里亚籍船只，停火执行不完整",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~1次/day (停火延期D20, IRGC商船执法持续)",
-          "note": "停火无限期延期(Trump 4/21 at Pakistan请求); blockade D17继续; CENTCOM暂停对伊空袭; IRGC对美军直接攻击=0; 但IRGC 4/23向利比里亚旗货船开火(gunboat)(行动:停火期间再升级); Trump 4/23命令海军摧毁任何布雷伊朗船只(行动:规则升级,新规则!); 13 KIA+428 WIA(官方,Pentagon 4/22被曝删除伤亡数字→真实更高); 谈判deadline 4/25-27; WPR 5/1=7天; Houthis独立恢复Red Sea攻击; IRGC/真主党/胡塞各为独立能力节点",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~0/day",
-          "note": "Ceasefire since Apr 8, extended Apr 21; pre-ceasefire peaked at ~0.5 attacks/day on merchants; ballistic missiles degraded 90%; Trump ordered Navy destroy mine-laying boats Apr 23",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~0 (ceasefire)",
-          "note": "Ceasefire extended Apr 22 by Trump (+3-5 days); 3-5 day window expires ~Apr 25-27; during active phase (Mar) Iran launched 89 waves/24h",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~1-2次/周",
-          "note": "停火期间(4/8起)IRGC袭击显著下降；战前5周累计21次商船攻击≈4次/周；4/22-23美拦截M/T Majestic X，IRGC扣押行为零星延续",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~0-1次/day",
-          "note": "停火延期D18(4/8起,Trump 4/21无限期延期at巴方请求); IRGC对美军直接攻击=0; 但IRGC 4/23向利比里亚旗货船开火(action); 4/24 Witkoff/Kushner飞往巴基斯坦参加Round2谈判; Trump命令海军摧毁布雷船只(规则升级4/23); 弹道导弹能力被CENTCOM评估削减90%; 胡塞Red Sea独立恢复攻击(独立能力节点)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-25",
           "est": "0.5次/天(停火期)",
@@ -93,6 +45,12 @@
           "est": "~0次/天(停火中)",
           "note": "4月7日停火，4月22日IRGC三连打为最后动能事件，停火已延长至月底",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-26",
+          "est": "~3次/周(停火期)",
+          "note": "停火自4月8日起，4月21日延长；峰值期3月1日62波/24小时，当前停火期IRGC主动袭击频率骤降至约3次/周，但双方均有零星违规",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,54 +64,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-23",
-          "est": "~35船/天 (~5%正常水平)",
-          "note": "伊朗4/18宣布海峡关闭(回应美拒解除blockade); 4/17短暂开放13艘油轮通过后反转; 870艘船只滞留波斯湾; 停火延期后未见明显恢复; Brent ~98$/bbl; 美封锁持续",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~3艘/天 (~3%正常水平)",
-          "note": "blockade D16; 通行量~3艘/天(减97%+vs战前135艘/天); 870+船只滞留波斯湾; IRGC 4/23向利比里亚旗货船开火(Brent反弹.38); 停火延期但blockade继续=海峡实质关闭; 保险拒覆盖(开火+扣船风险); Maersk/IMO继续观望; Paris 49国escort框架就位但未启动; 战争开始279艘总过境22艘被袭(Al Jazeera+Kpler)",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~3艘/day",
-          "note": "海峡Apr18二度关闭；870艘船滞留海湾；Apr20仅3艘通行",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~3艘/day (~3%正常水平, 870艘滞留)",
-          "note": "blockade D17; Iran 4/18二度宣布关闭海峡(回应美拒解除blockade); 870艘船滞留波斯湾; IRGC 4/23向利比里亚旗货船开火(行动:再升级); Trump 4/23命令海军摧毁布雷伊朗船只(行动:战术规则升级); 停火延期但blockade继续=Catch-22海峡实质关闭; 保险拒覆盖(开火+扣船风险); 战争开始279艘总过境22艘被袭(Al Jazeera+Kpler); Paris 49国escort框架就位但未启动",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~3-10/day",
-          "note": "Apr 20 hit 3 vessels (historic low); Iran reopened Apr 17 (13 tankers through) then closed again Apr 18; 870 vessels stranded in Gulf; baseline was 138/day",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "3/day",
-          "note": "Apr 20 low: 3 vessels (lowest since blockade began); Apr 14: 14 transits; 870 ships stranded in Gulf; pre-war baseline 138/day; shadow fleet >80% of transits",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~5-10艘/日(正常138/日的~5%)",
-          "note": "4/20最低降至3艘；4/21约12艘；4/22约8艘含3艘油轮；4/18伊朗宣布再次封锁霍尔木兹，870艘船滞留波斯湾",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~3艘/day",
-          "note": "双重封锁D19继续(美封锁伊港+伊封锁海峡); 4/20低至3艘(历史最低); 870艘>10000DWT滞留波斯湾; 正常138艘/天,当前~2%水平; 279艘总过境22艘被袭(since 2/28); China/Russia/India优先过境但数量极少; 伊朗称'海峡完全开放'与实际3艘/day严重背离",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-25",
           "est": "~5%正常水平(3艘/24h)",
@@ -189,6 +99,12 @@
           "est": "3-5艘/天(正常60-140)",
           "note": "4月23日仅5艘通过，均走北线走廊，AIS全暗，500-700艘船滞留波斯湾",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-26",
+          "est": "3-5艘/天",
+          "note": "战前均值约130艘/天；4月20日仅3艘(最低点)，4月23日5艘全部走北部通道且AIS全关闭；约500-700艘>10000吨船只滞留波斯湾；美伊双重封锁自4月13日起",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,54 +115,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-23",
-          "est": "~1.4M桶/天 (第二批8.48M已交付)",
-          "note": "DOE第二批: Gunvor/Phillips66/Trafigura/Macquarie共8.48M桶(4/10); DOE另发RFP征集30M桶(4/9); 172M总计划120天=1.43M/天; IEA协调释放400M桶全球",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~1.4M桶/天",
-          "note": "DOE 172M/120天=1.43M/天计划; EIA 4/22新周报(截至4/17)已发布; 上期SPR~409.2M bbl(-4.1M w/w≈0.59mbd); 第三批30M bbl RFP处理中(West Hackberry 4/9); IEA协调400M全球总释放; Brent .38高位=释放加速压力持续; 汽油全国均价.11-4.16(+30% YoY); gasoline futures +61% YoY",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~1.4M bbl/day",
-          "note": "172M桶IEA协调释放约1.4M bbl/day；汽油库存连降10周，-4.6M桶/周",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-23",
-          "est": "~1.4M bbl/day (第三批30M bbl RFP处理中)",
-          "note": "EIA 4/22新周报(截至4/17)发布; 汽油库存连降10周-4.6M桶/周; 汽油全国均价$4.178/加仑(+29.5% YoY); 第三批30M bbl sweet crude RFP处理中(West Hackberry 4/9); 172M/120天计划=1.43M/天; Brent ~$103反弹=释放加速压力持续; SPR~409M为1980s以来最低; IEA协调400M全球总释放; gasoline futures +61% YoY",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~1.43M bbl/day",
-          "note": "172M barrel IEA coordinated release over 120 days; first 45.2M bbl exchange contracts awarded Mar 20; SPR at ~415M bbl (58% capacity); exchange/loan structure",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~1.4M bbl/day",
-          "note": "172M bbl IEA exchange plan over 120 days; first batch 45.2M (Mar 20); second batch 8.5M (Apr 10); EIA weekly report Apr 17 released Apr 22; 30M bbl solicitation Apr 9",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~143万桶/日",
-          "note": "美国172M桶/120天计划(IEA协调400M桶)；3/20首批合同45.2M桶；DOE称半数以贷款形式；初始SPR库存415.4M桶",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-04-24",
-          "est": "~1.4M bbl/day",
-          "note": "172M/120天IEA协调计划=1.43M/day目标; EIA周报4/22(截至4/17): SPR~409.2M bbl; 第二批8.48M(4/10交付); 第三批30M sweet crude RFP处理中(West Hackberry 4/9); 汽油全国均价$4.178/加仑(+29.5% YoY,4/20周); SPR为1980s以来最低; 释放vs汽油库存连降10周压力持续",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-25",
           "est": "~1.4Mb/天",
@@ -282,6 +150,12 @@
           "est": "~1.4M桶/天",
           "note": "IEA协调美国释放1.72亿桶/120天，已启动4520万桶交换，周报截至4月17日",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-26",
+          "est": "~143万桶/天",
+          "note": "IEA协调释放：美国172M桶/120天=约143万桶/天；初始合同3月20日生效，涉及BryanMound/WestHackberry/BayouChoctaw；总储量415M桶(容量58%)",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +164,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active",
+      "status": "ACTIVE-外交密集",
       "last_check": "2026-04-26",
-      "findings": "王毅26次通话，翟隽中东穿梭外交；中巴3月31日联合五点倡议；但4月19日美扣押伊朗船疑携中国军民两用品，CNN报道中国拟经第三国供MANPADs"
+      "findings": "翟隽特使从3月初起在中东持续穿梭；王毅完成26通电话；3月31日中巴联合5点倡议提出；4月7日中俄在安理会否决巴林护航提案；但美方明确不欢迎中国调停，伊朗船只MV Touska 4月19日被美扣押（装载来自中国的两用设备）"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "active",
+      "status": "HIGH-矛盾并存",
       "last_check": "2026-04-26",
-      "findings": "特朗普4月20日起通过社媒泄露谈判细节损害进程；同时延长停火并派两名特使赴巴基斯坦；伊朗外交部否认有任何谈判计划，矛盾明显"
+      "findings": "同步出现：(1)军事加码：美驱逐舰4月11日首次进入海峡，4月13日起双重封锁伊朗港口，A-10/Apache部署 (2)外交松动：4月8日停火，4月21日特朗普延长停火，本周末派两名特使赴伊斯兰堡谈判；CNN报道'协议已近'但特朗普社媒发帖搅局"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "weak",
+      "status": "ACTIVE-谈判进行中",
       "last_check": "2026-04-26",
-      "findings": "伊朗10点/美国15点方案并存；核心分歧：零浓缩vs浓缩权、制裁解除、霍尔木兹管控；伊朗IRGC与文官谈判代表内部断裂，最高领袖无响应"
+      "findings": "伊朗10点方案 vs 美国15点方案，4月8日巴基斯坦斡旋停火；核心分歧：铀浓缩权/海峡控制权/制裁解除；4月21日特朗普再延停火但维持封锁；伊朗声称不在威胁下谈判；第二轮伊斯兰堡谈判预期本周末进行；战争授权法5月1日到期"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "elevated",
+      "status": "APPROACHING-阈值临近",
       "last_check": "2026-04-26",
-      "findings": "5月1日战争权力法60天截止日(5天后)；美死亡15人/伤520+；油价.18/加仑+29.5% YoY；参议院第四次封锁WPR决议(47-52)；共和党内部压力上升"
+      "findings": "美军阵亡15人；战费已达~300亿美元；油价.06/加仑(上涨逾)；60%美国人反对战争；战争权力法案60天期限5月1日到期；众议院民主党持续提出战争授权限制动议；参众两院预计下周继续施压"
     }
   },
   "noise_filter": {
