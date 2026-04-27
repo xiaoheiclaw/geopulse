@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-27T02:02:25.420835+00:00",
+  "last_updated": "2026-04-27T06:03:16.232770+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -62,6 +62,12 @@
           "date": "2026-04-27",
           "est": "~0.3/day",
           "note": "停火D19延长期; 停火Apr8生效4月21日延长; IRGC导弹攻击近零, 零星商船骚扰; Trump Apr25取消Witkoff/Kushner巴基斯坦之行; 战争授权法60天期限May1将至",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-27",
+          "est": "ceasefire-low (~0/day now; peak was 60+波次/天 active phase)",
+          "note": "War entered ceasefire Apr 8, extended Apr 21 (no end date). During active phase Feb28-Apr8: up to 62 attack waves/24h against Israel. IRGC/Hezbollah/Houthi have independent capability nodes.",
           "source": "pipeline"
         }
       ]
@@ -129,6 +135,12 @@
           "est": "~5/day(3.6%正常)",
           "note": "Apr20-26周估计3-7艘/天; Apr20最低3艘; Apr23共5艘全AIS暗; 870艘滞留波斯湾; 双重封锁持续(美封锁伊朗港+IRGC封锁海峡); 伊朗称停火期完全开放但IRGC不配合",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-27",
+          "est": "~5-10 ships/day (↓95% from pre-war 138/day)",
+          "note": "Apr 20: 3 vessels (lowest since blockade began). Brief surge 47 transits Apr 18 post-ceasefire. Iran charging M+/ship toll. 500-700 vessels stranded in Persian Gulf. China/Russia/India/Pakistan/Philippines flagged ships partially exempted.",
+          "source": "pipeline"
         }
       ]
     },
@@ -192,6 +204,12 @@
           "est": "~10M bbl/week",
           "note": "IEA协调172M桶/120天=1.43M桶/天; 下期EIA周报Apr29发布; 美国汽油均价.18/gallon(+29.5% YoY); 第三批30M甜原油RFP处理中",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-27",
+          "est": "~375k bbl/day release rate (172M bbl over ~120 days)",
+          "note": "DOE delivering 172M bbl SPR release as part of IEA 400M bbl plan. First 45M bbl contracts awarded, deliveries started. SPR was 415.4M bbl as of Feb 13 (58% capacity). EIA weekly report week-ending Apr 17 released Apr 22; next Apr 29.",
+          "source": "pipeline"
         }
       ]
     }
@@ -200,30 +218,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "diplomatic_active",
+      "status": "ACTIVE-diplomatic+material",
       "last_check": "2026-04-27",
-      "findings": "王毅26轮电话; 翟隽特使穿梭; 中巴五点倡议3/31; Apr7中俄联合否决UNSC护航决议; Apr19美军扣押MV Touska(伊朗集装箱船从中国返程,载双用途设备); CNN报道中国准备向伊提供MANPADs(中国否认); 无军事介入信号"
+      "findings": "Wang Yi 26电话+特使翟隽巡回斡旋; 中巴五点方案Mar31; 4月7日联合俄罗斯否决UNSC护航决议; CNN报道中方准备经第三国向伊输送MANPAD(北京否认); 4月19日美军在阿曼湾扣押从中国返航的伊朗集装箱船MV Touska"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "active_contradiction",
+      "status": "ACTIVE-contradictory",
       "last_check": "2026-04-27",
-      "findings": "Trump Apr25取消Witkoff/Kushner巴基斯坦行程; '伊朗给了很多但不够'; Vance待命; 停火+封锁同时并行; Trump社媒发布未谈妥条款被伊方否认; 谈判者vs IRGC将领内部公开分裂"
+      "findings": "特朗普宣布护航'尽快'但海军告知业界'数周内无能力'; 停火已延长但声称给伊朗'3-5天'; 封锁维持(Trump:'无最终协议不开strait'); NATO盟友全部拒绝护航邀请; 封锁vs谈判双重矛盾信号并行"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging_fragile",
+      "status": "PARTIAL-stalled",
       "last_check": "2026-04-27",
-      "findings": "Apr8停火/Apr21延长; 伊朗10点vs美国15点两套方案; 伊朗内部IRGC vs 文职谈判者公开分裂无最高领导核心拍板; War Powers 60天期限May1迫近; 中巴五点方案等多轨并行; 伊方声称'海峡完全开放'但AIS数据不支持"
+      "findings": "UNSC通过Res 2817(13-0-2)谴责伊朗攻击邻国; 停火Apr 8生效、Apr 21延期(无截止日); 美15点/伊10点/中巴5点三套方案并存; 伊朗要求先解封再谈、美方拒绝; JD Vance巴基斯坦行程取消; 伊谈判代表拒绝出席第二轮"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching_threshold",
+      "status": "RISING-approaching-threshold",
       "last_check": "2026-04-27",
-      "findings": "War Powers 60天期限May1: 参院第5次否决WPR但Rand Paul单票共和党支持+Collins警告; 美军阵亡13-15人/伤428+(五角大楼被指少报); 全国汽油均价$4.18/gal(+29.5%); 伊朗死亡3400+; 国会拒绝举行公开听证会; Trump称不受时间表约束"
+      "findings": "战争权力法60天截止日: May 1 2026; 国会已发起5次WPR投票均告失败; HConRes 40提交众院; 五角大楼伤亡数字争议(官方413-428+但Intercept报道undercount数百人; 15人阵亡); 美国油价.18/加仑(YoY+30%); 战争总成本~350亿美元"
     }
   },
   "noise_filter": {
