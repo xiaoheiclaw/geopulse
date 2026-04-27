@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-27T06:03:16.232770+00:00",
+  "last_updated": "2026-04-27T10:03:25.677981+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -68,6 +68,12 @@
           "date": "2026-04-27",
           "est": "ceasefire-low (~0/day now; peak was 60+波次/天 active phase)",
           "note": "War entered ceasefire Apr 8, extended Apr 21 (no end date). During active phase Feb28-Apr8: up to 62 attack waves/24h against Israel. IRGC/Hezbollah/Houthi have independent capability nodes.",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-27",
+          "est": "~1-2次/天",
+          "note": "停火期间显著降低(高峰期90%下降已于3/5确认)；IRGC仍控制海峡、对商船执行扣押和收费行动",
           "source": "pipeline"
         }
       ]
@@ -141,6 +147,12 @@
           "est": "~5-10 ships/day (↓95% from pre-war 138/day)",
           "note": "Apr 20: 3 vessels (lowest since blockade began). Brief surge 47 transits Apr 18 post-ceasefire. Iran charging M+/ship toll. 500-700 vessels stranded in Persian Gulf. China/Russia/India/Pakistan/Philippines flagged ships partially exempted.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-27",
+          "est": "~15艘/天",
+          "note": "正常140艘/天，当前严重受限(-89%)；4/25=19艘，4/20最低=3艘；4/17伊朗宣布停火期间开放通行但实际管控严格",
+          "source": "pipeline"
         }
       ]
     },
@@ -210,6 +222,12 @@
           "est": "~375k bbl/day release rate (172M bbl over ~120 days)",
           "note": "DOE delivering 172M bbl SPR release as part of IEA 400M bbl plan. First 45M bbl contracts awarded, deliveries started. SPR was 415.4M bbl as of Feb 13 (58% capacity). EIA weekly report week-ending Apr 17 released Apr 22; next Apr 29.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-27",
+          "est": "~100万桶/天",
+          "note": "DOE/IEA协调释放172百万桶/120天≈143万桶/天；初始合同已签署4540万桶(4/9开始交付)；SPR当前库存~415亿桶",
+          "source": "pipeline"
         }
       ]
     }
@@ -218,30 +236,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "ACTIVE-diplomatic+material",
+      "status": "active",
       "last_check": "2026-04-27",
-      "findings": "Wang Yi 26电话+特使翟隽巡回斡旋; 中巴五点方案Mar31; 4月7日联合俄罗斯否决UNSC护航决议; CNN报道中方准备经第三国向伊输送MANPAD(北京否认); 4月19日美军在阿曼湾扣押从中国返航的伊朗集装箱船MV Touska"
+      "findings": "中国特使Jun Zhai持续穿梭；王毅打26通电话；中巴五点方案(3/31)；但4/7中俄否决UNSC护航决议；4/19美扣押从中国返回的MV Touska；CNN称中国拟向伊朗提供MANPADS(已否认)——外交斡旋+物质支持并行，美方不买账"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "ACTIVE-contradictory",
+      "status": "active",
       "last_check": "2026-04-27",
-      "findings": "特朗普宣布护航'尽快'但海军告知业界'数周内无能力'; 停火已延长但声称给伊朗'3-5天'; 封锁维持(Trump:'无最终协议不开strait'); NATO盟友全部拒绝护航邀请; 封锁vs谈判双重矛盾信号并行"
+      "findings": "矛盾信号明显：特朗普同时维持封锁+延期停火（无截止日期）；4/25取消伊斯兰堡谈判行程；护航计划(Operation Epic Escort)仍停留在评估阶段，海军自称无即时能力；法国Aspides护航已启动"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "PARTIAL-stalled",
+      "status": "partial",
       "last_check": "2026-04-27",
-      "findings": "UNSC通过Res 2817(13-0-2)谴责伊朗攻击邻国; 停火Apr 8生效、Apr 21延期(无截止日); 美15点/伊10点/中巴5点三套方案并存; 伊朗要求先解封再谈、美方拒绝; JD Vance巴基斯坦行程取消; 伊谈判代表拒绝出席第二轮"
+      "findings": "退出框架存在：伊朗10点方案+美15点方案已作为谈判基础；4/8双周停火签署；4/21特朗普宣布无限期延长停火；但4/25取消伊斯兰堡谈判行程=谈判实质陷入僵局；核查问题和封锁先后顺序仍是死结"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "RISING-approaching-threshold",
+      "status": "approaching",
       "last_check": "2026-04-27",
-      "findings": "战争权力法60天截止日: May 1 2026; 国会已发起5次WPR投票均告失败; HConRes 40提交众院; 五角大楼伤亡数字争议(官方413-428+但Intercept报道undercount数百人; 15人阵亡); 美国油价.18/加仑(YoY+30%); 战争总成本~350亿美元"
+      "findings": "油价：Brent~，WTI~；汽油均价.18/加仑(+29.5% YoY)；美军伤亡15死500+伤(官方低报被揭露)；国会War Powers第5次投票被否决；VIX=18.71(温和)，S&P=7165(仍强)；成本感知上升但国内政治压力尚未达临界点"
     }
   },
   "noise_filter": {
