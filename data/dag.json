@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 88,
+  "version": 89,
   "updated": "2026-03-28T11:26:55.508001+00:00",
   "nodes": {
     "us_israel_strikes": {
@@ -1071,7 +1071,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.18,
+      "probability": 0.2,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1818,7 +1818,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.82,
+      "probability": 0.84,
       "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
@@ -4054,7 +4054,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-04-04T15:28:50.167693+00:00",
+  "last_updated": "2026-04-28T10:05:11.316157+00:00",
   "updated_at": "2026-04-26T22:05:29.547176Z",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
