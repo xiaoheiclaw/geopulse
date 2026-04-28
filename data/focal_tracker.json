@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-27T22:01:58.145143+00:00",
+  "last_updated": "2026-04-28T02:01:55.223485+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -80,6 +80,12 @@
           "date": "2026-04-27",
           "est": "0-2次/天(停火期)",
           "note": "停火自4月8日起延续，4月27日伊朗提出新提案，停火期间偶发违规但大规模攻击暂停；战争高峰期曾达62波次/24小时",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-04-28",
+          "est": "~2 incidents/week",
+          "note": "停火期间(4/8起)主动攻击大幅降低，伊朗弹道导弹攻击下降90%+；IRGC仍对海峡实施选择性执法和扣押船只，4/26仅8艘通行",
           "source": "pipeline"
         }
       ]
@@ -165,6 +171,12 @@
           "est": "8-19艘/天",
           "note": "4月25日仅19艘，4月26日跌至8艘；战前均值约140艘/天，当前降幅超95%；伊朗允许中俄印等5国船只通行；美海军扫雷行动进行中",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-28",
+          "est": "8 vessels/day (Apr 26)",
+          "note": "4/25约19艘、4/26降至8艘，较战前138艘/天下降94%；500-700艘大型船只滞留波斯湾；22艘船只遭袭",
+          "source": "pipeline"
         }
       ]
     },
@@ -246,6 +258,12 @@
           "est": "约143万桶/天",
           "note": "美IEA协调释放1.72亿桶/120天，配合400M全球协调；4月17日当周汽油库存连续第10周下降460万桶",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-28",
+          "est": "~2.6M bbl/week",
+          "note": "IEA协调释放1.72亿桶，3/20首批4520万桶合同签署，再加4月追加1000万桶RFP，总速率~37.5万桶/天；最新EIA周报覆盖至4/17",
+          "source": "pipeline"
         }
       ]
     }
@@ -254,30 +272,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active",
-      "last_check": "2026-04-27",
-      "findings": "中方外交积极介入：王毅26次通话，翟俊特使近20次会谈；中巴联合5点倡议(3月31日)；中俄否决安理会船护决议(4月7日)；中国船只获伊朗选择性通行权；美方对中方调停热情不高"
+      "status": "ACTIVE",
+      "last_check": "2026-04-28",
+      "findings": "中国外交实质行动：Zhai Jun特使密集穿梭，王毅26次通话，4/7联合俄否决UNSC护航决议；CNN报道中国拟向伊朗转运MANPAD，外交部否认"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "mixed",
-      "last_check": "2026-04-27",
-      "findings": "矛盾信号：美军推进扫雷+封锁伊朗港口(双重封锁，4月13日起)，同时特朗普延长停火并4月27日召集国安团队审议伊朗新提案；核谈条件分歧悬而未决"
+      "status": "CONTRADICTED",
+      "last_check": "2026-04-28",
+      "findings": "美方信号矛盾：4/27无限期延长停火 vs 4/25取消Witkoff/Kushner巴基斯坦之行 vs 驱逐舰已进入海峡执行清除行动；Trump社媒发帖被己方官员承认损害谈判"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging",
-      "last_check": "2026-04-27",
-      "findings": "退出框架积极构建中：伊朗10点方案 vs 美国15点方案；4月8日停火达成；4月27日伊朗提新方案（先开海峡+停战，核谈延后）——绕过核武分歧加快达成协议的信号，但解除封锁将削弱美方后续核谈筹码"
+      "status": "STALLED",
+      "last_check": "2026-04-28",
+      "findings": "伊朗10点方案vs美国15点方案鸿沟未弥合；4/27伊朗新提案(仅重开海峡+推迟核谈)，Trump倾向拒绝；巴基斯坦谈判场地已撤离安保，短期恢复无望"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "elevated",
-      "last_check": "2026-04-27",
-      "findings": "成本阈值上升：战争授权法5月1日60天截止，参院5次否决战权决议；美方伤亡15+阵亡520+负伤；全美均价.09-4.18/加仑(同比+30%)；部分共和党参议员(Collins/Curtis)明示越线"
+      "status": "CRITICAL",
+      "last_check": "2026-04-28",
+      "findings": "《战争权力法》May 1截止期3天后到来；参议院第5次否决战争权力决议(46-51,4/23)；13名美军阵亡+400+伤；汽油均价.18/加仑(同比+29.5%)"
     }
   },
   "noise_filter": {
