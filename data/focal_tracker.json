@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-29T02:03:19.295570+00:00",
+  "last_updated": "2026-04-29T06:03:20.248349+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-25",
-          "est": "1-2/day",
-          "note": "IRGC enforcing strait closure: vessel seizures + mine-laying ongoing; strait functionally closed",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-26",
           "est": "0-2次/天",
@@ -93,6 +87,12 @@
           "est": "~0.5次/天",
           "note": "停火D22; 4/18 IRGC攻击4+商船+海峡停摆, 4/22伊朗扣押船只, 4/24 CENTCOM拦截伊朗油轮; 美/以空袭'无显著动作'(late Apr); IRGC对美军直接攻击近零; 主要为海上选择性执法",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-29",
+          "est": "0-1 attacks/day",
+          "note": "ceasefire extended indefinitely 4/21 holding; last kinetic IRGC strike was 4/18 vessel attacks in Hormuz; blockade-related vessel redirects (37 since start, 4/24 tanker intercept) ongoing but US-side, not IRGC kinetic",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-25",
-          "est": "3-5 ships/day",
-          "note": "Apr 25: 3-5 ships/day vs normal 60-140; Apr 23 all 5 transits 'dark' AIS; 870 vessels trapped in Gulf; <5% of normal",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-26",
           "est": "3-5艘/天(正常60-140)",
@@ -189,6 +183,12 @@
           "est": "8艘/天(4/26 AIS可见)",
           "note": "Windward 4/26=8艘(4进/4出,0暗); 4/20-25 trickle 3-7艘; 4/18短暂回升至47艘; 战前~138艘/天, 当前-94%; 500-700艘滞留波斯湾; 美国4/13起反封锁伊朗港口",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-29",
+          "est": "5-8 ships/day",
+          "note": "95% below pre-crisis norm of 138/day; 4/20 trough at 3 vessels, 4/26 recovered to 8 (4 in/4 out); 4/20-25 trickle 3-7/day, mostly sanctioned tankers + vetted bulkers",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-25",
-          "est": "~1.4M bbl/day",
-          "note": "172M bbl IEA emergency exchange over ~120 days from late March; 45.2M initial contracts awarded; DOE soliciting additional 30M bbl Apr 9",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-26",
           "est": "~143万桶/天(172M桶/120天)",
@@ -282,6 +276,12 @@
           "est": "~4M+ bbl/week",
           "note": "EIA: 近2周周提取超4M桶; SPR库存409.2-413.3M桶(多十年低位); 4/10第二批8.48M桶贷款已发(Gunvor/Phillips66/Trafigura/Macquarie); 计划172M/120天=1.43M/d; 实际低于计划",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-29",
+          "est": "~4 Mbbl/week",
+          "note": "DOE 4/10 loaned 8.48 Mbbl (second batch); weekly withdrawals >4 Mbbl over past two weeks; SPR ~409-413 Mbbl near multi-decade low; next EIA WPSR 4/29",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "soft_detected",
+      "status": "detected",
       "last_check": "2026-04-29",
-      "findings": "中国持续外交姿态: Zhai Jun特使会晤近24场关键方; Wang Yi 26次电话外交; 3/31中巴5点提案(含开海峡); 4/7中俄UNSC共同否决巴林提'海峡护航案' (国际法层面阻断美护航); 4/19美在阿曼湾截获MV Touska(中国返航); 仍未派军舰未派武装人员, 走外交+UNSC否决路线, 实质动作未到位"
+      "findings": "China-Pakistan 5-point plan (3/31, incl. ceasefire+Hormuz reopen); Wang Yi 26 calls + envoy Zhai Jun ~24 meetings; China+Russia VETOED Bahrain UNSC ship-escort resolution 4/7 (kinetic political block); Pakistan now structural mediator of US-Iran talks (China-aligned proxy). Upgrading from soft_detected: veto is action, not rhetoric."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "detected",
       "last_check": "2026-04-29",
-      "findings": "Trump 4/28告幕僚不满意伊朗新提案; Rubio Fox说'比预期好'; Trump公开称'还有所有筹码'但Bloomberg称'很快回应'; 4/25取消Witkoff/Kushner访巴('太多旅行浪费时间'); 4/13起海军对伊朗港口反封锁; 4/23 Trump令海军摧毁布雷伊朗船; 同时停火延长(Apr21) + 战和并行信号矛盾, War Powers 60天周末到期"
+      "findings": "Contradiction sustained: ceasefire indef-extended 4/21 + 31st MEU deployed + destroyers transit Hormuz + 4/11 mine-clearing + ongoing port blockade (37 redirects) + 4/27 Trump 'not satisfied' with Iran 10-point + cancelled Kushner/Witkoff Pakistan trip. Negotiate-while-escort-while-blockade pattern intact."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "partial",
       "last_check": "2026-04-29",
-      "findings": "停火框架存活: 4/8两周条件停火→4/21无限期延长(Trump,巴基斯坦斡旋); 美15点(含核+导弹+海峡+代理)vs伊朗10点(地区+解制裁+重建+开海峡); 4/27-28伊朗新提议:开海峡换美解封锁+停火+核谈延后; Trump不满核问题缺失,伊朗坚持保留对海峡部分控制(美不可能接受); 框架活着但卡在核问题"
+      "findings": "Multiple frameworks active but stalemated: Iran 10-point (Trump called 'workable basis') + US 15-point + China-Pakistan 5-point; 4/8 two-week ceasefire→4/21 indef extension; 4/27 Iran offers Hormuz-reopen-for-blockade-lift, defer nuclear; NPR 4/28: 'deadlock over nuclear+Hormuz cripples peace efforts'. Frameworks exist but no exit; not via UNSC."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-29",
-      "findings": "成本阈值临界: 13 US KIA + 5000+地区平民死亡(显著上修); 全国汽油超/gal(战前)+至4/1全美累计成本.1B/92每户; War Powers 60天周末(May 1)到期; 参议院第5次War Powers投票52-47否决; 共和党正为战争账单做斗争准备; 众议院前次213-214仅1票之差未推翻; Bloomberg警告高油价将冲击2026中期选举"
+      "findings": "Gas .18/gal natl avg today (4/29) vs .02 on 4/22 — direction up; CA .83, OK .38; war ~B by 8wks at $1B/day; 13+ US KIA reported late March; War Powers 60-day deadline May 1 (T-2 days) is the imminent kinetic political trigger. Threshold not breached yet but May 1 vote could flip to triggered."
     }
   },
   "noise_filter": {
