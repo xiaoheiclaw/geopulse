@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-29T06:03:20.248349+00:00",
+  "last_updated": "2026-04-29T10:02:00.673634+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-26",
-          "est": "0-2次/天",
-          "note": "停火期内IRGC大规模攻击暂停; 停火4月8日达成、4月21日延长; 战前攻击已下降90%(CENTCOM)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-26",
           "est": "~0次/天(停火中)",
@@ -93,6 +87,12 @@
           "est": "0-1 attacks/day",
           "note": "ceasefire extended indefinitely 4/21 holding; last kinetic IRGC strike was 4/18 vessel attacks in Hormuz; blockade-related vessel redirects (37 since start, 4/24 tanker intercept) ongoing but US-side, not IRGC kinetic",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-29",
+          "est": "~0.5次/天",
+          "note": "停火D22; 4/26-29 IRGC对美直接攻击近零, 4/24 CENTCOM拦截伊朗集装箱船+37艘船redirect, 4/26-28 IRGC仍扣押MSC Francesca/Epaminondas; Araghchi 4/26赴Islamabad谈'海峡新法律体制'+战争赔偿+不再被攻击保证, 但未提核; ceasefire indef extended 4/21仍holding",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-26",
-          "est": "3-5艘/天(正常60-140)",
-          "note": "4月25日仅5艘过境; 双重封锁持续; 700+艘>10000DWT货船滞留波斯湾; AIS信号全暗",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-26",
           "est": "3-5艘/天(正常60-140)",
@@ -189,6 +183,12 @@
           "est": "5-8 ships/day",
           "note": "95% below pre-crisis norm of 138/day; 4/20 trough at 3 vessels, 4/26 recovered to 8 (4 in/4 out); 4/20-25 trickle 3-7/day, mostly sanctioned tankers + vetted bulkers",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-29",
+          "est": "13艘/天(4/28 AIS)",
+          "note": "Windward: 4/28=13艘(10出/3进, 1暗AIS); 4/27=13艘; 4/26=8艘; -91% vs 战前138/天; Gulf船只总数896, 暗行111; Iran指美方'从一开始就违反停火' (港口封锁+Iranian货船被扣)",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-26",
-          "est": "~143万桶/天(172M桶/120天)",
-          "note": "IEA协调400M桶全球释放; 4月17日当周EIA报告显示汽油库存连续10周下降; 半量为借贷形式",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-26",
           "est": "~1.4M桶/天",
@@ -282,6 +276,12 @@
           "est": "~4 Mbbl/week",
           "note": "DOE 4/10 loaned 8.48 Mbbl (second batch); weekly withdrawals >4 Mbbl over past two weeks; SPR ~409-413 Mbbl near multi-decade low; next EIA WPSR 4/29",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-04-29",
+          "est": "~4M+ bbl/week",
+          "note": "近2周周提取>4M桶 (Apr 24 BOE报道); SPR 409.2M桶(4/10) -44% vs 2009峰; 计划速率1.43M/d (172M/120d); 实际低于计划; 下一WPSR今日4/29 ~10:30 ET发布",
+          "source": "pipeline"
         }
       ]
     }
@@ -292,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "detected",
       "last_check": "2026-04-29",
-      "findings": "China-Pakistan 5-point plan (3/31, incl. ceasefire+Hormuz reopen); Wang Yi 26 calls + envoy Zhai Jun ~24 meetings; China+Russia VETOED Bahrain UNSC ship-escort resolution 4/7 (kinetic political block); Pakistan now structural mediator of US-Iran talks (China-aligned proxy). Upgrading from soft_detected: veto is action, not rhetoric."
+      "findings": "Wang Yi公开呼吁伊朗确保海峡通行自由(SCMP); 中国-巴基斯坦5点计划+Hormuz安全通行条款持续发酵; 4/26 Araghchi赴Islamabad谈'海峡新法律体制', 巴方为US-Iran结构性调停人(中国代理); 中俄UNSC vetoed Bahrain ship-escort resolution 4/7仍是kinetic political block; 行动级未升级但结构在固化"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "detected",
       "last_check": "2026-04-29",
-      "findings": "Contradiction sustained: ceasefire indef-extended 4/21 + 31st MEU deployed + destroyers transit Hormuz + 4/11 mine-clearing + ongoing port blockade (37 redirects) + 4/27 Trump 'not satisfied' with Iran 10-point + cancelled Kushner/Witkoff Pakistan trip. Negotiate-while-escort-while-blockade pattern intact."
+      "findings": "矛盾持续强化: Trump 4/27与国安团队评估Iran提案+表态'not satisfied'+取消Kushner/Witkoff Pakistan行程, 但 31st MEU仍部署+Hormuz扫雷+港口封锁(37艘redirect)未停; UN也呼吁开海峡; '边谈边打边封'三轨并行未变, 提案被退回等待修订版"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "partial",
       "last_check": "2026-04-29",
-      "findings": "Multiple frameworks active but stalemated: Iran 10-point (Trump called 'workable basis') + US 15-point + China-Pakistan 5-point; 4/8 two-week ceasefire→4/21 indef extension; 4/27 Iran offers Hormuz-reopen-for-blockade-lift, defer nuclear; NPR 4/28: 'deadlock over nuclear+Hormuz cripples peace efforts'. Frameworks exist but no exit; not via UNSC."
+      "findings": "修订版Iran提案待Pakistan斡旋方接收(下周到达预期); Trump明示不接受当前版本, 海峡换核延后路径仍是核心议题但US拒绝; 多框架并行(Iran 10点+US 15点+China-Pakistan 5点)stalemated; UNSC路径仍冻结(2817决议谴责Iran); face-saving材料齐备但'出口'未现"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-04-29",
-      "findings": "Gas .18/gal natl avg today (4/29) vs .02 on 4/22 — direction up; CA .83, OK .38; war ~B by 8wks at $1B/day; 13+ US KIA reported late March; War Powers 60-day deadline May 1 (T-2 days) is the imminent kinetic political trigger. Threshold not breached yet but May 1 vote could flip to triggered."
+      "findings": "War Powers 60天 May 1 T-2天(今日4/29); Aljazeera: 战时start油价.98/gal→现.12/gal(+38%); Time 4/28: Democrats探索若Congress不授权将sue Trump 'illegal' war; 国会分歧deep, 简单多数joint resolution通过不确定; 13+ KIA late March; cost threshold未breached但5/1投票可flip至triggered"
     }
   },
   "noise_filter": {
