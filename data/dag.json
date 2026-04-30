@@ -1113,9 +1113,11 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-04-30T00:00:00Z",
+      "last_updated": "2026-04-30T10:03:48.084961+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
-      "updated_at": "2026-04-30T02:03:32.524979+00:00"
+      "updated_at": "2026-04-30T02:03:32.524979+00:00",
+      "p": 0.38,
+      "update_note": "fp4 at-threshold (House War Powers 1-vote margin); Iran proposal Rubio: better; ceasefire extended Apr21"
     },
     "turkey_intervention": {
       "id": "turkey_intervention",
@@ -1843,8 +1845,10 @@
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-13T22:42:03.988336+00:00",
-      "created": "2026-03-13T22:42:03.988336+00:00"
+      "last_updated": "2026-04-30T10:03:48.084961+00:00",
+      "created": "2026-03-13T22:42:03.988336+00:00",
+      "p": 0.93,
+      "update_note": "House War Powers failed by 1 vote; gas $4.26/gal +30% YoY; 15 KIA/400+ WIA; war cost $25B"
     },
     "us_coercive_escalation_ladder": {
       "id": "us_coercive_escalation_ladder",
