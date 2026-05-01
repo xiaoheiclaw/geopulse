@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 90,
-  "updated": "2026-03-28T11:26:55.508001+00:00",
+  "version": 91,
+  "updated": "2026-05-01T10:04:21.642940+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -966,7 +966,7 @@
         "政治",
         "金融"
       ],
-      "probability": 0.93,
+      "probability": 0.96,
       "confidence": 0.8,
       "evidence": [
         "NYT 2026-03-11: Military investigation determined US responsible for deadly strike on Iranian elementary school",
@@ -978,7 +978,7 @@
         "[2026-03-14] (cred:0.77) Day 15: Oil at +, no ceasefire, entering 3rd week. Consumer/political pressure accumulating. Up from 0.88. — CENTCOM/NBC/NYT/Goldman/MarketData",
         "Apr 3: quadruple convergence — F-15E loss, 4.08 gas, War Powers mid-April, 15 KIA."
       ],
-      "reasoning": "Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13.",
+      "reasoning": "Day 14: Senate chairman planning first public oversight hearing; Pentagon admits underestimating Hormuz risk (against-interest); US deaths at 13. | [2026-05-01] v3.1: Gas .30/gal national avg (+27c/week, fastest since Ukraine invasion). LA: /gal. War cost -50B actual. Congress War Powers deadline 5/1.",
       "time_horizon": "W4-12",
       "pinned": true,
       "time_phases": [],
@@ -1071,7 +1071,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.3,
+      "probability": 0.45,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1106,9 +1106,14 @@
           "date": "2026-04-30",
           "text": "Day 62: 4/27 Iran Hormuz换核延期新提案(Axios) = 更清晰体面分离框架, 经济(海峡)与战略(核)解耦让双方都能宣称胜利; Trump+NSC 4/27讨论中; War Powers 60天deadline今日到期(法律约束); B战费+15美军阵亡+汽油.06+共和党国会撕裂; 但4/25 Trump取消Kushner赴巴+军事/外交双轨割裂. fp3: emerging→strengthening; fp4: triggered. 物理层Q2 trickle回升至13/d. p=0.20→0.30",
           "pipeline": "v3.1"
+        },
+        {
+          "date": "2026-05-01",
+          "text": "4/8 Pakistan-brokered ceasefire in force (fragile, violated), multiple frameworks active. fp3=fragile-active.",
+          "pipeline": "v3.1"
         }
       ],
-      "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely.",
+      "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely. | [2026-05-01] v3.1 update: 4/8 ceasefire achieved(Pakistan-mediated)+extended, both sides claiming violations. Iran 4/28 proposal(reopen Hormuz skip nuclear deal) Trump unlikely to accept. Partial ceasefire IS in place. fp3=fragile-active.",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
@@ -1826,7 +1831,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.84,
+      "probability": 0.93,
       "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
@@ -1838,9 +1843,14 @@
           "text": "Day 37: Democrats weaponizing gas prices in campaign ads + pump stickers (Philadelphia Inquirer). POLITICO: GOP battleground states struggling to brush off consequences. Gas USD3.98/gal (+USD1/month). War Powers votes failed but political cost RISING.",
           "pipeline": "v3.1"
         },
-        "Apr 3: F-15E loss + gas 4.08 + War Powers mid-April + Dems confident post-recess."
+        "Apr 3: F-15E loss + gas 4.08 + War Powers mid-April + Dems confident post-recess.",
+        {
+          "date": "2026-05-01",
+          "text": "War Powers 60-day expired 5/1/2026. Senate war powers resolutions rejected but thin margins. Consumer sentiment record low. fp4=approaching.",
+          "pipeline": "v3.1"
+        }
       ],
-      "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%.",
+      "reasoning": "Updated 2026-03-26T01:10:13+08:00: 36% approval is critical political threshold. Gas approaching . Cost pressure validated as primary driver of 15-point plan. Previous: 65% → 78%. | [2026-05-01] v3.1: War Powers 60-day deadline hit TODAY(5/1). Senate rejected resolution multiple times(thin margins). Consumer sentiment record low. Gas .30 national avg, LA . War cost -50B. Trump approval declining. fp4=approaching.",
       "time_horizon": "",
       "pinned": false,
       "time_phases": [],

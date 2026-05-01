@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-01T06:01:48.052858+00:00",
+  "last_updated": "2026-05-01T10:02:39.210403+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-28",
-          "est": "~2 incidents/week",
-          "note": "停火期间(4/8起)主动攻击大幅降低，伊朗弹道导弹攻击下降90%+；IRGC仍对海峡实施选择性执法和扣押船只，4/26仅8艘通行",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-28",
           "est": "~1/day (ceasefire)",
@@ -93,6 +87,12 @@
           "est": "~1/day",
           "note": "停火后袭击降90%；停火期间小规模违反，IRGC仍控制海峡",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-01",
+          "est": "ceasefire-reduced",
+          "note": "两国ceasefire自4/8延续，IRGC仍控制海峡通行+扣押商船，CENTCOM已准备新一轮打击方案但尚未执行",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-28",
-          "est": "8 vessels/day (Apr 26)",
-          "note": "4/25约19艘、4/26降至8艘，较战前138艘/天下降94%；500-700艘大型船只滞留波斯湾；22艘船只遭袭",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-28",
           "est": "8-15 vessels/day",
@@ -189,6 +183,12 @@
           "est": "~10/day",
           "note": "正常水平10%；双重封锁(美军港口+IRGC海峡)，3月全月仅154艘",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-01",
+          "est": "~20/day(5%)",
+          "note": "4/29实测20次过境(vs战前~100/day)，4/18曾有47次峰值，约2000艘船只困于湾区等待",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-28",
-          "est": "~2.6M bbl/week",
-          "note": "IEA协调释放1.72亿桶，3/20首批4520万桶合同签署，再加4月追加1000万桶RFP，总速率~37.5万桶/天；最新EIA周报覆盖至4/17",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-28",
           "est": "~1.43M bbl/day",
@@ -282,6 +276,12 @@
           "est": "7.1M bbl/wk",
           "note": "4月24日当周释放7.1M桶(单周最高)；SPR存量397.9M桶；计划总释172M桶/120天",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-01",
+          "est": "~1MB/day",
+          "note": "4/24当周释放7.1MB(本轮最高)，总释放17.5MB since March，SPR库存397.9MB，172MB计划进行中",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "ACTIVE",
+      "status": "watching",
       "last_check": "2026-05-01",
-      "findings": "特使翟隽持续穿梭斡旋；王毅26通电话；3月31日中巴五点倡议；4月7日中俄否决安理会护航决议；美方对中国调停兴趣冷淡"
+      "findings": "中国外交动作实质性升级：特使翟俊巡回访问，王毅致电26次，中巴联合5点倡议(3/31)，否决UNSC海峡护航草案(4/7)。无军事行动。Trump对中国调停兴趣寥寥，美扣押MV Touska载中国设备集装箱船(4/19)"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "ACTIVE",
+      "status": "detected",
       "last_check": "2026-05-01",
-      "findings": "CENTCOM准备'短促有力'新打击方案；同时Trump称'电话谈判进行中'；War Powers 60天截止日5月1日到期；参议院47:50否决停战"
+      "findings": "严重矛盾信号：Trump社媒发帖谈判内容导致伊朗方面公开否认(4/20)，CENTCOM准备新轮打击同时名义停火，海峡封锁被白宫定性为leverage，参议院否决战争权力决议(多次)，战争权力60天到期(5/1今日)但行政当局主张停火暂停计时"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "PARTIAL",
+      "status": "fragile-active",
       "last_check": "2026-05-01",
-      "findings": "脆弱停火维持中(4月8日起)；伊朗最新提案(开放海峡+推迟核谈)美方明确拒绝；无UN退出框架；巴基斯坦调停继续"
+      "findings": "多套框架并行：美15点 vs 伊10点 vs 中巴5点。4/8巴基斯坦斡旋停火延续，伊朗最新提案(4/28)=开放海峡但推迟核谈，Trump明确表示不可接受。Islamabad谈判继续但'telephonically'推进，进展缓慢"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "ELEVATED",
+      "status": "approaching",
       "last_check": "2026-05-01",
-      "findings": "War Powers 60天5月1日到期(今日)；参议院否决停战(47:50，Collins+Paul破党投票)；B战争成本；汽油.26/gal；Brent触"
+      "findings": "临界指标堆积：战争权力60天到期(5/1今日)，全美油价.30/加仑(LA )，周环比涨27美分(史上最快之一)，战争成本-50B，消费者信心指数创历史最低，Trump支持率下滑，中期选举6个月后"
     }
   },
   "noise_filter": {
