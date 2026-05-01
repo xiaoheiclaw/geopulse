@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-04-30T22:02:23.174549+00:00",
+  "last_updated": "2026-05-01T02:03:00.321305+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-27",
-          "est": "~1-2次/天",
-          "note": "停火期间显著降低(高峰期90%下降已于3/5确认)；IRGC仍控制海峡、对商船执行扣押和收费行动",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-27",
           "est": "0-2次/天(停火期)",
@@ -93,6 +87,12 @@
           "est": "~0次/天(停火模式)",
           "note": "4月8日停火后IRGC直接袭击基本归零；4月21日Trump宣布无限期延长停火；偶有违规，双方均有小规模交火。战争活跃期(2/28-4/8)首24小时62波次。",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-01",
+          "est": "~0.3次/天(停火D23)",
+          "note": "停火D23(4/8生效4/21无限期延长); IRGC主动攻击近零; 仍对商船执行海峡选择性执法扣押(MSC系列); 4月29日20艘过境(非IRGC攻击); War Powers 60天5/1到期",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-27",
-          "est": "~15艘/天",
-          "note": "正常140艘/天，当前严重受限(-89%)；4/25=19艘，4/20最低=3艘；4/17伊朗宣布停火期间开放通行但实际管控严格",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-27",
           "est": "8-19艘/天",
@@ -189,6 +183,12 @@
           "est": "20艘/天(基准5%)",
           "note": "4月29日实测20次过境(6进14出)，北线13南线7。战前基准138艘/天。IRGC控制水道+美方封锁伊朗港口，形成双向封锁。近2000艘船被困海湾。",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-01",
+          "est": "20艘/天(4/29实测)",
+          "note": "4/29实测20次过境(6进14出,北线13南线7); 较战前138/天-85%; 双重封锁持续(美国港口封锁+IRGC海峡管控); ~2000艘船/20000水手仍困波斯湾; 伊朗仅允许中俄印伊巴5国通行",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-27",
-          "est": "~100万桶/天",
-          "note": "DOE/IEA协调释放172百万桶/120天≈143万桶/天；初始合同已签署4540万桶(4/9开始交付)；SPR当前库存~415亿桶",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-27",
           "est": "约143万桶/天",
@@ -282,6 +276,12 @@
           "est": "~1.0M桶/天",
           "note": "当周(截至4月24日)单周释放710万桶，为2022年10月以来最高单周量。SPR当前库存397.9M桶。总计划172M桶/120天≈1.43M/天，IEA协调全球400M桶行动。",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-01",
+          "est": "7.1M桶/周(单周峰值)",
+          "note": "当周(截至4/24)单周释放7.1M桶,为2022年10月以来最高; SPR库存397.9M桶; 总计划172M/120天; IEA协调全球400M桶行动; 汽油全国均价.30/加仑",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "外交-仅言辞",
-      "last_check": "2026-04-30",
-      "findings": "中国特使翟隽3月巡回斡旋，王毅26轮通话。3月31日中巴五点倡议。伊斯兰堡谈判失败后转为'外交警告模式'，否认MANPAD输伊，否决UNSC护航决议。无海军实质行动迹象。"
+      "last_check": "2026-05-01",
+      "findings": "中巴五点倡议3/31; 王毅26轮通话; 翟隽穿梭斡旋; 4/7否决UNSC海峡护航决议(中俄); 否认MANPAD输伊; 无海军行动; 中方称'保护在华经济利益'"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "矛盾信号-激活",
-      "last_check": "2026-04-30",
-      "findings": "CENTCOM同步准备'短促而有力'新一轮打击方案(包括霍尔木兹军事控制选项)；同时Trump称谈判'以电话方式进行'，Rubio评伊方新方案'好过预期'。核问题仍为美方红线(零浓缩)。"
+      "last_check": "2026-05-01",
+      "findings": "CENTCOM向Trump汇报'short and powerful'新打击方案(含Hormuz军控选项); 同时Trump称谈判'电话进行中',Rubio称伊方新提案'好过预期'; 核问题仍为美方红线(零浓缩); CNN报道Trump社媒外交已干扰谈判"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "脆弱-活跃",
-      "last_check": "2026-04-30",
-      "findings": "4月21日Trump宣布无限期延长停火，纳瓦尔封锁维持。伊朗最新提案：先开霍尔木兹、延迟核谈。美方倾向拒绝(削弱筹码)。伊斯兰堡谈判破裂后Iran拒绝零浓缩。普京支持延停。"
+      "last_check": "2026-05-01",
+      "findings": "伊朗新提案: 先开霍尔木兹+延迟核谈; Trump Apr27称不太可能接受(削弱核筹码); 停火4/21无限期延长仍holding; 核心卡点=核浓缩; 伊方英波斯文本分歧(英文版漏'原则接受')"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "阈值突破",
-      "last_check": "2026-04-30",
-      "findings": "《战争权力法》60天大限今日(5/1)到期。油价+29.5% YoY至$4.26/加仑。US阵亡13人/428人伤亡。参院4次否决WPR决议，但科林斯/霍利/穆尔科夫斯基等3名共和党人表态须行动。民主党酝酿诉讼。"
+      "last_check": "2026-05-01",
+      "findings": "汽油.30/加仑(洛杉矶+); War Powers 60天5/1到期; 战争花费-50B; 美军13死18重伤; 众议院WPR只差一票; Collins/Murkowski/Holley表态须授权; 消费者信心历史最低; CPI 3.3%"
     }
   },
   "noise_filter": {
