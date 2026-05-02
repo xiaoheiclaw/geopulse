@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-02T02:02:51.580532+00:00",
+  "last_updated": "2026-05-02T06:02:03.184053+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-28",
-          "est": "~0.3/day (停火D21)",
-          "note": "停火D21(4月8日生效,4月21日无限期延长); IRGC对美军攻击近零; 海峡执法持续;伊朗陆军4/28称仍处'战争状态'; Mojtaba Khamenei已任新最高领袖;Trump审查和平计划; War Powers 60天May1到期",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-29",
           "est": "~0.5次/天",
@@ -93,6 +87,12 @@
           "est": "~0.2次/天(停火D25)",
           "note": "停火D25(4/8生效4/21无限期延长); IRGC对美直接攻击近零; 商船选择性扣押持续(MSC系列仍被扣); War Powers 60天5/1到期Trump称停火终止计时; 伊朗5/1提新和平方案; CENTCOM准备'short&powerful'新打击方案待命",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-02",
+          "est": "~1-2/day",
+          "note": "ceasefire extended indef Apr21; ballistic missiles -90% from peak; IRGC launchers repositioned beyond US strike range; CENTCOM requesting Dark Eagle hypersonic",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-28",
-          "est": "13艘/天(4/27-28)",
-          "note": "Windward数据: 4/27=13艘(3进/10出,1艘暗AIS), 4/28=13艘(10出/3进,含日资巴拿马籍LNG非伊朗关联船);战前~100艘/天; 海湾船只总数降至896; 2/28-4/12总计仅279艘通过(远低于战前)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-29",
           "est": "8艘/天(4/26 AIS可见)",
@@ -189,6 +183,12 @@
           "est": "14艘/天(4/30 AIS, ~10%战前)",
           "note": "4/30实测14次过境(7进/7出,全AIS,0暗); 战前~138艘/天-90%; 双重封锁持续(IRGC控+美港口封锁4/13); ~2000艘船困波斯湾; 伊朗仅允许中俄印伊巴通行; 每艘收取>M过路费",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-02",
+          "est": "~14/day (10% pre-war)",
+          "note": "Apr30: 14 crossings (7in+7out); dual blockade (US blockades Iranian ports Apr13 + Iran blockades Gulf); Iran partial reopening Apr17 for ceasefire-linked truce; 279 ships crossed, 22 attacked since Feb28; pre-war ~138/day",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-28",
-          "est": "~4M+ bbl/week (近2周)",
-          "note": "SPR库存413.3M桶(多十年低位);近两周周提取量超400万桶(EIA);第二批8.48M桶贷款已发(Gunvor/Phillips66/Trafigura/Macquarie);第三批30M桶RFP募集中;IEA协调400M桶/32国释放计划继续;EIA下期周报4/29晚间发布",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-29",
           "est": "~4M+ bbl/week",
@@ -282,6 +276,12 @@
           "est": "7.1M桶/周(截至4/24,本轮峰值)",
           "note": "截至4/24单周释放7.1M桶(2022年10月以来最高); SPR库存397.9M桶; 总释放17.5M since Mar; 全程计划172M/120天; IEA协调400M; 5/4竞标92.5M桶交换; 下一EIA报告5/6",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-02",
+          "est": "~1M bbl/day (7.1M/wk)",
+          "note": "week ending Apr24: 7.1M bbl released (highest since Oct2022); total 17.5M since March; SPR at 397.9M bbl; 172M bbl total plan (part of IEA 400M bbl coordinated release)",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "ACTIVE-DIPLOMATIC",
+      "status": "active-mixed",
       "last_check": "2026-05-02",
-      "findings": "王毅26次通话+Zhai Jun穿梭; 中巴5点方案3/31; 否决UNSC Bahrain决议4/7; 被指向伊提供MANPAD(否认); 伊朗5/1经巴提交新方案; 中国无军事部署; 美国对中方调停无兴趣; 中俄印巴五国豁免海峡通行"
+      "findings": "envoy Zhai Jun regional tour; Wang Yi 26 calls; China-Pakistan 5-pt proposal Mar31; vetoed UN Hormuz escort resolution Apr7; US intel: China preparing MANPAD shipment to Iran (denied); US seized MV Touska Apr19 carrying dual-use equip from China"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "CONTRADICTORY",
+      "status": "contradictory",
       "last_check": "2026-05-02",
-      "findings": "三套并行信号: (1)Trump称停火终止War Powers计时(5/1); (2)CENTCOM准备'short&powerful'新打击方案(CENTCOM已简报Trump); (3)Trump审查伊朗和平方案称不满意但仍'电话谈判中'; Navy仍无法护航(需8-10驱逐舰); 双重封锁维持"
+      "findings": "CENTCOM requested Dark Eagle hypersonic (only 8 exist, never deployed) — IRGC moved launchers beyond reach during ceasefire; simultaneously: ceasefire extended indef Apr21; US blockading Iranian ports since Apr13; Trump May1: 'blast them or make a deal'"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "ACTIVE-STALLED",
+      "status": "stalled",
       "last_check": "2026-05-02",
-      "findings": "伊朗4/28提新方案(海峡换推迟核谈); Trump称很快回应但'不满意'; Rubio称'比预期好但有问题'; 关键分歧: 美要从头谈核/伊要先停战再谈; 伊朗10点vs美国15点框架; Islamabad谈判; UNSC Res 2817已采纳; War Powers到期增加谈判窗口压力"
+      "findings": "Iran new proposal May1: defers nuclear, offers Strait reopening first; Trump 'not satisfied'; 15-pt vs 10-pt plans deadlocked; Trump WH Situation Room May1 NSC meeting; Trump says hostilities 'terminated' to Congress (War Powers); ceasefire holding with violations"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "APPROACHING-THRESHOLD",
+      "status": "approaching-threshold",
       "last_check": "2026-05-02",
-      "findings": "汽油均价.30/加仑(战前<,+47%); 美军KIA=13确认+~520伤(Intercept称>520); War Powers 60天5/1到期-Trump称停火终止计时; 参议院WPR 50-47失败但共和党Collins首次倒戈; 国会离开度假无AUMF; 成本阈值临近但政治支撑仍足"
+      "findings": "61% Americans say war mistake (WaPo/ABC/Ipsos); gas .30/gal (up from < pre-war); 13 US KIA + 381 WIA; War Powers 60-day deadline hit May1 — Senate rejected 6th war powers vote but 1st Republican (Collins) defected; Trump declared hostilities terminated unilaterally"
     }
   },
   "noise_filter": {
