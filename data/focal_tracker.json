@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-02T06:02:03.184053+00:00",
+  "last_updated": "2026-05-02T10:02:56.209741+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-29",
-          "est": "~0.5次/天",
-          "note": "停火D22; 4/18 IRGC攻击4+商船+海峡停摆, 4/22伊朗扣押船只, 4/24 CENTCOM拦截伊朗油轮; 美/以空袭'无显著动作'(late Apr); IRGC对美军直接攻击近零; 主要为海上选择性执法",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-29",
           "est": "0-1 attacks/day",
@@ -93,6 +87,12 @@
           "est": "~1-2/day",
           "note": "ceasefire extended indef Apr21; ballistic missiles -90% from peak; IRGC launchers repositioned beyond US strike range; CENTCOM requesting Dark Eagle hypersonic",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-02",
+          "est": "0-2次/天",
+          "note": "停火期间IRGC主动打击暂停，仅维持霍尔木兹海峡海军封锁，无正式攻击行动记录",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-29",
-          "est": "8艘/天(4/26 AIS可见)",
-          "note": "Windward 4/26=8艘(4进/4出,0暗); 4/20-25 trickle 3-7艘; 4/18短暂回升至47艘; 战前~138艘/天, 当前-94%; 500-700艘滞留波斯湾; 美国4/13起反封锁伊朗港口",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-29",
           "est": "5-8 ships/day",
@@ -189,6 +183,12 @@
           "est": "~14/day (10% pre-war)",
           "note": "Apr30: 14 crossings (7in+7out); dual blockade (US blockades Iranian ports Apr13 + Iran blockades Gulf); Iran partial reopening Apr17 for ceasefire-linked truce; 279 ships crossed, 22 attacked since Feb28; pre-war ~138/day",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-02",
+          "est": "14艘/天",
+          "note": "4月30日仅14艘过境（7进7出），约为战前138艘/天的5%；中俄印伊拉克巴基斯坦船只享有豁免",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-29",
-          "est": "~4M+ bbl/week",
-          "note": "EIA: 近2周周提取超4M桶; SPR库存409.2-413.3M桶(多十年低位); 4/10第二批8.48M桶贷款已发(Gunvor/Phillips66/Trafigura/Macquarie); 计划172M/120天=1.43M/d; 实际低于计划",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-29",
           "est": "~4 Mbbl/week",
@@ -282,6 +276,12 @@
           "est": "~1M bbl/day (7.1M/wk)",
           "note": "week ending Apr24: 7.1M bbl released (highest since Oct2022); total 17.5M since March; SPR at 397.9M bbl; 172M bbl total plan (part of IEA 400M bbl coordinated release)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-02",
+          "est": "710万桶/周",
+          "note": "4月24日当周DOE释放710万桶（自2022年10月以来最高）；累计已释放1750万桶；SPR库存3.979亿桶；计划总释放1.72亿桶",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active-mixed",
+      "status": "ACTIVE",
       "last_check": "2026-05-02",
-      "findings": "envoy Zhai Jun regional tour; Wang Yi 26 calls; China-Pakistan 5-pt proposal Mar31; vetoed UN Hormuz escort resolution Apr7; US intel: China preparing MANPAD shipment to Iran (denied); US seized MV Touska Apr19 carrying dual-use equip from China"
+      "findings": "中国外交实质行动：翟俊特使自3月初巡回斡旋，王毅与多方通话26次，3月31日与巴基斯坦联合发布5点提议；但同时在联合国否决巴林护航草案（4月7日），被美方指控向伊提供MANPADs（4月11日，北京否认）——外交调停与暗中支持并行"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "contradictory",
+      "status": "ACTIVE",
       "last_check": "2026-05-02",
-      "findings": "CENTCOM requested Dark Eagle hypersonic (only 8 exist, never deployed) — IRGC moved launchers beyond reach during ceasefire; simultaneously: ceasefire extended indef Apr21; US blockading Iranian ports since Apr13; Trump May1: 'blast them or make a deal'"
+      "findings": "美方信号高度矛盾：特朗普称不开放海峡直到最终协议，同时延长停火并向国会声称'敌对行动已终止'；5月1日被汇报新一轮打击方案；海军驱逐舰4月11日首次进入霍尔木兹，但无法保障护航（Lloyd's List：需8-10艘驱逐舰）；护航计划与强硬封锁并存"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "stalled",
+      "status": "TRIGGERED",
       "last_check": "2026-05-02",
-      "findings": "Iran new proposal May1: defers nuclear, offers Strait reopening first; Trump 'not satisfied'; 15-pt vs 10-pt plans deadlocked; Trump WH Situation Room May1 NSC meeting; Trump says hostilities 'terminated' to Congress (War Powers); ceasefire holding with violations"
+      "findings": "退出框架信号触发：4月8日巴基斯坦斡旋停火，4月21日延期；伊朗5月1日向巴基斯坦调停人递交新方案，调停方认为协议'触手可及'；美伊各执15点vs10点框架（核心分歧：铀浓缩+海峡开放先后顺序）"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching-threshold",
+      "status": "ELEVATED",
       "last_check": "2026-05-02",
-      "findings": "61% Americans say war mistake (WaPo/ABC/Ipsos); gas .30/gal (up from < pre-war); 13 US KIA + 381 WIA; War Powers 60-day deadline hit May1 — Senate rejected 6th war powers vote but 1st Republican (Collins) defected; Trump declared hostilities terminated unilaterally"
+      "findings": "成本阈值多线告急：汽油均价4.39美元/加仑（近一年最高单日涨幅），战争总成本250-300亿美元（首6天即113亿），国内61%民众反对（接近2006年反伊拉克战争水平），参院否决战争授权动议但穆尔科斯基宣布将提新案，60天War Powers截止日5月1日特朗普以'停火=敌对终止'规避"
     }
   },
   "noise_filter": {
