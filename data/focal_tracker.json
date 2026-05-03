@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-03T10:02:27.710238+00:00",
+  "last_updated": "2026-05-03T22:02:46.715128+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-04-30",
-          "est": "~0.3/day kinetic",
-          "note": "停火D22(4/8生效, 4/21无限期延长仍持续); IRGC直接对美军攻击近零; 商船选择性扣押+海峡执法持续(MSC Francesca/Epaminondas); CENTCOM自4/13封锁起已重定向37艘伊朗/相关船只; CENTCOM司令Brad Cooper今日(4/30)向Trump汇报'short and powerful'打击新方案; War Powers 60天May 1到期",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-30",
           "est": "ceasefire-low",
@@ -93,6 +87,12 @@
           "est": "~0/day (ceasefire active)",
           "note": "Extended ceasefire since Apr 8/21; last major IRGC kinetic wave mid-March; direct fire halted but strait blockade maintained by IRGC naval assets",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-03",
+          "est": "~2-5次/周(停火中，较战争初期下降>90%)",
+          "note": "4月8日巴基斯坦调停停火后频率大幅降低，停火多次违反；3月5日CENTCOM已报告弹道导弹↓90%、无人机↓83%；4月21日美国延长停火",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-04-30",
-          "est": "~13 ships/day (~5% pre-crisis)",
-          "note": "4/28 Windward数据: 13艘穿越(4进9出, 全AIS可见, 北部走廊); 战前~100艘/天(月3000); 当前持续~5%水平; 双重封锁(伊朗限制+美海军封锁4/13起); ~2000艘船+20000水手仍滞留波斯湾",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-30",
           "est": "6-13/day",
@@ -189,6 +183,12 @@
           "est": "14 vessels/day",
           "note": "Apr 30 data: 14 crossings (7in/7out); <10% of pre-war ~140/day; Iran charging M+ toll/ship; US naval blockade on Iranian ports since Apr 13; 22 ships attacked since war began",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-03",
+          "est": "~10-14艘/日(战前5-14%)",
+          "note": "战前~100+艘/日(3000艘/月)；4月17日伊朗部分开放海峡，对中俄印等5国优先通行；约2000艘船只滞留波斯湾；4月30日仅14次通行(7进7出)",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-04-30",
-          "est": "~2M barrels/week (~285k bpd)",
-          "note": "4/24报告: 过去两周SPR提取>4M桶; SPR库存4/10为409.2M桶, 4月底~413M桶接近多十年低点; DOE 4/10向4家油企贷出8.48M桶(第二批); 全年计划释放172M桶, IEA协调32国共释放400M桶",
-          "source": "pipeline"
-        },
         {
           "date": "2026-04-30",
           "est": "~1.4M bpd",
@@ -282,6 +276,12 @@
           "est": "7.1M bbl/week",
           "note": "Week ending Apr 24: 7.1M bbl (largest since Oct 2022); total 17.5M released since March; SPR at 397.9M bbl; plan: 172M total over 120 days coordinated with IEA 400M",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-03",
+          "est": "7.1M桶/周(4月24日当周峰值)",
+          "note": "3月20日至4月24日累计释放17.5M桶；总计划172M桶(配合IEA全球400M桶协调释放)；当前库存397.9M桶",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "watching",
+      "status": "active_diplomatic",
       "last_check": "2026-05-03",
-      "findings": "Special envoy Zhai Jun touring since Mar; Wang Yi 26 calls; China-Pakistan 5-pt initiative Mar 31; UN envoy says Hormuz on agenda for Trump China visit; US now routing talks through Pakistan bypassing China; no material breakthrough"
+      "findings": "翟隽特使区域穿梭外交，王毅26通电话；中巴5点提案(3/31)；4/7与俄联合否决涉霍尔木兹护航UN安理会决议；情报称预备向伊提供MANPADs(已否认)；无海军部署；川普访华议程高悬"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "active",
+      "status": "triggered",
       "last_check": "2026-05-03",
-      "findings": "Trump extended ceasefire Apr 21 while maintaining naval blockade; reviewing Iran new proposal May 2; two US envoys (Witkoff+Kushner) flying to Islamabad May 3-4; contradictory signal: negotiate+blockade simultaneously"
+      "findings": "特朗普同时推进护航(Project Freedom周一启动)和谈判(Witkoff称'非常积极讨论')，本人同时发帖称伊方方案'不可接受'；海军承认护航几周内无准备就绪；信号矛盾达峰"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active",
+      "status": "partial",
       "last_check": "2026-05-03",
-      "findings": "Iran sent updated proposal May 1; Pakistan mediating; US envoys to Islamabad this weekend; Iran 10-pt vs US 15-pt; previous Trump rejection; nuclear enrichment remains key sticking point; ceasefire holding but fragile"
+      "findings": "停火4/8起(巴基斯坦调停)，4/21延长；伊朗14点提案vs美方9点提案，巴方居间；中俄否决UN涉霍尔木兹护航决议；核心分歧：霍尔木兹控制权+核能力，伊朗要求30天内全面解决"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "elevated",
       "last_check": "2026-05-03",
-      "findings": "War cost B+; gas .39/gal (4-yr high); 6 US KIA 18 wounded; Senate rejected war powers resolution twice; consumer sentiment lowest on record; Murkowski threatening authorization vote; 60-day clock disputed"
+      "findings": "汽油.39/加仑(4年高位，LA+)；战争成本-50B；6+美军阵亡18重伤；参众两院均拒绝战争授权(众院差1票)；特朗普支持率下滑但无政治约束实质触发"
     }
   },
   "noise_filter": {
