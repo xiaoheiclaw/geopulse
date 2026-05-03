@@ -1118,11 +1118,12 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-04-30T10:03:48.084961+00:00",
+      "last_updated": "2026-05-03",
       "created": "2026-03-06T14:31:59.393633Z",
       "updated_at": "2026-04-30T02:03:32.524979+00:00",
-      "p": 0.38,
-      "update_note": "fp4 at-threshold (House War Powers 1-vote margin); Iran proposal Rubio: better; ceasefire extended Apr21"
+      "p": 0.72,
+      "update_note": "fp4 at-threshold (House War Powers 1-vote margin); Iran proposal Rubio: better; ceasefire extended Apr21",
+      "update_reason": "ceasefire D+25 (Apr8 extended indef Apr21); Iran new proposal to Pakistan May1; Islamabad talks set; War Powers 60d expired May1 (Trump claims ceasefire terminates); CENTCOM 'short&powerful' plan on standby = credible threat keeping ceasefire; fp3=active-progress"
     },
     "turkey_intervention": {
       "id": "turkey_intervention",
@@ -4074,7 +4075,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-04-30T02:03:32.524979+00:00",
+  "last_updated": "2026-05-03T02:04:24.896507+00:00",
   "updated_at": "2026-04-26T22:05:29.547176Z",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
@@ -4083,5 +4084,18 @@
       "us_ground_war: 50% → 42% (-8pp)",
       "supply_disruption_volume: 97% → 94% (-3pp)"
     ]
-  }
+  },
+  "dag_update_log": [
+    {
+      "date": "2026-05-03",
+      "changes": [
+        {
+          "node": "conflict_deescalation",
+          "from": 0.38,
+          "to": 0.72,
+          "trigger": "fp3 advanced: Iran submitted updated proposal to Pakistan mediators May1; ceasefire D+25; Islamabad talks active; fp4 threshold: War Powers 60d expired May1"
+        }
+      ]
+    }
+  ]
 }
