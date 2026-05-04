@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-04T06:03:55.901430+00:00",
+  "last_updated": "2026-05-04T10:02:38.741578+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-01",
-          "est": "~0.3次/天(停火D23)",
-          "note": "停火D23(4/8生效4/21无限期延长); IRGC主动攻击近零; 仍对商船执行海峡选择性执法扣押(MSC系列); 4月29日20艘过境(非IRGC攻击); War Powers 60天5/1到期",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-01",
           "est": "~1/day",
@@ -93,6 +87,12 @@
           "est": "~0.2/天(停火D27;Project Freedom D1首批护航完成)",
           "note": "停火自4/8延续(D27)；5/4 Project Freedom正式启动(15000人+100架+驱逐舰)，首批5艘超级油轮无事过境(沿阿曼侧)；启动前数小时英国船报告IRGC快艇蜂群骚扰近Sirik；伊朗顾问称护航违反停火；IRGC仍维持霍尔木兹海峡封锁+商船选择性扣押",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-04",
+          "est": "~0.3次/天(停火D26)",
+          "note": "停火D26(4/8生效→4/21无限期延长); IRGC弹道导弹近零; 5/3英国货船遭快艇袭扰(Sirik附近); Project Freedom 5/4启动首轮护航5艘超大油轮; 海峡海军执法选择性延续",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-01",
-          "est": "20艘/天(4/29实测)",
-          "note": "4/29实测20次过境(6进14出,北线13南线7); 较战前138/天-85%; 双重封锁持续(美国港口封锁+IRGC海峡管控); ~2000艘船/20000水手仍困波斯湾; 伊朗仅允许中俄印伊巴5国通行",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-01",
           "est": "~10/day",
@@ -189,6 +183,12 @@
           "est": "12艘/天(5/2实测;Project Freedom D1首批5超级油轮过境)",
           "note": "5/2实测12次过境(5进7出)，暗船活动+34.4%至176次(本轮最高)；Project Freedom 5/4首批5艘超级油轮已完成过境；海峡实际恢复极缓；战前~140艘/天，目前约8-9%",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-04",
+          "est": "~12次过境/天(5/2)",
+          "note": "5/2: 12次(5进7出); 4/26低点2次; 封锁维持~95%封闭; Project Freedom 5/4首轮完成无事故; 预战均值100+/天; 中俄印等选择性过境仍允许",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-01",
-          "est": "7.1M桶/周(单周峰值)",
-          "note": "当周(截至4/24)单周释放7.1M桶,为2022年10月以来最高; SPR库存397.9M桶; 总计划172M/120天; IEA协调全球400M桶行动; 汽油全国均价.30/加仑",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-01",
           "est": "7.1M bbl/wk",
@@ -282,6 +276,12 @@
           "est": "7.1M桶/周(截至4/24;5/4竞标92.5M桶截止日)",
           "note": "4/24当周释放7.1M桶(2022年10月以来最高单周)；3月以来累计17.5M桶；SPR库存397.9M桶；172M桶总计划进行中；5/4为92.5M桶交换竞标截止日，下一EIA周报5/6",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-04",
+          "est": "7.1M桶/周(4/24当周)",
+          "note": "累计17.5M桶(3/20至今); 4/24当周7.1M桶为2022年10月以来最高; SPR现存397.9M桶; 计划总量172M桶约120天; IEA协调全球400M桶联合释放",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active_diplomatic",
+      "status": "active",
       "last_check": "2026-05-04",
-      "findings": "翟隽区域穿梭+王毅26通电话+中巴5点方案；5/1中国联合国代表称海峡封锁'严重破坏'全球经济并敦促快速重开；4/7否决安理会护航决议；美情报称中国拟向伊提供MANPAD/X波段雷达(已否认)；Project Freedom启动后料中国正式抗议升级；Trump访华在望海峡将列议程首位"
+      "findings": "外交: Zhai Jun特使巡回+王毅26次通话; 中巴5点倡议(3/31); 4/7联合国安理会否决护航决议; 中国船只选择性过境受益; 5/1中国UN代表称封锁'严重破坏'全球经济; 疑运MANPAD已否认; 川习访问议程压力"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "triggered",
+      "status": "elevated",
       "last_check": "2026-05-04",
-      "findings": "Project Freedom 5/4正式执行完成首批护航(5艘超级油轮)；同时2名美特使赴巴基斯坦与伊谈判；Trump称谈判'非常积极'；但同称可能拒绝伊14点方案；伊朗顾问称护航违反停火；行动化矛盾：武装护航+和平谈判同步，高风险碰撞窗口已开启"
+      "findings": "矛盾三重叠加: ①Project Freedom护航(5/4启动)+②伊朗港口封锁同步维持+③对话'非常积极'。伊朗议会警告护航=违反停火; Trump称'很快重启打击'; War Powers宣称停战终止但封锁持续; 核要求仍为红线"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "partial",
+      "status": "active-fragile",
       "last_check": "2026-05-04",
-      "findings": "伊朗14点方案5/3提交；美已回复(5/3)；2名美特使将赴巴与伊谈判；Project Freedom同时启动增加谈判复杂性；核心分歧：霍尔木兹控制权+核查机制+核问题；停火框架D27存续但Project Freedom构成对等挑战"
+      "findings": "伊朗提14点方案; 美通过巴基斯坦回复; 伊朗正审查; 伊斯兰堡会谈预期; 核心分歧: 核浓缩+霍尔木兹控制权+制裁解除+赔偿; Trump暗示拒绝'代价不够大'"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "elevated",
       "last_check": "2026-05-04",
-      "findings": "汽油.45/加仑(较战前+50%)；Brent /桶；War Powers 5/1到期Trump称停火终止计时；参院50-47否决终止战争(Collins首次越票仍不够)；Project Freedom进一步压缩政治空间；Murkowski/Curtis寻求战争授权立法"
+      "findings": "国内成本触阈: ①美国油价5/1创战争新高.46/加仑(印第安纳/俄亥俄/密歇根+22-30%); ②WPR 60天5/1到期(Trump宣称停战终止时钟); ③美军伤亡251人(DCAS); ④国会民主党每周强推授权投票; ⑤Brent  WTI "
     }
   },
   "noise_filter": {
