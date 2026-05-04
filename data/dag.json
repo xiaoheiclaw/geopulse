@@ -1071,7 +1071,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.45,
+      "probability": 0.35,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1123,7 +1123,8 @@
       "updated_at": "2026-04-30T02:03:32.524979+00:00",
       "p": 0.72,
       "update_note": "fp4 at-threshold (House War Powers 1-vote margin); Iran proposal Rubio: better; ceasefire extended Apr21",
-      "update_reason": "ceasefire D+25 (Apr8 extended indef Apr21); Iran new proposal to Pakistan May1; Islamabad talks set; War Powers 60d expired May1 (Trump claims ceasefire terminates); CENTCOM 'short&powerful' plan on standby = credible threat keeping ceasefire; fp3=active-progress"
+      "update_reason": "ceasefire D+25 (Apr8 extended indef Apr21); Iran new proposal to Pakistan May1; Islamabad talks set; War Powers 60d expired May1 (Trump claims ceasefire terminates); CENTCOM 'short&powerful' plan on standby = credible threat keeping ceasefire; fp3=active-progress",
+      "rationale": "[2026-05-04T02:05:39.249478+00:00] Project Freedom D1(5/4): 15000人+100架+驱逐舰群直接对抗伊朗霍尔木兹封锁。伊朗顾问称违反停火。并行谈判(伊朗14点方案)无法抵消军事升级压力。从0.45->0.35"
     },
     "turkey_intervention": {
       "id": "turkey_intervention",
@@ -1215,7 +1216,7 @@
         "能源",
         "金融"
       ],
-      "probability": 0.55,
+      "probability": 0.42,
       "confidence": 0.5,
       "evidence": [
         "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
@@ -1234,7 +1235,8 @@
       "time_phases": [],
       "dialectic": null,
       "last_updated": "2026-03-24T03:33:00+00:00",
-      "created": "2026-03-06T14:31:59.393633Z"
+      "created": "2026-03-06T14:31:59.393633Z",
+      "rationale": "[2026-05-04T02:05:39.249478+00:00] Brent $108/桶(WTI $101)，高于$85-100均衡区间。Project Freedom结果二元：成功→价格下行；失败/升级→价格上行。当前均值期望使均衡区间上移。从0.55->0.42"
     },
     "europe_right_wing": {
       "id": "europe_right_wing",
@@ -4075,7 +4077,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-05-03T02:04:24.896507+00:00",
+  "last_updated": "2026-05-04T02:05:39.249478+00:00",
   "updated_at": "2026-04-26T22:05:29.547176Z",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
@@ -4097,5 +4099,6 @@
         }
       ]
     }
-  ]
+  ],
+  "update_trigger": "Project Freedom D1 launch 2026-05-04; Iran 14pt proposal submitted; ceasefire D27"
 }
