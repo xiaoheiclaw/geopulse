@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-05T02:04:14.204666+00:00",
+  "last_updated": "2026-05-05T06:03:43.038327+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-01",
-          "est": "0 (ceasefire active since Apr 8; ballistic missile attacks -90% from war peak; CENTCOM briefing 'short & powerful' new strike plan)",
-          "note": "War Powers 60-day deadline hit May 1; Trump claims ceasefire terminates clock; next escalation window if talks collapse",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-02",
           "est": "~0.2次/天(停火D25)",
@@ -93,6 +87,12 @@
           "est": "~0.3次/天(停火D29;Project Freedom D2)",
           "note": "停火自4/8延续D29(4/21无限期延长); IRGC直接攻击近零; Project Freedom 5/4 D1首批5超级油轮完成过境(沿阿曼侧无事故); 5/3英国货船遭IRGC快艇骚扰(Sirik附近); 伊朗14点方案已提交美已回复; 13美军KIA",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-05",
+          "est": "~2-3/day",
+          "note": "Project Freedom launch May 4 triggered fresh naval exchange; CENTCOM destroyed 6 Iranian boats; UAE intercepted 19 Iranian missiles/drones; ongoing mine threat in strait",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-01",
-          "est": "14 vessels/day (Apr 30), ~14% of pre-war baseline ~100/day; dual blockade in place",
-          "note": "Iran opened strait Apr 17 under ceasefire but IRGC controls access + charges M toll; US blockades Iranian ports since Apr 13",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-02",
           "est": "14艘/天(4/30 AIS, ~10%战前)",
@@ -189,6 +183,12 @@
           "est": "~12-17艘/天(Project Freedom D1首批完成;5/2基线12)",
           "note": "5/2实测12次(5进7出); Project Freedom 5/4首批5超大油轮成功过境; 暗船活动5/2峰值176次(+34.4%本轮最高); 战前~140艘/天约8-12%恢复; 2000艘船滞留湾区; 伊朗仅允许中俄印伊拉克巴基斯坦通行",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-05",
+          "est": "12 crossings/day",
+          "note": "May 2 baseline (5 inbound, 7 outbound); Project Freedom first convoy (5 supertankers) underway May 5; 500-700 vessels stranded in Gulf; AIS-dark +34% to 176 events May 2",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-01",
-          "est": "7.1M bbl/week (wk Apr 24); 17.5M total released since Mar; program target 172M bbl (IEA coordinated 400M)",
-          "note": "SPR inventory at 397.9M bbl; bids due May 4 for 92.5M bbl exchange; next EIA weekly report May 6",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-02",
           "est": "7.1M桶/周(截至4/24,本轮峰值)",
@@ -282,6 +276,12 @@
           "est": "7.1M桶/周(截至4/24;5/4竞标截止;5/6下一EIA周报)",
           "note": "4/24当周7.1M桶(2022年10月以来最高单周); 累计17.5M桶自3月; SPR库存397.9M桶; 172M总计划(IEA协调400M); 5/4为92.5M桶交换竞标截止日; 次EIA周报5/6发布",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-05",
+          "est": "~1.0M bbl/day",
+          "note": "7.1M bbl released week ending Apr 24 (highest since Oct 2022); 17.5M total since March; SPR at 397.9M bbl; IEA coordinated 400M bbl global release; 172M bbl US plan over 120 days",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active-升温",
+      "status": "active",
       "last_check": "2026-05-05",
-      "findings": "川习会临近(据报道本月内); 中国UN代表5/1称封锁'wreaking havoc'; Hormuz将'high on agenda'; 王毅26通话+翟隽特使梭外交; 中巴5点倡议3/31; 4/7安理会否决护航决议; 实质军事行动仍无(MANPAD说法已否认); 北京经济压力驱动外交升温"
+      "findings": "Envoy Zhai Jun regional tour completed; Wang Yi 26 calls; China-Pakistan 5-pt ceasefire proposal (Mar 31); vetoed UNSC escort resolution (Apr 7); UN envoy: Hormuz on agenda for Trump May China visit; MANPADs shipment allegation (denied Apr 11); MV Touska seized Apr 19 with dual-use cargo from China"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "elevated-escalating",
+      "status": "active",
       "last_check": "2026-05-05",
-      "findings": "Project Freedom D2(5/5继续); D1首批5超级油轮5/4成功过境; CENTCOM摧毁6艘IRGC快艇; 参议院4/30否决战争授权; 伊朗议会称护航违反停火; 信号矛盾升级: 军事护航+停火谈判同步进行; Trump 5/3派2特使赴巴谈判→两轨道张力加剧"
+      "findings": "Project Freedom launched May 4 (escorts, 15k troops, destroyers) while ceasefire technically in place; Trump declined to confirm ceasefire status after Hormuz skirmish; reviewing Iran 14-pt proposal but called it unsatisfactory; dual blockade + escort = contradictory posture"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active-fragile",
+      "status": "stressed",
       "last_check": "2026-05-05",
-      "findings": "伊朗14点方案5/3提交+美9点回复5/4; 伊朗审查中; Trump称'代价不够大'拒绝当前方案; 核心缺口未变: 美要核关闭+导弹限制+Hormuz完全开放↔伊要浓缩权+赔偿+撤军+制裁解除; Witkoff:'在谈'; 谈判框架存在但核心议题零进展"
+      "findings": "Iran 14-pt proposal submitted May 3 (30-day resolution, US troop withdrawal, Hormuz sovereign control, sanctions lift, reparations); US responded via Pakistan; ceasefire violated by both sides in Hormuz May 4; Pakistan-mediated Islamabad talks stalled; UNSC Res 2817 passed (China/Russia abstained)"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "elevated",
+      "status": "approaching",
       "last_check": "2026-05-05",
-      "findings": "油价$4.457/加仑(AAA 5/5; 战前$2.98,+49%); WPR 60天5/1到期; Trump致函国会称停火终止时钟; 参议院4/30否决战争授权(民主党6次推均失败); 13美军KIA; Brent ~$107-110波动; Trump计划派2特使赴巴谈判→油价应声下跌; 汽油价格为战争以来最高"
+      "findings": "WPR 60-day deadline hit May 1; Senate 50-47 WPR vote failed but first GOP defection (Collins); Trump claims hostilities terminated; gas .45/gal (+50% since war start); 13-15 troops KIA, 380+ WIA; Murkowski drafting AUMF; public approval declining"
     }
   },
   "noise_filter": {
