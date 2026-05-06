@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-06T10:03:00.497240+00:00",
+  "last_updated": "2026-05-06T22:02:23.011761+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~0/week",
-          "note": "停火后IRGC袭击近零; 4月8日起停火; 较冲突峰值下降90%+; 偶发违规但无大规模交火",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "~0/day (ceasefire active)",
@@ -93,6 +87,12 @@
           "est": "~0.5/day (ceasefire D29; May4 UAE flare-up contained; Project Freedom paused D2)",
           "note": "Ceasefire since Apr 8 extended indefinitely; Iran attacked UAE w/ drones+missiles May 4 (19 intercepted), CENTCOM sank 6 Iranian boats; Trump paused Project Freedom May 5 citing deal progress; Hegseth: ceasefire not over; 36 total Hormuz vessel incidents (30 attacks+6 near-miss)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "est": "3",
+          "note": "IRGC能力严重退化；4月前70%+弹道导弹发射架已摧毁；海峡海上袭击持续（5/4两起新船只袭击，累计30次攻击+6次险情）；4/8停火令名义生效但双方均违反",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~14 vessels/day",
-          "note": "4月30日14次过境(7入/7出); 伊朗4月17日宣布部分重开随即因以色列违规关闭; 约为战前~138/天的10%",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "14 vessels/day",
@@ -189,6 +183,12 @@
           "est": "11 ships/day (~8% of 130-ship baseline)",
           "note": "May 4 data: 11 crossings (5 in+6 out); Project Freedom D1 convoy 5 supertankers passed Omani side without incident; dual blockade persists - Iran blocking strait + US blockading Iranian ports since Apr 13; 500-700 vessels stranded in Gulf",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "est": "11",
+          "note": "5/4日过境11艘（5入6出）；4月全月仅191次过境（日均6.4艘）vs危机前130艘/日；Project Freedom 5/4启动护航2艘美籍船只后5/6因谈判进展暂停；海峡内941艘船待机",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~1.0M bbl/day",
-          "note": "4月24日当周释放7.1M桶(最高单周); 3月20日至今累计17.5M桶; 172M桶计划按120天=~1.43M/天目标推进",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "7.1M bbl/week",
@@ -282,6 +276,12 @@
           "est": "~7.1M bbl/week (SPR@397.9M bbl)",
           "note": "Week ending Apr 24: 7.1M bbl released (highest since Oct 2022); total 17.5M bbl since March; planned 172M bbl in 120 days (IEA coordination); ~1M bbl/day pace",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "est": "7100000",
+          "note": "4/24当周释放710万桶（2022年10月来最高）；3/20至4/24累计释放1750万桶；总计划1.72亿桶（IEA协调4亿桶计划）；SPR库存3.979亿桶",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active-diplomatic",
+      "status": "active",
       "last_check": "2026-05-06",
-      "findings": "Wang Yi 26 calls + envoy Zhai Jun shuttle; China-Pakistan 5-point proposal (Mar31); China UN envoy May 1: Hormuz 'high on agenda' for Trump China visit; Trump cool on China mediation; MANPAD/BeiDou accusations add bilateral friction; signal: posturing not breakthrough"
+      "findings": "外交调停活跃：特使翟隽穿梭巡回，王毅26次通话；中巴5点倡议（3/31）；中国UN特使5/1警告Hormuz封锁危害经济；特朗普访华期间预计列为议程；隐患：美指控中国通过第三方向伊朗输送MANPAD+北斗BeiDou用于引导攻击（中方否认）"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "TRIGGERED",
+      "status": "contradictory",
       "last_check": "2026-05-06",
-      "findings": "Project Freedom launched May 4 (15K troops+100 aircraft+destroyers), then PAUSED May 5 by Trump citing 'very positive discussions'; Trump claims War Powers 'hostilities terminated' while CENTCOM sinking Iranian boats same week; Iran 14-pt vs US 9-pt proposals exchanged; maximum US signal contradiction - escort+negotiate simultaneously"
+      "findings": "信号高度矛盾：5/4启动Project Freedom护航行动→5/6因谈判进展宣布暂停；特朗普同时声称谈判'非常积极'且若无协议将以'高得多的级别'轰炸伊朗；停火后启动军事护航引发伊朗反击（伊朗海军向美舰鸣警告弹并声称击中一艘）"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active-deadlocked",
+      "status": "emerging",
       "last_check": "2026-05-06",
-      "findings": "Iran 14-pt (May3) vs US 9-pt counter-offer; key gaps: Hormuz control mechanism (Iran wants new regime), zero enrichment (US) vs enrichment right (Iran), US forces withdrawal; Iran wants 30-day total resolution; UN sanctions draft circulating; ceasefire holding but no framework agreement"
+      "findings": "框架雏形已现：伊朗5/2提14点方案（巴基斯坦中介），要求30天内解决；美伊'接近备忘录'（Axios报道，特朗普行政官员警告谈判曾多次最终破裂）；4/8巴基斯坦调停停火；UNSC Res.2817通过谴责伊朗；核议题分歧仍是核心障碍（伊方要求保留浓缩权，美方坚持零浓缩）"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "elevated-cracking",
+      "status": "elevated",
       "last_check": "2026-05-06",
-      "findings": "War Powers 60-day deadline hit May 1; Trump claims 'hostilities terminated' to sidestep; 5th Senate WPR vote 50-47 (Collins R-ME broke ranks first time); gas at $4.42/gallon (war-high +76% YoY, highest since war start); 13 KIA 428 total US casualties; Pentagon accused of casualty cover-up (Intercept); political cost ceiling approaching"
+      "findings": "多指标触阈：战争授权60天期限5/1到期，特朗普宣布敌对行动'已终止'规避国会；参众两院授权决议均告失败；已确认6名美军KIA（3/1科威特）；汽油价格年同比+70%，5/6期货.46/加仑（较.75高点回落但仍高企）；停火期间继续维持伊朗港口封锁"
     }
   },
   "noise_filter": {
