@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-06T06:02:33.702636+00:00",
+  "last_updated": "2026-05-06T10:03:00.497240+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~2/day",
-          "note": "ceasefire in effect since Apr 7 (extended Apr 21); IRGC maintaining Hormuz blockade, ~1-2 violations/incidents per day; 13 US KIA total",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "~0/week",
@@ -93,6 +87,12 @@
           "est": "~1-2 incidents/day (ceasefire violations)",
           "note": "April 8 ceasefire in effect; Iran claimed missile hit US frigate May 4 (CENTCOM denied); 70%+ Iran ballistic launchers destroyed; IRGC capacity degraded but sporadic Hormuz harassment ongoing",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "est": "~0.5/day (ceasefire D29; May4 UAE flare-up contained; Project Freedom paused D2)",
+          "note": "Ceasefire since Apr 8 extended indefinitely; Iran attacked UAE w/ drones+missiles May 4 (19 intercepted), CENTCOM sank 6 Iranian boats; Trump paused Project Freedom May 5 citing deal progress; Hegseth: ceasefire not over; 36 total Hormuz vessel incidents (30 attacks+6 near-miss)",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~14 ships/day",
-          "note": "Apr 30 data: 14 crossings (7 inbound/7 outbound); pre-war baseline ~138/day; ~10% of normal; Iran officially reopened Apr 17 but dual blockade persists",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "~14 vessels/day",
@@ -189,6 +183,12 @@
           "est": "~11 ships/day (~8% of 130/day baseline)",
           "note": "Project Freedom launched May 4; first 5-supertanker convoy completed under US escort; 36 vessel attacks since Feb 28; dual blockade structure (Iran blocks Hormuz, US Navy blockades Iranian ports from April 13)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "est": "11 ships/day (~8% of 130-ship baseline)",
+          "note": "May 4 data: 11 crossings (5 in+6 out); Project Freedom D1 convoy 5 supertankers passed Omani side without incident; dual blockade persists - Iran blocking strait + US blockading Iranian ports since Apr 13; 500-700 vessels stranded in Gulf",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "7.1M bbl/week",
-          "note": "week ending Apr 24, highest since Oct 2022; total 17.5M bbl since March; SPR at 397.9M bbl; 172M bbl total release target (120-day program)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "~1.0M bbl/day",
@@ -282,6 +276,12 @@
           "est": "~1.0M bbl/day (7.1M bbl week ending Apr 24)",
           "note": "17.5M total released since March; SPR level 397.9M bbl; planned 172M bbl total release (~120 days); half as exchange loans; IEA coordinated 400M bbl global release",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "est": "~7.1M bbl/week (SPR@397.9M bbl)",
+          "note": "Week ending Apr 24: 7.1M bbl released (highest since Oct 2022); total 17.5M bbl since March; planned 172M bbl in 120 days (IEA coordination); ~1M bbl/day pace",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active-diplomatic-only",
+      "status": "active-diplomatic",
       "last_check": "2026-05-06",
-      "findings": "Envoy Zhai Jun toured region; Wang Yi 26 calls; China-Pakistan 5-point proposal Mar 31; UN envoy warns Hormuz 'wreaking havoc'; US intel flagged China MANPADs to Iran (denied); Trump-China summit this month, Hormuz on agenda — NO naval action in Gulf"
+      "findings": "Wang Yi 26 calls + envoy Zhai Jun shuttle; China-Pakistan 5-point proposal (Mar31); China UN envoy May 1: Hormuz 'high on agenda' for Trump China visit; Trump cool on China mediation; MANPAD/BeiDou accusations add bilateral friction; signal: posturing not breakthrough"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "high-contradiction",
+      "status": "TRIGGERED",
       "last_check": "2026-05-06",
-      "findings": "Project Freedom (military escort) launched May 4 simultaneous with reviewing Iran 14-point peace plan; US-Iran exchanged fire May 4-5 in Hormuz during ceasefire; Trump claiming hostilities 'terminated' while operations ongoing; second peace talks round via Pakistan expected"
+      "findings": "Project Freedom launched May 4 (15K troops+100 aircraft+destroyers), then PAUSED May 5 by Trump citing 'very positive discussions'; Trump claims War Powers 'hostilities terminated' while CENTCOM sinking Iranian boats same week; Iran 14-pt vs US 9-pt proposals exchanged; maximum US signal contradiction - escort+negotiate simultaneously"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active-stalled",
+      "status": "active-deadlocked",
       "last_check": "2026-05-06",
-      "findings": "Iran 14-point proposal: end war first, nuclear later; US 9-point counter demands nuclear restrictions before war ends — sequencing gap; Pakistan intermediary; second round expected; UN Resolution 2817 adopted; UN weighing new Iran sanctions; April 8 ceasefire extended but fragile"
+      "findings": "Iran 14-pt (May3) vs US 9-pt counter-offer; key gaps: Hormuz control mechanism (Iran wants new regime), zero enrichment (US) vs enrichment right (Iran), US forces withdrawal; Iran wants 30-day total resolution; UN sanctions draft circulating; ceasefire holding but no framework agreement"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching-threshold",
+      "status": "elevated-cracking",
       "last_check": "2026-05-06",
-      "findings": "Gas .45/gal (up 76% YoY, highest since 2022); DCAS 251 Army casualties; War Powers 60-day deadline hit May 1 — Trump claimed 'hostilities terminated'; House rejected War Powers constraint resolution; Senate Dems forcing weekly votes; Republican midterm pressure building over gas prices"
+      "findings": "War Powers 60-day deadline hit May 1; Trump claims 'hostilities terminated' to sidestep; 5th Senate WPR vote 50-47 (Collins R-ME broke ranks first time); gas at $4.42/gallon (war-high +76% YoY, highest since war start); 13 KIA 428 total US casualties; Pentagon accused of casualty cover-up (Intercept); political cost ceiling approaching"
     }
   },
   "noise_filter": {
