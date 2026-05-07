@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-07T06:03:12.498971+00:00",
+  "last_updated": "2026-05-07T10:01:58.911982+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-04",
-          "est": "~0.2/天(停火D27;Project Freedom D1启动)",
-          "note": "停火自4/8延续，IRGC直接攻击近零；5/4 Project Freedom正式启动(15000人+100架+驱逐舰群)，伊朗顾问称违反停火；IRGC仍维持霍尔木兹海峡封锁+商船选择性扣押",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "~0.2/天(停火D27;Project Freedom D1首批护航完成)",
@@ -93,6 +87,12 @@
           "est": "~1-2/day vessel",
           "note": "36 vessel attacks total since Mar 1 (30 attacks+6 near-misses); ballistic missiles down 90% per CENTCOM Mar 5; Iran fired warning shots at US warship May 4; CMA CGM San Antonio attacked May 6",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "1-2次/天 (停火D30; Project Freedom 5/6暂停)",
+          "note": "Project Freedom 5/4启动→5/6暂停(48h);CMA CGM San Antonio 5/5在海峡内被巡航导弹击中;HMM Namu 5/4 UAE锚地起火;伊朗仍声称击中美舰CENTCOM否认;CENTCOM 5/4击沉6艘伊朗快艇;停火名存实亡但形式维持",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-04",
-          "est": "14艘/天(Apr30实测;Project Freedom D1)",
-          "note": "Apr30实测14次过境(7进7出)；战前~138/天基线约10%；Project Freedom 5/4启动目标恢复航行自由；伊朗仅允许中俄印伊拉克巴基斯坦通行；2000艘船困波斯湾",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "12艘/天(5/2实测;Project Freedom D1首批5超级油轮过境)",
@@ -189,6 +183,12 @@
           "est": "11",
           "note": "May 4: 11 crossings (5in/6out); pre-crisis baseline 130/day; Project Freedom launched May 4, paused May 6 citing 'great progress' toward deal",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "10艘/天 (5/5实测;Project Freedom仅引导2艘后暂停)",
+          "note": "5/5实测10艘过境含2艘美军引导;Project Freedom 48h只成功护航2艘;1550+商船(22500水手)仍困波斯湾;伊朗5/6称暂停后将'确保通行';战前~130艘/天约8%;保险费高企无激励航运公司过境",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-04",
-          "est": "7.1M桶/周(截至4/24;5/4竞标92.5M桶)",
-          "note": "3月20日至4月24日累计释放17.5M桶；4/24当周7.1M(2022年10月以来最高单周)；SPR库存397.9M桶；172M总计划进行中；5/4为92.5M桶交换竞标截止日",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "7.1M桶/周(截至4/24;5/4竞标92.5M桶截止日)",
@@ -282,6 +276,12 @@
           "est": "7.1M bbl/wk",
           "note": "Week ending Apr 24: 7.1M bbl (highest since Oct 7 2022); 17.5M total Mar 20-Apr 24; 172M barrel exchange ongoing over 120 days; SPR at 397.9M bbl",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "~5.2M桶/周(5/6 EIA周报;周结5/1)",
+          "note": "5/6 EIA周报释放约5.2M桶(较前周7.1M回落但仍高位);累计自3月约22.7M桶;SPR库存约392.7M桶;172M桶总计划进行中;IEA协调全球400M桶;次EIA周报5/13",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "watching",
+      "status": "active",
       "last_check": "2026-05-07",
-      "findings": "Iran FM Araghchi met Wang Yi May 6, Beijing pressing for ceasefire; Hormuz on Trump-Xi summit agenda; vetoed UNSC escort res Apr 7; MANPAD shipment allegations via 3rd countries (China denies); envoy Zhai Jun toured region, Wang Yi 26+ diplomatic calls"
+      "findings": "MAJOR: Araghchi-Wang Yi Beijing 5/6;China explicitly calls 'comprehensive ceasefire'+'prompt resumption of Hormuz shipping';Trump-Xi summit 5/14-15 Beijing,Trump advisors urged Beijing pressure Iran;China stepping up mediation role"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-05-07",
-      "findings": "MAJOR: Project Freedom launched May 4, paused May 6 (24hr); Trump threatening 'much higher level' bombing simultaneously pursuing deal; US-Iran nearing 1-page MOU per Axios; CENTCOM prepared 'short/powerful' strike plan as backup"
+      "findings": "Project Freedom 5/4 launch→5/6 pause(48h);Trump simultaneously threatening 'much higher level' bombing+pursuing 14-pt MOU;Hegseth ceasefire intact;CMA CGM San Antonio struck 5/5;6 IRGC boats sunk 5/4"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active",
+      "status": "advancing",
       "last_check": "2026-05-07",
-      "findings": "Close to 14-point MOU per Axios May 6; Iran 10-pt vs US 15-pt proposals; enrichment moratorium gap (US 20yr, Iran 5yr, likely 12-15yr); ceasefire fragile since Apr 7; IRGC vs civilian govt split complicates sign-off"
+      "findings": "14-pt MOU close per Axios/CNN 5/6:Witkoff+Kushner negotiating;30-day negotiation window post-MOU;enrichment moratorium 12-15yr converging;Iran HEU removal option (move to US);gradual sanctions relief+frozen funds release;US accepts Iran demand Hormuz-first nuclear-later"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-05-07",
-      "findings": "Gas .46/gal nat'l avg (+37% from pre-war); war cost -50B; War Powers House vote failed by 1 vote; Schumer forcing weekly WP votes; 13 US military deaths; B family pump overspend"
+      "findings": "Gas .46/gal national avg(+35¢/wk,+37% pre-war);War Powers 60-day mark passed 5/1,Trump claims hostilities 'terminated';5th WP vote held(Markey);GOP holding line so far;13 US KIA+5000 civilian deaths region;Schumer weekly WP votes continuing"
     }
   },
   "noise_filter": {
