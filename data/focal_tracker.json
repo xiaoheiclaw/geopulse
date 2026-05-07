@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-06T22:02:23.011761+00:00",
+  "last_updated": "2026-05-07T02:02:28.844027+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~0/day (ceasefire active)",
-          "note": "Extended ceasefire since Apr 8/21; last major IRGC kinetic wave mid-March; direct fire halted but strait blockade maintained by IRGC naval assets",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "~2-5次/周(停火中，较战争初期下降>90%)",
@@ -93,6 +87,12 @@
           "est": "3",
           "note": "IRGC能力严重退化；4月前70%+弹道导弹发射架已摧毁；海峡海上袭击持续（5/4两起新船只袭击，累计30次攻击+6次险情）；4/8停火令名义生效但双方均违反",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "1-2次/天(停火D30;Project Freedom 暂停)",
+          "note": "5/5 IRGC对Project Freedom护航发起多向攻击：cruise missiles/drones/small boats打美海军和被护航商船；CMA CGM San Antonio遭巡航导弹击中；UAE报15枚导弹+4无人机；5/6 Trump暂停Project Freedom；停火框架名存实亡但形式仍维持",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "14 vessels/day",
-          "note": "Apr 30 data: 14 crossings (7in/7out); <10% of pre-war ~140/day; Iran charging M+ toll/ship; US naval blockade on Iranian ports since Apr 13; 22 ships attacked since war began",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "~10-14艘/日(战前5-14%)",
@@ -189,6 +183,12 @@
           "est": "11",
           "note": "5/4日过境11艘（5入6出）；4月全月仅191次过境（日均6.4艘）vs危机前130艘/日；Project Freedom 5/4启动护航2艘美籍船只后5/6因谈判进展暂停；海峡内941艘船待机",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "10艘/天(5/5实测;Project Freedom 5/6暂停)",
+          "note": "5/5实测10艘过境(含2艘美军引导)；Project Freedom仅48小时只成功引导2艘；CMA CGM San Antonio在海峡内遭袭；伊朗称暂停后将'确保通行'；1600艘船仍困湾区；战前~135/天约7-8%",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "7.1M bbl/week",
-          "note": "Week ending Apr 24: 7.1M bbl (largest since Oct 2022); total 17.5M released since March; SPR at 397.9M bbl; plan: 172M total over 120 days coordinated with IEA 400M",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-03",
           "est": "7.1M桶/周(4月24日当周峰值)",
@@ -282,6 +276,12 @@
           "est": "7100000",
           "note": "4/24当周释放710万桶（2022年10月来最高）；3/20至4/24累计释放1750万桶；总计划1.72亿桶（IEA协调4亿桶计划）；SPR库存3.979亿桶",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "~5.2M桶/周(EIA 5/6发布,周结5/1)",
+          "note": "5/6 EIA周报发布(周结5/1):Macquarie预测5.2M桶减幅(较前周7.1M回落);累计自3月约22.7M桶;SPR库存约392.7M桶;172M桶总计划约持续120天;IEA协调全球400M桶;下次EIA周报5/13",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active",
-      "last_check": "2026-05-06",
-      "findings": "外交调停活跃：特使翟隽穿梭巡回，王毅26次通话；中巴5点倡议（3/31）；中国UN特使5/1警告Hormuz封锁危害经济；特朗普访华期间预计列为议程；隐患：美指控中国通过第三方向伊朗输送MANPAD+北斗BeiDou用于引导攻击（中方否认）"
+      "status": "active+escalating",
+      "last_check": "2026-05-07",
+      "findings": "5/6 Araghchi访华会晤王毅(战争以来首次)，王毅呼吁'全面停火'+海峡迅速恢复通行；中方定位为关键调解者(Trump-Xi峰会前奏)；中国寻求保护湾区贸易能源流向亚洲"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "contradictory",
-      "last_check": "2026-05-06",
-      "findings": "信号高度矛盾：5/4启动Project Freedom护航行动→5/6因谈判进展宣布暂停；特朗普同时声称谈判'非常积极'且若无协议将以'高得多的级别'轰炸伊朗；停火后启动军事护航引发伊朗反击（伊朗海军向美舰鸣警告弹并声称击中一艘）"
+      "status": "highly_contradictory",
+      "last_check": "2026-05-07",
+      "findings": "5/4-5/5 Project Freedom启动后仅48小时遭Iran多向反击(cruise missile击中CMA CGM San Antonio)；5/5/6 Trump经巴基斯坦请求暂停Project Freedom，称'重大进展'，同时威胁'更高级别'打击；伊朗暂停后承诺'确保通行'"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging",
-      "last_check": "2026-05-06",
-      "findings": "框架雏形已现：伊朗5/2提14点方案（巴基斯坦中介），要求30天内解决；美伊'接近备忘录'（Axios报道，特朗普行政官员警告谈判曾多次最终破裂）；4/8巴基斯坦调停停火；UNSC Res.2817通过谴责伊朗；核议题分歧仍是核心障碍（伊方要求保留浓缩权，美方坚持零浓缩）"
+      "status": "emerging+structuring",
+      "last_check": "2026-05-07",
+      "findings": "14点MOU框架成形(Witkoff/Kushner谈判)：一页纸MoU+30天解决核问题+解冻资产+海峡安全；Iran 5/2提案要求30天而非2月停火；通过巴基斯坦中介；分歧:核要求(美零浓缩) vs 海峡控制(伊朗坚持)；CNN称'双方走向memo'"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "elevated",
-      "last_check": "2026-05-06",
-      "findings": "多指标触阈：战争授权60天期限5/1到期，特朗普宣布敌对行动'已终止'规避国会；参众两院授权决议均告失败；已确认6名美军KIA（3/1科威特）；汽油价格年同比+70%，5/6期货.46/加仑（较.75高点回落但仍高企）；停火期间继续维持伊朗港口封锁"
+      "status": "elevated_steady",
+      "last_check": "2026-05-07",
+      "findings": "5/6 AAA全美均价.46/加仑(较战前+52%)；Schumer承诺持续推动War Powers Resolution投票；Trump行政认定'敌对行动已终止'规避60天授权；汽油+油价是核心政治成本"
     }
   },
   "noise_filter": {
