@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-07T02:02:28.844027+00:00",
+  "last_updated": "2026-05-07T06:03:12.498971+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~2-5次/周(停火中，较战争初期下降>90%)",
-          "note": "4月8日巴基斯坦调停停火后频率大幅降低，停火多次违反；3月5日CENTCOM已报告弹道导弹↓90%、无人机↓83%；4月21日美国延长停火",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "~0.2/天(停火D27;Project Freedom D1启动)",
@@ -93,6 +87,12 @@
           "est": "1-2次/天(停火D30;Project Freedom 暂停)",
           "note": "5/5 IRGC对Project Freedom护航发起多向攻击：cruise missiles/drones/small boats打美海军和被护航商船；CMA CGM San Antonio遭巡航导弹击中；UAE报15枚导弹+4无人机；5/6 Trump暂停Project Freedom；停火框架名存实亡但形式仍维持",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "~1-2/day vessel",
+          "note": "36 vessel attacks total since Mar 1 (30 attacks+6 near-misses); ballistic missiles down 90% per CENTCOM Mar 5; Iran fired warning shots at US warship May 4; CMA CGM San Antonio attacked May 6",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "~10-14艘/日(战前5-14%)",
-          "note": "战前~100+艘/日(3000艘/月)；4月17日伊朗部分开放海峡，对中俄印等5国优先通行；约2000艘船只滞留波斯湾；4月30日仅14次通行(7进7出)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "14艘/天(Apr30实测;Project Freedom D1)",
@@ -189,6 +183,12 @@
           "est": "10艘/天(5/5实测;Project Freedom 5/6暂停)",
           "note": "5/5实测10艘过境(含2艘美军引导)；Project Freedom仅48小时只成功引导2艘；CMA CGM San Antonio在海峡内遭袭；伊朗称暂停后将'确保通行'；1600艘船仍困湾区；战前~135/天约7-8%",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "11",
+          "note": "May 4: 11 crossings (5in/6out); pre-crisis baseline 130/day; Project Freedom launched May 4, paused May 6 citing 'great progress' toward deal",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-03",
-          "est": "7.1M桶/周(4月24日当周峰值)",
-          "note": "3月20日至4月24日累计释放17.5M桶；总计划172M桶(配合IEA全球400M桶协调释放)；当前库存397.9M桶",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "7.1M桶/周(截至4/24;5/4竞标92.5M桶)",
@@ -282,6 +276,12 @@
           "est": "~5.2M桶/周(EIA 5/6发布,周结5/1)",
           "note": "5/6 EIA周报发布(周结5/1):Macquarie预测5.2M桶减幅(较前周7.1M回落);累计自3月约22.7M桶;SPR库存约392.7M桶;172M桶总计划约持续120天;IEA协调全球400M桶;下次EIA周报5/13",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-07",
+          "est": "7.1M bbl/wk",
+          "note": "Week ending Apr 24: 7.1M bbl (highest since Oct 7 2022); 17.5M total Mar 20-Apr 24; 172M barrel exchange ongoing over 120 days; SPR at 397.9M bbl",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active+escalating",
+      "status": "watching",
       "last_check": "2026-05-07",
-      "findings": "5/6 Araghchi访华会晤王毅(战争以来首次)，王毅呼吁'全面停火'+海峡迅速恢复通行；中方定位为关键调解者(Trump-Xi峰会前奏)；中国寻求保护湾区贸易能源流向亚洲"
+      "findings": "Iran FM Araghchi met Wang Yi May 6, Beijing pressing for ceasefire; Hormuz on Trump-Xi summit agenda; vetoed UNSC escort res Apr 7; MANPAD shipment allegations via 3rd countries (China denies); envoy Zhai Jun toured region, Wang Yi 26+ diplomatic calls"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "highly_contradictory",
+      "status": "triggered",
       "last_check": "2026-05-07",
-      "findings": "5/4-5/5 Project Freedom启动后仅48小时遭Iran多向反击(cruise missile击中CMA CGM San Antonio)；5/5/6 Trump经巴基斯坦请求暂停Project Freedom，称'重大进展'，同时威胁'更高级别'打击；伊朗暂停后承诺'确保通行'"
+      "findings": "MAJOR: Project Freedom launched May 4, paused May 6 (24hr); Trump threatening 'much higher level' bombing simultaneously pursuing deal; US-Iran nearing 1-page MOU per Axios; CENTCOM prepared 'short/powerful' strike plan as backup"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging+structuring",
+      "status": "active",
       "last_check": "2026-05-07",
-      "findings": "14点MOU框架成形(Witkoff/Kushner谈判)：一页纸MoU+30天解决核问题+解冻资产+海峡安全；Iran 5/2提案要求30天而非2月停火；通过巴基斯坦中介；分歧:核要求(美零浓缩) vs 海峡控制(伊朗坚持)；CNN称'双方走向memo'"
+      "findings": "Close to 14-point MOU per Axios May 6; Iran 10-pt vs US 15-pt proposals; enrichment moratorium gap (US 20yr, Iran 5yr, likely 12-15yr); ceasefire fragile since Apr 7; IRGC vs civilian govt split complicates sign-off"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "elevated_steady",
+      "status": "approaching",
       "last_check": "2026-05-07",
-      "findings": "5/6 AAA全美均价.46/加仑(较战前+52%)；Schumer承诺持续推动War Powers Resolution投票；Trump行政认定'敌对行动已终止'规避60天授权；汽油+油价是核心政治成本"
+      "findings": "Gas .46/gal nat'l avg (+37% from pre-war); war cost -50B; War Powers House vote failed by 1 vote; Schumer forcing weekly WP votes; 13 US military deaths; B family pump overspend"
     }
   },
   "noise_filter": {
