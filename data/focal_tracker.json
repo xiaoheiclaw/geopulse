@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-07T22:02:10.052240+00:00",
+  "last_updated": "2026-05-08T02:03:04.662114+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-04",
-          "est": "~0.3次/天(停火D26)",
-          "note": "停火D26(4/8生效→4/21无限期延长); IRGC弹道导弹近零; 5/3英国货船遭快艇袭扰(Sirik附近); Project Freedom 5/4启动首轮护航5艘超大油轮; 海峡海军执法选择性延续",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "~0.3次/天(停火D28;Project Freedom D2)",
@@ -93,6 +87,12 @@
           "est": "~1次/天(停火D31;Project Freedom 5/6暂停后冷却)",
           "note": "Trump 5/6暂停Project Freedom引用谈判进展;5/5 IRGC对护航多向攻击高峰过后冷静;UAE 5/5为第二日处理伊朗导弹+无人机;CENTCOM 5/5击沉6艘IRGCN快艇;CMA CGM San Antonio 5/5被巡航导弹击中;伊朗5/6称暂停后将'确保通行'",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-08",
+          "est": "4-6次/天(5/7直接美伊海上交火;停火D31形式仍在)",
+          "note": "5/7 IRGC对USS Truxtun(DDG103)+Peralta(DDG115)+Mason(DDG87) 3舰过境海峡时发动多向攻击(导弹+无人机+快艇);CENTCOM拦截无损;美军反击打Bandar Abbas+Qeshm+Bandar Khamir+Sirik伊朗本土设施(导弹/无人机发射点+C2+ISR);伊朗称美打民用区+一艘伊朗油轮;伊朗对Chabahar以东美舰反击;Trump'they trifled with us, we blew them away'但坚称停火仍在",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-04",
-          "est": "~12次过境/天(5/2)",
-          "note": "5/2: 12次(5进7出); 4/26低点2次; 封锁维持~95%封闭; Project Freedom 5/4首轮完成无事故; 预战均值100+/天; 中俄印等选择性过境仍允许",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "~12艘/天(5/2实测;Project Freedom D2)",
@@ -189,6 +183,12 @@
           "est": "~7艘/天(5/6实测;Project Freedom暂停)",
           "note": "5/6 NBC追踪7艘过境(5进2出);战前~130艘/天约5%;Project Freedom暂停只引导过2艘;Maersk 5/5一艘船在美军保护下过境;1550+船仍困湾区",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-08",
+          "est": "~7-8艘/天(5/6 NBC追踪;Project Freedom暂停)",
+          "note": "5/6 NBC追踪7艘过境(5进2出);Maersk 5/5一艘船在美军保护下过境;1600艘船仍困湾区;战前~130艘/天约5-6%;Project Freedom 48小时只引导2艘后5/6暂停(48h);Polymarket 5月底恢复正常 Yes概率低;UNCTAD报告对全球贸易影响显著",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-04",
-          "est": "7.1M桶/周(4/24当周)",
-          "note": "累计17.5M桶(3/20至今); 4/24当周7.1M桶为2022年10月以来最高; SPR现存397.9M桶; 计划总量172M桶约120天; IEA协调全球400M桶联合释放",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-04",
           "est": "7.1M桶/周(截至4/24;5/4竞标截止)",
@@ -282,6 +276,12 @@
           "est": "~5.2M桶/周(EIA 5/6发布,周结5/1)",
           "note": "5/6 EIA周报:SPR库存392.7M桶(较前周397.9M减5.2M);较前周7.1M回落;累计自3月22.7M桶;172M桶总计划进行中;Macquarie预测下周续抽;次EIA周报5/13",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-08",
+          "est": "~5.2M桶/周(5/6 EIA周报,周结5/1;SPR库存约392.7M桶)",
+          "note": "5/6 EIA周报:SPR库存392.7M桶(较前周397.9M减5.2M);较前周7.1M回落但仍高位;累计自3月22.7M桶;172M桶总计划进行中;IEA协调全球400M桶;DOE 5/4竞标92.5M桶交换截止;Macquarie预测下周续抽;次EIA周报5/13",
+          "source": "pipeline"
         }
       ]
     }
@@ -291,29 +291,29 @@
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "active-escalating",
-      "last_check": "2026-05-07",
-      "findings": "Araghchi-Wang Yi Beijing 5/6(开战以来首次访华);China明确呼吁'comprehensive ceasefire'+'prompt resumption Hormuz shipping';Trump-Xi summit 5/14-15 Beijing(进入T-6天倒计时);中国占位关键调解人;共享利益(中买方/美油价)开放外交空间"
+      "last_check": "2026-05-08",
+      "findings": "Araghchi-Wang Yi Beijing 5/6(开战以来首次访华);China明确呼吁'comprehensive ceasefire'+'prompt resumption Hormuz shipping';Trump-Xi summit 5/14-15 Beijing(进入T-6天倒计时);中国占位关键调解人;美方明确施压中国动用对伊朗影响力开海峡"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "triggered",
-      "last_check": "2026-05-07",
-      "findings": "Project Freedom 5/4启动→5/5 IRGC多向反击+CMA CGM San Antonio被击→5/6暂停(48h周期);Trump 5/6说战争'over quickly'+给伊朗一周回复;Hegseth坚持停火完整;Senate WP 5/1投票47-50(GOP第6次阻拦);言-行同步反转"
+      "status": "triggered-escalating",
+      "last_check": "2026-05-08",
+      "findings": "5/7重大反转:Project Freedom 5/6暂停后24h内,IRGC对3艘美军destroyer过境发动直接攻击,美军反击打伊朗本土多处(Bandar Abbas/Qeshm/Bandar Khamir/Sirik);Trump同时坚称停火仍在+'we blew them away'+'hit Iran more violently if no deal';Saudi拒提供领空(per Times of Israel);言-行同步反转持续;Senate WP第6次5/1失败47-50;Schumer继续每周WP投票"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "advancing",
-      "last_check": "2026-05-07",
-      "findings": "Axios/CNN 5/6:14-pt MOU'closing in';Witkoff+Kushner直接谈判+巴基斯坦调解;美方接受伊朗'Hormuz-first nuclear-later'(Al Jazeera 5/6);30天MOU后谈判窗口;12-15年浓缩冻结收敛;伊朗HEU移除选项讨论中;5/2伊朗已交14点回应;Trump给伊朗一周回复期"
+      "last_check": "2026-05-08",
+      "findings": "Axios/CNN 5/6:14-pt MOU升级为'one-page memo closing in';30天MOU窗口;Witkoff+Kushner直接谈判+巴基斯坦调解;美方接受'Hormuz-first nuclear-later'(Al Jazeera 5/6);浓缩冻结+解锁制裁+释放冻结资金;海峡限制+美海军封锁30天内逐步解除;条款覆盖'including Lebanon'(地区性);Trump给伊朗一周回复期;5/7冲突后Trump重提'hit more violently if no deal';所有条款待最终协议"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching-active",
-      "last_check": "2026-05-07",
-      "findings": "汽油.53/gal national avg(+31¢/wk,+50% pre-war);Senate WP第6次失败47-50(5/1);Schumer承诺每周WP投票;战争进入第3个月;1753美元/家庭/年额外油费成本(Common Dreams);WP 60天deadline 5/1已过;CommonDreams警告中期选举压力"
+      "last_check": "2026-05-08",
+      "findings": "美汽油.41/gal(Maine,从pre-war .91升+51%);全美家庭年累计成本+B;Senate WP第6次5/1失败47-50(GOP连续阻挡);Schumer承诺每周WP投票;战争进入第3个月;Common Dreams警告中期选举压力;Schiff/Schumer持续抨击;5/7冲突后压力可能再升"
     }
   },
   "noise_filter": {
