@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 92,
-  "updated": "2026-05-07T06:04:10.266129+00:00",
+  "version": 93,
+  "updated": "2026-05-08T10:03:08.923303+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -504,7 +504,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.9,
+      "probability": 0.93,
       "confidence": 0.75,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
@@ -525,10 +525,11 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-14T10:53:35.598778+00:00",
+      "last_updated": "2026-05-08T10:03:08.923303+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
       "updated": "2026-03-13T22:41:43.076948Z",
-      "prob": 0.88
+      "prob": 0.88,
+      "p_current": 0.93
     },
     "russia_energy_leverage": {
       "id": "russia_energy_leverage",
@@ -1071,7 +1072,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.62,
+      "probability": 0.68,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1118,13 +1119,14 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-05-03",
+      "last_updated": "2026-05-08T10:03:08.923303+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
       "updated_at": "2026-04-30T02:03:32.524979+00:00",
       "p": 0.72,
       "update_note": "fp4 at-threshold (House War Powers 1-vote margin); Iran proposal Rubio: better; ceasefire extended Apr21",
       "update_reason": "ceasefire D+25 (Apr8 extended indef Apr21); Iran new proposal to Pakistan May1; Islamabad talks set; War Powers 60d expired May1 (Trump claims ceasefire terminates); CENTCOM 'short&powerful' plan on standby = credible threat keeping ceasefire; fp3=active-progress",
-      "rationale": "[2026-05-04T02:05:39.249478+00:00] Project Freedom D1(5/4): 15000人+100架+驱逐舰群直接对抗伊朗霍尔木兹封锁。伊朗顾问称违反停火。并行谈判(伊朗14点方案)无法抵消军事升级压力。从0.45->0.35"
+      "rationale": "[2026-05-04T02:05:39.249478+00:00] Project Freedom D1(5/4): 15000人+100架+驱逐舰群直接对抗伊朗霍尔木兹封锁。伊朗顾问称违反停火。并行谈判(伊朗14点方案)无法抵消军事升级压力。从0.45->0.35",
+      "p_current": 0.68
     },
     "turkey_intervention": {
       "id": "turkey_intervention",
@@ -1438,7 +1440,7 @@
         "经济",
         "政治"
       ],
-      "probability": 0.98,
+      "probability": 0.99,
       "confidence": 0.8,
       "evidence": [
         "Brent $89→美国汽油~$4.2(当前)",
@@ -1454,8 +1456,9 @@
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-03-28T11:26:55.508001+00:00",
-      "created": "2026-03-07T01:09:27.227473Z"
+      "last_updated": "2026-05-08T10:03:08.923303+00:00",
+      "created": "2026-03-07T01:09:27.227473Z",
+      "p_current": 0.99
     },
     "em_capital_outflow": {
       "id": "em_capital_outflow",
@@ -1834,7 +1837,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.97,
+      "probability": 0.98,
       "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
@@ -1858,10 +1861,11 @@
       "pinned": false,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-04-30T10:03:48.084961+00:00",
+      "last_updated": "2026-05-08T10:03:08.923303+00:00",
       "created": "2026-03-13T22:42:03.988336+00:00",
       "p": 0.93,
-      "update_note": "House War Powers failed by 1 vote; gas $4.26/gal +30% YoY; 15 KIA/400+ WIA; war cost $25B"
+      "update_note": "House War Powers failed by 1 vote; gas $4.26/gal +30% YoY; 15 KIA/400+ WIA; war cost $25B",
+      "p_current": 0.98
     },
     "us_coercive_escalation_ladder": {
       "id": "us_coercive_escalation_ladder",
@@ -2347,7 +2351,9 @@
         "InvestingLive confirmed",
         "Normal: 77 ships/day → 2.7/day week 2 → 0"
       ],
-      "reasoning": "AIS数据客观确认零船运，全球能源走廊完全中断"
+      "reasoning": "AIS数据客观确认零船运，全球能源走廊完全中断",
+      "p_current": 1.0,
+      "last_updated": "2026-05-08T10:03:08.923303+00:00"
     },
     "dubai_airport_shutdown": {
       "id": "dubai_airport_shutdown",
@@ -4077,7 +4083,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-05-07T06:04:10.266129+00:00",
+  "last_updated": "2026-05-08T10:03:08.923303+00:00",
   "updated_at": "2026-04-26T22:05:29.547176Z",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
@@ -4110,7 +4116,19 @@
         "gasoline_price_surge: 0.92 → 0.98",
         "ceasefire_backchannel: 0.98 → 0.99"
       ]
+    },
+    {
+      "timestamp": "2026-05-08T10:03:08.923303+00:00",
+      "trigger": "fp1_triggered (Wang Yi-Araghchi 5/6) + fp2_triggered (Project Freedom paused 5/5 then kinetic resumed 5/7) + fp3_triggered (1-page MOU 14pt) + fp4_triggered (War Powers deadline + $4.54 gas)",
+      "changes": [
+        "conflict_deescalation: None -> 0.68 (fp3 specifics deepened: 1-page MOU, 14pt response, uranium enrich moratorium 5/12-15/20 trichotomy; capped by 5/7 kinetic resumption)",
+        "china_energy_diplomacy: None -> 0.93 (fp1 substantive: Wang Yi-Araghchi 5/6 Beijing meeting, China ME envoy in Gulf, Trump publicly pressuring Beijing for leverage)",
+        "gasoline_price_surge: None -> 0.99 (AAA 5/6 $4.54/gal nat avg, +35c/wk; Schumer publicly opposes)",
+        "domestic_war_opposition: None -> 0.98 (War Powers 60d 5/1 deadline expired w/o auth; admin invoking ceasefire-already-terminates clause; $25B war cost (Hegseth))",
+        "hormuz_zero_traffic: None -> 1.0 (Q2: only 7 ships 5/6 vs 130 baseline = 95%+ reduction; Hapag-Lloyd halted)"
+      ],
+      "note": "IRGC daily action confirmed; per independence rule 真主党/胡塞 capability nodes left unchanged (no new evidence this cycle)"
     }
   ],
-  "update_trigger": "Project Freedom D1 launch 2026-05-04; Iran 14pt proposal submitted; ceasefire D27"
+  "update_trigger": "fp1/fp2/fp3/fp4 all triggered; 5/7 kinetic resumption capping deescalation; Wang Yi-Araghchi 5/6"
 }
