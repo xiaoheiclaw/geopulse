@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-08T22:01:26.413252+00:00",
+  "last_updated": "2026-05-09T02:01:50.382119+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-05",
-          "est": "~1/day",
-          "note": "IRGC shifted to maritime domain; attacked USS Truxtun+Mason May4(CENTCOM denied hits); 22 merchant ships attacked total since Feb28; fast boats+mines+drones active",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-05",
           "est": "0.5次/天",
@@ -93,6 +87,12 @@
           "est": "2-3次/天(停火D32形式仍在;5/7-8美伊直接海上交火持续)",
           "note": "5/7 IRGC对USS Truxtun/Peralta/Mason 3舰过境海峡时多向攻击;CENTCOM拦截无损;5/7-8美军反击Bandar Abbas+Qeshm+Bandar Khamir+Sirik;Rubio称美方等待伊朗对和平协议回应;5/7对2艘伊朗油轮开火",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-09",
+          "est": "~5 events/day",
+          "note": "May 4-5: CENTCOM sank 6 IRGC vessels under Project Freedom; Iran claimed strikes on US warship (denied); UAE Fujairah refinery hit by missile/drones 2 days running, 3 wounded",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-05",
-          "est": "12 transits",
-          "note": "May2: 12 crossings(5in/7out); ProjectFreedom Day1 yielded only 2-4 vessels; dark vessel surge +34.4% to 176 events; pre-crisis baseline 50+/day",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-05",
           "est": "11艘/天(正常9%)",
@@ -189,6 +183,12 @@
           "est": "~5-6 ships/day(整周40 ships per Lloyd's;5/7仅2艘inbound dark transit;战前~130/day)",
           "note": "5/5伊朗成立Persian Gulf Strait Authority要求联系授权;5/7仅2艘内入暗航;5/4 Project Freedom启动→5/6暂停;Iran imposes new transit rules",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-09",
+          "est": "~6 ships/day (~5% of pre-war 130/day)",
+          "note": "Lloyd's List: 40 ships total in week to May 3; May 7 only 2 inbound transits, both AIS-dark; Iran imposed new Hormuz transit rules May 7 (CNN)",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-05",
-          "est": "7.1M bbl/week",
-          "note": "SPR stocks 397.9M bbl; week ending Apr24 released 7.1M(highest since Oct2022); total 17.5M since Mar; plan 172M over 120 days; IEA global coord 400M total",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-05",
           "est": "~1.0M桶/天",
@@ -282,6 +276,12 @@
           "est": "~0.74 mb/day(周减5.2mb;前周7.1mb;3/20以来共17.5mb)",
           "note": "EIA 5/6发布周报w/e 5/1预期减5.2mb;SPR库存397.9mb;172mb总计划与IEA 400mb协调释放进行中",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-09",
+          "est": "7.1 Mbbl/week (latest, week ending Apr 24)",
+          "note": "Total 17.5 Mbbl released since Mar 20 (5 weeks); most aggressive weekly draw since Oct 2022; SPR stock 397.9 Mbbl; part of 172 Mbbl coordinated release w/ IEA 400 Mbbl global",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active_strong",
-      "last_check": "2026-05-08",
-      "findings": "5/6 Wang Yi-Araghchi北京会谈;Wang Yi公开呼吁全面停火;Beijing positions as neutral broker ahead of Trump-Xi summit;特使Jun Zhai 3月以来持续中东斡旋;Rubio公开呼吁北京施压伊朗解开海峡封锁"
+      "status": "activated",
+      "last_check": "2026-05-09",
+      "findings": "China substantive: Wang Yi met Araghchi in Beijing May 6 calling for 'comprehensive ceasefire'; envoy Jun Zhai on regional tour since March; US/Tehran both acknowledge China's role; Trump admin pressing China to use influence on Hormuz"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "active_high",
-      "last_check": "2026-05-08",
-      "findings": "Project Freedom 5/4启动→5/6暂停(Trump引谈判进展);海军blockade持续;5/7-8美伊3舰过境海峡直接交火+反击伊朗本土设施;Trump'they trifled with us, we blew them away'但坚称停火仍在;双轨高度矛盾"
+      "status": "activated",
+      "last_check": "2026-05-09",
+      "findings": "Extreme US signal contradiction within 24h: May 4 Trump LAUNCHED Project Freedom (15,000 troops, 100+ aircraft, sank 6 IRGC vessels) → May 5 PAUSED it citing 'great progress on agreement'; blockade of Iranian ports remains"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active_strong",
-      "last_check": "2026-05-08",
-      "findings": "Witkoff/Kushner与伊朗官员谈判one-page 14-point MOU:30天谈判期+开海峡+nuke moratorium(美20年vs伊5年,落点12-15年)+解封冻资产+撤军;Axios称双方closing in;UNSCR 2817(13-0,中俄弃权)只是condemn伊朗非停火框架"
+      "status": "activated",
+      "last_check": "2026-05-09",
+      "findings": "Exit framework taking shape: 14-point MOU negotiated by Witkoff/Kushner via Pakistan mediation, would declare war end + 30-day window for Hormuz/nuclear/sanctions deal; UNSC Res 2817 adopted 13-0-2 (China/Russia abstain); April 8 2-week ceasefire still nominally holding"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "escalating",
-      "last_check": "2026-05-08",
-      "findings": "汽油.46/gal(+/bin/zsh.35/w);战争成本B(Pentagon);Schumer威胁周度War Powers投票;5/1 War Powers 60天deadline已过,白宫argue 4/8停火'terminated' hostilities故不适用;新增直接交火(5/7-8)将激活War Powers争议;尚无US casualties报告"
+      "status": "partial",
+      "last_check": "2026-05-09",
+      "findings": "Cost threshold partially breached: gas .54/gal (+35¢/wk per AAA); Pentagon says war cost $25B; Schumer forcing weekly War Powers votes; May 1 War Powers deadline passed but Trump admin argues ceasefire 'terminated' hostilities to bypass Congress; US casualties undisclosed"
     }
   },
   "noise_filter": {
