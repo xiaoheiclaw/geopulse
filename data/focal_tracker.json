@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-10T02:07:12.073901+00:00",
+  "last_updated": "2026-05-10T06:03:46.872688+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-06",
-          "est": "3",
-          "note": "IRGC能力严重退化；4月前70%+弹道导弹发射架已摧毁；海峡海上袭击持续（5/4两起新船只袭击，累计30次攻击+6次险情）；4/8停火令名义生效但双方均违反",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-07",
           "est": "1-2次/天(停火D30;Project Freedom 暂停)",
@@ -93,6 +87,12 @@
           "est": "3-5/day",
           "note": "5月持续高频:5/7伊朗袭美军舰,5/5阿联酋遭袭(连续第二日),5/8 IRGC宣布新一轮攻击。CENTCOM报告导弹/无人机/小艇多向打击",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-10",
+          "est": "1.0",
+          "note": "5月4-5日IRGC声称击中美军舰被CENTCOM否认+UAE Fujairah被袭；5月7-8日伊朗回击美军舰，CENTCOM称'拦截无端袭击'。冲突仍在每日级别交火节奏",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-06",
-          "est": "11",
-          "note": "5/4日过境11艘（5入6出）；4月全月仅191次过境（日均6.4艘）vs危机前130艘/日；Project Freedom 5/4启动护航2艘美籍船只后5/6因谈判进展暂停；海峡内941艘船待机",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-07",
           "est": "10艘/天(5/5实测;Project Freedom 5/6暂停)",
@@ -189,6 +183,12 @@
           "est": "5-7 ships/day",
           "note": "5/7仅2艘通行,截至5/3全周仅40艘。战前~120-130/日,降幅>90%。Iran新规试图固化战时通行模式",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-10",
+          "est": "10",
+          "note": "5月7日仅2艘通行；截至5月3日整周40艘；正常前130艘/日，降幅>90%。伊朗5月7日出台新规对Hormuz选择性放行",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-06",
-          "est": "7100000",
-          "note": "4/24当周释放710万桶（2022年10月来最高）；3/20至4/24累计释放1750万桶；总计划1.72亿桶（IEA协调4亿桶计划）；SPR库存3.979亿桶",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-07",
           "est": "~5.2M桶/周(EIA 5/6发布,周结5/1)",
@@ -282,6 +276,12 @@
           "est": "7M bbl/week",
           "note": "3/20-4/24累计释放17.5M桶,4/24周达7.1M(2022年10月以来最高)。172M桶交换计划中,SPR库存397.9M",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-10",
+          "est": "1.0",
+          "note": "DOE 4月24日当周释放710万桶，自3月累计1750万桶。172M桶应急交换计划进行中，IEA协调全球400M桶释放",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "confirmed",
+      "status": "active",
       "last_check": "2026-05-10",
-      "findings": "5/6王毅-阿拉格齐北京会晤,中方呼吁全面停火;特使翟隽中东斡旋;鲁比奥要求北京施压伊朗。诊断为外交斡旋升级,非军事介入"
+      "findings": "5月6日王毅在北京会见伊朗外长Araghchi呼吁'全面停火'；中东特使已派出；同时撤离中国公民。从外交辞令升级为实质斡旋角色"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "confirmed",
+      "status": "triggered",
       "last_check": "2026-05-10",
-      "findings": "Project Freedom 5/4启动 5/5即暂停(双方同意);特朗普同时威胁猛烈轰炸+推动和平协议。极端矛盾信号"
+      "findings": "5月4日发起Project Freedom护航，次日5月5日宣布暂停作为善意；同时威胁'激烈轰炸'又推进和平备忘录。军事+施压+谈判三轨并行，信号严重矛盾"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "confirmed",
+      "status": "progressing",
       "last_check": "2026-05-10",
-      "findings": "4/8巴基斯坦斡旋两周停火已延期;美14点vs伊14点提案竞争;5/8伊朗审议美方最新方案,30天解决全部争端框架"
+      "findings": "美9点+伊14点提案在巴基斯坦斡旋下交换；一页备忘录拟宣告终战+30天谈判窗口；伊朗要求UN安理会担保+解除制裁。核问题(12年暂停+440kg铀移交)仍是红线分歧"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "confirmed",
+      "status": "triggered",
       "last_check": "2026-05-10",
-      "findings": "5/1战争权力60天大限已过,众院仅一票之差未通过;美军伤亡13人;5/6油价.54(月升40分);累计战费B"
+      "findings": "汽油价达.39/加仑(突破阈值)；13名美军阵亡；War Powers 60天5月1日到期但参众两院否决撤军决议；战争成本B(每日B)。成本阈值已触发但政治阻力被压住"
     }
   },
   "noise_filter": {
