@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-10T10:02:45.688015+00:00",
+  "last_updated": "2026-05-10T22:01:44.097136+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-07",
-          "est": "~1-2/day vessel",
-          "note": "36 vessel attacks total since Mar 1 (30 attacks+6 near-misses); ballistic missiles down 90% per CENTCOM Mar 5; Iran fired warning shots at US warship May 4; CMA CGM San Antonio attacked May 6",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-07",
           "est": "1-2次/天 (停火D30; Project Freedom 5/6暂停)",
@@ -93,6 +87,12 @@
           "est": "3-5次/天(停火形式破裂;美伊海上直接交火持续)",
           "note": "5/7 IRGC对USS Truxtun(DDG103)+Peralta(DDG115)+Mason(DDG87)三舰过境海峡多向攻击(导弹+无人机+小艇);CENTCOM拦截无损并反击Bandar Abbas/Qeshm/Bandar Khamir/Sirik伊朗本土设施;5/8 IRGC正式宣布停火破裂誓言更多攻击;Trump'they trifled with us we blew them away'但坚称停火仍在;CENTCOM 5月初累计击沉6-7艘IRGCN快艇(Project Freedom护航期间);UAE Fujairah连续两日遭袭;CMA CGM San Antonio 5/5巡航导弹击中;伊朗据称美方打民用区+一艘油轮",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-10",
+          "est": "3-5次/天(停火形式D34;5/10 IRGC升级警告)",
+          "note": "5/10 IRGC Navy Command正式警告:对伊朗油轮/商船任何袭击将触发'重大反击'打击美中心+舰艇;5/7 IRGC对USS Truxtun(DDG103)+Peralta(DDG115)+Mason(DDG87)三舰过境海峡多向攻击(导弹+无人机+小艇)CENTCOM拦截无损;美军反击Bandar Abbas/Qeshm/Bandar Khamir/Sirik伊朗本土设施;5/8 IRGC正式宣布停火破裂;Trump'they trifled with us we blew them away'但坚称停火仍在;5月CENTCOM累计击沉6-7艘IRGCN快艇;UAE Fujairah 5/4-5连续两日遭袭;5/10无人机持续目标Gulf国家",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-07",
-          "est": "11",
-          "note": "May 4: 11 crossings (5in/6out); pre-crisis baseline 130/day; Project Freedom launched May 4, paused May 6 citing 'great progress' toward deal",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-07",
           "est": "10艘/天 (5/5实测;Project Freedom仅引导2艘后暂停)",
@@ -189,6 +183,12 @@
           "est": "~2-7艘/日(5/7仅2艘inbound;Lloyd's周累40艘到5/3;战前130/日)",
           "note": "5/7仅2艘内入transit(2 inbound 0 outbound);Lloyd's List周累40艘到5/3约5.7/日;4月全月191艘约6/日;战前~130/天约2-5%水平;伊朗5/7强加新Hormuz transit规则巩固对海峡控制;Project Freedom 5/4启动→5/6暂停只引导2艘;~1550+商船(22500水手)仍困湾区;Polymarket 5月底正常Yes低概率",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-10",
+          "est": "~5-6艘/日(Lloyd's周降44→39;伊朗5/7新规执行中)",
+          "note": "Lloyd's List Intelligence最新:每周通行量从44降至39艘(~5.5/日);5/7仅2艘inbound transit;伊朗5/7新规要求联系Persian Gulf Strait Authority授权;战前~120-130艘/日(月3000艘)约4-5%水平;Project Freedom 5/4-5/6暂停后无重启;Maersk/Hapag-Lloyd持续暂停过境;~1550+商船(22500水手)仍困湾区;CNN 5/7'Iran imposes new rules to cement control'",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-07",
-          "est": "7.1M bbl/wk",
-          "note": "Week ending Apr 24: 7.1M bbl (highest since Oct 7 2022); 17.5M total Mar 20-Apr 24; 172M barrel exchange ongoing over 120 days; SPR at 397.9M bbl",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-07",
           "est": "~5.2M桶/周(5/6 EIA周报;周结5/1)",
@@ -282,6 +276,12 @@
           "est": "~5.2M桶/周(5/6 EIA周报w/e 5/1)",
           "note": "5/6 EIA周报w/e 5/1:SPR库存约392.7M桶(较前周397.9M减5.2M);较前周7.1M峰值(自2022/10最大单周)回落但仍高位;累计自3/20约22.7M桶(原始报告17.5M Mar20-Apr24+本周5.2M);172M桶应急交换总计划~120天进行中;IEA协调全球400M桶;DOE 5/4新增92.5M桶交换标讫;次EIA周报5/13",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-10",
+          "est": "~5.2M桶/周(EIA 5/6发布w/e 5/1;SPR库存392.7M桶)",
+          "note": "EIA 5/6发布w/e 5/1:SPR库存392.7M桶(较前周397.9M减5.2M);较前周7.1M峰值(自2022/10最大单周)回落但仍高位;累计3/20以来共22.7M桶(17.5M Mar20-Apr24+5.2M本周);172M桶应急交换总计划~120天进行中;IEA协调全球400M桶;商业原油库存457.2M桶(降2.3M);Macquarie预测下周续抽;次EIA周报5/13",
+          "source": "pipeline"
         }
       ]
     }
@@ -292,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "active",
       "last_check": "2026-05-10",
-      "findings": "5/6王毅北京会见伊朗外长Araghchi(战后伊朗首位访华代表);中方呼吁'全面停火+海峡迅速重开';宣布派中东特使斡旋;时机刻意卡在Trump-Xi北京峰会前一周;从辞令升级为实质斡旋角色。中国寻求以此巩固调停人地位"
+      "findings": "5/6王毅北京会见伊朗外长Araghchi(战后伊朗首位访华代表);中方呼吁'全面停火+海峡迅速重开';宣布派中东特使斡旋;时机刻意卡在Trump-Xi北京峰会(5/14-15确认)前一周;Beijing成为美伊'央调停人'角色;Iran International 5/8'Tehran hails China's support, but Beijing's limits are showing'-中国实际杠杆有限"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-05-10",
-      "findings": "三轨并行严重矛盾:5/4 Project Freedom启动护航→5/5 Trump以'great progress'暂停;5/7-8美军反击Bandar Abbas/Qeshm/Bandar Khamir/Sirik伊朗本土;Trump威胁'Project Freedom Plus'若谈判失败;Trump'they trifled with us we blew them away'但坚称停火仍在;军事+施压+谈判同时"
+      "findings": "Hegseth向参议院5月初辩护:'we are in ceasefire which means the 60-day clock pauses';Project Freedom 5/4启动→5/5暂停→Trump威胁'Project Freedom Plus'若谈判失败;5/7-8美军反击Bandar Abbas/Qeshm/Bandar Khamir/Sirik伊朗本土;Trump'they trifled with us we blew them away'但坚称停火仍在;军事+施压+谈判三轨并行严重矛盾;5/9 Trump称伊朗对和平提案回应'totally unacceptable'"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "progressing",
       "last_check": "2026-05-10",
-      "findings": "提案交换持续:美14点(12年enrichment暂停+导弹限制+海峡重开+制裁解除)已传伊;伊14点回应(30天解决+反侵略担保+撤美军+解封锁+解冻资产+赔款+解除制裁+黎巴嫩+海峡新机制);4/8两周停火→4/21 Trump宣布无限期延期;5/8伊回应仍待美方反应;UNSC: Bahrain+GCC+约旦draft on Hormuz crisis 3月底;Pakistan持续斡旋"
+      "findings": "UNSC Bahrain+US draft 5月初:威胁制裁/其他措施除非伊朗停止袭击+停止违法收费+披露布雷+'立即参与并使能'humanitarian corridor;美14点(12年enrichment暂停+440kg 60%铀交付+导弹限制+海峡重开+制裁解除);伊朗14点回应(30天全面解决+反侵略担保+撤美军+解封锁+解冻资产+赔款+解除制裁+黎巴嫩+海峡新机制);5/8伊回应'at the appropriate time';Pakistan持续斡旋;4/8两周停火→4/21 Trump无限期延期"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "triggered",
       "last_check": "2026-05-10",
-      "findings": "成本阈值已突破多重:汽油.46/加仑周涨35美分(AAA最新);13名美军阵亡;5000+平民死;War Powers 60天5/1到期但Trump声称'敌对状态终止'故不适用;Schumer誓言weekly War Powers votes;战争进入第3月;Markey第5次War Powers投票;Republicans担忧战费;Iran war fuel crisis继续;但政治阻力(否决撤军决议)被压住"
+      "findings": "成本阈值多重突破:13名美军阵亡+5000+平民死;Pentagon 5月:战争成本B(Hegseth向参议院);汽油+35美分/加仑+柴油+化肥涨;.1B/每户负担(至4/1);War Powers第6次参议院投票仅Collins+Paul叛变(失败);Markey持续推vote;Hegseth声称ceasefire pauses 60-day clock;Republicans中期选举焦虑;但政治阻力(否决撤军决议)被压住;2026 midterm affordability主要议题"
     }
   },
   "noise_filter": {
