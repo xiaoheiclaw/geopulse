@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 94,
-  "updated": "2026-05-11T10:02:41.246082Z",
+  "version": 93,
+  "updated": "2026-05-08T10:03:08.923303+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -504,7 +504,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.95,
+      "probability": 0.93,
       "confidence": 0.75,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
@@ -1072,7 +1072,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.55,
+      "probability": 0.68,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1218,7 +1218,7 @@
         "能源",
         "金融"
       ],
-      "probability": 0.5,
+      "probability": 0.58,
       "confidence": 0.5,
       "evidence": [
         "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
@@ -4083,7 +4083,7 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-05-11T10:02:41.246082Z",
+  "last_updated": "2026-05-08T10:03:08.923303+00:00",
   "updated_at": "2026-04-26T22:05:29.547176Z",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
@@ -4128,20 +4128,6 @@
         "hormuz_zero_traffic: None -> 1.0 (Q2: only 7 ships 5/6 vs 130 baseline = 95%+ reduction; Hapag-Lloyd halted)"
       ],
       "note": "IRGC daily action confirmed; per independence rule 真主党/胡塞 capability nodes left unchanged (no new evidence this cycle)"
-    },
-    {
-      "timestamp": "2026-05-11T10:02:41.246082Z",
-      "trigger": "fp2 sustained + fp3 stalled (Trump 'unacceptable' 5/10) + Netanyahu 'not over' 5/11 + UAE/Kuwait drones 5/10 + China diplomacy formalized (Wang Yi-Araghchi 5/6, Trump-Xi pending)",
-      "changes": [
-        "conflict_deescalation: 0.68 → 0.55 (Trump 5/10 calls Iran response 'totally unacceptable'; Netanyahu 5/11 'not over' raises restart risk; 14pt MOU stuck on Iran's UNSC-guarantee + Lebanon ask)",
-        "china_energy_diplomacy: 0.93 → 0.95 (Wang Yi-Araghchi 5/6 Beijing comprehensive-ceasefire call; Trump pressing Beijing on Hormuz; Trump-Xi summit ~1 wk; envoy shuttle continues)",
-        "oil_new_equilibrium: 0.58 → 0.5 (Brent $103.8 +2.5%, WTI $97.4 +2% on 5/11 Netanyahu warning; price re-elevating away from deal-hope dip)"
-      ],
-      "physical_layer": {
-        "q1": "daily",
-        "q2": "~5-10/day",
-        "q3": "~1M b/day (7.1M wk to 4/24)"
-      }
     }
   ],
   "update_trigger": "fp1/fp2/fp3/fp4 all triggered; 5/7 kinetic resumption capping deescalation; Wang Yi-Araghchi 5/6"

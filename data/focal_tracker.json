@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-11T06:02:05.963548+00:00",
+  "last_updated": "2026-05-11T10:01:19.245118+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-08",
-          "est": "4-6次/天(5/7直接美伊海上交火;停火D31形式仍在)",
-          "note": "5/7 IRGC对USS Truxtun(DDG103)+Peralta(DDG115)+Mason(DDG87) 3舰过境海峡时发动多向攻击(导弹+无人机+快艇);CENTCOM拦截无损;美军反击打Bandar Abbas+Qeshm+Bandar Khamir+Sirik伊朗本土设施(导弹/无人机发射点+C2+ISR);伊朗称美打民用区+一艘伊朗油轮;伊朗对Chabahar以东美舰反击;Trump'they trifled with us, we blew them away'但坚称停火仍在",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-08",
           "est": "2-3 attacks/day",
@@ -93,6 +87,12 @@
           "est": "3-5/day",
           "note": "IRGC multi-vector daily attacks: May 7 missile/drone/fast-attack-craft strikes on USS Truxtun/Peralta/Mason in Hormuz; May 4-5 strikes on UAE Fujairah port",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-11",
+          "est": "daily",
+          "note": "CENTCOM 5/8 intercepted multiple IRGC missile/drone/boat attacks; IRGC claims continued strikes on US naval assets; sustained daily engagement pattern",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-08",
-          "est": "~7-8艘/天(5/6 NBC追踪;Project Freedom暂停)",
-          "note": "5/6 NBC追踪7艘过境(5进2出);Maersk 5/5一艘船在美军保护下过境;1600艘船仍困湾区;战前~130艘/天约5-6%;Project Freedom 48小时只引导2艘后5/6暂停(48h);Polymarket 5月底恢复正常 Yes概率低;UNCTAD报告对全球贸易影响显著",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-08",
           "est": "5-7 ships/day",
@@ -189,6 +183,12 @@
           "est": "6-10 ships/day",
           "note": "~5% of pre-war 130/day average; May 9 only 6 vessels inbound (2 VLCC + 2 bulker + 2 tanker); 1,550 vessels still stranded, 22,500 mariners trapped",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-11",
+          "est": "~5-10/day",
+          "note": "Only 6 inbound vessels 5/9; 40 ships total week to 5/3 vs pre-war 120/day; >90% reduction; 1550+ vessels stranded, 22.5k mariners trapped",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-08",
-          "est": "~5.2M桶/周(5/6 EIA周报,周结5/1;SPR库存约392.7M桶)",
-          "note": "5/6 EIA周报:SPR库存392.7M桶(较前周397.9M减5.2M);较前周7.1M回落但仍高位;累计自3月22.7M桶;172M桶总计划进行中;IEA协调全球400M桶;DOE 5/4竞标92.5M桶交换截止;Macquarie预测下周续抽;次EIA周报5/13",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-08",
           "est": "6M barrels/week",
@@ -282,6 +276,12 @@
           "est": "7.1MM bbl/week",
           "note": "Week ending Apr 24 = 7.1MM bbl (largest weekly draw since Oct 2022); cumulative 17.5MM since March; SPR now 397.9MM; total program 172MM coordinated with IEA 400MM",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-11",
+          "est": "~1M b/day",
+          "note": "7.1M barrels released week ending 4/24 (highest since Oct 2022); cumulative 17.5M since March; SPR at 397.9M; IEA coordinated 400M release in progress",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active",
+      "status": "triggered",
       "last_check": "2026-05-11",
-      "findings": "5/10-11 status hold: China envoy in region + Wang Yi-Araghchi 5/6 push for 'comprehensive ceasefire'; 5/14-15 Trump-Xi Beijing summit approaching as forcing function; 中方UNSC弃权显示'调停人非站队方'定位;杠杆有限但成为不可替代的沟通渠道"
+      "findings": "Wang Yi 5/6 北京会晤 Araghchi 呼吁全面停火;特使穿梭中东;Trump 施压中国对伊朗用影响力推海峡重开;1周后 Trump-Xi 峰会"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-05-11",
-      "findings": "5/10-11 signal triangulation: Trump拒绝Iran 14点回应'TOTALLY UNACCEPTABLE'(5/10) + 5/10 UNSC Res 2817(2026)通过条件性谴责伊朗(13-0-2,中俄弃权) + Project Freedom仍暂停但blockade在 + 5/7-8美军反击伊朗本土;军事+施压+谈判三轨叠加"
+      "findings": "5/4 Project Freedom 护航行动启动→5/6 Trump 暂停称'great progress'→5/5 威胁'intense bombing'→14点框架经巴基斯坦传递→5/10 Trump 称伊朗回应'totally unacceptable';护航+威胁+谈判同时进行"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "progressing",
+      "status": "emerging",
       "last_check": "2026-05-11",
-      "findings": "5/10 UNSC Res 2817(2026)以13-0-2通过提供框架性出口;Iran via Pakistan submitted 14-point response(5/2)要求30天解决+解封资产+解封锁;US 14-point要求停浓缩12年+交付440kg 60%U;双方14点框架交换中但条件差距大;Trump 5/10称Iran response'totally unacceptable'-框架在但deal未近"
+      "findings": "14点框架已成文:不发展核武+停浓缩12年+交出440kg 60%铀;换取分阶段解除制裁+解冻资产+撤海上封锁;伊朗经巴基斯坦回应要 UNSC 担保;Trump 5/10 称回应'totally unacceptable'但仍'给外交每个机会'"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "triggered",
       "last_check": "2026-05-11",
-      "findings": "5/11 cost threshold维持触发态:全国汽油.46-4.50/gal(4年高点+较战前升);War Powers 60天deadline 5/1已过-Hegseth辩护'4/7停火pauses clock'但争议在;Pentagon称已花B军费;Gov California呼吁'61 days no plan';加州+Schumer批'reckless war';成本闸口逼近"
+      "findings": "战争成本 $25B (五角大楼);13 名美军阵亡 1000+ 伊朗平民;汽油 $4.39/gal 单日最大涨幅自 4/7 停火以来;5/1 War Powers 60天期限已过;参议院多次否决撤军决议但众议院仅以一票之差未通过 WP 决议;国内政治压力累积"
     }
   },
   "noise_filter": {
