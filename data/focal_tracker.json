@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-11T22:01:56.412466+00:00",
+  "last_updated": "2026-05-12T02:02:29.042883+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-08",
-          "est": "daily",
-          "note": "May 4-8: 持续日交火，IRGC 导弹/无人机/小艇袭击 USN 经霍尔木兹的舰艇；US 击沉7艘IRGC 小艇；UAE 连续2天遭袭。Project Freedom 重启海峡未达成。",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-08",
           "est": "2-3次/天(停火D32形式仍在;5/7-8美伊直接海上交火持续)",
@@ -93,6 +87,12 @@
           "est": "3-5次/天(停火形式D36)",
           "note": "持续每日交火:5/7三舰多向攻击+5/8 IRGC宣布停火破裂+5/10 IRGC Navy警告大反击;5月CENTCOM累计击沉6-7艘IRGCN快艇+20+艘USN执行封锁;UAE Fujairah/Kuwait无人机持续袭击;Trump'they trifled with us we blew them away'仍坚持停火生效",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-12",
+          "est": "3-5次/天(停火D37名义存续但'life support')",
+          "note": "5/11 Trump拒绝伊朗回应'TOTALLY UNACCEPTABLE/garbage';CNN'ceasefire on massive life support';Iran誓言'never bow';5/7三舰多向攻击+5/10 IRGC Navy升级警告未撤回;5月CENTCOM累计击沉6-7艘IRGCN快艇;UAE/Kuwait无人机持续袭击;5/10 UNSC Res 2817(2026)以13-0-2通过(中俄弃权)谴责伊朗'egregious attacks'",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-08",
-          "est": "7 ships/day",
-          "note": "5月6日仅 7 艘通行（5入2出），较战前 130/日下降>90%。Hapag-Lloyd 等大型航运公司暂停过境，伊朗布雷+登船+警告。",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-08",
           "est": "~5-6 ships/day(整周40 ships per Lloyd's;5/7仅2艘inbound dark transit;战前~130/day)",
@@ -189,6 +183,12 @@
           "est": "~6艘/日(暴跌)",
           "note": "5/11只6艘通过(vs 5/10的17艘13in/4out);战前~120/日仅~5%水平;11艘锚泊或停;Polymarket'5/15正常'Yes概率极低;Maersk/Hapag-Lloyd持续暂停;1550+商船仍困湾区",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-12",
+          "est": "~10-17艘/日(5/10=17艘13in/4out;Lloyd's周度39艘从44降)",
+          "note": "5/10单日17艘(13入4出)为近期高点but Lloyd's周度通行量从44降至39艘(~5.5/日)趋势仍弱;战前~120-130艘/日仅~10-14%水平;伊朗5/7新Hormuz transit规则要求Persian Gulf Strait Authority授权(CNN称试图'cement control');Project Freedom 5/4启动→5/6暂停未重启;Maersk/Hapag-Lloyd持续暂停过境;~1550+商船(22500水手)困湾区;Trump 5/5'Blockade remains in full force'",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-08",
-          "est": "7.1Mbbl/wk",
-          "note": "截至4月24日当周释放 7.1Mbbl（自2022/10以来最大单周），3月以来累计 17.5M。Trump 授权 172M 释放计划~120天，约 10M/周目标。SPR 库存降至 397.9M。",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-08",
           "est": "~0.74 mb/day(周减5.2mb;前周7.1mb;3/20以来共17.5mb)",
@@ -282,6 +276,12 @@
           "est": "~5.2M桶/周(EIA 5/6报告w/e 5/1未变;次报告5/13)",
           "note": "无新EIA数据:最新为5/6发布w/e 5/1=5.2M(库存392.7M桶);累计3/20以来~22.7M桶;172M桶应急交换计划进行中(120天目标);IEA协调全球400M桶;次EIA周报5/13(周三)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-12",
+          "est": "~5.2M桶/周(EIA 5/6报告w/e 5/1;次报告5/13周三)",
+          "note": "无新EIA数据(5/12为周二):最新仍为5/6发布w/e 5/1=减5.2M桶(库存392.7M桶);累计3/20以来~22.7M桶(EIA官方17.5M Mar20-Apr24+本周5.2M);较前周7.1M峰值(自2022/10最大单周)回落但仍高位;172M桶应急交换总计划~120天进行中;IEA协调全球400M桶;DOE 5/4新增92.5M桶交换标讫;次EIA周报5/13(周三)将披露w/e 5/8数据",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "triggered",
-      "last_check": "2026-05-11",
-      "findings": "Wang Yi 5/6 Beijing会晤Araghchi呼吁'comprehensive ceasefire';公开呼吁Hormuz重开;中国envoy穿梭中东(globalsecurity);Trump-Xi峰会5/14-15(本周三/周四)即将召开,北京筹码满弓"
+      "status": "triggered_imminent",
+      "last_check": "2026-05-12",
+      "findings": "★★★★★Trump-Xi summit倒计时T-2/T-3天(5/14-15北京):CNBC'China presses Iran against resuming war urges Hormuz reopening ahead of Trump-Xi summit';CSIS'Trump将seek PRC support securing acceptable agreement to end conflict reopen Hormuz';CFR'China will have upper hand';Wang Yi-Araghchi 5/6已会晤;Trump顾问呼吁北京施压;China作为伊朗最大油客咨询权重;summit本周三/周四即为fp1实质行动测试窗口"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "triggered",
-      "last_check": "2026-05-11",
-      "findings": "Project Freedom 5/4启动→5/6 Trump以'great progress'暂停→5/10 Trump拒绝伊朗回应'totally unacceptable'→5/11 CNN'ceasefire on massive life support';同时20+USN舰执行封锁;Iran says will'never bow'"
+      "status": "triggered_acute",
+      "last_check": "2026-05-12",
+      "findings": "★★★★★5/11 Trump拒绝伊朗回应'TOTALLY UNACCEPTABLE/stupid/garbage';CNN'ceasefire on massive life support';同时:Project Freedom 5/4启动→5/6'great progress'暂停后未重启;20+USN舰执行封锁;Trump 5/5'Blockade remains in full force';5/11 Fox 'Iran's peace proposal falls flat as Trump prepares for China summit';Trump 5/11推federal gas tax suspend承认成本压力;承诺—行动—姿态三轨严重撕裂"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging",
-      "last_check": "2026-05-11",
-      "findings": "14点框架双向已成文:US 5/wk发(不发展核武+停浓缩12年+解封锁交付440kg);Iran经Pakistan 5/10回应(要UNSC担保+US撤军+解冻资产+战争赔款+Hormuz新机制);Trump拒'unacceptable';US+Gulf draft UNSC决议接近表决;框架就位但停滞"
+      "status": "emerging_stalled",
+      "last_check": "2026-05-12",
+      "findings": "★★★★☆框架双向已成文但停滞:Iran 5/10经Pakistan回应包括(a)dilute部分HEU+第三国运输余下(b)30天谈判细化(c)UNSC担保(d)解封锁+美撤军+解冻资产+战争赔款+Hormuz新机制;Trump拒'unacceptable garbage';US+巴林+海湾国家(沙阿UAE科卡)起草UNSC Res under Chapter 7 threats sanctions if no compliance;UNSC Res 2817 5/10以13-0-2过(中俄弃权)谴责伊朗;两份文本同时存在但核心鸿沟:US要'quick win'立即核让步 vs Iran要拖延+先收己方让步"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "triggered",
-      "last_check": "2026-05-11",
-      "findings": "汽油.52/gal(从.39继续上涨,vs战前<);5月初Pentagon B口径+B+gas overhead(Reason实际成本更高);House WP决议仅以1票之差未过;5/1 60天WP期限已过Trump未撤军;Polymarket'5/15正常'Yes低概率;成本累积持续逼近政治阈值"
+      "status": "triggered_escalating",
+      "last_check": "2026-05-12",
+      "findings": "★★★★☆物理逼近加剧:AAA gas .52/gal(战前.01+50%;接近2022峰值.02);Trump+GOP 5/11正式提议suspend federal gas tax(承认政治压力);WP第6次投票仍否决但Susan Collins+Rand Paul首次跨党加入民主党;5/1 60天WP期限已过Trump以'hostilities terminated'抗辩;NPR/CNBC'2026 elections Iran war affordability biggest issue';Trump正为summit前提供面子下台阶但同时blockade强化—成本累积持续逼近政治阈值"
     }
   },
   "noise_filter": {
