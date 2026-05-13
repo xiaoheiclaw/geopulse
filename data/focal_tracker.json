@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-12T22:02:11.701141+00:00",
+  "last_updated": "2026-05-13T02:01:25.283545+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-09",
-          "est": "3-5次/天(升级)",
-          "note": "5/7 IRGC对USS Truxtun+Peralta+Mason三舰过境霍尔木兹发动多向攻击(导弹+无人机+小艇);CENTCOM拦截无损并反击Bandar Abbas/Qeshm/Bandar Khamir/Sirik伊朗本土;5/8 IRGC宣布停火破裂并誓言发起攻击;5/5 CMA CGM San Antonio遭巡航导弹击中;UAE连续两日处理伊朗导弹+无人机;CENTCOM累计击沉7艘IRGC快艇",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-09",
           "est": "3-5次/天(停火形式D33形式破裂;5/7-8美伊海峡直接交火持续)",
@@ -93,6 +87,12 @@
           "est": "3-5次/天(停火D38 life support;5/12-13 French container ship被击中)",
           "note": "5/12-13冲突持续:French container ship Hormuz被cruise missile/UAV击中(IRGCN惯性攻击模式);CENTCOM累计击沉6-7艘IRGC快艇;Trump考虑restart Project Freedom + 空袭剩余25%伊朗identified目标;5/11 IRGC再警告对油轮任何袭击触发'heavy assault'对美中心+舰艇;停火D38'massive life support';Trump-Xi summit T-1(5/14-15北京)",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-13",
+          "est": "low-1/wk",
+          "note": "5/6 French container ship hit in Hormuz (cruise/UAV); ceasefire holding since 4/7 (Pakistan-brokered, indef extended 4/21); no major IRGC ballistic salvos; Houthi standby, no Red Sea strikes",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-09",
-          "est": "~2-5艘/日",
-          "note": "5/7仅2艘通过(2进0出);截至5/3当周共40艘(~5.7/日);战前基线130/日;伊朗5/7宣布新规则巩固对海峡控制;Project Freedom 5/4启动→5/5暂停;~1000艘船只滞留",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-09",
           "est": "~2-5艘/日(5/7仅2艘inbound;周累40艘per Lloyd's;战前130/日)",
@@ -189,6 +183,12 @@
           "est": "10-18艘/日(5/11=18艘8in/10out;5/10=17艘13in/4out;较前周略回升但Lloyd's周度仍39艘趋弱)",
           "note": "5/11单日18艘(8入10出)+5/10单日17艘(13入4出)为近期高点;Lloyd's List Intelligence周度通行量从44降至39艘(~5.5/日)趋势仍弱;战前~120-130艘/日(月3000艘)仅~10-15%水平;伊朗5/7新Hormuz transit规则要求Persian Gulf Strait Authority授权(CNN称'cement control');Project Freedom 5/4启动→5/6暂停未重启;Maersk/CMA CGM/Hapag-Lloyd持续暂停;~1550+商船(22500水手)困湾区;China在Trump-Xi summit前持续施压reopening",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-13",
+          "est": "~17-18 ships/day (~13-15% normal)",
+          "note": "5/11: 18 vessels (8 in/10 out); pre-crisis ~130/day; IRGC mines+boardings since 2/28 still suppressing traffic despite ceasefire",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-09",
-          "est": "7.1 mb/周",
-          "note": "4/24当周释放7.1mb单周新高(自2022/10/7以来最大);3/20-4/24累计17.5mb;库存397.9mb;美国承诺172mb全球协调IEA释放400mb计划",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-09",
           "est": "~5.2M桶/周(EIA 5/6发布周结5/1;SPR库存约392.7M桶)",
@@ -282,6 +276,12 @@
           "est": "~5.2M桶/周(EIA 5/13今日周三将披露w/e 5/8;现仍以5/6 w/e 5/1为最新)",
           "note": "5/13今日周三EIA WPSR即将披露w/e 5/8数据(尚未发布);最新仍为5/6发布w/e 5/1=减5.2M桶(SPR库存约392.7M桶);累计3/20以来~22.7M桶(EIA官方17.5M Mar20-Apr24+本周5.2M);前周7.1M为自2022/10最大单周;172M桶应急交换总计划~120天进行中;IEA协调全球400M桶;DOE 5/4新增92.5M桶交换标讫;Goldman:全球油库存接近八年低位,depletion speed成关注",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-13",
+          "est": "~1M bbl/day (7.1M wk ending 4/24)",
+          "note": "DOE released 17.5M bbl total since March; SPR ~384M; new 53.3M bbl loan announced 5/11; coordinated with IEA 400M global release",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "triggered_active",
-      "last_check": "2026-05-12",
-      "findings": "★★★★★ Trump-Xi summit T-1(5/14-15北京)进入最后24小时窗口;US News/PBS/Bloomberg/CNBC/Chatham House/SCMP共识:Iran war 中心议题;5/12-13 Trump-Xi'appear intent on keeping deep differences over Iran war from overshadowing summit'(US News);Wang Yi-Araghchi 5/6 Beijing直接渠道仍运作,Wang呼吁'immediate end to hostilities'+'prompt resumption of shipping through Hormuz'(中方版本含Hormuz条);Trump顾问已敦促北京施压伊朗恢复商业航运;China施压Pakistan深化Iran mediation(SCMP 5/12);中国手握上风Trump寻求PRC support secure agreement reopen Hormuz;summit即为fp1实质行动验证窗口"
+      "status": "activating-diplomatic",
+      "last_check": "2026-05-13",
+      "findings": "Wang Yi-Araghchi meeting Beijing 5/6 calling for comprehensive ceasefire; envoy Jun Zhai touring since March; 5/7 Chinese tanker JV Innovation hit (first Chinese vessel) raises stakes; no naval deployment yet"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "triggered_acute",
-      "last_check": "2026-05-12",
-      "findings": "★★★★★矛盾包深化:5/12-13 Trump同时(a)考虑restart Project Freedom + 空袭剩余25%伊朗identified目标(b)推federal gas tax suspend(承认成本压力,需Congress批准)(c)称伊朗'going to fold'(d)称ceasefire'unbelievably weak'/'massive life support'(e)Iran response'TOTALLY UNACCEPTABLE/garbage';主张ceasefire'terminated'hostilities规避国会War Powers授权但同时call for更多军事行动;承诺—行动—姿态三轨严重撕裂;Hawley正式bill suspend gas tax;Iran focus at summit may delay tariffs/rare earths progress"
+      "status": "high-contradiction",
+      "last_check": "2026-05-13",
+      "findings": "Project Freedom escort op launched 5/4, paused 5/5-6 by 'mutual agreement' for negotiations, by 5/10 Trump calls ceasefire 'life support' & Iran response 'garbage'; 14-pt US proposal sent; escort/pause/threaten cycle within single week"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "emerging_stalled",
-      "last_check": "2026-05-12",
-      "findings": "★★★★☆框架双向已成文但核心鸿沟拉大:The National 5/11'One page,fourteen points,no deal' diplomacy stalls;US 14点(a)not develop nuclear weapon+halt enrichment 12年(b)交出440kg HEU60%(c)交换gradually lift sanctions+release frozen assets;Iran 10点据报:right to enrich + lift all sanctions(US两点都不接受);Iran经Pakistan 5/10回应:'permanently ending the war on all fronts'+UNSC直接担保+解除制裁+release frozen assets+战时所有方面停;5/11 Trump拒'unacceptable garbage';US+Gulf draft UNSC Res Chapter 7 nearing vote(具体条款待披露);UNSC Res 2817 5/10过(13-0-2)谴责伊朗;核心鸿沟:US要'quick win'立即核让步 vs Iran要拖延+先收己方让步+永久结束;Trump-Xi summit可能成框架打破口或冻结点"
+      "status": "proposed-contested",
+      "last_check": "2026-05-13",
+      "findings": "UN Security Council US-Gulf draft resolution nearing vote NYC; 14-pt US doc (12yr enrichment halt, 440kg uranium surrender, sanctions relief, blockade lift); Iran demands permanent end+full sanctions relief; Trump calls Iran reply 'garbage' 5/10"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "triggered_escalating",
-      "last_check": "2026-05-12",
-      "findings": "★★★★☆物理逼近持续加剧:AAA gas .52/gal(战前+50%;NPR 5/11);Trump 5/11正式提议suspend federal gas tax(18.4c/gal);5/12 Hawley正式bill引入suspend federal gas tax(KCUR);CNN Business:'federal gas tax suspension why you shouldn't expect much relief at the pump if it even happens'(政治姿态强于实质救济);Pentagon官员确认Iran war munitions成本累计 billion;WP第6次投票仍否决但Susan Collins首次跨党加入民主党+Murkowski威胁引入正式authorize war;5/1 60天WP期限已过Trump以'hostilities terminated'抗辩(写信Johnson/Grassley)规避国会;Thune不计划投票;Common Dreams调:'Trump War on Iran Sent Gas Prices Soaring—Now He Wants to Rob Highway Funds';NPR/CNBC'2026 elections Iran war affordability biggest issue';成本累积持续逼近政治阈值"
+      "status": "rising-near-threshold",
+      "last_check": "2026-05-13",
+      "findings": "Gas .52/gal (+50%); Hawley federal gas tax suspension bill; War Powers 60-day deadline — admin claims ceasefire 'terminated hostilities' to dodge Congress; House WP resolution failed by 1 vote; war cost B, B/day burn"
     }
   },
   "noise_filter": {
