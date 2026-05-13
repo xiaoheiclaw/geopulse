@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-13T10:01:30.179353+00:00",
+  "last_updated": "2026-05-13T22:01:44.139522+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-10",
-          "est": "1.0",
-          "note": "5月4-5日IRGC声称击中美军舰被CENTCOM否认+UAE Fujairah被袭；5月7-8日伊朗回击美军舰，CENTCOM称'拦截无端袭击'。冲突仍在每日级别交火节奏",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-10",
           "est": "3-5次/天(停火形式破裂;美伊海上直接交火持续)",
@@ -93,6 +87,12 @@
           "est": "~3-5/day sustained",
           "note": "5/7 IRGC multi-vector strikes on USS Truxtun/Peralta/Mason intercepted (CENTCOM 5/8 confirmed); US struck IRGC missile/drone launch sites + C2 + ISR; 5/10 IRGC Navy warning any tanker attack triggers 'heavy assault'; 5/11 Trump consulting new military strikes after rejecting Iran response 'garbage'; daily engagement pattern persists",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-13",
+          "est": "~3-5/day sustained (ceasefire D38 life support)",
+          "note": "CENTCOM 5/7 confirms US forces 'eliminated inbound threats' + struck Iran military facilities after IRGC multi-vector attack on USS Truxtun/Peralta/Mason (missiles+drones+fast attack craft) in Hormuz; CENTCOM strikes on remaining ~25% identified Iranian targets considered; ballistic salvos declined 90% vs March (Adm Cooper), but multi-domain harassment sustained; Iran Update May 12 (Critical Threats) reaffirms daily engagement pattern",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-10",
-          "est": "10",
-          "note": "5月7日仅2艘通行；截至5月3日整周40艘；正常前130艘/日，降幅>90%。伊朗5月7日出台新规对Hormuz选择性放行",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-10",
           "est": "~2-7艘/日(5/7仅2艘inbound;Lloyd's周累40艘到5/3;战前130/日)",
@@ -189,6 +183,12 @@
           "est": "~5-6 ships/day weekly avg (40 ships wk-to-5/3 vs pre-war 120/day)",
           "note": "Lloyd's List: 40 ships total week-to-5/3 (~5.7/day) vs pre-war 3000/mo (~120/day) ~5% normal; individual days bounce: 5/10=17 (13in/4out), 5/11=18 (8in/10out); Iran 5/7 new rules require Persian Gulf Strait Authority authorization (CNN: 'cement control'); Project Freedom 5/4 launched, 5/5-6 paused, restart considered; 1550+ ships/22.5k mariners stranded",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-13",
+          "est": "<10 ships/day (~5-10% normal)",
+          "note": "Week to 5/3: only 40 ships total (Lloyd's, ~5.7/day) vs pre-war ~120/day; April full month 191 vessels (~6/day) vs pre-war ~3000/month; 1,550+ vessels with 22,500 mariners stranded in/around strait (as of 5/8); CNN 5/7 'Iran imposes new rules to cement control'; Iran 5/7 requires Persian Gulf Strait Authority authorization; Project Freedom paused 5/6 post 5/4 launch; daily transits <10 vs pre-crisis 120 = >90% reduction",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-10",
-          "est": "1.0",
-          "note": "DOE 4月24日当周释放710万桶，自3月累计1750万桶。172M桶应急交换计划进行中，IEA协调全球400M桶释放",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-10",
           "est": "~5.2M桶/周(5/6 EIA周报w/e 5/1)",
@@ -282,6 +276,12 @@
           "est": "~1 mbd (7.1M bbl wk-ending 4/24, ~5.2M wk-ending 5/1)",
           "note": "EIA 5/6 published w/e 5/1: 5.2M bbl drawdown, SPR=392.7M; cumulative 22.7M since 3/20 (17.5M Mar20-Apr24 official + 5.2M); 7.1M wk-ending 4/24 largest since Oct 2022; new 53.3M bbl loan 5/11; 172M total program ~120 days, part of IEA 400M global; next EIA WPSR 5/13 today not yet posted at search time",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-13",
+          "est": "~1 mbd (7.1M wk-ending 4/24; SPR=397.9M)",
+          "note": "EIA confirmed 17.5M bbl total released Mar 20-Apr 24 from US SPR (Cyprus Shipping/WIBIZ/EIA tag); 7.1M bbl week-ending 4/24 largest single-week draw since Oct 2022; SPR stocks 397.9M bbl as of late April; 172M bbl US program (part of IEA-coordinated 400M global) ~120-day timeline; additional 53.3M bbl loan announced 5/11 (BOE Report); next EIA WPSR 5/13 today (not yet posted at time of search) will reveal w/e 5/8 figure",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "activating-escalated",
+      "status": "peak-leverage-window-active",
       "last_check": "2026-05-13",
-      "findings": "5/6 Wang Yi-Araghchi Beijing talks: China pressed Iran against resuming war + urged Hormuz reopening ahead of Trump-Xi summit; Wang Yi called for 'immediate end to hostilities' + 'prompt resumption of shipping traffic'; 5/7 Chinese tanker JV Innovation hit (first China-flag vessel targeted) raises Beijing stakes materially; Trump-Xi summit T-1/T-2 (5/14-15 Beijing)"
+      "findings": "5/13 Trump arrived Beijing; Xi summit 5/14-15 in progress. 5/12 Trump downplays Iran ask: 'does not need Xi help' (rhetoric noise) but agenda confirms Iran/Hormuz top item alongside trade/Taiwan. Analyst consensus (Al Jazeera/CNBC/CSIS): Beijing demands concessions—likely Taiwan—for material pressure on Tehran. China = >80% of Iran crude exports. 5/6 Wang Yi-Araghchi Beijing meeting publicly pressed Iran for 'immediate end' + 'prompt resumption of shipping traffic'. Iran refusing direct US talks until naval blockade lifts—Beijing positioned as only viable channel. Net: window for fp1 trigger is days, not weeks; absence of substantive Beijing deliverable post-summit = signal that China declined the role"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "extreme-contradiction",
+      "status": "extreme-contradiction-escalating",
       "last_check": "2026-05-13",
-      "findings": "5/4 Project Freedom launched → 5/5-6 paused 'mutual agreement / progress toward final agreement'; 5/10-11 Trump rejects Iran response 'garbage / totally unacceptable'; 5/11 Trump consulting security team on new military strikes + Project Freedom Plus + air strikes on remaining 25% identified targets; FDD calling for forced reopening; CENTCOM concurrently striking IRGC HQ underground facility"
+      "findings": "Project Freedom launched 5/4 → paused 5/5-6 citing 'great progress' → 5/8 Iran response delivered → 5/10-11 Trump 'TOTALLY UNACCEPTABLE/garbage/stupid', ceasefire on 'life support'; 5/11 Trump consulting security team on (a) Project Freedom Plus restart, (b) air strikes on remaining 25% identified Iranian targets; FDD (Mark Dubowitz et al.) public op-ed 5/11 calling for forced Hormuz reopening; CENTCOM concurrently struck IRGC HQ underground facility + Bandar Abbas/Qeshm/Sirik post-5/7 multi-vector attack on USS Truxtun/Peralta/Mason; same week Trump arrives Beijing for diplomatic summit. Pause + threaten + diplomacy + escalate stacked simultaneously"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "stalled-near-collapse",
+      "status": "near-collapse-coercive-pivot",
       "last_check": "2026-05-13",
-      "findings": "US 14-point: no enrichment 12yr, hand HEU stock, Hormuz reopen; Iran counter-14-point: security guarantees + US troop withdrawal + sanctions/asset release + reparations + Hormuz mechanism + 30-day resolution; Iran response delivered 4 days late, Trump 'TOTALLY UNACCEPTABLE/garbage'; UNSC Res 2817 (13-0-2 China/Russia abstain) condemning Iran; US-Gulf drafted new UNSC resolution nearing vote"
+      "findings": "US-Gulf-drafted UNSC resolution threatening sanctions on Iran unless it (1) halts ship attacks, (2) ceases 'illegal tolls', (3) discloses mine placements, (4) enables UN humanitarian corridor—moves framework from face-saving compromise to coercive demand. UNSC Res 2817 (13-0-2 China/Russia abstain) already condemned Iran's 'egregious attacks'. Iran 14-point counter (security guarantees + US troop withdrawal + sanctions/asset release + reparations + Hormuz mechanism + 30-day resolution) rejected as 'garbage'. US 14-point (no enrichment 12yr, HEU surrender, Hormuz reopen) unchanged. Pakistan-brokered 4/8 ceasefire indef-extended 4/21 now effectively dead in substance. Diplomatic track has flipped from de-escalation framework to sanctions framework"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "breached",
+      "status": "breached-and-widening",
       "last_check": "2026-05-13",
-      "findings": "War Powers 5/1 deadline passed; Hegseth claims ceasefire 'pauses clock'; H.Con.Res.38 introduced; gas avg $4.52/gal (+$1.54 since 2/28 war start, highest since 2022); Trump 5/11 pushing federal gas tax suspension (18.4¢); 13 US KIA + 365 WIA per CENTCOM; Pentagon casualty cover-up allegations; Hawley/Trump GOP gas tax suspension floated"
+      "findings": "Gas avg .50-4.52/gal (AAA 5/12) = +52% vs pre-war ~.96; CPI 3.8% YoY April (energy spike); War Powers 60-day clock breached 5/1 (Hegseth: 'ceasefire pauses clock'—legally contested); Iran war direct cost ~B (Pentagon Comptroller Hurst, +B in 2 weeks since prior Hegseth testimony); Trump 5/11 pushing federal gas tax suspension (18.4¢)—H.Con.Res.38 introduced; Trump on Time 5/13 dismissing economic concerns 'not even a little bit' (rhetoric); CENTCOM accumulated 13 US KIA + 365 WIA per prior tracker (cover-up allegations active). Political/economic cost trajectory now feeding back into fp2 contradictions"
     }
   },
   "noise_filter": {
