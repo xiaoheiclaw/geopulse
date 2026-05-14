@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-14T06:01:58.951948+00:00",
+  "last_updated": "2026-05-14T10:01:34.461552+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -108,12 +108,6 @@
       "history": [
         {
           "date": "2026-05-11",
-          "est": "~5.5艘/日(Lloyd's周从44降至39艘;伊朗5/7新规执行中)",
-          "note": "Lloyd's List Intelligence最新数据:周通行量从44降至39艘(~5.5/日);5/7仅2艘inbound transit(0出);伊朗5/7新Hormuz transit规则要求联系Persian Gulf Strait Authority授权并'确保通行'(CNN称试图'cement control');战前~120-130艘/日(月3000艘)约4-5%水平;Project Freedom 5/4-5/6暂停后无重启(Trump威胁'Project Freedom Plus'若谈判失败);Maersk单船5/5在美军护送下过境后无新护航;~1550+商船(22500水手)仍困湾区;Trump 5/5 stated'Blockade remains in full force'",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-05-11",
           "est": "6-10 ships/day",
           "note": "~5% of pre-war 130/day average; May 9 only 6 vessels inbound (2 VLCC + 2 bulker + 2 tanker); 1,550 vessels still stranded, 22,500 mariners trapped",
           "source": "pipeline"
@@ -188,6 +182,12 @@
           "date": "2026-05-14",
           "est": "~12 ships/day (5/12 actual; ~9% of pre-war 130/day)",
           "note": "Lloyd's List Intelligence 5/12: 12 vessels (6 in/6 out) vs pre-war ~3000/month (~120-130/day); week-to-5/3 only 40 ships total (~5.7/day); CNN viz confirms ~95-98% reduction; Iran 5/7 new transit rules require Persian Gulf Strait Authority authorization ('cement control'); Project Freedom 5/4→5/6 paused, no restart; IRGC swarm fast-boats blocking large-hull movement; ~1000 ships still in holding pattern",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-05-14",
+          "est": "~6-12 ships/day (5/13=6 vs baseline 60; bumpy)",
+          "note": "straits.live 5/13: only 6 vessels transited vs ~60 baseline (~10%); reversal from 5/12's 12-ship uptick; Trump-Xi summit 5/14-15 explicitly agreed 'Strait of Hormuz must remain open' (Al Jazeera/CNBC); IRGC swarm fast-boats continue blocking large-hull movement; ~1000-1550 ships still in holding pattern",
           "source": "pipeline"
         }
       ]
@@ -290,9 +290,9 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "active-diplomatic-escalating",
+      "status": "active-summit-live",
       "last_check": "2026-05-14",
-      "findings": "Wang Yi 5/5 talks with Araghchi in Beijing called for 'comprehensive ceasefire'; Iran formally asking Beijing to guarantee any US deal; 5/7 Chinese tanker JV Innovation hit (first Chinese vessel targeted, raises pressure); China still reserving on Bahrain UNSC res (after Mar veto with Russia); Trump-Xi summit imminent 5/14-15 Beijing — Iran diplomacy explicitly on agenda (PBS); no naval intervention yet"
+      "findings": "Trump-Xi summit IN SESSION 5/14 Beijing: both leaders agreed 'Strait of Hormuz must remain open' (Al Jazeera live blog); Iran war explicitly on agenda alongside trade/Taiwan/AI/rare earths; analysts note Beijing likely demands Taiwan concessions for greater Iran pressure; Iran FM Araghchi's earlier Beijing visit (Wang Yi 5/5) framed China as having already engaged Iran on reopening Hormuz; 5/7 Chinese tanker JV Innovation hit raised Beijing's stake; NO naval intervention announced yet — diplomatic only"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
@@ -304,9 +304,9 @@
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "stalled-rejected",
+      "status": "stalled-unsc-pending",
       "last_check": "2026-05-14",
-      "findings": "US 14-point memo (no enrichment 12yr + 440kg HEU handover) rejected by Iran 5/8; Trump called response 'TOTALLY UNACCEPTABLE / garbage / playing games' 5/10-11; CNN 'ceasefire on massive life support'; Bahrain-US UNSC freedom-of-navigation res at 112 co-sponsors but China+Russia signaling 2nd veto; Iran demands 'all fronts' end + sanctions relief + frozen asset release before any nuclear concession; one-page memo also on table (30-day resolution period) but no convergence"
+      "findings": "US/Gulf-drafted UNSC resolution 'nearing potential vote' in NY (Al Jazeera 5/8); follows Res 2817 (13-0-2 with China+Russia abstaining) 5/10; Iran 14-point counter still demands all-fronts ceasefire + sanctions relief + blockade lift + frozen-asset release before nuclear concessions; Trump 5/10-11 'TOTALLY UNACCEPTABLE/garbage' on Iran response; WaPo 'ceasefire on life support'; one-page 30-day framework also still on table but no convergence; China/Russia signaling potential 2nd veto on new draft"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
