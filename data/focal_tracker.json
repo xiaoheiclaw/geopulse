@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-15T02:01:49.372088+00:00",
+  "last_updated": "2026-05-15T06:01:44.747332+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-11",
-          "est": "daily",
-          "note": "CENTCOM 5/8 intercepted multiple IRGC missile/drone/boat attacks; IRGC claims continued strikes on US naval assets; sustained daily engagement pattern",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-11",
           "est": "3-5次/天(停火形式D36)",
@@ -93,6 +87,12 @@
           "est": "~1-2/day kinetic + swarm harassment",
           "note": "CENTCOM 5/14 Adm Cooper testimony: Iran threat 'diminished but not eliminated', 90% of Iran defense industrial base destroyed, naval forces largely destroyed; multi-vector harassment via cruise missiles/drones/fast boats continues; no major ballistic salvo since 5/7; CENTCOM 5/12 redirected 65 Iranian vessels & disabled 4; Iran still mining strait post-4/7 ceasefire; 5/1 Kuwait Bubiyan IRGC infiltration attempt; Operation Epic Fury at 38 days",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-15",
+          "est": "1-2/day naval harassment (ballistic salvos -90% vs Mar)",
+          "note": "5/14 CENTCOM Adm Cooper: Iran 'severely degraded but retains capabilities'; Op Epic Fury (38-day) objectives met, ~90% naval mines eliminated; 5/7 IRGC multi-vector attack on USS Truxtun/Peralta/Mason intercepted; proxies (Hamas/Hez/Houthi) 'completely cut off' from Tehran supply; stalemate phase, no major ballistic salvos this week",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-11",
-          "est": "~6艘/日(暴跌)",
-          "note": "5/11只6艘通过(vs 5/10的17艘13in/4out);战前~120/日仅~5%水平;11艘锚泊或停;Polymarket'5/15正常'Yes概率极低;Maersk/Hapag-Lloyd持续暂停;1550+商船仍困湾区",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-12",
           "est": "~10-17艘/日(5/10=17艘13in/4out;Lloyd's周度39艘从44降)",
@@ -189,6 +183,12 @@
           "est": "~6-12 ships/day (~5-10% baseline)",
           "note": "Lloyd's List/straits.live: 5/12=12 vessels (6 in/6 out), 5/13=6 vessels vs pre-war ~130/day baseline; running ~5% baseline through April; 1,550+ vessels stranded with 22,500 mariners as of 5/8; Iran 5/7 new transit rules require Persian Gulf Strait Authority authorization; Trump-Xi summit 5/14-15 agreed 'Hormuz must remain open' but no enforcement yet",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-15",
+          "est": "6-10/day (vs baseline ~130)",
+          "note": "5/14: only 6 vessels transited (baseline 60+); 5/12: 12 (6 in/6 out); IRGC mine-laying + warnings since 2/28 blockade; 1,550 commercial vessels stranded with 22,500 mariners; Iran selectively allowing Chinese ships through after Beijing diplomacy",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-11",
-          "est": "~1M b/day",
-          "note": "7.1M barrels released week ending 4/24 (highest since Oct 2022); cumulative 17.5M since March; SPR at 397.9M; IEA coordinated 400M release in progress",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-11",
           "est": "~5.2M桶/周(EIA 5/6报告w/e 5/1未变;次报告5/13)",
@@ -282,6 +276,12 @@
           "est": "~1.23 mbd (8.6M wk-5/8 all-time record)",
           "note": "EIA 5/14 WPSR: SPR drawdown w/e 5/8 = 8.6M bbl (new all-time weekly record, exceeds 7.1M wk-4/24); SPR stocks 384.1M (lowest since Oct 2024); cumulative ~31M+ since 3/20; DOE 5/11 awarded new 53.3M bbl exchange contracts (Bayou Choctaw/Bryan Mound/Big Hill/West Hackberry); release rate could reach 1.2 mbd peak; total program 133.1M of 172M target released; physical pump rate accelerating toward 4.4 mbd limit",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-15",
+          "est": "~5M bbl/wk; new 53M bbl exchange 5/11",
+          "note": "EIA wk ending 5/8: SPR=384.1M bbl; DOE 5/11 announced 53.3M bbl exchange to refiners (Bayou Choctaw/Bryan Mound/Big Hill/W Hackberry); total released 133.1M of 172M planned, part of IEA-coordinated 400M global release; pace ~5M/wk steady",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "partial",
+      "status": "triggered",
       "last_check": "2026-05-15",
-      "findings": "Trump-Xi summit 5/14-15 Beijing: explicit agreement 'Strait of Hormuz must remain open' (Al Jazeera/CNBC). China Special Envoy Zhai Jun mediation continues; 5/6 Wang Yi-Araghchi Beijing talks; 5/7 first Chinese vessel JV Innovation attacked (first time Chinese-owned vessel targeted). Washington recognizes Beijing leverage on Iran; US concessions sought. Substantive naval/coercive action absent — diplomatic-only posture"
+      "findings": "Special Envoy Zhai Jun in Gulf for mediation; Iran allowing Chinese vessels through Hormuz after Beijing diplomacy; Trump-Xi summit 5/14-15 Beijing focused on Hormuz crisis; PBS: 'China stepping up Iran war diplomacy'; Al Jazeera: 'China's help may require US concessions'"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-05-15",
-      "findings": "Strong oscillation persists: Project Freedom launched 5/4→paused 5/6 (Trump cited 'great progress' on deal); 5/11 Trump rejected Iran response 'TOTALLY UNACCEPTABLE/garbage'; 5/11 Trump consulting new military strikes; 5/12 new Iran sanctions unveiled, Trump says ceasefire on 'massive life support'; Hegseth 5/12 'Trump doesn't need Congress to restart strikes'; restart of Project Freedom + air strikes on remaining 25% identified targets under consideration; 5/14 White House 'few tools for gas-price relief'"
+      "findings": "Operation Project Freedom launched 5/4 (escort merchants), Trump paused 5/5-6 citing negotiation 'great progress'; talks collapsed Sun; US now considering Project Freedom restart + airstrikes on remaining 25% identified Iran targets; Trump threatens 'intense bombing' if no deal; classic carrot-stick whiplash"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "partial",
+      "status": "active-stalled",
       "last_check": "2026-05-15",
-      "findings": "Framework exists but deadlocked: 4/7 ceasefire holding on 'massive life support' (Trump 5/11); Iran 14-point proposal w/ Pakistani mediators rejected by Trump; Iran chief negotiator 5/12 ultimatum 'accept or face failure'; framework calls for halt+Hormuz reopen+15-20 day negotiation window; Iran demands end-of-war on all fronts incl. Lebanon. UNSC Res 2817 (13-0-2 China/Russia abstained) condemns Iran 'egregious attacks' — punitive not framework-building. Nuclear vs end-of-war sequencing remains blocker"
+      "findings": "Iran 14-point phased proposal (end war/lift sanctions/end blockade first, defer nuclear); Trump rejected counteroffer 'TOTALLY UNACCEPTABLE/garbage'; ceasefire D38 on 'massive life support' (CNN); 5/12 Iran chief negotiator ultimatum 'accept or face failure'; UNSC Res 2817 (3/11) condemns Iran but no new framework"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "triggered",
+      "status": "approaching",
       "last_check": "2026-05-15",
-      "findings": "Gas .52/gal (+50%); war cost B (Pentagon comptroller Hurst); Hawley bill to suspend federal gas tax introduced; Trump pushing fed gas tax suspension; Senate rejected War Powers measure 49-50 for 7th time (Article II claim holds); 5/13 CNN 'Trump shrugs off economic concerns'; 5/14 USNews 'White House Scrambles for Gas-Price Relief'; SPR draw accelerating to all-time weekly record but inventory at lowest since Oct 2024 — buffer eroding. Political pressure mounting but Congress structurally unable to constrain"
+      "findings": "AAA gas avg $4.52 (+50% YoY); Pentagon: war cost $29B (+$4B in 2wks); House War Powers vote 5/11 tied 212-212 (failed by tie, 3 GOP defected); 60-day WPR clock running; Hawley bill to suspend federal gas tax; Trump 'shrugs off' economic impact but seeking gas-price relief tools"
     }
   },
   "noise_filter": {
