@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-16T02:02:20.527689+00:00",
+  "last_updated": "2026-05-16T06:01:51.938866+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,18 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-12",
-          "est": "3-5次/天(停火D37 life support;5/11 Trump拒'garbage';IRGC Navy升级警告)",
-          "note": "5/12 Trump-Xi summit倒计时T-2;ceasefire D37名义存续但'massive life support';5/11 Trump拒伊朗回应'TOTALLY UNACCEPTABLE/stupid/garbage';5/10 IRGC Navy警告对任何袭击触发'重大反击';5/7三舰多向攻击CENTCOM拦截;5/8 IRGC宣布停火破裂;5/10 UNSC Res 2817(13-0-2中俄弃权)谴责伊朗;5月CENTCOM累计击沉6-7艘IRGCN快艇",
-          "source": "pipeline"
-        },
-        {
-          "date": "2026-05-12",
-          "est": "3-5次/天(停火D37 life support;CENTCOM新增封锁动作)",
-          "note": "CENTCOM 5/8-9额外瘫痪2艘伊朗籍油轮(Gulf of Oman)+redirected 57艘商船执行blockade;IRGC升级警告:对伊朗油轮/商船任何袭击触发'heavy assault'打击美中心+舰艇;延续5/7三舰多向攻击+5/8 IRGC宣布停火破裂;5/11 Trump拒伊朗回应'TOTALLY UNACCEPTABLE/garbage';5/10 UNSC Res 2817(13-0-2中俄弃权)谴责伊朗;Trump-Xi summit T-2(5/14-15北京)",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-12",
           "est": "3-5次/天(停火D38 life support;5/12-13 French container ship被击中)",
@@ -93,6 +81,18 @@
           "est": "~1-2/day naval harassment (no major ballistic salvos since 5/7)",
           "note": "5/14 CENTCOM Adm Cooper Senate testimony: Iran 'diminished but not eliminated', drone capability reduced to ~10% pre-war, defense industrial base degraded >85%, IRGC remains 'major force'; 5/12 Kuwait reports 6 IRGC officers attempted Bubiyan Island infiltration 5/1; IRGC continues cruise missile/drone/fast-boat harassment during Project Freedom (5/4 attacks on USN); ceasefire D41 nominal but eroded; no major ballistic salvo this week",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-16",
+          "est": "1-2/week",
+          "note": "5/7-8 IRGC fast-boat/missile engagement at Hormuz (US destroyer); 5/1 Kuwait Bubiyan infiltration attempt by 6 IRGC officers; CENTCOM says Iran defense base degraded >85%, residual capability 'very moderate if not small'",
+          "source": "pipeline"
+        },
+        {
+          "date": "2026-05-16",
+          "est": "~1-2/day harassment (no major salvos)",
+          "note": "Steady-state: daily fast-boat/drone harassment continues but no major ballistic salvo since 5/7-8 Hormuz engagement (US destroyer); 5/1 Kuwait Bubiyan infiltration attempt by 6 IRGC officers; CENTCOM Adm Cooper (5/14 Senate): Iran defense base degraded >85%, drone capability ~10% pre-war, residual strike capability 'very moderate if not small', IRGC 'major force in running' Iran",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-12",
-          "est": "~5.5艘/日(Lloyd's周度从44降至39艘;5/10单日17艘13in4out为近期高点;Iran新规执行中)",
-          "note": "Lloyd's List Intelligence最新:周通行量从44降至39艘(~5.5/日)持续下行;5/10单日17艘(13入4出)虽近期高点but周度趋势仍弱;Lloyd's周累40艘到5/3约5.7/日;战前~120/日(3000艘/月)仅~5-15%水平;伊朗5/7新Hormuz transit规则要求Persian Gulf Strait Authority授权'cement control';Project Freedom 5/4启动→5/6暂停未重启;CENTCOM 5/9再redirected 57商船执行blockade;Maersk/CMA CGM/Hapag-Lloyd持续暂停过境;~1550+商船(22500水手)困湾区",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-12",
           "est": "10-18艘/日(5/11=18艘8in/10out;5/10=17艘13in/4out;较前周略回升但Lloyd's周度仍39艘趋弱)",
@@ -189,6 +183,12 @@
           "est": "~3-7 vessels/day (~5% of 130/day pre-war baseline)",
           "note": "Kpler/Vortexa via UNCTAD: April-May running ~5% pre-war baseline; hormuzstraitmonitor.com tracking sub-10 vessels/day; oil flows <2 mbd vs pre-war 17-20 mbd; Maersk/CMA CGM/Hapag-Lloyd remain suspended; Project Freedom paused 5/5-6 since talks resumed, not yet restarted; ~1,550+ vessels (22,500 mariners) still trapped in Gulf",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-16",
+          "est": "~10 ships/day",
+          "note": "5/13 only 11 vessels transited (4 in, 7 out); IMF Portwatch <10/day in early May vs ~130 pre-crisis (>92% collapse); prediction markets price 0-10 range at 67% for end-May",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-12",
-          "est": "~5.2M桶/周(EIA 5/6报告w/e 5/1未变;次报告5/13周三披露w/e 5/8)",
-          "note": "5/12周二无新EIA数据:最新仍为5/6发布w/e 5/1=减5.2M桶(SPR库存392.7M桶);累计3/20以来约22.7M桶(EIA官方17.5M Mar20-Apr24+本周5.2M);前周7.1M为自2022/10最大单周;172M桶应急交换总计划~120天进行中;IEA协调全球400M桶;次EIA周报5/13(周三)将披露w/e 5/8数据",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-12",
           "est": "~5.2M桶/周(EIA 5/6报告w/e 5/1未变;次报告5/13周三披露w/e 5/8)",
@@ -282,6 +276,12 @@
           "est": "~1.23 mbd (8.6M bbl wk-5/8 ALL-TIME RECORD, next WPSR 5/20)",
           "note": "EIA WPSR 5/13 confirms 8.6M bbl drawdown w/e 5/8 = new all-time weekly record (vs 8.4M Sep-2022 peak, 7.1M wk-4/24); SPR stocks 384.1M bbl, lowest since Oct 2024; cumulative ~17.5M bbl released since March per EIA Today in Energy; next release 5/20 expected to confirm continued aggressive pace",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-16",
+          "est": "~8.6M bbl/week (record)",
+          "note": "Week ending 5/8 EIA: 8.6M bbl pulled from SPR — all-time weekly record, beating Sep-2022's 8.4M; SPR down to 384.1M bbl; cumulative 17.5M since March; DOE separately loaning 53M; total planned release 172M (part of IEA coordinated 400M)",
+          "source": "pipeline"
         }
       ]
     }
@@ -292,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "triggered-confirmed",
       "last_check": "2026-05-16",
-      "findings": "Trump-Xi summit 5/14-15 Beijing CONCLUDED: Xi explicitly offered to broker Iran peace + 'keep Hormuz open to global shipping' (Time/Euronews/Al Jazeera); Xi: China won't supply military to Iran but will continue buying Iran oil; China-Pakistan 5-point proposal (ceasefire+Hormuz reopen) AU-endorsed; Beijing pressing Iran via Wang Yi-Araghchi 5/6; Special Envoy Zhai Jun shuttle diplomacy Gulf states; this is the strongest fp1 reading since crisis began"
+      "findings": "Trump-Xi summit Beijing (mid-May) CONFIRMED: both leaders publicly aligned on Hormuz remaining accessible to global shipping; Iran allowing Chinese-flagged vessels through Hormuz post-Beijing diplomacy; Wang Yi-Araghchi meeting called for 'comprehensive ceasefire'; Special Envoy Jun Zhai shuttle continues; this remains strongest fp1 reading since crisis onset"
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "triggered",
       "last_check": "2026-05-16",
-      "findings": "Whiplash sustained: 5/4 Project Freedom launched → 5/5 Trump pause 'Great Progress on deal' → 5/11 Trump rejects Iran response 'TOTALLY UNACCEPTABLE/garbage' → considering 'Project Freedom Plus' (jpost) + new airstrikes; FDD 5/11 op-ed 'US must open Hormuz by force'; simultaneous escort buildup (100+ aircraft/destroyers/15K personnel) AND diplomatic channel via Pakistan; Trump signaling both escalation and deal in same week"
+      "findings": "Project Freedom escort op launched 5/4 then paused 5/5 within 48hrs citing 'great progress'; Hegseth (5/12) says Trump doesn't need Congress to restart strikes despite 60-day War Powers limit passed; Trump simultaneously threatens 'intense bombing' if no deal; naval blockade of Iranian ports remains"
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "active-stalled",
+      "status": "partial",
       "last_check": "2026-05-16",
-      "findings": "US 14-point (Iran no nuke + halt enrichment 12yr + surrender 440kg HEU stockpile / vs US lifts sanctions+frees assets+ends blockade) vs Iran 14-point counter (30-day resolution not 60-day ceasefire + reparations + Hormuz new mechanism + Lebanon ceasefire); Iran chief negotiator 5/12: accept or face 'failure'; US+Gulf-drafted UNSC resolution 'nearing potential vote' NYC; The National 5/11 'one page fourteen points no deal'; diplomacy stalled 1mo+ into fragile ceasefire"
+      "findings": "Fragile ceasefire since 4/8 now on 'life support' per Trump; Iran's 14-point proposal vs US 10-point proposal accepted 'in principle'; UN SC Bahrain-led GCC draft on Hormuz still pending; UNSC Res 2817 already adopted condemning Iran attacks; framework exists but stalled"
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "approaching-cracking",
+      "status": "triggered",
       "last_check": "2026-05-16",
-      "findings": "Cost signals hardening: 5/13 Senate war powers resolution failed 50-49 BUT 3 GOP defected (Murkowski/Collins/Paul) — first Senate vote to actually end war since 60-day WPR window expired (5/1 Trump letter: ceasefire extends window); WaPo 5/12: Iran war fuels sharpest inflation spike in 3yr at 3.8%; AAA national avg gas >.50/gal +50% YoY; Pentagon 4/8 data: 13 KIA + 381 WIA (Intercept 4/22 'casualty cover-up' alleges Pentagon erased wounded); approaching trigger but House WPR still 212-212 stalemate"
+      "findings": "Pentagon: war cost B; 13 US service members KIA; AAA gas at .52/gal (+50% vs pre-crisis); Senate rejected War Powers measure 7th time 49-50; Trump pushing federal gas tax suspension — political cost mounting rapidly"
     }
   },
   "noise_filter": {
