@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-19T06:02:35.063414+00:00",
+  "last_updated": "2026-05-19T10:02:23.187298+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-16",
-          "est": "1-2/week",
-          "note": "5/7-8 IRGC fast-boat/missile engagement at Hormuz (US destroyer); 5/1 Kuwait Bubiyan infiltration attempt by 6 IRGC officers; CENTCOM says Iran defense base degraded >85%, residual capability 'very moderate if not small'",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-16",
           "est": "~1-2/day harassment (no major salvos)",
@@ -93,6 +87,12 @@
           "est": "~1-2/day naval harassment (steady; no major kinetic since 5/16 destroyer-incident; ceasefire D42 nominal)",
           "note": "5/19 status quo holds: post-5/16 destroyer transit stalemate intact. No major ballistic salvo since 5/7-8 USS Truxtun/Peralta/Mason engagement. CENTCOM Adm Cooper 5/14 Senate testimony: Iran defense industrial base degraded 90%, drone capability ~10% pre-war, mobile launchers 75% retained, missiles 70% retained, IRGC remains 'major force in running' Iran with 'very moderate if not small' residual strike capability. Times of Israel 5/14: Iran 'still able to strike'. Operation Epic Fury 1,450+ strikes on Iranian weapons-mfg per CENTCOM. Iran retained 75% mobile launchers, 70% missiles, most underground storage restored. Proxies (Hez/Houthi/Hamas) cut off from Tehran supply. Project Freedom paused since 5/5-6; naval blockade of Iranian ports remains in force.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-19",
+          "est": "~1-2/day naval harassment (steady; D43 ceasefire nominal; no major kinetic since 5/16 destroyer-incident)",
+          "note": "5/19 close: status quo intact. Post-5/16 USN destroyer Hormuz transit→sank 7 IRGC small boats stalemate holds (CENTCOM/CBS). No major ballistic salvo since 5/7-8. CENTCOM Adm Cooper 5/14 Senate testimony reaffirmed: Iran defense industrial base degraded 90%, drone capability ~10% pre-war, mobile launchers 75% retained, missiles 70% retained, IRGC 'major force in running' Iran with 'very moderate if not small' residual strike capability. Times of Israel 5/14: Iran 'still able to strike'. Operation Epic Fury 1,450+ strikes on Iranian weapons-mfg per CENTCOM. Proxies (Hez/Houthi/Hamas) cut off from Tehran supply. Project Freedom paused since 5/5-6; naval blockade of Iranian ports remains in force. Iran 5/11 issued full readiness warning still operative.",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-16",
-          "est": "~3-7 vessels/day (~5% of 130/day pre-war baseline)",
-          "note": "Kpler/Vortexa via UNCTAD: April-May running ~5% pre-war baseline; hormuzstraitmonitor.com tracking sub-10 vessels/day; oil flows <2 mbd vs pre-war 17-20 mbd; Maersk/CMA CGM/Hapag-Lloyd remain suspended; Project Freedom paused 5/5-6 since talks resumed, not yet restarted; ~1,550+ vessels (22,500 mariners) still trapped in Gulf",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-16",
           "est": "~10 ships/day",
@@ -189,6 +183,12 @@
           "est": "~1 vessel/day extreme low 5/18 (vs baseline ~60); week range 1-17; ~1-13% pre-war baseline",
           "note": "hormuzstraitmonitor.com 5/18: 1 vessel transited vs baseline ~60 — signals near-total closure. Recent series: 5/12=12, 5/13=11, 5/14=17, 5/15=6, 5/16=16, 5/18=1. UNCTAD/Kpler April-May running ~5% pre-conflict baseline. April 23: zero transits (first since 2/28 conflict start). 150+ non-sanctioned ships stuck in Persian Gulf incl 62 VLCCs (Lloyd's List). 22,500 mariners trapped on 1,550+ vessels (Gen Caine 5/6). Iran's Persian Gulf Strait Authority authorization rule in force; selectively allowing Chinese vessels after Beijing diplomacy (Inquirer 5/14). Maersk/CMA CGM/MSC/Hapag-Lloyd remain suspended (P&I cancelled since 3/5). Lloyd's editor Meade: normalization 'much longer than September' given mining + lack of bilateral progress. Polymarket end-May 0-10 range ~67% probability.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-19",
+          "est": "5/18 collapsed to 1 vessel/day (vs baseline ~60); 5/16=16; week range 1-17; UNCTAD ~5% pre-conflict",
+          "note": "5/19: extreme low signal persists. hormuzstraitmonitor.com 5/18: only 1 vessel transited (extreme low) following 5/16=16 partial reopening attempt. Recent series 5/12=12, 5/13=11, 5/14=17, 5/15=6, 5/16=16, 5/17=?, 5/18=1. UNCTAD/Kpler April-May ~5% pre-conflict baseline. 22,500 mariners trapped on 1,550+ vessels (Gen Caine 5/6). 150+ non-sanctioned ships incl 62 VLCCs stuck in Persian Gulf (Lloyd's List). Iran selectively allowing Chinese vessels via Persian Gulf Strait Authority permits post-Beijing diplomacy (Fars/Tasnim/Inquirer 5/14). Maersk/CMA CGM/MSC/Hapag-Lloyd remain suspended (P&I cancelled since 3/5). Shadow fleet 80% of transits (Lloyd's Raanan). Lloyd's editor Meade: normalization 'much longer than September' given mining + no bilateral progress. Polymarket end-May 0-10 range ~67% probability.",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-16",
-          "est": "~1.23 mbd (8.6M bbl wk-5/8 ALL-TIME RECORD, next WPSR 5/20)",
-          "note": "EIA WPSR 5/13 confirms 8.6M bbl drawdown w/e 5/8 = new all-time weekly record (vs 8.4M Sep-2022 peak, 7.1M wk-4/24); SPR stocks 384.1M bbl, lowest since Oct 2024; cumulative ~17.5M bbl released since March per EIA Today in Energy; next release 5/20 expected to confirm continued aggressive pace",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-16",
           "est": "~8.6M bbl/week (record)",
@@ -282,6 +276,12 @@
           "est": "~1.23 mbd (8.6M bbl wk-5/8 ALL-TIME RECORD; WPSR 5/20 tomorrow reveals wk-5/15)",
           "note": "5/19 pre-WPSR: tomorrow's release reveals wk-ending 5/15. Current: EIA WPSR 5/13 confirmed 8.6M bbl drawdown w/e 5/8 = new all-time weekly record (vs prior 8.4M Sep 2022 peak, 7.1M wk-4/24). SPR stocks 384.1M bbl (lowest since Oct 2024, -341M vs 714M max capacity). Cumulative ~31M+ since 3/20 (17.5M Mar20-Apr24 + 5.2M wk-5/1 + 8.6M wk-5/8). DOE 5/11 announced 53.3M bbl new exchange contracts (28% return premium = 15.1M bbl); ~133.1M of 172M US program released as part of IEA-coordinated 400M global. Physical pump rate near 4.4 mbd hardware limit. Trump federal gas tax suspension proposed 5/11 (admin defensive on cost transmission). EIA notes MENA oil flows at <10% of pre-conflict levels.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-05-19",
+          "est": "~1.23 mbd (8.6M bbl wk-5/8 ALL-TIME RECORD holds; WPSR 5/20 reveals wk-5/15 tomorrow)",
+          "note": "5/19 pre-WPSR: tomorrow's release reveals wk-ending 5/15. EIA WPSR 5/13 confirmed 8.6M bbl drawdown w/e 5/8 = new all-time weekly record (vs prior 8.4M Sep 2022 peak, 7.1M wk-4/24). SPR stocks 384.1M bbl (lowest since Oct 2024, -341M vs 714M max). Cumulative ~31M+ since 3/20 (17.5M Mar20-Apr24 + 5.2M wk-5/1 + 8.6M wk-5/8). DOE 5/11 announced 53.3M bbl new exchange contracts (28% return premium = 15.1M bbl); ~133.1M of 172M US program released as part of IEA-coordinated 400M global. Physical pump rate near 4.4 mbd hardware limit. Trump federal gas tax suspension proposed 5/11 (admin defensive). National avg gas .50/gal (+50% pre-war).",
+          "source": "pipeline"
         }
       ]
     }
@@ -292,28 +292,28 @@
       "label": "中国实质行动(唯一可行聚点注入)",
       "status": "partial",
       "last_check": "2026-05-19",
-      "findings": "5/19: China posture marginal-positive but kinetic involvement zero. NEW signal: Trump 5/16 returning from Beijing said Xi 'agrees Iran must open strait', considering lifting US sanctions on Chinese oil companies buying Iranian oil — first explicit quid-pro-quo on table. CNBC 5/16: 'no sign China will weigh in' beyond rhetoric. (1) Iran 5/14 approved selective Chinese vessel passage through Hormuz via Persian Gulf Strait Authority permit (Fars/Tasnim/Inquirer) — material bilateral concession; (2) Trump-Xi Beijing summit 5/14-15 Hormuz-focused; (3) China sending special envoy for ME affairs to region; (4) Beijing dispatched envoys, evacuated nationals from Iran. Net: rhetoric ↑, selective Chinese transit permit + Trump sanctions-relief consideration are first material focal-point injections but no kinetic involvement."
+      "findings": "5/19: China posture marginal-positive but zero kinetic involvement. Trump 5/16 returning from Beijing said Xi 'agrees Iran must open strait' and considering lifting US sanctions on Chinese oil companies buying Iranian oil — first explicit quid-pro-quo on table. CNBC 5/16: 'no sign China will weigh in' beyond rhetoric. (1) Iran 5/14 approved selective Chinese vessel passage via Persian Gulf Strait Authority permit — material bilateral concession; (2) Trump-Xi Beijing summit 5/14-15 Hormuz-focused; (3) China dispatched special ME envoy + evacuated nationals from Iran. Net: rhetoric ↑, selective Chinese transit permit + Trump sanctions-relief consideration are first material focal-point injections but kinetic involvement zero."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
       "status": "active",
       "last_check": "2026-05-19",
-      "findings": "5/19: Trump bifurcated track structurally entrenched. NEW: Iranian media 5/18 reports US proposing temporary oil-sanctions waiver pending final agreement — Brent eased ~1%+ on report. (1) PROJECT FREEDOM PAUSED 5/5 after ~36hrs citing 'great progress' BUT (2) NAVAL BLOCKADE OF IRAN PORTS ACTIVE since 4/13 (M/day Iran losses per WH Op Economic Fury); (3) Competing 14-point proposals: US 14-pt (no enrichment 12yrs, hand over 440kg 60% HEU, gradual sanctions relief, blockade withdrawal, strait reopen 30 days post-signing) vs Iran 14-pt counter; (4) Trump 5/10 called Iran response 'totally unacceptable'; Trump 5/12 declared ceasefire 'on life support'; (5) Iran negotiator Ghalibaf 5/12 ultimatum; (6) FDD 5/11: US must open Hormuz by force as Iran's deal 'unacceptable'. Bifurcated track persists: PF paused (de-escalatory) ⊕ blockade ongoing ⊕ sanctions-waiver olive branch ⊕ rhetoric oscillating."
+      "findings": "5/19: Trump bifurcated track structurally entrenched. NEW: Iranian media 5/18 reports US proposing temporary oil-sanctions waiver pending final agreement — Brent eased ~1%+ on report. (1) PROJECT FREEDOM PAUSED 5/5 'great progress' BUT (2) NAVAL BLOCKADE OF IRAN PORTS ACTIVE since 4/13 (M/day Iran losses per WH Op Economic Fury); (3) US 14-pt (no enrichment 12yrs, hand over 440kg 60% HEU, gradual sanctions relief, blockade withdrawal, strait reopen 30d post-signing) vs Iran 14-pt counter; (4) Trump 5/10 'totally unacceptable' on Iran counter; Trump 5/12 ceasefire 'on life support'; (5) Iran negotiator Ghalibaf 5/12 ultimatum; (6) FDD 5/11: US must open Hormuz by force. Bifurcated track persists: PF paused (de-escalatory) ⊕ blockade ongoing ⊕ sanctions-waiver olive branch ⊕ rhetoric oscillating."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
       "status": "active",
       "last_check": "2026-05-19",
-      "findings": "5/19: Multiple competing framework tracks alive; sanctions-waiver hint widens off-ramp. NEW: Iranian media 5/18 — Trump considering temporary oil sanctions waiver pending final agreement (first concrete US olive branch since 5/10 rejection of Iran counter); also Trump 5/16 considering lifting sanctions on Chinese companies buying Iranian oil. (1) US 14-pt vs Iran 14-pt counter — Trump rejected 5/10 'totally unacceptable'; (2) Iran negotiator Ghalibaf 5/12 ultimatum: 'accept or face failure'; (3) Pakistan remains practical back-channel mediator with China political weight; (4) UNSC Resolution 2817 condemned Iran attacks 13-0-2 still operative; (5) Bahrain Hormuz-escort draft 4/7 vetoed by China+Russia; (6) Xi's 4-point ME peace plan still on table. Both sides retain face-saving exit ramps (14-pt proposals + sanctions waiver path), but neither has crossed acceptance threshold; framework production accelerating."
+      "findings": "5/19: Multiple competing framework tracks alive; sanctions-waiver hint widens off-ramp. NEW: Iranian media 5/18 — Trump considering temporary oil sanctions waiver pending final agreement (first concrete US olive branch since 5/10 rejection of Iran counter); Trump 5/16 also considering lifting sanctions on Chinese companies buying Iranian oil. (1) US 14-pt vs Iran 14-pt counter — Trump rejected 5/10 'totally unacceptable'; (2) Iran negotiator Ghalibaf 5/12 ultimatum 'accept or face failure'; (3) Pakistan back-channel mediator with China political weight; (4) UNSC Res 2817 13-0-2 condemning Iran attacks still operative; (5) Bahrain Hormuz-escort draft 4/7 vetoed by China+Russia; (6) Xi 4-point ME peace plan still on table. Both sides retain face-saving exit ramps (14-pt proposals + sanctions waiver path) but neither has crossed acceptance threshold; framework production accelerating."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
       "status": "approaching",
       "last_check": "2026-05-19",
-      "findings": "5/19: Cost thresholds elevating, no political breakpoint yet. GAS — National avg $4.45/gal (+50% from pre-war ~$3.00 — NBC 5/11, AAA); Trump proposed federal gas-tax suspension 5/11 (NPR) — admin defensive. INFLATION — CPI ~3.8%, highest in nearly 3 years. WAR COST — Pentagon: $25B+ Iran war cost so far (NBC 5/14 Hegseth Armed Svc Committee); CAP estimate similar. CASUALTIES — 13 US service members KIA (cumulative since 2/28); no major new casualty events this week. WPR — May 1 60-day notification deadline passed; 6 Senate Dem WPR votes failed (latest 49-50); House WPR effort failed by 1 vote; admin argues 'hostilities terminated' since 4/7 ceasefire so 60-day clock doesn't apply; Trump asserting Article 2 authority via Hegseth Senate testimony. GOP cohesion narrow margins signal stress but holds. Public sentiment: Reuters/Ipsos 4/15-20 — 77% concerned about Iran situation."
+      "findings": "5/19: Cost thresholds elevating, no political breakpoint yet. GAS — National avg .50/gal (AAA 5/12, +50% pre-war ~); Trump federal gas-tax suspension proposed 5/11 (NPR) admin defensive. INFLATION — CPI ~3.8%, highest in 3 years. WAR COST — Pentagon B+ Iran war cost so far (NBC 5/14 Hegseth Senate). Pentagon 5/12 estimate: .3B first 6 days + B/day ongoing. CASUALTIES — 13 US KIA cumulative; no major new casualty events this week. WPR — May 1 60-day deadline passed; 6 Senate Dem WPR votes failed (latest 49-50); House WPR effort failed by 1 vote; admin argues 'hostilities terminated' since 4/7 ceasefire so 60-day clock doesn't apply; Trump asserting Article 2 authority. GOP cohesion narrow margins signal stress but holds. Market today: VIX 18.43 +6.78%, S&P -1.24%, Brent +1.73% — risk pricing back up. Public sentiment: Reuters/Ipsos 4/15-20 — 77% concerned about Iran situation."
     }
   },
   "noise_filter": {
