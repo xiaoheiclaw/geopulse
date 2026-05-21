@@ -4083,8 +4083,8 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-05-11T10:02:41.246082Z",
-  "updated_at": "2026-04-26T22:05:29.547176Z",
+  "last_updated": "2026-05-21T10:03:30.521956+00:00",
+  "updated_at": "2026-05-21T10:03:30.521956+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
@@ -4142,7 +4142,22 @@
         "q2": "~5-10/day",
         "q3": "~1M b/day (7.1M wk to 4/24)"
       }
+    },
+    {
+      "date": "2026-05-21",
+      "timestamp": "2026-05-21T10:03:30.521956+00:00",
+      "trigger": "delta-snapshot: no material DAG change; physical-layer/focal-layer triggers already baked into prior updates",
+      "delta": [
+        "Q3 SPR record weekly drawdown (~10mb/wk, total <375M) — incremental data on already-p=1.0 spr_coordinated_release node",
+        "fp4 cost threshold active: War Powers 60d expired 5/1 (Trump arg: ceasefire 'terminated' hostilities); gas $4.52/gal (+50% pre-war); Pentagon $25B cumulative cost; household +$296.56 by 5/20",
+        "fp1 partial: Iran granting selective Chinese vessel passage through Hormuz (mid-May; Trump-Xi summit period); Rubio publicly requested Beijing more active role — first substantive China-mediation effect",
+        "fp2 active: Trump 5/12 'life support' + FDD 5/11 hawk pressure 'must open by force' vs paused Project Freedom (5/6); dovish-hawkish signals coexisting",
+        "fp3 deadlocked: 4/8 framework (halt + Hormuz reopen + 15-20d talks) + US proposal (12yr no-enrichment, 440kg HEU handover) vs Iran 14-pt counter (Ghalibaf ultimatum 5/12)",
+        "Independent actor rule: IRGC residual ~10-15% pre-war (Cooper 5/14); Hez/Houthi 'completely cut off' from Tehran supply but capability nonzero — keep capability nodes separate"
+      ],
+      "no_probability_changes": true,
+      "next_review_trigger": "(a) new ballistic salvo, (b) Iran-US agreement signed/breakdown, (c) US convoy resumption, (d) China naval Gulf entry, (e) gas >$5/gal or Congressional War Powers force vote"
     }
   ],
-  "update_trigger": "fp1/fp2/fp3/fp4 all triggered; 5/7 kinetic resumption capping deescalation; Wang Yi-Araghchi 5/6"
+  "update_trigger": "delta-snapshot: no material DAG change; physical-layer/focal-layer triggers already baked into prior updates"
 }
