@@ -1,7 +1,7 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 94,
+  "version": 95,
   "updated": "2026-05-11T10:02:41.246082Z",
   "nodes": {
     "us_israel_strikes": {
@@ -504,7 +504,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.95,
+      "probability": 0.97,
       "confidence": 0.75,
       "evidence": [
         "NBC: Li谈5轮美中贸易谈判积极成果",
@@ -1072,7 +1072,7 @@
         "政治",
         "能源"
       ],
-      "probability": 0.55,
+      "probability": 0.5,
       "confidence": 0.48,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
@@ -1218,7 +1218,7 @@
         "能源",
         "金融"
       ],
-      "probability": 0.5,
+      "probability": 0.55,
       "confidence": 0.5,
       "evidence": [
         "OVX 108.19 (extreme) = antithesis of equilibrium. Brent whipsaw $119→$85→$88 in 48h. IEA meeting COULD create equilibrium but hasnt yet. Lowered.",
@@ -1837,7 +1837,7 @@
       "domains": [
         "政治"
       ],
-      "probability": 0.98,
+      "probability": 0.99,
       "confidence": 0.75,
       "evidence": [
         "CNN: Pentagon/NSC admits underestimated Iran Hormuz closure willingness",
@@ -4083,8 +4083,8 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-05-21T10:03:30.521956+00:00",
-  "updated_at": "2026-05-21T10:03:30.521956+00:00",
+  "last_updated": "2026-05-23T22:04:50.204779+00:00",
+  "updated_at": "2026-05-23T22:04:50.204779+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
@@ -4157,7 +4157,35 @@
       ],
       "no_probability_changes": true,
       "next_review_trigger": "(a) new ballistic salvo, (b) Iran-US agreement signed/breakdown, (c) US convoy resumption, (d) China naval Gulf entry, (e) gas >$5/gal or Congressional War Powers force vote"
+    },
+    {
+      "timestamp": "2026-05-23T22:04:50.204779+00:00",
+      "date": "2026-05-24",
+      "trigger": "fp4 escalation (Senate WPR 50-47 advance 5/20, House tie vote) + Iran structural shift to Persian Gulf Strait Authority permit regime + Trump-Xi summit 5/14 substantive + Khamenei 5/22 uranium retention order",
+      "changes": [
+        "conflict_deescalation: 0.55 → 0.5 (Khamenei 5/22 order to keep enriched uranium inside Iran complicates dismantlement; Iran chief negotiator 5/12 ultimatum 'accept or face failure'; Trump rejects Iran-Oman toll proposal; Trump 5/12 'life support'; ceasefire structurally holds but talks deadlocked on 5 sticking points)",
+        "china_energy_diplomacy: 0.95 → 0.97 (Trump-Xi summit 5/14 explicitly on Hormuz; Iran activated 'Persian Gulf Strait Authority' permit regime + let Chinese vessels through 5/14; substantive (not just diplomatic) leverage activated, with Beijing extracting US concessions in exchange)",
+        "domestic_war_opposition: 0.98 → 0.99 (Senate War Powers Resolution advanced 50-47 on 5/20; House WPR fell on tie vote (3 Republicans flipped); CRS 5/20 tallied 42 US aircraft lost/damaged; $25B war cost; Spirit Airlines bankruptcy 5/2; ITEP $312/household and gas avg $4.53; Schumer forcing weekly votes)",
+        "oil_new_equilibrium: 0.5 → 0.55 (Brent held $100-110 corridor for ~3 weeks through multiple shocks (Khamenei uranium order only +$5 Friday but still down 6% for week); Iran selective-permit regime puts floor on shipping; record 9.9M bbl/wk SPR drawdown is offset mechanism — market increasingly pricing structural new range)"
+      ],
+      "physical_layer": {
+        "q1": "~1-2/day low-intensity (ceasefire D46 nominal from 4/8)",
+        "q2": "5-25/day (May 22: 2; May 23: 25 after IRGC permit clearance)",
+        "q3": "~1.4M b/day (record 9.9M wk to 5/15)"
+      },
+      "focal_signals_snapshot": {
+        "fp1": "partial-active (Trump-Xi 5/14 + Chinese vessels through Hormuz)",
+        "fp2": "triggered (Project Freedom on/off + blockade + threat simultaneous)",
+        "fp3": "active-stalled (frameworks exist, talks deadlocked)",
+        "fp4": "escalating-multi (WPR vote + aircraft losses + gas + bankruptcies)"
+      },
+      "independence_note": "IRGC residual capability node unchanged; Hezbollah/Houthi/Hamas nodes also unchanged (no new independent capability evidence cycle)",
+      "claim_types": {
+        "facts": "事实: WPR vote tallies, oil prices, SPR drawdowns, ITEP gas data, CENTCOM Cooper testimony figures",
+        "inferences": "推理: oil_new_equilibrium probability raise inferred from corridor stability; conflict_deescalation lowered inferred from Khamenei order semantics",
+        "speculation": "推测: Khamenei uranium-retention will or will not collapse talks within 30d (not encoded)"
+      }
     }
   ],
-  "update_trigger": "delta-snapshot: no material DAG change; physical-layer/focal-layer triggers already baked into prior updates"
+  "update_trigger": "fp4 escalation (Senate WPR 50-47 advance 5/20, House tie vote) + Iran structural shift to Persian Gulf Strait Authority permit regime + Trump-Xi summit 5/14 substantive + Khamenei 5/22 uranium retention order"
 }
