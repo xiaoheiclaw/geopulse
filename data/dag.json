@@ -4084,7 +4084,7 @@
     }
   ],
   "last_updated": "2026-05-23T22:04:50.204779+00:00",
-  "updated_at": "2026-05-23T22:04:50.204779+00:00",
+  "updated_at": "2026-05-25T06:04:46.083258+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
@@ -4184,6 +4184,28 @@
         "facts": "事实: WPR vote tallies, oil prices, SPR drawdowns, ITEP gas data, CENTCOM Cooper testimony figures",
         "inferences": "推理: oil_new_equilibrium probability raise inferred from corridor stability; conflict_deescalation lowered inferred from Khamenei order semantics",
         "speculation": "推测: Khamenei uranium-retention will or will not collapse talks within 30d (not encoded)"
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "timestamp": "2026-05-25T06:04:46.083258+00:00",
+      "trigger": "delta-snapshot: no material DAG change; new signals (Trump 5/23 'largely negotiated', Khamenei 5/22 uranium retention, IRGC May 24 33-vessel transit, SPR record 10M wk) already encoded in 5/23 update",
+      "delta": [
+        "Q1 (IRGC attack freq): ~2-3/wk ceasefire-low (May 8 multi-vector USS Truxtun/Peralta/Mason was last major; Cooper 5/14 confirms degraded but capable)",
+        "Q2 (Hormuz transit): 5-33/day under IRGC permit regime (May 24: 33 vessels/24h reported by IRGC; pre-crisis 95-130/day; ~80% shadow fleet)",
+        "Q3 (SPR release): ~10M bbl/wk record drawdown; total <375M; pace materially accelerated above 120-day schedule",
+        "fp1: partial-active sustained (Trump-Xi 5/14 + Iran Persian Gulf Strait Authority permit-regime; still no Chinese naval Gulf deployment)",
+        "fp2: strong/triggered sustained (Trump 5/23 'largely negotiated' vs Iran Fars 'incomplete'; CENTCOM 'short and powerful' strike option simultaneously prepared)",
+        "fp3: active-stalled sustained (US 14-pt vs Iran 14-pt counter; Ghalibaf 5/12 ultimatum; Trump 5/12 'life support'; MOU as Phase-1 + 30-60d broader talks)",
+        "fp4: escalating sustained (Senate WPR 50-47 advance 5/20; House tie vote; gas $4.39-4.53/gal; ITEP $317/household by 5/24; $25B Pentagon cost; 13-14 US KIA)"
+      ],
+      "no_probability_changes": true,
+      "rationale": "Yesterday (5/23 22:04 UTC) update materially shifted 4 nodes (conflict_deescalation 0.55→0.5, china_energy_diplomacy 0.95→0.97, domestic_war_opposition 0.98→0.99, oil_new_equilibrium 0.5→0.55). Today's new evidence (Trump 5/23 deal claim, Khamenei 5/22 uranium order) is congruent with — not a step-change from — yesterday's snapshot. Independent-actor rule preserved: IRGC residual ~10-15%, Hez/Houthi capability nodes unchanged.",
+      "next_review_trigger": "(a) Iran accept/reject MOU Phase-1 signed text; (b) Project Freedom resumption or unilateral US Hormuz force; (c) gas >$5/gal; (d) Chinese naval deployment to Gulf; (e) WPR floor passage; (f) any new ballistic salvo or US strike package execution",
+      "claim_types": {
+        "facts": "事实: IRGC 33-vessel transit count (May 24), Khamenei 5/22 uranium order, Trump 5/23 'largely negotiated' post, Brent $103.94 / WTI $96.60 / VIX 16.70 / S&P 7,473.47 / Gold $4,523.20 (May 22 close), SPR <375M",
+        "inferences": "推理: no DAG move warranted because new evidence is congruent with yesterday's regime shift; fp1=partial-active not 'weak' because permit-regime is substantive China leverage activation",
+        "speculation": "推测: whether MOU Phase-1 actually gets signed in 30-60d window (not encoded as probability move)"
       }
     }
   ],
