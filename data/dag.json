@@ -1,8 +1,8 @@
 {
   "scenario": "us_iran_conflict",
   "scenario_label": "美伊冲突升级",
-  "version": 95,
-  "updated": "2026-05-11T10:02:41.246082Z",
+  "version": 96,
+  "updated": "2026-05-26T06:05:19.604459+00:00",
   "nodes": {
     "us_israel_strikes": {
       "id": "us_israel_strikes",
@@ -1072,8 +1072,8 @@
         "政治",
         "能源"
       ],
-      "probability": 0.5,
-      "confidence": 0.48,
+      "probability": 0.62,
+      "confidence": 0.62,
       "evidence": [
         "[2026-03-09] E3+E6: 所有降级信号关闭 (LR=4.0)",
         "[2026-03-09] 去中心化指挥使停火令→执行传导链断裂;莫杰塔巴欠IRGC权位无动机约束(LR=1.5)",
@@ -1114,12 +1114,12 @@
           "pipeline": "v3.1"
         }
       ],
-      "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely. | [2026-05-01] v3.1 update: 4/8 ceasefire achieved(Pakistan-mediated)+extended, both sides claiming violations. Iran 4/28 proposal(reopen Hormuz skip nuclear deal) Trump unlikely to accept. Partial ceasefire IS in place. fp3=fragile-active.",
+      "reasoning": "Pakistan Quad talks opened but simultaneous: IDF nuclear strikes (Arak/Bushehr), Houthis entering war, multi-front expansion, Iran preconditions (halt strikes before talks). Military escalation DURING diplomacy = de-escalation less likely. | [2026-05-01] v3.1 update: 4/8 ceasefire achieved(Pakistan-mediated)+extended, both sides claiming violations. Iran 4/28 proposal(reopen Hormuz skip nuclear deal) Trump unlikely to accept. Partial ceasefire IS in place. fp3=fragile-active. || 5/26 update: fp1 ACTIVE (Trump-Xi 5/14 summit + Iran approves Chinese vessels via PG Strait Authority); fp3 VISIBLE (60-day extension framework articulated 5/24 by senior admin official, 14-point memo, Witkoff-Pakistan-Qatar channel); market pricing peace optimism (Brent -10%/wk to -98, VIX 16.59); however Iran disputes terms (Fars: incomplete). Probability shift 0.50→0.62 reflects framework existence + active mediation, capped by unresolved sticking points (Hormuz management, HEU stockpile).",
       "time_horizon": "W12-24+",
       "pinned": true,
       "time_phases": [],
       "dialectic": null,
-      "last_updated": "2026-05-08T10:03:08.923303+00:00",
+      "last_updated": "2026-05-26T06:05:19.604459+00:00",
       "created": "2026-03-06T14:31:59.393633Z",
       "updated_at": "2026-04-30T02:03:32.524979+00:00",
       "p": 0.72,
@@ -4083,8 +4083,8 @@
       "reasoning": "胡塞入场=也门正式成为战线，红海航运再次受威胁"
     }
   ],
-  "last_updated": "2026-05-23T22:04:50.204779+00:00",
-  "updated_at": "2026-05-25T06:04:46.083258+00:00",
+  "last_updated": "2026-05-26T06:05:19.604459+00:00",
+  "updated_at": "2026-05-26T06:05:19.604459+00:00",
   "meta": {
     "last_updated": "2026-03-26T21:07:44.996267Z",
     "last_changes": [
@@ -4207,6 +4207,21 @@
         "inferences": "推理: no DAG move warranted because new evidence is congruent with yesterday's regime shift; fp1=partial-active not 'weak' because permit-regime is substantive China leverage activation",
         "speculation": "推测: whether MOU Phase-1 actually gets signed in 30-60d window (not encoded as probability move)"
       }
+    },
+    {
+      "timestamp": "2026-05-26T06:05:19.604459+00:00",
+      "version_to": 96,
+      "changes": [
+        {
+          "node": "conflict_deescalation",
+          "field": "probability",
+          "old": 0.5,
+          "new": 0.62,
+          "reason": "fp1 ACTIVE + fp3 VISIBLE framework + market pricing peace"
+        }
+      ],
+      "driver": "focal_layer_signal_strengthening",
+      "source": "pipeline 2026-05-26 14:00"
     }
   ],
   "update_trigger": "fp4 escalation (Senate WPR 50-47 advance 5/20, House tie vote) + Iran structural shift to Persian Gulf Strait Authority permit regime + Trump-Xi summit 5/14 substantive + Khamenei 5/22 uranium retention order"
