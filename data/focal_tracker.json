@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": "Schelling focal point detection + physical observables",
-  "last_updated": "2026-05-27T10:02:49.428088+00:00",
+  "last_updated": "2026-06-01T02:02:34.773870+00:00",
   "design": "两层观测: 物理层(状态)+ 焦点层(转折). History in geopulse.db",
   "physical_observables": {
     "q1_attack_frequency": {
@@ -10,12 +10,6 @@
       "threshold_q2_start": "<2/day triggers minesweep clock",
       "threshold_decay": "<1/day for 5 consecutive days = fast decay",
       "history": [
-        {
-          "date": "2026-05-24",
-          "est": "~1-2/day low-intensity (ceasefire D46 from 4/8 holds nominal)",
-          "note": "5/24 pipeline: Cooper Senate testimony 5/14 confirms Iran defense industrial base -90%, drones ~10%, mobile launchers 75% retained, missiles 70% retained, underground storage almost all restored. IRGC residual ~10-15% kinetic. May incidents: 5/12 Bubiyan Island infiltration (Kuwait, 6 IRGC, 4 captured, 1 KWT soldier wounded), 5/10 UAE/Kuwait drone incursions + Qatar vessel drone attack, ongoing US-IRGC skirmishes during Strait transits. No major ballistic salvo since 5/7-8. Saudi Arabia secretly struck Iranian-backed Iraqi militias near border (late March, reported 5/13). Independent actor check: IRGC kinetic 10-15%, Hezbollah/Houthi/Hamas 'completely cut off' from Tehran supply per CENTCOM but stockpiles non-zero. Tempo flat vs prior reading.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-24",
           "est": "~1-2/day low-intensity (ceasefire D46 from 4/8, fragile)",
@@ -93,6 +87,12 @@
           "est": "~1-2/day low-intensity sustained (ceasefire D49+ from 4/8 holds nominal; 5/25-26 CENTCOM 'self-defense' strikes on IRGC mine-laying boats in Hormuz + SAM site Bandar Abbas remain last major kinetic; IRGC reciprocal-response threat preserved 'right legitimate and certain' but no major ballistic follow-through 5/26-27; Iran FM accused US 'maritime robberies' over 28hrs; CENTCOM Capt Hawkins: 'restraint during ongoing ceasefire'; Cooper 5/14 Senate binding: Iran defense base degraded 90%, drones 10% pre-war, mobile launchers 75% retained, missiles 70% retained, underground storage almost all restored; no major ballistic salvo since 5/7-8)",
           "note": "5/27 18:00 pipeline: tempo flat status quo with reciprocal-but-restrained kinetic exchanges DURING active MOU negotiations (canonical fp2 signature). Rubio 5/26: 'disagreements over a word, a sentence' — talks continue. CNN 5/25: IRGC warned of 'legitimate and certain' reciprocal response to US violations but no kinetic execution. Trump 5/26 social: deal may be close. Independent actor assessment unchanged: IRGC residual ~10-15% pre-war kinetic; Hez/Houthi/Hamas supply-cut per CENTCOM, capability nonzero, no fresh activity this window. No change vs 5/27 14:00 reading.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-06-01",
+          "est": "~1-2/day low-intensity ESCALATING (ceasefire D54 from 4/8 NEAR BREAKDOWN; 5/27 22:17 ET Iran launched ballistic missile at Kuwait — intercepted by Kuwaiti forces, CENTCOM declared 'egregious ceasefire violation'; 5/27 same window Iran launched 5 one-way attack drones near/in Hormuz; 5/26-27 IRGC retaliation for US 5/25-26 strikes on Bandar Abbas ground control site + IRGC mine-layers; first ballistic salvo since 5/7-8 ends 20-day moratorium; Cooper 5/14 Senate binding: Iran defense base degraded 90%, drones 10% pre-war, mobile launchers 75% retained, missiles 70% retained, underground storage almost all restored)",
+          "note": "6/1 10:00 pipeline: MAJOR ESCALATION 5/27 — Iran first cross-border ballistic missile in 3 weeks targeting Kuwait (US ally). CENTCOM 'egregious violation' framing creates legal/political off-ramp for US to walk back ceasefire framework if needed. IRGC explicitly tied to retaliation for Bandar Abbas strike = direct reciprocal-response doctrine activated. Capability mobilization preserved (mobile launchers + restored underground storage) — Iran demonstrating optionality despite Cooper degradation tally. Independent actor: IRGC actioned 5/27 ballistic + drone; Hez/Houthi/Hamas no fresh activity this window but supply-cut per CENTCOM, capability nonzero. Tempo: low-intensity ceiling broken by single ballistic event, kinetic exchange sustained during talks. Watch: 6/1+ Iran response to US retaliation for Kuwait strike, Israel reaction.",
+          "source": "pipeline"
         }
       ]
     },
@@ -106,12 +106,6 @@
         "full": ">12 mbd for 5 days"
       },
       "history": [
-        {
-          "date": "2026-05-24",
-          "est": "~2-25/day highly variable (5/23 IRGC announced 25 vessels transited 24h with clearance; baseline ~5% pre-war ~95/day)",
-          "note": "5/24 pipeline: Bifurcated regime. USNI 5/1 'lowest level since Epic Fury start' (4/23 had 0 transits, late April ~24 transits/week). Kpler vessel transponder data: April ran ~5% pre-war. 5/6 Caine confirmed 22,500 mariners trapped on 1,550+ vessels; 150+ non-sanctioned ships stuck in Gulf incl 62 VLCCs. 5/14 Iran allowed Chinese vessels through during Trump-Xi summit (coordinated diplomatic gating). 5/23 IRGC Navy announced 25 vessels (oil tankers + container ships) transited prior 24h under 'Persian Gulf Strait Authority' permit system (advance manifest + 'non-hostile' approval). Iran-Oman working on permanent toll framework (Trump rejected). 5/4-5/6 Project Freedom launched+paused in <48h. UK deploying drones+RN warship to escort. Recovery to normal 'at least September if reopened today' per Lloyd's List Meade — but mines likely laid. Effective: <10% pre-war for non-Chinese tonnage.",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-24",
           "est": "~2-5 ships/day (~3-5% pre-war)",
@@ -189,6 +183,12 @@
           "est": "<10 ships/day commercial sustained (IMF PortWatch 5/17 = 2 vessels = ~2% of pre-crisis ~95/day baseline; commercial+IRGC-permit total ~25-54/wk = ~6-8/day; 1,550+ vessels stranded with 22,500 trapped mariners per Caine 5/6; 150+ non-sanctioned ships stuck in Persian Gulf incl 62 VLCCs per Lloyd's; Iran 'Persian Gulf Strait Authority' permit-toll regime in force; UK 5/22 deployed drones+fighters+RN warship for defensive escort mission; Project Freedom paused since 5/5-6 'great progress'; Iranian port blockade still in force; mining concern remains key technical bottleneck — 5/25-26 CENTCOM strikes targeted IRGC mine-layers directly)",
           "note": "5/27 18:00 pipeline: bifurcated equilibrium persists. No fresh transit data this window. WaPo/Axios MOU details: Hormuz demine + reopen within 30d of signing as Phase-1; Iran Fars 5/25 dismisses as 'incomplete and inconsistent' — strait stays under Iranian management is sticking point. Soufan Center 5/26 IntelBrief: Lebanon ceasefire scope is NEW additional sticking point besides Hormuz. Lloyd's editor Meade: even if reopened immediately, tanker market won't normalize until September given mining + lack of bilateral progress. No change vs 5/27 14:00 reading.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-06-01",
+          "est": "~2-7 ships/day commercial persists (IMF PortWatch 5/24 = 4 vessels = ~4% of pre-crisis ~95/day baseline; Kpler/AIS 3-7 vessels/day vs pre-war 140+ per multiple trackers; 1,500+ vessels stranded with 22,500 trapped mariners persists; 150+ non-sanctioned ships incl 62 VLCCs stuck in Persian Gulf per Lloyd's; Iran 'Persian Gulf Strait Authority' permit-toll regime in force; UK 5/22 deployed drones+fighters+RN warship; Project Freedom paused since 5/5-6; Iranian port blockade in force; mining concern remains key bottleneck — 5/25-26 CENTCOM strikes on IRGC mine-layers and 5/27 Iran ballistic+drone response signal mining/demining unresolved; deal MOU still pending Trump signature)",
+          "note": "6/1 10:00 pipeline: bifurcated equilibrium unchanged. Latest IMF PortWatch 5/24 = 4 vessels (4% baseline). No major reopening despite tentative MOU. Iran FM Mon 5/25 disputed Trump 'no tolls' framing — will collect 'Gulf environment' fees. Kuwait ballistic strike 5/27 directly threatens shipping lanes via second-order escalation. Tanker market normalization: Lloyd's Meade still pegs September earliest IF immediately reopened. Watch: 5/28 onward PortWatch print, Trump signature decision, Iran demining timeline.",
+          "source": "pipeline"
         }
       ]
     },
@@ -199,12 +199,6 @@
       "delivery_timeline": "120 days per DOE, first barrels end of W3",
       "max_physical_rate": "4.4 mbd (US SPR pump limit)",
       "history": [
-        {
-          "date": "2026-05-24",
-          "est": "~1.4M bbl/day RECORD pace (wk-ending 5/15: 9.9 MMbbl release = new all-time weekly record)",
-          "note": "5/24 pipeline: SPR drawdown ACCELERATING. EIA WPSR wk-5/8: 8.6 MMbbl (broke prior 8.4 record from Sep 2022). EIA WPSR wk-5/15: 9.9 MMbbl NEW record → SPR 374.2 MMbbl (lowest since Jul 2024). Cumulative March→5/15: ~27.4 MMbbl. Part of 172 MMbbl US release under coordinated IEA 400 MMbbl program. DOE 5/1 issued RFP for 92.5 MMbbl exchange (bids due 5/4) — fourth tranche. Reserve now 351 MMbbl short of 714 MMbbl capacity. Exchanges (not sales) — original + extra barrels owed back. Physical 'real-bullets' phase confirmed: U.S. burning through strategic stock to plug Hormuz outage. At 1.4 MMbbl/day pace, ~262 days of remaining drawdown room before reaching politically defensible minimum (~~200 MMbbl).",
-          "source": "pipeline"
-        },
         {
           "date": "2026-05-24",
           "est": "~7-10M barrels/week (record drawdown)",
@@ -282,6 +276,12 @@
           "est": "~1.2-1.4 mb/day record pace continues (latest confirmed EIA WPSR wk-5/15: SPR 374.2M bbl, -9.9M wk-on-wk = largest single-week drawdown on record; wk-5/8 8.6M draw SPR 384.1M = prior all-time record broken; pump at 4.4 mbd hardware ceiling; 133.1M of 172M US program ~77% executed as part of IEA-coordinated 400M global release; structured as 1-yr exchange must return original + premium; next WPSR scheduled 5/28 Thursday 12:00/14:00 post-Memorial Day for wk-5/22 data — release delayed by holiday)",
           "note": "5/27 18:00 pipeline: no new EIA data this window — next WPSR 5/28 will reveal whether 10M/wk pace sustained through Memorial Day. EIA schedule confirms 5/28 release. AAA national avg $4.56 5/21 (4-yr high, +$1.38 YoY +43.6%); ITEP forecast household burden $1.11k by summer end. Refill bid stalled: DOE won't buy at $100+ after selling at $70-80. If pace sustained at 10M/wk through 5/22 print, administration is hedging deal optimism with record physical draw — directly relevant to fp4 (cost threshold) trajectory. SPR ~351M short of 714M max capacity = decade+ to rebuild.",
           "source": "pipeline"
+        },
+        {
+          "date": "2026-06-01",
+          "est": "~10M bbl/wk record pace likely sustained (latest confirmed EIA WPSR wk-5/15: SPR 374.2M bbl, -9.9M wk-on-wk = largest single-week drawdown on record; wk-5/8 8.6M draw SPR 384.1M = prior all-time record broken; 5/28 WPSR for wk-5/22 released — 2 ATH weekly records back-to-back unprecedented in EIA series per gas-price-check.com; pump at 4.4 mbd hardware ceiling; ~133.1M of 172M US program executed; IEA-coordinated 400M global release in force; exchange structure must return original + premium within 1yr; refill bid stalled DOE won't buy at $100+ after selling at $70-80)",
+          "note": "6/1 10:00 pipeline: 5/28 WPSR scheduled per EIA calendar for wk ending 5/22 — analysts flag back-to-back ATH unprecedented in series. SPR ~351M short of 714M max = decade+ to rebuild. AAA national $4.56 5/21 4-yr high. ITEP household burden forecast $1.11k by summer end. Refill bid: DOE won't buy at $100+ after selling at $70-80. Kuwait strike 5/27 likely to firm physical risk premium even with deal optimism — directly feeds fp4 cost threshold. Watch: 5/28 wk-5/22 print, Memorial-Day demand-pull adjustment in WPSR.",
+          "source": "pipeline"
         }
       ]
     }
@@ -290,30 +290,30 @@
     "fp1_china_action": {
       "priority": "★★★★★",
       "label": "中国实质行动(唯一可行聚点注入)",
-      "status": "PARTIAL (5/14 Iran approved passage of some Chinese vessels through Hormuz during Trump-Xi Beijing summit per Fars/Tasnim — carve-out under Iranian rules, not blanket reopening; 5/6 Wang Yi-Araghchi Beijing talks China pressed for Hormuz reopening + ceasefire continuation; China envoy Zhai Jun regional tour since 3/4-3/8 [Riyadh/GCC]; Wang Yi 26 calls to Iran/Israel/Russia/France/Oman/UAE/Gulf states; 4/7 China+Russia vetoed Bahrain UNSC draft on Hormuz escort 'failed to capture root causes'; China helped convince Iran accept Pakistan ceasefire 4/7; Beijing prepared financial aid + missile components per intel but no overt PLA Navy deployment, no UNSC affirmative)",
-      "last_check": "2026-05-27",
-      "findings": "5/27 18:00 pipeline: fp1 signal moderate-strengthening but still below 实质 threshold. No fresh China action this window (5/26-27). Chinese vessel passage 5/14 was diplomatic concession, not enforcement. Wang Yi-Araghchi 5/6 Beijing talks remain peak diplomatic action. China formally neutral, restrained posture, indirect support to Iran. Trump-Xi summit dynamic: analyst commentary notes Washington needing Beijing's help nudge Iran back gives China bilateral upper hand. WATCH: PLA Navy deployment to Gulf, formal UNSC resolution coordination, China financial aid disbursement signal. No change vs 5/27 14:00."
+      "status": "PARTIAL (Wang Yi 5/26 official MFA statement on Iran deadlock — China formally working to resolve conflict, maintained communication w/ main parties + regional/international partners; 5/14 Iran approved passage of some Chinese vessels through Hormuz during Trump-Xi Beijing summit per Fars/Tasnim — carve-out under Iranian rules, not blanket reopening; 5/6 Wang Yi-Araghchi Beijing talks China pressed for Hormuz reopening + ceasefire continuation; China envoy Zhai Jun regional tour since 3/4-3/8; Wang Yi 26 calls to Iran/Israel/Russia/France/Oman/UAE/Gulf states; 4/7 China+Russia vetoed Bahrain UNSC draft on Hormuz escort; Beijing prepared financial aid + missile components per intel but no overt PLA Navy deployment, no UNSC affirmative)",
+      "last_check": "2026-06-01",
+      "findings": "6/1 10:00 pipeline: fp1 signal moderate-strengthening but below 实质 threshold. Wang Yi 5/26 PRC MFA QA on Iran deadlock = rhetorical persistence, no escalation to enforcement action. Iran-Kuwait 5/27 ballistic missile escalation may force China to choose visibility — silence indicates Beijing prefers Trump bilateral path. WATCH: PLA Navy deployment to Gulf, formal UNSC resolution coordination, China financial aid disbursement, China response to Kuwait strike (Kuwait close to Sinopec relationships)."
     },
     "fp2_us_signal_inconsistency": {
       "priority": "★★★★☆",
       "label": "美方信号包内部矛盾(承诺解锁前导)",
-      "status": "STRONG (textbook simultaneity signature persists: 5/25-26 CENTCOM 'self-defense' strikes on IRGC mine-layers + SAM Bandar Abbas + IRGC HQ SAME WINDOW Trump social 'deal may be close' / Rubio 5/26 'disagreements over a word, a sentence' / Trump 5/23 Hormuz reopening 'largely negotiated' BUT Trump separately renews bomb threats per ToI; Project Freedom escort paused since 5/6 'great progress' but US naval blockade on Iranian ports still in force 100+ ships redirected; Trump 5/19 letter to Congress: 'hostilities terminated' for War Powers purposes despite continued strikes; CENTCOM Capt Hawkins 5/25: 'restraint during ongoing ceasefire' framing; Rubio still pushes maximalist criteria (no nukes/no enrichment/no Hormuz tolls/uranium handover) while admin signals MOU phasing)",
-      "last_check": "2026-05-27",
-      "findings": "5/27 18:00 pipeline: fp2 strongly active — bombing-while-negotiating canonical signature fully present and reinforced. ToI 5/26 explicitly headlines 'closing in on framework as Trump renews bomb threats' = signal admin holding kinetic stick during talks. Cancelled House WPR vote 5/22 compounds — admin can't sustain 'hostilities terminated' framing if strikes continue. WATCH: NSC leak about military options, NEO advisory for region civilians, Carrier movement orders contradicting peace rhetoric. No material change vs 5/27 14:00."
+      "status": "STRONG (textbook bombing-while-negotiating signature INTENSIFIED: 5/25-26 CENTCOM 'self-defense' strikes on IRGC mine-layers + SAM Bandar Abbas + IRGC HQ → 5/27 Iran ballistic missile at Kuwait + 5 attack drones near Hormuz → CENTCOM 'egregious violation' framing + further US strikes Wednesday on Bandar Abbas ground control site SAME WINDOW Trump claims deal '95% completed' / Rubio 5/26 'disagreements over a word, a sentence' / Trump 5/23 framework 'largely negotiated' BUT Trump renews bomb threats per ToI; Project Freedom escort paused since 5/6 but US naval blockade on Iranian ports still in force; Trump 5/19 letter to Congress: 'hostilities terminated' for War Powers — legally contradicted by 5/25-27 strikes; Rubio still pushes maximalist criteria, admin signals MOU phasing)",
+      "last_check": "2026-06-01",
+      "findings": "6/1 10:00 pipeline: fp2 strongly active and intensifying. Kuwait ballistic missile + drones 5/27 + Bandar Abbas retaliation strikes = bombing-while-negotiating signature now spans both sides. NBC 5/28: 'US and Iran trade new strikes as Trump dismisses pressure to end war'. Cancelled 5/22 House WPR vote → post-Memorial Day vote 6/1+ pending. Admin straddle widening. WATCH: Carrier movement orders contradicting peace rhetoric, NEO advisory for region civilians, NSC leaks about military options, June WPR floor count."
     },
     "fp3_face_saving_framework": {
       "priority": "★★★★☆",
       "label": "面子工程原材料出现",
-      "status": "STRONG-DISPUTED with NEW sticking point (5/26 Soufan Center IntelBrief: U.S. + Iran 'close in on framework accord' MOU near finalization extending ceasefire 60d from 4/7; CNN 5/24 framework details: 14-pt MOU includes nuclear enrichment moratorium 12y + 440kg 60% uranium handover + gradual sanctions relief + frozen assets release + US blockade withdrawal + Hormuz reopen within 30d; 5/23-25 Trump deal 'largely negotiated subject to finalization' between US-Iran-other countries; Iran Fars 5/24-25: Hormuz to remain under Iranian management — calls Trump announcement 'incomplete and inconsistent'; NEW sticking point per Soufan 5/26: 'regional fronts' scope — Iran insisting MOU applies to Israel-Hezbollah Lebanon front, additional to Hormuz mgmt and asset-unfreeze mechanism; Pakistan primary mediator; Ghalibaf delegation traveled to Qatar for MOU talks; Israel 'very unhappy' — sees Hormuz weapon as 'no less effective than nuclear'; Cruz attacks Trump on R-side red lines)",
-      "last_check": "2026-05-27",
-      "findings": "5/27 18:00 pipeline: fp3 framework active but unresolved nodes EXPANDING — not narrowing. Soufan 5/26 IntelBrief identifies THIRD sticking point: Lebanon ceasefire applicability via Iran demand that termination cover 'regional fronts' including Israel-Hezbollah front. Now THREE unresolved nodes: (1) Hormuz management authority (2) asset-unfreeze mechanism (3) Lebanon scope. Each adds veto opportunity for Israel/Cruz-side R opposition. UN SG welcomed Iran's announcement strait 'completely open' but verification absent. 4/21 Trump indefinite ceasefire extension. WATCH: Signed MOU text release, IAEA verification access, first uranium offload location, Hormuz lane operational test, Hezbollah-Lebanon application language. UPGRADE: previously 2 sticking points, now 3 — friction to closure rising."
+      "status": "STRONG-DISPUTED with NEW Kuwait-strike test (5/26 Soufan Center IntelBrief: U.S. + Iran 'close in on framework accord' MOU near finalization extending ceasefire 60d from 4/7; 5/28 CNN: 'tentative agreement though Trump hasn't signed off'; AlJazeera 5/29: 60-day proposal detailed; CNN 5/24 framework details — 14-pt MOU: nuclear enrichment moratorium 12y + 440kg 60% uranium handover + gradual sanctions relief + frozen assets release + US blockade withdrawal + Hormuz reopen within 30d; Trump 5/23-25 deal 'largely negotiated' Trump-aide claim '95% completed'; Iran Fars 5/24-25: Hormuz under Iranian management — calls Trump announcement 'incomplete and inconsistent'; Iran FM 5/25 disputes 'no tolls' provision — will collect 'Gulf environment' fees; Soufan 5/26: THIRD sticking point — Lebanon ceasefire scope and Iran-Hezbollah front; Pakistan primary mediator; Ghalibaf delegation traveled to Qatar for MOU talks; Israel 'very unhappy' — Hormuz weapon 'no less effective than nuclear'; Cruz attacks Trump on R-side red lines)",
+      "last_check": "2026-06-01",
+      "findings": "6/1 10:00 pipeline: fp3 framework still active but PRESSURE TEST from Kuwait ballistic strike 5/27 — direct violation creates legal off-ramp for either side to walk. CNN 5/28 confirms agreement still tentative pending Trump signature. Sticking points unresolved: (1) Hormuz mgmt authority/toll (2) asset-unfreeze mechanism (3) Lebanon scope (4) NEW post-Kuwait: how to handle ceasefire-violation framework. Each sticking point = veto opportunity for Israel/Cruz-side R opposition. WATCH: Trump signature decision, IAEA verification access, first uranium offload location, Hormuz lane operational test, Hezbollah-Lebanon application language, Iran response to US Bandar Abbas retaliation strikes."
     },
     "fp4_cost_threshold": {
       "priority": "★★★☆☆",
       "label": "成本阈值的物理逼近",
-      "status": "CROSSED-MULTIPLE (4 indicators all heated: (1) Senate WPR advanced 50-47 on 5/19 — first WPR Iran limit ever advanced — 4 R defections: Murkowski/Collins/Paul/Cassidy; (2) House 212-212 tie on prior WPR vote, then House Rs CANCELLED scheduled 5/22 vote because they expected to LOSE — formally deferred to early June post-Memorial-Day recess per Meeks/CNN; (3) Gas prices AAA $4.56/gal 5/21 = 4-yr high, +$1.38 YoY +43.6% — Kaine: public support 'hardening' ahead of summer driving + 2026 midterms; (4) CRS 5/20: 15 US KIA + 500+ wounded + 42 aircraft lost/damaged in Op Epic Fury — Pentagon Hurst Approps 5/12: cost $300B)",
-      "last_check": "2026-05-27",
-      "findings": "5/27 18:00 pipeline: fp4 multiple thresholds breached, no de-escalation. House WPR cancellation 5/22 is critical signal — GOP leadership now expects to LOSE on the floor with R defections, Republican base support eroding. Trump 5/19 'hostilities terminated' framing legally contradicted by 5/25 CENTCOM strikes (fp2). Cassidy ousted in primary after Trump endorsed rival = political punishment now possible inside R coalition but cost ledger overrides loyalty for 4 R senators. SPR record drawdown 8.6mb/wk + AAA $4.56 + 5/28 WPSR pending = admin aware cost-suppressant variable critical but politically gas already >$4.50. Post-recess WPR re-vote in June will be the next major fp4 test. WATCH: June whip count, summer driving season AAA trajectory, summer ground campaign decisions. No change vs 5/27 14:00."
+      "status": "CROSSED-MULTIPLE (4+ indicators all heated and gaining: (1) Senate WPR advanced 50-47 on 5/19 — 4 R defections Murkowski/Collins/Paul/Cassidy; (2) House Rs CANCELLED 5/22 vote because GOP leadership expected to LOSE — vote DEFERRED to early June post-Memorial-Day recess per Meeks/CNN/NPR; (3) Gas prices AAA $4.56/gal 5/21 = 4-yr high, +$1.38 YoY +43.6%; (4) CRS 5/20: 15 US KIA + 500+ wounded + 42 aircraft lost/damaged + $300B cost; (5) NEW 5/27 Iran ballistic on Kuwait — US ally — adds force-protection cost vector + congressional accountability pressure)",
+      "last_check": "2026-06-01",
+      "findings": "6/1 10:00 pipeline: fp4 indicators all crossed, NEW stress vector from 5/27 Kuwait ballistic. House Republican leadership 5/22 cancellation = formal admission GOP expects WPR to pass on floor. Post-recess House returns 6/1+ = WPR re-vote scheduled this week. Trump 5/19 'hostilities terminated' framing legally contradicted by sustained kinetic 5/25-27. Cassidy primary loss after Trump endorsement = political punishment within R coalition but 4 R senators broke anyway. SPR record drawdown 8.6mb/wk → 9.92mb/wk + AAA $4.56 + record-on-record unprecedented in EIA series = cost-suppressant variable burning faster than political tolerance. WATCH: June WPR floor count, summer-driving AAA trajectory, post-Kuwait force-protection deployment cost, Senate redo if House passes, Trump veto threat."
     }
   },
   "noise_filter": {
